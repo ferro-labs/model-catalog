@@ -1,0 +1,31 @@
+extends: gemini/gemini-2.0-flash-thinking-exp
+provider: vertex_ai
+model_id: gemini-2.0-flash-thinking-exp
+display_name: gemini-2.0-flash-thinking-exp
+max_output_tokens: 8192
+pricing:
+    input_per_m_tokens: 0
+    output_per_m_tokens: 0
+    cache_read_per_m_tokens: 0
+    cache_write_per_m_tokens: null
+    reasoning_per_m_tokens: null
+    image_per_tile: null
+    audio_input_per_minute: 0
+    audio_output_per_character: 0
+    embedding_per_m_tokens: null
+    finetune_train_per_m_tokens: null
+    finetune_input_per_m_tokens: null
+    finetune_output_per_m_tokens: null
+capabilities:
+    vision: true
+    audio_input: false
+    audio_output: true
+    function_calling: true
+    parallel_tool_calls: true
+    json_mode: true
+    response_schema: true
+    prompt_caching: true
+    reasoning: false
+    streaming: true
+    finetuneable: false
+tier: standard

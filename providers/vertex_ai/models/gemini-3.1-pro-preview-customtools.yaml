@@ -1,0 +1,31 @@
+extends: gemini/gemini-3.1-pro-preview-customtools
+provider: vertex_ai
+model_id: gemini-3.1-pro-preview-customtools
+display_name: gemini-3.1-pro-preview-customtools
+pricing:
+    input_per_m_tokens: 2
+    output_per_m_tokens: 12
+    cache_read_per_m_tokens: 0.2
+    cache_write_per_m_tokens: null
+    reasoning_per_m_tokens: null
+    image_per_tile: 0.00012
+    audio_input_per_minute: null
+    audio_output_per_character: null
+    embedding_per_m_tokens: null
+    finetune_train_per_m_tokens: null
+    finetune_input_per_m_tokens: null
+    finetune_output_per_m_tokens: null
+capabilities:
+    vision: true
+    audio_input: true
+    audio_output: false
+    function_calling: true
+    parallel_tool_calls: false
+    json_mode: true
+    response_schema: true
+    prompt_caching: true
+    reasoning: true
+    streaming: true
+    finetuneable: false
+source: https://cloud.google.com/vertex-ai/generative-ai/pricing#gemini-models
+tier: standard

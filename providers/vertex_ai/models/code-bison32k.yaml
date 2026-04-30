@@ -1,0 +1,39 @@
+provider: vertex_ai
+model_id: code-bison32k
+display_name: code-bison32k
+mode: chat
+context_window: 6144
+max_output_tokens: 1024
+pricing:
+    input_per_m_tokens: 0.125
+    output_per_m_tokens: 0.125
+    cache_read_per_m_tokens: null
+    cache_write_per_m_tokens: null
+    reasoning_per_m_tokens: null
+    image_per_tile: null
+    audio_input_per_minute: null
+    audio_output_per_character: 5e-07
+    embedding_per_m_tokens: null
+    finetune_train_per_m_tokens: null
+    finetune_input_per_m_tokens: null
+    finetune_output_per_m_tokens: null
+capabilities:
+    vision: false
+    audio_input: false
+    audio_output: false
+    function_calling: false
+    parallel_tool_calls: false
+    json_mode: false
+    response_schema: false
+    prompt_caching: false
+    reasoning: false
+    streaming: true
+    finetuneable: false
+lifecycle:
+    status: ga
+    deprecation_date: null
+    sunset_date: null
+    successor: null
+source: https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#foundation_models
+updated_at: "2026-02-28"
+tier: standard
