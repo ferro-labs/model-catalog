@@ -1,0 +1,31 @@
+name: Validate
+on:
+  pull_request:
+    paths:
+      - 'providers/**'
+      - 'cmd/**'
+      - 'catalog/**'
+      - 'scrape/**'
+      - 'internal/**'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: Validate
+        run: go run ./cmd/ferrocat validate
+      - name: Lint
+        run: go run ./cmd/ferrocat lint
+      - name: Test
+        run: go test -race ./...
+      - name: Build dry-run
+        run: |
+          go run ./cmd/ferrocat build --output /tmp/dist
+          echo "Build produced $(jq -r '.stats.total_models' /tmp/dist/manifest.json) models"

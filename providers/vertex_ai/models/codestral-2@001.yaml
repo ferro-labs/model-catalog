@@ -1,0 +1,39 @@
+provider: vertex_ai
+model_id: codestral-2@001
+display_name: codestral-2@001
+mode: chat
+context_window: 128000
+max_output_tokens: 128000
+pricing:
+    input_per_m_tokens: 0.3
+    output_per_m_tokens: 0.9
+    cache_read_per_m_tokens: null
+    cache_write_per_m_tokens: null
+    reasoning_per_m_tokens: null
+    image_per_tile: null
+    audio_input_per_minute: null
+    audio_output_per_character: null
+    embedding_per_m_tokens: null
+    finetune_train_per_m_tokens: null
+    finetune_input_per_m_tokens: null
+    finetune_output_per_m_tokens: null
+capabilities:
+    vision: false
+    audio_input: false
+    audio_output: false
+    function_calling: true
+    parallel_tool_calls: false
+    json_mode: true
+    response_schema: false
+    prompt_caching: false
+    reasoning: false
+    streaming: true
+    finetuneable: false
+lifecycle:
+    status: ga
+    deprecation_date: null
+    sunset_date: null
+    successor: null
+source: ""
+updated_at: "2026-02-28"
+tier: standard

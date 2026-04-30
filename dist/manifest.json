@@ -1,0 +1,422 @@
+{
+  "version": "v2026.04.30",
+  "schema_version": 1,
+  "generated_at": "2026-04-30T09:54:08Z",
+  "catalog_sha256": "1b02ebde08bf3df84ff8d34c3164dfdaf29489ecb2ddc5829028a563c3e5284d",
+  "providers": [
+    {
+      "id": "ai21",
+      "model_count": 12,
+      "sha256": "fc10c2ea1dc2dddd7a4c5cf6c0636a97b9213ff6f8a5438212e439414f5bb2ca"
+    },
+    {
+      "id": "aiml",
+      "model_count": 12,
+      "sha256": "92c7d587649c373fcfe211647ff1b076610e7834c88b035a93b129cd75c8f72d"
+    },
+    {
+      "id": "aleph_alpha",
+      "model_count": 6,
+      "sha256": "7a8a596cc6d34d4a4c9f3b59a871abc2b8b93079b139d377fdf31a4b54967fcc"
+    },
+    {
+      "id": "amazon_nova",
+      "model_count": 4,
+      "sha256": "aa3388b5514f38ab6629150897799ce27b242d077bc30b00f8688c6ef269b489"
+    },
+    {
+      "id": "anthropic",
+      "model_count": 25,
+      "sha256": "2997f2c871ee9cb80219e626f0f0050bfeb8b31ff78be355894ed753fd5812c5"
+    },
+    {
+      "id": "anyscale",
+      "model_count": 12,
+      "sha256": "c1c380eff265b752b7c6e9c5ab852f67c124b25e3887ade66933988654f32775"
+    },
+    {
+      "id": "assemblyai",
+      "model_count": 2,
+      "sha256": "491c29e1b3eb1d9a365387ffb02732b1ee0fbf4e4fe9e6805a2e95c0e8a02616"
+    },
+    {
+      "id": "aws_polly",
+      "model_count": 4,
+      "sha256": "24910ccd1bce4b320a07299ae3a0a17602206f6b84e0f74eacec3727b9714004"
+    },
+    {
+      "id": "azure",
+      "model_count": 227,
+      "sha256": "196f8c189c13ae0273d0c66eb7685d4c95180be1bda44a829fc4b5b853b0ec3b"
+    },
+    {
+      "id": "azure_foundry",
+      "model_count": 3,
+      "sha256": "9b79662c80afafeb7ff40721afe061bfb9985baa91545b62cc1eb87d9b1b619a"
+    },
+    {
+      "id": "azure_openai",
+      "model_count": 5,
+      "sha256": "56e662cf3e2da43296a68a1229d5405ccd6c2d7f51f511d1ccd15a488abe916e"
+    },
+    {
+      "id": "bedrock",
+      "model_count": 343,
+      "sha256": "da28a362af2e766b1da4e31bfd8b10ddedc2ef8836c94a9b837eeae12f6423ce"
+    },
+    {
+      "id": "cerebras",
+      "model_count": 7,
+      "sha256": "6744c25713c93009d07997f49263ec2218208538d5093073231ba49e03eebee9"
+    },
+    {
+      "id": "cloudflare",
+      "model_count": 4,
+      "sha256": "1be44e5910607254f8ad2055aa097e86ff3f609dde5c205e39e771cf78485683"
+    },
+    {
+      "id": "cohere",
+      "model_count": 17,
+      "sha256": "516ec1198c42540ab43fccdfd9d036bd68c8532a7b5d529dd8552afb093ed61a"
+    },
+    {
+      "id": "dashscope",
+      "model_count": 23,
+      "sha256": "b2eb06f99b0ad32593e018bb6debd4cbb63bf46433e35210aedf772d5fe46b1a"
+    },
+    {
+      "id": "databricks",
+      "model_count": 28,
+      "sha256": "db942668ffc7f38f2d7406352e7b64924646c5c583b7e45f709f393e9c6ab142"
+    },
+    {
+      "id": "deepgram",
+      "model_count": 36,
+      "sha256": "21429e35d8e838e0da8c7bd0074643fb03d88bf1f137d2d749cb343f50e9ba06"
+    },
+    {
+      "id": "deepinfra",
+      "model_count": 67,
+      "sha256": "809207459aee794f0a71905d7f3aa2fa99d883872b1c9f227ef1d54f1b61967f"
+    },
+    {
+      "id": "deepseek",
+      "model_count": 6,
+      "sha256": "c8ebf312b9a76bb92e52028a859f11e5d234692f11ff6e00c7f76d8477dd11f8"
+    },
+    {
+      "id": "elevenlabs",
+      "model_count": 4,
+      "sha256": "172fb7c9aa85196942c3b97fd82f7b890dbcc2d7dbfa8114973c37fd7bd34131"
+    },
+    {
+      "id": "fal_ai",
+      "model_count": 12,
+      "sha256": "96e6e89f5314107240b418ac0f6d9dc3af5397277d786a9b2dd5590a7e51cd6a"
+    },
+    {
+      "id": "featherless_ai",
+      "model_count": 2,
+      "sha256": "495fdf312032bcf9ff0d16e0134307b5cd8fa065ff91f579507bcdc159520408"
+    },
+    {
+      "id": "fireworks",
+      "model_count": 273,
+      "sha256": "bd62f50c743d63188ea888f1fbbe9e32562f515be15cc52e0841dec0c10db052"
+    },
+    {
+      "id": "friendliai",
+      "model_count": 2,
+      "sha256": "031f2fda44da30cf5a42420740ef6d0711726f186ce1e52f9dde5dbecda5211c"
+    },
+    {
+      "id": "gemini",
+      "model_count": 78,
+      "sha256": "3a8097ba51dfe4e50ac908e23b9af6ab85873519add0066e8b87f6ace2c9d39d"
+    },
+    {
+      "id": "gigachat",
+      "model_count": 6,
+      "sha256": "f44b647cad504a356f8a415e6bc469a3cc3ffb0cfafd721169da43075fdfd877"
+    },
+    {
+      "id": "github_copilot",
+      "model_count": 31,
+      "sha256": "4cd270bdea03be0c31bff310b8ae43c2494a9435b3bbac9672cf140df410efb4"
+    },
+    {
+      "id": "gmi",
+      "model_count": 17,
+      "sha256": "7a21b01a4f066becfbc1e83b7c7ec76ca75709e96f7207c58e8e3aa60d7fd97c"
+    },
+    {
+      "id": "gradient_ai",
+      "model_count": 13,
+      "sha256": "19e32d69c70aa30653e5914e712fcfb4d6ade8daba999e65e827d9c04aadd421"
+    },
+    {
+      "id": "groq",
+      "model_count": 14,
+      "sha256": "398d7e3b1729fec21a79a0d0606fc4277bfb507644528626c04b8a50d6912553"
+    },
+    {
+      "id": "heroku",
+      "model_count": 4,
+      "sha256": "8284d1e3dce9f579a46922c8987f06ddbbf8893594720800d6c93f48a24bffd0"
+    },
+    {
+      "id": "hugging_face",
+      "model_count": 3,
+      "sha256": "308338bd31301140e33d23d8fb7b4cd8b5fee04a3d7c4aca149a2fcf3166a5ab"
+    },
+    {
+      "id": "hyperbolic",
+      "model_count": 16,
+      "sha256": "33ddd196b23d8a375e78cc4a506d03b94cbc5a986e91658a67288ab0697b676d"
+    },
+    {
+      "id": "lambda_ai",
+      "model_count": 20,
+      "sha256": "6765608831e838beca7749df4bd92ab2f01591b7f77c5f6a6b48a9bbedcc73cb"
+    },
+    {
+      "id": "lemonade",
+      "model_count": 5,
+      "sha256": "6d09238af2293bd4b66c0b3a6b02a28505b5e51a9f2f162b95ea5f9d6483fe6e"
+    },
+    {
+      "id": "llamagate",
+      "model_count": 16,
+      "sha256": "51279974694514cdbf04f3718218e3c195b0ae6ec875c420b4bb13f7c4c49a0f"
+    },
+    {
+      "id": "meta_llama",
+      "model_count": 4,
+      "sha256": "725aa747a82a3df8ccd53a13e7612a21d1c1843560626948365e930b01967418"
+    },
+    {
+      "id": "minimax",
+      "model_count": 9,
+      "sha256": "2c7fdf328468961a00a7254990d3908d16c3d94000150fba60a832acfbc7078f"
+    },
+    {
+      "id": "mistral",
+      "model_count": 43,
+      "sha256": "f5ce4a05b0a0529b6ebf44337abb4adf598ca031173fa342649304a2dabd035a"
+    },
+    {
+      "id": "moonshot",
+      "model_count": 21,
+      "sha256": "8437edd233560d9dc24bf94899e1ec4d0a3840b822fbe9ee93f6179fb6299afc"
+    },
+    {
+      "id": "morph",
+      "model_count": 2,
+      "sha256": "c065883df0b95804acae0452b786a3324f6cddac16e5f00bdf6b6bbd6876481d"
+    },
+    {
+      "id": "nlp_cloud",
+      "model_count": 2,
+      "sha256": "b270df045c3f75804bc044be01cccfd2ce9419bc699141926bd38e2a6bcb133c"
+    },
+    {
+      "id": "novita",
+      "model_count": 83,
+      "sha256": "e8c354fdf1a16638206c7e40c702239df1560c5103780f1506ff850fc3bef050"
+    },
+    {
+      "id": "nscale",
+      "model_count": 16,
+      "sha256": "281ff1fddaf1d8d5f1277fd310b5e0bdeef80ce5771991f5c7e745a6883ac359"
+    },
+    {
+      "id": "nvidia_nim",
+      "model_count": 3,
+      "sha256": "f56d0cb75e50abf7654998a6b57b7c35f2a12915c356a620dbd93094973aa28e"
+    },
+    {
+      "id": "oci",
+      "model_count": 13,
+      "sha256": "111f89103597df2532786b076184d34625c25966d259b1a208926f721d8ab7aa"
+    },
+    {
+      "id": "ollama",
+      "model_count": 29,
+      "sha256": "fe7bdfd6c0de6ce927428bb2af524d11780674c73ce9d103e08b8c96a8c37379"
+    },
+    {
+      "id": "ollama_cloud",
+      "model_count": 4,
+      "sha256": "7422d50c75a62e91510086ace8b776ee8b98d1fc8748f13f35246dea91f17392"
+    },
+    {
+      "id": "openai",
+      "model_count": 156,
+      "sha256": "4ce70fcef02b1dc42f12e34c8e57cc66a17be79f2220ba7d306078c19c0ffc06"
+    },
+    {
+      "id": "openrouter",
+      "model_count": 78,
+      "sha256": "127e6ebc7ad469d91c95aae5e30e0502440869d8928ac07d3b0c7f1b7ff31b15"
+    },
+    {
+      "id": "ovhcloud",
+      "model_count": 15,
+      "sha256": "ca7468ee20820dba1da88d3c3939c79472576c08f8a7d9e00b18a0467e557860"
+    },
+    {
+      "id": "palm",
+      "model_count": 6,
+      "sha256": "400e4bbbd21c38153b20729a135bd310d8bfd0b13b8d6de65fa19bc8fec60d3b"
+    },
+    {
+      "id": "perplexity",
+      "model_count": 42,
+      "sha256": "bc7411fa59e3ab293797862f6bc899a44a13a1b11763dab0817a2716520fb3c2"
+    },
+    {
+      "id": "publicai",
+      "model_count": 9,
+      "sha256": "8d74426062dea4a97423afa4fb4e18b612f8d72cc10caef278a2e0b0ac2a2f3f"
+    },
+    {
+      "id": "qwen",
+      "model_count": 5,
+      "sha256": "89bbd8054243c38d6a67c68c0378670361f6faed4ab5cd10643a3571e0386d45"
+    },
+    {
+      "id": "recraft",
+      "model_count": 2,
+      "sha256": "d7374b04b81f39e7b4add3c27bb03ebe8c3d690f06e98f73b5f7552731d9dbc3"
+    },
+    {
+      "id": "replicate",
+      "model_count": 40,
+      "sha256": "d1def2c3b5e21c21efa7897b1e413e83b093759c0eed64676d39940efe157f6d"
+    },
+    {
+      "id": "runwayml",
+      "model_count": 6,
+      "sha256": "6ab5c1fb583c75caf8047a796fe2e9ff40cfc397213470362873664e389db45b"
+    },
+    {
+      "id": "sagemaker",
+      "model_count": 6,
+      "sha256": "4680559ed36e3e28f2a011b9ba7dd3da3228adb44ec0916a1cddabed7fb63cd1"
+    },
+    {
+      "id": "sambanova",
+      "model_count": 16,
+      "sha256": "2526bbfad7402b0e14d72679788ecc19b196fdd36b5c5675da9e130fd0317e2f"
+    },
+    {
+      "id": "sarvam",
+      "model_count": 1,
+      "sha256": "a425de88ee6d897cdac01cd5f68e835c49ba1450e5a30c709289852c151abccc"
+    },
+    {
+      "id": "snowflake",
+      "model_count": 24,
+      "sha256": "1522e3649d1f6b69aeb91642febfffdf33051406894bfa0e236e89192829b7ac"
+    },
+    {
+      "id": "stability",
+      "model_count": 23,
+      "sha256": "32deb8ff61be3756cac284991a41afcd41e3cdf9943ad2c8194eb15fb9a2a748"
+    },
+    {
+      "id": "together",
+      "model_count": 42,
+      "sha256": "8e8137c23bae95dba4c35873d1c79a5bd0d4ad2e9ddd62ff18468b107093df6c"
+    },
+    {
+      "id": "v0",
+      "model_count": 3,
+      "sha256": "5cd57425f41b196d098b0aad590437eb82e215b769eb95fa4d19d98b18358043"
+    },
+    {
+      "id": "vercel_ai_gateway",
+      "model_count": 101,
+      "sha256": "cc1b1a9dc757417f48f4ecb791c87900b06451c34627813e9df7aae5c7a1ec07"
+    },
+    {
+      "id": "vertex_ai",
+      "model_count": 171,
+      "sha256": "dfef21459bb69ef6a244fb181380b84c177650a4b08018050d9647afc8609f33"
+    },
+    {
+      "id": "vertex_ai-ai21_models",
+      "model_count": 5,
+      "sha256": "ca12e112d86c10644c34b11337499594708447bde3fb12d4498df5163e0f643a"
+    },
+    {
+      "id": "vertex_ai-deepseek_models",
+      "model_count": 3,
+      "sha256": "8ad4f5fff0e1d60996ced11f09d4d78a02aa9a11ae4648193b059ff2c2b63ef0"
+    },
+    {
+      "id": "vertex_ai-minimax_models",
+      "model_count": 1,
+      "sha256": "b122c9bba4e84aebf07c5a82c1774ee5d401efd0c8c04f609c008187be16d040"
+    },
+    {
+      "id": "vertex_ai-moonshot_models",
+      "model_count": 1,
+      "sha256": "50a7d317e008400d897497331b3399b7ebeda5740485e8166d50406816f82a50"
+    },
+    {
+      "id": "vertex_ai-openai_models",
+      "model_count": 2,
+      "sha256": "5736eb3e47a10766faba001b91f115266cc2d218ad5f0e3ca41538ace8680187"
+    },
+    {
+      "id": "vertex_ai-qwen_models",
+      "model_count": 4,
+      "sha256": "a4d90f826c2c5bd7d659c3e667dfae33b0db693256c1f7bce42c1ce343b4b31e"
+    },
+    {
+      "id": "vertex_ai-video-models",
+      "model_count": 9,
+      "sha256": "fa9ea7fa14ec6d48f7533690c45c15847e4f6895ed42487bd653b2f6a675d9d8"
+    },
+    {
+      "id": "vertex_ai-zai_models",
+      "model_count": 2,
+      "sha256": "b97e86484321be99bd65296639188113abcce6be22530bb3eac61a65b21e91b4"
+    },
+    {
+      "id": "volcengine",
+      "model_count": 8,
+      "sha256": "a4668dfeefc1cf09a9660979335c370f84d2ee67c90d283592ff354731adadb2"
+    },
+    {
+      "id": "voyage",
+      "model_count": 15,
+      "sha256": "6a549577c101f76cb052058b30253fc1d9360afb8c1b5e280c3e20c3a7b122f5"
+    },
+    {
+      "id": "wandb",
+      "model_count": 14,
+      "sha256": "5ce6b0626c3cfdd8f5536bd8188bde70d7d74ea57e6895094c59cd46d7d13d16"
+    },
+    {
+      "id": "watsonx",
+      "model_count": 29,
+      "sha256": "586f53941e9cdd919eeaa8a20cbe80672edca9289d39309a2184ff22f7683073"
+    },
+    {
+      "id": "xai",
+      "model_count": 32,
+      "sha256": "35f139315c78d0cdee8246ce30d1b7196abc28e0747f510bc3a40dbf0a3bc952"
+    },
+    {
+      "id": "zai",
+      "model_count": 9,
+      "sha256": "e99b49fc2ba3162cc0383bdd11da5a14659d44c4f7ba1c8b1af2124495cdcc8c"
+    }
+  ],
+  "stats": {
+    "total_models": 2468,
+    "total_providers": 82
+  }
+}

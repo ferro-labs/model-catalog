@@ -1,0 +1,39 @@
+provider: fireworks
+model_id: fireworks_ai/WhereIsAI/UAE-Large-V1
+display_name: fireworks_ai/WhereIsAI/UAE-Large-V1
+mode: embedding
+context_window: 512
+max_output_tokens: 0
+pricing:
+    input_per_m_tokens: null
+    output_per_m_tokens: null
+    cache_read_per_m_tokens: null
+    cache_write_per_m_tokens: null
+    reasoning_per_m_tokens: null
+    image_per_tile: null
+    audio_input_per_minute: null
+    audio_output_per_character: null
+    embedding_per_m_tokens: 0.016
+    finetune_train_per_m_tokens: null
+    finetune_input_per_m_tokens: null
+    finetune_output_per_m_tokens: null
+capabilities:
+    vision: false
+    audio_input: false
+    audio_output: false
+    function_calling: false
+    parallel_tool_calls: false
+    json_mode: false
+    response_schema: false
+    prompt_caching: false
+    reasoning: false
+    streaming: true
+    finetuneable: false
+lifecycle:
+    status: ga
+    deprecation_date: null
+    sunset_date: null
+    successor: null
+source: https://fireworks.ai/pricing
+updated_at: "2026-02-28"
+tier: standard

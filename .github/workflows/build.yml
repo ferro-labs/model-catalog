@@ -1,0 +1,84 @@
+name: Build & Release
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'providers/**'
+      - 'cmd/**'
+      - 'catalog/**'
+      - 'scrape/**'
+      - 'internal/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      - name: Validate
+        run: go run ./cmd/ferrocat validate
+
+      - name: Build
+        run: go run ./cmd/ferrocat build --output dist/
+
+      - name: Determine version
+        id: version
+        run: |
+          VERSION="v$(date -u +%Y.%m.%d)"
+          SUFFIX=""
+          COUNTER=0
+          while git tag -l "${VERSION}${SUFFIX}" | grep -q .; do
+            COUNTER=$((COUNTER + 1))
+            SUFFIX=".${COUNTER}"
+          done
+          FINAL="${VERSION}${SUFFIX}"
+          echo "version=${FINAL}" >> "$GITHUB_OUTPUT"
+          echo "Version: ${FINAL}"
+
+      - name: Read stats from manifest
+        id: stats
+        run: |
+          MODELS=$(jq -r '.stats.total_models' dist/manifest.json)
+          PROVIDERS=$(jq -r '.stats.total_providers' dist/manifest.json)
+          echo "models=${MODELS}" >> "$GITHUB_OUTPUT"
+          echo "providers=${PROVIDERS}" >> "$GITHUB_OUTPUT"
+
+      - name: Commit dist
+        run: |
+          git config user.email "ferrocat-bot@ferrolabs.ai"
+          git config user.name "ferrocat-bot"
+          git add dist/
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "build: regenerate dist ${{ steps.version.outputs.version }} [skip ci]"
+          git push
+
+      - name: Tag
+        run: |
+          git tag ${{ steps.version.outputs.version }}
+          git push origin ${{ steps.version.outputs.version }}
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.version }}
+          name: ${{ steps.version.outputs.version }}
+          body: |
+            Catalog release ${{ steps.version.outputs.version }}
+
+            - **Models:** ${{ steps.stats.outputs.models }}
+            - **Providers:** ${{ steps.stats.outputs.providers }}
+          files: |
+            dist/catalog.json
+            dist/manifest.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
