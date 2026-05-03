@@ -1,9 +1,7 @@
+extends: anthropic/claude-sonnet-4-5-20250929
 provider: bedrock
 model_id: anthropic.claude-sonnet-4-5-20250929-v1:0
 display_name: anthropic.claude-sonnet-4-5-20250929-v1:0
-mode: chat
-context_window: 200000
-max_output_tokens: 64000
 pricing:
     input_per_m_tokens: 3
     output_per_m_tokens: 15
@@ -34,6 +32,4 @@ lifecycle:
     deprecation_date: null
     sunset_date: null
     successor: null
-source: ""
-updated_at: "2026-02-28"
 tier: standard

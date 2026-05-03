@@ -519,7 +519,7 @@
     },
     "lifecycle": {
       "status": "ga",
-      "deprecation_date": "2025-06-06",
+      "deprecation_date": null,
       "sunset_date": null,
       "successor": null
     },

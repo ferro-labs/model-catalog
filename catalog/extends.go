@@ -95,28 +95,10 @@ func mergeEntries(base, wrapper Entry) (Entry, error) {
 	// distinguish "explicitly false" from "not set").
 	result.Capabilities = wrapper.Capabilities
 
-	// Lifecycle: wrapper wins for each field if non-empty/non-nil.
-	result.Lifecycle = mergeLifecycle(base.Lifecycle, wrapper.Lifecycle)
+	// Lifecycle: full replacement from wrapper. Like pricing/capabilities,
+	// YAML deserialization can't distinguish "not set" from "explicitly null"
+	// for *string fields, so wrapper must specify all lifecycle fields.
+	result.Lifecycle = wrapper.Lifecycle
 
 	return result, nil
-}
-
-// mergeLifecycle merges lifecycle fields. Wrapper wins if non-empty/non-nil.
-func mergeLifecycle(base, wrapper Lifecycle) Lifecycle {
-	result := base
-
-	if wrapper.Status != "" {
-		result.Status = wrapper.Status
-	}
-	if wrapper.DeprecationDate != nil {
-		result.DeprecationDate = wrapper.DeprecationDate
-	}
-	if wrapper.SunsetDate != nil {
-		result.SunsetDate = wrapper.SunsetDate
-	}
-	if wrapper.Successor != nil {
-		result.Successor = wrapper.Successor
-	}
-
-	return result
 }

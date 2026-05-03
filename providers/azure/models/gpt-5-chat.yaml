@@ -27,5 +27,10 @@ capabilities:
     reasoning: true
     streaming: true
     finetuneable: false
+lifecycle:
+    status: ga
+    deprecation_date: null
+    sunset_date: null
+    successor: null
 source: https://azure.microsoft.com/en-us/blog/gpt-5-in-azure-ai-foundry-the-future-of-ai-apps-and-agents-starts-here/
 tier: standard

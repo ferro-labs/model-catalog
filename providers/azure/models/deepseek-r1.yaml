@@ -28,5 +28,10 @@ capabilities:
     reasoning: true
     streaming: true
     finetuneable: false
+lifecycle:
+    status: ga
+    deprecation_date: null
+    sunset_date: null
+    successor: null
 source: https://techcommunity.microsoft.com/blog/machinelearningblog/deepseek-r1-improved-performance-higher-limits-and-transparent-pricing/4386367
 tier: flagship

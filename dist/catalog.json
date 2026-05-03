@@ -7383,7 +7383,7 @@
     },
     "lifecycle": {
       "status": "ga",
-      "deprecation_date": "2026-03-26",
+      "deprecation_date": null,
       "sunset_date": null,
       "successor": null
     },
@@ -7427,7 +7427,7 @@
     },
     "lifecycle": {
       "status": "ga",
-      "deprecation_date": "2025-06-06",
+      "deprecation_date": null,
       "sunset_date": null,
       "successor": null
     },
@@ -7471,7 +7471,7 @@
     },
     "lifecycle": {
       "status": "ga",
-      "deprecation_date": "2026-03-26",
+      "deprecation_date": null,
       "sunset_date": null,
       "successor": null
     },
@@ -10419,7 +10419,7 @@
     },
     "lifecycle": {
       "status": "ga",
-      "deprecation_date": "2026-02-28",
+      "deprecation_date": null,
       "sunset_date": null,
       "successor": null
     },
@@ -11431,7 +11431,7 @@
     },
     "lifecycle": {
       "status": "ga",
-      "deprecation_date": "2025-10-27",
+      "deprecation_date": null,
       "sunset_date": null,
       "successor": null
     },
@@ -54199,7 +54199,7 @@
     },
     "lifecycle": {
       "status": "ga",
-      "deprecation_date": "2025-06-06",
+      "deprecation_date": null,
       "sunset_date": null,
       "successor": null
     },

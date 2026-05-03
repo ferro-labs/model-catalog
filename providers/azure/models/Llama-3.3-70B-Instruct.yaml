@@ -28,5 +28,10 @@ capabilities:
     reasoning: false
     streaming: true
     finetuneable: false
+lifecycle:
+    status: ga
+    deprecation_date: null
+    sunset_date: null
+    successor: null
 source: https://azuremarketplace.microsoft.com/en/marketplace/apps/metagenai.llama-3-3-70b-instruct-offer?tab=Overview
 tier: standard

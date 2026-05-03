@@ -28,5 +28,10 @@ capabilities:
     reasoning: false
     streaming: true
     finetuneable: false
+lifecycle:
+    status: deprecated
+    deprecation_date: 2025-05-24
+    sunset_date: null
+    successor: null
 source: https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#foundation_models
 tier: standard

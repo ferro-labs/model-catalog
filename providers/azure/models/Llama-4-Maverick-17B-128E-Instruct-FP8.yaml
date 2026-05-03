@@ -28,5 +28,10 @@ capabilities:
     reasoning: false
     streaming: true
     finetuneable: false
+lifecycle:
+    status: ga
+    deprecation_date: null
+    sunset_date: null
+    successor: null
 source: https://azure.microsoft.com/en-us/blog/introducing-the-llama-4-herd-in-azure-ai-foundry-and-azure-databricks/
 tier: standard

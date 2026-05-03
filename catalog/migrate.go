@@ -4,10 +4,60 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 
 	"gopkg.in/yaml.v3"
 )
+
+var versionSuffixRe = regexp.MustCompile(`-v\d+:\d+$`)
+
+var providerToBedrockVendor = map[string]string{
+	"anthropic":  "anthropic",
+	"meta_llama": "meta",
+	"mistral":    "mistral",
+	"cohere":     "cohere",
+	"ai21":       "ai21",
+}
+
+// extractCoreName extracts the core model name from a Bedrock-style model ID
+// by stripping the vendor prefix and version suffix.
+// "us.anthropic.claude-3-haiku-20240307-v1:0" with vendor "anthropic"
+// returns "claude-3-haiku-20240307".
+func extractCoreName(modelID, vendor string) string {
+	needle := vendor + "."
+	idx := strings.Index(modelID, needle)
+	if idx < 0 {
+		return ""
+	}
+	core := modelID[idx+len(needle):]
+	core = versionSuffixRe.ReplaceAllString(core, "")
+	return core
+}
+
+// findBaseMatch tries to match a wrapper model ID against base entries.
+// Exact match first, then normalized matching for Bedrock-style IDs.
+func findBaseMatch(wrapperModelID string, baseEntries map[string]Entry, baseProvider string) (string, Entry, bool) {
+	if entry, ok := baseEntries[wrapperModelID]; ok {
+		return wrapperModelID, entry, true
+	}
+
+	vendor, ok := providerToBedrockVendor[baseProvider]
+	if !ok {
+		return "", Entry{}, false
+	}
+
+	coreName := extractCoreName(wrapperModelID, vendor)
+	if coreName == "" {
+		return "", Entry{}, false
+	}
+
+	if entry, ok := baseEntries[coreName]; ok {
+		return coreName, entry, true
+	}
+
+	return "", Entry{}, false
+}
 
 // MigrateExtends migrates wrapper provider models to use extends: base/*
 // wrappers. It reads models from both providers, identifies common model_ids,
@@ -29,30 +79,28 @@ func MigrateExtends(providersDir, wrapperProvider, baseProvider string, dryRun b
 	}
 
 	migrated := 0
+	skipped := 0
 	for modelID, wrapperEntry := range wrapperEntries {
-		// Skip models that already have an extends reference.
 		if wrapperEntry.Extends != "" {
 			continue
 		}
 
-		baseEntry, ok := baseEntries[modelID]
+		baseModelID, baseEntry, ok := findBaseMatch(modelID, baseEntries, baseProvider)
 		if !ok {
+			skipped++
 			continue
 		}
 
 		if dryRun {
 			fmt.Printf("[dry-run] Would migrate %s/%s → extends: %s/%s\n",
-				wrapperProvider, modelID, baseProvider, modelID)
+				wrapperProvider, modelID, baseProvider, baseModelID)
 			migrated++
 			continue
 		}
 
-		// Compute the minimal wrapper YAML.
-		wrapperYAML := ComputeWrapperYAML(baseEntry, wrapperEntry, modelID, baseProvider)
+		wrapperYAML := ComputeWrapperYAML(baseEntry, wrapperEntry, baseModelID, baseProvider)
 
-		// Write the wrapper YAML to the wrapper provider file.
-		// Use the same filename convention: replace / with __ for model_ids with slashes.
-		filename := strings.ReplaceAll(modelID, "/", "__") + ".yaml"
+		filename := SanitizeFilename(modelID) + ".yaml"
 		outPath := filepath.Join(wrapperDir, filename)
 		if err := os.WriteFile(outPath, wrapperYAML, 0o644); err != nil {
 			return fmt.Errorf("write wrapper %s: %w", outPath, err)
@@ -62,13 +110,111 @@ func MigrateExtends(providersDir, wrapperProvider, baseProvider string, dryRun b
 	}
 
 	if dryRun {
-		fmt.Printf("[dry-run] Would migrate %d %s models to extends: %s/* wrappers\n",
-			migrated, wrapperProvider, baseProvider)
+		fmt.Printf("[dry-run] Would migrate %d %s models to extends: %s/* wrappers (%d skipped — no base match)\n",
+			migrated, wrapperProvider, baseProvider, skipped)
 	} else {
-		fmt.Printf("Migrated %d %s models to extends: %s/* wrappers\n",
-			migrated, wrapperProvider, baseProvider)
+		fmt.Printf("Migrated %d %s models to extends: %s/* wrappers (%d skipped — no base match)\n",
+			migrated, wrapperProvider, baseProvider, skipped)
 	}
 	return nil
+}
+
+// BackfillExtendsLifecycle adds full lifecycle blocks to extends wrappers
+// that are missing them. It resolves the correct lifecycle by merging
+// base and wrapper values. This is needed because the extends resolver does
+// full replacement of lifecycle (same as pricing/capabilities).
+func BackfillExtendsLifecycle(providersDir string) (int, error) {
+	allEntries := make(map[string]Entry)
+	provDirs, err := filepath.Glob(filepath.Join(providersDir, "*/models"))
+	if err != nil {
+		return 0, fmt.Errorf("glob providers: %w", err)
+	}
+	for _, modelsDir := range provDirs {
+		entries, err := ReadProviderModels(modelsDir)
+		if err != nil {
+			return 0, fmt.Errorf("read %s: %w", modelsDir, err)
+		}
+		provider := filepath.Base(filepath.Dir(modelsDir))
+		for modelID, entry := range entries {
+			allEntries[provider+"/"+modelID] = entry
+		}
+	}
+
+	fixed := 0
+	for key, entry := range allEntries {
+		if entry.Extends == "" {
+			continue
+		}
+
+		base, ok := allEntries[entry.Extends]
+		if !ok {
+			continue
+		}
+
+		// Compute resolved lifecycle: base values as defaults, wrapper overrides.
+		resolved := base.Lifecycle
+		if entry.Lifecycle.Status != "" {
+			resolved.Status = entry.Lifecycle.Status
+		}
+		if entry.Lifecycle.DeprecationDate != nil {
+			resolved.DeprecationDate = entry.Lifecycle.DeprecationDate
+		}
+		if entry.Lifecycle.SunsetDate != nil {
+			resolved.SunsetDate = entry.Lifecycle.SunsetDate
+		}
+		if entry.Lifecycle.Successor != nil {
+			resolved.Successor = entry.Lifecycle.Successor
+		}
+
+		provider := strings.SplitN(key, "/", 2)[0]
+		filename := SanitizeFilename(entry.ModelID) + ".yaml"
+		path := filepath.Join(providersDir, provider, "models", filename)
+
+		data, err := os.ReadFile(path)
+		if err != nil {
+			return 0, fmt.Errorf("read %s: %w", path, err)
+		}
+
+		content := string(data)
+		if strings.Contains(content, "\nlifecycle:") || strings.Contains(content, "\nlifecycle:\n") {
+			continue
+		}
+
+		lcBlock := fmt.Sprintf("lifecycle:\n    status: %s\n    deprecation_date: %s\n    sunset_date: %s\n    successor: %s\n",
+			resolved.Status,
+			ptrStringToYAML(resolved.DeprecationDate),
+			ptrStringToYAML(resolved.SunsetDate),
+			ptrStringToYAML(resolved.Successor),
+		)
+
+		lines := strings.Split(strings.TrimRight(content, "\n"), "\n")
+		var result []string
+		inserted := false
+		for _, line := range lines {
+			if !inserted && (strings.HasPrefix(line, "source:") || strings.HasPrefix(line, "updated_at:") || strings.HasPrefix(line, "tier:")) {
+				result = append(result, strings.TrimRight(lcBlock, "\n"))
+				inserted = true
+			}
+			result = append(result, line)
+		}
+		if !inserted {
+			result = append(result, strings.TrimRight(lcBlock, "\n"))
+		}
+
+		if err := os.WriteFile(path, []byte(strings.Join(result, "\n")+"\n"), 0o644); err != nil {
+			return 0, fmt.Errorf("write %s: %w", path, err)
+		}
+		fixed++
+	}
+
+	return fixed, nil
+}
+
+func ptrStringToYAML(s *string) string {
+	if s == nil {
+		return "null"
+	}
+	return *s
 }
 
 // ReadProviderModels reads all YAML files in a models directory and returns
@@ -101,7 +247,7 @@ func ReadProviderModels(modelsDir string) (map[string]Entry, error) {
 // ComputeWrapperYAML computes the minimal YAML for a wrapper entry.
 // It includes only the fields that differ from the base entry, plus the
 // mandatory extends/provider/model_id/display_name/tier fields.
-func ComputeWrapperYAML(base, wrapper Entry, modelID, baseProvider string) []byte {
+func ComputeWrapperYAML(base, wrapper Entry, baseModelID, baseProvider string) []byte {
 	// Build a minimal wrapper struct for YAML serialization.
 	// We use an ordered map approach to control field order.
 	var doc yaml.Node
@@ -110,10 +256,9 @@ func ComputeWrapperYAML(base, wrapper Entry, modelID, baseProvider string) []byt
 	mapping := &yaml.Node{Kind: yaml.MappingNode}
 	doc.Content = append(doc.Content, mapping)
 
-	// Always include these fields.
-	AddStringField(mapping, "extends", baseProvider+"/"+modelID)
+	AddStringField(mapping, "extends", baseProvider+"/"+baseModelID)
 	AddStringField(mapping, "provider", wrapper.Provider)
-	AddStringField(mapping, "model_id", modelID)
+	AddStringField(mapping, "model_id", wrapper.ModelID)
 	AddStringField(mapping, "display_name", wrapper.DisplayName)
 
 	// Mode: never include (cannot be overridden per ResolveExtends).
@@ -146,14 +291,14 @@ func ComputeWrapperYAML(base, wrapper Entry, modelID, baseProvider string) []byt
 		capsNode,
 	)
 
-	// Lifecycle: include only fields that differ.
-	lifecycleNode := computeLifecycleDiff(base.Lifecycle, wrapper.Lifecycle)
-	if lifecycleNode != nil {
-		mapping.Content = append(mapping.Content,
-			&yaml.Node{Kind: yaml.ScalarNode, Value: "lifecycle"},
-			lifecycleNode,
-		)
-	}
+	// Lifecycle: ALWAYS include all fields. Like pricing/capabilities, YAML
+	// deserialization can't distinguish "not set" from "explicitly null" for
+	// *string fields, so the wrapper must specify every lifecycle field.
+	lifecycleNode := LifecycleToYAML(wrapper.Lifecycle)
+	mapping.Content = append(mapping.Content,
+		&yaml.Node{Kind: yaml.ScalarNode, Value: "lifecycle"},
+		lifecycleNode,
+	)
 
 	// source: include only if different.
 	if wrapper.Source != base.Source && wrapper.Source != "" {
@@ -174,45 +319,3 @@ func ComputeWrapperYAML(base, wrapper Entry, modelID, baseProvider string) []byt
 	return out
 }
 
-// computeLifecycleDiff returns a YAML mapping node with only the lifecycle fields
-// that differ between base and wrapper. Returns nil if no differences.
-func computeLifecycleDiff(base, wrapper Lifecycle) *yaml.Node {
-	mapping := &yaml.Node{Kind: yaml.MappingNode}
-	hasDiff := false
-
-	if wrapper.Status != base.Status && wrapper.Status != "" {
-		hasDiff = true
-		AddStringField(mapping, "status", wrapper.Status)
-	}
-
-	if ptrStringDiffers(base.DeprecationDate, wrapper.DeprecationDate) {
-		hasDiff = true
-		AddPtrStringField(mapping, "deprecation_date", wrapper.DeprecationDate)
-	}
-
-	if ptrStringDiffers(base.SunsetDate, wrapper.SunsetDate) {
-		hasDiff = true
-		AddPtrStringField(mapping, "sunset_date", wrapper.SunsetDate)
-	}
-
-	if ptrStringDiffers(base.Successor, wrapper.Successor) {
-		hasDiff = true
-		AddPtrStringField(mapping, "successor", wrapper.Successor)
-	}
-
-	if !hasDiff {
-		return nil
-	}
-	return mapping
-}
-
-// ptrStringDiffers returns true if two *string pointers have different values.
-func ptrStringDiffers(a, b *string) bool {
-	if a == nil && b == nil {
-		return false
-	}
-	if a == nil || b == nil {
-		return true
-	}
-	return *a != *b
-}

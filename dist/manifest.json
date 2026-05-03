@@ -1,8 +1,8 @@
 {
-  "version": "v2026.04.30",
+  "version": "v2026.05.03",
   "schema_version": 1,
-  "generated_at": "2026-04-30T11:55:22Z",
-  "catalog_sha256": "1b02ebde08bf3df84ff8d34c3164dfdaf29489ecb2ddc5829028a563c3e5284d",
+  "generated_at": "2026-05-03T06:38:44Z",
+  "catalog_sha256": "ea796fb9e1b2328899cff20426f331c2a62c843089ac5a003a1f478f19aa1755",
   "providers": [
     {
       "id": "ai21",
@@ -47,7 +47,7 @@
     {
       "id": "azure",
       "model_count": 227,
-      "sha256": "196f8c189c13ae0273d0c66eb7685d4c95180be1bda44a829fc4b5b853b0ec3b"
+      "sha256": "c42e82c41a41de8920c6695d755f4f15d00ef3c11760540e74f1aa1a02edfef9"
     },
     {
       "id": "azure_foundry",
@@ -142,7 +142,7 @@
     {
       "id": "github_copilot",
       "model_count": 31,
-      "sha256": "4cd270bdea03be0c31bff310b8ae43c2494a9435b3bbac9672cf140df410efb4"
+      "sha256": "668857d300b12870c0fcb0ca15d1acedf2e7dce7bb11ce60e53075ffc7882d43"
     },
     {
       "id": "gmi",
