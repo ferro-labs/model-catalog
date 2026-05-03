@@ -1,7 +1,7 @@
 <div align="center">
   <table border="0" cellspacing="0" cellpadding="0"><tr>
-    <td rowspan="2"><img src="https://raw.githubusercontent.com/ferro-labs/ai-gateway/refs/heads/main/docs/logo.png" alt="Ferro Labs" width="64" /></td>
-    <td align="center"><h1>Ferro Labs - Model Catalog</h1></td>
+    <td rowspan="2"><img src="https://raw.githubusercontent.com/ferro-labs/ai-gateway/refs/heads/main/docs/logo.png" alt="Ferro Labs AI" width="64" /></td>
+    <td align="center"><h1>Ferro Labs AI - Model Catalog</h1></td>
   </tr><tr>
     <td align="center"><strong>Open-Source LLM Pricing & Capability Database</strong></td>
   </tr></table>
