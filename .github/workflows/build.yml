@@ -1,4 +1,4 @@
-name: Build & Release
+name: Build
 on:
   push:
     branches: [main]
@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   build:
@@ -21,18 +22,13 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
+
       - uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
 
       - name: Validate
         run: go run ./cmd/ferrocat validate
-
-      - name: Save previous manifest
-        run: |
-          if [ -f dist/manifest.json ]; then
-            cp dist/manifest.json /tmp/prev_manifest.json
-          fi
 
       - name: Build
         run: go run ./cmd/ferrocat build --output dist/
@@ -49,116 +45,19 @@ jobs:
           done
           FINAL="${VERSION}${SUFFIX}"
           echo "version=${FINAL}" >> "$GITHUB_OUTPUT"
-          echo "Version: ${FINAL}"
 
-      - name: Generate release notes
-        id: notes
-        run: |
-          MODELS=$(jq -r '.stats.total_models' dist/manifest.json)
-          PROVIDERS=$(jq -r '.stats.total_providers' dist/manifest.json)
-          VERSION="${{ steps.version.outputs.version }}"
-
-          # Top providers by model count
-          TOP_PROVIDERS=$(jq -r '[.providers | sort_by(-.model_count) | .[:10][] | "\(.id) (\(.model_count))"] | join(", ")' dist/manifest.json)
-
-          # Count extends wrappers
-          EXTENDS=$(grep -rl "^extends:" providers/ 2>/dev/null | wc -l | tr -d ' ')
-
-          # Diff against previous manifest if available
-          DIFF_SECTION=""
-          if [ -f /tmp/prev_manifest.json ]; then
-            PREV_MODELS=$(jq -r '.stats.total_models' /tmp/prev_manifest.json)
-            PREV_PROVIDERS=$(jq -r '.stats.total_providers' /tmp/prev_manifest.json)
-            ADDED_MODELS=$((MODELS - PREV_MODELS))
-            ADDED_PROVIDERS=$((PROVIDERS - PREV_PROVIDERS))
-
-            if [ "$ADDED_MODELS" -ne 0 ] || [ "$ADDED_PROVIDERS" -ne 0 ]; then
-              DIFF_SECTION="### Changes since last release
-          - Models: ${PREV_MODELS} → ${MODELS} (${ADDED_MODELS:+$ADDED_MODELS}${ADDED_MODELS:-+0})
-          - Providers: ${PREV_PROVIDERS} → ${PROVIDERS} (${ADDED_PROVIDERS:+$ADDED_PROVIDERS}${ADDED_PROVIDERS:-+0})
-          "
-            fi
-          fi
-
-          # Build the full release body
-          cat > /tmp/release_body.md << ENDOFNOTES
-          ## Ferro Labs AI — Model Catalog ${VERSION}
-
-          Open-source LLM pricing, capabilities, and lifecycle metadata for every major AI provider.
-
-          ### Catalog Summary
-
-          | Metric | Count |
-          |--------|-------|
-          | **Total Models** | ${MODELS} |
-          | **Providers** | ${PROVIDERS} |
-          | **Extends Wrappers** | ${EXTENDS} |
-
-          ${DIFF_SECTION}
-
-          ### Top Providers
-
-          ${TOP_PROVIDERS}
-
-          ### Supported LLM Providers
-
-          OpenAI (GPT-4o, GPT-5, o4-mini), Anthropic (Claude Sonnet 4.5, Claude Haiku), Google Gemini (2.0 Flash, 2.5 Pro), AWS Bedrock, Azure OpenAI, Google Vertex AI, Groq, Mistral, Cohere, Together AI, Fireworks, DeepInfra, DeepSeek, xAI (Grok), Meta Llama, Replicate, Perplexity, NVIDIA NIM, Hugging Face, Cerebras, SambaNova, and 60+ more.
-
-          ### What's Included
-
-          - **Pricing**: USD per 1M tokens for input, output, cache read/write, reasoning, embedding, fine-tuning, image, and audio
-          - **Capabilities**: vision, function calling, JSON mode, structured output, streaming, prompt caching, reasoning, and more
-          - **Lifecycle**: GA, preview, deprecated, and sunset status with successor tracking
-
-          ### How to Use
-
-          \`\`\`bash
-          # Full catalog
-          curl -sLO https://github.com/ferro-labs/model-catalog/releases/download/${VERSION}/catalog.json
-
-          # Single provider
-          curl -sLO https://github.com/ferro-labs/model-catalog/releases/download/${VERSION}/manifest.json
-          \`\`\`
-
-          \`\`\`python
-          import json
-          catalog = json.load(open("catalog.json"))
-          model = catalog["openai/gpt-4o"]
-          print(f"Input: \${model['pricing']['input_per_m_tokens']}/M tokens")
-          \`\`\`
-
-          ---
-
-          *Published by [Ferro Labs AI](https://github.com/ferro-labs) · [Contribute](https://github.com/ferro-labs/model-catalog/blob/main/CONTRIBUTING.md) · [Architecture](https://github.com/ferro-labs/model-catalog/blob/main/docs/architecture.md)*
-          ENDOFNOTES
-
-          # Remove leading whitespace from heredoc
-          sed -i 's/^          //' /tmp/release_body.md
-
-          echo "body_path=/tmp/release_body.md" >> "$GITHUB_OUTPUT"
-
-      - name: Commit dist
-        run: |
-          git config user.email "ferrocat-bot@ferrolabs.ai"
-          git config user.name "ferrocat-bot"
-          git add dist/
-          git diff --cached --quiet && echo "No changes" && exit 0
-          git commit -m "build: regenerate dist ${{ steps.version.outputs.version }} [skip ci]"
-          git push
-
-      - name: Tag
-        run: |
-          git tag ${{ steps.version.outputs.version }}
-          git push origin ${{ steps.version.outputs.version }}
-
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+      - name: Create dist PR
+        uses: peter-evans/create-pull-request@v6
         with:
-          tag_name: ${{ steps.version.outputs.version }}
-          name: "Model Catalog ${{ steps.version.outputs.version }}"
-          body_path: ${{ steps.notes.outputs.body_path }}
-          files: |
-            dist/catalog.json
-            dist/manifest.json
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "build: regenerate dist ${{ steps.version.outputs.version }}"
+          title: "build: regenerate dist ${{ steps.version.outputs.version }}"
+          body: |
+            Auto-generated by the build workflow.
+
+            Regenerated `dist/` artifacts from source YAML files.
+            Merging this PR will trigger the release workflow.
+          branch: build/dist-${{ github.run_id }}
+          labels: auto-pr
+          delete-branch: true
+          add-paths: dist/
