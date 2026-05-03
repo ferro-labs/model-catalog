@@ -1,9 +1,7 @@
+extends: anthropic/claude-haiku-4-5-20251001
 provider: bedrock
 model_id: apac.anthropic.claude-haiku-4-5-20251001-v1:0
 display_name: apac.anthropic.claude-haiku-4-5-20251001-v1:0
-mode: chat
-context_window: 200000
-max_output_tokens: 64000
 pricing:
     input_per_m_tokens: 1.1
     output_per_m_tokens: 5.5
@@ -35,5 +33,4 @@ lifecycle:
     sunset_date: null
     successor: null
 source: https://aws.amazon.com/about-aws/whats-new/2025/10/claude-4-5-haiku-anthropic-amazon-bedrock
-updated_at: "2026-02-28"
 tier: standard

@@ -28,5 +28,10 @@ capabilities:
     reasoning: false
     streaming: true
     finetuneable: false
+lifecycle:
+    status: ga
+    deprecation_date: null
+    sunset_date: null
+    successor: null
 source: https://techcommunity.microsoft.com/blog/machinelearningblog/announcing-deepseek-v3-on-azure-ai-foundry-and-github/4390438
 tier: flagship

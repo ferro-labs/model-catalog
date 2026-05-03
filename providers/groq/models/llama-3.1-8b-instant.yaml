@@ -34,6 +34,6 @@ lifecycle:
     deprecation_date: null
     sunset_date: null
     successor: null
-source: ""
+source: "https://models.dev/groq/llama-3.1-8b-instant"
 updated_at: "2026-02-28"
 tier: flagship

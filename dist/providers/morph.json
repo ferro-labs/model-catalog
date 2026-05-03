@@ -39,7 +39,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/morph/morph-v3-fast",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -83,7 +83,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/morph/morph-v3-large",
     "updated_at": "2026-02-28",
     "tier": "standard"
   }

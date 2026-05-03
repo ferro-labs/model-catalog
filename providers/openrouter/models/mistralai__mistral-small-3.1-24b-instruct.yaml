@@ -34,6 +34,6 @@ lifecycle:
     deprecation_date: null
     sunset_date: null
     successor: null
-source: ""
+source: "https://models.dev/openrouter/mistralai/mistral-small-3.1-24b-instruct"
 updated_at: "2026-02-28"
 tier: standard

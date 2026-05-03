@@ -127,7 +127,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/deepseek/deepseek-r1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -259,7 +259,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/deepseek/deepseek-v3.2",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   }

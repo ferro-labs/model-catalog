@@ -27,4 +27,9 @@ capabilities:
     reasoning: false
     streaming: true
     finetuneable: false
+lifecycle:
+    status: ga
+    deprecation_date: null
+    sunset_date: null
+    successor: null
 tier: standard

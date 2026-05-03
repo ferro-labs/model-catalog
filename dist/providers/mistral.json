@@ -875,7 +875,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/mistral-embed",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -1007,7 +1007,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/mistral-large-2411",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1095,7 +1095,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/mistral-large-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1227,7 +1227,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/mistral-medium-2505",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1271,7 +1271,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/mistral-medium-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1447,7 +1447,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/mistral-small-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1579,7 +1579,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/open-mistral-7b",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1711,7 +1711,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/open-mixtral-8x22b",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1755,7 +1755,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/open-mixtral-8x7b",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1887,7 +1887,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/pixtral-large-latest",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   }

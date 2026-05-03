@@ -95,3 +95,13 @@ func CapabilitiesToYAML(caps Capabilities) *yaml.Node {
 	AddBoolField(mapping, "finetuneable", caps.Finetuneable)
 	return mapping
 }
+
+// LifecycleToYAML converts a Lifecycle struct to a YAML mapping node with all fields.
+func LifecycleToYAML(lc Lifecycle) *yaml.Node {
+	mapping := &yaml.Node{Kind: yaml.MappingNode}
+	AddStringField(mapping, "status", lc.Status)
+	AddPtrStringField(mapping, "deprecation_date", lc.DeprecationDate)
+	AddPtrStringField(mapping, "sunset_date", lc.SunsetDate)
+	AddPtrStringField(mapping, "successor", lc.Successor)
+	return mapping
+}

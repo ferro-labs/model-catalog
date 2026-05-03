@@ -171,7 +171,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/cerebras/llama3.1-8b",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },

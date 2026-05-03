@@ -34,6 +34,6 @@ lifecycle:
     deprecation_date: null
     sunset_date: null
     successor: null
-source: ""
+source: "https://models.dev/anthropic/claude-haiku-4-5-20251001"
 updated_at: "2026-02-28"
 tier: standard

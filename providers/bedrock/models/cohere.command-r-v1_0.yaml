@@ -1,9 +1,7 @@
+extends: cohere/command-r
 provider: bedrock
 model_id: cohere.command-r-v1:0
 display_name: cohere.command-r-v1:0
-mode: chat
-context_window: 128000
-max_output_tokens: 4096
 pricing:
     input_per_m_tokens: 0.5
     output_per_m_tokens: 1.5
@@ -34,6 +32,4 @@ lifecycle:
     deprecation_date: null
     sunset_date: null
     successor: null
-source: ""
-updated_at: "2026-02-28"
 tier: standard

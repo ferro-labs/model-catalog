@@ -378,14 +378,19 @@ func TestResolveExtendsLifecycleInheritance(t *testing.T) {
 		},
 	}
 
+	// Lifecycle uses full replacement (same as pricing/capabilities).
+	// Wrapper must specify all lifecycle fields to get correct behavior.
 	wrapper := Entry{
-		Extends:     "anthropic/claude-sonnet-4-5",
-		Provider:    "vertex_ai",
-		ModelID:     "claude-sonnet-4-5",
-		DisplayName: "Claude Sonnet 4.5 (Vertex)",
+		Extends:      "anthropic/claude-sonnet-4-5",
+		Provider:     "vertex_ai",
+		ModelID:      "claude-sonnet-4-5",
+		DisplayName:  "Claude Sonnet 4.5 (Vertex)",
 		Capabilities: Capabilities{},
 		Lifecycle: Lifecycle{
-			Status: "ga", // override status only
+			Status:          "ga",
+			DeprecationDate: &deprecationDate,
+			SunsetDate:      &sunsetDate,
+			Successor:       &successor,
 		},
 	}
 
@@ -401,19 +406,17 @@ func TestResolveExtendsLifecycleInheritance(t *testing.T) {
 
 	got := resolved["vertex_ai/claude-sonnet-4-5"]
 
-	// Status should be overridden.
 	if got.Lifecycle.Status != "ga" {
 		t.Errorf("lifecycle.status: got %q, want %q", got.Lifecycle.Status, "ga")
 	}
 
-	// Deprecation date, sunset date, successor should be inherited.
 	if got.Lifecycle.DeprecationDate == nil || *got.Lifecycle.DeprecationDate != deprecationDate {
-		t.Errorf("lifecycle.deprecation_date: expected %q (inherited), got %v", deprecationDate, got.Lifecycle.DeprecationDate)
+		t.Errorf("lifecycle.deprecation_date: expected %q, got %v", deprecationDate, got.Lifecycle.DeprecationDate)
 	}
 	if got.Lifecycle.SunsetDate == nil || *got.Lifecycle.SunsetDate != sunsetDate {
-		t.Errorf("lifecycle.sunset_date: expected %q (inherited), got %v", sunsetDate, got.Lifecycle.SunsetDate)
+		t.Errorf("lifecycle.sunset_date: expected %q, got %v", sunsetDate, got.Lifecycle.SunsetDate)
 	}
 	if got.Lifecycle.Successor == nil || *got.Lifecycle.Successor != successor {
-		t.Errorf("lifecycle.successor: expected %q (inherited), got %v", successor, got.Lifecycle.Successor)
+		t.Errorf("lifecycle.successor: expected %q, got %v", successor, got.Lifecycle.Successor)
 	}
 }

@@ -34,6 +34,6 @@ lifecycle:
     deprecation_date: "2026-03-26"
     sunset_date: null
     successor: null
-source: ""
+source: "https://openrouter.ai/models/openai/gpt-4-1106-preview"
 updated_at: "2026-02-28"
 tier: standard

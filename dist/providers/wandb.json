@@ -39,7 +39,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/Qwen/Qwen3-235B-A22B-Instruct-2507",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -83,7 +83,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/Qwen/Qwen3-235B-A22B-Thinking-2507",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -127,7 +127,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/Qwen/Qwen3-Coder-480B-A35B-Instruct",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -259,7 +259,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/deepseek-ai/DeepSeek-V3.1",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -303,7 +303,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/meta-llama/Llama-3.1-8B-Instruct",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -347,7 +347,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/meta-llama/Llama-3.3-70B-Instruct",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -391,7 +391,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/meta-llama/Llama-4-Scout-17B-16E-Instruct",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -435,7 +435,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/microsoft/Phi-4-mini-instruct",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -523,7 +523,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/openai/gpt-oss-120b",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -567,7 +567,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/openai/gpt-oss-20b",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },

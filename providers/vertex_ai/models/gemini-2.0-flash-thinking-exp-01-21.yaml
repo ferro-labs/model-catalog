@@ -27,4 +27,9 @@ capabilities:
     reasoning: true
     streaming: true
     finetuneable: false
+lifecycle:
+    status: deprecated
+    deprecation_date: 2025-12-02
+    sunset_date: null
+    successor: null
 tier: standard
