@@ -34,6 +34,6 @@ lifecycle:
     deprecation_date: null
     sunset_date: null
     successor: null
-source: ""
+source: "https://models.dev/openrouter/z-ai/glm-4.7-flash"
 updated_at: "2026-02-28"
 tier: standard

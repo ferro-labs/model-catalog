@@ -1,13 +1,13 @@
 {
   "version": "v2026.05.03",
   "schema_version": 1,
-  "generated_at": "2026-05-03T06:38:44Z",
-  "catalog_sha256": "ea796fb9e1b2328899cff20426f331c2a62c843089ac5a003a1f478f19aa1755",
+  "generated_at": "2026-05-03T06:46:21Z",
+  "catalog_sha256": "9bd5f50e7f66f6bb24ba43c4363816796136efc88fbadb8ca14d5d4079f6aeb3",
   "providers": [
     {
       "id": "ai21",
       "model_count": 12,
-      "sha256": "fc10c2ea1dc2dddd7a4c5cf6c0636a97b9213ff6f8a5438212e439414f5bb2ca"
+      "sha256": "459e5df0d77ef6c735048a59937b0ecc060ef9323aa7a64cbbdc82625a9058ab"
     },
     {
       "id": "aiml",
@@ -27,7 +27,7 @@
     {
       "id": "anthropic",
       "model_count": 25,
-      "sha256": "2997f2c871ee9cb80219e626f0f0050bfeb8b31ff78be355894ed753fd5812c5"
+      "sha256": "7d7a2f6dcce31e402ad5bb3d133ec4b043fe12a9872f475788a3c4f85c5a03ec"
     },
     {
       "id": "anyscale",
@@ -47,7 +47,7 @@
     {
       "id": "azure",
       "model_count": 227,
-      "sha256": "c42e82c41a41de8920c6695d755f4f15d00ef3c11760540e74f1aa1a02edfef9"
+      "sha256": "8c270bb0b952197cac17874a6a37a76f056604d04eaacef2414d30558d22e847"
     },
     {
       "id": "azure_foundry",
@@ -57,17 +57,17 @@
     {
       "id": "azure_openai",
       "model_count": 5,
-      "sha256": "56e662cf3e2da43296a68a1229d5405ccd6c2d7f51f511d1ccd15a488abe916e"
+      "sha256": "5225fe123bf9c060f1457cc8d64ca6ca7e7fe68d3e120b468aafe264b7c89335"
     },
     {
       "id": "bedrock",
       "model_count": 343,
-      "sha256": "da28a362af2e766b1da4e31bfd8b10ddedc2ef8836c94a9b837eeae12f6423ce"
+      "sha256": "04e0b544ae85cd6b207b147fd75a9bb8f195e5b768d75666cbbf2a5a35993e8b"
     },
     {
       "id": "cerebras",
       "model_count": 7,
-      "sha256": "6744c25713c93009d07997f49263ec2218208538d5093073231ba49e03eebee9"
+      "sha256": "6fea4e2723287153ca7f62031c9bb9e0792d24261c1fda739472492723521039"
     },
     {
       "id": "cloudflare",
@@ -77,7 +77,7 @@
     {
       "id": "cohere",
       "model_count": 17,
-      "sha256": "516ec1198c42540ab43fccdfd9d036bd68c8532a7b5d529dd8552afb093ed61a"
+      "sha256": "27f5b937fb3bedc62f573324f1c4d288c438c45d0911d917c049e3ee56a96875"
     },
     {
       "id": "dashscope",
@@ -97,12 +97,12 @@
     {
       "id": "deepinfra",
       "model_count": 67,
-      "sha256": "809207459aee794f0a71905d7f3aa2fa99d883872b1c9f227ef1d54f1b61967f"
+      "sha256": "89079ab717820a8bdc73656e0ffb6b710577273b4ccee5eadfb7f53199d2d1b9"
     },
     {
       "id": "deepseek",
       "model_count": 6,
-      "sha256": "c8ebf312b9a76bb92e52028a859f11e5d234692f11ff6e00c7f76d8477dd11f8"
+      "sha256": "b63e6757449978c0f65c3de212cb609402864af45cafb1987f88f005136f38e0"
     },
     {
       "id": "elevenlabs",
@@ -142,7 +142,7 @@
     {
       "id": "github_copilot",
       "model_count": 31,
-      "sha256": "668857d300b12870c0fcb0ca15d1acedf2e7dce7bb11ce60e53075ffc7882d43"
+      "sha256": "47a4314d93bf048253f9053dca1cb965eb6990d87cf50b2748ca49a0582f0923"
     },
     {
       "id": "gmi",
@@ -157,7 +157,7 @@
     {
       "id": "groq",
       "model_count": 14,
-      "sha256": "398d7e3b1729fec21a79a0d0606fc4277bfb507644528626c04b8a50d6912553"
+      "sha256": "5954e584d8902edf9653b7209bc38ac637a5ed16f65429c74b39d851722b685d"
     },
     {
       "id": "heroku",
@@ -197,12 +197,12 @@
     {
       "id": "minimax",
       "model_count": 9,
-      "sha256": "2c7fdf328468961a00a7254990d3908d16c3d94000150fba60a832acfbc7078f"
+      "sha256": "9f37b4f56b2cfa9978ae74a5b3455b44da5da2e1c75e289d960657a108b318cb"
     },
     {
       "id": "mistral",
       "model_count": 43,
-      "sha256": "f5ce4a05b0a0529b6ebf44337abb4adf598ca031173fa342649304a2dabd035a"
+      "sha256": "27f4c389591af77593ca29e5012534f38419c615f1fe4f7d241b318eecfb066f"
     },
     {
       "id": "moonshot",
@@ -212,7 +212,7 @@
     {
       "id": "morph",
       "model_count": 2,
-      "sha256": "c065883df0b95804acae0452b786a3324f6cddac16e5f00bdf6b6bbd6876481d"
+      "sha256": "5abe9cdfb70693d7387ac901b35a9e06dd7eaf231b28e5db769656756285171b"
     },
     {
       "id": "nlp_cloud",
@@ -252,12 +252,12 @@
     {
       "id": "openai",
       "model_count": 156,
-      "sha256": "4ce70fcef02b1dc42f12e34c8e57cc66a17be79f2220ba7d306078c19c0ffc06"
+      "sha256": "5025f95cb0ee9d67ac85725e94328abe9dc8a4e77b5ba75964d95a5b25a43138"
     },
     {
       "id": "openrouter",
       "model_count": 78,
-      "sha256": "127e6ebc7ad469d91c95aae5e30e0502440869d8928ac07d3b0c7f1b7ff31b15"
+      "sha256": "7aa2980d8e7c6cad5786cb8aa2959f4d0aa6e2b05d307c5cb5a295c54371fbfe"
     },
     {
       "id": "ovhcloud",
@@ -272,7 +272,7 @@
     {
       "id": "perplexity",
       "model_count": 42,
-      "sha256": "bc7411fa59e3ab293797862f6bc899a44a13a1b11763dab0817a2716520fb3c2"
+      "sha256": "4bf876164806010790bf79b8ecca11074545d069bf5792b67ae362ba70dd9cda"
     },
     {
       "id": "publicai",
@@ -282,7 +282,7 @@
     {
       "id": "qwen",
       "model_count": 5,
-      "sha256": "89bbd8054243c38d6a67c68c0378670361f6faed4ab5cd10643a3571e0386d45"
+      "sha256": "055e75ad24f604af1695ce37de07795b8718284f9cd33f044d45b2753c2d2f4d"
     },
     {
       "id": "recraft",
@@ -332,7 +332,7 @@
     {
       "id": "v0",
       "model_count": 3,
-      "sha256": "5cd57425f41b196d098b0aad590437eb82e215b769eb95fa4d19d98b18358043"
+      "sha256": "a53ed16bdb5f7ebb617fa3dacd9b9a2ebf4ffb78304b1856766dad0e8192b362"
     },
     {
       "id": "vercel_ai_gateway",
@@ -342,7 +342,7 @@
     {
       "id": "vertex_ai",
       "model_count": 171,
-      "sha256": "dfef21459bb69ef6a244fb181380b84c177650a4b08018050d9647afc8609f33"
+      "sha256": "3542b5a4d7326c97b52a0a3a636a17410cf67ef10c3f3b48c0a608b0a000fc3e"
     },
     {
       "id": "vertex_ai-ai21_models",
@@ -397,7 +397,7 @@
     {
       "id": "wandb",
       "model_count": 14,
-      "sha256": "5ce6b0626c3cfdd8f5536bd8188bde70d7d74ea57e6895094c59cd46d7d13d16"
+      "sha256": "ea85fd72e6d195855c20813ff89e4a1fc8e69fa24e5151e77522883c07c9604b"
     },
     {
       "id": "watsonx",
@@ -407,7 +407,7 @@
     {
       "id": "xai",
       "model_count": 32,
-      "sha256": "35f139315c78d0cdee8246ce30d1b7196abc28e0747f510bc3a40dbf0a3bc952"
+      "sha256": "4177dc7d69d54224f34ba797e4b0dfb495125eeea18725fce946d7d8788ec37c"
     },
     {
       "id": "zai",

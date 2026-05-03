@@ -34,6 +34,6 @@ lifecycle:
     deprecation_date: null
     sunset_date: null
     successor: null
-source: ""
+source: "https://models.dev/openai/o1-preview"
 updated_at: "2026-02-28"
 tier: standard

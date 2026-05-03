@@ -34,6 +34,6 @@ lifecycle:
     deprecation_date: null
     sunset_date: null
     successor: null
-source: ""
+source: "https://models.dev/wandb/Qwen/Qwen3-235B-A22B-Instruct-2507"
 updated_at: "2026-02-28"
 tier: standard

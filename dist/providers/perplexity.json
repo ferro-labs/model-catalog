@@ -1447,7 +1447,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/perplexity/sonar",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -1491,7 +1491,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/perplexity/sonar-deep-research",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1623,7 +1623,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/perplexity/sonar-pro",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -1711,7 +1711,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/perplexity/sonar-reasoning-pro",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },

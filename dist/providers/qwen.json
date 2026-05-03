@@ -39,7 +39,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/qwen/qwen-max",
     "updated_at": "2026-04-30",
     "tier": "flagship"
   },
@@ -83,7 +83,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/qwen/qwen-plus",
     "updated_at": "2026-04-30",
     "tier": "standard"
   },
@@ -127,7 +127,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/qwen/qwen-turbo",
     "updated_at": "2026-04-30",
     "tier": "standard"
   },
@@ -215,7 +215,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/qwen/qwen3-32b",
     "updated_at": "2026-04-30",
     "tier": "standard"
   }

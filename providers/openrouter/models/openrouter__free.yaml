@@ -34,6 +34,6 @@ lifecycle:
     deprecation_date: null
     sunset_date: null
     successor: null
-source: ""
+source: "https://models.dev/openrouter/openrouter/free"
 updated_at: "2026-02-28"
 tier: standard

@@ -963,7 +963,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -1051,7 +1051,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-5",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -1139,7 +1139,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-6",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -1315,7 +1315,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-5",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -1403,7 +1403,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-6",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -5979,7 +5979,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/mistral-large-2411",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },

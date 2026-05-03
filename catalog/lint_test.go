@@ -42,6 +42,7 @@ func TestLintProviders(t *testing.T) {
 			DisplayName: "GPT-4o",
 			Mode:        "chat",
 			Lifecycle:   Lifecycle{Status: "ga"},
+			Source:      "https://openrouter.ai/models/openai/gpt-4o",
 			Tier:        "flagship",
 		})
 
@@ -99,6 +100,7 @@ func TestLintProviders(t *testing.T) {
 			DisplayName: "GPT-4o",
 			Mode:        "chat",
 			Lifecycle:   Lifecycle{Status: "ga"},
+			Source:      "https://openrouter.ai/models/openai/gpt-4o",
 			Tier:        "flagship",
 		})
 
@@ -108,6 +110,7 @@ func TestLintProviders(t *testing.T) {
 			DisplayName: "GPT-4o (Azure)",
 			Mode:        "chat",
 			Lifecycle:   Lifecycle{Status: "ga"},
+			Source:      "https://openrouter.ai/models/azure/gpt-4o",
 			Tier:        "flagship",
 		})
 

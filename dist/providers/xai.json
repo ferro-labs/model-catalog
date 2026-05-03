@@ -39,7 +39,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/xai/grok-2",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -83,7 +83,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/xai/grok-2-1212",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -127,7 +127,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/xai/grok-2-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -171,7 +171,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/xai/grok-2-vision",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -215,7 +215,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/xai/grok-2-vision-1212",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -259,7 +259,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/xai/grok-2-vision-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1227,7 +1227,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/xai/grok-beta",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1403,7 +1403,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/xai/grok-vision-beta",
     "updated_at": "2026-02-28",
     "tier": "standard"
   }

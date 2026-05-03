@@ -39,7 +39,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4.1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -83,7 +83,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4.1-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -127,7 +127,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4.1-nano",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -171,7 +171,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -215,7 +215,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   }

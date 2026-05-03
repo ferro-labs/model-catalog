@@ -435,7 +435,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/ai21/jamba-large-1.7",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1535,7 +1535,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-haiku-20241022",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1579,7 +1579,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-haiku-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1623,7 +1623,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-sonnet-20240620",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1667,7 +1667,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-sonnet-20241022",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1755,7 +1755,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-7-sonnet-20250219",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1843,7 +1843,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-haiku-20240307",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1887,7 +1887,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-opus-20240229",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -2063,7 +2063,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-haiku-4-5",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -2107,7 +2107,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-haiku-4-5-20251001",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -2151,7 +2151,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -2195,7 +2195,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-1-20250805",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -2239,7 +2239,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-20250514",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -2283,7 +2283,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-5",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -2327,7 +2327,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-5-20251101",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -2371,7 +2371,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-6",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -2459,7 +2459,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-20250514",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -2503,7 +2503,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-5",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -2547,7 +2547,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-5-20250929",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -2591,7 +2591,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-6",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -4703,7 +4703,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-haiku-4-5",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -4747,7 +4747,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -4791,7 +4791,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-5",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -4835,7 +4835,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-6",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -4879,7 +4879,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-5",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -4923,7 +4923,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-6",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -4967,7 +4967,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/azure/codex-mini",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -5275,7 +5275,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/deepseek/deepseek-v3.2",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -5319,7 +5319,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/azure/deepseek-v3.2-speciale",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -6815,7 +6815,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-3.5-turbo",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -7343,7 +7343,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -7475,7 +7475,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4-1106-preview",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -7607,7 +7607,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4-turbo",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -7739,7 +7739,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4.1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -7827,7 +7827,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4.1-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -7915,7 +7915,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4.1-nano",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -8047,7 +8047,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -8091,7 +8091,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-2024-05-13",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -8135,7 +8135,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-2024-08-06",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -8179,7 +8179,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-2024-11-20",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -8267,7 +8267,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -8311,7 +8311,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-mini-2024-07-18",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -8707,7 +8707,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -8839,7 +8839,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/gpt-5-chat-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -8883,7 +8883,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5-codex",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -8927,7 +8927,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -9015,7 +9015,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5-nano",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -9147,7 +9147,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -9235,7 +9235,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/azure/gpt-5.1-chat",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -9323,7 +9323,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.1-codex",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -9411,7 +9411,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.1-codex-max",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -9455,7 +9455,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.1-codex-mini",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -9543,7 +9543,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.2",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -9631,7 +9631,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/azure/gpt-5.2-chat",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -9719,7 +9719,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.2-codex",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -9763,7 +9763,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.2-pro",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -9851,7 +9851,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.3-codex",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -10027,7 +10027,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/gpt-image-1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -10071,7 +10071,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/gpt-image-1-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -10115,7 +10115,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/gpt-image-1.5",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -11039,7 +11039,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/mistral-large-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -11083,7 +11083,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/mistral-medium-2505",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -11215,7 +11215,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/azure/mistral-small-2503",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -11303,7 +11303,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/o1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -11391,7 +11391,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/o1-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -11479,7 +11479,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/o1-preview",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -11567,7 +11567,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/o3",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -11655,7 +11655,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/o3-deep-research",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -11699,7 +11699,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/o3-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -11787,7 +11787,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/o3-pro",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -11875,7 +11875,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/o4-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -12183,7 +12183,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/text-embedding-3-large",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -12227,7 +12227,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/text-embedding-3-small",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -12271,7 +12271,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/text-embedding-ada-002",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -13547,7 +13547,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4.1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -13591,7 +13591,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4.1-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -13635,7 +13635,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4.1-nano",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -13679,7 +13679,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -13723,7 +13723,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -14867,7 +14867,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-haiku-20241022",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -14911,7 +14911,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-sonnet-20240620",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -14955,7 +14955,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-sonnet-20241022",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -15043,7 +15043,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-7-sonnet-20250219",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -15087,7 +15087,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-haiku-20240307",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -15131,7 +15131,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-opus-20240229",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -15351,7 +15351,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-1-20250805",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -15395,7 +15395,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-20250514",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -15439,7 +15439,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-5-20251101",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -15527,7 +15527,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-20250514",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -15571,7 +15571,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-5-20250929",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -15615,7 +15615,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-6",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -17067,7 +17067,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-sonnet-20240620",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -17111,7 +17111,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-sonnet-20241022",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -17155,7 +17155,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-haiku-20240307",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -17287,7 +17287,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-20250514",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -17331,7 +17331,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-6",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -17375,7 +17375,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-haiku-4-5-20251001",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -17463,7 +17463,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-5-20250929",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -19443,7 +19443,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-haiku-20241022",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -19487,7 +19487,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-sonnet-20240620",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -19531,7 +19531,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-sonnet-20241022",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -19575,7 +19575,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-7-sonnet-20250219",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -19619,7 +19619,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-haiku-20240307",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -19663,7 +19663,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-opus-20240229",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -19795,7 +19795,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-1-20250805",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -19839,7 +19839,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-20250514",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -19883,7 +19883,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-5-20251101",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -19971,7 +19971,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-20250514",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -20015,7 +20015,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-5-20250929",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -20059,7 +20059,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-6",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -20455,7 +20455,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-5-20251101",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -20543,7 +20543,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-20250514",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -20587,7 +20587,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-5-20250929",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -20631,7 +20631,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-6",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -20807,7 +20807,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-sonnet-20240620",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -20895,7 +20895,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-5-20250929",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -25471,7 +25471,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-sonnet-20240620",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -25515,7 +25515,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-haiku-20240307",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -25955,7 +25955,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-sonnet-20240620",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -25999,7 +25999,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-7-sonnet-20250219",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -26043,7 +26043,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-haiku-20240307",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -27319,7 +27319,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-haiku-20241022",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -27363,7 +27363,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-sonnet-20240620",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -27407,7 +27407,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-5-sonnet-20241022",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -27451,7 +27451,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-7-sonnet-20250219",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -27495,7 +27495,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-haiku-20240307",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -27539,7 +27539,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-3-opus-20240229",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -27671,7 +27671,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-1-20250805",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -27715,7 +27715,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-20250514",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -27759,7 +27759,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-5-20251101",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -27847,7 +27847,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-20250514",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -27891,7 +27891,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-5-20250929",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -27935,7 +27935,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-6",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -28991,7 +28991,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/cerebras/llama3.1-8b",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -29387,7 +29387,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/cohere/command-a-03-2025",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -29563,7 +29563,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/cohere/command-r-08-2024",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -29651,7 +29651,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/cohere/command-r-plus-08-2024",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -34491,7 +34491,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -34535,7 +34535,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -34843,7 +34843,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/deepinfra/anthropic/claude-3-7-sonnet-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -34887,7 +34887,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/deepinfra/anthropic/claude-4-opus",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -35019,7 +35019,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/deepinfra/deepseek-ai/DeepSeek-R1-0528",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -35811,7 +35811,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -35855,7 +35855,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/deepinfra/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -35899,7 +35899,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/deepinfra/meta-llama/Llama-4-Scout-17B-16E-Instruct",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -36515,7 +36515,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/deepinfra/moonshotai/Kimi-K2-Instruct",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -36559,7 +36559,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/deepinfra/moonshotai/Kimi-K2-Instruct-0905",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -36735,7 +36735,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/deepinfra/openai/gpt-oss-120b",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -36779,7 +36779,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/deepinfra/openai/gpt-oss-20b",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -36823,7 +36823,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/deepinfra/zai-org/GLM-4.5",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -36955,7 +36955,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/deepseek/deepseek-r1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -37087,7 +37087,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/deepseek/deepseek-v3.2",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -54071,7 +54071,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-3.5-turbo",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -54115,7 +54115,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-3.5-turbo-0613",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -54159,7 +54159,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -54291,7 +54291,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4.1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -54423,7 +54423,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -54467,7 +54467,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-2024-05-13",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -54511,7 +54511,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-2024-08-06",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -54555,7 +54555,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-2024-11-20",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -54599,7 +54599,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -54643,7 +54643,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-mini-2024-07-18",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -54687,7 +54687,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -54731,7 +54731,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -54775,7 +54775,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -54819,7 +54819,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.1-codex-max",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -54863,7 +54863,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.2",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -54907,7 +54907,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.3-codex",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -54951,7 +54951,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/text-embedding-3-small",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -55039,7 +55039,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/text-embedding-ada-002",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -56447,7 +56447,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/groq/llama-3.1-8b-instant",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -56491,7 +56491,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/groq/llama-3.3-70b-versatile",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -56535,7 +56535,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/groq/meta-llama/llama-4-maverick-17b-128e-instruct",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -56579,7 +56579,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/groq/meta-llama/llama-4-scout-17b-16e-instruct",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -56623,7 +56623,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/groq/meta-llama/llama-guard-4-12b",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -56667,7 +56667,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/groq/moonshotai/kimi-k2-instruct-0905",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -56711,7 +56711,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/groq/openai/gpt-oss-120b",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -56755,7 +56755,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/groq/openai/gpt-oss-20b",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -56799,7 +56799,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/groq/openai/gpt-oss-safeguard-20b",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -56887,7 +56887,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/groq/qwen/qwen3-32b",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -56931,7 +56931,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/groq/whisper-large-v3",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -56975,7 +56975,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/groq/whisper-large-v3-turbo",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -60011,7 +60011,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/minimax/MiniMax-M2",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -60055,7 +60055,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/minimax/MiniMax-M2.1",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -60143,7 +60143,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/minimax/MiniMax-M2.5",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -61243,7 +61243,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/mistral-embed",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -61375,7 +61375,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/mistral-large-2411",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -61463,7 +61463,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/mistral-large-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -61595,7 +61595,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/mistral-medium-2505",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -61639,7 +61639,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/mistral-medium-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -61815,7 +61815,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/mistral-small-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -61947,7 +61947,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/open-mistral-7b",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -62079,7 +62079,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/open-mixtral-8x22b",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -62123,7 +62123,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/open-mixtral-8x7b",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -62255,7 +62255,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/pixtral-large-latest",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -63223,7 +63223,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/morph/morph-v3-fast",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -63267,7 +63267,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/morph/morph-v3-large",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -69999,7 +69999,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/chatgpt-image-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -70879,7 +70879,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-3.5-turbo",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -71011,7 +71011,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-3.5-turbo-0613",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -71099,7 +71099,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-3.5-turbo-16k",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -71187,7 +71187,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-3.5-turbo-instruct",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -71275,7 +71275,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -71363,7 +71363,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4-0314",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -71451,7 +71451,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4-1106-preview",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -71671,7 +71671,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4-turbo",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -71759,7 +71759,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4-turbo-preview",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -71847,7 +71847,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4.1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -71935,7 +71935,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4.1-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -72023,7 +72023,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4.1-nano",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -72199,7 +72199,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -72243,7 +72243,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-2024-05-13",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -72287,7 +72287,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-2024-08-06",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -72331,7 +72331,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-2024-11-20",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -72375,7 +72375,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-audio-preview",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -72551,7 +72551,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -72595,7 +72595,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-mini-2024-07-18",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -72815,7 +72815,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-mini-search-preview",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -73343,7 +73343,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-4o-search-preview",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -73519,7 +73519,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -73607,7 +73607,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5-chat",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -73651,7 +73651,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/gpt-5-chat-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -73695,7 +73695,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5-codex",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -73739,7 +73739,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -73827,7 +73827,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5-nano",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -73915,7 +73915,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5-pro",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -74091,7 +74091,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -74179,7 +74179,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/gpt-5.1-chat-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -74223,7 +74223,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.1-codex",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -74267,7 +74267,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.1-codex-max",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -74311,7 +74311,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.1-codex-mini",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -74355,7 +74355,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.2",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -74443,7 +74443,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/gpt-5.2-chat-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -74487,7 +74487,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.2-codex",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -74531,7 +74531,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.2-pro",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -74619,7 +74619,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-5.3-codex",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -74663,7 +74663,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-audio",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -74795,7 +74795,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/gpt-audio-mini",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -74927,7 +74927,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/gpt-image-1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -74971,7 +74971,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/gpt-image-1-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -75015,7 +75015,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/gpt-image-1.5",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -75367,7 +75367,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/o1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -75455,7 +75455,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/o1-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -75543,7 +75543,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/o1-preview",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -75631,7 +75631,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/o1-pro",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -75719,7 +75719,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/o3",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -75807,7 +75807,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/o3-deep-research",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -75895,7 +75895,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/o3-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -75983,7 +75983,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/o3-pro",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -76071,7 +76071,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/o4-mini",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -76159,7 +76159,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/openai/o4-mini-deep-research",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -76379,7 +76379,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/text-embedding-3-large",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -76423,7 +76423,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/text-embedding-3-small",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -76467,7 +76467,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openai/text-embedding-ada-002",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -76863,7 +76863,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/anthropic/claude-3.7-sonnet",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -76907,7 +76907,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/anthropic/claude-haiku-4.5",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -76951,7 +76951,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/anthropic/claude-opus-4",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -76995,7 +76995,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/anthropic/claude-opus-4.1",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -77039,7 +77039,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/anthropic/claude-opus-4.5",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -77083,7 +77083,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/anthropic/claude-opus-4.6",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -77127,7 +77127,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/anthropic/claude-sonnet-4",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -77171,7 +77171,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/anthropic/claude-sonnet-4.5",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -77303,7 +77303,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/deepseek/deepseek-chat-v3-0324",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -77347,7 +77347,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/deepseek/deepseek-chat-v3.1",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -77391,7 +77391,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/deepseek/deepseek-r1",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -77479,7 +77479,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/deepseek/deepseek-v3.2",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -77567,7 +77567,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/google/gemini-2.0-flash-001",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -77611,7 +77611,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/google/gemini-2.5-flash",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -77655,7 +77655,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/google/gemini-2.5-pro",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -77743,7 +77743,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/google/gemini-3-pro-preview",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -77919,7 +77919,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/minimax/minimax-m2",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -77963,7 +77963,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/minimax/minimax-m2.1",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -78051,7 +78051,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/mistralai/devstral-2512",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -78359,7 +78359,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/mistralai/mistral-small-3.1-24b-instruct",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -78403,7 +78403,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/mistralai/mistral-small-3.2-24b-instruct",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -78667,7 +78667,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/openai/gpt-4.1",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -78711,7 +78711,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/openai/gpt-4.1-mini",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -78887,7 +78887,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/openai/gpt-5",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -78931,7 +78931,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/openai/gpt-5-chat",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -78975,7 +78975,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/openai/gpt-5-codex",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -79019,7 +79019,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/openai/gpt-5-mini",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -79063,7 +79063,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/openai/gpt-5-nano",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -79107,7 +79107,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/openai/gpt-5.2",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -79151,7 +79151,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/openai/gpt-5.2-chat",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -79195,7 +79195,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/openai/gpt-5.2-codex",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -79239,7 +79239,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/openai/gpt-5.2-pro",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -79591,7 +79591,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/openrouter/free",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -79635,7 +79635,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/qwen/qwen-2.5-coder-32b-instruct",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -79987,7 +79987,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/xiaomi/mimo-v2-flash",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -80119,7 +80119,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/z-ai/glm-4.7",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -80163,7 +80163,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/openrouter/z-ai/glm-4.7-flash",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -82539,7 +82539,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/perplexity/sonar",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -82583,7 +82583,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/perplexity/sonar-deep-research",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -82715,7 +82715,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/perplexity/sonar-pro",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -82803,7 +82803,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/perplexity/sonar-reasoning-pro",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -83375,7 +83375,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/qwen/qwen-max",
     "updated_at": "2026-04-30",
     "tier": "flagship"
   },
@@ -83419,7 +83419,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/qwen/qwen-plus",
     "updated_at": "2026-04-30",
     "tier": "standard"
   },
@@ -83463,7 +83463,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/qwen/qwen-turbo",
     "updated_at": "2026-04-30",
     "tier": "standard"
   },
@@ -83551,7 +83551,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://openrouter.ai/models/qwen/qwen3-32b",
     "updated_at": "2026-04-30",
     "tier": "standard"
   },
@@ -90635,7 +90635,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/v0/v0-1.0-md",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -90679,7 +90679,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/v0/v0-1.5-lg",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -90723,7 +90723,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/v0/v0-1.5-md",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -97323,7 +97323,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-1",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -97411,7 +97411,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-5",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -97499,7 +97499,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-opus-4-6",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -97675,7 +97675,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-5",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -97763,7 +97763,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/anthropic/claude-sonnet-4-6",
     "updated_at": "2026-02-28",
     "tier": "flagship"
   },
@@ -102339,7 +102339,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/mistral/mistral-large-2411",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -104935,7 +104935,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/Qwen/Qwen3-235B-A22B-Instruct-2507",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -104979,7 +104979,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/Qwen/Qwen3-235B-A22B-Thinking-2507",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -105023,7 +105023,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/Qwen/Qwen3-Coder-480B-A35B-Instruct",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -105155,7 +105155,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/deepseek-ai/DeepSeek-V3.1",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -105199,7 +105199,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/meta-llama/Llama-3.1-8B-Instruct",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -105243,7 +105243,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/meta-llama/Llama-3.3-70B-Instruct",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -105287,7 +105287,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/meta-llama/Llama-4-Scout-17B-16E-Instruct",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -105331,7 +105331,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/microsoft/Phi-4-mini-instruct",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -105419,7 +105419,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/openai/gpt-oss-120b",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -105463,7 +105463,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/wandb/openai/gpt-oss-20b",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -106827,7 +106827,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/xai/grok-2",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -106871,7 +106871,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/xai/grok-2-1212",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -106915,7 +106915,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/xai/grok-2-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -106959,7 +106959,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/xai/grok-2-vision",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -107003,7 +107003,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/xai/grok-2-vision-1212",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -107047,7 +107047,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/xai/grok-2-vision-latest",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -108015,7 +108015,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/xai/grok-beta",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -108191,7 +108191,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://models.dev/xai/grok-vision-beta",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
