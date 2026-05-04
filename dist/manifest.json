@@ -1,7 +1,7 @@
 {
-  "version": "v2026.05.03",
+  "version": "v2026.05.04",
   "schema_version": 1,
-  "generated_at": "2026-05-03T08:18:33Z",
+  "generated_at": "2026-05-04T08:36:25Z",
   "catalog_sha256": "9bd5f50e7f66f6bb24ba43c4363816796136efc88fbadb8ca14d5d4079f6aeb3",
   "providers": [
     {
