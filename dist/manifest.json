@@ -1,8 +1,8 @@
 {
   "version": "v2026.05.04",
   "schema_version": 1,
-  "generated_at": "2026-05-04T08:36:25Z",
-  "catalog_sha256": "9bd5f50e7f66f6bb24ba43c4363816796136efc88fbadb8ca14d5d4079f6aeb3",
+  "generated_at": "2026-05-04T10:09:16Z",
+  "catalog_sha256": "ed16bb65251b9a3b594efd72bdb2c0dcdee684df0d92af6263156e7732f1239f",
   "providers": [
     {
       "id": "ai21",
@@ -101,8 +101,8 @@
     },
     {
       "id": "deepseek",
-      "model_count": 6,
-      "sha256": "b63e6757449978c0f65c3de212cb609402864af45cafb1987f88f005136f38e0"
+      "model_count": 7,
+      "sha256": "ec7b7d227600a6f91470de7f9fba31281f833e3827ee9851b1cb482a08b6c249"
     },
     {
       "id": "elevenlabs",
@@ -251,8 +251,8 @@
     },
     {
       "id": "openai",
-      "model_count": 156,
-      "sha256": "5025f95cb0ee9d67ac85725e94328abe9dc8a4e77b5ba75964d95a5b25a43138"
+      "model_count": 162,
+      "sha256": "0c9f770e44b32b31d9252735345c0e3cb9c43a493799235fe8309dfba19d56e7"
     },
     {
       "id": "openrouter",
@@ -416,7 +416,7 @@
     }
   ],
   "stats": {
-    "total_models": 2468,
+    "total_models": 2475,
     "total_providers": 82
   }
 }
