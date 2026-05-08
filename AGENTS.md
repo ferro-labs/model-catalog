@@ -29,6 +29,9 @@ go run ./cmd/ferrocat lint
 # Run scrapers against OpenRouter + models.dev
 go run ./cmd/ferrocat scrape
 
+# Check catalog freshness against provider APIs (needs API keys)
+ANTHROPIC_API_KEY=... OPENAI_API_KEY=... go run ./cmd/ferrocat freshness
+
 # Format Go code
 make fmt
 ```
@@ -40,6 +43,7 @@ go run ./cmd/ferrocat build --output dist/
 go run ./cmd/ferrocat validate
 go run ./cmd/ferrocat lint
 go run ./cmd/ferrocat scrape
+go run ./cmd/ferrocat freshness
 go run ./cmd/ferrocat split <input.json> --output providers/
 go run ./cmd/ferrocat migrate-extends --wrapper <provider> --base <base-provider>
 ```
@@ -69,6 +73,9 @@ model-catalog/
 │   ├── httputil.go             # FetchJSON() — shared HTTP client with retry
 │   ├── reconciler.go           # Cross-check observations against catalog
 │   ├── report.go               # Human-readable reports
+│   ├── api/
+│   │   ├── anthropic.go          # Anthropic /v1/models scraper
+│   │   └── openai.go             # OpenAI /v1/models scraper
 │   └── oracle/
 │       ├── openrouter.go       # OpenRouter /api/v1/models
 │       └── models_dev.go       # models.dev /api.json

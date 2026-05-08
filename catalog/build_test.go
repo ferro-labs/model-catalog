@@ -14,7 +14,7 @@ func TestBuildCatalog(t *testing.T) {
 
 	// Create openai model YAML
 	openaiDir := filepath.Join(providersDir, "openai", "models")
-	if err := os.MkdirAll(openaiDir, 0o755); err != nil {
+	if err := os.MkdirAll(openaiDir, 0o750); err != nil {
 		t.Fatalf("mkdir openai: %v", err)
 	}
 	openaiEntry := Entry{
@@ -29,13 +29,13 @@ func TestBuildCatalog(t *testing.T) {
 	if err != nil {
 		t.Fatalf("marshal openai: %v", err)
 	}
-	if err := os.WriteFile(filepath.Join(openaiDir, "gpt-4o.yaml"), openaiYAML, 0o644); err != nil {
+	if err := os.WriteFile(filepath.Join(openaiDir, "gpt-4o.yaml"), openaiYAML, 0o600); err != nil {
 		t.Fatalf("write openai yaml: %v", err)
 	}
 
 	// Create anthropic model YAML
 	anthropicDir := filepath.Join(providersDir, "anthropic", "models")
-	if err := os.MkdirAll(anthropicDir, 0o755); err != nil {
+	if err := os.MkdirAll(anthropicDir, 0o750); err != nil {
 		t.Fatalf("mkdir anthropic: %v", err)
 	}
 	anthropicEntry := Entry{
@@ -50,7 +50,7 @@ func TestBuildCatalog(t *testing.T) {
 	if err != nil {
 		t.Fatalf("marshal anthropic: %v", err)
 	}
-	if err := os.WriteFile(filepath.Join(anthropicDir, "claude-sonnet-4-5.yaml"), anthropicYAML, 0o644); err != nil {
+	if err := os.WriteFile(filepath.Join(anthropicDir, "claude-sonnet-4-5.yaml"), anthropicYAML, 0o600); err != nil {
 		t.Fatalf("write anthropic yaml: %v", err)
 	}
 
@@ -61,7 +61,7 @@ func TestBuildCatalog(t *testing.T) {
 
 	// Verify output
 	outputPath := filepath.Join(distDir, "catalog.json")
-	data, err := os.ReadFile(outputPath)
+	data, err := os.ReadFile(filepath.Clean(outputPath))
 	if err != nil {
 		t.Fatalf("read output: %v", err)
 	}

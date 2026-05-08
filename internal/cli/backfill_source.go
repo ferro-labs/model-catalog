@@ -26,6 +26,20 @@ var backfillSourceCmd = &cobra.Command{
 }
 
 func runBackfillSource() error {
+	// Phase 1: Static provider-level URLs (no network calls).
+	fmt.Println("Phase 1: Backfilling from provider URL map...")
+	staticUpdated, err := catalog.BackfillSourceFromProviderURLs("providers", backfillDryRun)
+	if err != nil {
+		return fmt.Errorf("static backfill: %w", err)
+	}
+	if backfillDryRun {
+		fmt.Printf("[dry-run] Would update %d models from provider URLs\n\n", staticUpdated)
+	} else {
+		fmt.Printf("Updated %d models from provider URLs\n\n", staticUpdated)
+	}
+
+	// Phase 2: Scraper-based URLs for remaining gaps.
+	fmt.Println("Phase 2: Backfilling from oracle scrapers...")
 	scrapers := []scrape.Scraper{
 		oracle.NewOpenRouter(),
 		oracle.NewModelsDev(),
@@ -50,20 +64,24 @@ func runBackfillSource() error {
 	}
 
 	if len(sourceMap) == 0 {
-		return fmt.Errorf("no observations collected from any scraper")
+		fmt.Println("No oracle observations collected, skipping phase 2")
+		return nil
 	}
 
 	fmt.Printf("Collected source URLs for %d models\n\n", len(sourceMap))
 
-	updated, err := catalog.BackfillSource("providers", sourceMap, backfillDryRun)
+	scraperUpdated, err := catalog.BackfillSource("providers", sourceMap, backfillDryRun)
 	if err != nil {
 		return err
 	}
 
+	total := staticUpdated + scraperUpdated
 	if backfillDryRun {
-		fmt.Printf("\n[dry-run] Would update %d models\n", updated)
+		fmt.Printf("\n[dry-run] Would update %d models total (%d provider URLs + %d oracle)\n",
+			total, staticUpdated, scraperUpdated)
 	} else {
-		fmt.Printf("\nUpdated %d models with source URLs\n", updated)
+		fmt.Printf("\nUpdated %d models total (%d provider URLs + %d oracle)\n",
+			total, staticUpdated, scraperUpdated)
 	}
 	return nil
 }

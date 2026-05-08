@@ -68,7 +68,7 @@ func TestSplitCatalog(t *testing.T) {
 
 	// Verify openai model file exists
 	openaiPath := filepath.Join(outputDir, "openai", "models", "gpt-4o.yaml")
-	data, err := os.ReadFile(openaiPath)
+	data, err := os.ReadFile(filepath.Clean(openaiPath))
 	if err != nil {
 		t.Fatalf("expected file %s to exist: %v", openaiPath, err)
 	}
@@ -85,7 +85,7 @@ func TestSplitCatalog(t *testing.T) {
 
 	// Verify anthropic model file exists
 	anthropicPath := filepath.Join(outputDir, "anthropic", "models", "claude-sonnet-4-5.yaml")
-	data, err = os.ReadFile(anthropicPath)
+	data, err = os.ReadFile(filepath.Clean(anthropicPath))
 	if err != nil {
 		t.Fatalf("expected file %s to exist: %v", anthropicPath, err)
 	}

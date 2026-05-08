@@ -11,7 +11,9 @@ func TestAutoAdd(t *testing.T) {
 	t.Run("adds model when provider folder exists", func(t *testing.T) {
 		tmpDir := t.TempDir()
 		provDir := filepath.Join(tmpDir, "openai", "models")
-		os.MkdirAll(provDir, 0o755)
+		if err := os.MkdirAll(provDir, 0o750); err != nil {
+			t.Fatal(err)
+		}
 
 		input := 5.0
 		output := 15.0
@@ -32,7 +34,7 @@ func TestAutoAdd(t *testing.T) {
 			t.Errorf("added: got %d, want 1", result.Added)
 		}
 
-		data, err := os.ReadFile(filepath.Join(provDir, "gpt-new.yaml"))
+		data, err := os.ReadFile(filepath.Clean(filepath.Join(provDir, "gpt-new.yaml")))
 		if err != nil {
 			t.Fatalf("read generated file: %v", err)
 		}
@@ -77,8 +79,12 @@ func TestAutoAdd(t *testing.T) {
 	t.Run("skips when file already exists", func(t *testing.T) {
 		tmpDir := t.TempDir()
 		provDir := filepath.Join(tmpDir, "openai", "models")
-		os.MkdirAll(provDir, 0o755)
-		os.WriteFile(filepath.Join(provDir, "gpt-exists.yaml"), []byte("existing"), 0o644)
+		if err := os.MkdirAll(provDir, 0o750); err != nil {
+			t.Fatal(err)
+		}
+		if err := os.WriteFile(filepath.Join(provDir, "gpt-exists.yaml"), []byte("existing"), 0o600); err != nil {
+			t.Fatal(err)
+		}
 
 		candidates := []AutoAddCandidate{{
 			Provider: "openai",
@@ -99,7 +105,9 @@ func TestAutoAdd(t *testing.T) {
 	t.Run("dry run does not write files", func(t *testing.T) {
 		tmpDir := t.TempDir()
 		provDir := filepath.Join(tmpDir, "openai", "models")
-		os.MkdirAll(provDir, 0o755)
+		if err := os.MkdirAll(provDir, 0o750); err != nil {
+			t.Fatal(err)
+		}
 
 		input := 1.0
 		candidates := []AutoAddCandidate{{

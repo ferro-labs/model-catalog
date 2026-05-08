@@ -24,7 +24,7 @@ func Build(providersDir, distDir string) error {
 	}
 
 	for _, path := range matches {
-		data, err := os.ReadFile(path)
+		data, err := os.ReadFile(filepath.Clean(path))
 		if err != nil {
 			return fmt.Errorf("read %s: %w", path, err)
 		}
@@ -48,12 +48,12 @@ func Build(providersDir, distDir string) error {
 		return fmt.Errorf("write catalog JSON: %w", err)
 	}
 
-	if err := os.MkdirAll(distDir, 0o755); err != nil {
+	if err := os.MkdirAll(distDir, 0o750); err != nil {
 		return fmt.Errorf("create dist dir: %w", err)
 	}
 
 	outputPath := filepath.Join(distDir, "catalog.json")
-	if err := os.WriteFile(outputPath, jsonData, 0o644); err != nil {
+	if err := os.WriteFile(outputPath, jsonData, 0o600); err != nil {
 		return fmt.Errorf("write %s: %w", outputPath, err)
 	}
 
@@ -90,7 +90,7 @@ func groupByProvider(entries map[string]Entry) map[string]map[string]Entry {
 // dist/providers/<id>.json and a manifest to dist/manifest.json.
 func generateProviderSlicesAndManifest(entries map[string]Entry, catalogJSON []byte, distDir string) error {
 	providersDir := filepath.Join(distDir, "providers")
-	if err := os.MkdirAll(providersDir, 0o755); err != nil {
+	if err := os.MkdirAll(providersDir, 0o750); err != nil {
 		return fmt.Errorf("create providers dir: %w", err)
 	}
 
@@ -115,7 +115,7 @@ func generateProviderSlicesAndManifest(entries map[string]Entry, catalogJSON []b
 		}
 
 		slicePath := filepath.Join(providersDir, id+".json")
-		if err := os.WriteFile(slicePath, sliceJSON, 0o644); err != nil {
+		if err := os.WriteFile(slicePath, sliceJSON, 0o600); err != nil {
 			return fmt.Errorf("write %s: %w", slicePath, err)
 		}
 
@@ -146,7 +146,7 @@ func generateProviderSlicesAndManifest(entries map[string]Entry, catalogJSON []b
 	manifestJSON = append(manifestJSON, '\n')
 
 	manifestPath := filepath.Join(distDir, "manifest.json")
-	if err := os.WriteFile(manifestPath, manifestJSON, 0o644); err != nil {
+	if err := os.WriteFile(manifestPath, manifestJSON, 0o600); err != nil {
 		return fmt.Errorf("write %s: %w", manifestPath, err)
 	}
 

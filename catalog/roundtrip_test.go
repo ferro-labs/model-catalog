@@ -26,7 +26,7 @@ func TestRoundTripRealCatalog(t *testing.T) {
 		t.Skip("no catalog found: set CATALOG_TEST_SOURCE or run from repo root with dist/catalog.json")
 	}
 
-	originalData, err := os.ReadFile(catalogPath)
+	originalData, err := os.ReadFile(filepath.Clean(catalogPath))
 	if err != nil {
 		t.Skipf("cannot read catalog at %s: %v", catalogPath, err)
 	}
@@ -60,7 +60,7 @@ func TestRoundTripRealCatalog(t *testing.T) {
 	}
 
 	// 7. Read the rebuilt catalog.
-	rebuiltData, err := os.ReadFile(filepath.Join(distDir, "catalog.json"))
+	rebuiltData, err := os.ReadFile(filepath.Clean(filepath.Join(distDir, "catalog.json")))
 	if err != nil {
 		t.Fatalf("read rebuilt catalog: %v", err)
 	}
@@ -88,14 +88,16 @@ func TestRoundTripRealCatalog(t *testing.T) {
 	}
 
 	if string(originalNormalized) != string(rebuiltNormalized) {
-		// Write both to /tmp for debugging.
-		_ = os.WriteFile("/tmp/original_normalized.json", originalNormalized, 0o644)
-		_ = os.WriteFile("/tmp/rebuilt_normalized.json", rebuiltNormalized, 0o644)
+		origPath := filepath.Join(t.TempDir(), "original_normalized.json")
+		rebuildPath := filepath.Join(t.TempDir(), "rebuilt_normalized.json")
+		_ = os.WriteFile(origPath, originalNormalized, 0o600)
+		_ = os.WriteFile(rebuildPath, rebuiltNormalized, 0o600)
 		t.Fatalf("Round-trip FAILED: normalized outputs differ.\n"+
 			"Debug files written to:\n"+
-			"  /tmp/original_normalized.json\n"+
-			"  /tmp/rebuilt_normalized.json\n"+
-			"Run: diff /tmp/original_normalized.json /tmp/rebuilt_normalized.json | head -100")
+			"  %s\n"+
+			"  %s\n"+
+			"Run: diff %s %s | head -100",
+			origPath, rebuildPath, origPath, rebuildPath)
 	}
 
 	// 10. Success.

@@ -18,7 +18,7 @@ func BackfillSource(providersDir string, sourceMap map[string]string, dryRun boo
 
 	updated := 0
 	for _, path := range matches {
-		data, err := os.ReadFile(path)
+		data, err := os.ReadFile(filepath.Clean(path))
 		if err != nil {
 			return 0, fmt.Errorf("read %s: %w", path, err)
 		}
@@ -46,7 +46,7 @@ func BackfillSource(providersDir string, sourceMap map[string]string, dryRun boo
 		}
 
 		newContent := strings.Replace(content, "source: \"\"", fmt.Sprintf("source: %q", sourceURL), 1)
-		if err := os.WriteFile(path, []byte(newContent), 0o644); err != nil {
+		if err := os.WriteFile(filepath.Clean(path), []byte(newContent), 0o600); err != nil { //nolint:gosec // path from filepath.Glob
 			return 0, fmt.Errorf("write %s: %w", path, err)
 		}
 		updated++

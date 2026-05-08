@@ -54,7 +54,7 @@ func AutoAdd(providersDir string, candidates []AutoAddCandidate, dryRun bool) (A
 		}
 
 		data := buildAutoAddYAML(c, now)
-		if err := os.WriteFile(outPath, data, 0o644); err != nil {
+		if err := os.WriteFile(outPath, data, 0o600); err != nil {
 			return result, fmt.Errorf("write %s: %w", outPath, err)
 		}
 		result.Added++

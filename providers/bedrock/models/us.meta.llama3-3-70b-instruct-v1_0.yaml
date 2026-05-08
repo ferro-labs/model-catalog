@@ -1,8 +1,7 @@
+extends: meta_llama/Llama-3.3-70B-Instruct
 provider: bedrock
 model_id: us.meta.llama3-3-70b-instruct-v1:0
 display_name: us.meta.llama3-3-70b-instruct-v1:0
-mode: chat
-context_window: 128000
 max_output_tokens: 4096
 pricing:
     input_per_m_tokens: 0.72
@@ -34,6 +33,4 @@ lifecycle:
     deprecation_date: null
     sunset_date: null
     successor: null
-source: ""
-updated_at: "2026-02-28"
 tier: standard

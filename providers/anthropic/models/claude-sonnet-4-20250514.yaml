@@ -32,8 +32,8 @@ capabilities:
 lifecycle:
     status: deprecated
     deprecation_date: "2026-05-14"
-    sunset_date: null
-    successor: null
-source: "https://models.dev/anthropic/claude-sonnet-4-20250514"
+    sunset_date: "2026-06-15"
+    successor: claude-sonnet-4-6
+source: https://docs.anthropic.com/en/docs/about-claude/models
 updated_at: "2026-02-28"
 tier: standard

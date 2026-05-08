@@ -11,6 +11,7 @@ import (
 )
 
 var versionSuffixRe = regexp.MustCompile(`-v\d+:\d+$`)
+var nonAlphanumRe = regexp.MustCompile(`[^a-z0-9]`)
 
 var providerToBedrockVendor = map[string]string{
 	"anthropic":  "anthropic",
@@ -35,8 +36,36 @@ func extractCoreName(modelID, vendor string) string {
 	return core
 }
 
+// normalizeForFuzzy strips all non-alphanumeric chars and lowercases for
+// fuzzy comparison between Bedrock-style IDs (meta.llama3-3-70b-instruct)
+// and upstream IDs (Llama-3.3-70B-Instruct).
+func normalizeForFuzzy(s string) string {
+	return nonAlphanumRe.ReplaceAllString(strings.ToLower(s), "")
+}
+
+// fuzzyNormalizeModelName normalizes a model name for comparison by
+// lowercasing, stripping non-alphanumeric chars, and removing known
+// hardware/quantization suffixes (fp8, fp16, 128e, 16e, etc.).
+func fuzzyNormalizeModelName(s string) string {
+	n := nonAlphanumRe.ReplaceAllString(strings.ToLower(s), "")
+	for _, suffix := range []string{"fp8", "fp16"} {
+		n = strings.TrimSuffix(n, suffix)
+	}
+	// Remove expert-count segments like "128e", "16e" before "instruct"
+	if idx := strings.Index(n, "instruct"); idx > 0 {
+		prefix := n[:idx]
+		for _, pat := range []string{"128e", "16e", "8e"} {
+			prefix = strings.Replace(prefix, pat, "", 1)
+		}
+		n = prefix + n[idx:]
+	}
+	return n
+}
+
 // findBaseMatch tries to match a wrapper model ID against base entries.
-// Exact match first, then normalized matching for Bedrock-style IDs.
+// Exact match first, then normalized matching for Bedrock-style IDs,
+// then fuzzy matching (stripped alphanumeric comparison) for providers
+// like meta_llama where naming conventions diverge significantly.
 func findBaseMatch(wrapperModelID string, baseEntries map[string]Entry, baseProvider string) (string, Entry, bool) {
 	if entry, ok := baseEntries[wrapperModelID]; ok {
 		return wrapperModelID, entry, true
@@ -54,6 +83,14 @@ func findBaseMatch(wrapperModelID string, baseEntries map[string]Entry, baseProv
 
 	if entry, ok := baseEntries[coreName]; ok {
 		return coreName, entry, true
+	}
+
+	normalizedCore := fuzzyNormalizeModelName(coreName)
+	for baseID, entry := range baseEntries {
+		normalizedBase := fuzzyNormalizeModelName(baseID)
+		if normalizedCore == normalizedBase {
+			return baseID, entry, true
+		}
 	}
 
 	return "", Entry{}, false
@@ -102,7 +139,7 @@ func MigrateExtends(providersDir, wrapperProvider, baseProvider string, dryRun b
 
 		filename := SanitizeFilename(modelID) + ".yaml"
 		outPath := filepath.Join(wrapperDir, filename)
-		if err := os.WriteFile(outPath, wrapperYAML, 0o644); err != nil {
+		if err := os.WriteFile(outPath, wrapperYAML, 0o600); err != nil {
 			return fmt.Errorf("write wrapper %s: %w", outPath, err)
 		}
 
@@ -170,7 +207,7 @@ func BackfillExtendsLifecycle(providersDir string) (int, error) {
 		filename := SanitizeFilename(entry.ModelID) + ".yaml"
 		path := filepath.Join(providersDir, provider, "models", filename)
 
-		data, err := os.ReadFile(path)
+		data, err := os.ReadFile(filepath.Clean(path))
 		if err != nil {
 			return 0, fmt.Errorf("read %s: %w", path, err)
 		}
@@ -201,7 +238,7 @@ func BackfillExtendsLifecycle(providersDir string) (int, error) {
 			result = append(result, strings.TrimRight(lcBlock, "\n"))
 		}
 
-		if err := os.WriteFile(path, []byte(strings.Join(result, "\n")+"\n"), 0o644); err != nil {
+		if err := os.WriteFile(filepath.Clean(path), []byte(strings.Join(result, "\n")+"\n"), 0o600); err != nil { //nolint:gosec // path from filepath.Glob
 			return 0, fmt.Errorf("write %s: %w", path, err)
 		}
 		fixed++
@@ -210,9 +247,11 @@ func BackfillExtendsLifecycle(providersDir string) (int, error) {
 	return fixed, nil
 }
 
+const yamlNull = "null"
+
 func ptrStringToYAML(s *string) string {
 	if s == nil {
-		return "null"
+		return yamlNull
 	}
 	return *s
 }
@@ -228,7 +267,7 @@ func ReadProviderModels(modelsDir string) (map[string]Entry, error) {
 
 	entries := make(map[string]Entry, len(matches))
 	for _, path := range matches {
-		data, err := os.ReadFile(path)
+		data, err := os.ReadFile(filepath.Clean(path))
 		if err != nil {
 			return nil, fmt.Errorf("read %s: %w", path, err)
 		}

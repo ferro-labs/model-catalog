@@ -30,10 +30,10 @@ capabilities:
     streaming: true
     finetuneable: false
 lifecycle:
-    status: ga
+    status: deprecated
     deprecation_date: null
-    sunset_date: null
-    successor: null
-source: ""
+    sunset_date: "2026-06-15"
+    successor: claude-opus-4-7
+source: "https://docs.anthropic.com/en/docs/about-claude/models"
 updated_at: "2026-02-28"
 tier: standard
