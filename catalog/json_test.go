@@ -4,8 +4,7 @@ import (
 	"testing"
 )
 
-func TestReadCatalogJSON(t *testing.T) {
-	input := []byte(`{
+const testCatalogJSON = `{
   "anthropic/claude-sonnet-4-20250514": {
     "provider": "anthropic",
     "model_id": "claude-sonnet-4-20250514",
@@ -50,22 +49,26 @@ func TestReadCatalogJSON(t *testing.T) {
     "updated_at": "2025-05-15",
     "tier": "flagship"
   }
-}
-`)
+}`
 
-	catalog, err := ReadCatalogJSON(input)
+func parseTestEntry(t *testing.T) Entry {
+	t.Helper()
+	catalog, err := ReadCatalogJSON([]byte(testCatalogJSON))
 	if err != nil {
 		t.Fatalf("ReadCatalogJSON failed: %v", err)
 	}
-
 	if len(catalog) != 1 {
 		t.Fatalf("expected 1 entry, got %d", len(catalog))
 	}
-
 	entry, ok := catalog["anthropic/claude-sonnet-4-20250514"]
 	if !ok {
 		t.Fatal("expected key 'anthropic/claude-sonnet-4-20250514'")
 	}
+	return entry
+}
+
+func TestReadCatalogJSON_TopLevelFields(t *testing.T) {
+	entry := parseTestEntry(t)
 
 	if entry.Provider != "anthropic" {
 		t.Errorf("provider: got %q, want %q", entry.Provider, "anthropic")
@@ -94,85 +97,80 @@ func TestReadCatalogJSON(t *testing.T) {
 	if entry.UpdatedAt != "2025-05-15" {
 		t.Errorf("updated_at: got %q, want %q", entry.UpdatedAt, "2025-05-15")
 	}
+}
 
-	// Pricing: valid fields
-	if !entry.Pricing.InputPerMTokens.Valid {
-		t.Fatal("pricing.input_per_m_tokens: expected valid")
-	}
-	if entry.Pricing.InputPerMTokens.Value != 3.0 {
-		t.Errorf("pricing.input_per_m_tokens: got %f, want %f", entry.Pricing.InputPerMTokens.Value, 3.0)
-	}
-	if !entry.Pricing.OutputPerMTokens.Valid {
-		t.Fatal("pricing.output_per_m_tokens: expected valid")
-	}
-	if entry.Pricing.OutputPerMTokens.Value != 15.0 {
-		t.Errorf("pricing.output_per_m_tokens: got %f, want %f", entry.Pricing.OutputPerMTokens.Value, 15.0)
-	}
-	if !entry.Pricing.CacheReadPerMTokens.Valid {
-		t.Fatal("pricing.cache_read_per_m_tokens: expected valid")
-	}
-	if entry.Pricing.CacheReadPerMTokens.Value != 0.3 {
-		t.Errorf("pricing.cache_read_per_m_tokens: got %f, want %f", entry.Pricing.CacheReadPerMTokens.Value, 0.3)
-	}
-	if !entry.Pricing.CacheWritePerMTokens.Valid {
-		t.Fatal("pricing.cache_write_per_m_tokens: expected valid")
-	}
-	if entry.Pricing.CacheWritePerMTokens.Value != 3.75 {
-		t.Errorf("pricing.cache_write_per_m_tokens: got %f, want %f", entry.Pricing.CacheWritePerMTokens.Value, 3.75)
-	}
+func TestReadCatalogJSON_Pricing(t *testing.T) {
+	entry := parseTestEntry(t)
 
-	// Pricing: null fields
+	if !entry.Pricing.InputPerMTokens.Valid || entry.Pricing.InputPerMTokens.Value != 3.0 {
+		t.Errorf("input_per_m_tokens: got {%v, %f}, want {true, 3.0}", entry.Pricing.InputPerMTokens.Valid, entry.Pricing.InputPerMTokens.Value)
+	}
+	if !entry.Pricing.OutputPerMTokens.Valid || entry.Pricing.OutputPerMTokens.Value != 15.0 {
+		t.Errorf("output_per_m_tokens: got {%v, %f}, want {true, 15.0}", entry.Pricing.OutputPerMTokens.Valid, entry.Pricing.OutputPerMTokens.Value)
+	}
+	if !entry.Pricing.CacheReadPerMTokens.Valid || entry.Pricing.CacheReadPerMTokens.Value != 0.3 {
+		t.Errorf("cache_read_per_m_tokens: got {%v, %f}, want {true, 0.3}", entry.Pricing.CacheReadPerMTokens.Valid, entry.Pricing.CacheReadPerMTokens.Value)
+	}
+	if !entry.Pricing.CacheWritePerMTokens.Valid || entry.Pricing.CacheWritePerMTokens.Value != 3.75 {
+		t.Errorf("cache_write_per_m_tokens: got {%v, %f}, want {true, 3.75}", entry.Pricing.CacheWritePerMTokens.Valid, entry.Pricing.CacheWritePerMTokens.Value)
+	}
 	if entry.Pricing.ReasoningPerMTokens.Valid {
-		t.Errorf("pricing.reasoning_per_m_tokens: expected not valid, got %f", entry.Pricing.ReasoningPerMTokens.Value)
+		t.Errorf("reasoning_per_m_tokens: expected not valid")
 	}
 	if entry.Pricing.ImagePerTile.Valid {
-		t.Errorf("pricing.image_per_tile: expected not valid, got %f", entry.Pricing.ImagePerTile.Value)
+		t.Errorf("image_per_tile: expected not valid")
 	}
 	if entry.Pricing.AudioInputPerMinute.Valid {
-		t.Errorf("pricing.audio_input_per_minute: expected not valid, got %f", entry.Pricing.AudioInputPerMinute.Value)
+		t.Errorf("audio_input_per_minute: expected not valid")
 	}
 	if entry.Pricing.EmbeddingPerMTokens.Valid {
-		t.Errorf("pricing.embedding_per_m_tokens: expected not valid, got %f", entry.Pricing.EmbeddingPerMTokens.Value)
+		t.Errorf("embedding_per_m_tokens: expected not valid")
 	}
+}
 
-	// Capabilities
+func TestReadCatalogJSON_Capabilities(t *testing.T) {
+	entry := parseTestEntry(t)
+
 	if !entry.Capabilities.Vision {
-		t.Error("capabilities.vision: expected true")
+		t.Error("vision: expected true")
 	}
 	if entry.Capabilities.AudioInput {
-		t.Error("capabilities.audio_input: expected false")
+		t.Error("audio_input: expected false")
 	}
 	if !entry.Capabilities.FunctionCalling {
-		t.Error("capabilities.function_calling: expected true")
+		t.Error("function_calling: expected true")
 	}
 	if !entry.Capabilities.ParallelToolCalls {
-		t.Error("capabilities.parallel_tool_calls: expected true")
+		t.Error("parallel_tool_calls: expected true")
 	}
 	if !entry.Capabilities.JSONMode {
-		t.Error("capabilities.json_mode: expected true")
+		t.Error("json_mode: expected true")
 	}
 	if !entry.Capabilities.PromptCaching {
-		t.Error("capabilities.prompt_caching: expected true")
+		t.Error("prompt_caching: expected true")
 	}
 	if entry.Capabilities.Reasoning {
-		t.Error("capabilities.reasoning: expected false")
+		t.Error("reasoning: expected false")
 	}
 	if !entry.Capabilities.Streaming {
-		t.Error("capabilities.streaming: expected true")
+		t.Error("streaming: expected true")
 	}
+}
 
-	// Lifecycle
+func TestReadCatalogJSON_Lifecycle(t *testing.T) {
+	entry := parseTestEntry(t)
+
 	if entry.Lifecycle.Status != "ga" {
-		t.Errorf("lifecycle.status: got %q, want %q", entry.Lifecycle.Status, "ga")
+		t.Errorf("status: got %q, want %q", entry.Lifecycle.Status, "ga")
 	}
 	if entry.Lifecycle.DeprecationDate != nil {
-		t.Errorf("lifecycle.deprecation_date: expected nil, got %q", *entry.Lifecycle.DeprecationDate)
+		t.Errorf("deprecation_date: expected nil, got %q", *entry.Lifecycle.DeprecationDate)
 	}
 	if entry.Lifecycle.SunsetDate != nil {
-		t.Errorf("lifecycle.sunset_date: expected nil, got %q", *entry.Lifecycle.SunsetDate)
+		t.Errorf("sunset_date: expected nil, got %q", *entry.Lifecycle.SunsetDate)
 	}
 	if entry.Lifecycle.Successor != nil {
-		t.Errorf("lifecycle.successor: expected nil, got %q", *entry.Lifecycle.Successor)
+		t.Errorf("successor: expected nil, got %q", *entry.Lifecycle.Successor)
 	}
 }
 
@@ -269,40 +267,33 @@ func TestRoundTripJSON(t *testing.T) {
 }
 `)
 
-	// First parse
 	catalog1, err := ReadCatalogJSON(input)
 	if err != nil {
 		t.Fatalf("first ReadCatalogJSON failed: %v", err)
 	}
-
 	if len(catalog1) != 2 {
 		t.Fatalf("expected 2 entries, got %d", len(catalog1))
 	}
 
-	// First write
 	output1, err := WriteCatalogJSON(catalog1)
 	if err != nil {
 		t.Fatalf("first WriteCatalogJSON failed: %v", err)
 	}
 
-	// Second parse
 	catalog2, err := ReadCatalogJSON(output1)
 	if err != nil {
 		t.Fatalf("second ReadCatalogJSON failed: %v", err)
 	}
 
-	// Second write
 	output2, err := WriteCatalogJSON(catalog2)
 	if err != nil {
 		t.Fatalf("second WriteCatalogJSON failed: %v", err)
 	}
 
-	// Byte-identical check
 	if string(output1) != string(output2) {
 		t.Errorf("round-trip outputs differ:\n--- first write ---\n%s\n--- second write ---\n%s", string(output1), string(output2))
 	}
 
-	// Verify key ordering: anthropic should come before openai
 	anthIdx := -1
 	openIdx := -1
 	for i := range output1 {

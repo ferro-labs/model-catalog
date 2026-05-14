@@ -34,6 +34,6 @@ lifecycle:
     deprecation_date: "2025-06-01"
     sunset_date: null
     successor: null
-source: ""
+source: "https://docs.anthropic.com/en/docs/about-claude/models"
 updated_at: "2026-02-28"
 tier: standard

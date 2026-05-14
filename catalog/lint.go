@@ -51,7 +51,7 @@ func Lint(providersDir string) ([]LintIssue, error) {
 	modelIndex := make(map[string][]modelRef)
 
 	for _, path := range matches {
-		data, err := os.ReadFile(path)
+		data, err := os.ReadFile(filepath.Clean(path))
 		if err != nil {
 			return nil, fmt.Errorf("read %s: %w", path, err)
 		}

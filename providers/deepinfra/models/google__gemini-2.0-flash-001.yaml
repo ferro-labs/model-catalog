@@ -34,6 +34,6 @@ lifecycle:
     deprecation_date: "2026-03-31"
     sunset_date: null
     successor: null
-source: ""
+source: "https://deepinfra.com/pricing"
 updated_at: "2026-02-28"
 tier: standard

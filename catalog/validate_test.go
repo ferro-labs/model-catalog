@@ -10,14 +10,14 @@ import (
 func writeTestModel(t *testing.T, dir string, provider string, filename string, entry Entry) {
 	t.Helper()
 	modelsDir := filepath.Join(dir, provider, "models")
-	if err := os.MkdirAll(modelsDir, 0o755); err != nil {
+	if err := os.MkdirAll(modelsDir, 0o750); err != nil {
 		t.Fatalf("mkdir %s: %v", modelsDir, err)
 	}
 	data, err := WriteModelYAML(entry)
 	if err != nil {
 		t.Fatalf("marshal entry: %v", err)
 	}
-	if err := os.WriteFile(filepath.Join(modelsDir, filename), data, 0o644); err != nil {
+	if err := os.WriteFile(filepath.Join(modelsDir, filename), data, 0o600); err != nil {
 		t.Fatalf("write yaml: %v", err)
 	}
 }

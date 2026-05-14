@@ -12,17 +12,17 @@ import (
 
 // AutoAddCandidate represents a model that can be auto-added to the catalog.
 type AutoAddCandidate struct {
-	Provider  string
-	ModelID   string
-	InputPerM *float64
+	Provider   string
+	ModelID    string
+	InputPerM  *float64
 	OutputPerM *float64
-	Sources   []string
+	Sources    []string
 }
 
 // AutoAddResult summarizes what the auto-add operation did.
 type AutoAddResult struct {
-	Added   int
-	Skipped int
+	Added      int
+	Skipped    int
 	NoProvider int
 }
 
@@ -54,7 +54,7 @@ func AutoAdd(providersDir string, candidates []AutoAddCandidate, dryRun bool) (A
 		}
 
 		data := buildAutoAddYAML(c, now)
-		if err := os.WriteFile(outPath, data, 0o644); err != nil {
+		if err := os.WriteFile(outPath, data, 0o600); err != nil {
 			return result, fmt.Errorf("write %s: %w", outPath, err)
 		}
 		result.Added++

@@ -80,7 +80,7 @@ func runScrape() error {
 
 	// Optionally write to file.
 	if scrapeReportFile != "" {
-		if err := os.WriteFile(scrapeReportFile, []byte(report), 0o644); err != nil {
+		if err := os.WriteFile(scrapeReportFile, []byte(report), 0o600); err != nil {
 			return fmt.Errorf("write report: %w", err)
 		}
 		fmt.Printf("\nReport written to %s\n", scrapeReportFile)

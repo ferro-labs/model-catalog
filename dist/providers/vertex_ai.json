@@ -303,7 +303,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -347,7 +347,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -391,7 +391,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -435,7 +435,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -479,7 +479,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -523,7 +523,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -567,7 +567,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -611,7 +611,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -655,7 +655,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -699,7 +699,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -743,7 +743,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -787,7 +787,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -831,7 +831,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -919,7 +919,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1007,7 +1007,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1095,7 +1095,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1183,9 +1183,53 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
+  },
+  "vertex_ai/claude-opus-4-7": {
+    "provider": "vertex_ai",
+    "model_id": "claude-opus-4-7",
+    "display_name": "claude-opus-4-7",
+    "mode": "chat",
+    "context_window": 1000000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 5.0,
+      "output_per_m_tokens": 25.0,
+      "cache_read_per_m_tokens": 0.5,
+      "cache_write_per_m_tokens": 6.25,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": true,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.anthropic.com/en/docs/about-claude/models",
+    "updated_at": "2026-05-08",
+    "tier": "flagship"
   },
   "vertex_ai/claude-opus-4@20250514": {
     "provider": "vertex_ai",
@@ -1227,7 +1271,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1271,7 +1315,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1359,7 +1403,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1368,7 +1412,7 @@
     "model_id": "claude-sonnet-4-6",
     "display_name": "claude-sonnet-4-6",
     "mode": "chat",
-    "context_window": 200000,
+    "context_window": 1000000,
     "max_output_tokens": 64000,
     "pricing": {
       "input_per_m_tokens": 3.0,
@@ -1447,7 +1491,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -1491,7 +1535,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -2195,7 +2239,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -2239,7 +2283,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -2283,7 +2327,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -2327,7 +2371,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -2371,7 +2415,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -6023,7 +6067,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -6067,7 +6111,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -6111,7 +6155,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -6155,7 +6199,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -6199,7 +6243,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -6243,7 +6287,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -6287,7 +6331,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -6375,7 +6419,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -6419,7 +6463,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -6463,7 +6507,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -6507,7 +6551,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -6551,7 +6595,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -6595,7 +6639,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
@@ -6727,7 +6771,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "",
+    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
     "updated_at": "2026-02-28",
     "tier": "standard"
   },

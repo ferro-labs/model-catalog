@@ -2,7 +2,7 @@ provider: anthropic
 model_id: claude-sonnet-4-6
 display_name: claude-sonnet-4-6
 mode: chat
-context_window: 200000
+context_window: 1000000
 max_output_tokens: 64000
 pricing:
     input_per_m_tokens: 3

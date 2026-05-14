@@ -19,7 +19,7 @@ func setupTestProviders(t *testing.T) (providersDir, distDir string) {
 
 	// openai provider
 	openaiDir := filepath.Join(providersDir, "openai", "models")
-	if err := os.MkdirAll(openaiDir, 0o755); err != nil {
+	if err := os.MkdirAll(openaiDir, 0o750); err != nil {
 		t.Fatalf("mkdir openai: %v", err)
 	}
 	openaiYAML, err := WriteModelYAML(Entry{
@@ -33,13 +33,13 @@ func setupTestProviders(t *testing.T) (providersDir, distDir string) {
 	if err != nil {
 		t.Fatalf("marshal openai: %v", err)
 	}
-	if err := os.WriteFile(filepath.Join(openaiDir, "gpt-4o.yaml"), openaiYAML, 0o644); err != nil {
+	if err := os.WriteFile(filepath.Join(openaiDir, "gpt-4o.yaml"), openaiYAML, 0o600); err != nil {
 		t.Fatalf("write openai yaml: %v", err)
 	}
 
 	// anthropic provider
 	anthropicDir := filepath.Join(providersDir, "anthropic", "models")
-	if err := os.MkdirAll(anthropicDir, 0o755); err != nil {
+	if err := os.MkdirAll(anthropicDir, 0o750); err != nil {
 		t.Fatalf("mkdir anthropic: %v", err)
 	}
 	anthropicYAML, err := WriteModelYAML(Entry{
@@ -53,7 +53,7 @@ func setupTestProviders(t *testing.T) (providersDir, distDir string) {
 	if err != nil {
 		t.Fatalf("marshal anthropic: %v", err)
 	}
-	if err := os.WriteFile(filepath.Join(anthropicDir, "claude-sonnet-4-5.yaml"), anthropicYAML, 0o644); err != nil {
+	if err := os.WriteFile(filepath.Join(anthropicDir, "claude-sonnet-4-5.yaml"), anthropicYAML, 0o600); err != nil {
 		t.Fatalf("write anthropic yaml: %v", err)
 	}
 
@@ -69,7 +69,7 @@ func TestBuildGeneratesProviderSlices(t *testing.T) {
 
 	// Verify openai slice exists and contains correct entries
 	openaiSlice := filepath.Join(distDir, "providers", "openai.json")
-	openaiData, err := os.ReadFile(openaiSlice)
+	openaiData, err := os.ReadFile(filepath.Clean(openaiSlice))
 	if err != nil {
 		t.Fatalf("read openai slice: %v", err)
 	}
@@ -88,7 +88,7 @@ func TestBuildGeneratesProviderSlices(t *testing.T) {
 
 	// Verify anthropic slice exists and contains correct entries
 	anthropicSlice := filepath.Join(distDir, "providers", "anthropic.json")
-	anthropicData, err := os.ReadFile(anthropicSlice)
+	anthropicData, err := os.ReadFile(filepath.Clean(anthropicSlice))
 	if err != nil {
 		t.Fatalf("read anthropic slice: %v", err)
 	}
@@ -122,7 +122,7 @@ func TestBuildGeneratesManifest(t *testing.T) {
 	}
 
 	manifestPath := filepath.Join(distDir, "manifest.json")
-	manifestData, err := os.ReadFile(manifestPath)
+	manifestData, err := os.ReadFile(filepath.Clean(manifestPath))
 	if err != nil {
 		t.Fatalf("read manifest: %v", err)
 	}
@@ -166,7 +166,7 @@ func TestBuildGeneratesManifest(t *testing.T) {
 	}
 
 	// Providers should be sorted alphabetically
-	if manifest.Providers[0].ID != "anthropic" {
+	if manifest.Providers[0].ID != "anthropic" { //nolint:goconst // test data
 		t.Errorf("first provider = %q, want anthropic", manifest.Providers[0].ID)
 	}
 	if manifest.Providers[1].ID != "openai" {
@@ -192,7 +192,7 @@ func TestManifestSHA256Matches(t *testing.T) {
 	}
 
 	// Read catalog.json and compute SHA-256 manually
-	catalogData, err := os.ReadFile(filepath.Join(distDir, "catalog.json"))
+	catalogData, err := os.ReadFile(filepath.Clean(filepath.Join(distDir, "catalog.json")))
 	if err != nil {
 		t.Fatalf("read catalog.json: %v", err)
 	}
@@ -200,7 +200,7 @@ func TestManifestSHA256Matches(t *testing.T) {
 	expectedHash := hex.EncodeToString(h[:])
 
 	// Read manifest and compare
-	manifestData, err := os.ReadFile(filepath.Join(distDir, "manifest.json"))
+	manifestData, err := os.ReadFile(filepath.Clean(filepath.Join(distDir, "manifest.json")))
 	if err != nil {
 		t.Fatalf("read manifest.json: %v", err)
 	}
@@ -216,7 +216,7 @@ func TestManifestSHA256Matches(t *testing.T) {
 
 	// Also verify provider slice SHA-256 values
 	for _, p := range manifest.Providers {
-		sliceData, err := os.ReadFile(filepath.Join(distDir, "providers", p.ID+".json"))
+		sliceData, err := os.ReadFile(filepath.Clean(filepath.Join(distDir, "providers", p.ID+".json")))
 		if err != nil {
 			t.Fatalf("read provider slice %s: %v", p.ID, err)
 		}

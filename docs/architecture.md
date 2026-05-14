@@ -23,7 +23,7 @@ graph TD
 
     subgraph L3["LAYER 3 — CONSUMERS"]
         GW["ai-gateway<br/><i>OSS runtime</i>"]
-        GTM["ai-gateway-gtm-site<br/><i>model browser</i>"]
+        GTM["Model browser<br/><i>web UI</i>"]
         THIRD["Third-party tools<br/><i>Aider, OpenCode, custom</i>"]
     end
 
