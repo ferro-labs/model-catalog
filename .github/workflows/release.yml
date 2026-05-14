@@ -74,7 +74,7 @@ jobs:
           curl -sLO https://github.com/ferro-labs/model-catalog/releases/download/${VERSION}/catalog.json
 
           # Single provider
-          curl -sLO https://github.com/ferro-labs/model-catalog/releases/download/${VERSION}/manifest.json
+          curl -sLO https://catalog.ferrolabs.ai/providers/openai.json
           \`\`\`
 
           \`\`\`python
@@ -106,5 +106,6 @@ jobs:
           files: |
             dist/catalog.json
             dist/manifest.json
+            dist/providers/*.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

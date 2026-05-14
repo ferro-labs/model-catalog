@@ -12,7 +12,7 @@
     <a href="https://github.com/ferro-labs/model-catalog/actions/workflows/build.yml"><img src="https://github.com/ferro-labs/model-catalog/actions/workflows/build.yml/badge.svg" alt="Build" /></a>
   </p>
   <p>
-    <strong>2,468 models</strong> &middot; <strong>82 providers</strong> &middot; <strong>Updated weekly</strong> &middot; <strong>Zero paid infrastructure</strong>
+    <strong>2,479 models</strong> &middot; <strong>82 providers</strong> &middot; <strong>Updated weekly</strong> &middot; <strong>Zero paid infrastructure</strong>
   </p>
 </div>
 
@@ -142,6 +142,10 @@ curl -sLO https://github.com/ferro-labs/model-catalog/releases/latest/download/c
 
 # Just one provider (~50 KB each)
 curl -sLO https://github.com/ferro-labs/model-catalog/releases/latest/download/providers/openai.json
+
+# CDN mirror for the latest published dist/
+curl -sLO https://catalog.ferrolabs.ai/catalog.json
+curl -sLO https://catalog.ferrolabs.ai/providers/openai.json
 ```
 
 ### Use it in Python
@@ -198,7 +202,9 @@ console.log(`Input: $${model.pricing.input_per_m_tokens}/M tokens`);
 
 ### Automated cross-checking
 
-Every week, scrapers fetch pricing data from two independent sources and compare against the catalog:
+Every week, scrapers fetch pricing data from independent oracle sources and live provider model APIs, then compare against the catalog.
+
+Oracle scrapers:
 
 | Source | Models | What it provides |
 |--------|--------|-----------------|
@@ -206,6 +212,8 @@ Every week, scrapers fetch pricing data from two independent sources and compare
 | [models.dev](https://models.dev) | 4,362 | Community-curated pricing and capabilities |
 
 When both sources agree on a price that differs from ours, it's flagged as **high confidence** and auto-PRd. When only one source reports a diff, it's marked **needs review**.
+
+Freshness checks also query provider model-list APIs when CI secrets are configured: Anthropic, OpenAI, Groq, Mistral, Together, Fireworks, DeepSeek, Cohere, xAI, and Cerebras.
 
 ### Community contributions
 
@@ -259,6 +267,8 @@ ferrocat build                              # YAML → JSON (catalog + slices + 
 ferrocat validate                           # Check structural correctness
 ferrocat lint                               # Detect junk keys and duplicates
 ferrocat scrape                             # Cross-check pricing against external sources
+ferrocat freshness                          # Check live provider model APIs for missing catalog entries
+ferrocat prune --days 90                    # Remove models sunset more than 90 days ago
 ferrocat split catalog.json                 # Legacy JSON → per-model YAML (one-time migration)
 ferrocat migrate-extends --wrapper azure --base openai   # Convert wrappers to extends
 ```

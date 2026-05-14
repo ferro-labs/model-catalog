@@ -357,4 +357,3 @@ func ComputeWrapperYAML(base, wrapper Entry, baseModelID, baseProvider string) [
 	out, _ := yaml.Marshal(&doc)
 	return out
 }
-

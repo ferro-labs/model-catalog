@@ -12,17 +12,17 @@ import (
 
 // AutoAddCandidate represents a model that can be auto-added to the catalog.
 type AutoAddCandidate struct {
-	Provider  string
-	ModelID   string
-	InputPerM *float64
+	Provider   string
+	ModelID    string
+	InputPerM  *float64
 	OutputPerM *float64
-	Sources   []string
+	Sources    []string
 }
 
 // AutoAddResult summarizes what the auto-add operation did.
 type AutoAddResult struct {
-	Added   int
-	Skipped int
+	Added      int
+	Skipped    int
 	NoProvider int
 }
 
