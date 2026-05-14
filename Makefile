@@ -1,4 +1,4 @@
-.PHONY: build test lint split clean fmt
+.PHONY: build test validate lint split clean fmt
 
 FERROCAT = go run ./cmd/ferrocat
 
@@ -7,6 +7,9 @@ build:
 
 test:
 	go test -race -count=1 ./...
+
+validate:
+	$(FERROCAT) validate
 
 lint:
 	golangci-lint run ./...

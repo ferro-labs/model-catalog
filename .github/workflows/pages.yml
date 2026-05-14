@@ -1,0 +1,40 @@
+name: Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'dist/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Prepare Pages artifact
+        run: |
+          cp -R dist /tmp/catalog-pages
+          printf 'catalog.ferrolabs.ai\n' > /tmp/catalog-pages/CNAME
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: /tmp/catalog-pages
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
