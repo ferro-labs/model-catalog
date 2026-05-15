@@ -9,6 +9,8 @@ import (
 	"path/filepath"
 	"sort"
 	"time"
+
+	"gopkg.in/yaml.v3"
 )
 
 // Build reads per-model YAML files from providersDir, resolves extends
@@ -16,6 +18,8 @@ import (
 // to distDir.
 func Build(providersDir, distDir string) error {
 	entries := make(map[string]Entry)
+
+	providerMetas := readProviderMetas(providersDir)
 
 	pattern := filepath.Join(providersDir, "*", "models", "*.yaml")
 	matches, err := filepath.Glob(pattern)
@@ -59,8 +63,7 @@ func Build(providersDir, distDir string) error {
 
 	fmt.Printf("Built catalog with %d entries at %s\n", len(entries), outputPath)
 
-	// Generate per-provider slices and manifest
-	if err := generateProviderSlicesAndManifest(entries, jsonData, distDir); err != nil {
+	if err := generateProviderSlicesAndManifest(entries, jsonData, distDir, providerMetas); err != nil {
 		return err
 	}
 
@@ -88,7 +91,26 @@ func groupByProvider(entries map[string]Entry) map[string]map[string]Entry {
 
 // generateProviderSlicesAndManifest writes per-provider JSON slices to
 // dist/providers/<id>.json and a manifest to dist/manifest.json.
-func generateProviderSlicesAndManifest(entries map[string]Entry, catalogJSON []byte, distDir string) error {
+func readProviderMetas(providersDir string) map[string]ProviderMeta {
+	metas := make(map[string]ProviderMeta)
+	pattern := filepath.Join(providersDir, "*", "provider.yaml")
+	matches, _ := filepath.Glob(pattern)
+	for _, path := range matches {
+		data, err := os.ReadFile(filepath.Clean(path))
+		if err != nil {
+			continue
+		}
+		var meta ProviderMeta
+		if err := yaml.Unmarshal(data, &meta); err != nil {
+			continue
+		}
+		providerDir := filepath.Base(filepath.Dir(path))
+		metas[providerDir] = meta
+	}
+	return metas
+}
+
+func generateProviderSlicesAndManifest(entries map[string]Entry, catalogJSON []byte, distDir string, providerMetas map[string]ProviderMeta) error {
 	providersDir := filepath.Join(distDir, "providers")
 	if err := os.MkdirAll(providersDir, 0o750); err != nil {
 		return fmt.Errorf("create providers dir: %w", err)
@@ -119,11 +141,20 @@ func generateProviderSlicesAndManifest(entries map[string]Entry, catalogJSON []b
 			return fmt.Errorf("write %s: %w", slicePath, err)
 		}
 
-		manifestProviders = append(manifestProviders, ManifestProvider{
+		mp := ManifestProvider{
 			ID:         id,
 			ModelCount: len(sliceEntries),
 			SHA256:     sha256Hex(sliceJSON),
-		})
+		}
+		if meta, ok := providerMetas[id]; ok {
+			mp.DisplayName = meta.DisplayName
+			mp.LogoURL = meta.LogoURL
+			mp.Logo = meta.Logo
+			mp.Category = meta.Category
+			mp.Description = meta.Description
+			mp.CompanyName = meta.CompanyName
+		}
+		manifestProviders = append(manifestProviders, mp)
 	}
 
 	now := time.Now().UTC()
