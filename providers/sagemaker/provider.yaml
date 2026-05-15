@@ -1,0 +1,5 @@
+display_name: AWS SageMaker
+icon_slug: sagemaker
+category: cloud
+description: ML model deployment on AWS SageMaker
+company_name: Amazon

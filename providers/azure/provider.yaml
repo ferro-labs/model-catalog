@@ -1,0 +1,5 @@
+display_name: Azure OpenAI
+icon_slug: azure
+category: cloud
+description: OpenAI models via Microsoft Azure
+company_name: Microsoft

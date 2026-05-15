@@ -1,0 +1,5 @@
+display_name: Weights & Biases
+icon_slug: wandb
+category: specialized
+description: ML experiment tracking and model registry
+company_name: Weights & Biases

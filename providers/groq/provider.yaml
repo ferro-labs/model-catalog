@@ -1,0 +1,5 @@
+display_name: Groq
+icon_slug: groq
+category: specialized
+description: Ultra-fast inference on custom LPU hardware
+company_name: Groq
