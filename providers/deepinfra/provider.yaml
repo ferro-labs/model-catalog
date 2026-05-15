@@ -1,5 +1,5 @@
 display_name: DeepInfra
-icon_slug: deepinfra
+logo_url: https://deepinfra.com/favicon.svg
 category: open-source
 description: Serverless inference for open-source models
 company_name: DeepInfra

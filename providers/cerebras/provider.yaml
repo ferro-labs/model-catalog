@@ -1,5 +1,5 @@
 display_name: Cerebras
-icon_slug: cerebras
+logo_url: https://cerebras.ai/favicon.svg
 category: specialized
 description: Wafer-scale chip inference — world's fastest LLM serving
 company_name: Cerebras

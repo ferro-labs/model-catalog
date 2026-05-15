@@ -148,7 +148,8 @@ func generateProviderSlicesAndManifest(entries map[string]Entry, catalogJSON []b
 		}
 		if meta, ok := providerMetas[id]; ok {
 			mp.DisplayName = meta.DisplayName
-			mp.IconSlug = meta.IconSlug
+			mp.LogoURL = meta.LogoURL
+			mp.Logo = meta.Logo
 			mp.Category = meta.Category
 			mp.Description = meta.Description
 			mp.CompanyName = meta.CompanyName

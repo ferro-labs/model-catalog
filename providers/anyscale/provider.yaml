@@ -1,5 +1,5 @@
 display_name: Anyscale
-icon_slug: anyscale
+logo_url:
 category: open-source
 description: Scalable inference for open-source models on Ray
 company_name: Anyscale

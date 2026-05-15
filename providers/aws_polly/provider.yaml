@@ -1,5 +1,5 @@
 display_name: AWS Polly
-icon_slug: aws_polly
+logo_url:
 category: cloud
 description: Text-to-speech service from AWS
 company_name: Amazon

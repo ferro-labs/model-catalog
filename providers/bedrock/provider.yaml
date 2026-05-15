@@ -1,5 +1,5 @@
 display_name: AWS Bedrock
-icon_slug: bedrock
+logo_url:
 category: cloud
 description: Foundation models via AWS Bedrock
 company_name: Amazon

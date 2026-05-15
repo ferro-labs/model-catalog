@@ -1,7 +1,7 @@
 {
   "version": "v2026.05.15",
   "schema_version": 1,
-  "generated_at": "2026-05-15T14:04:30Z",
+  "generated_at": "2026-05-15T14:13:03Z",
   "catalog_sha256": "ed27657307a1eea460294210dc3e25d272f33694426d96a7e4a071b984bddc19",
   "providers": [
     {
@@ -9,7 +9,6 @@
       "model_count": 12,
       "sha256": "b356e96eb8e7c01db3cb9550483dd6f11d047050190c71c1e8c63db56295b5bd",
       "display_name": "AI21 Labs",
-      "icon_slug": "ai21",
       "category": "specialized",
       "description": "Jamba and Jurassic enterprise language models",
       "company_name": "AI21 Labs"
@@ -19,7 +18,6 @@
       "model_count": 12,
       "sha256": "8d897f15bffd221144ffb1342124a1a610018062c35d04f1bd6f6d23dfff089c",
       "display_name": "AI/ML API",
-      "icon_slug": "aiml",
       "category": "open-source",
       "description": "Unified API for open-source and proprietary models",
       "company_name": "AI/ML API"
@@ -29,7 +27,6 @@
       "model_count": 6,
       "sha256": "f44b3fd1b158a9da5eb3b1152afeeaa94aace9752d3500c07f10cc3e8732071f",
       "display_name": "Aleph Alpha",
-      "icon_slug": "aleph_alpha",
       "category": "specialized",
       "description": "Luminous models — European sovereign AI",
       "company_name": "Aleph Alpha"
@@ -39,7 +36,6 @@
       "model_count": 4,
       "sha256": "b98771815ab9712b0566603435417e66c9beefd3e8582a2161c3b88cf85719ad",
       "display_name": "Amazon Nova",
-      "icon_slug": "amazon_nova",
       "category": "cloud",
       "description": "Amazon's frontier Nova models",
       "company_name": "Amazon"
@@ -49,7 +45,7 @@
       "model_count": 26,
       "sha256": "df268ec6a280cecefa4efd9c4abd555f49cf71148db3a1b1bd8d0bba05aa9f16",
       "display_name": "Anthropic",
-      "icon_slug": "anthropic",
+      "logo_url": "https://anthropic.com/favicon.svg",
       "category": "frontier",
       "description": "Claude 3.5 — safe, reliable, and highly capable AI",
       "company_name": "Anthropic"
@@ -59,7 +55,6 @@
       "model_count": 12,
       "sha256": "72a83c368fa32d832d5cf2c63ffd803c5a307df3ddd6c1912dfbe9d309b2e4f0",
       "display_name": "Anyscale",
-      "icon_slug": "anyscale",
       "category": "open-source",
       "description": "Scalable inference for open-source models on Ray",
       "company_name": "Anyscale"
@@ -69,7 +64,6 @@
       "model_count": 2,
       "sha256": "7847a053ecc62dace5ef50b148dc4c0ffb6deca2575a56bd553af63a04d2e12f",
       "display_name": "AssemblyAI",
-      "icon_slug": "assemblyai",
       "category": "specialized",
       "description": "Speech-to-text and audio intelligence APIs",
       "company_name": "AssemblyAI"
@@ -79,7 +73,6 @@
       "model_count": 4,
       "sha256": "24910ccd1bce4b320a07299ae3a0a17602206f6b84e0f74eacec3727b9714004",
       "display_name": "AWS Polly",
-      "icon_slug": "aws_polly",
       "category": "cloud",
       "description": "Text-to-speech service from AWS",
       "company_name": "Amazon"
@@ -89,7 +82,6 @@
       "model_count": 228,
       "sha256": "b5dc625869e9dec5b5d80a7bb7f746b9d00748a6fd5429bb9a9f3dc7b20eadeb",
       "display_name": "Azure OpenAI",
-      "icon_slug": "azure",
       "category": "cloud",
       "description": "OpenAI models via Microsoft Azure",
       "company_name": "Microsoft"
@@ -99,7 +91,6 @@
       "model_count": 3,
       "sha256": "aa6c81fb7ffe5fe7dae406602cfd2ab8ed62a93d288d73c26bbff2c495622a14",
       "display_name": "Azure AI Foundry",
-      "icon_slug": "azure",
       "category": "cloud",
       "description": "Azure AI Foundry model deployments",
       "company_name": "Microsoft"
@@ -109,7 +100,6 @@
       "model_count": 5,
       "sha256": "5225fe123bf9c060f1457cc8d64ca6ca7e7fe68d3e120b468aafe264b7c89335",
       "display_name": "Azure OpenAI",
-      "icon_slug": "azure_openai",
       "category": "cloud",
       "description": "OpenAI models deployed on Microsoft Azure",
       "company_name": "Microsoft"
@@ -119,7 +109,6 @@
       "model_count": 344,
       "sha256": "cb80b03ec84cf90c41676df0c49fbcb8cae8c4266c427c6c0119a51fc0766deb",
       "display_name": "AWS Bedrock",
-      "icon_slug": "bedrock",
       "category": "cloud",
       "description": "Foundation models via AWS Bedrock",
       "company_name": "Amazon"
@@ -129,7 +118,7 @@
       "model_count": 7,
       "sha256": "6a0098cb29d16d82fb4f51989aba5e6aa8f6d5d5699bf2a567b3d8b9bf66cd2a",
       "display_name": "Cerebras",
-      "icon_slug": "cerebras",
+      "logo_url": "https://cerebras.ai/favicon.svg",
       "category": "specialized",
       "description": "Wafer-scale chip inference — world's fastest LLM serving",
       "company_name": "Cerebras"
@@ -139,7 +128,6 @@
       "model_count": 4,
       "sha256": "57750f79657f5734cf741295139094d907dac9370009bf1f3d7eee2933b4b8a3",
       "display_name": "Cloudflare AI",
-      "icon_slug": "cloudflare",
       "category": "cloud",
       "description": "Run AI models on Cloudflare's edge network",
       "company_name": "Cloudflare"
@@ -149,7 +137,7 @@
       "model_count": 17,
       "sha256": "2cce2fb2a277a7aa946a7d5632df5c7c00a071059d30edd159aff082c2cd722e",
       "display_name": "Cohere",
-      "icon_slug": "cohere",
+      "logo_url": "https://cohere.com/favicon.svg",
       "category": "frontier",
       "description": "Command R+ for enterprise RAG and tool use",
       "company_name": "Cohere"
@@ -159,7 +147,6 @@
       "model_count": 23,
       "sha256": "b2eb06f99b0ad32593e018bb6debd4cbb63bf46433e35210aedf772d5fe46b1a",
       "display_name": "DashScope",
-      "icon_slug": "dashscope",
       "category": "cloud",
       "description": "Alibaba Cloud model service platform",
       "company_name": "Alibaba"
@@ -169,7 +156,6 @@
       "model_count": 28,
       "sha256": "db942668ffc7f38f2d7406352e7b64924646c5c583b7e45f709f393e9c6ab142",
       "display_name": "Databricks",
-      "icon_slug": "databricks",
       "category": "cloud",
       "description": "Foundation Model APIs on Databricks",
       "company_name": "Databricks"
@@ -179,7 +165,6 @@
       "model_count": 36,
       "sha256": "21429e35d8e838e0da8c7bd0074643fb03d88bf1f137d2d749cb343f50e9ba06",
       "display_name": "Deepgram",
-      "icon_slug": "deepgram",
       "category": "specialized",
       "description": "Speech-to-text and audio AI models",
       "company_name": "Deepgram"
@@ -189,7 +174,7 @@
       "model_count": 67,
       "sha256": "b5afc557dbb8941af5fef372e3c7bb0170e3d7405b609b44e2e5f7eaf2b54f21",
       "display_name": "DeepInfra",
-      "icon_slug": "deepinfra",
+      "logo_url": "https://deepinfra.com/favicon.svg",
       "category": "open-source",
       "description": "Serverless inference for open-source models",
       "company_name": "DeepInfra"
@@ -199,7 +184,7 @@
       "model_count": 7,
       "sha256": "23caf858cc150c0612eedb6227b85f900f0c181598a6519473b72dbb4b120fbd",
       "display_name": "DeepSeek",
-      "icon_slug": "deepseek",
+      "logo_url": "https://www.deepseek.com/favicon.svg",
       "category": "open-source",
       "description": "DeepSeek R1 — powerful open-source reasoning models",
       "company_name": "DeepSeek"
@@ -209,7 +194,7 @@
       "model_count": 4,
       "sha256": "172fb7c9aa85196942c3b97fd82f7b890dbcc2d7dbfa8114973c37fd7bd34131",
       "display_name": "ElevenLabs",
-      "icon_slug": "elevenlabs",
+      "logo_url": "https://elevenlabs.io/favicon.svg",
       "category": "specialized",
       "description": "Best-in-class text-to-speech models",
       "company_name": "ElevenLabs"
@@ -219,7 +204,6 @@
       "model_count": 12,
       "sha256": "28bfd40b2a34c4935d83bf2989f1447394a8e352e198fb1e22cdd2a0dddf9f99",
       "display_name": "fal.ai",
-      "icon_slug": "fal_ai",
       "category": "specialized",
       "description": "Fast media generation — image, video, and audio models",
       "company_name": "fal.ai"
@@ -229,7 +213,6 @@
       "model_count": 2,
       "sha256": "a50ecbddc5463079db3d90e99a0127cca3e147855a416f0e8de28d5616a37559",
       "display_name": "Featherless AI",
-      "icon_slug": "featherless_ai",
       "category": "open-source",
       "description": "Serverless inference for open-source models",
       "company_name": "Featherless AI"
@@ -239,7 +222,7 @@
       "model_count": 273,
       "sha256": "7765328a71cc065b0fd55f92e2a36c1bdc674abb5f940c7e22b17b6dcce1f4db",
       "display_name": "Fireworks AI",
-      "icon_slug": "fireworks",
+      "logo_url": "https://fireworks.ai/favicon.svg",
       "category": "open-source",
       "description": "Fast inference for open-source models",
       "company_name": "Fireworks AI"
@@ -249,7 +232,6 @@
       "model_count": 2,
       "sha256": "03dcad8e91937ebc941a6be3124702369014804bb4436c8ef817bcd99cd222f8",
       "display_name": "FriendliAI",
-      "icon_slug": "friendliai",
       "category": "specialized",
       "description": "Optimized LLM serving for enterprise",
       "company_name": "FriendliAI"
@@ -259,7 +241,7 @@
       "model_count": 78,
       "sha256": "3a8097ba51dfe4e50ac908e23b9af6ab85873519add0066e8b87f6ace2c9d39d",
       "display_name": "Google Gemini",
-      "icon_slug": "google",
+      "logo_url": "https://www.gstatic.com/lamda/images/gemini_favicon_f069958c85030456e93de685481c559f160ea06b.svg",
       "category": "frontier",
       "description": "Gemini Ultra, Pro, and Flash — Google's frontier models",
       "company_name": "Google"
@@ -269,7 +251,6 @@
       "model_count": 6,
       "sha256": "5bb227f8bdcb0a97e063af93a04fe6f147edb109ac90fc6cc5dd8ca173b0a2de",
       "display_name": "GigaChat",
-      "icon_slug": "gigachat",
       "category": "specialized",
       "description": "Russian-language AI assistant by Sber",
       "company_name": "Sber"
@@ -279,7 +260,6 @@
       "model_count": 31,
       "sha256": "170b41f6214b6ba37c1ed0bd888ff3dcd3e65531b227fe29e5b8eee1c13b3803",
       "display_name": "GitHub Copilot",
-      "icon_slug": "github_copilot",
       "category": "specialized",
       "description": "AI-powered code completion and chat",
       "company_name": "GitHub"
@@ -289,7 +269,6 @@
       "model_count": 17,
       "sha256": "ca4053155af801cd15491d8c5256eb85b70024c6d01a62342c6d45e3c36ac1cc",
       "display_name": "GMI Cloud",
-      "icon_slug": "gmi",
       "category": "cloud",
       "description": "GPU cloud infrastructure for AI workloads",
       "company_name": "GMI Cloud"
@@ -299,7 +278,6 @@
       "model_count": 13,
       "sha256": "a9a7c3a2410b717796bd77db1404c9abcf315ed0ff51c37e05ca7aa71f419e7f",
       "display_name": "Gradient AI",
-      "icon_slug": "gradient_ai",
       "category": "specialized",
       "description": "Fine-tuning and inference for enterprise models",
       "company_name": "Gradient AI"
@@ -309,7 +287,7 @@
       "model_count": 14,
       "sha256": "a8ee49317c153719cdb3c25b335e777557eb264a799a6278557d39c793addfaa",
       "display_name": "Groq",
-      "icon_slug": "groq",
+      "logo_url": "https://groq.com/favicon.svg",
       "category": "specialized",
       "description": "Ultra-fast inference on custom LPU hardware",
       "company_name": "Groq"
@@ -319,7 +297,6 @@
       "model_count": 4,
       "sha256": "f8eefb85d43977a81de7bc81a132ceecd8054ed8892b21a05b219ff9e7311393",
       "display_name": "Heroku AI",
-      "icon_slug": "heroku",
       "category": "cloud",
       "description": "AI model inference on Heroku platform",
       "company_name": "Salesforce"
@@ -329,7 +306,7 @@
       "model_count": 3,
       "sha256": "20317b301549a0cb66c82b7dc69ab181c275d1658ec8a2194e5f1ecf7eda9008",
       "display_name": "Hugging Face",
-      "icon_slug": "hugging_face",
+      "logo_url": "https://huggingface.co/favicon.svg",
       "category": "open-source",
       "description": "Hub and inference API for open-source models",
       "company_name": "Hugging Face"
@@ -339,7 +316,6 @@
       "model_count": 16,
       "sha256": "c2f6a9e4a1684b41bc66a91e2a36c9f660f10e0aa4d876db8b82783bfa47c7c7",
       "display_name": "Hyperbolic",
-      "icon_slug": "hyperbolic",
       "category": "open-source",
       "description": "Decentralized GPU inference for open-source models",
       "company_name": "Hyperbolic"
@@ -349,7 +325,6 @@
       "model_count": 20,
       "sha256": "eae86174134c6dfe83dc043c6ce3b7f0f7111b90d8b6074bf6fbc20d28d5fd36",
       "display_name": "Lambda",
-      "icon_slug": "lambda_ai",
       "category": "open-source",
       "description": "GPU cloud and inference for AI workloads",
       "company_name": "Lambda"
@@ -359,7 +334,6 @@
       "model_count": 5,
       "sha256": "aa0f72033b2b7ff51e77ea553b14c6e3e5e07ddc1818cd0de8f5185d25c1f719",
       "display_name": "Lemonade",
-      "icon_slug": "lemonade",
       "category": "specialized",
       "description": "On-device AI inference engine",
       "company_name": "AMD"
@@ -369,7 +343,6 @@
       "model_count": 16,
       "sha256": "e2cbbdc90f8aadd472dc3b86c4941dfe86199569a7f96d8628bb0f4918c28121",
       "display_name": "LlamaGate",
-      "icon_slug": "llamagate",
       "category": "open-source",
       "description": "Gateway for Llama and open-source model serving",
       "company_name": "LlamaGate"
@@ -379,7 +352,6 @@
       "model_count": 4,
       "sha256": "725aa747a82a3df8ccd53a13e7612a21d1c1843560626948365e930b01967418",
       "display_name": "Meta Llama",
-      "icon_slug": "meta_llama",
       "category": "open-source",
       "description": "Llama family of open-source models from Meta",
       "company_name": "Meta"
@@ -389,7 +361,6 @@
       "model_count": 9,
       "sha256": "ae8c1ca1759001675e5e86945909c0fdcddf4846e337893c7d7d9122b6ca1237",
       "display_name": "MiniMax",
-      "icon_slug": "minimax",
       "category": "specialized",
       "description": "Large-scale multimodal models from MiniMax",
       "company_name": "MiniMax"
@@ -399,7 +370,7 @@
       "model_count": 43,
       "sha256": "1fbf8a6662f2ec4343e51799f2087a4384056ea3f28d5a9ce232bdae1ff99cdb",
       "display_name": "Mistral AI",
-      "icon_slug": "mistral",
+      "logo_url": "https://mistral.ai/favicon.svg",
       "category": "frontier",
       "description": "Mistral Large, Codestral and open-weight models",
       "company_name": "Mistral"
@@ -409,7 +380,6 @@
       "model_count": 21,
       "sha256": "8437edd233560d9dc24bf94899e1ec4d0a3840b822fbe9ee93f6179fb6299afc",
       "display_name": "Moonshot AI",
-      "icon_slug": "moonshot",
       "category": "frontier",
       "description": "Kimi long-context models",
       "company_name": "Moonshot AI"
@@ -419,7 +389,6 @@
       "model_count": 2,
       "sha256": "5abe9cdfb70693d7387ac901b35a9e06dd7eaf231b28e5db769656756285171b",
       "display_name": "Morph",
-      "icon_slug": "morph",
       "category": "specialized",
       "description": "AI-powered data analysis and visualization",
       "company_name": "Morph"
@@ -429,7 +398,6 @@
       "model_count": 2,
       "sha256": "4dfc1301ece1514298d30ad704bcc00a23c6de2a380fbcbb0bb2c8d03fa79f09",
       "display_name": "NLP Cloud",
-      "icon_slug": "nlp_cloud",
       "category": "specialized",
       "description": "Production NLP and LLM API service",
       "company_name": "NLP Cloud"
@@ -439,7 +407,6 @@
       "model_count": 83,
       "sha256": "c3b961e86869bcabc5c40a4af59df62d6748a584a8f94e0a4c099f74563595b1",
       "display_name": "Novita AI",
-      "icon_slug": "novita",
       "category": "open-source",
       "description": "Fast and affordable open-source model hosting",
       "company_name": "Novita AI"
@@ -449,7 +416,6 @@
       "model_count": 16,
       "sha256": "281ff1fddaf1d8d5f1277fd310b5e0bdeef80ce5771991f5c7e745a6883ac359",
       "display_name": "Nscale",
-      "icon_slug": "nscale",
       "category": "cloud",
       "description": "Sustainable GPU cloud for AI inference",
       "company_name": "Nscale"
@@ -459,7 +425,6 @@
       "model_count": 3,
       "sha256": "6b8b4f74e3b0e40981650db6a4c9cd4c6ee1af929d98b9b45c8a39931fde37f0",
       "display_name": "NVIDIA NIM",
-      "icon_slug": "nvidia_nim",
       "category": "specialized",
       "description": "Optimized inference microservices for NVIDIA GPUs",
       "company_name": "NVIDIA"
@@ -469,7 +434,6 @@
       "model_count": 13,
       "sha256": "111f89103597df2532786b076184d34625c25966d259b1a208926f721d8ab7aa",
       "display_name": "Oracle Cloud AI",
-      "icon_slug": "oci",
       "category": "cloud",
       "description": "AI services on Oracle Cloud Infrastructure",
       "company_name": "Oracle"
@@ -479,7 +443,7 @@
       "model_count": 29,
       "sha256": "70558b3d7bed434975e4c70663b235ba8210f650eb61096284e3f5c58950ca89",
       "display_name": "Ollama",
-      "icon_slug": "ollama",
+      "logo_url": "https://ollama.com/public/ollama.png",
       "category": "open-source",
       "description": "Run models locally on your own hardware",
       "company_name": "Ollama"
@@ -489,7 +453,6 @@
       "model_count": 4,
       "sha256": "7422d50c75a62e91510086ace8b776ee8b98d1fc8748f13f35246dea91f17392",
       "display_name": "Ollama Cloud",
-      "icon_slug": "ollama_cloud",
       "category": "open-source",
       "description": "Cloud-hosted Ollama model inference",
       "company_name": "Ollama"
@@ -499,7 +462,7 @@
       "model_count": 162,
       "sha256": "b8ee4efd8a261162deec330b7f40615d36815e0bf85408555fa56f208e97dd18",
       "display_name": "OpenAI",
-      "icon_slug": "openai",
+      "logo_url": "https://cdn.openai.com/API/logo-assets/openai-logomark.svg",
       "category": "frontier",
       "description": "GPT-4o, o1, and the world's most capable language models",
       "company_name": "OpenAI"
@@ -509,7 +472,6 @@
       "model_count": 78,
       "sha256": "854d179b78464f810a63a5c978e52fcf224057fa2282aa4f554934e220c04acd",
       "display_name": "OpenRouter",
-      "icon_slug": "openrouter",
       "category": "specialized",
       "description": "Unified API across 200+ models",
       "company_name": "OpenRouter"
@@ -519,7 +481,6 @@
       "model_count": 15,
       "sha256": "ca7468ee20820dba1da88d3c3939c79472576c08f8a7d9e00b18a0467e557860",
       "display_name": "OVHcloud AI",
-      "icon_slug": "ovhcloud",
       "category": "cloud",
       "description": "European cloud AI model hosting",
       "company_name": "OVHcloud"
@@ -529,7 +490,6 @@
       "model_count": 6,
       "sha256": "400e4bbbd21c38153b20729a135bd310d8bfd0b13b8d6de65fa19bc8fec60d3b",
       "display_name": "Google PaLM",
-      "icon_slug": "palm",
       "category": "frontier",
       "description": "PaLM 2 legacy models from Google",
       "company_name": "Google"
@@ -539,7 +499,7 @@
       "model_count": 42,
       "sha256": "3dd0731817bed4e925da36a5f2f2d58da576d438d52a13cf854a58f693b3adc8",
       "display_name": "Perplexity",
-      "icon_slug": "perplexity",
+      "logo_url": "https://www.perplexity.ai/favicon.svg",
       "category": "specialized",
       "description": "Online models with real-time web search",
       "company_name": "Perplexity"
@@ -549,7 +509,6 @@
       "model_count": 9,
       "sha256": "8d74426062dea4a97423afa4fb4e18b612f8d72cc10caef278a2e0b0ac2a2f3f",
       "display_name": "PublicAI",
-      "icon_slug": "publicai",
       "category": "open-source",
       "description": "Decentralized open-source model inference",
       "company_name": "PublicAI"
@@ -559,7 +518,6 @@
       "model_count": 5,
       "sha256": "cec6b89674667b209f8f3f7345159939793d6f7ad5bf9d545873c9430ed78f96",
       "display_name": "Qwen (Alibaba)",
-      "icon_slug": "qwen",
       "category": "open-source",
       "description": "Qwen models from Alibaba Cloud",
       "company_name": "Alibaba"
@@ -569,7 +527,6 @@
       "model_count": 2,
       "sha256": "d7374b04b81f39e7b4add3c27bb03ebe8c3d690f06e98f73b5f7552731d9dbc3",
       "display_name": "Recraft",
-      "icon_slug": "recraft",
       "category": "specialized",
       "description": "Professional-grade image generation and design",
       "company_name": "Recraft"
@@ -579,7 +536,7 @@
       "model_count": 40,
       "sha256": "167da1e74acaa3b02f927dcf3adf80ad8d07177c1c85ca2e5543a50040eee54b",
       "display_name": "Replicate",
-      "icon_slug": "replicate",
+      "logo_url": "https://replicate.com/favicon.svg",
       "category": "open-source",
       "description": "Run and fine-tune open-source models",
       "company_name": "Replicate"
@@ -589,7 +546,6 @@
       "model_count": 6,
       "sha256": "6ab5c1fb583c75caf8047a796fe2e9ff40cfc397213470362873664e389db45b",
       "display_name": "Runway",
-      "icon_slug": "runwayml",
       "category": "specialized",
       "description": "AI video generation and creative tools",
       "company_name": "Runway"
@@ -599,7 +555,6 @@
       "model_count": 6,
       "sha256": "d9febdff41ba482f3adf3a06820bf35cacd95bf585bf3a521a0e5875c4c71e6e",
       "display_name": "AWS SageMaker",
-      "icon_slug": "sagemaker",
       "category": "cloud",
       "description": "ML model deployment on AWS SageMaker",
       "company_name": "Amazon"
@@ -609,7 +564,6 @@
       "model_count": 16,
       "sha256": "2526bbfad7402b0e14d72679788ecc19b196fdd36b5c5675da9e130fd0317e2f",
       "display_name": "SambaNova",
-      "icon_slug": "sambanova",
       "category": "specialized",
       "description": "High-throughput inference on SambaNova hardware",
       "company_name": "SambaNova"
@@ -619,7 +573,6 @@
       "model_count": 1,
       "sha256": "a736cfb62a6208c88403312f104caed73f6954776421df3d2cbd21e5802a485d",
       "display_name": "Sarvam AI",
-      "icon_slug": "sarvam",
       "category": "specialized",
       "description": "Indian language AI models and translation",
       "company_name": "Sarvam AI"
@@ -629,7 +582,6 @@
       "model_count": 24,
       "sha256": "02ac93e229b8a08fb91bcdb5afa7386bd925f8c7156fcdfb1467fcec86fe9d09",
       "display_name": "Snowflake Cortex",
-      "icon_slug": "snowflake",
       "category": "cloud",
       "description": "AI models within the Snowflake data platform",
       "company_name": "Snowflake"
@@ -639,7 +591,7 @@
       "model_count": 23,
       "sha256": "78a562a8a867b89941a69ba87004d7b6a1e955d1f11222368776490f42c0f202",
       "display_name": "Stability AI",
-      "icon_slug": "stability",
+      "logo_url": "https://stability.ai/favicon.svg",
       "category": "open-source",
       "description": "Stable Diffusion and image generation models",
       "company_name": "Stability AI"
@@ -649,7 +601,7 @@
       "model_count": 42,
       "sha256": "70715f5b5196c6a1e8fcf886a97640c225e70c2707b3fc17d089fb82ad9e38e6",
       "display_name": "Together AI",
-      "icon_slug": "together",
+      "logo_url": "https://www.together.ai/favicon.svg",
       "category": "open-source",
       "description": "Run 200+ open-source models at scale",
       "company_name": "Together AI"
@@ -659,7 +611,6 @@
       "model_count": 3,
       "sha256": "a53ed16bdb5f7ebb617fa3dacd9b9a2ebf4ffb78304b1856766dad0e8192b362",
       "display_name": "v0 by Vercel",
-      "icon_slug": "v0",
       "category": "specialized",
       "description": "AI-powered UI generation",
       "company_name": "Vercel"
@@ -669,7 +620,6 @@
       "model_count": 101,
       "sha256": "2884d0b27d2d454015770581bc5f08735af519316facf3025ea916219dab9800",
       "display_name": "Vercel AI Gateway",
-      "icon_slug": "vercel_ai_gateway",
       "category": "cloud",
       "description": "AI model routing via Vercel's edge network",
       "company_name": "Vercel"
@@ -679,7 +629,6 @@
       "model_count": 172,
       "sha256": "6624d8557e8979557c7c3c6bcefe3c02e877dee232868a6ca7a10d8bdc2f8452",
       "display_name": "Google Vertex AI",
-      "icon_slug": "google",
       "category": "cloud",
       "description": "Enterprise AI via Google Cloud Vertex AI",
       "company_name": "Google"
@@ -689,7 +638,6 @@
       "model_count": 5,
       "sha256": "c20980c27d784fe2afadd4fc582706dd6d9f3b4762a2d635a3a0435eac0958a8",
       "display_name": "Vertex AI — AI21",
-      "icon_slug": "vertex_ai-ai21_models",
       "category": "cloud",
       "description": "AI21 models via Google Vertex AI",
       "company_name": "Google"
@@ -699,7 +647,6 @@
       "model_count": 3,
       "sha256": "8ad4f5fff0e1d60996ced11f09d4d78a02aa9a11ae4648193b059ff2c2b63ef0",
       "display_name": "Vertex AI — DeepSeek",
-      "icon_slug": "vertex_ai-deepseek_models",
       "category": "cloud",
       "description": "DeepSeek models via Google Vertex AI",
       "company_name": "Google"
@@ -709,7 +656,6 @@
       "model_count": 1,
       "sha256": "b122c9bba4e84aebf07c5a82c1774ee5d401efd0c8c04f609c008187be16d040",
       "display_name": "Vertex AI — MiniMax",
-      "icon_slug": "vertex_ai-minimax_models",
       "category": "cloud",
       "description": "MiniMax models via Google Vertex AI",
       "company_name": "Google"
@@ -719,7 +665,6 @@
       "model_count": 1,
       "sha256": "50a7d317e008400d897497331b3399b7ebeda5740485e8166d50406816f82a50",
       "display_name": "Vertex AI — Moonshot",
-      "icon_slug": "vertex_ai-moonshot_models",
       "category": "cloud",
       "description": "Moonshot models via Google Vertex AI",
       "company_name": "Google"
@@ -729,7 +674,6 @@
       "model_count": 2,
       "sha256": "5736eb3e47a10766faba001b91f115266cc2d218ad5f0e3ca41538ace8680187",
       "display_name": "Vertex AI — OpenAI",
-      "icon_slug": "vertex_ai-openai_models",
       "category": "cloud",
       "description": "OpenAI models via Google Vertex AI",
       "company_name": "Google"
@@ -739,7 +683,6 @@
       "model_count": 4,
       "sha256": "a4d90f826c2c5bd7d659c3e667dfae33b0db693256c1f7bce42c1ce343b4b31e",
       "display_name": "Vertex AI — Qwen",
-      "icon_slug": "vertex_ai-qwen_models",
       "category": "cloud",
       "description": "Qwen models via Google Vertex AI",
       "company_name": "Google"
@@ -749,7 +692,6 @@
       "model_count": 9,
       "sha256": "fa9ea7fa14ec6d48f7533690c45c15847e4f6895ed42487bd653b2f6a675d9d8",
       "display_name": "Vertex AI — Video",
-      "icon_slug": "vertex_ai-video-models",
       "category": "cloud",
       "description": "Video generation models via Google Vertex AI",
       "company_name": "Google"
@@ -759,7 +701,6 @@
       "model_count": 2,
       "sha256": "b97e86484321be99bd65296639188113abcce6be22530bb3eac61a65b21e91b4",
       "display_name": "Vertex AI — Zai",
-      "icon_slug": "vertex_ai-zai_models",
       "category": "cloud",
       "description": "Zai models via Google Vertex AI",
       "company_name": "Google"
@@ -769,7 +710,6 @@
       "model_count": 8,
       "sha256": "7e5226719c3ebe0da7f0c229ee3cddcb963dedb1847f94b9a9482339d26b5647",
       "display_name": "Volcengine",
-      "icon_slug": "volcengine",
       "category": "cloud",
       "description": "ByteDance's cloud AI model platform",
       "company_name": "ByteDance"
@@ -779,7 +719,6 @@
       "model_count": 15,
       "sha256": "d014bf817f9a018d3ac58d50884e8ad2160a0f8c912207bb625a2223230627f5",
       "display_name": "Voyage AI",
-      "icon_slug": "voyage",
       "category": "specialized",
       "description": "Best-in-class embedding models",
       "company_name": "Voyage AI"
@@ -789,7 +728,6 @@
       "model_count": 14,
       "sha256": "96bebd339cf6476ae04fb26aca941d252648c342d6165845ecbe2bedaa5e0fde",
       "display_name": "Weights \u0026 Biases",
-      "icon_slug": "wandb",
       "category": "specialized",
       "description": "ML experiment tracking and model registry",
       "company_name": "Weights \u0026 Biases"
@@ -799,7 +737,6 @@
       "model_count": 29,
       "sha256": "0531de8f9755f82025fb5fc72e222c83e172de8ebaf9b4cc0ca4da9862860223",
       "display_name": "IBM watsonx",
-      "icon_slug": "watsonx",
       "category": "cloud",
       "description": "Enterprise AI foundation models on IBM Cloud",
       "company_name": "IBM"
@@ -809,7 +746,7 @@
       "model_count": 32,
       "sha256": "4177dc7d69d54224f34ba797e4b0dfb495125eeea18725fce946d7d8788ec37c",
       "display_name": "xAI (Grok)",
-      "icon_slug": "xai",
+      "logo_url": "https://x.ai/favicon.svg",
       "category": "frontier",
       "description": "Grok models from xAI",
       "company_name": "xAI"
@@ -819,7 +756,6 @@
       "model_count": 9,
       "sha256": "e99b49fc2ba3162cc0383bdd11da5a14659d44c4f7ba1c8b1af2124495cdcc8c",
       "display_name": "Zai",
-      "icon_slug": "zai",
       "category": "specialized",
       "description": "Specialized AI model inference",
       "company_name": "Zai"

@@ -1,5 +1,5 @@
 display_name: Heroku AI
-icon_slug: heroku
+logo_url:
 category: cloud
 description: AI model inference on Heroku platform
 company_name: Salesforce

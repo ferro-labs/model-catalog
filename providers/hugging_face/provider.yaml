@@ -1,5 +1,5 @@
 display_name: Hugging Face
-icon_slug: hugging_face
+logo_url: https://huggingface.co/favicon.svg
 category: open-source
 description: Hub and inference API for open-source models
 company_name: Hugging Face

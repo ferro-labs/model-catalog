@@ -1,5 +1,5 @@
 display_name: NVIDIA NIM
-icon_slug: nvidia_nim
+logo_url:
 category: specialized
 description: Optimized inference microservices for NVIDIA GPUs
 company_name: NVIDIA
