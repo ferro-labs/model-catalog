@@ -2,11 +2,11 @@ provider: nanogpt
 model_id: mistral/mistral-medium-3.5
 display_name: Mistral Medium 3.5 via NanoGPT
 mode: chat
-context_window: 128000
-max_output_tokens: 8192
+context_window: 131072
+max_output_tokens: 8191
 pricing:
-    input_per_m_tokens: 0.0
-    output_per_m_tokens: 0.0
+    input_per_m_tokens: null
+    output_per_m_tokens: null
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -24,7 +24,7 @@ capabilities:
     function_calling: true
     parallel_tool_calls: false
     json_mode: true
-    response_schema: false
+    response_schema: true
     prompt_caching: false
     reasoning: false
     streaming: true
@@ -34,6 +34,6 @@ lifecycle:
     deprecation_date: null
     sunset_date: null
     successor: null
-source: "https://nano-gpt.com"
+source: "https://nano-gpt.com/v1/models"
 updated_at: "2026-05-21"
 tier: standard
