@@ -1,8 +1,8 @@
 {
-  "version": "v2026.05.18",
+  "version": "v2026.05.25",
   "schema_version": 1,
-  "generated_at": "2026-05-18T10:14:31Z",
-  "catalog_sha256": "ed27657307a1eea460294210dc3e25d272f33694426d96a7e4a071b984bddc19",
+  "generated_at": "2026-05-25T11:57:36Z",
+  "catalog_sha256": "f7d4bf05ecaa0b0116a1d86dbe6abbb0d920c777aa9cbfea800e22e1d0687d64",
   "providers": [
     {
       "id": "ai21",
@@ -394,6 +394,16 @@
       "company_name": "Morph"
     },
     {
+      "id": "nanogpt",
+      "model_count": 22,
+      "sha256": "651e8dad5c2d9371c890565481005efa9a4a27681d5c4a8b037ec5174487e4b2",
+      "display_name": "NanoGPT",
+      "logo_url": "https://nano-gpt.com/favicon.ico",
+      "category": "aggregator",
+      "description": "Credit-based access to frontier models from Anthropic, OpenAI, Google, xAI, DeepSeek, Mistral, Moonshot, and more",
+      "company_name": "NanoGPT"
+    },
+    {
       "id": "nlp_cloud",
       "model_count": 2,
       "sha256": "4dfc1301ece1514298d30ad704bcc00a23c6de2a380fbcbb0bb2c8d03fa79f09",
@@ -753,8 +763,8 @@
     },
     {
       "id": "zai",
-      "model_count": 9,
-      "sha256": "e99b49fc2ba3162cc0383bdd11da5a14659d44c4f7ba1c8b1af2124495cdcc8c",
+      "model_count": 12,
+      "sha256": "b4ae124a1605b7ea46686c7351b47c5a6f253afafeb2dcf370f4efa0b45b677d",
       "display_name": "Zai",
       "category": "specialized",
       "description": "Specialized AI model inference",
@@ -762,7 +772,7 @@
     }
   ],
   "stats": {
-    "total_models": 2479,
-    "total_providers": 82
+    "total_models": 2504,
+    "total_providers": 83
   }
 }
