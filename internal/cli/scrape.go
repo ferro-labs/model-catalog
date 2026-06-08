@@ -73,6 +73,8 @@ func runScrape() error {
 		return fmt.Errorf("no observations collected from any scraper")
 	}
 
+	allObs = scrape.NormalizeObservations(allObs)
+
 	// Reconcile.
 	result := scrape.Reconcile(entries, allObs)
 	report := scrape.FormatReport(result)
@@ -119,6 +121,8 @@ func runScrape() error {
 // buildAutoAddCandidates filters new models to only those with high confidence
 // (≥2 oracles agree on pricing).
 func buildAutoAddCandidates(newModels []string, allObs []scrape.Observation) []catalog.AutoAddCandidate {
+	allObs = scrape.NormalizeObservations(allObs)
+
 	grouped := make(map[string][]scrape.Observation)
 	for _, obs := range allObs {
 		key := obs.Provider + "/" + obs.ModelID

@@ -100,6 +100,7 @@ func runFreshness() error {
 			fmt.Fprintf(os.Stderr, "  WARNING: %s failed: %v\n", check.name, err)
 			continue
 		}
+		obs = scrape.NormalizeObservations(obs)
 
 		catalogModels := make(map[string]bool)
 		for key := range entries {

@@ -33,6 +33,8 @@ type ReconcileResult struct {
 // Reconcile cross-checks scraped observations against the catalog and returns a result
 // summarizing matches, differences, new models, and missing models.
 func Reconcile(entries map[string]catalog.Entry, observations []Observation) ReconcileResult {
+	observations = NormalizeObservations(observations)
+
 	// Group observations by catalog key (provider/model_id).
 	grouped := make(map[string][]Observation)
 	for _, obs := range observations {
