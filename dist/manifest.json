@@ -1,8 +1,8 @@
 {
   "version": "v2026.06.08",
   "schema_version": 1,
-  "generated_at": "2026-06-08T07:01:33Z",
-  "catalog_sha256": "a83a496b8b4216412624f68a239964f88acc2d7143e4d906d7c5f28dc1d063ac",
+  "generated_at": "2026-06-08T11:02:25Z",
+  "catalog_sha256": "a38ff6cecea2203ce66330befa7d701e9c740fd77b45f606d650b8cf5e450f4f",
   "providers": [
     {
       "id": "ai21",
@@ -470,7 +470,7 @@
     {
       "id": "openai",
       "model_count": 162,
-      "sha256": "b8ee4efd8a261162deec330b7f40615d36815e0bf85408555fa56f208e97dd18",
+      "sha256": "6c33ac85304159a48432d78b3aa52f76a756ba685e5211451c2a28254ce197c6",
       "display_name": "OpenAI",
       "logo_url": "https://cdn.openai.com/API/logo-assets/openai-logomark.svg",
       "category": "frontier",

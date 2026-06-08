@@ -75907,9 +75907,9 @@
     "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": null,
+      "input_per_m_tokens": 0.2,
       "output_per_m_tokens": 1.25,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.02,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -75940,7 +75940,7 @@
       "successor": null
     },
     "source": "auto:models_dev+openrouter",
-    "updated_at": "2026-05-04",
+    "updated_at": "2026-06-08",
     "tier": "standard"
   },
   "openai/gpt-5.4-pro": {
