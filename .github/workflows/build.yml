@@ -30,9 +30,6 @@ jobs:
       - name: Validate
         run: go run ./cmd/ferrocat validate
 
-      - name: Build
-        run: go run ./cmd/ferrocat build --output dist/
-
       - name: Determine version
         id: version
         run: |
@@ -45,6 +42,9 @@ jobs:
           done
           FINAL="${VERSION}${SUFFIX}"
           echo "version=${FINAL}" >> "$GITHUB_OUTPUT"
+
+      - name: Build
+        run: go run ./cmd/ferrocat build --output dist/ --version "${{ steps.version.outputs.version }}"
 
       - name: Create dist PR
         uses: peter-evans/create-pull-request@v6

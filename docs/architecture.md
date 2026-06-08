@@ -99,13 +99,13 @@ model-catalog/
 │       ├── scrape.go               # ferrocat scrape
 │       └── migrate.go              # ferrocat migrate-extends
 │
-├── providers/                      # Source of truth (2,468 YAML files)
-│   ├── openai/models/              # 156 models
-│   ├── anthropic/models/           # 25 models
+├── providers/                      # Source of truth (2,505 YAML files)
+│   ├── openai/models/              # 162 models
+│   ├── anthropic/models/           # 26 models
 │   ├── gemini/models/              # 78 models
-│   ├── bedrock/models/             # 343 models
-│   ├── azure/models/               # 115 models (mostly extends wrappers)
-│   ├── vertex_ai/models/           # 123 models (mostly extends wrappers)
+│   ├── bedrock/models/             # 344 models
+│   ├── azure/models/               # 228 models (mostly extends wrappers)
+│   ├── vertex_ai/models/           # 172 models (mostly extends wrappers)
 │   └── ...                         # 82 provider directories total
 │
 ├── dist/                           # Generated artifacts (do not edit)
@@ -116,7 +116,8 @@ model-catalog/
 ├── .github/
 │   ├── workflows/
 │   │   ├── validate.yml            # PR gate: validate + lint + test
-│   │   └── build.yml               # On merge: build + CalVer tag + release
+│   │   ├── build.yml               # On merge: build dist PR with CalVer manifest version
+│   │   └── release.yml             # On dist merge: tag manifest version + release
 │   ├── CODEOWNERS
 │   ├── ISSUE_TEMPLATE/
 │   │   ├── new_model.md
@@ -240,7 +241,7 @@ tier: standard
 
 ### Current coverage
 
-193 wrapper models across 4 providers:
+269 wrapper models across wrapper providers:
 - **azure** ← openai (87), anthropic (6), mistral (6), xai (6), deepseek (3), meta_llama (2), cohere (1), cerebras (1)
 - **vertex_ai** ← gemini (48), anthropic (5), mistral (1)
 - **github_copilot** ← openai (20), gemini (2)
@@ -256,7 +257,7 @@ tier: standard
 2. Read each YAML file into an `Entry`
 3. Resolve `extends` inheritance (deep-merge wrappers onto bases)
 4. Write `dist/catalog.json` — full flat map, sorted keys, 2-space indent
-5. Group entries by provider → write `dist/providers/<id>.json` (82 slices)
+5. Group entries by provider → write `dist/providers/<id>.json` (83 slices)
 6. Compute SHA-256 hashes → write `dist/manifest.json`
 
 ### Manifest
@@ -268,9 +269,9 @@ tier: standard
   "generated_at": "2026-04-30T12:00:00Z",
   "catalog_sha256": "af3860ac...",
   "providers": [
-    { "id": "openai", "model_count": 156, "sha256": "1a2b3c..." }
+    { "id": "openai", "model_count": 162, "sha256": "1a2b3c..." }
   ],
-  "stats": { "total_models": 2468, "total_providers": 82 }
+  "stats": { "total_models": 2505, "total_providers": 83 }
 }
 ```
 
@@ -361,10 +362,10 @@ All scrapers use `scrape.FetchJSON()`:
 
 ### validate.yml (PR gate)
 
-Triggers on PRs touching `providers/`, `overrides/`, `schema/`, `catalog/`, `scrape/`, `cmd/`, `internal/`.
+Triggers on PRs touching `providers/`, `cmd/`, `catalog/`, `scrape/`, `internal/`, workflow files, or `Makefile`.
 
 Steps:
-1. `ferrocat validate --strict`
+1. `ferrocat validate`
 2. `ferrocat lint`
 3. `go test -race ./...`
 4. `ferrocat build --output /tmp/dist` (dry-run)
@@ -429,7 +430,7 @@ github.com/ferro-labs/model-catalog/internal/cli    # Cobra wiring, not importab
 
 | File | Description | Cache |
 |------|-------------|-------|
-| `catalog.json` | Full flat catalog (all 2,468 models) | Mutable per release |
+| `catalog.json` | Full flat catalog (all 2,505 models) | Mutable per release |
 | `manifest.json` | Version, SHA-256 hashes, provider index | Mutable per release |
 | `providers/<id>.json` | Per-provider slice (82 files) | Mutable per release |
 

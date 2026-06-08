@@ -12,7 +12,7 @@
     <a href="https://github.com/ferro-labs/model-catalog/actions/workflows/build.yml"><img src="https://github.com/ferro-labs/model-catalog/actions/workflows/build.yml/badge.svg" alt="Build" /></a>
   </p>
   <p>
-    <strong>2,479 models</strong> &middot; <strong>82 providers</strong> &middot; <strong>Updated weekly</strong> &middot; <strong>Zero paid infrastructure</strong>
+    <strong>2,505 models</strong> &middot; <strong>83 providers</strong> &middot; <strong>Updated weekly</strong> &middot; <strong>Zero paid infrastructure</strong>
   </p>
 </div>
 
@@ -36,7 +36,7 @@ GPT-4o: $2.5/M input, $10.0/M output, 128,000 ctx
 | If you're building... | You can use the catalog to... |
 |---|---|
 | An AI gateway or proxy | Route requests by model capability, calculate costs per request |
-| A cost tracker or billing system | Look up per-token pricing for any model across 82 providers |
+| A cost tracker or billing system | Look up per-token pricing for any model across 83 providers |
 | A coding agent (like Aider, OpenCode, Cursor) | Know which models support function calling, vision, streaming |
 | An LLM comparison tool | Compare pricing and context windows across providers |
 | A model selection UI | Display model metadata with accurate, up-to-date pricing |
@@ -92,41 +92,52 @@ tier: flagship                      # flagship | standard
 OpenAI, Anthropic, Google Gemini, AWS Bedrock, Azure, Vertex AI, Groq, Mistral, Cohere, Together AI, Fireworks, DeepInfra, DeepSeek, xAI (Grok), Meta Llama, Replicate, Perplexity, NVIDIA NIM, Hugging Face, Cerebras, SambaNova, and 60+ more.
 
 <details>
-<summary><strong>All 82 providers with model counts</strong></summary>
+<summary><strong>All 83 providers with model counts</strong></summary>
 
 | Provider | Models | | Provider | Models |
 |----------|-------:|-|----------|-------:|
-| bedrock | 343 | | groq | 14 |
-| fireworks | 273 | | gradient_ai | 13 |
-| openai | 156 | | oci | 13 |
-| vertex_ai | 123 | | ai21 | 12 |
-| azure | 115 | | aiml | 12 |
-| vercel_ai_gateway | 101 | | anyscale | 12 |
-| novita | 83 | | fal_ai | 12 |
-| gemini | 78 | | minimax | 9 |
-| openrouter | 78 | | publicai | 9 |
-| deepinfra | 67 | | zai | 9 |
-| mistral | 43 | | volcengine | 8 |
-| together | 42 | | cerebras | 7 |
-| perplexity | 42 | | deepseek | 6 |
-| replicate | 40 | | aleph_alpha | 6 |
-| deepgram | 36 | | gigachat | 6 |
-| xai | 32 | | runwayml | 6 |
-| github_copilot | 31 | | qwen | 5 |
-| ollama | 29 | | azure_openai | 5 |
-| watsonx | 29 | | cloudflare | 4 |
-| databricks | 28 | | amazon_nova | 4 |
-| anthropic | 25 | | meta_llama | 4 |
-| snowflake | 24 | | ollama_cloud | 4 |
-| dashscope | 23 | | azure_foundry | 3 |
-| stability | 23 | | hugging_face | 3 |
-| moonshot | 21 | | nvidia_nim | 3 |
-| lambda_ai | 20 | | featherless_ai | 2 |
-| cohere | 17 | | morph | 2 |
-| gmi | 17 | | recraft | 2 |
-| hyperbolic | 16 | | sarvam | 1 |
-| nscale | 16 | | *+ vertex sub-providers* | 27 |
-| sambanova | 16 | | | |
+| bedrock | 344 | | fal_ai | 12 |
+| fireworks | 273 | | zai | 12 |
+| azure | 228 | | minimax | 9 |
+| vertex_ai | 172 | | publicai | 9 |
+| openai | 162 | | vertex_ai-video-models | 9 |
+| vercel_ai_gateway | 101 | | deepseek | 8 |
+| novita | 83 | | volcengine | 8 |
+| gemini | 78 | | cerebras | 7 |
+| openrouter | 78 | | aleph_alpha | 6 |
+| deepinfra | 67 | | gigachat | 6 |
+| mistral | 43 | | palm | 6 |
+| perplexity | 42 | | runwayml | 6 |
+| together | 42 | | sagemaker | 6 |
+| replicate | 40 | | azure_openai | 5 |
+| deepgram | 36 | | lemonade | 5 |
+| xai | 32 | | qwen | 5 |
+| github_copilot | 31 | | vertex_ai-ai21_models | 5 |
+| ollama | 29 | | amazon_nova | 4 |
+| watsonx | 29 | | aws_polly | 4 |
+| databricks | 28 | | cloudflare | 4 |
+| anthropic | 26 | | elevenlabs | 4 |
+| snowflake | 24 | | heroku | 4 |
+| dashscope | 23 | | meta_llama | 4 |
+| stability | 23 | | ollama_cloud | 4 |
+| nanogpt | 22 | | vertex_ai-qwen_models | 4 |
+| moonshot | 21 | | azure_foundry | 3 |
+| lambda_ai | 20 | | hugging_face | 3 |
+| cohere | 17 | | nvidia_nim | 3 |
+| gmi | 17 | | v0 | 3 |
+| hyperbolic | 16 | | vertex_ai-deepseek_models | 3 |
+| llamagate | 16 | | assemblyai | 2 |
+| nscale | 16 | | featherless_ai | 2 |
+| sambanova | 16 | | friendliai | 2 |
+| ovhcloud | 15 | | morph | 2 |
+| voyage | 15 | | nlp_cloud | 2 |
+| groq | 14 | | recraft | 2 |
+| wandb | 14 | | vertex_ai-openai_models | 2 |
+| gradient_ai | 13 | | vertex_ai-zai_models | 2 |
+| oci | 13 | | sarvam | 1 |
+| ai21 | 12 | | vertex_ai-minimax_models | 1 |
+| aiml | 12 | | vertex_ai-moonshot_models | 1 |
+| anyscale | 12 | |  |  |
 
 </details>
 
@@ -246,7 +257,7 @@ curl -sLO https://github.com/ferro-labs/model-catalog/releases/latest/download/p
 
 When Vertex AI hosts Gemini or Azure hosts OpenAI, the wrapper model inherits from the base and overrides only what differs. A single price update to GPT-4o propagates to azure/gpt-4o, azure_openai/gpt-4o, and github_copilot/gpt-4o automatically.
 
-193 wrapper models currently use this pattern.
+269 wrapper models currently use this pattern.
 
 ### Manifest with integrity
 
@@ -293,7 +304,7 @@ Requires Go 1.24+.
 |---------|-----------|---------|------------|---------|
 | Open source | Yes | Yes (one JSON file in main repo) | Yes (separate repo) | Yes (separate repo) |
 | Per-model files | Yes (YAML) | No (single 111K-line JSON) | Yes (TOML) | No (per-provider JSON) |
-| `extends` inheritance | Yes (193 wrappers) | No | Yes | No |
+| `extends` inheritance | Yes (269 wrappers) | No | Yes | No |
 | Automated cross-check scrapers | Yes (OpenRouter + models.dev) | No | No | No |
 | Per-provider slices | Yes (82 files) | No | No | Yes |
 | Integrity verification (SHA-256) | Yes | No | No | No |

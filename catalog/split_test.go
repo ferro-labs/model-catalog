@@ -3,6 +3,7 @@ package catalog
 import (
 	"os"
 	"path/filepath"
+	"strings"
 	"testing"
 )
 
@@ -98,5 +99,28 @@ func TestSplitCatalog(t *testing.T) {
 	}
 	if entry.ModelID != "claude-sonnet-4-5" {
 		t.Errorf("anthropic entry.ModelID = %q, want %q", entry.ModelID, "claude-sonnet-4-5")
+	}
+}
+
+func TestSplitRejectsUnsafeProvider(t *testing.T) {
+	catalogJSON := `{
+  "../evil/model": {
+    "provider": "../evil",
+    "model_id": "model",
+    "display_name": "Bad Model",
+    "mode": "chat",
+    "pricing": {},
+    "capabilities": {},
+    "lifecycle": {"status": "ga"},
+    "tier": "standard"
+  }
+}`
+
+	err := Split([]byte(catalogJSON), t.TempDir())
+	if err == nil {
+		t.Fatal("expected unsafe provider error")
+	}
+	if !strings.Contains(err.Error(), "unsafe provider id") {
+		t.Fatalf("error = %v, want unsafe provider id", err)
 	}
 }

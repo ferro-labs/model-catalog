@@ -7,7 +7,7 @@
 - **Module**: `github.com/ferro-labs/model-catalog`
 - **Go version**: 1.24+
 - **License**: Apache 2.0
-- **Data**: 2,468 models across 82 providers
+- **Data**: 2,505 models across 83 providers
 
 ---
 
@@ -80,11 +80,11 @@ model-catalog/
 │       ├── openrouter.go       # OpenRouter /api/v1/models
 │       └── models_dev.go       # models.dev /api.json
 ├── internal/cli/               # Cobra command wiring (thin wrappers, not importable)
-├── providers/                  # Source of truth — 2,468 per-model YAML files
+├── providers/                  # Source of truth — 2,505 per-model YAML files
 ├── dist/                       # Generated artifacts (do not edit manually)
 │   ├── catalog.json            # Full flat catalog
 │   ├── manifest.json           # Version, SHA-256 hashes, stats
-│   └── providers/              # 82 per-provider JSON slices
+│   └── providers/              # 83 per-provider JSON slices
 ├── docs/architecture.md        # Full technical reference
 └── .github/workflows/          # CI: validate.yml (PR gate), build.yml (release)
 ```
@@ -117,7 +117,7 @@ model-catalog/
 
 ### Extends inheritance
 
-Wrapper models (e.g., `vertex_ai/gemini-2.0-flash`) use `extends: gemini/gemini-2.0-flash` to inherit from base models. The build resolves inheritance and emits fully-merged entries. Max chain depth = 1. Mode cannot be overridden. 193 wrappers currently use this pattern.
+Wrapper models (e.g., `vertex_ai/gemini-2.0-flash`) use `extends: gemini/gemini-2.0-flash` to inherit from base models. The build resolves inheritance and emits fully-merged entries. Max chain depth = 1. Mode cannot be overridden. 269 wrappers currently use this pattern.
 
 ### NullFloat64
 

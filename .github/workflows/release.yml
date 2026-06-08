@@ -16,19 +16,20 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Determine version
+      - name: Read manifest version
         id: version
         run: |
-          VERSION="v$(date -u +%Y.%m.%d)"
-          SUFFIX=""
-          COUNTER=0
-          while git tag -l "${VERSION}${SUFFIX}" | grep -q .; do
-            COUNTER=$((COUNTER + 1))
-            SUFFIX=".${COUNTER}"
-          done
-          FINAL="${VERSION}${SUFFIX}"
-          echo "version=${FINAL}" >> "$GITHUB_OUTPUT"
-          echo "Version: ${FINAL}"
+          VERSION="$(jq -r '.version // ""' dist/manifest.json)"
+          if [ -z "$VERSION" ] || [ "$VERSION" = "null" ]; then
+            echo "dist/manifest.json does not contain a version" >&2
+            exit 1
+          fi
+          if git tag -l "$VERSION" | grep -q .; then
+            echo "Tag $VERSION already exists; regenerate dist with a new version" >&2
+            exit 1
+          fi
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "Version: ${VERSION}"
 
       - name: Generate release notes
         id: notes

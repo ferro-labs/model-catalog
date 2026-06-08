@@ -24,10 +24,25 @@ jobs:
         with:
           go-version-file: go.mod
 
+      - name: Determine version
+        id: version
+        run: |
+          VERSION="v$(date -u +%Y.%m.%d)"
+          SUFFIX=""
+          COUNTER=0
+          while git tag -l "${VERSION}${SUFFIX}" | grep -q .; do
+            COUNTER=$((COUNTER + 1))
+            SUFFIX=".${COUNTER}"
+          done
+          FINAL="${VERSION}${SUFFIX}"
+          echo "version=${FINAL}" >> "$GITHUB_OUTPUT"
+
       - name: Build catalog
-        run: go run ./cmd/ferrocat build --output dist/
+        run: go run ./cmd/ferrocat build --output dist/ --version "${{ steps.version.outputs.version }}"
 
       - name: Freshness check against provider APIs
+        id: freshness
+        continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
@@ -40,25 +55,33 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           TOGETHER_API_KEY: ${{ secrets.TOGETHER_API_KEY }}
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
-        run: go run ./cmd/ferrocat freshness || true
+        run: go run ./cmd/ferrocat freshness
 
       - name: Scrape and auto-add
         id: scrape
+        continue-on-error: true
         run: |
-          go run ./cmd/ferrocat scrape --auto-add --write --report /tmp/scrape-report.md || true
+          set +e
+          go run ./cmd/ferrocat scrape --auto-add --write --report /tmp/scrape-report.md
+          SCRAPE_EXIT=$?
+          set -e
 
           ADDED=$(git diff --name-only --diff-filter=A providers/ | wc -l | tr -d ' ')
           MODIFIED=$(git diff --name-only --diff-filter=M providers/ | wc -l | tr -d ' ')
           echo "added=${ADDED}" >> "$GITHUB_OUTPUT"
           echo "modified=${MODIFIED}" >> "$GITHUB_OUTPUT"
+          echo "exit_code=${SCRAPE_EXIT}" >> "$GITHUB_OUTPUT"
+          exit "$SCRAPE_EXIT"
 
       - name: Backfill source URLs
-        run: go run ./cmd/ferrocat backfill-source || true
+        id: backfill
+        continue-on-error: true
+        run: go run ./cmd/ferrocat backfill-source
 
       - name: Rebuild after changes
         run: |
           if ! git diff --quiet providers/; then
-            go run ./cmd/ferrocat build --output dist/
+            go run ./cmd/ferrocat build --output dist/ --version "${{ steps.version.outputs.version }}"
           fi
 
       - name: Check for changes
@@ -87,6 +110,14 @@ jobs:
           branch: scrape/weekly-${{ github.run_id }}
           labels: auto-pr
           delete-branch: true
+
+      - name: Fail on scrape or freshness errors
+        if: steps.freshness.outcome == 'failure' || steps.scrape.outcome == 'failure' || steps.backfill.outcome == 'failure'
+        run: |
+          echo "Freshness outcome: ${{ steps.freshness.outcome }}"
+          echo "Scrape outcome: ${{ steps.scrape.outcome }}"
+          echo "Backfill outcome: ${{ steps.backfill.outcome }}"
+          exit 1
 
       - name: Track failures
         if: failure()

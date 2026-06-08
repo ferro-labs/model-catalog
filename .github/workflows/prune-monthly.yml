@@ -21,13 +21,26 @@ jobs:
         with:
           go-version-file: go.mod
 
+      - name: Determine version
+        id: version
+        run: |
+          VERSION="v$(date -u +%Y.%m.%d)"
+          SUFFIX=""
+          COUNTER=0
+          while git tag -l "${VERSION}${SUFFIX}" | grep -q .; do
+            COUNTER=$((COUNTER + 1))
+            SUFFIX=".${COUNTER}"
+          done
+          FINAL="${VERSION}${SUFFIX}"
+          echo "version=${FINAL}" >> "$GITHUB_OUTPUT"
+
       - name: Prune sunset models
         run: go run ./cmd/ferrocat prune --days 90
 
       - name: Rebuild catalog
         run: |
           if ! git diff --quiet providers/; then
-            go run ./cmd/ferrocat build --output dist/
+            go run ./cmd/ferrocat build --output dist/ --version "${{ steps.version.outputs.version }}"
           fi
 
       - name: Check for changes

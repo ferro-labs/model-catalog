@@ -22,6 +22,17 @@ func writeTestModel(t *testing.T, dir string, provider string, filename string, 
 	}
 }
 
+func writeRawTestModel(t *testing.T, dir string, provider string, filename string, content string) {
+	t.Helper()
+	modelsDir := filepath.Join(dir, provider, "models")
+	if err := os.MkdirAll(modelsDir, 0o750); err != nil {
+		t.Fatalf("mkdir %s: %v", modelsDir, err)
+	}
+	if err := os.WriteFile(filepath.Join(modelsDir, filename), []byte(content), 0o600); err != nil {
+		t.Fatalf("write yaml: %v", err)
+	}
+}
+
 func TestValidateProviders_ValidEntries(t *testing.T) {
 	tmpDir := t.TempDir()
 
@@ -294,6 +305,32 @@ func TestValidateProviders_AllStatuses(t *testing.T) {
 	if len(errs) != 0 {
 		for _, e := range errs {
 			t.Errorf("unexpected error: %s: %s: %s", e.File, e.Field, e.Message)
+		}
+	}
+}
+
+func TestValidateProviders_RequiredSchemaBlocks(t *testing.T) {
+	tmpDir := t.TempDir()
+
+	writeRawTestModel(t, tmpDir, "openai", "incomplete.yaml", `provider: openai
+model_id: incomplete
+display_name: Incomplete
+mode: chat
+lifecycle: {}
+`)
+
+	errs, err := Validate(tmpDir)
+	if err != nil {
+		t.Fatalf("Validate() error: %v", err)
+	}
+
+	fields := make(map[string]bool)
+	for _, e := range errs {
+		fields[e.Field] = true
+	}
+	for _, field := range []string{"pricing", "capabilities", "lifecycle.status", "tier"} {
+		if !fields[field] {
+			t.Fatalf("expected error for %s; got %#v", field, errs)
 		}
 	}
 }

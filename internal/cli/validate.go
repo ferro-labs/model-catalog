@@ -9,9 +9,12 @@ import (
 )
 
 var validateProvidersDir string
+var validateStrict bool
 
 func init() {
 	validateCmd.Flags().StringVarP(&validateProvidersDir, "providers", "p", "providers", "path to providers directory")
+	validateCmd.Flags().BoolVar(&validateStrict, "strict", false, "deprecated; validation is always strict")
+	_ = validateCmd.Flags().MarkDeprecated("strict", "validation is always strict")
 	rootCmd.AddCommand(validateCmd)
 }
 

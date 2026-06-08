@@ -23,11 +23,11 @@ func TestReconcileMatching(t *testing.T) {
 
 	obs := []Observation{
 		{
-			Source:    "openrouter",
-			ScrapedAt: time.Now(),
-			Provider:  "openai",
-			ModelID:   "gpt-4o",
-			InputPerM: ptr(2.5),
+			Source:     "openrouter",
+			ScrapedAt:  time.Now(),
+			Provider:   "openai",
+			ModelID:    "gpt-4o",
+			InputPerM:  ptr(2.5),
 			OutputPerM: ptr(10.0),
 		},
 	}

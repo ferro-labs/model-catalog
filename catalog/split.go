@@ -4,14 +4,24 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 )
+
+var providerDirPattern = regexp.MustCompile(`^[a-z0-9][a-z0-9_-]*$`)
 
 // SanitizeFilename replaces characters that are unsafe in filenames.
 func SanitizeFilename(name string) string {
 	name = strings.ReplaceAll(name, "/", "__")
 	name = strings.ReplaceAll(name, ":", "_")
 	return name
+}
+
+func validateProviderDir(provider string) error {
+	if !providerDirPattern.MatchString(provider) {
+		return fmt.Errorf("unsafe provider id %q", provider)
+	}
+	return nil
 }
 
 // Split reads a catalog JSON blob and writes per-model YAML files into
@@ -43,6 +53,10 @@ func Split(data []byte, outputDir string) error {
 			} else {
 				modelID = key
 			}
+		}
+
+		if err := validateProviderDir(provider); err != nil {
+			return fmt.Errorf("entry %s: %w", key, err)
 		}
 
 		dir := filepath.Join(outputDir, provider, "models")

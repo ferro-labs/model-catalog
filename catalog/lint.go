@@ -49,6 +49,7 @@ func Lint(providersDir string) ([]LintIssue, error) {
 		extends  string // non-empty if this entry uses extends
 	}
 	modelIndex := make(map[string][]modelRef)
+	keyIndex := make(map[string][]modelRef)
 
 	for _, path := range matches {
 		data, err := os.ReadFile(filepath.Clean(path))
@@ -84,16 +85,48 @@ func Lint(providersDir string) ([]LintIssue, error) {
 			})
 		}
 
-		// Collect for duplicate detection.
-		modelIndex[entry.ModelID] = append(modelIndex[entry.ModelID], modelRef{
+		ref := modelRef{
 			provider: entry.Provider,
 			file:     path,
 			key:      key,
 			extends:  entry.Extends,
-		})
+		}
+
+		// Collect for duplicate detection.
+		modelIndex[entry.ModelID] = append(modelIndex[entry.ModelID], ref)
+		keyIndex[key] = append(keyIndex[key], ref)
 	}
 
-	// Check 3: duplicate model IDs across providers.
+	// Check 3: duplicate catalog keys within the source tree. These would be
+	// silently overwritten by the build map if they reached Build.
+	var dupCatalogKeys []string
+	for key, refs := range keyIndex {
+		if len(refs) > 1 {
+			dupCatalogKeys = append(dupCatalogKeys, key)
+		}
+	}
+	sort.Strings(dupCatalogKeys)
+
+	for _, key := range dupCatalogKeys {
+		refs := keyIndex[key]
+		var files []string
+		for _, r := range refs {
+			files = append(files, r.file)
+		}
+		sort.Strings(files)
+
+		msg := fmt.Sprintf("duplicate catalog key %q found in files: %s", key, strings.Join(files, ", "))
+		for _, r := range refs {
+			issues = append(issues, LintIssue{
+				Severity: "error",
+				File:     r.file,
+				Key:      r.key,
+				Message:  msg,
+			})
+		}
+	}
+
+	// Check 4: duplicate model IDs across providers.
 	// Skip groups where any entry uses extends (intentional inheritance).
 	var dupModelIDs []string
 	for modelID, refs := range modelIndex {

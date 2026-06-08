@@ -63,8 +63,8 @@ tier: flagship
 ### 4. Validate locally (optional)
 
 ```bash
-go run ./tools/ferrocat validate
-go run ./tools/ferrocat build --output /tmp/dist
+go run ./cmd/ferrocat validate
+go run ./cmd/ferrocat build --output /tmp/dist
 ```
 
 ### 5. Open a PR

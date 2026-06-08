@@ -8,6 +8,7 @@ import (
 	"os"
 	"path/filepath"
 	"sort"
+	"strings"
 	"time"
 
 	"gopkg.in/yaml.v3"
@@ -17,7 +18,19 @@ import (
 // inheritance, and writes the catalog JSON, per-provider slices, and manifest
 // to distDir.
 func Build(providersDir, distDir string) error {
+	return BuildWithVersion(providersDir, distDir, "")
+}
+
+// BuildWithVersion is like Build, but writes the supplied version into the
+// manifest. If version is empty, it derives the CalVer version from UTC now.
+func BuildWithVersion(providersDir, distDir, version string) error {
+	version = strings.TrimSpace(version)
+	if version != "" && !strings.HasPrefix(version, "v") {
+		return fmt.Errorf("version %q must start with v", version)
+	}
+
 	entries := make(map[string]Entry)
+	seenPaths := make(map[string]string)
 
 	providerMetas := readProviderMetas(providersDir)
 
@@ -39,6 +52,10 @@ func Build(providersDir, distDir string) error {
 		}
 
 		key := entry.Provider + "/" + entry.ModelID
+		if previousPath, exists := seenPaths[key]; exists {
+			return fmt.Errorf("duplicate catalog key %q in %s and %s", key, previousPath, path)
+		}
+		seenPaths[key] = path
 		entries[key] = entry
 	}
 
@@ -63,7 +80,7 @@ func Build(providersDir, distDir string) error {
 
 	fmt.Printf("Built catalog with %d entries at %s\n", len(entries), outputPath)
 
-	if err := generateProviderSlicesAndManifest(entries, jsonData, distDir, providerMetas); err != nil {
+	if err := generateProviderSlicesAndManifest(entries, jsonData, distDir, providerMetas, version); err != nil {
 		return err
 	}
 
@@ -110,7 +127,7 @@ func readProviderMetas(providersDir string) map[string]ProviderMeta {
 	return metas
 }
 
-func generateProviderSlicesAndManifest(entries map[string]Entry, catalogJSON []byte, distDir string, providerMetas map[string]ProviderMeta) error {
+func generateProviderSlicesAndManifest(entries map[string]Entry, catalogJSON []byte, distDir string, providerMetas map[string]ProviderMeta, version string) error {
 	providersDir := filepath.Join(distDir, "providers")
 	if err := os.MkdirAll(providersDir, 0o750); err != nil {
 		return fmt.Errorf("create providers dir: %w", err)
@@ -158,8 +175,12 @@ func generateProviderSlicesAndManifest(entries map[string]Entry, catalogJSON []b
 	}
 
 	now := time.Now().UTC()
+	if version == "" {
+		version = fmt.Sprintf("v%d.%02d.%02d", now.Year(), now.Month(), now.Day())
+	}
+
 	manifest := Manifest{
-		Version:       fmt.Sprintf("v%d.%02d.%02d", now.Year(), now.Month(), now.Day()),
+		Version:       version,
 		SchemaVersion: 1,
 		GeneratedAt:   now.Format(time.RFC3339),
 		CatalogSHA256: catalogHash,

@@ -13,7 +13,7 @@ const modelsDevURL = "https://models.dev/api.json"
 
 // modelsDevProvider is the top-level provider object in the models.dev response.
 type modelsDevProvider struct {
-	ID     string                   `json:"id"`
+	ID     string                    `json:"id"`
 	Models map[string]modelsDevModel `json:"models"`
 }
 

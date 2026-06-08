@@ -18,10 +18,10 @@ type openRouterResponse struct {
 }
 
 type openRouterModel struct {
-	ID            string                `json:"id"`
-	Pricing       openRouterPricing     `json:"pricing"`
-	ContextLength int                   `json:"context_length"`
-	TopProvider   *openRouterTopProv    `json:"top_provider"`
+	ID            string             `json:"id"`
+	Pricing       openRouterPricing  `json:"pricing"`
+	ContextLength int                `json:"context_length"`
+	TopProvider   *openRouterTopProv `json:"top_provider"`
 }
 
 type openRouterPricing struct {

@@ -56,11 +56,13 @@ func runScrape() error {
 	}
 
 	var allObs []scrape.Observation
+	var failedScrapers []string
 	for _, s := range scrapers {
 		fmt.Printf("Scraping %s...\n", s.Name())
 		obs, err := s.Scrape()
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "WARNING: %s scraper failed: %v\n", s.Name(), err)
+			failedScrapers = append(failedScrapers, s.Name())
 			continue
 		}
 		fmt.Printf("  %s: %d models fetched\n", s.Name(), len(obs))
@@ -103,9 +105,12 @@ func runScrape() error {
 	// Exit code: 1 if there are high-confidence diffs.
 	for _, d := range result.Diffs {
 		if d.Confidence == scrape.ConfidenceHigh {
-			fmt.Println("\nActionable high-confidence diffs found. Exiting with code 1.")
-			os.Exit(1)
+			return fmt.Errorf("actionable high-confidence diffs found")
 		}
+	}
+
+	if len(failedScrapers) > 0 {
+		return fmt.Errorf("scrapers failed: %s", strings.Join(failedScrapers, ", "))
 	}
 
 	return nil

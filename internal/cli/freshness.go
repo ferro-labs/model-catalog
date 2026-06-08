@@ -132,8 +132,7 @@ func runFreshness() error {
 	}
 
 	if totalMissing > 0 {
-		fmt.Printf("FRESHNESS CHECK FAILED: %d models missing from catalog\n", totalMissing)
-		os.Exit(1)
+		return fmt.Errorf("freshness check failed: %d models missing from catalog", totalMissing)
 	}
 
 	fmt.Println("FRESHNESS CHECK PASSED: catalog is up to date with provider APIs")

@@ -36,8 +36,8 @@ func TestResolveExtendsBasic(t *testing.T) {
 		ModelID:     "claude-sonnet-4-5",
 		DisplayName: "Claude Sonnet 4.5 (via Vertex AI)",
 		Pricing: Pricing{
-			InputPerMTokens:  NewNullFloat64(3.5),  // override input price
-			OutputPerMTokens: NewNullFloat64(15.0),  // same as base (wrappers must include all pricing fields)
+			InputPerMTokens:      NewNullFloat64(3.5),  // override input price
+			OutputPerMTokens:     NewNullFloat64(15.0), // same as base (wrappers must include all pricing fields)
 			CacheReadPerMTokens:  NewNullFloat64(0.3),
 			CacheWritePerMTokens: NewNullFloat64(3.75),
 		},
