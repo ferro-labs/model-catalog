@@ -84,10 +84,10 @@ jobs:
             go run ./cmd/ferrocat build --output dist/ --version "${{ steps.version.outputs.version }}"
           fi
 
-      - name: Check for changes
+      - name: Check for source changes
         id: changes
         run: |
-          if git diff --quiet && git diff --cached --quiet; then
+          if git diff --quiet -- providers/; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"

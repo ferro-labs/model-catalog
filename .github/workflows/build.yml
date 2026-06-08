@@ -46,7 +46,39 @@ jobs:
       - name: Build
         run: go run ./cmd/ferrocat build --output dist/ --version "${{ steps.version.outputs.version }}"
 
+      - name: Detect meaningful dist changes
+        id: dist_changes
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- dist/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          before_manifest="$(mktemp)"
+          after_manifest="$(mktemp)"
+          git show HEAD:dist/manifest.json | jq 'del(.version, .generated_at)' > "$before_manifest"
+          jq 'del(.version, .generated_at)' dist/manifest.json > "$after_manifest"
+
+          manifest_changed=false
+          if ! cmp -s "$before_manifest" "$after_manifest"; then
+            manifest_changed=true
+          fi
+
+          dist_payload_changed=false
+          if ! git diff --quiet -- dist/catalog.json dist/providers/; then
+            dist_payload_changed=true
+          fi
+
+          if [ "$manifest_changed" = "true" ] || [ "$dist_payload_changed" = "true" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Only dist/manifest.json version/generated_at changed; skipping dist PR."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Create dist PR
+        if: steps.dist_changes.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
