@@ -6,6 +6,7 @@ import (
 	"os"
 	"sort"
 	"strings"
+	"time"
 
 	"github.com/ferro-labs/model-catalog/catalog"
 	"github.com/ferro-labs/model-catalog/scrape"
@@ -14,15 +15,17 @@ import (
 )
 
 var (
-	scrapeReportFile string
-	scrapeAutoAdd    bool
-	scrapeWrite      bool
+	scrapeReportFile  string
+	scrapeAutoAdd     bool
+	scrapeWrite       bool
+	scrapeApplyPrices bool
 )
 
 func init() {
 	scrapeCmd.Flags().StringVar(&scrapeReportFile, "report", "", "write report to file (e.g., report.md)")
 	scrapeCmd.Flags().BoolVar(&scrapeAutoAdd, "auto-add", false, "generate YAML for new models found in scrapers")
-	scrapeCmd.Flags().BoolVar(&scrapeWrite, "write", false, "write auto-added files (default is dry-run)")
+	scrapeCmd.Flags().BoolVar(&scrapeWrite, "write", false, "write auto-added and applied files (default is dry-run)")
+	scrapeCmd.Flags().BoolVar(&scrapeApplyPrices, "apply-prices", false, "apply high-confidence price diffs to existing model YAML instead of failing")
 	rootCmd.AddCommand(scrapeCmd)
 }
 
@@ -104,10 +107,48 @@ func runScrape() error {
 			addResult.Added, addResult.Skipped, addResult.NoProvider)
 	}
 
-	// Exit code: 1 if there are high-confidence diffs.
-	for _, d := range result.Diffs {
-		if d.Confidence == scrape.ConfidenceHigh {
-			return fmt.Errorf("actionable high-confidence diffs found")
+	// Apply high-confidence price diffs to existing models if requested. These
+	// land in the weekly PR for human review rather than failing the run.
+	if scrapeApplyPrices {
+		var updates []catalog.PriceUpdate
+		for _, d := range result.Diffs {
+			if d.Confidence != scrape.ConfidenceHigh {
+				continue
+			}
+			parts := strings.SplitN(d.CatalogKey, "/", 2)
+			if len(parts) != 2 {
+				continue
+			}
+			updates = append(updates, catalog.PriceUpdate{
+				Provider: parts[0],
+				ModelID:  parts[1],
+				Field:    strings.TrimPrefix(d.Field, "pricing."),
+				Value:    d.ScrapedValue,
+			})
+		}
+		if len(updates) > 0 {
+			now := time.Now().UTC().Format("2006-01-02")
+			applyResult, err := catalog.ApplyPriceUpdates("providers", updates, now, !scrapeWrite)
+			if err != nil {
+				return fmt.Errorf("apply prices: %w", err)
+			}
+			fmt.Printf("\nApply prices: %d field(s) across %d file(s) applied, %d could not be applied\n",
+				applyResult.Applied, applyResult.Files, len(applyResult.NotApplied))
+			for _, u := range applyResult.NotApplied {
+				fmt.Printf("  NOT APPLIED: %s\n", u)
+			}
+		}
+	}
+
+	// Exit code: when not auto-applying, fail on high-confidence diffs so the
+	// command still works as a standalone freshness check. With --apply-prices,
+	// corroborated diffs are written to the PR and conflicts/un-appliable diffs
+	// are report-only, so the run stays green.
+	if !scrapeApplyPrices {
+		for _, d := range result.Diffs {
+			if d.Confidence == scrape.ConfidenceHigh {
+				return fmt.Errorf("actionable high-confidence diffs found")
+			}
 		}
 	}
 

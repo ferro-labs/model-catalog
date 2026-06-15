@@ -62,7 +62,7 @@ jobs:
         continue-on-error: true
         run: |
           set +e
-          go run ./cmd/ferrocat scrape --auto-add --write --report /tmp/scrape-report.md
+          go run ./cmd/ferrocat scrape --auto-add --apply-prices --write --report /tmp/scrape-report.md
           SCRAPE_EXIT=$?
           set -e
 
