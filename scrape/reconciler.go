@@ -17,8 +17,12 @@ type Delta struct {
 	Field      string
 	Current    string
 	Scraped    string
-	Confidence Confidence
-	Sources    []string
+	// ScrapedValue is the raw agreed-upon scraped number for single-value diffs
+	// (high/medium confidence). It is unset for conflict diffs, where sources
+	// disagree and Scraped holds a composite string instead.
+	ScrapedValue float64
+	Confidence   Confidence
+	Sources      []string
 }
 
 // ReconcileResult holds the outcome of cross-checking scraped observations against the catalog.
@@ -155,12 +159,13 @@ func compareEntry(key string, entry catalog.Entry, obs []Observation) []Delta {
 					confidence = ConfidenceHigh
 				}
 				diffs = append(diffs, Delta{
-					CatalogKey: key,
-					Field:      f.catalogFieldName,
-					Current:    "null",
-					Scraped:    formatFloat(scrapedVal),
-					Confidence: confidence,
-					Sources:    sources,
+					CatalogKey:   key,
+					Field:        f.catalogFieldName,
+					Current:      "null",
+					Scraped:      formatFloat(scrapedVal),
+					ScrapedValue: scrapedVal,
+					Confidence:   confidence,
+					Sources:      sources,
 				})
 				continue
 			}
@@ -171,12 +176,13 @@ func compareEntry(key string, entry catalog.Entry, obs []Observation) []Delta {
 					confidence = ConfidenceHigh
 				}
 				diffs = append(diffs, Delta{
-					CatalogKey: key,
-					Field:      f.catalogFieldName,
-					Current:    formatFloat(f.catalogValue),
-					Scraped:    formatFloat(scrapedVal),
-					Confidence: confidence,
-					Sources:    sources,
+					CatalogKey:   key,
+					Field:        f.catalogFieldName,
+					Current:      formatFloat(f.catalogValue),
+					Scraped:      formatFloat(scrapedVal),
+					ScrapedValue: scrapedVal,
+					Confidence:   confidence,
+					Sources:      sources,
 				})
 			}
 		} else {
