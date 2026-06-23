@@ -66,6 +66,40 @@ func TestFetchJSON500Retries(t *testing.T) {
 	}
 }
 
+func TestFetchJSONRetriesNetworkError(t *testing.T) {
+	var calls atomic.Int32
+	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		n := calls.Add(1)
+		if n < 3 {
+			// Drop the connection mid-request to simulate a transient
+			// network failure (reset/EOF) rather than an HTTP status.
+			hj, ok := w.(http.Hijacker)
+			if !ok {
+				t.Fatal("ResponseWriter is not a Hijacker")
+			}
+			conn, _, err := hj.Hijack()
+			if err != nil {
+				t.Fatalf("hijack: %v", err)
+			}
+			_ = conn.Close()
+			return
+		}
+		_, _ = w.Write([]byte(`{"recovered":true}`))
+	}))
+	defer srv.Close()
+
+	body, err := FetchJSON(srv.Client(), srv.URL)
+	if err != nil {
+		t.Fatalf("FetchJSON: %v", err)
+	}
+	if string(body) != `{"recovered":true}` {
+		t.Errorf("body = %q", body)
+	}
+	if calls.Load() != 3 {
+		t.Errorf("calls = %d, want 3 (network errors should be retried)", calls.Load())
+	}
+}
+
 func TestFetchJSONAllRetriesFail(t *testing.T) {
 	var calls atomic.Int32
 	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {

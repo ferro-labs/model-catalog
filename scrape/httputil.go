@@ -51,12 +51,14 @@ func doGet(client *http.Client, url string) ([]byte, error) {
 
 	resp, err := client.Do(req)
 	if err != nil {
-		return nil, fmt.Errorf("fetch %s: %w", url, err)
+		// Connection resets, timeouts, and DNS hiccups are transient on CI
+		// runners; retry rather than fail the whole scrape on one blip.
+		return nil, &retryableError{msg: fmt.Sprintf("fetch %s: %v", url, err), err: err}
 	}
 	defer func() { _ = resp.Body.Close() }()
 
 	if resp.StatusCode >= 500 {
-		return nil, &retryableError{status: resp.StatusCode, url: url}
+		return nil, &retryableError{msg: fmt.Sprintf("fetch %s: HTTP %d (retryable)", url, resp.StatusCode)}
 	}
 	if resp.StatusCode != http.StatusOK {
 		return nil, fmt.Errorf("fetch %s: HTTP %d", url, resp.StatusCode)
@@ -64,19 +66,20 @@ func doGet(client *http.Client, url string) ([]byte, error) {
 
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
-		return nil, fmt.Errorf("read %s: %w", url, err)
+		// A read failure mid-body is a dropped connection — also transient.
+		return nil, &retryableError{msg: fmt.Sprintf("read %s: %v", url, err), err: err}
 	}
 	return body, nil
 }
 
 type retryableError struct {
-	status int
-	url    string
+	msg string
+	err error
 }
 
-func (e *retryableError) Error() string {
-	return fmt.Sprintf("fetch %s: HTTP %d (retryable)", e.url, e.status)
-}
+func (e *retryableError) Error() string { return e.msg }
+
+func (e *retryableError) Unwrap() error { return e.err }
 
 func isRetryable(err error) bool {
 	if _, ok := err.(*retryableError); ok {

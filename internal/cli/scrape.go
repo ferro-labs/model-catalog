@@ -152,8 +152,14 @@ func runScrape() error {
 		}
 	}
 
+	// A partial oracle outage (one source down) is not fatal: we still have
+	// observations from the survivor and any auto-add/apply-prices changes are
+	// already written for the weekly PR. Surface it loudly but stay green so a
+	// single transient blip on one free endpoint does not red the whole run.
+	// Total failure is caught earlier by the "no observations collected" guard.
 	if len(failedScrapers) > 0 {
-		return fmt.Errorf("scrapers failed: %s", strings.Join(failedScrapers, ", "))
+		fmt.Fprintf(os.Stderr, "WARNING: continuing with degraded sources; %d of %d scraper(s) failed: %s\n",
+			len(failedScrapers), len(scrapers), strings.Join(failedScrapers, ", "))
 	}
 
 	return nil
