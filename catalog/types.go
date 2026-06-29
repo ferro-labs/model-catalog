@@ -67,19 +67,66 @@ func (f *NullFloat64) UnmarshalYAML(value *yaml.Node) error {
 }
 
 type Entry struct {
-	Extends         string       `json:"-" yaml:"extends,omitempty"`
-	Provider        string       `json:"provider" yaml:"provider"`
-	ModelID         string       `json:"model_id" yaml:"model_id"`
-	DisplayName     string       `json:"display_name" yaml:"display_name"`
-	Mode            string       `json:"mode" yaml:"mode"`
-	ContextWindow   int          `json:"context_window" yaml:"context_window"`
-	MaxOutputTokens int          `json:"max_output_tokens" yaml:"max_output_tokens"`
-	Pricing         Pricing      `json:"pricing" yaml:"pricing"`
-	Capabilities    Capabilities `json:"capabilities" yaml:"capabilities"`
-	Lifecycle       Lifecycle    `json:"lifecycle" yaml:"lifecycle"`
-	Source          string       `json:"source" yaml:"source"`
-	UpdatedAt       string       `json:"updated_at" yaml:"updated_at"`
-	Tier            string       `json:"tier" yaml:"tier"`
+	Extends         string         `json:"-" yaml:"extends,omitempty"`
+	Provider        string         `json:"provider" yaml:"provider"`
+	ModelID         string         `json:"model_id" yaml:"model_id"`
+	DisplayName     string         `json:"display_name" yaml:"display_name"`
+	Mode            string         `json:"mode" yaml:"mode"`
+	ContextWindow   int            `json:"context_window" yaml:"context_window"`
+	MaxOutputTokens int            `json:"max_output_tokens" yaml:"max_output_tokens"`
+	Pricing         Pricing        `json:"pricing" yaml:"pricing"`
+	Capabilities    Capabilities   `json:"capabilities" yaml:"capabilities"`
+	Lifecycle       Lifecycle      `json:"lifecycle" yaml:"lifecycle"`
+	Source          string         `json:"source" yaml:"source"`
+	UpdatedAt       string         `json:"updated_at" yaml:"updated_at"`
+	Tier            string         `json:"tier" yaml:"tier"`
+	AgentRouting    *AgentRouting  `json:"agent_routing,omitempty" yaml:"agent_routing,omitempty"`
+	Aliases         Aliases        `json:"aliases,omitempty" yaml:"aliases,omitempty"`
+	Benchmarks      *Benchmarks    `json:"benchmarks,omitempty" yaml:"benchmarks,omitempty"`
+}
+
+// AgentRouting carries optional, catalog-owned metadata that downstream
+// coding agents and local routing clients (e.g. the Ferro Gateway trace
+// endpoint) use to pick a model without hard-coding private tier tables.
+// All fields are optional; the zero value means "not specified".
+//
+// Validation rejects malformed enum values but allows missing metadata, so
+// existing catalog entries keep working unchanged.
+type AgentRouting struct {
+	CodingQualityTier    string   `json:"coding_quality_tier,omitempty" yaml:"coding_quality_tier,omitempty"`
+	ReasoningQualityTier string   `json:"reasoning_quality_tier,omitempty" yaml:"reasoning_quality_tier,omitempty"`
+	ToolUseQualityTier   string   `json:"tool_use_quality_tier,omitempty" yaml:"tool_use_quality_tier,omitempty"`
+	LatencyTier          string   `json:"latency_tier,omitempty" yaml:"latency_tier,omitempty"`
+	LocalSuitability     string   `json:"local_suitability,omitempty" yaml:"local_suitability,omitempty"`
+	RecommendedRoles     []string `json:"recommended_roles,omitempty" yaml:"recommended_roles,omitempty"`
+}
+
+// Aliases maps a routing surface identifier (e.g. "ferro") to the model IDs
+// that surface resolves to. Provider-agnostic; the catalog is not the
+// authority on which gateway instance owns which alias, only the mapping.
+type Aliases map[string][]string
+
+// Benchmarks captures local/3rd-party benchmark artifacts so coding-agent
+// routing decisions can be catalog-owned instead of living in a router.
+// All fields optional; missing benchmark blocks are valid.
+type Benchmarks struct {
+	Coding       *CodingBenchmark       `json:"coding,omitempty" yaml:"coding,omitempty"`
+	LocalRuntime *LocalRuntimeBenchmark `json:"local_runtime,omitempty" yaml:"local_runtime,omitempty"`
+}
+
+// CodingBenchmark holds a coding benchmark result for the model.
+type CodingBenchmark struct {
+	Source    string  `json:"source,omitempty" yaml:"source,omitempty"`
+	Score     float64 `json:"score,omitempty" yaml:"score,omitempty"`
+	UpdatedAt string  `json:"updated_at,omitempty" yaml:"updated_at,omitempty"`
+}
+
+// LocalRuntimeBenchmark holds a local (e.g. GGUF/llama.cpp) benchmark result.
+type LocalRuntimeBenchmark struct {
+	Quantization      string  `json:"quantization,omitempty" yaml:"quantization,omitempty"`
+	Backend           string  `json:"backend,omitempty" yaml:"backend,omitempty"`
+	TokensPerSecond   float64 `json:"tokens_per_second,omitempty" yaml:"tokens_per_second,omitempty"`
+	Hardware          string  `json:"hardware,omitempty" yaml:"hardware,omitempty"`
 }
 
 type Pricing struct {

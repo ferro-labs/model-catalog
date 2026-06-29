@@ -248,6 +248,37 @@ When Vertex AI hosts Gemini or Azure hosts OpenAI, the wrapper model inherits fr
 
 193 wrapper models currently use this pattern.
 
+### Agent-routing metadata
+
+Optional, catalog-owned metadata that lets coding agents and local routing clients pick a model without hard-coding private tier tables. All fields are optional; models without the block keep validating unchanged.
+
+```yaml
+# providers/openai/models/gpt-5-pro.yaml
+agent_routing:
+  coding_quality_tier: frontier    # frontier|strong|balanced|fast|experimental|unknown
+  reasoning_quality_tier: frontier # same enum
+  tool_use_quality_tier: strong     # strong|balanced|weak|unknown
+  latency_tier: low                 # low|medium|high|unknown
+  local_suitability: excellent      # excellent|good|poor|unknown
+  recommended_roles: [planning, code-review, implementation, search-summary, synthesis]
+aliases:
+  ferro:                            # routing surface → resolved model ids
+    - qwen3.5:397b-cloud
+    - deepseek-v4-flash:cloud
+benchmarks:
+  coding:
+    source: swe-bench               # swe-bench|local|other
+    score: 0.42
+    updated_at: "2026-06-27"
+  local_runtime:
+    quantization: Q4_K_M
+    backend: llama.cpp
+    tokens_per_second: 71.2
+    hardware: "Apple M-series"
+```
+
+Wrapper models inherit the base's `agent_routing` block and can override individual tiers without restating the whole block; `aliases` and `benchmarks` follow full-replacement semantics (the wrapper must restate the full block to override). Validation rejects malformed enum values but allows missing metadata. See [`docs/agent-routing.md`](docs/agent-routing.md) for the full schema and a coding-agent routing example.
+
 ### Manifest with integrity
 
 Every release includes a `manifest.json` with SHA-256 hashes for the full catalog and each provider slice. Verify what you downloaded matches what was published.

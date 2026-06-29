@@ -35,6 +35,44 @@ var validTiers = map[string]bool{
 	"standard": true,
 }
 
+// Agent-routing enum sets. Empty (unset) values are always valid — these
+// only gate non-empty malformed values.
+var validCodingTiers = map[string]bool{
+	"frontier":    true,
+	"strong":      true,
+	"balanced":    true,
+	"fast":        true,
+	"experimental": true,
+	"unknown":     true,
+}
+
+var validToolUseTiers = map[string]bool{
+	"strong":  true,
+	"balanced": true,
+	"weak":    true,
+	"unknown": true,
+}
+
+var validLatencyTiers = map[string]bool{
+	"low":    true,
+	"medium": true,
+	"high":   true,
+	"unknown": true,
+}
+
+var validLocalSuitability = map[string]bool{
+	"excellent": true,
+	"good":      true,
+	"poor":      true,
+	"unknown":   true,
+}
+
+var validCodingBenchmarkSources = map[string]bool{
+	"swe-bench": true,
+	"local":     true,
+	"other":     true,
+}
+
 // Validate checks all per-model YAML files under providersDir for structural
 // correctness and returns any validation errors found.
 func Validate(providersDir string) ([]ValidationError, error) {
@@ -149,6 +187,64 @@ func validateEntry(entry Entry, filePath, providersDir string) []ValidationError
 		})
 	}
 
+	// Agent-routing optional metadata enum validation. Missing values are
+	// valid; only non-empty malformed values are rejected.
+	errs = append(errs, validateAgentRouting(&entry, filePath)...)
+
+	// Local/3rd-party benchmark source enum validation.
+	if entry.Benchmarks != nil && entry.Benchmarks.Coding != nil && entry.Benchmarks.Coding.Source != "" && !validCodingBenchmarkSources[entry.Benchmarks.Coding.Source] {
+		errs = append(errs, ValidationError{
+			File:    filePath,
+			Field:   "benchmarks.coding.source",
+			Message: fmt.Sprintf("invalid value %q; must be one of: swe-bench, local, other", entry.Benchmarks.Coding.Source),
+		})
+	}
+
+	return errs
+}
+
+func validateAgentRouting(entry *Entry, filePath string) []ValidationError {
+	var errs []ValidationError
+	ar := entry.AgentRouting
+	if ar == nil {
+		return errs
+	}
+
+	if ar.CodingQualityTier != "" && !validCodingTiers[ar.CodingQualityTier] {
+		errs = append(errs, ValidationError{
+			File:    filePath,
+			Field:   "agent_routing.coding_quality_tier",
+			Message: fmt.Sprintf("invalid value %q; must be one of: frontier, strong, balanced, fast, experimental, unknown", ar.CodingQualityTier),
+		})
+	}
+	if ar.ReasoningQualityTier != "" && !validCodingTiers[ar.ReasoningQualityTier] {
+		errs = append(errs, ValidationError{
+			File:    filePath,
+			Field:   "agent_routing.reasoning_quality_tier",
+			Message: fmt.Sprintf("invalid value %q; must be one of: frontier, strong, balanced, fast, experimental, unknown", ar.ReasoningQualityTier),
+		})
+	}
+	if ar.ToolUseQualityTier != "" && !validToolUseTiers[ar.ToolUseQualityTier] {
+		errs = append(errs, ValidationError{
+			File:    filePath,
+			Field:   "agent_routing.tool_use_quality_tier",
+			Message: fmt.Sprintf("invalid value %q; must be one of: strong, balanced, weak, unknown", ar.ToolUseQualityTier),
+		})
+	}
+	if ar.LatencyTier != "" && !validLatencyTiers[ar.LatencyTier] {
+		errs = append(errs, ValidationError{
+			File:    filePath,
+			Field:   "agent_routing.latency_tier",
+			Message: fmt.Sprintf("invalid value %q; must be one of: low, medium, high, unknown", ar.LatencyTier),
+		})
+	}
+	if ar.LocalSuitability != "" && !validLocalSuitability[ar.LocalSuitability] {
+		errs = append(errs, ValidationError{
+			File:    filePath,
+			Field:   "agent_routing.local_suitability",
+			Message: fmt.Sprintf("invalid value %q; must be one of: excellent, good, poor, unknown", ar.LocalSuitability),
+		})
+	}
 	return errs
 }
 

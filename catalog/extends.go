@@ -100,5 +100,51 @@ func mergeEntries(base, wrapper Entry) (Entry, error) {
 	// for *string fields, so wrapper must specify all lifecycle fields.
 	result.Lifecycle = wrapper.Lifecycle
 
+	// Agent routing: per-field deep merge when either side is set. A wrapper
+	// with a nil block inherits the base's block as-is; when the wrapper sets a
+	// block, individual non-empty fields override the base.
+	result.AgentRouting = mergeAgentRoutingPtr(base.AgentRouting, wrapper.AgentRouting)
+
+	// Aliases & benchmarks: full replacement from wrapper when set. Nil on
+	// the wrapper inherits the base unchanged.
+	if len(wrapper.Aliases) > 0 {
+		result.Aliases = wrapper.Aliases
+	}
+	if wrapper.Benchmarks != nil {
+		result.Benchmarks = wrapper.Benchmarks
+	}
+
 	return result, nil
+}
+
+// mergeAgentRoutingPtr merges a wrapper's routing metadata onto a base. The
+// underlying string/slice fields use the wrapper value when non-empty, else
+// the base value. A nil wrapper block returns the base block as-is.
+func mergeAgentRoutingPtr(base, wrapper *AgentRouting) *AgentRouting {
+	if wrapper == nil {
+		return base
+	}
+	if base == nil {
+		return wrapper
+	}
+	merged := *base
+	if wrapper.CodingQualityTier != "" {
+		merged.CodingQualityTier = wrapper.CodingQualityTier
+	}
+	if wrapper.ReasoningQualityTier != "" {
+		merged.ReasoningQualityTier = wrapper.ReasoningQualityTier
+	}
+	if wrapper.ToolUseQualityTier != "" {
+		merged.ToolUseQualityTier = wrapper.ToolUseQualityTier
+	}
+	if wrapper.LatencyTier != "" {
+		merged.LatencyTier = wrapper.LatencyTier
+	}
+	if wrapper.LocalSuitability != "" {
+		merged.LocalSuitability = wrapper.LocalSuitability
+	}
+	if len(wrapper.RecommendedRoles) > 0 {
+		merged.RecommendedRoles = wrapper.RecommendedRoles
+	}
+	return &merged
 }
