@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'dist/**'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -16,27 +17,21 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Read manifest version
-        id: version
-        run: |
-          VERSION="$(jq -r '.version // ""' dist/manifest.json)"
-          if [ -z "$VERSION" ] || [ "$VERSION" = "null" ]; then
-            echo "dist/manifest.json does not contain a version" >&2
-            exit 1
-          fi
-          if git tag -l "$VERSION" | grep -q .; then
-            echo "Tag $VERSION already exists; regenerate dist with a new version" >&2
-            exit 1
-          fi
-          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
-          echo "Version: ${VERSION}"
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      - name: Plan release
+        id: plan
+        run: go run ./cmd/ferrocat release-plan --dist dist >> "$GITHUB_OUTPUT"
 
       - name: Generate release notes
         id: notes
+        if: steps.plan.outputs.skip == 'false'
         run: |
           MODELS=$(jq -r '.stats.total_models' dist/manifest.json)
           PROVIDERS=$(jq -r '.stats.total_providers' dist/manifest.json)
-          VERSION="${{ steps.version.outputs.version }}"
+          VERSION="${{ steps.plan.outputs.version }}"
 
           TOP_PROVIDERS=$(jq -r '[.providers | sort_by(-.model_count) | .[:10][] | "\(.id) (\(.model_count))"] | join(", ")' dist/manifest.json)
           EXTENDS=$(grep -rl "^extends:" providers/ 2>/dev/null | wc -l | tr -d ' ')
@@ -94,15 +89,28 @@ jobs:
           echo "body_path=/tmp/release_body.md" >> "$GITHUB_OUTPUT"
 
       - name: Tag
+        if: steps.plan.outputs.skip == 'false'
+        env:
+          VERSION: ${{ steps.plan.outputs.version }}
         run: |
-          git tag ${{ steps.version.outputs.version }}
-          git push origin ${{ steps.version.outputs.version }}
+          # On a version bump, release-plan rewrote dist/manifest.json. Commit it
+          # so the tag's tree matches the uploaded asset, then push ONLY the tag
+          # (never main) to avoid re-triggering this dist-path-filtered workflow.
+          if ! git diff --quiet -- dist/manifest.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add dist/manifest.json
+            git commit -m "release: ${VERSION}"
+          fi
+          git tag "${VERSION}"
+          git push origin "${VERSION}"
 
       - name: Create GitHub Release
+        if: steps.plan.outputs.skip == 'false'
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ steps.version.outputs.version }}
-          name: "Model Catalog ${{ steps.version.outputs.version }}"
+          tag_name: ${{ steps.plan.outputs.version }}
+          name: "Model Catalog ${{ steps.plan.outputs.version }}"
           body_path: ${{ steps.notes.outputs.body_path }}
           files: |
             dist/catalog.json

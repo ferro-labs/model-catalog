@@ -24,21 +24,8 @@ jobs:
         with:
           go-version-file: go.mod
 
-      - name: Determine version
-        id: version
-        run: |
-          VERSION="v$(date -u +%Y.%m.%d)"
-          SUFFIX=""
-          COUNTER=0
-          while git tag -l "${VERSION}${SUFFIX}" | grep -q .; do
-            COUNTER=$((COUNTER + 1))
-            SUFFIX=".${COUNTER}"
-          done
-          FINAL="${VERSION}${SUFFIX}"
-          echo "version=${FINAL}" >> "$GITHUB_OUTPUT"
-
       - name: Build catalog
-        run: go run ./cmd/ferrocat build --output dist/ --version "${{ steps.version.outputs.version }}"
+        run: go run ./cmd/ferrocat build --output dist/
 
       - name: Freshness check against provider APIs
         id: freshness
@@ -81,7 +68,7 @@ jobs:
       - name: Rebuild after changes
         run: |
           if ! git diff --quiet providers/; then
-            go run ./cmd/ferrocat build --output dist/ --version "${{ steps.version.outputs.version }}"
+            go run ./cmd/ferrocat build --output dist/
           fi
 
       - name: Check for source changes

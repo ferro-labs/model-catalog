@@ -3,7 +3,6 @@ package catalog
 import (
 	"crypto/sha256"
 	"encoding/hex"
-	"encoding/json"
 	"fmt"
 	"os"
 	"path/filepath"
@@ -191,17 +190,10 @@ func generateProviderSlicesAndManifest(entries map[string]Entry, catalogJSON []b
 		},
 	}
 
-	manifestJSON, err := json.MarshalIndent(manifest, "", "  ")
-	if err != nil {
-		return fmt.Errorf("marshal manifest: %w", err)
-	}
-	manifestJSON = append(manifestJSON, '\n')
-
-	manifestPath := filepath.Join(distDir, "manifest.json")
-	if err := os.WriteFile(manifestPath, manifestJSON, 0o600); err != nil {
-		return fmt.Errorf("write %s: %w", manifestPath, err)
+	if err := WriteManifest(distDir, manifest); err != nil {
+		return err
 	}
 
-	fmt.Printf("Generated %d provider slices and manifest at %s\n", len(providerIDs), manifestPath)
+	fmt.Printf("Generated %d provider slices and manifest at %s\n", len(providerIDs), filepath.Join(distDir, ManifestFilename))
 	return nil
 }

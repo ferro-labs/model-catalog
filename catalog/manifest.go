@@ -1,5 +1,45 @@
 package catalog
 
+import (
+	"encoding/json"
+	"fmt"
+	"os"
+	"path/filepath"
+)
+
+// ManifestFilename is the manifest file name within a dist directory.
+const ManifestFilename = "manifest.json"
+
+// ReadManifest reads and parses the manifest from distDir/manifest.json.
+func ReadManifest(distDir string) (Manifest, error) {
+	path := filepath.Join(distDir, ManifestFilename)
+	data, err := os.ReadFile(filepath.Clean(path))
+	if err != nil {
+		return Manifest{}, fmt.Errorf("read %s: %w", path, err)
+	}
+	var m Manifest
+	if err := json.Unmarshal(data, &m); err != nil {
+		return Manifest{}, fmt.Errorf("parse %s: %w", path, err)
+	}
+	return m, nil
+}
+
+// WriteManifest writes the manifest to distDir/manifest.json using the canonical
+// 2-space indent plus trailing newline. This is the single formatting owner for
+// the manifest so every writer (build, release-plan) produces byte-identical output.
+func WriteManifest(distDir string, m Manifest) error {
+	data, err := json.MarshalIndent(m, "", "  ")
+	if err != nil {
+		return fmt.Errorf("marshal manifest: %w", err)
+	}
+	data = append(data, '\n')
+	path := filepath.Join(distDir, ManifestFilename)
+	if err := os.WriteFile(path, data, 0o600); err != nil {
+		return fmt.Errorf("write %s: %w", path, err)
+	}
+	return nil
+}
+
 // Manifest describes the build output: full catalog hash, per-provider slices, and stats.
 type Manifest struct {
 	Version       string             `json:"version"`
