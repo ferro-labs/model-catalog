@@ -37,7 +37,12 @@ type ReconcileResult struct {
 // Reconcile cross-checks scraped observations against the catalog and returns a result
 // summarizing matches, differences, new models, and missing models.
 func Reconcile(entries map[string]catalog.Entry, observations []Observation) ReconcileResult {
+	// Normalize then dedup so a single source can never contribute two values
+	// for one catalog key (which would make it disagree with itself and produce
+	// order-dependent conflict output). Both are idempotent, so callers that
+	// already applied them lose nothing.
 	observations = NormalizeObservations(observations)
+	observations = DedupObservations(observations)
 
 	// Group observations by catalog key (provider/model_id).
 	grouped := make(map[string][]Observation)
@@ -151,6 +156,7 @@ func compareEntry(key string, entry catalog.Entry, obs []Observation) []Delta {
 			for _, sv := range observed {
 				sources = appendUnique(sources, sv.source)
 			}
+			sort.Strings(sources) // deterministic display regardless of scrape order
 
 			if !f.catalogValid {
 				// Catalog has null, scrapers have a value -> diff.
@@ -196,6 +202,9 @@ func compareEntry(key string, entry catalog.Entry, obs []Observation) []Delta {
 				scrapedVals = append(scrapedVals, fmt.Sprintf("%s=%s",
 					g[0].source, formatFloat(g[0].value)))
 			}
+			// Deterministic display regardless of scrape/grouping order.
+			sort.Strings(allSources)
+			sort.Strings(scrapedVals)
 
 			currentStr := "null"
 			if f.catalogValid {

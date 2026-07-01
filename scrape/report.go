@@ -2,8 +2,62 @@ package scrape
 
 import (
 	"fmt"
+	"sort"
 	"strings"
 )
+
+// FormatWeeklyReview renders a deterministic, timestamp-free markdown document
+// of the price diffs that are NOT auto-applied — single-source ("medium") and
+// conflicting diffs — for human review in the weekly PR. Corroborated (≥2
+// sources) diffs are excluded because they are applied directly to the YAML.
+//
+// Output is stable across runs (diffs are sorted), so an unchanged week produces
+// an identical file and therefore no pull request.
+func FormatWeeklyReview(result ReconcileResult) string {
+	med := filterDiffs(result.Diffs, ConfidenceMedium)
+	conflict := filterDiffs(result.Diffs, ConfidenceConflict)
+	sortDiffs(med)
+	sortDiffs(conflict)
+
+	var b strings.Builder
+	b.WriteString("# Weekly Price Review\n\n")
+	b.WriteString("Corroborated changes (≥2 sources agree) are auto-applied in this PR's file diffs.\n")
+	b.WriteString("The diffs below come from a single source or disagree between sources — review and\n")
+	b.WriteString("apply them manually to the model YAML if correct.\n\n")
+
+	fmt.Fprintf(&b, "## Single-source price diffs (%d)\n\n", len(med))
+	if len(med) == 0 {
+		b.WriteString("_None._\n\n")
+	} else {
+		for _, d := range med {
+			fmt.Fprintf(&b, "- `%s` `%s`: %s → %s (%s only)\n",
+				d.CatalogKey, d.Field, d.Current, d.Scraped, strings.Join(d.Sources, " + "))
+		}
+		b.WriteString("\n")
+	}
+
+	fmt.Fprintf(&b, "## Conflicting price diffs (%d)\n\n", len(conflict))
+	if len(conflict) == 0 {
+		b.WriteString("_None._\n")
+	} else {
+		for _, d := range conflict {
+			fmt.Fprintf(&b, "- `%s` `%s`: catalog=%s, sources=%s\n",
+				d.CatalogKey, d.Field, d.Current, d.Scraped)
+		}
+	}
+
+	return b.String()
+}
+
+// sortDiffs orders diffs deterministically by catalog key then field.
+func sortDiffs(diffs []Delta) {
+	sort.Slice(diffs, func(i, j int) bool {
+		if diffs[i].CatalogKey != diffs[j].CatalogKey {
+			return diffs[i].CatalogKey < diffs[j].CatalogKey
+		}
+		return diffs[i].Field < diffs[j].Field
+	})
+}
 
 // FormatReport produces a human-readable summary of the reconciliation result.
 func FormatReport(result ReconcileResult) string {

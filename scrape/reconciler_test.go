@@ -1,6 +1,7 @@
 package scrape
 
 import (
+	"strings"
 	"testing"
 	"time"
 
@@ -8,6 +9,45 @@ import (
 )
 
 func ptr(v float64) *float64 { return &v }
+
+// TestReconcileDedupsSameSourceInternally locks in that Reconcile itself
+// collapses duplicate same-source observations (not just the CLI caller), so a
+// single source can never disagree with itself and produce order-dependent
+// conflict output.
+func TestReconcileDedupsSameSourceInternally(t *testing.T) {
+	entries := map[string]catalog.Entry{
+		"openai/gpt-4o": {
+			Provider: "openai",
+			ModelID:  "gpt-4o",
+			Pricing:  catalog.Pricing{InputPerMTokens: catalog.NewNullFloat64(2.5)},
+		},
+	}
+
+	// litellm appears twice with disagreeing values (a collapsed-alias dup);
+	// models_dev agrees with one of them. After dedup, litellm contributes a
+	// single deterministic value, so litellm+models_dev agree -> high confidence.
+	obs := []Observation{
+		{Source: "litellm", Provider: "openai", ModelID: "gpt-4o", InputPerM: ptr(4.0)},
+		{Source: "litellm", Provider: "openai", ModelID: "gpt-4o", InputPerM: ptr(3.0)},
+		{Source: "models_dev", Provider: "openai", ModelID: "gpt-4o", InputPerM: ptr(3.0)},
+	}
+
+	first := Reconcile(entries, obs)
+	if len(first.Diffs) != 1 {
+		t.Fatalf("Diffs = %d, want 1 (no self-conflict); diffs=%+v", len(first.Diffs), first.Diffs)
+	}
+	if first.Diffs[0].Confidence != ConfidenceHigh {
+		t.Fatalf("Confidence = %q, want high (litellm+models_dev agree after dedup)", first.Diffs[0].Confidence)
+	}
+
+	// Reversed input order must yield an identical result (order-independent).
+	reversed := []Observation{obs[2], obs[1], obs[0]}
+	second := Reconcile(entries, reversed)
+	if second.Diffs[0].Scraped != first.Diffs[0].Scraped ||
+		strings.Join(second.Diffs[0].Sources, ",") != strings.Join(first.Diffs[0].Sources, ",") {
+		t.Fatalf("Reconcile not order-independent:\n first=%+v\n second=%+v", first.Diffs[0], second.Diffs[0])
+	}
+}
 
 func TestReconcileMatching(t *testing.T) {
 	entries := map[string]catalog.Entry{

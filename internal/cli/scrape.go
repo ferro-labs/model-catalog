@@ -16,13 +16,15 @@ import (
 
 var (
 	scrapeReportFile  string
+	scrapeReviewFile  string
 	scrapeAutoAdd     bool
 	scrapeWrite       bool
 	scrapeApplyPrices bool
 )
 
 func init() {
-	scrapeCmd.Flags().StringVar(&scrapeReportFile, "report", "", "write report to file (e.g., report.md)")
+	scrapeCmd.Flags().StringVar(&scrapeReportFile, "report", "", "write full report to file (e.g., report.md)")
+	scrapeCmd.Flags().StringVar(&scrapeReviewFile, "review", "", "write the deterministic weekly review (single-source + conflict diffs) to a tracked file")
 	scrapeCmd.Flags().BoolVar(&scrapeAutoAdd, "auto-add", false, "generate YAML for new models found in scrapers")
 	scrapeCmd.Flags().BoolVar(&scrapeWrite, "write", false, "write auto-added and applied files (default is dry-run)")
 	scrapeCmd.Flags().BoolVar(&scrapeApplyPrices, "apply-prices", false, "apply high-confidence price diffs to existing model YAML instead of failing")
@@ -56,6 +58,7 @@ func runScrape() error {
 	scrapers := []scrape.Scraper{
 		oracle.NewOpenRouter(),
 		oracle.NewModelsDev(),
+		oracle.NewLiteLLM(),
 	}
 
 	var allObs []scrape.Observation
@@ -77,6 +80,7 @@ func runScrape() error {
 	}
 
 	allObs = scrape.NormalizeObservations(allObs)
+	allObs = scrape.DedupObservations(allObs)
 
 	// Reconcile.
 	result := scrape.Reconcile(entries, allObs)
@@ -91,6 +95,16 @@ func runScrape() error {
 			return fmt.Errorf("write report: %w", err)
 		}
 		fmt.Printf("\nReport written to %s\n", scrapeReportFile)
+	}
+
+	// Write the deterministic weekly review (single-source + conflict diffs) to
+	// a tracked file. Its content changing is what opens the weekly review PR;
+	// an unchanged week produces an identical file and therefore no PR.
+	if scrapeReviewFile != "" {
+		if err := os.WriteFile(scrapeReviewFile, []byte(scrape.FormatWeeklyReview(result)), 0o600); err != nil {
+			return fmt.Errorf("write review: %w", err)
+		}
+		fmt.Printf("Weekly review written to %s\n", scrapeReviewFile)
 	}
 
 	// Auto-add new models if requested.
