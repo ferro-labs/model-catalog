@@ -273,7 +273,7 @@
     "pricing": {
       "input_per_m_tokens": 0.14,
       "output_per_m_tokens": 0.28,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.0028,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -304,7 +304,7 @@
       "successor": null
     },
     "source": "auto:models_dev+openrouter",
-    "updated_at": "2026-05-04",
+    "updated_at": "2026-07-06",
     "tier": "standard"
   },
   "deepseek/deepseek-v4-pro": {
@@ -317,7 +317,7 @@
     "pricing": {
       "input_per_m_tokens": 0.435,
       "output_per_m_tokens": 0.87,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.003625,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -348,7 +348,7 @@
       "successor": null
     },
     "source": "auto:models_dev+openrouter",
-    "updated_at": "2026-05-25",
+    "updated_at": "2026-07-06",
     "tier": "standard"
   }
 }

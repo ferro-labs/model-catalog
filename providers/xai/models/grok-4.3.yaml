@@ -1,17 +1,19 @@
-extends: openai/text-embedding-ada-002
-provider: azure
-model_id: text-embedding-ada-002
-display_name: text-embedding-ada-002
+provider: xai
+model_id: grok-4.3
+display_name: grok-4.3
+mode: chat
+context_window: 0
+max_output_tokens: 0
 pricing:
-    input_per_m_tokens: 0.09999999999999999
-    output_per_m_tokens: 0
+    input_per_m_tokens: 1.25
+    output_per_m_tokens: 2.5
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
     audio_input_per_minute: null
     audio_output_per_character: null
-    embedding_per_m_tokens: 0.1
+    embedding_per_m_tokens: null
     finetune_train_per_m_tokens: null
     finetune_input_per_m_tokens: null
     finetune_output_per_m_tokens: null
@@ -25,12 +27,13 @@ capabilities:
     response_schema: false
     prompt_caching: false
     reasoning: false
-    streaming: true
+    streaming: false
     finetuneable: false
 lifecycle:
-    status: ga
+    status: preview
     deprecation_date: null
     sunset_date: null
     successor: null
-tier: standard
+source: auto:litellm+models_dev
 updated_at: "2026-07-06"
+tier: standard

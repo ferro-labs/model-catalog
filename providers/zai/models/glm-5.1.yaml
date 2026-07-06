@@ -5,9 +5,9 @@ mode: chat
 context_window: 128000
 max_output_tokens: 4096
 pricing:
-    input_per_m_tokens: null
-    output_per_m_tokens: null
-    cache_read_per_m_tokens: null
+    input_per_m_tokens: 1.4
+    output_per_m_tokens: 4.4
+    cache_read_per_m_tokens: 0.26
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
@@ -35,5 +35,5 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://open.bigmodel.cn/pricing"
-updated_at: "2026-05-21"
+updated_at: "2026-07-06"
 tier: standard

@@ -3,8 +3,8 @@ provider: azure
 model_id: text-embedding-3-large
 display_name: text-embedding-3-large
 pricing:
-    input_per_m_tokens: null
-    output_per_m_tokens: null
+    input_per_m_tokens: 0.13
+    output_per_m_tokens: 0
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -33,3 +33,4 @@ lifecycle:
     sunset_date: null
     successor: null
 tier: flagship
+updated_at: "2026-07-06"
