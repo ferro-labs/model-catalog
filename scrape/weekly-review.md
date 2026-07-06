@@ -4,10 +4,367 @@ Corroborated changes (≥2 sources agree) are auto-applied in this PR's file dif
 The diffs below come from a single source or disagree between sources — review and
 apply them manually to the model YAML if correct.
 
-## Single-source price diffs (0)
+## Single-source price diffs (231)
 
-_None._
+- `azure/ada` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `azure/ada` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `azure/gpt-image-1` `pricing.output_per_m_tokens`: null → 40.0000 (models_dev only)
+- `azure/gpt-image-1.5` `pricing.output_per_m_tokens`: null → 32.0000 (models_dev only)
+- `azure/grok-4-fast-reasoning` `pricing.cache_read_per_m_tokens`: null → 0.0500 (models_dev only)
+- `bedrock/amazon.nova-2-multimodal-embeddings-v1:0` `pricing.input_per_m_tokens`: null → 0.1350 (litellm only)
+- `bedrock/amazon.nova-2-multimodal-embeddings-v1:0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `bedrock/amazon.titan-embed-image-v1` `pricing.input_per_m_tokens`: null → 0.8000 (litellm only)
+- `bedrock/amazon.titan-embed-image-v1` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `bedrock/amazon.titan-embed-text-v1` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `bedrock/amazon.titan-embed-text-v1` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `bedrock/amazon.titan-embed-text-v2:0` `pricing.input_per_m_tokens`: null → 0.0200 (litellm only)
+- `bedrock/amazon.titan-embed-text-v2:0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `bedrock/anthropic.claude-3-haiku-20240307-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.0250 (litellm only)
+- `bedrock/anthropic.claude-3-opus-20240229-v1:0` `pricing.cache_read_per_m_tokens`: null → 1.5000 (litellm only)
+- `bedrock/anthropic.claude-3-sonnet-20240229-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
+- `bedrock/apac.anthropic.claude-3-5-sonnet-20240620-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
+- `bedrock/apac.anthropic.claude-3-haiku-20240307-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.0250 (litellm only)
+- `bedrock/apac.anthropic.claude-3-sonnet-20240229-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
+- `bedrock/cohere.embed-english-v3` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `bedrock/cohere.embed-english-v3` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `bedrock/cohere.embed-multilingual-v3` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `bedrock/cohere.embed-multilingual-v3` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `bedrock/cohere.embed-v4:0` `pricing.input_per_m_tokens`: null → 0.1200 (litellm only)
+- `bedrock/cohere.embed-v4:0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `bedrock/eu.anthropic.claude-3-5-haiku-20241022-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.0250 (litellm only)
+- `bedrock/eu.anthropic.claude-3-5-sonnet-20240620-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
+- `bedrock/eu.anthropic.claude-3-5-sonnet-20241022-v2:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
+- `bedrock/eu.anthropic.claude-3-7-sonnet-20250219-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
+- `bedrock/eu.anthropic.claude-3-haiku-20240307-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.0250 (litellm only)
+- `bedrock/eu.anthropic.claude-3-opus-20240229-v1:0` `pricing.cache_read_per_m_tokens`: null → 1.5000 (litellm only)
+- `bedrock/eu.anthropic.claude-3-sonnet-20240229-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
+- `bedrock/eu.twelvelabs.marengo-embed-2-7-v1:0` `pricing.input_per_m_tokens`: null → 70.0000 (litellm only)
+- `bedrock/eu.twelvelabs.marengo-embed-2-7-v1:0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `bedrock/invoke/anthropic.claude-3-5-sonnet-20240620-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
+- `bedrock/twelvelabs.marengo-embed-2-7-v1:0` `pricing.input_per_m_tokens`: null → 70.0000 (litellm only)
+- `bedrock/twelvelabs.marengo-embed-2-7-v1:0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `bedrock/us-gov-east-1/amazon.titan-embed-text-v1` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `bedrock/us-gov-east-1/amazon.titan-embed-text-v1` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `bedrock/us-gov-east-1/amazon.titan-embed-text-v2:0` `pricing.input_per_m_tokens`: null → 0.2000 (litellm only)
+- `bedrock/us-gov-east-1/amazon.titan-embed-text-v2:0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `bedrock/us-gov-east-1/anthropic.claude-3-5-sonnet-20240620-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3600 (litellm only)
+- `bedrock/us-gov-east-1/anthropic.claude-3-haiku-20240307-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.0300 (litellm only)
+- `bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3600 (litellm only)
+- `bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0` `pricing.input_per_m_tokens`: 3.3000 → 3.6000 (litellm only)
+- `bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0` `pricing.output_per_m_tokens`: 16.5000 → 18.0000 (litellm only)
+- `bedrock/us-gov-west-1/amazon.titan-embed-text-v1` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `bedrock/us-gov-west-1/amazon.titan-embed-text-v1` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `bedrock/us-gov-west-1/amazon.titan-embed-text-v2:0` `pricing.input_per_m_tokens`: null → 0.2000 (litellm only)
+- `bedrock/us-gov-west-1/amazon.titan-embed-text-v2:0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `bedrock/us-gov-west-1/anthropic.claude-3-5-sonnet-20240620-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3600 (litellm only)
+- `bedrock/us-gov-west-1/anthropic.claude-3-haiku-20240307-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.0300 (litellm only)
+- `bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3600 (litellm only)
+- `bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0` `pricing.input_per_m_tokens`: 3.3000 → 3.6000 (litellm only)
+- `bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0` `pricing.output_per_m_tokens`: 16.5000 → 18.0000 (litellm only)
+- `bedrock/us.anthropic.claude-3-5-sonnet-20240620-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
+- `bedrock/us.anthropic.claude-3-haiku-20240307-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.0250 (litellm only)
+- `bedrock/us.anthropic.claude-3-opus-20240229-v1:0` `pricing.cache_read_per_m_tokens`: null → 1.5000 (litellm only)
+- `bedrock/us.anthropic.claude-3-sonnet-20240229-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
+- `bedrock/us.twelvelabs.marengo-embed-2-7-v1:0` `pricing.input_per_m_tokens`: null → 70.0000 (litellm only)
+- `bedrock/us.twelvelabs.marengo-embed-2-7-v1:0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `cerebras/zai-glm-4.7` `pricing.cache_read_per_m_tokens`: null → 0.0000 (models_dev only)
+- `cohere/embed-english-light-v2.0` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `cohere/embed-english-light-v2.0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `cohere/embed-english-light-v3.0` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `cohere/embed-english-light-v3.0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `cohere/embed-english-v2.0` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `cohere/embed-english-v2.0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `cohere/embed-english-v3.0` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `cohere/embed-english-v3.0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `cohere/embed-multilingual-light-v3.0` `pricing.input_per_m_tokens`: null → 100.0000 (litellm only)
+- `cohere/embed-multilingual-light-v3.0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `cohere/embed-multilingual-v2.0` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `cohere/embed-multilingual-v2.0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `cohere/embed-multilingual-v3.0` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `cohere/embed-multilingual-v3.0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `cohere/embed-v4.0` `pricing.input_per_m_tokens`: null → 0.1200 (litellm only)
+- `cohere/embed-v4.0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `databricks/databricks-bge-large-en` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `databricks/databricks-bge-large-en` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `databricks/databricks-claude-haiku-4-5` `pricing.cache_read_per_m_tokens`: null → 0.1000 (models_dev only)
+- `databricks/databricks-claude-opus-4-1` `pricing.cache_read_per_m_tokens`: null → 1.5000 (models_dev only)
+- `databricks/databricks-claude-opus-4-5` `pricing.cache_read_per_m_tokens`: null → 0.5000 (models_dev only)
+- `databricks/databricks-claude-sonnet-4` `pricing.cache_read_per_m_tokens`: null → 0.3000 (models_dev only)
+- `databricks/databricks-claude-sonnet-4-5` `pricing.cache_read_per_m_tokens`: null → 0.3000 (models_dev only)
+- `databricks/databricks-gemini-2-5-flash` `pricing.cache_read_per_m_tokens`: null → 0.0300 (models_dev only)
+- `databricks/databricks-gemini-2-5-pro` `pricing.cache_read_per_m_tokens`: null → 0.1250 (models_dev only)
+- `databricks/databricks-gpt-5` `pricing.cache_read_per_m_tokens`: null → 0.1250 (models_dev only)
+- `databricks/databricks-gpt-5-1` `pricing.cache_read_per_m_tokens`: null → 0.1250 (models_dev only)
+- `databricks/databricks-gpt-5-mini` `pricing.cache_read_per_m_tokens`: null → 0.0250 (models_dev only)
+- `databricks/databricks-gpt-5-nano` `pricing.cache_read_per_m_tokens`: null → 0.0050 (models_dev only)
+- `databricks/databricks-gte-large-en` `pricing.input_per_m_tokens`: null → 0.1300 (litellm only)
+- `databricks/databricks-gte-large-en` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo` `pricing.cache_read_per_m_tokens`: null → 0.1000 (models_dev only)
+- `gemini/gemini-1.5-flash` `pricing.output_per_m_tokens`: 0.3000 → 0.0000 (litellm only)
+- `gemini/gemini-embedding-001` `pricing.input_per_m_tokens`: null → 0.1500 (litellm only)
+- `gemini/gemini-embedding-001` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `gemini/gemini-exp-1206` `pricing.cache_read_per_m_tokens`: null → 0.0300 (litellm only)
+- `gemini/gemini-exp-1206` `pricing.input_per_m_tokens`: 0.0000 → 0.3000 (litellm only)
+- `gemini/gemini-exp-1206` `pricing.output_per_m_tokens`: 0.0000 → 2.5000 (litellm only)
+- `gemini/gemini-flash-latest` `pricing.cache_read_per_m_tokens`: 0.0750 → 0.0300 (litellm only)
+- `gemini/gemini-flash-lite-latest` `pricing.cache_read_per_m_tokens`: 0.0250 → 0.0100 (litellm only)
+- `gigachat/Embeddings` `pricing.input_per_m_tokens`: null → 0.0000 (litellm only)
+- `gigachat/Embeddings` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `gigachat/Embeddings-2` `pricing.input_per_m_tokens`: null → 0.0000 (litellm only)
+- `gigachat/Embeddings-2` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `gigachat/EmbeddingsGigaR` `pricing.input_per_m_tokens`: null → 0.0000 (litellm only)
+- `gigachat/EmbeddingsGigaR` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `llamagate/nomic-embed-text` `pricing.input_per_m_tokens`: null → 0.0200 (litellm only)
+- `llamagate/nomic-embed-text` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `llamagate/qwen3-embedding-8b` `pricing.input_per_m_tokens`: null → 0.0200 (litellm only)
+- `llamagate/qwen3-embedding-8b` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `mistral/codestral-2405` `pricing.input_per_m_tokens`: 0.0000 → 1.0000 (litellm only)
+- `mistral/codestral-2405` `pricing.output_per_m_tokens`: 0.0000 → 3.0000 (litellm only)
+- `mistral/codestral-embed` `pricing.input_per_m_tokens`: null → 0.1500 (litellm only)
+- `mistral/codestral-embed-2505` `pricing.input_per_m_tokens`: null → 0.1500 (litellm only)
+- `mistral/mistral-embed` `pricing.output_per_m_tokens`: null → 0.0000 (models_dev only)
+- `novita/baai/bge-m3` `pricing.input_per_m_tokens`: null → 0.0100 (litellm only)
+- `novita/baai/bge-m3` `pricing.output_per_m_tokens`: null → 0.0100 (litellm only)
+- `novita/qwen/qwen3-embedding-0.6b` `pricing.input_per_m_tokens`: null → 0.0700 (litellm only)
+- `novita/qwen/qwen3-embedding-0.6b` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `novita/qwen/qwen3-embedding-8b` `pricing.input_per_m_tokens`: null → 0.0700 (litellm only)
+- `novita/qwen/qwen3-embedding-8b` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `openai/gpt-3.5-turbo` `pricing.cache_read_per_m_tokens`: null → 0.0000 (models_dev only)
+- `openai/gpt-3.5-turbo-0613` `pricing.input_per_m_tokens`: 1.5000 → 1.0000 (openrouter only)
+- `openai/gpt-5.4-pro` `pricing.cache_read_per_m_tokens`: null → 3.0000 (litellm only)
+- `openai/gpt-5.5-pro` `pricing.cache_read_per_m_tokens`: null → 3.0000 (litellm only)
+- `openai/text-embedding-ada-002-v2` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `openai/text-embedding-ada-002-v2` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `openrouter/anthropic/claude-3-haiku` `pricing.cache_read_per_m_tokens`: null → 0.0300 (models_dev only)
+- `openrouter/bytedance/ui-tars-1.5-7b` `pricing.cache_read_per_m_tokens`: null → 0.1000 (models_dev only)
+- `openrouter/deepseek/deepseek-chat-v3-0324` `pricing.cache_read_per_m_tokens`: null → 0.1350 (models_dev only)
+- `openrouter/deepseek/deepseek-chat-v3.1` `pricing.cache_read_per_m_tokens`: null → 0.1300 (models_dev only)
+- `openrouter/deepseek/deepseek-r1-0528` `pricing.cache_read_per_m_tokens`: null → 0.3500 (models_dev only)
+- `openrouter/deepseek/deepseek-v3.2` `pricing.cache_read_per_m_tokens`: null → 0.0229 (models_dev only)
+- `openrouter/google/gemini-2.5-flash` `pricing.cache_read_per_m_tokens`: null → 0.0300 (models_dev only)
+- `openrouter/google/gemini-2.5-pro` `pricing.cache_read_per_m_tokens`: null → 0.1250 (models_dev only)
+- `openrouter/mistralai/devstral-2512` `pricing.cache_read_per_m_tokens`: null → 0.0400 (models_dev only)
+- `openrouter/mistralai/ministral-14b-2512` `pricing.cache_read_per_m_tokens`: null → 0.0200 (models_dev only)
+- `openrouter/mistralai/ministral-3b-2512` `pricing.cache_read_per_m_tokens`: null → 0.0100 (models_dev only)
+- `openrouter/mistralai/ministral-8b-2512` `pricing.cache_read_per_m_tokens`: null → 0.0150 (models_dev only)
+- `openrouter/mistralai/mistral-large` `pricing.cache_read_per_m_tokens`: null → 0.2000 (models_dev only)
+- `openrouter/mistralai/mistral-large-2512` `pricing.cache_read_per_m_tokens`: null → 0.0500 (models_dev only)
+- `openrouter/mistralai/mixtral-8x22b-instruct` `pricing.cache_read_per_m_tokens`: null → 0.2000 (models_dev only)
+- `openrouter/openai/o3-mini` `pricing.cache_read_per_m_tokens`: null → 0.5500 (models_dev only)
+- `openrouter/openai/o3-mini-high` `pricing.cache_read_per_m_tokens`: null → 0.5500 (models_dev only)
+- `openrouter/xiaomi/mimo-v2-flash` `pricing.cache_read_per_m_tokens`: 0.0000 → 0.0100 (litellm only)
+- `openrouter/xiaomi/mimo-v2-flash` `pricing.input_per_m_tokens`: 0.0900 → 0.1000 (litellm only)
+- `openrouter/xiaomi/mimo-v2-flash` `pricing.output_per_m_tokens`: 0.2900 → 0.3000 (litellm only)
+- `openrouter/z-ai/glm-4.6` `pricing.cache_read_per_m_tokens`: null → 0.0800 (models_dev only)
+- `qwen/qwen-plus` `pricing.input_per_m_tokens`: 0.4000 → 0.2600 (openrouter only)
+- `qwen/qwen-plus` `pricing.output_per_m_tokens`: 1.2000 → 0.7800 (openrouter only)
+- `qwen/qwen3-32b` `pricing.input_per_m_tokens`: null → 0.0800 (openrouter only)
+- `qwen/qwen3-32b` `pricing.output_per_m_tokens`: null → 0.2800 (openrouter only)
+- `sambanova/gpt-oss-120b` `pricing.input_per_m_tokens`: 3.0000 → 0.2200 (litellm only)
+- `sambanova/gpt-oss-120b` `pricing.output_per_m_tokens`: 4.5000 → 0.5900 (litellm only)
+- `snowflake/claude-3-5-sonnet` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
+- `snowflake/claude-3-5-sonnet` `pricing.input_per_m_tokens`: null → 3.0000 (litellm only)
+- `snowflake/claude-3-5-sonnet` `pricing.output_per_m_tokens`: null → 15.0000 (litellm only)
+- `snowflake/deepseek-r1` `pricing.input_per_m_tokens`: null → 1.3500 (litellm only)
+- `snowflake/deepseek-r1` `pricing.output_per_m_tokens`: null → 5.4000 (litellm only)
+- `snowflake/llama3.1-405b` `pricing.input_per_m_tokens`: null → 1.2000 (litellm only)
+- `snowflake/llama3.1-405b` `pricing.output_per_m_tokens`: null → 1.2000 (litellm only)
+- `snowflake/llama3.1-70b` `pricing.input_per_m_tokens`: null → 0.7200 (litellm only)
+- `snowflake/llama3.1-70b` `pricing.output_per_m_tokens`: null → 0.7200 (litellm only)
+- `snowflake/llama3.1-8b` `pricing.input_per_m_tokens`: null → 0.2400 (litellm only)
+- `snowflake/llama3.1-8b` `pricing.output_per_m_tokens`: null → 0.2400 (litellm only)
+- `snowflake/llama3.3-70b` `pricing.input_per_m_tokens`: null → 0.7200 (litellm only)
+- `snowflake/llama3.3-70b` `pricing.output_per_m_tokens`: null → 0.7200 (litellm only)
+- `snowflake/mistral-large2` `pricing.input_per_m_tokens`: null → 2.0000 (litellm only)
+- `snowflake/mistral-large2` `pricing.output_per_m_tokens`: null → 6.0000 (litellm only)
+- `snowflake/snowflake-llama-3.3-70b` `pricing.input_per_m_tokens`: null → 0.7200 (litellm only)
+- `snowflake/snowflake-llama-3.3-70b` `pricing.output_per_m_tokens`: null → 0.7200 (litellm only)
+- `vercel_ai_gateway/google/gemini-embedding-001` `pricing.input_per_m_tokens`: null → 0.1500 (litellm only)
+- `vercel_ai_gateway/google/gemini-embedding-001` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `vercel_ai_gateway/google/text-embedding-005` `pricing.input_per_m_tokens`: null → 0.0250 (litellm only)
+- `vercel_ai_gateway/google/text-embedding-005` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `vercel_ai_gateway/google/text-multilingual-embedding-002` `pricing.input_per_m_tokens`: null → 0.0250 (litellm only)
+- `vercel_ai_gateway/google/text-multilingual-embedding-002` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `vercel_ai_gateway/openai/text-embedding-3-large` `pricing.input_per_m_tokens`: null → 0.1300 (litellm only)
+- `vercel_ai_gateway/openai/text-embedding-3-large` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `vercel_ai_gateway/openai/text-embedding-3-small` `pricing.input_per_m_tokens`: null → 0.0200 (litellm only)
+- `vercel_ai_gateway/openai/text-embedding-3-small` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `vercel_ai_gateway/openai/text-embedding-ada-002` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `vercel_ai_gateway/openai/text-embedding-ada-002` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `volcengine/doubao-embedding` `pricing.input_per_m_tokens`: null → 0.0000 (litellm only)
+- `volcengine/doubao-embedding` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `volcengine/doubao-embedding-large` `pricing.input_per_m_tokens`: null → 0.0000 (litellm only)
+- `volcengine/doubao-embedding-large` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `volcengine/doubao-embedding-large-text-240915` `pricing.input_per_m_tokens`: null → 0.0000 (litellm only)
+- `volcengine/doubao-embedding-large-text-240915` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `volcengine/doubao-embedding-large-text-250515` `pricing.input_per_m_tokens`: null → 0.0000 (litellm only)
+- `volcengine/doubao-embedding-large-text-250515` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `volcengine/doubao-embedding-text-240715` `pricing.input_per_m_tokens`: null → 0.0000 (litellm only)
+- `volcengine/doubao-embedding-text-240715` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `voyage/voyage-2` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `voyage/voyage-2` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `voyage/voyage-3` `pricing.input_per_m_tokens`: null → 0.0600 (litellm only)
+- `voyage/voyage-3` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `voyage/voyage-3-large` `pricing.input_per_m_tokens`: null → 0.1800 (litellm only)
+- `voyage/voyage-3-large` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `voyage/voyage-3-lite` `pricing.input_per_m_tokens`: null → 0.0200 (litellm only)
+- `voyage/voyage-3-lite` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `voyage/voyage-3.5` `pricing.input_per_m_tokens`: null → 0.0600 (litellm only)
+- `voyage/voyage-3.5` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `voyage/voyage-3.5-lite` `pricing.input_per_m_tokens`: null → 0.0200 (litellm only)
+- `voyage/voyage-3.5-lite` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `voyage/voyage-code-2` `pricing.input_per_m_tokens`: null → 0.1200 (litellm only)
+- `voyage/voyage-code-2` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `voyage/voyage-code-3` `pricing.input_per_m_tokens`: null → 0.1800 (litellm only)
+- `voyage/voyage-code-3` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `voyage/voyage-context-3` `pricing.input_per_m_tokens`: null → 0.1800 (litellm only)
+- `voyage/voyage-context-3` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `voyage/voyage-finance-2` `pricing.input_per_m_tokens`: null → 0.1200 (litellm only)
+- `voyage/voyage-finance-2` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `voyage/voyage-large-2` `pricing.input_per_m_tokens`: null → 0.1200 (litellm only)
+- `voyage/voyage-large-2` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `voyage/voyage-law-2` `pricing.input_per_m_tokens`: null → 0.1200 (litellm only)
+- `voyage/voyage-law-2` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `voyage/voyage-lite-01` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `voyage/voyage-lite-01` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `voyage/voyage-lite-02-instruct` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
+- `voyage/voyage-lite-02-instruct` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `voyage/voyage-multimodal-3` `pricing.input_per_m_tokens`: null → 0.1200 (litellm only)
+- `voyage/voyage-multimodal-3` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `zai/glm-4.5` `pricing.cache_read_per_m_tokens`: null → 0.1100 (models_dev only)
+- `zai/glm-4.5-air` `pricing.cache_read_per_m_tokens`: null → 0.0300 (models_dev only)
+- `zai/glm-4.5-flash` `pricing.cache_read_per_m_tokens`: null → 0.0000 (models_dev only)
+- `zai/glm-5-turbo` `pricing.cache_read_per_m_tokens`: null → 0.2400 (models_dev only)
+- `zai/glm-5-turbo` `pricing.input_per_m_tokens`: null → 1.2000 (models_dev only)
+- `zai/glm-5-turbo` `pricing.output_per_m_tokens`: null → 4.0000 (models_dev only)
 
-## Conflicting price diffs (0)
+## Conflicting price diffs (128)
 
-_None._
+- `azure/gpt-4` `pricing.input_per_m_tokens`: catalog=30.0000, sources=litellm=30.0000, models_dev=60.0000
+- `azure/gpt-4` `pricing.output_per_m_tokens`: catalog=60.0000, sources=litellm=60.0000, models_dev=120.0000
+- `azure/gpt-4o-mini` `pricing.input_per_m_tokens`: catalog=0.1650, sources=litellm=0.1650, models_dev=0.1500
+- `azure/gpt-4o-mini` `pricing.output_per_m_tokens`: catalog=0.6600, sources=litellm=0.6600, models_dev=0.6000
+- `azure/gpt-5` `pricing.cache_read_per_m_tokens`: catalog=0.1250, sources=litellm=0.1250, models_dev=0.1300
+- `azure/gpt-5-chat` `pricing.cache_read_per_m_tokens`: catalog=0.1250, sources=litellm=0.1250, models_dev=0.1300
+- `azure/gpt-5-codex` `pricing.cache_read_per_m_tokens`: catalog=0.1250, sources=litellm=0.1250, models_dev=0.1300
+- `azure/gpt-5-mini` `pricing.cache_read_per_m_tokens`: catalog=0.0250, sources=litellm=0.0250, models_dev=0.0300
+- `azure/gpt-5-nano` `pricing.cache_read_per_m_tokens`: catalog=0.0050, sources=litellm=0.0050, models_dev=0.0100
+- `azure/gpt-5.2` `pricing.cache_read_per_m_tokens`: catalog=0.1750, sources=litellm=0.1750, models_dev=0.1250
+- `azure/o1-mini` `pricing.cache_read_per_m_tokens`: catalog=0.6050, sources=litellm=0.6050, models_dev=0.5500
+- `azure/o1-mini` `pricing.input_per_m_tokens`: catalog=1.2100, sources=litellm=1.2100, models_dev=1.1000
+- `azure/o1-mini` `pricing.output_per_m_tokens`: catalog=4.8400, sources=litellm=4.8400, models_dev=4.4000
+- `databricks/databricks-gpt-oss-120b` `pricing.input_per_m_tokens`: catalog=0.1500, sources=litellm=0.1500, models_dev=0.0720
+- `databricks/databricks-gpt-oss-120b` `pricing.output_per_m_tokens`: catalog=0.6000, sources=litellm=0.6000, models_dev=0.2800
+- `databricks/databricks-gpt-oss-20b` `pricing.input_per_m_tokens`: catalog=0.0700, sources=litellm=0.0700, models_dev=0.0500
+- `databricks/databricks-gpt-oss-20b` `pricing.output_per_m_tokens`: catalog=0.3000, sources=litellm=0.3000, models_dev=0.2000
+- `deepinfra/Qwen/Qwen3-32B` `pricing.input_per_m_tokens`: catalog=0.1000, sources=litellm=0.1000, models_dev=0.0800
+- `deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo` `pricing.input_per_m_tokens`: catalog=0.2900, sources=litellm=0.2900, models_dev=0.3000
+- `deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo` `pricing.output_per_m_tokens`: catalog=1.2000, sources=litellm=1.2000, models_dev=1.0000
+- `deepinfra/Qwen/Qwen3-Next-80B-A3B-Instruct` `pricing.input_per_m_tokens`: catalog=0.1400, sources=litellm=0.1400, models_dev=0.0900
+- `deepinfra/Qwen/Qwen3-Next-80B-A3B-Instruct` `pricing.output_per_m_tokens`: catalog=1.4000, sources=litellm=1.4000, models_dev=1.1000
+- `deepinfra/deepseek-ai/DeepSeek-R1-0528` `pricing.cache_read_per_m_tokens`: catalog=0.4000, sources=litellm=0.4000, models_dev=0.3500
+- `deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo` `pricing.input_per_m_tokens`: catalog=0.1300, sources=litellm=0.1300, models_dev=0.1000
+- `deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo` `pricing.output_per_m_tokens`: catalog=0.3900, sources=litellm=0.3900, models_dev=0.3200
+- `deepinfra/meta-llama/Llama-4-Scout-17B-16E-Instruct` `pricing.input_per_m_tokens`: catalog=0.0800, sources=litellm=0.0800, models_dev=0.1000
+- `deepinfra/nvidia/Llama-3.3-Nemotron-Super-49B-v1.5` `pricing.input_per_m_tokens`: catalog=0.1000, sources=litellm=0.1000, models_dev=0.4000
+- `deepinfra/openai/gpt-oss-120b` `pricing.input_per_m_tokens`: catalog=0.0500, sources=litellm=0.0500, models_dev=0.0390
+- `deepinfra/openai/gpt-oss-120b` `pricing.output_per_m_tokens`: catalog=0.4500, sources=litellm=0.4500, models_dev=0.1700
+- `deepinfra/openai/gpt-oss-20b` `pricing.input_per_m_tokens`: catalog=0.0400, sources=litellm=0.0400, models_dev=0.0300
+- `deepinfra/openai/gpt-oss-20b` `pricing.output_per_m_tokens`: catalog=0.1500, sources=litellm=0.1500, models_dev=0.1400
+- `deepseek/deepseek-chat` `pricing.cache_read_per_m_tokens`: catalog=0.0280, sources=litellm=0.0280, models_dev=0.0028
+- `deepseek/deepseek-chat` `pricing.input_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, models_dev=0.1400, openrouter=0.2002
+- `deepseek/deepseek-chat` `pricing.output_per_m_tokens`: catalog=0.4200, sources=litellm=0.4200, models_dev=0.2800, openrouter=0.8001
+- `deepseek/deepseek-r1` `pricing.input_per_m_tokens`: catalog=0.5500, sources=litellm=0.5500, openrouter=0.7000
+- `deepseek/deepseek-r1` `pricing.output_per_m_tokens`: catalog=2.1900, sources=litellm=2.1900, openrouter=2.5000
+- `deepseek/deepseek-reasoner` `pricing.cache_read_per_m_tokens`: catalog=0.0280, sources=litellm=0.0280, models_dev=0.0028
+- `deepseek/deepseek-reasoner` `pricing.input_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, models_dev=0.1400
+- `deepseek/deepseek-reasoner` `pricing.output_per_m_tokens`: catalog=0.4200, sources=litellm=0.4200, models_dev=0.2800
+- `deepseek/deepseek-v3.2` `pricing.input_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, openrouter=0.2288
+- `deepseek/deepseek-v3.2` `pricing.output_per_m_tokens`: catalog=0.4000, sources=litellm=0.4000, openrouter=0.3432
+- `deepseek/deepseek-v4-flash` `pricing.input_per_m_tokens`: catalog=0.1400, sources=litellm=0.1400, openrouter=0.0900
+- `deepseek/deepseek-v4-flash` `pricing.output_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, openrouter=0.1800
+- `mistral/codestral-latest` `pricing.input_per_m_tokens`: catalog=0.0000, sources=litellm=1.0000, models_dev=0.3000
+- `mistral/codestral-latest` `pricing.output_per_m_tokens`: catalog=0.0000, sources=litellm=3.0000, models_dev=0.9000
+- `mistral/labs-devstral-small-2512` `pricing.input_per_m_tokens`: catalog=0.1000, sources=litellm=0.1000, models_dev=0.0000
+- `mistral/labs-devstral-small-2512` `pricing.output_per_m_tokens`: catalog=0.3000, sources=litellm=0.3000, models_dev=0.0000
+- `mistral/mistral-small-latest` `pricing.input_per_m_tokens`: catalog=0.1000, sources=litellm=0.0600, models_dev=0.1500
+- `mistral/mistral-small-latest` `pricing.output_per_m_tokens`: catalog=0.3000, sources=litellm=0.1800, models_dev=0.6000
+- `mistral/open-mistral-nemo` `pricing.input_per_m_tokens`: catalog=0.3000, sources=litellm=0.3000, models_dev=0.1500
+- `mistral/open-mistral-nemo` `pricing.output_per_m_tokens`: catalog=0.3000, sources=litellm=0.3000, models_dev=0.1500
+- `openrouter/deepseek/deepseek-chat` `pricing.input_per_m_tokens`: catalog=0.1400, sources=litellm=0.1400, models_dev=0.2002
+- `openrouter/deepseek/deepseek-chat` `pricing.output_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, models_dev=0.8001
+- `openrouter/deepseek/deepseek-chat-v3-0324` `pricing.input_per_m_tokens`: catalog=0.1400, sources=litellm=0.1400, models_dev=0.2400
+- `openrouter/deepseek/deepseek-chat-v3-0324` `pricing.output_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, models_dev=0.9000
+- `openrouter/deepseek/deepseek-chat-v3.1` `pricing.input_per_m_tokens`: catalog=0.2000, sources=litellm=0.2000, models_dev=0.2100
+- `openrouter/deepseek/deepseek-chat-v3.1` `pricing.output_per_m_tokens`: catalog=0.8000, sources=litellm=0.8000, models_dev=0.7900
+- `openrouter/deepseek/deepseek-r1` `pricing.input_per_m_tokens`: catalog=0.5500, sources=litellm=0.5500, models_dev=0.7000
+- `openrouter/deepseek/deepseek-r1` `pricing.output_per_m_tokens`: catalog=2.1900, sources=litellm=2.1900, models_dev=2.5000
+- `openrouter/deepseek/deepseek-v3.2` `pricing.input_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, models_dev=0.2288
+- `openrouter/deepseek/deepseek-v3.2` `pricing.output_per_m_tokens`: catalog=0.4000, sources=litellm=0.4000, models_dev=0.3432
+- `openrouter/deepseek/deepseek-v3.2-exp` `pricing.input_per_m_tokens`: catalog=0.2000, sources=litellm=0.2000, models_dev=0.2700
+- `openrouter/deepseek/deepseek-v3.2-exp` `pricing.output_per_m_tokens`: catalog=0.4000, sources=litellm=0.4000, models_dev=0.4100
+- `openrouter/gryphe/mythomax-l2-13b` `pricing.input_per_m_tokens`: catalog=1.8750, sources=litellm=1.8750, models_dev=0.0600
+- `openrouter/gryphe/mythomax-l2-13b` `pricing.output_per_m_tokens`: catalog=1.8750, sources=litellm=1.8750, models_dev=0.0600
+- `openrouter/mancer/weaver` `pricing.input_per_m_tokens`: catalog=5.6250, sources=litellm=5.6250, models_dev=0.7500
+- `openrouter/mancer/weaver` `pricing.output_per_m_tokens`: catalog=5.6250, sources=litellm=5.6250, models_dev=1.0000
+- `openrouter/minimax/minimax-m2.1` `pricing.cache_read_per_m_tokens`: catalog=0.0000, sources=litellm=0.0000, models_dev=0.0300
+- `openrouter/minimax/minimax-m2.1` `pricing.input_per_m_tokens`: catalog=0.2700, sources=litellm=0.2700, models_dev=0.3000
+- `openrouter/minimax/minimax-m2.5` `pricing.input_per_m_tokens`: catalog=0.3000, sources=litellm=0.3000, models_dev=0.1200
+- `openrouter/minimax/minimax-m2.5` `pricing.output_per_m_tokens`: catalog=1.1000, sources=litellm=1.1000, models_dev=0.4800
+- `openrouter/mistralai/devstral-2512` `pricing.input_per_m_tokens`: catalog=0.1500, sources=litellm=0.1500, models_dev=0.4000
+- `openrouter/mistralai/devstral-2512` `pricing.output_per_m_tokens`: catalog=0.6000, sources=litellm=0.6000, models_dev=2.0000
+- `openrouter/mistralai/mistral-large` `pricing.input_per_m_tokens`: catalog=8.0000, sources=litellm=8.0000, models_dev=2.0000
+- `openrouter/mistralai/mistral-large` `pricing.output_per_m_tokens`: catalog=24.0000, sources=litellm=24.0000, models_dev=6.0000
+- `openrouter/mistralai/mistral-small-3.1-24b-instruct` `pricing.input_per_m_tokens`: catalog=0.1000, sources=litellm=0.1000, models_dev=0.3510
+- `openrouter/mistralai/mistral-small-3.1-24b-instruct` `pricing.output_per_m_tokens`: catalog=0.3000, sources=litellm=0.3000, models_dev=0.5550
+- `openrouter/mistralai/mistral-small-3.2-24b-instruct` `pricing.input_per_m_tokens`: catalog=0.1000, sources=litellm=0.1000, models_dev=0.0750
+- `openrouter/mistralai/mistral-small-3.2-24b-instruct` `pricing.output_per_m_tokens`: catalog=0.3000, sources=litellm=0.3000, models_dev=0.2000
+- `openrouter/mistralai/mixtral-8x22b-instruct` `pricing.input_per_m_tokens`: catalog=0.6500, sources=litellm=0.6500, models_dev=2.0000
+- `openrouter/mistralai/mixtral-8x22b-instruct` `pricing.output_per_m_tokens`: catalog=0.6500, sources=litellm=0.6500, models_dev=6.0000
+- `openrouter/moonshotai/kimi-k2.5` `pricing.input_per_m_tokens`: catalog=0.6000, sources=litellm=0.6000, models_dev=0.3750
+- `openrouter/moonshotai/kimi-k2.5` `pricing.output_per_m_tokens`: catalog=3.0000, sources=litellm=3.0000, models_dev=2.0250
+- `openrouter/openai/gpt-3.5-turbo` `pricing.input_per_m_tokens`: catalog=1.5000, sources=litellm=1.5000, models_dev=0.5000
+- `openrouter/openai/gpt-3.5-turbo` `pricing.output_per_m_tokens`: catalog=2.0000, sources=litellm=2.0000, models_dev=1.5000
+- `openrouter/openai/gpt-5-nano` `pricing.cache_read_per_m_tokens`: catalog=0.0050, sources=litellm=0.0050, models_dev=0.0100
+- `openrouter/openai/gpt-oss-120b` `pricing.input_per_m_tokens`: catalog=0.1800, sources=litellm=0.1800, models_dev=0.0300
+- `openrouter/openai/gpt-oss-120b` `pricing.output_per_m_tokens`: catalog=0.8000, sources=litellm=0.8000, models_dev=0.1500
+- `openrouter/openai/gpt-oss-20b` `pricing.input_per_m_tokens`: catalog=0.0200, sources=litellm=0.0200, models_dev=0.0290
+- `openrouter/openai/gpt-oss-20b` `pricing.output_per_m_tokens`: catalog=0.1000, sources=litellm=0.1000, models_dev=0.1400
+- `openrouter/qwen/qwen-2.5-coder-32b-instruct` `pricing.input_per_m_tokens`: catalog=0.1800, sources=litellm=0.1800, models_dev=0.6600
+- `openrouter/qwen/qwen-2.5-coder-32b-instruct` `pricing.output_per_m_tokens`: catalog=0.1800, sources=litellm=0.1800, models_dev=1.0000
+- `openrouter/qwen/qwen3-235b-a22b-2507` `pricing.input_per_m_tokens`: catalog=0.0710, sources=litellm=0.0710, models_dev=0.0900
+- `openrouter/qwen/qwen3-235b-a22b-thinking-2507` `pricing.input_per_m_tokens`: catalog=0.1100, sources=litellm=0.1100, models_dev=0.1495
+- `openrouter/qwen/qwen3-235b-a22b-thinking-2507` `pricing.output_per_m_tokens`: catalog=0.6000, sources=litellm=0.6000, models_dev=1.4950
+- `openrouter/qwen/qwen3-coder` `pricing.output_per_m_tokens`: catalog=0.9500, sources=litellm=0.9500, models_dev=1.8000
+- `openrouter/undi95/remm-slerp-l2-13b` `pricing.input_per_m_tokens`: catalog=1.8750, sources=litellm=1.8750, models_dev=0.4500
+- `openrouter/undi95/remm-slerp-l2-13b` `pricing.output_per_m_tokens`: catalog=1.8750, sources=litellm=1.8750, models_dev=0.6500
+- `openrouter/z-ai/glm-4.6` `pricing.input_per_m_tokens`: catalog=0.4000, sources=litellm=0.4000, models_dev=0.4300
+- `openrouter/z-ai/glm-4.6` `pricing.output_per_m_tokens`: catalog=1.7500, sources=litellm=1.7500, models_dev=1.7400
+- `openrouter/z-ai/glm-4.7` `pricing.cache_read_per_m_tokens`: catalog=0.0000, sources=litellm=0.0000, models_dev=0.0800
+- `openrouter/z-ai/glm-4.7` `pricing.output_per_m_tokens`: catalog=1.5000, sources=litellm=1.5000, models_dev=1.7500
+- `openrouter/z-ai/glm-4.7-flash` `pricing.cache_read_per_m_tokens`: catalog=0.0000, sources=litellm=0.0000, models_dev=0.0100
+- `openrouter/z-ai/glm-4.7-flash` `pricing.input_per_m_tokens`: catalog=0.0700, sources=litellm=0.0700, models_dev=0.0600
+- `ovhcloud/gpt-oss-120b` `pricing.input_per_m_tokens`: catalog=0.0800, sources=litellm=0.0800, models_dev=0.0900
+- `ovhcloud/gpt-oss-120b` `pricing.output_per_m_tokens`: catalog=0.4000, sources=litellm=0.4000, models_dev=0.4700
+- `ovhcloud/gpt-oss-20b` `pricing.input_per_m_tokens`: catalog=0.0400, sources=litellm=0.0400, models_dev=0.0500
+- `ovhcloud/gpt-oss-20b` `pricing.output_per_m_tokens`: catalog=0.1500, sources=litellm=0.1500, models_dev=0.1800
+- `wandb/Qwen/Qwen3-235B-A22B-Instruct-2507` `pricing.input_per_m_tokens`: catalog=10000.0000, sources=litellm=10000.0000, models_dev=0.1000
+- `wandb/Qwen/Qwen3-235B-A22B-Instruct-2507` `pricing.output_per_m_tokens`: catalog=10000.0000, sources=litellm=10000.0000, models_dev=0.1000
+- `wandb/Qwen/Qwen3-235B-A22B-Thinking-2507` `pricing.input_per_m_tokens`: catalog=10000.0000, sources=litellm=10000.0000, models_dev=0.1000
+- `wandb/Qwen/Qwen3-235B-A22B-Thinking-2507` `pricing.output_per_m_tokens`: catalog=10000.0000, sources=litellm=10000.0000, models_dev=0.1000
+- `wandb/Qwen/Qwen3-Coder-480B-A35B-Instruct` `pricing.input_per_m_tokens`: catalog=100000.0000, sources=litellm=100000.0000, models_dev=1.0000
+- `wandb/Qwen/Qwen3-Coder-480B-A35B-Instruct` `pricing.output_per_m_tokens`: catalog=150000.0000, sources=litellm=150000.0000, models_dev=1.5000
+- `wandb/deepseek-ai/DeepSeek-V3.1` `pricing.input_per_m_tokens`: catalog=55000.0000, sources=litellm=55000.0000, models_dev=0.5500
+- `wandb/deepseek-ai/DeepSeek-V3.1` `pricing.output_per_m_tokens`: catalog=165000.0000, sources=litellm=165000.0000, models_dev=1.6500
+- `wandb/meta-llama/Llama-3.1-8B-Instruct` `pricing.input_per_m_tokens`: catalog=22000.0000, sources=litellm=22000.0000, models_dev=0.2200
+- `wandb/meta-llama/Llama-3.1-8B-Instruct` `pricing.output_per_m_tokens`: catalog=22000.0000, sources=litellm=22000.0000, models_dev=0.2200
+- `wandb/meta-llama/Llama-3.3-70B-Instruct` `pricing.input_per_m_tokens`: catalog=71000.0000, sources=litellm=71000.0000, models_dev=0.7100
+- `wandb/meta-llama/Llama-3.3-70B-Instruct` `pricing.output_per_m_tokens`: catalog=71000.0000, sources=litellm=71000.0000, models_dev=0.7100
+- `wandb/meta-llama/Llama-4-Scout-17B-16E-Instruct` `pricing.input_per_m_tokens`: catalog=17000.0000, sources=litellm=17000.0000, models_dev=0.1700
+- `wandb/meta-llama/Llama-4-Scout-17B-16E-Instruct` `pricing.output_per_m_tokens`: catalog=66000.0000, sources=litellm=66000.0000, models_dev=0.6600
+- `wandb/microsoft/Phi-4-mini-instruct` `pricing.input_per_m_tokens`: catalog=8000.0000, sources=litellm=8000.0000, models_dev=0.0800
+- `wandb/microsoft/Phi-4-mini-instruct` `pricing.output_per_m_tokens`: catalog=35000.0000, sources=litellm=35000.0000, models_dev=0.3500
+- `wandb/openai/gpt-oss-120b` `pricing.input_per_m_tokens`: catalog=15000.0000, sources=litellm=15000.0000, models_dev=0.1500
+- `wandb/openai/gpt-oss-120b` `pricing.output_per_m_tokens`: catalog=60000.0000, sources=litellm=60000.0000, models_dev=0.6000
+- `wandb/openai/gpt-oss-20b` `pricing.input_per_m_tokens`: catalog=5000.0000, sources=litellm=5000.0000, models_dev=0.0500
+- `wandb/openai/gpt-oss-20b` `pricing.output_per_m_tokens`: catalog=20000.0000, sources=litellm=20000.0000, models_dev=0.2000

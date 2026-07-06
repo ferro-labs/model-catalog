@@ -3,8 +3,8 @@ provider: azure
 model_id: text-embedding-3-small
 display_name: text-embedding-3-small
 pricing:
-    input_per_m_tokens: null
-    output_per_m_tokens: null
+    input_per_m_tokens: 0.02
+    output_per_m_tokens: 0
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -31,3 +31,4 @@ lifecycle:
     status: deprecated
     deprecation_date: 2026-04-30
 tier: flagship
+updated_at: "2026-07-06"

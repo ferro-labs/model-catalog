@@ -1272,7 +1272,7 @@
       "successor": null
     },
     "source": "https://models.dev/openai/text-embedding-3-small",
-    "updated_at": "2026-02-28",
+    "updated_at": "2026-07-06",
     "tier": "flagship"
   },
   "github_copilot/text-embedding-3-small-inference": {
@@ -1360,7 +1360,7 @@
       "successor": null
     },
     "source": "https://models.dev/openai/text-embedding-ada-002",
-    "updated_at": "2026-02-28",
+    "updated_at": "2026-07-06",
     "tier": "standard"
   }
 }

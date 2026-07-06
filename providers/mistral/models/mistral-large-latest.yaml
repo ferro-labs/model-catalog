@@ -5,8 +5,8 @@ mode: chat
 context_window: 128000
 max_output_tokens: 128000
 pricing:
-    input_per_m_tokens: 2
-    output_per_m_tokens: 6
+    input_per_m_tokens: 0.5
+    output_per_m_tokens: 1.5
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -35,5 +35,5 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://models.dev/mistral/mistral-large-latest"
-updated_at: "2026-02-28"
+updated_at: "2026-07-06"
 tier: standard
