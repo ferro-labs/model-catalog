@@ -537,7 +537,7 @@
     "pricing": {
       "input_per_m_tokens": 10.0,
       "output_per_m_tokens": 50.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 1.0,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -568,7 +568,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev+openrouter",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "anthropic/claude-haiku-4-5": {
@@ -1021,7 +1021,7 @@
     "pricing": {
       "input_per_m_tokens": 5.0,
       "output_per_m_tokens": 25.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.5,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -1052,7 +1052,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev+openrouter",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "anthropic/claude-sonnet-4-20250514": {
@@ -1241,7 +1241,7 @@
     "pricing": {
       "input_per_m_tokens": 2.0,
       "output_per_m_tokens": 10.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.19999999999999998,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -1272,7 +1272,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev+openrouter",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   }
 }

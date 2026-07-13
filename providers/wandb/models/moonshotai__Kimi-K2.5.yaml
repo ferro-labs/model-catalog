@@ -1,13 +1,13 @@
-provider: azure
-model_id: gpt-5.5
-display_name: gpt-5.5
+provider: wandb
+model_id: moonshotai/Kimi-K2.5
+display_name: moonshotai/Kimi-K2.5
 mode: chat
 context_window: 0
 max_output_tokens: 0
 pricing:
-    input_per_m_tokens: 5
-    output_per_m_tokens: 30
-    cache_read_per_m_tokens: 0.5
+    input_per_m_tokens: 0.6
+    output_per_m_tokens: 3
+    cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null

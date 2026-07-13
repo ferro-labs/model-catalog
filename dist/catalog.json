@@ -2033,7 +2033,7 @@
     "pricing": {
       "input_per_m_tokens": 10.0,
       "output_per_m_tokens": 50.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 1.0,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -2064,7 +2064,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev+openrouter",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "anthropic/claude-haiku-4-5": {
@@ -2517,7 +2517,7 @@
     "pricing": {
       "input_per_m_tokens": 5.0,
       "output_per_m_tokens": 25.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.5,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -2548,7 +2548,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev+openrouter",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "anthropic/claude-sonnet-4-20250514": {
@@ -2737,7 +2737,7 @@
     "pricing": {
       "input_per_m_tokens": 2.0,
       "output_per_m_tokens": 10.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.19999999999999998,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -2768,7 +2768,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev+openrouter",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "anyscale/HuggingFaceH4/zephyr-7b-beta": {
@@ -10041,7 +10041,7 @@
     "pricing": {
       "input_per_m_tokens": 1.75,
       "output_per_m_tokens": 14.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.175,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -10072,7 +10072,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "azure/gpt-5.3-codex": {
@@ -10129,7 +10129,7 @@
     "pricing": {
       "input_per_m_tokens": 2.5,
       "output_per_m_tokens": 15.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.25,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -10160,7 +10160,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "azure/gpt-5.4-mini": {
@@ -10173,7 +10173,7 @@
     "pricing": {
       "input_per_m_tokens": 0.75,
       "output_per_m_tokens": 4.5,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.075,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -10204,7 +10204,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "azure/gpt-5.4-nano": {
@@ -10215,9 +10215,9 @@
     "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": null,
+      "input_per_m_tokens": 0.19999999999999998,
       "output_per_m_tokens": 1.25,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.02,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -10248,7 +10248,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "azure/gpt-5.4-pro": {
@@ -10305,7 +10305,7 @@
     "pricing": {
       "input_per_m_tokens": 5.0,
       "output_per_m_tokens": 30.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.5,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -10336,7 +10336,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "azure/gpt-audio-1.5-2026-02-23": {
@@ -10657,7 +10657,7 @@
     "pricing": {
       "input_per_m_tokens": 5.0,
       "output_per_m_tokens": null,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 1.25,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -10688,7 +10688,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "azure/gpt-oss-120b": {
@@ -60861,7 +60861,7 @@
     "pricing": {
       "input_per_m_tokens": 0.3,
       "output_per_m_tokens": 1.2,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.06,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -60892,7 +60892,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "minimax/speech-02-hd": {
@@ -62355,7 +62355,7 @@
     "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": null,
+      "input_per_m_tokens": 0.39999999999999997,
       "output_per_m_tokens": 2.0,
       "cache_read_per_m_tokens": null,
       "cache_write_per_m_tokens": null,
@@ -62388,7 +62388,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "mistral/mistral-medium-2604": {
@@ -76393,7 +76393,7 @@
     "pricing": {
       "input_per_m_tokens": 1.75,
       "output_per_m_tokens": 14.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.175,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -76424,7 +76424,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "openai/gpt-5.3-codex": {
@@ -76733,6 +76733,182 @@
     },
     "source": "auto:models_dev+openrouter",
     "updated_at": "2026-05-04",
+    "tier": "standard"
+  },
+  "openai/gpt-5.6": {
+    "provider": "openai",
+    "model_id": "gpt-5.6",
+    "display_name": "gpt-5.6",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 5.0,
+      "output_per_m_tokens": 30.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-07-13",
+    "tier": "standard"
+  },
+  "openai/gpt-5.6-luna": {
+    "provider": "openai",
+    "model_id": "gpt-5.6-luna",
+    "display_name": "gpt-5.6-luna",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.0,
+      "output_per_m_tokens": 6.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev+openrouter",
+    "updated_at": "2026-07-13",
+    "tier": "standard"
+  },
+  "openai/gpt-5.6-sol": {
+    "provider": "openai",
+    "model_id": "gpt-5.6-sol",
+    "display_name": "gpt-5.6-sol",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 5.0,
+      "output_per_m_tokens": 30.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev+openrouter",
+    "updated_at": "2026-07-13",
+    "tier": "standard"
+  },
+  "openai/gpt-5.6-terra": {
+    "provider": "openai",
+    "model_id": "gpt-5.6-terra",
+    "display_name": "gpt-5.6-terra",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 2.5,
+      "output_per_m_tokens": 15.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev+openrouter",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "openai/gpt-audio": {
@@ -77185,7 +77361,7 @@
     "pricing": {
       "input_per_m_tokens": 5.0,
       "output_per_m_tokens": null,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 1.25,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -77216,7 +77392,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "openai/gpt-realtime": {
@@ -77305,6 +77481,50 @@
     },
     "source": "https://openai.com/api/pricing/",
     "updated_at": "2026-02-28",
+    "tier": "standard"
+  },
+  "openai/gpt-realtime-2.1": {
+    "provider": "openai",
+    "model_id": "gpt-realtime-2.1",
+    "display_name": "gpt-realtime-2.1",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 4.0,
+      "output_per_m_tokens": 24.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "openai/gpt-realtime-2025-08-28": {
@@ -79253,7 +79473,7 @@
     "pricing": {
       "input_per_m_tokens": 5.0,
       "output_per_m_tokens": 25.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.5,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -79284,7 +79504,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "openrouter/anthropic/claude-sonnet-4": {
@@ -79385,7 +79605,7 @@
     "pricing": {
       "input_per_m_tokens": 3.0,
       "output_per_m_tokens": 15.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.3,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -79416,7 +79636,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "openrouter/bytedance/ui-tars-1.5-7b": {
@@ -80001,7 +80221,7 @@
     "pricing": {
       "input_per_m_tokens": 0.25,
       "output_per_m_tokens": 1.5,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.024999999999999998,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -80032,7 +80252,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "openrouter/google/gemini-3.1-flash-lite-preview": {
@@ -80045,7 +80265,7 @@
     "pricing": {
       "input_per_m_tokens": 0.25,
       "output_per_m_tokens": 1.5,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.024999999999999998,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -80076,7 +80296,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "openrouter/google/gemini-3.1-pro-preview": {
@@ -80089,7 +80309,7 @@
     "pricing": {
       "input_per_m_tokens": 2.0,
       "output_per_m_tokens": 12.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.19999999999999998,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -80120,7 +80340,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "openrouter/gryphe/mythomax-l2-13b": {
@@ -81453,7 +81673,7 @@
     "pricing": {
       "input_per_m_tokens": 1.25,
       "output_per_m_tokens": 10.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.125,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -81484,7 +81704,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "openrouter/openai/gpt-5.2": {
@@ -107931,6 +108151,50 @@
     "updated_at": "2026-02-28",
     "tier": "standard"
   },
+  "wandb/moonshotai/Kimi-K2.5": {
+    "provider": "wandb",
+    "model_id": "moonshotai/Kimi-K2.5",
+    "display_name": "moonshotai/Kimi-K2.5",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.6,
+      "output_per_m_tokens": 3.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-07-13",
+    "tier": "standard"
+  },
   "wandb/openai/gpt-oss-120b": {
     "provider": "wandb",
     "model_id": "openai/gpt-oss-120b",
@@ -110537,6 +110801,50 @@
     "pricing": {
       "input_per_m_tokens": 1.25,
       "output_per_m_tokens": 2.5,
+      "cache_read_per_m_tokens": 0.19999999999999998,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-07-13",
+    "tier": "standard"
+  },
+  "xai/grok-4.5": {
+    "provider": "xai",
+    "model_id": "grok-4.5",
+    "display_name": "grok-4.5",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 6.0,
       "cache_read_per_m_tokens": null,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
@@ -110568,7 +110876,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "xai/grok-beta": {
@@ -111197,7 +111505,7 @@
     "pricing": {
       "input_per_m_tokens": 0.0,
       "output_per_m_tokens": 0.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.0,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -111228,7 +111536,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "zai/glm-5": {

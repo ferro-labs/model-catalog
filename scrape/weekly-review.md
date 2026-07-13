@@ -4,10 +4,11 @@ Corroborated changes (≥2 sources agree) are auto-applied in this PR's file dif
 The diffs below come from a single source or disagree between sources — review and
 apply them manually to the model YAML if correct.
 
-## Single-source price diffs (231)
+## Single-source price diffs (242)
 
 - `azure/ada` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
 - `azure/ada` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `azure/gpt-5.4-pro` `pricing.cache_read_per_m_tokens`: null → 3.0000 (litellm only)
 - `azure/gpt-image-1` `pricing.output_per_m_tokens`: null → 40.0000 (models_dev only)
 - `azure/gpt-image-1.5` `pricing.output_per_m_tokens`: null → 32.0000 (models_dev only)
 - `azure/grok-4-fast-reasoning` `pricing.cache_read_per_m_tokens`: null → 0.0500 (models_dev only)
@@ -140,7 +141,7 @@ apply them manually to the model YAML if correct.
 - `openrouter/deepseek/deepseek-chat-v3-0324` `pricing.cache_read_per_m_tokens`: null → 0.1350 (models_dev only)
 - `openrouter/deepseek/deepseek-chat-v3.1` `pricing.cache_read_per_m_tokens`: null → 0.1300 (models_dev only)
 - `openrouter/deepseek/deepseek-r1-0528` `pricing.cache_read_per_m_tokens`: null → 0.3500 (models_dev only)
-- `openrouter/deepseek/deepseek-v3.2` `pricing.cache_read_per_m_tokens`: null → 0.0229 (models_dev only)
+- `openrouter/deepseek/deepseek-v3.2` `pricing.cache_read_per_m_tokens`: null → 0.0215 (models_dev only)
 - `openrouter/google/gemini-2.5-flash` `pricing.cache_read_per_m_tokens`: null → 0.0300 (models_dev only)
 - `openrouter/google/gemini-2.5-pro` `pricing.cache_read_per_m_tokens`: null → 0.1250 (models_dev only)
 - `openrouter/mistralai/devstral-2512` `pricing.cache_read_per_m_tokens`: null → 0.0400 (models_dev only)
@@ -231,6 +232,16 @@ apply them manually to the model YAML if correct.
 - `voyage/voyage-lite-02-instruct` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
 - `voyage/voyage-multimodal-3` `pricing.input_per_m_tokens`: null → 0.1200 (litellm only)
 - `voyage/voyage-multimodal-3` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `wandb/MiniMaxAI/MiniMax-M2.5` `pricing.cache_read_per_m_tokens`: null → 0.3000 (models_dev only)
+- `wandb/Qwen/Qwen3-235B-A22B-Instruct-2507` `pricing.cache_read_per_m_tokens`: null → 0.1000 (models_dev only)
+- `wandb/Qwen/Qwen3-235B-A22B-Thinking-2507` `pricing.cache_read_per_m_tokens`: null → 0.1000 (models_dev only)
+- `wandb/Qwen/Qwen3-Coder-480B-A35B-Instruct` `pricing.cache_read_per_m_tokens`: null → 1.0000 (models_dev only)
+- `wandb/deepseek-ai/DeepSeek-V3.1` `pricing.cache_read_per_m_tokens`: null → 0.5500 (models_dev only)
+- `wandb/meta-llama/Llama-3.1-8B-Instruct` `pricing.cache_read_per_m_tokens`: null → 0.2200 (models_dev only)
+- `wandb/meta-llama/Llama-3.3-70B-Instruct` `pricing.cache_read_per_m_tokens`: null → 0.7100 (models_dev only)
+- `wandb/microsoft/Phi-4-mini-instruct` `pricing.cache_read_per_m_tokens`: null → 0.0800 (models_dev only)
+- `wandb/openai/gpt-oss-120b` `pricing.cache_read_per_m_tokens`: null → 0.0400 (models_dev only)
+- `wandb/openai/gpt-oss-20b` `pricing.cache_read_per_m_tokens`: null → 0.0300 (models_dev only)
 - `zai/glm-4.5` `pricing.cache_read_per_m_tokens`: null → 0.1100 (models_dev only)
 - `zai/glm-4.5-air` `pricing.cache_read_per_m_tokens`: null → 0.0300 (models_dev only)
 - `zai/glm-4.5-flash` `pricing.cache_read_per_m_tokens`: null → 0.0000 (models_dev only)
@@ -238,7 +249,7 @@ apply them manually to the model YAML if correct.
 - `zai/glm-5-turbo` `pricing.input_per_m_tokens`: null → 1.2000 (models_dev only)
 - `zai/glm-5-turbo` `pricing.output_per_m_tokens`: null → 4.0000 (models_dev only)
 
-## Conflicting price diffs (128)
+## Conflicting price diffs (132)
 
 - `azure/gpt-4` `pricing.input_per_m_tokens`: catalog=30.0000, sources=litellm=30.0000, models_dev=60.0000
 - `azure/gpt-4` `pricing.output_per_m_tokens`: catalog=60.0000, sources=litellm=60.0000, models_dev=120.0000
@@ -250,6 +261,7 @@ apply them manually to the model YAML if correct.
 - `azure/gpt-5-mini` `pricing.cache_read_per_m_tokens`: catalog=0.0250, sources=litellm=0.0250, models_dev=0.0300
 - `azure/gpt-5-nano` `pricing.cache_read_per_m_tokens`: catalog=0.0050, sources=litellm=0.0050, models_dev=0.0100
 - `azure/gpt-5.2` `pricing.cache_read_per_m_tokens`: catalog=0.1750, sources=litellm=0.1750, models_dev=0.1250
+- `azure/gpt-image-2` `pricing.output_per_m_tokens`: catalog=null, sources=litellm=10.0000, models_dev=30.0000
 - `azure/o1-mini` `pricing.cache_read_per_m_tokens`: catalog=0.6050, sources=litellm=0.6050, models_dev=0.5500
 - `azure/o1-mini` `pricing.input_per_m_tokens`: catalog=1.2100, sources=litellm=1.2100, models_dev=1.1000
 - `azure/o1-mini` `pricing.output_per_m_tokens`: catalog=4.8400, sources=litellm=4.8400, models_dev=4.4000
@@ -265,9 +277,11 @@ apply them manually to the model YAML if correct.
 - `deepinfra/deepseek-ai/DeepSeek-R1-0528` `pricing.cache_read_per_m_tokens`: catalog=0.4000, sources=litellm=0.4000, models_dev=0.3500
 - `deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo` `pricing.input_per_m_tokens`: catalog=0.1300, sources=litellm=0.1300, models_dev=0.1000
 - `deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo` `pricing.output_per_m_tokens`: catalog=0.3900, sources=litellm=0.3900, models_dev=0.3200
+- `deepinfra/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8` `pricing.input_per_m_tokens`: catalog=0.1500, sources=litellm=0.1500, models_dev=0.2000
+- `deepinfra/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8` `pricing.output_per_m_tokens`: catalog=0.6000, sources=litellm=0.6000, models_dev=0.8000
 - `deepinfra/meta-llama/Llama-4-Scout-17B-16E-Instruct` `pricing.input_per_m_tokens`: catalog=0.0800, sources=litellm=0.0800, models_dev=0.1000
 - `deepinfra/nvidia/Llama-3.3-Nemotron-Super-49B-v1.5` `pricing.input_per_m_tokens`: catalog=0.1000, sources=litellm=0.1000, models_dev=0.4000
-- `deepinfra/openai/gpt-oss-120b` `pricing.input_per_m_tokens`: catalog=0.0500, sources=litellm=0.0500, models_dev=0.0390
+- `deepinfra/openai/gpt-oss-120b` `pricing.input_per_m_tokens`: catalog=0.0500, sources=litellm=0.0500, models_dev=0.0370
 - `deepinfra/openai/gpt-oss-120b` `pricing.output_per_m_tokens`: catalog=0.4500, sources=litellm=0.4500, models_dev=0.1700
 - `deepinfra/openai/gpt-oss-20b` `pricing.input_per_m_tokens`: catalog=0.0400, sources=litellm=0.0400, models_dev=0.0300
 - `deepinfra/openai/gpt-oss-20b` `pricing.output_per_m_tokens`: catalog=0.1500, sources=litellm=0.1500, models_dev=0.1400
@@ -279,10 +293,10 @@ apply them manually to the model YAML if correct.
 - `deepseek/deepseek-reasoner` `pricing.cache_read_per_m_tokens`: catalog=0.0280, sources=litellm=0.0280, models_dev=0.0028
 - `deepseek/deepseek-reasoner` `pricing.input_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, models_dev=0.1400
 - `deepseek/deepseek-reasoner` `pricing.output_per_m_tokens`: catalog=0.4200, sources=litellm=0.4200, models_dev=0.2800
-- `deepseek/deepseek-v3.2` `pricing.input_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, openrouter=0.2288
-- `deepseek/deepseek-v3.2` `pricing.output_per_m_tokens`: catalog=0.4000, sources=litellm=0.4000, openrouter=0.3432
-- `deepseek/deepseek-v4-flash` `pricing.input_per_m_tokens`: catalog=0.1400, sources=litellm=0.1400, openrouter=0.0900
-- `deepseek/deepseek-v4-flash` `pricing.output_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, openrouter=0.1800
+- `deepseek/deepseek-v3.2` `pricing.input_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, openrouter=0.2145
+- `deepseek/deepseek-v3.2` `pricing.output_per_m_tokens`: catalog=0.4000, sources=litellm=0.4000, openrouter=0.3217
+- `deepseek/deepseek-v4-flash` `pricing.input_per_m_tokens`: catalog=0.1400, sources=litellm=0.1400, openrouter=0.0770
+- `deepseek/deepseek-v4-flash` `pricing.output_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, openrouter=0.1540
 - `mistral/codestral-latest` `pricing.input_per_m_tokens`: catalog=0.0000, sources=litellm=1.0000, models_dev=0.3000
 - `mistral/codestral-latest` `pricing.output_per_m_tokens`: catalog=0.0000, sources=litellm=3.0000, models_dev=0.9000
 - `mistral/labs-devstral-small-2512` `pricing.input_per_m_tokens`: catalog=0.1000, sources=litellm=0.1000, models_dev=0.0000
@@ -291,6 +305,7 @@ apply them manually to the model YAML if correct.
 - `mistral/mistral-small-latest` `pricing.output_per_m_tokens`: catalog=0.3000, sources=litellm=0.1800, models_dev=0.6000
 - `mistral/open-mistral-nemo` `pricing.input_per_m_tokens`: catalog=0.3000, sources=litellm=0.3000, models_dev=0.1500
 - `mistral/open-mistral-nemo` `pricing.output_per_m_tokens`: catalog=0.3000, sources=litellm=0.3000, models_dev=0.1500
+- `openai/gpt-image-2` `pricing.output_per_m_tokens`: catalog=null, sources=litellm=10.0000, models_dev=30.0000
 - `openrouter/deepseek/deepseek-chat` `pricing.input_per_m_tokens`: catalog=0.1400, sources=litellm=0.1400, models_dev=0.2002
 - `openrouter/deepseek/deepseek-chat` `pricing.output_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, models_dev=0.8001
 - `openrouter/deepseek/deepseek-chat-v3-0324` `pricing.input_per_m_tokens`: catalog=0.1400, sources=litellm=0.1400, models_dev=0.2400
@@ -299,8 +314,8 @@ apply them manually to the model YAML if correct.
 - `openrouter/deepseek/deepseek-chat-v3.1` `pricing.output_per_m_tokens`: catalog=0.8000, sources=litellm=0.8000, models_dev=0.7900
 - `openrouter/deepseek/deepseek-r1` `pricing.input_per_m_tokens`: catalog=0.5500, sources=litellm=0.5500, models_dev=0.7000
 - `openrouter/deepseek/deepseek-r1` `pricing.output_per_m_tokens`: catalog=2.1900, sources=litellm=2.1900, models_dev=2.5000
-- `openrouter/deepseek/deepseek-v3.2` `pricing.input_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, models_dev=0.2288
-- `openrouter/deepseek/deepseek-v3.2` `pricing.output_per_m_tokens`: catalog=0.4000, sources=litellm=0.4000, models_dev=0.3432
+- `openrouter/deepseek/deepseek-v3.2` `pricing.input_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, models_dev=0.2145
+- `openrouter/deepseek/deepseek-v3.2` `pricing.output_per_m_tokens`: catalog=0.4000, sources=litellm=0.4000, models_dev=0.3217
 - `openrouter/deepseek/deepseek-v3.2-exp` `pricing.input_per_m_tokens`: catalog=0.2000, sources=litellm=0.2000, models_dev=0.2700
 - `openrouter/deepseek/deepseek-v3.2-exp` `pricing.output_per_m_tokens`: catalog=0.4000, sources=litellm=0.4000, models_dev=0.4100
 - `openrouter/gryphe/mythomax-l2-13b` `pricing.input_per_m_tokens`: catalog=1.8750, sources=litellm=1.8750, models_dev=0.0600
@@ -309,8 +324,9 @@ apply them manually to the model YAML if correct.
 - `openrouter/mancer/weaver` `pricing.output_per_m_tokens`: catalog=5.6250, sources=litellm=5.6250, models_dev=1.0000
 - `openrouter/minimax/minimax-m2.1` `pricing.cache_read_per_m_tokens`: catalog=0.0000, sources=litellm=0.0000, models_dev=0.0300
 - `openrouter/minimax/minimax-m2.1` `pricing.input_per_m_tokens`: catalog=0.2700, sources=litellm=0.2700, models_dev=0.3000
-- `openrouter/minimax/minimax-m2.5` `pricing.input_per_m_tokens`: catalog=0.3000, sources=litellm=0.3000, models_dev=0.1200
-- `openrouter/minimax/minimax-m2.5` `pricing.output_per_m_tokens`: catalog=1.1000, sources=litellm=1.1000, models_dev=0.4800
+- `openrouter/minimax/minimax-m2.5` `pricing.cache_read_per_m_tokens`: catalog=0.1500, sources=litellm=0.1500, models_dev=0.0500
+- `openrouter/minimax/minimax-m2.5` `pricing.input_per_m_tokens`: catalog=0.3000, sources=litellm=0.3000, models_dev=0.1500
+- `openrouter/minimax/minimax-m2.5` `pricing.output_per_m_tokens`: catalog=1.1000, sources=litellm=1.1000, models_dev=0.9000
 - `openrouter/mistralai/devstral-2512` `pricing.input_per_m_tokens`: catalog=0.1500, sources=litellm=0.1500, models_dev=0.4000
 - `openrouter/mistralai/devstral-2512` `pricing.output_per_m_tokens`: catalog=0.6000, sources=litellm=0.6000, models_dev=2.0000
 - `openrouter/mistralai/mistral-large` `pricing.input_per_m_tokens`: catalog=8.0000, sources=litellm=8.0000, models_dev=2.0000
@@ -321,25 +337,26 @@ apply them manually to the model YAML if correct.
 - `openrouter/mistralai/mistral-small-3.2-24b-instruct` `pricing.output_per_m_tokens`: catalog=0.3000, sources=litellm=0.3000, models_dev=0.2000
 - `openrouter/mistralai/mixtral-8x22b-instruct` `pricing.input_per_m_tokens`: catalog=0.6500, sources=litellm=0.6500, models_dev=2.0000
 - `openrouter/mistralai/mixtral-8x22b-instruct` `pricing.output_per_m_tokens`: catalog=0.6500, sources=litellm=0.6500, models_dev=6.0000
+- `openrouter/moonshotai/kimi-k2.5` `pricing.cache_read_per_m_tokens`: catalog=0.1000, sources=litellm=0.1000, models_dev=0.2030
 - `openrouter/moonshotai/kimi-k2.5` `pricing.input_per_m_tokens`: catalog=0.6000, sources=litellm=0.6000, models_dev=0.3750
 - `openrouter/moonshotai/kimi-k2.5` `pricing.output_per_m_tokens`: catalog=3.0000, sources=litellm=3.0000, models_dev=2.0250
 - `openrouter/openai/gpt-3.5-turbo` `pricing.input_per_m_tokens`: catalog=1.5000, sources=litellm=1.5000, models_dev=0.5000
 - `openrouter/openai/gpt-3.5-turbo` `pricing.output_per_m_tokens`: catalog=2.0000, sources=litellm=2.0000, models_dev=1.5000
 - `openrouter/openai/gpt-5-nano` `pricing.cache_read_per_m_tokens`: catalog=0.0050, sources=litellm=0.0050, models_dev=0.0100
-- `openrouter/openai/gpt-oss-120b` `pricing.input_per_m_tokens`: catalog=0.1800, sources=litellm=0.1800, models_dev=0.0300
-- `openrouter/openai/gpt-oss-120b` `pricing.output_per_m_tokens`: catalog=0.8000, sources=litellm=0.8000, models_dev=0.1500
+- `openrouter/openai/gpt-oss-120b` `pricing.input_per_m_tokens`: catalog=0.1800, sources=litellm=0.1800, models_dev=0.0360
+- `openrouter/openai/gpt-oss-120b` `pricing.output_per_m_tokens`: catalog=0.8000, sources=litellm=0.8000, models_dev=0.1800
 - `openrouter/openai/gpt-oss-20b` `pricing.input_per_m_tokens`: catalog=0.0200, sources=litellm=0.0200, models_dev=0.0290
 - `openrouter/openai/gpt-oss-20b` `pricing.output_per_m_tokens`: catalog=0.1000, sources=litellm=0.1000, models_dev=0.1400
 - `openrouter/qwen/qwen-2.5-coder-32b-instruct` `pricing.input_per_m_tokens`: catalog=0.1800, sources=litellm=0.1800, models_dev=0.6600
 - `openrouter/qwen/qwen-2.5-coder-32b-instruct` `pricing.output_per_m_tokens`: catalog=0.1800, sources=litellm=0.1800, models_dev=1.0000
 - `openrouter/qwen/qwen3-235b-a22b-2507` `pricing.input_per_m_tokens`: catalog=0.0710, sources=litellm=0.0710, models_dev=0.0900
+- `openrouter/qwen/qwen3-235b-a22b-2507` `pricing.output_per_m_tokens`: catalog=0.1000, sources=litellm=0.1000, models_dev=0.5500
 - `openrouter/qwen/qwen3-235b-a22b-thinking-2507` `pricing.input_per_m_tokens`: catalog=0.1100, sources=litellm=0.1100, models_dev=0.1495
 - `openrouter/qwen/qwen3-235b-a22b-thinking-2507` `pricing.output_per_m_tokens`: catalog=0.6000, sources=litellm=0.6000, models_dev=1.4950
 - `openrouter/qwen/qwen3-coder` `pricing.output_per_m_tokens`: catalog=0.9500, sources=litellm=0.9500, models_dev=1.8000
 - `openrouter/undi95/remm-slerp-l2-13b` `pricing.input_per_m_tokens`: catalog=1.8750, sources=litellm=1.8750, models_dev=0.4500
 - `openrouter/undi95/remm-slerp-l2-13b` `pricing.output_per_m_tokens`: catalog=1.8750, sources=litellm=1.8750, models_dev=0.6500
 - `openrouter/z-ai/glm-4.6` `pricing.input_per_m_tokens`: catalog=0.4000, sources=litellm=0.4000, models_dev=0.4300
-- `openrouter/z-ai/glm-4.6` `pricing.output_per_m_tokens`: catalog=1.7500, sources=litellm=1.7500, models_dev=1.7400
 - `openrouter/z-ai/glm-4.7` `pricing.cache_read_per_m_tokens`: catalog=0.0000, sources=litellm=0.0000, models_dev=0.0800
 - `openrouter/z-ai/glm-4.7` `pricing.output_per_m_tokens`: catalog=1.5000, sources=litellm=1.5000, models_dev=1.7500
 - `openrouter/z-ai/glm-4.7-flash` `pricing.cache_read_per_m_tokens`: catalog=0.0000, sources=litellm=0.0000, models_dev=0.0100
@@ -360,11 +377,9 @@ apply them manually to the model YAML if correct.
 - `wandb/meta-llama/Llama-3.1-8B-Instruct` `pricing.output_per_m_tokens`: catalog=22000.0000, sources=litellm=22000.0000, models_dev=0.2200
 - `wandb/meta-llama/Llama-3.3-70B-Instruct` `pricing.input_per_m_tokens`: catalog=71000.0000, sources=litellm=71000.0000, models_dev=0.7100
 - `wandb/meta-llama/Llama-3.3-70B-Instruct` `pricing.output_per_m_tokens`: catalog=71000.0000, sources=litellm=71000.0000, models_dev=0.7100
-- `wandb/meta-llama/Llama-4-Scout-17B-16E-Instruct` `pricing.input_per_m_tokens`: catalog=17000.0000, sources=litellm=17000.0000, models_dev=0.1700
-- `wandb/meta-llama/Llama-4-Scout-17B-16E-Instruct` `pricing.output_per_m_tokens`: catalog=66000.0000, sources=litellm=66000.0000, models_dev=0.6600
 - `wandb/microsoft/Phi-4-mini-instruct` `pricing.input_per_m_tokens`: catalog=8000.0000, sources=litellm=8000.0000, models_dev=0.0800
 - `wandb/microsoft/Phi-4-mini-instruct` `pricing.output_per_m_tokens`: catalog=35000.0000, sources=litellm=35000.0000, models_dev=0.3500
-- `wandb/openai/gpt-oss-120b` `pricing.input_per_m_tokens`: catalog=15000.0000, sources=litellm=15000.0000, models_dev=0.1500
-- `wandb/openai/gpt-oss-120b` `pricing.output_per_m_tokens`: catalog=60000.0000, sources=litellm=60000.0000, models_dev=0.6000
-- `wandb/openai/gpt-oss-20b` `pricing.input_per_m_tokens`: catalog=5000.0000, sources=litellm=5000.0000, models_dev=0.0500
-- `wandb/openai/gpt-oss-20b` `pricing.output_per_m_tokens`: catalog=20000.0000, sources=litellm=20000.0000, models_dev=0.2000
+- `wandb/openai/gpt-oss-120b` `pricing.input_per_m_tokens`: catalog=15000.0000, sources=litellm=15000.0000, models_dev=0.0400
+- `wandb/openai/gpt-oss-120b` `pricing.output_per_m_tokens`: catalog=60000.0000, sources=litellm=60000.0000, models_dev=0.1400
+- `wandb/openai/gpt-oss-20b` `pricing.input_per_m_tokens`: catalog=5000.0000, sources=litellm=5000.0000, models_dev=0.0300
+- `wandb/openai/gpt-oss-20b` `pricing.output_per_m_tokens`: catalog=20000.0000, sources=litellm=20000.0000, models_dev=0.1300
