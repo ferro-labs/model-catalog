@@ -405,7 +405,7 @@
     "pricing": {
       "input_per_m_tokens": 0.0,
       "output_per_m_tokens": 0.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.0,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -436,7 +436,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "zai/glm-5": {

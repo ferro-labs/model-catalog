@@ -6477,7 +6477,7 @@
     "pricing": {
       "input_per_m_tokens": 1.75,
       "output_per_m_tokens": 14.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.175,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -6508,7 +6508,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "azure/gpt-5.3-codex": {
@@ -6565,7 +6565,7 @@
     "pricing": {
       "input_per_m_tokens": 2.5,
       "output_per_m_tokens": 15.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.25,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -6596,7 +6596,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "azure/gpt-5.4-mini": {
@@ -6609,7 +6609,7 @@
     "pricing": {
       "input_per_m_tokens": 0.75,
       "output_per_m_tokens": 4.5,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.075,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -6640,7 +6640,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "azure/gpt-5.4-nano": {
@@ -6651,9 +6651,9 @@
     "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": null,
+      "input_per_m_tokens": 0.19999999999999998,
       "output_per_m_tokens": 1.25,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.02,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -6684,7 +6684,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "azure/gpt-5.4-pro": {
@@ -6741,7 +6741,7 @@
     "pricing": {
       "input_per_m_tokens": 5.0,
       "output_per_m_tokens": 30.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.5,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -6772,7 +6772,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "azure/gpt-audio-1.5-2026-02-23": {
@@ -7093,7 +7093,7 @@
     "pricing": {
       "input_per_m_tokens": 5.0,
       "output_per_m_tokens": null,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 1.25,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -7124,7 +7124,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "azure/gpt-oss-120b": {

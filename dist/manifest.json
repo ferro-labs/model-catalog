@@ -1,8 +1,8 @@
 {
-  "version": "v2026.07.06",
+  "version": "v2026.07.13",
   "schema_version": 1,
-  "generated_at": "2026-07-06T10:46:10Z",
-  "catalog_sha256": "ad59715e05b149e688381092113a768e0f3d5936246448f814fcfcc116333a49",
+  "generated_at": "2026-07-13T09:35:34Z",
+  "catalog_sha256": "2f01b0ff0e142624e32d35797fdb2e99b67860f80ccee25dc568a87573ff48f3",
   "providers": [
     {
       "id": "ai21",
@@ -43,7 +43,7 @@
     {
       "id": "anthropic",
       "model_count": 29,
-      "sha256": "f158a1566df947d2ccd2a7afaed04ae3eb6801eb515e14fa0ccec2caacb665d2",
+      "sha256": "43bab33699db2598a9a4c17caca1973074e18e35e996e1d753308929d924f049",
       "display_name": "Anthropic",
       "logo_url": "https://anthropic.com/favicon.svg",
       "category": "frontier",
@@ -80,7 +80,7 @@
     {
       "id": "azure",
       "model_count": 235,
-      "sha256": "99b838961926722b9ce6b22b7e4dd1cae9421856aeb6f96263bb87b6d74a020d",
+      "sha256": "e683d19bdf98840676f796afb9bfc223baf96a5ceabc15bb0ce53c89460c8c06",
       "display_name": "Azure OpenAI",
       "category": "cloud",
       "description": "OpenAI models via Microsoft Azure",
@@ -359,7 +359,7 @@
     {
       "id": "minimax",
       "model_count": 10,
-      "sha256": "1cbaee9d4a3a1b5bd02da41925cb70e271b217f1d589bc9d5fdf4e7971358be7",
+      "sha256": "3a5988e5c2724e5d4f91f11b4095c018b7608e7e888ff8c1fd7f39cd4b6c85ec",
       "display_name": "MiniMax",
       "category": "specialized",
       "description": "Large-scale multimodal models from MiniMax",
@@ -368,7 +368,7 @@
     {
       "id": "mistral",
       "model_count": 46,
-      "sha256": "56b0bf949fd110dd1007af0307480c152ca12ac60b2544c5344e4a6b6a312f91",
+      "sha256": "57769ec27bbf16f9c4870a6229058d3b2fa05e3e31e09159343cc6c656ab95f5",
       "display_name": "Mistral AI",
       "logo_url": "https://mistral.ai/favicon.svg",
       "category": "frontier",
@@ -469,8 +469,8 @@
     },
     {
       "id": "openai",
-      "model_count": 164,
-      "sha256": "059d9ecd8e18b1769e0e43b67243e8c40096fe4c12bc05b00bcecd0386084b8f",
+      "model_count": 169,
+      "sha256": "f00a15d6d4b3e10ffd706d2993ce36617c7a2249ea96da3909a2193c22937709",
       "display_name": "OpenAI",
       "logo_url": "https://cdn.openai.com/API/logo-assets/openai-logomark.svg",
       "category": "frontier",
@@ -480,7 +480,7 @@
     {
       "id": "openrouter",
       "model_count": 85,
-      "sha256": "488119fe181ab1dd9e518ef721e8b64ce1835a75dce03a43f849fb0e188041ec",
+      "sha256": "904d35d87bbf523b8df05b65b4c6a3b413510a1e44b3d3ea10b45bd9fdebe7aa",
       "display_name": "OpenRouter",
       "category": "specialized",
       "description": "Unified API across 200+ models",
@@ -735,8 +735,8 @@
     },
     {
       "id": "wandb",
-      "model_count": 15,
-      "sha256": "96a4e227f554bdfba54c9920e887d07a2398e16a6ae56531dfa7f0d485556970",
+      "model_count": 16,
+      "sha256": "88a56fa2e932b9ae5b464367e5ba5f61ca5e5a8d5cc3da5359a26938eec8125c",
       "display_name": "Weights \u0026 Biases",
       "category": "specialized",
       "description": "ML experiment tracking and model registry",
@@ -753,8 +753,8 @@
     },
     {
       "id": "xai",
-      "model_count": 33,
-      "sha256": "f68dfb60fe3c4f634cb60370b351c711f393947baacaaba7e220c46ff75f6e51",
+      "model_count": 34,
+      "sha256": "0325a07eed3295c58df8aefa4959904903f97eda864a49a28128481ed9b662bc",
       "display_name": "xAI (Grok)",
       "logo_url": "https://x.ai/favicon.svg",
       "category": "frontier",
@@ -764,7 +764,7 @@
     {
       "id": "zai",
       "model_count": 13,
-      "sha256": "8fe2b832596c07e344b870881530bfec075b680cfae8365c0b09890085288fd3",
+      "sha256": "053950decce2f46b5a4af82719e1c84124ec3e5b198b2f20982b3990813ca237",
       "display_name": "Zai",
       "category": "specialized",
       "description": "Specialized AI model inference",
@@ -772,7 +772,7 @@
     }
   ],
   "stats": {
-    "total_models": 2531,
+    "total_models": 2538,
     "total_providers": 83
   }
 }

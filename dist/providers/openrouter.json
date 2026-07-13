@@ -361,7 +361,7 @@
     "pricing": {
       "input_per_m_tokens": 5.0,
       "output_per_m_tokens": 25.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.5,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -392,7 +392,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "openrouter/anthropic/claude-sonnet-4": {
@@ -493,7 +493,7 @@
     "pricing": {
       "input_per_m_tokens": 3.0,
       "output_per_m_tokens": 15.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.3,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -524,7 +524,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "openrouter/bytedance/ui-tars-1.5-7b": {
@@ -1109,7 +1109,7 @@
     "pricing": {
       "input_per_m_tokens": 0.25,
       "output_per_m_tokens": 1.5,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.024999999999999998,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -1140,7 +1140,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "openrouter/google/gemini-3.1-flash-lite-preview": {
@@ -1153,7 +1153,7 @@
     "pricing": {
       "input_per_m_tokens": 0.25,
       "output_per_m_tokens": 1.5,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.024999999999999998,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -1184,7 +1184,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "openrouter/google/gemini-3.1-pro-preview": {
@@ -1197,7 +1197,7 @@
     "pricing": {
       "input_per_m_tokens": 2.0,
       "output_per_m_tokens": 12.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.19999999999999998,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -1228,7 +1228,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "openrouter/gryphe/mythomax-l2-13b": {
@@ -2561,7 +2561,7 @@
     "pricing": {
       "input_per_m_tokens": 1.25,
       "output_per_m_tokens": 10.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.125,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -2592,7 +2592,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-07-13",
     "tier": "standard"
   },
   "openrouter/openai/gpt-5.2": {
