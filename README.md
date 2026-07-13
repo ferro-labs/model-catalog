@@ -155,8 +155,8 @@ curl -sLO https://github.com/ferro-labs/model-catalog/releases/latest/download/c
 curl -sLO https://github.com/ferro-labs/model-catalog/releases/latest/download/providers/openai.json
 
 # CDN mirror for the latest published dist/
-curl -sLO https://catalog.ferrolabs.ai/catalog.json
-curl -sLO https://catalog.ferrolabs.ai/providers/openai.json
+curl -sLO https://catalog.ferrolabs.ai/v1/catalog.json
+curl -sLO https://catalog.ferrolabs.ai/v1/providers/openai.json
 ```
 
 ### Use it in Python
@@ -262,6 +262,8 @@ When Vertex AI hosts Gemini or Azure hosts OpenAI, the wrapper model inherits fr
 ### Manifest with integrity
 
 Every release includes a `manifest.json` with SHA-256 hashes for the full catalog and each provider slice. Verify what you downloaded matches what was published.
+
+New releases also include `manifest.json.sigstore.json`, a keyless Sigstore bundle created by GitHub Actions. The manifest exposes `catalog_url` and each provider `url` as immutable paths, plus `git_sha` for build provenance. Verify the bundle before trusting the manifest hashes when your application depends on remote catalog updates.
 
 ### CalVer releases
 

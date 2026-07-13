@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'dist/**'
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
 
 permissions:
@@ -25,10 +26,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: sigstore/cosign-installer@v4.1.0
+
       - name: Prepare Pages artifact
         run: |
-          cp -R dist /tmp/catalog-pages
-          printf 'catalog.ferrolabs.ai\n' > /tmp/catalog-pages/CNAME
+          rm -rf /tmp/catalog-pages
+          mkdir -p /tmp/catalog-pages/v1
+          cp -R dist/. /tmp/catalog-pages/
+          cp -R dist/. /tmp/catalog-pages/v1/
+
+      - name: Sign published manifest
+        run: |
+          cosign sign-blob --yes \
+            --bundle /tmp/catalog-pages/v1/manifest.json.sigstore.json \
+            /tmp/catalog-pages/v1/manifest.json
+          cp /tmp/catalog-pages/v1/manifest.json.sigstore.json \
+            /tmp/catalog-pages/manifest.json.sigstore.json
 
       - uses: actions/configure-pages@v5
         with:
@@ -40,3 +53,22 @@ jobs:
 
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Verify public v1 catalog
+        run: |
+          curl --fail --silent --show-error --location --retry 6 --retry-all-errors --retry-delay 5 \
+            https://catalog.ferrolabs.ai/v1/manifest.json --output /tmp/manifest.json
+          curl --fail --silent --show-error --location --retry 6 --retry-all-errors --retry-delay 5 \
+            https://catalog.ferrolabs.ai/v1/catalog.json --output /tmp/catalog.json
+          curl --fail --silent --show-error --location --retry 6 --retry-all-errors --retry-delay 5 \
+            https://catalog.ferrolabs.ai/v1/manifest.json.sigstore.json --output /tmp/manifest.json.sigstore.json
+          jq -r '.catalog_sha256 + "  /tmp/catalog.json"' /tmp/manifest.json | sha256sum --check --status -
+          test -s /tmp/manifest.json.sigstore.json
+          jq --exit-status '.git_sha | strings | length == 40' /tmp/manifest.json >/dev/null
+          catalog_url=$(jq --raw-output '.catalog_url' /tmp/manifest.json)
+          curl --fail --silent --show-error --location "https://catalog.ferrolabs.ai$catalog_url" --output /tmp/content-addressed-catalog.json
+          jq -r '.catalog_sha256 + "  /tmp/content-addressed-catalog.json"' /tmp/manifest.json | sha256sum --check --status -
+          provider_url=$(jq --raw-output '.providers[] | select(.id == "openai") | .url' /tmp/manifest.json)
+          provider_hash=$(jq --raw-output '.providers[] | select(.id == "openai") | .sha256' /tmp/manifest.json)
+          curl --fail --silent --show-error --location "https://catalog.ferrolabs.ai$provider_url" --output /tmp/openai.json
+          printf "%s  %s\n" "$provider_hash" /tmp/openai.json | sha256sum --check --status -

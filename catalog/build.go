@@ -23,7 +23,12 @@ func Build(providersDir, distDir string) error {
 // BuildWithVersion is like Build, but writes the supplied version into the
 // manifest. If version is empty, it derives the CalVer version from UTC now.
 func BuildWithVersion(providersDir, distDir, version string) error {
+	return buildWithVersionAndGitSHA(providersDir, distDir, version, os.Getenv("GITHUB_SHA"))
+}
+
+func buildWithVersionAndGitSHA(providersDir, distDir, version, gitSHA string) error {
 	version = strings.TrimSpace(version)
+	gitSHA = strings.TrimSpace(gitSHA)
 	if version != "" && !strings.HasPrefix(version, "v") {
 		return fmt.Errorf("version %q must start with v", version)
 	}
@@ -79,7 +84,7 @@ func BuildWithVersion(providersDir, distDir, version string) error {
 
 	fmt.Printf("Built catalog with %d entries at %s\n", len(entries), outputPath)
 
-	if err := generateProviderSlicesAndManifest(entries, jsonData, distDir, providerMetas, version); err != nil {
+	if err := generateProviderSlicesAndManifest(entries, jsonData, distDir, providerMetas, version, gitSHA); err != nil {
 		return err
 	}
 
@@ -126,13 +131,16 @@ func readProviderMetas(providersDir string) map[string]ProviderMeta {
 	return metas
 }
 
-func generateProviderSlicesAndManifest(entries map[string]Entry, catalogJSON []byte, distDir string, providerMetas map[string]ProviderMeta, version string) error {
+func generateProviderSlicesAndManifest(entries map[string]Entry, catalogJSON []byte, distDir string, providerMetas map[string]ProviderMeta, version, gitSHA string) error {
 	providersDir := filepath.Join(distDir, "providers")
 	if err := os.MkdirAll(providersDir, 0o750); err != nil {
 		return fmt.Errorf("create providers dir: %w", err)
 	}
 
 	catalogHash := sha256Hex(catalogJSON)
+	if err := os.WriteFile(filepath.Join(distDir, catalogHash+".json"), catalogJSON, 0o600); err != nil {
+		return fmt.Errorf("write content-addressed catalog: %w", err)
+	}
 	groups := groupByProvider(entries)
 
 	// Collect sorted provider IDs for deterministic output
@@ -157,10 +165,20 @@ func generateProviderSlicesAndManifest(entries map[string]Entry, catalogJSON []b
 			return fmt.Errorf("write %s: %w", slicePath, err)
 		}
 
+		sliceHash := sha256Hex(sliceJSON)
+		contentDir := filepath.Join(providersDir, id)
+		if err := os.MkdirAll(contentDir, 0o750); err != nil {
+			return fmt.Errorf("create content-addressed provider directory %s: %w", id, err)
+		}
+		if err := os.WriteFile(filepath.Join(contentDir, sliceHash+".json"), sliceJSON, 0o600); err != nil {
+			return fmt.Errorf("write content-addressed provider slice %s: %w", id, err)
+		}
+
 		mp := ManifestProvider{
 			ID:         id,
 			ModelCount: len(sliceEntries),
-			SHA256:     sha256Hex(sliceJSON),
+			SHA256:     sliceHash,
+			URL:        fmt.Sprintf("/v1/providers/%s/%s.json", id, sliceHash),
 		}
 		if meta, ok := providerMetas[id]; ok {
 			mp.DisplayName = meta.DisplayName
@@ -183,6 +201,8 @@ func generateProviderSlicesAndManifest(entries map[string]Entry, catalogJSON []b
 		SchemaVersion: 1,
 		GeneratedAt:   now.Format(time.RFC3339),
 		CatalogSHA256: catalogHash,
+		CatalogURL:    "/v1/" + catalogHash + ".json",
+		GitSHA:        gitSHA,
 		Providers:     manifestProviders,
 		Stats: ManifestStats{
 			TotalModels:    len(entries),

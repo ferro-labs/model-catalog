@@ -30,4 +30,11 @@ jobs:
       - name: Build dry-run
         run: |
           go run ./cmd/ferrocat build --output /tmp/dist
-          echo "Build produced $(jq -r '.stats.total_models' /tmp/dist/manifest.json) models"
+          jq -r '"Build produced \(.stats.total_models) models"' /tmp/dist/manifest.json
+          rm -rf /tmp/catalog-pages
+          mkdir -p /tmp/catalog-pages/v1
+          cp -R /tmp/dist/. /tmp/catalog-pages/
+          cp -R /tmp/dist/. /tmp/catalog-pages/v1/
+          cmp /tmp/dist/manifest.json /tmp/catalog-pages/manifest.json
+          cmp /tmp/dist/manifest.json /tmp/catalog-pages/v1/manifest.json
+          test -f /tmp/catalog-pages/v1/providers/openai.json

@@ -46,6 +46,8 @@ type Manifest struct {
 	SchemaVersion int                `json:"schema_version"`
 	GeneratedAt   string             `json:"generated_at"`
 	CatalogSHA256 string             `json:"catalog_sha256"`
+	CatalogURL    string             `json:"catalog_url,omitempty"`
+	GitSHA        string             `json:"git_sha,omitempty"`
 	Providers     []ManifestProvider `json:"providers"`
 	Stats         ManifestStats      `json:"stats"`
 }
@@ -55,6 +57,7 @@ type ManifestProvider struct {
 	ID          string `json:"id"`
 	ModelCount  int    `json:"model_count"`
 	SHA256      string `json:"sha256"`
+	URL         string `json:"url,omitempty"`
 	DisplayName string `json:"display_name,omitempty"`
 	LogoURL     string `json:"logo_url,omitempty"`
 	Logo        string `json:"logo,omitempty"`

@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  id-token: write
 
 jobs:
   release:
@@ -20,6 +21,8 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
+
+      - uses: sigstore/cosign-installer@v4.1.0
 
       - name: Plan release
         id: plan
@@ -70,7 +73,7 @@ jobs:
           curl -sLO https://github.com/ferro-labs/model-catalog/releases/download/${VERSION}/catalog.json
 
           # Single provider
-          curl -sLO https://catalog.ferrolabs.ai/providers/openai.json
+          curl -sLO https://catalog.ferrolabs.ai/v1/providers/openai.json
           \`\`\`
 
           \`\`\`python
@@ -87,6 +90,14 @@ jobs:
 
           sed -i 's/^          //' /tmp/release_body.md
           echo "body_path=/tmp/release_body.md" >> "$GITHUB_OUTPUT"
+
+      - name: Sign manifest
+        if: steps.plan.outputs.skip == 'false'
+        run: |
+          mkdir -p /tmp/release-assets
+          cosign sign-blob --yes \
+            --bundle /tmp/release-assets/manifest.json.sigstore.json \
+            dist/manifest.json
 
       - name: Tag
         if: steps.plan.outputs.skip == 'false'
@@ -113,8 +124,8 @@ jobs:
           name: "Model Catalog ${{ steps.plan.outputs.version }}"
           body_path: ${{ steps.notes.outputs.body_path }}
           files: |
-            dist/catalog.json
-            dist/manifest.json
-            dist/providers/*.json
+            dist/*.json
+            dist/providers/**/*.json
+            /tmp/release-assets/manifest.json.sigstore.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

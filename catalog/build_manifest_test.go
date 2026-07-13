@@ -152,6 +152,13 @@ func TestBuildGeneratesManifest(t *testing.T) {
 		t.Errorf("catalog_sha256 length = %d, want 64", len(manifest.CatalogSHA256))
 	}
 
+	if want := "/v1/" + manifest.CatalogSHA256 + ".json"; manifest.CatalogURL != want {
+		t.Errorf("catalog_url = %q, want %q", manifest.CatalogURL, want)
+	}
+	if _, err := os.Stat(filepath.Join(distDir, manifest.CatalogSHA256+".json")); err != nil {
+		t.Errorf("content-addressed catalog: %v", err)
+	}
+
 	// Check stats
 	if manifest.Stats.TotalModels != 2 {
 		t.Errorf("total_models = %d, want 2", manifest.Stats.TotalModels)
@@ -181,6 +188,28 @@ func TestBuildGeneratesManifest(t *testing.T) {
 		if len(p.SHA256) != 64 {
 			t.Errorf("provider %s sha256 length = %d, want 64", p.ID, len(p.SHA256))
 		}
+		if want := "/v1/providers/" + p.ID + "/" + p.SHA256 + ".json"; p.URL != want {
+			t.Errorf("provider %s url = %q, want %q", p.ID, p.URL, want)
+		}
+		if _, err := os.Stat(filepath.Join(distDir, "providers", p.ID, p.SHA256+".json")); err != nil {
+			t.Errorf("content-addressed provider %s: %v", p.ID, err)
+		}
+	}
+}
+
+func TestBuildIncludesGitSHA(t *testing.T) {
+	providersDir, distDir := setupTestProviders(t)
+
+	if err := buildWithVersionAndGitSHA(providersDir, distDir, "v2026.07.13", "abc123"); err != nil {
+		t.Fatalf("buildWithVersionAndGitSHA() error: %v", err)
+	}
+
+	manifest, err := ReadManifest(distDir)
+	if err != nil {
+		t.Fatalf("ReadManifest() error: %v", err)
+	}
+	if manifest.GitSHA != "abc123" {
+		t.Errorf("git_sha = %q, want abc123", manifest.GitSHA)
 	}
 }
 
