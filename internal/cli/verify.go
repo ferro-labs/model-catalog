@@ -6,6 +6,7 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"regexp"
 	"strings"
 
 	"github.com/ferro-labs/model-catalog/catalog"
@@ -16,7 +17,9 @@ import (
 const (
 	// certIdentityRegexp and certOIDCIssuer mirror the keyless signing identity
 	// in .github/workflows/{pages,release}.yml. Keep in sync with those workflows.
-	certIdentityRegexp = `^https://github\.com/ferro-labs/model-catalog/\.github/workflows/(pages|release)\.yml@refs/heads/main`
+	// The trailing $ is load-bearing: both workflows allow workflow_dispatch, so
+	// an unanchored pattern would also accept a cert minted from refs/heads/main-*.
+	certIdentityRegexp = `^https://github\.com/ferro-labs/model-catalog/\.github/workflows/(pages|release)\.yml@refs/heads/main$`
 	certOIDCIssuer     = "https://token.actions.githubusercontent.com"
 	sigstoreBundleName = catalog.ManifestFilename + ".sigstore.json"
 )
@@ -84,6 +87,10 @@ func runVerify() error {
 	// 3. Provider slice integrity.
 	var failures []string
 	for _, p := range m.Providers {
+		if err := validateProviderID(p.ID); err != nil {
+			failures = append(failures, err.Error())
+			continue
+		}
 		data, err := src.fetch(p.URL, filepath.Join("providers", p.ID+".json"))
 		if err != nil {
 			failures = append(failures, fmt.Sprintf("%s: %v", p.ID, err))
@@ -125,6 +132,20 @@ func verifySignature(manifestPath, bundlePath string) error {
 	return nil
 }
 
+// providerIDPattern matches the shape every real provider id uses (verified
+// against all 83 slices in dist/manifest.json). Manifest data is untrusted until
+// the signature check passes — and --skip-signature lets a caller opt out of it
+// entirely — so an id must never be able to steer a read out of the providers
+// directory, whether by traversal ("../../etc/passwd") or nesting ("etc/shadow").
+var providerIDPattern = regexp.MustCompile(`^[a-z0-9][a-z0-9_-]*$`)
+
+func validateProviderID(id string) error {
+	if !providerIDPattern.MatchString(id) {
+		return fmt.Errorf("provider %q: invalid id", id)
+	}
+	return nil
+}
+
 // verifySource abstracts local-dir vs remote-URL artifact loading so runVerify
 // has a single code path. base != "" means remote; dir != "" means local.
 type verifySource struct {
@@ -151,8 +172,14 @@ func (s *verifySource) fetch(remoteRel, localRel string) ([]byte, error) {
 		}
 		return scrape.FetchJSON(nil, s.base+remoteRel)
 	}
-	path := filepath.Join(s.dir, localRel)
-	data, err := os.ReadFile(filepath.Clean(path))
+	path := filepath.Clean(filepath.Join(s.dir, localRel))
+	// Belt to validateProviderID's braces: keep every local read under s.dir, so
+	// no future caller can reintroduce an escape through a different field.
+	root := filepath.Clean(s.dir)
+	if path != root && !strings.HasPrefix(path, root+string(os.PathSeparator)) {
+		return nil, fmt.Errorf("read %s: path escapes %s", path, root)
+	}
+	data, err := os.ReadFile(path)
 	if err != nil {
 		return nil, fmt.Errorf("read %s: %w", path, err)
 	}
