@@ -1,10 +1,10 @@
 {
   "version": "v2026.07.27",
   "schema_version": 1,
-  "generated_at": "2026-07-27T06:17:29Z",
-  "catalog_sha256": "954773ba1bfd60a104454144f3c735c8a02eb6c94af16979c5f82e3b4326dde3",
-  "catalog_url": "/v1/954773ba1bfd60a104454144f3c735c8a02eb6c94af16979c5f82e3b4326dde3.json",
-  "git_sha": "3b8ede4d4e89ae3a913d6833c415a14fc169d8a1",
+  "generated_at": "2026-07-27T09:58:44Z",
+  "catalog_sha256": "ae962d4280a5bfdc9d0456f68a4316934a4e2379e68a96795549e732a6830a39",
+  "catalog_url": "/v1/ae962d4280a5bfdc9d0456f68a4316934a4e2379e68a96795549e732a6830a39.json",
+  "git_sha": "4927ee945965d10cc1fc2729396d598b23517415",
   "providers": [
     {
       "id": "ai21",
@@ -48,9 +48,9 @@
     },
     {
       "id": "anthropic",
-      "model_count": 29,
-      "sha256": "43bab33699db2598a9a4c17caca1973074e18e35e996e1d753308929d924f049",
-      "url": "/v1/providers/anthropic/43bab33699db2598a9a4c17caca1973074e18e35e996e1d753308929d924f049.json",
+      "model_count": 30,
+      "sha256": "240e986ab571452ef8fe3294e3af24f68b97d5c8acf524c76a6fc45681259478",
+      "url": "/v1/providers/anthropic/240e986ab571452ef8fe3294e3af24f68b97d5c8acf524c76a6fc45681259478.json",
       "display_name": "Anthropic",
       "logo_url": "https://anthropic.com/favicon.svg",
       "category": "frontier",
@@ -90,8 +90,8 @@
     {
       "id": "azure",
       "model_count": 238,
-      "sha256": "c9c72c41918d8056af30ec1be0d712d208fe62a9f96443e7bdc0e50c633f6bba",
-      "url": "/v1/providers/azure/c9c72c41918d8056af30ec1be0d712d208fe62a9f96443e7bdc0e50c633f6bba.json",
+      "sha256": "c632c397c3f69513600b3ee26cbbc62820f8fb2ebbc885cb42549c486dfe0b36",
+      "url": "/v1/providers/azure/c632c397c3f69513600b3ee26cbbc62820f8fb2ebbc885cb42549c486dfe0b36.json",
       "display_name": "Azure OpenAI",
       "category": "cloud",
       "description": "OpenAI models via Microsoft Azure",
@@ -857,7 +857,7 @@
     }
   ],
   "stats": {
-    "total_models": 2541,
+    "total_models": 2542,
     "total_providers": 83
   }
 }
