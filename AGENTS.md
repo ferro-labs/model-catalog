@@ -7,7 +7,7 @@
 - **Module**: `github.com/ferro-labs/model-catalog`
 - **Go version**: 1.24+
 - **License**: Apache 2.0
-- **Data**: 2,505 models across 83 providers
+- **Data**: 2,541 models across 83 providers <!-- drift-ok -->
 
 ---
 
@@ -31,6 +31,10 @@ go run ./cmd/ferrocat scrape
 
 # Check catalog freshness against provider APIs (needs API keys)
 ANTHROPIC_API_KEY=... OPENAI_API_KEY=... go run ./cmd/ferrocat freshness
+
+# Verify artifacts: sigstore signature + every manifest hash (fails closed)
+go run ./cmd/ferrocat verify
+go run ./cmd/ferrocat verify --url https://catalog.ferrolabs.ai   # published catalog  # drift-ok
 
 # Format Go code
 make fmt
@@ -66,6 +70,7 @@ model-catalog/
 │   ├── lint.go                 # Lint(), IsJunkKey(), LintIssue
 │   ├── migrate.go              # MigrateExtends(), ReadProviderModels()
 │   ├── manifest.go             # Manifest types
+│   ├── verify.go               # VerifyHash, Manifest.VerifyCatalog/VerifyProviderSlice
 │   ├── yamlnode.go             # YAML node helpers for wrapper generation
 │   └── *_test.go
 ├── scrape/                     # Public Go library (importable)
@@ -73,14 +78,19 @@ model-catalog/
 │   ├── httputil.go             # FetchJSON() — shared HTTP client with retry
 │   ├── reconciler.go           # Cross-check observations against catalog
 │   ├── report.go               # Human-readable reports
-│   ├── api/
-│   │   ├── anthropic.go          # Anthropic /v1/models scraper
-│   │   └── openai.go             # OpenAI /v1/models scraper
+│   ├── api/                    # Tier 1 scrapers — all ten gated on their own *_API_KEY
+│   │   ├── anthropic.go          # Anthropic /v1/models
+│   │   ├── openai.go             # OpenAI /v1/models
+│   │   ├── cohere.go             # Cohere /v1/models
+│   │   ├── fireworks.go          # Fireworks (needs FIREWORKS_ACCOUNT_ID)
+│   │   ├── together.go           # Together (bare-array response shape)
+│   │   └── compatible.go         # groq, mistral, deepseek, xai, cerebras
+│   │                             #   — one client, OpenAI-shaped /models
 │   └── oracle/
 │       ├── openrouter.go       # OpenRouter /api/v1/models
 │       └── models_dev.go       # models.dev /api.json
 ├── internal/cli/               # Cobra command wiring (thin wrappers, not importable)
-├── providers/                  # Source of truth — 2,505 per-model YAML files
+├── providers/                  # Source of truth — 2,541 per-model YAML files <!-- drift-ok -->
 ├── dist/                       # Generated artifacts (do not edit manually)
 │   ├── catalog.json            # Full flat catalog
 │   ├── manifest.json           # Version, SHA-256 hashes, stats

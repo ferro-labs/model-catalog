@@ -12,7 +12,7 @@
     <a href="https://github.com/ferro-labs/model-catalog/actions/workflows/build.yml"><img src="https://github.com/ferro-labs/model-catalog/actions/workflows/build.yml/badge.svg" alt="Build" /></a>
   </p>
   <p>
-    <strong>2,505 models</strong> &middot; <strong>83 providers</strong> &middot; <strong>Updated weekly</strong> &middot; <strong>Zero paid infrastructure</strong>
+    <strong>2,541 models</strong> &middot; <strong>83 providers</strong> &middot; <strong>Updated weekly</strong> &middot; <strong>Zero paid infrastructure</strong> <!-- drift-ok -->
   </p>
 </div>
 
@@ -36,7 +36,7 @@ GPT-4o: $2.5/M input, $10.0/M output, 128,000 ctx
 | If you're building... | You can use the catalog to... |
 |---|---|
 | An AI gateway or proxy | Route requests by model capability, calculate costs per request |
-| A cost tracker or billing system | Look up per-token pricing for any model across 83 providers |
+| A cost tracker or billing system | Look up per-token pricing for any model across 83 providers | <!-- drift-ok -->
 | A coding agent (like Aider, OpenCode, Cursor) | Know which models support function calling, vision, streaming |
 | An LLM comparison tool | Compare pricing and context windows across providers |
 | A model selection UI | Display model metadata with accurate, up-to-date pricing |
@@ -92,31 +92,31 @@ tier: flagship                      # flagship | standard
 OpenAI, Anthropic, Google Gemini, AWS Bedrock, Azure, Vertex AI, Groq, Mistral, Cohere, Together AI, Fireworks, DeepInfra, DeepSeek, xAI (Grok), Meta Llama, Replicate, Perplexity, NVIDIA NIM, Hugging Face, Cerebras, SambaNova, and 60+ more.
 
 <details>
-<summary><strong>All 83 providers with model counts</strong></summary>
+<summary><strong>All 83 providers with model counts</strong></summary> <!-- drift-ok -->
 
 | Provider | Models | | Provider | Models |
 |----------|-------:|-|----------|-------:|
-| bedrock | 344 | | fal_ai | 12 |
-| fireworks | 273 | | zai | 12 |
-| azure | 228 | | minimax | 9 |
+| bedrock | 344 | | anyscale | 12 |
+| fireworks | 273 | | fal_ai | 12 |
+| azure | 238 | | minimax | 10 |
 | vertex_ai | 172 | | publicai | 9 |
-| openai | 162 | | vertex_ai-video-models | 9 |
+| openai | 169 | | vertex_ai-video-models | 9 |
 | vercel_ai_gateway | 101 | | deepseek | 8 |
-| novita | 83 | | volcengine | 8 |
-| gemini | 78 | | cerebras | 7 |
-| openrouter | 78 | | aleph_alpha | 6 |
+| openrouter | 85 | | volcengine | 8 |
+| novita | 83 | | cerebras | 7 |
+| gemini | 78 | | aleph_alpha | 6 |
 | deepinfra | 67 | | gigachat | 6 |
-| mistral | 43 | | palm | 6 |
+| mistral | 46 | | palm | 6 |
 | perplexity | 42 | | runwayml | 6 |
 | together | 42 | | sagemaker | 6 |
 | replicate | 40 | | azure_openai | 5 |
 | deepgram | 36 | | lemonade | 5 |
-| xai | 32 | | qwen | 5 |
+| xai | 34 | | qwen | 5 |
 | github_copilot | 31 | | vertex_ai-ai21_models | 5 |
-| ollama | 29 | | amazon_nova | 4 |
-| watsonx | 29 | | aws_polly | 4 |
-| databricks | 28 | | cloudflare | 4 |
-| anthropic | 26 | | elevenlabs | 4 |
+| anthropic | 29 | | amazon_nova | 4 |
+| ollama | 29 | | aws_polly | 4 |
+| watsonx | 29 | | cloudflare | 4 |
+| databricks | 28 | | elevenlabs | 4 |
 | snowflake | 24 | | heroku | 4 |
 | dashscope | 23 | | meta_llama | 4 |
 | stability | 23 | | ollama_cloud | 4 |
@@ -129,15 +129,15 @@ OpenAI, Anthropic, Google Gemini, AWS Bedrock, Azure, Vertex AI, Groq, Mistral, 
 | llamagate | 16 | | assemblyai | 2 |
 | nscale | 16 | | featherless_ai | 2 |
 | sambanova | 16 | | friendliai | 2 |
-| ovhcloud | 15 | | morph | 2 |
-| voyage | 15 | | nlp_cloud | 2 |
-| groq | 14 | | recraft | 2 |
-| wandb | 14 | | vertex_ai-openai_models | 2 |
+| wandb | 16 | | morph | 2 |
+| ovhcloud | 15 | | nlp_cloud | 2 |
+| voyage | 15 | | recraft | 2 |
+| groq | 14 | | vertex_ai-openai_models | 2 |
 | gradient_ai | 13 | | vertex_ai-zai_models | 2 |
 | oci | 13 | | sarvam | 1 |
-| ai21 | 12 | | vertex_ai-minimax_models | 1 |
-| aiml | 12 | | vertex_ai-moonshot_models | 1 |
-| anyscale | 12 | |  |  |
+| zai | 13 | | vertex_ai-minimax_models | 1 |
+| ai21 | 12 | | vertex_ai-moonshot_models | 1 |
+| aiml | 12 | |  |  |
 
 </details>
 
@@ -155,8 +155,8 @@ curl -sLO https://github.com/ferro-labs/model-catalog/releases/latest/download/c
 curl -sLO https://github.com/ferro-labs/model-catalog/releases/latest/download/providers/openai.json
 
 # CDN mirror for the latest published dist/
-curl -sLO https://catalog.ferrolabs.ai/v1/catalog.json
-curl -sLO https://catalog.ferrolabs.ai/v1/providers/openai.json
+curl -sLO https://catalog.ferrolabs.ai/v1/catalog.json           # drift-ok
+curl -sLO https://catalog.ferrolabs.ai/v1/providers/openai.json  # drift-ok
 ```
 
 ### Use it in Python
@@ -245,7 +245,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the 5-minute walkthrough, or use the 
 
 ### Per-provider slices
 
-Most apps use 3-5 providers, not all 82. Download only what you need:
+Most apps use 3-5 providers, not all 83. Download only what you need: <!-- drift-ok -->
 
 ```bash
 # Just OpenAI + Anthropic (~100 KB total instead of 3 MB)
@@ -265,6 +265,15 @@ Every release includes a `manifest.json` with SHA-256 hashes for the full catalo
 
 New releases also include `manifest.json.sigstore.json`, a keyless Sigstore bundle created by GitHub Actions. The manifest exposes `catalog_url` and each provider `url` as immutable paths, plus `git_sha` for build provenance. Verify the bundle before trusting the manifest hashes when your application depends on remote catalog updates.
 
+`ferrocat verify` does both checks for you — signature first, then every hash:
+
+```bash
+ferrocat verify --url https://catalog.ferrolabs.ai   # published catalog  # drift-ok
+ferrocat verify                                      # local dist/
+```
+
+It verifies the Sigstore bundle against the signing workflow identity, then confirms `catalog.json` and every provider slice match their manifest hashes. It exits non-zero on any mismatch, and fails closed if the signature cannot be checked — pass `--skip-signature` to opt into hash-only when cosign is unavailable. Signature verification requires [cosign](https://github.com/sigstore/cosign) on `PATH`.
+
 ### CalVer releases
 
 Tagged `v2026.04.30` — you always know when the data was published. Pin a version or follow `latest`.
@@ -281,6 +290,7 @@ ferrocat validate                           # Check structural correctness
 ferrocat lint                               # Detect junk keys and duplicates
 ferrocat scrape                             # Cross-check pricing against external sources
 ferrocat freshness                          # Check live provider model APIs for missing catalog entries
+ferrocat verify                             # Check signature + manifest hashes before trusting artifacts
 ferrocat prune --days 90                    # Remove models sunset more than 90 days ago
 ferrocat split catalog.json                 # Legacy JSON → per-model YAML (one-time migration)
 ferrocat migrate-extends --wrapper azure --base openai   # Convert wrappers to extends
