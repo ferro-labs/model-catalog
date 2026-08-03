@@ -1,10 +1,10 @@
 {
-  "version": "v2026.07.27",
+  "version": "v2026.08.03",
   "schema_version": 1,
-  "generated_at": "2026-07-27T10:08:38Z",
-  "catalog_sha256": "ae962d4280a5bfdc9d0456f68a4316934a4e2379e68a96795549e732a6830a39",
-  "catalog_url": "/v1/ae962d4280a5bfdc9d0456f68a4316934a4e2379e68a96795549e732a6830a39.json",
-  "git_sha": "ad9d9af7277f466f200c621254c165f46908ec8b",
+  "generated_at": "2026-08-03T09:53:42Z",
+  "catalog_sha256": "2498cd7004c6fddc467d051fae176d33e73d80464d893c0dd828e34289d1b071",
+  "catalog_url": "/v1/2498cd7004c6fddc467d051fae176d33e73d80464d893c0dd828e34289d1b071.json",
+  "git_sha": "ff525ce123cfb423845cf8b5af0ab373e6ba8156",
   "providers": [
     {
       "id": "ai21",
@@ -49,8 +49,8 @@
     {
       "id": "anthropic",
       "model_count": 30,
-      "sha256": "240e986ab571452ef8fe3294e3af24f68b97d5c8acf524c76a6fc45681259478",
-      "url": "/v1/providers/anthropic/240e986ab571452ef8fe3294e3af24f68b97d5c8acf524c76a6fc45681259478.json",
+      "sha256": "042b5842247040f5b5b391105b54728e23a65ae43cb1b66360944249fd9bbed4",
+      "url": "/v1/providers/anthropic/042b5842247040f5b5b391105b54728e23a65ae43cb1b66360944249fd9bbed4.json",
       "display_name": "Anthropic",
       "logo_url": "https://anthropic.com/favicon.svg",
       "category": "frontier",
@@ -522,8 +522,8 @@
     {
       "id": "openai",
       "model_count": 169,
-      "sha256": "f20d68e22a328bf0d00321fafbbe6daa1c6be72aabc87a50c1905b77b079c5ee",
-      "url": "/v1/providers/openai/f20d68e22a328bf0d00321fafbbe6daa1c6be72aabc87a50c1905b77b079c5ee.json",
+      "sha256": "18145bcb76525d46a3807d0b0aed3695be2103760a7d71006ef248a2f941cd30",
+      "url": "/v1/providers/openai/18145bcb76525d46a3807d0b0aed3695be2103760a7d71006ef248a2f941cd30.json",
       "display_name": "OpenAI",
       "logo_url": "https://cdn.openai.com/API/logo-assets/openai-logomark.svg",
       "category": "frontier",
