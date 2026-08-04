@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 
 	"gopkg.in/yaml.v3"
@@ -36,6 +37,14 @@ var validTiers = map[string]bool{
 	"flagship": true,
 	"standard": true,
 }
+
+var validConfidence = map[string]bool{"high": true, "medium": true, "low": true}
+
+var (
+	dateRe       = regexp.MustCompile(`^\d{4}-\d{2}-\d{2}$`)
+	verifiedByRe = regexp.MustCompile(`^(scraper-[a-z0-9_-]+|manual:[A-Za-z0-9-]+|import:v1)$`)
+	sha256HexRe  = regexp.MustCompile(`^[a-f0-9]{64}$`)
+)
 
 var requiredPricingFields = []string{
 	"input_per_m_tokens",
@@ -288,6 +297,53 @@ func validateEntry(entry Entry, filePath, providersDir string, presence yamlPres
 		})
 	}
 
+	errs = append(errs, validateSources(entry.Sources, filePath)...)
+
+	return errs
+}
+
+// validateSources checks each populated Provenance group in s for a
+// non-empty URL, a YYYY-MM-DD verified_at date, a valid confidence level,
+// a well-formed verified_by, and (if a snapshot hash is set) a matching
+// snapshot branch.
+func validateSources(s *Sources, filePath string) []ValidationError {
+	if s == nil {
+		return nil
+	}
+	var errs []ValidationError
+	groups := []struct {
+		name string
+		p    *Provenance
+	}{
+		{"pricing", s.Pricing}, {"capabilities", s.Capabilities},
+		{"context", s.Context}, {"lifecycle", s.Lifecycle},
+	}
+	for _, g := range groups {
+		if g.p == nil {
+			continue
+		}
+		field := "sources." + g.name
+		if g.p.URL == "" {
+			errs = append(errs, ValidationError{File: filePath, Field: field + ".url", Message: "required field is empty"})
+		}
+		if !dateRe.MatchString(g.p.VerifiedAt) {
+			errs = append(errs, ValidationError{File: filePath, Field: field + ".verified_at", Message: fmt.Sprintf("must be YYYY-MM-DD, got %q", g.p.VerifiedAt)})
+		}
+		if !validConfidence[g.p.Confidence] {
+			errs = append(errs, ValidationError{File: filePath, Field: field + ".confidence", Message: fmt.Sprintf("must be high|medium|low, got %q", g.p.Confidence)})
+		}
+		if g.p.VerifiedBy != "" && !verifiedByRe.MatchString(g.p.VerifiedBy) {
+			errs = append(errs, ValidationError{File: filePath, Field: field + ".verified_by", Message: fmt.Sprintf("invalid format %q", g.p.VerifiedBy)})
+		}
+		if g.p.SnapshotSHA256 != nil {
+			if !sha256HexRe.MatchString(*g.p.SnapshotSHA256) {
+				errs = append(errs, ValidationError{File: filePath, Field: field + ".snapshot_sha256", Message: "must be 64 lowercase hex chars"})
+			}
+			if g.p.SnapshotBranch == nil || *g.p.SnapshotBranch == "" {
+				errs = append(errs, ValidationError{File: filePath, Field: field + ".snapshot_branch", Message: "required when snapshot_sha256 is set"})
+			}
+		}
+	}
 	return errs
 }
 

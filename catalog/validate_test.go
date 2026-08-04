@@ -334,3 +334,18 @@ lifecycle: {}
 		}
 	}
 }
+
+func TestValidateSources(t *testing.T) {
+	good := &Provenance{URL: "https://x", VerifiedAt: "2026-08-04", Confidence: "low", VerifiedBy: "import:v1"}
+	if errs := validateSources(&Sources{Pricing: good}, "f.yaml"); len(errs) != 0 {
+		t.Fatalf("good sources should pass, got %v", errs)
+	}
+	if errs := validateSources(nil, "f.yaml"); len(errs) != 0 {
+		t.Fatalf("nil sources should pass, got %v", errs)
+	}
+	bad := &Provenance{URL: "", VerifiedAt: "08-2026", Confidence: "certain", VerifiedBy: "bob"}
+	errs := validateSources(&Sources{Capabilities: bad}, "f.yaml")
+	if len(errs) != 4 { // url, verified_at, confidence, verified_by
+		t.Fatalf("expected 4 errors, got %d: %v", len(errs), errs)
+	}
+}
