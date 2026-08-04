@@ -50,6 +50,7 @@ go run ./cmd/ferrocat scrape
 go run ./cmd/ferrocat freshness
 go run ./cmd/ferrocat split <input.json> --output providers/
 go run ./cmd/ferrocat migrate-extends --wrapper <provider> --base <base-provider>
+go run ./cmd/ferrocat migrate-provenance   # one-time: seed baseline sources.pricing provenance
 ```
 
 ---
