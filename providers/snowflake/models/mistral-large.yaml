@@ -37,3 +37,9 @@ lifecycle:
 source: "https://www.snowflake.com/en/data-cloud/cortex/pricing/"
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://www.snowflake.com/en/data-cloud/cortex/pricing/"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

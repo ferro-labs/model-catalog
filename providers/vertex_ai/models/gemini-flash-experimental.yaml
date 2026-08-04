@@ -37,3 +37,9 @@ lifecycle:
 source: https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/gemini-experimental
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/gemini-experimental"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

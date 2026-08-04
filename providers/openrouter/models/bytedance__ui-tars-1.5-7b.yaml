@@ -37,3 +37,9 @@ lifecycle:
 source: https://openrouter.ai/api/v1/models/bytedance/ui-tars-1.5-7b
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://openrouter.ai/api/v1/models/bytedance/ui-tars-1.5-7b"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

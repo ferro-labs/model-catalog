@@ -37,3 +37,9 @@ lifecycle:
 source: "https://models.dev/deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo"
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://models.dev/deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

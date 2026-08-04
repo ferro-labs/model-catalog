@@ -334,3 +334,63 @@ lifecycle: {}
 		}
 	}
 }
+
+func TestValidateSources(t *testing.T) {
+	good := &Provenance{URL: "https://x", VerifiedAt: "2026-08-04", Confidence: "low", VerifiedBy: "import:v1"}
+	if errs := validateSources(&Sources{Pricing: good}, "f.yaml"); len(errs) != 0 {
+		t.Fatalf("good sources should pass, got %v", errs)
+	}
+	if errs := validateSources(nil, "f.yaml"); len(errs) != 0 {
+		t.Fatalf("nil sources should pass, got %v", errs)
+	}
+	bad := &Provenance{URL: "", VerifiedAt: "08-2026", Confidence: "certain", VerifiedBy: "bob"}
+	errs := validateSources(&Sources{Capabilities: bad}, "f.yaml")
+	if len(errs) != 4 { // url, verified_at, confidence, verified_by
+		t.Fatalf("expected 4 errors, got %d: %v", len(errs), errs)
+	}
+}
+
+func strptr(s string) *string { return &s }
+
+func TestValidateSourcesSnapshot(t *testing.T) {
+	validHex := strptr("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+
+	base := func() *Provenance {
+		return &Provenance{URL: "https://x", VerifiedAt: "2026-08-04", Confidence: "low"}
+	}
+
+	t.Run("valid snapshot pair", func(t *testing.T) {
+		p := base()
+		p.SnapshotSHA256 = validHex
+		p.SnapshotBranch = strptr("snapshots")
+		if errs := validateSources(&Sources{Pricing: p}, "f.yaml"); len(errs) != 0 {
+			t.Fatalf("valid snapshot pair should pass, got %v", errs)
+		}
+	})
+
+	t.Run("bad hex", func(t *testing.T) {
+		p := base()
+		p.SnapshotSHA256 = strptr("not-hex")
+		p.SnapshotBranch = strptr("snapshots")
+		errs := validateSources(&Sources{Pricing: p}, "f.yaml")
+		if len(errs) != 1 {
+			t.Fatalf("expected 1 error, got %d: %v", len(errs), errs)
+		}
+		if errs[0].Field != "sources.pricing.snapshot_sha256" {
+			t.Fatalf("expected snapshot_sha256 error, got %v", errs[0])
+		}
+	})
+
+	t.Run("missing branch", func(t *testing.T) {
+		p := base()
+		p.SnapshotSHA256 = validHex
+		p.SnapshotBranch = nil
+		errs := validateSources(&Sources{Pricing: p}, "f.yaml")
+		if len(errs) != 1 {
+			t.Fatalf("expected 1 error, got %d: %v", len(errs), errs)
+		}
+		if errs[0].Field != "sources.pricing.snapshot_branch" {
+			t.Fatalf("expected snapshot_branch error, got %v", errs[0])
+		}
+	})
+}

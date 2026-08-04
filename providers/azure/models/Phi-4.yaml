@@ -37,3 +37,9 @@ lifecycle:
 source: https://techcommunity.microsoft.com/blog/machinelearningblog/affordable-innovation-unveiling-the-pricing-of-phi-3-slms-on-models-as-a-service/4156495
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://techcommunity.microsoft.com/blog/machinelearningblog/affordable-innovation-unveiling-the-pricing-of-phi-3-slms-on-models-as-a-service/4156495"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

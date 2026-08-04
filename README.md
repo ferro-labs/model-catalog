@@ -294,6 +294,7 @@ ferrocat verify                             # Check signature + manifest hashes 
 ferrocat prune --days 90                    # Remove models sunset more than 90 days ago
 ferrocat split catalog.json                 # Legacy JSON → per-model YAML (one-time migration)
 ferrocat migrate-extends --wrapper azure --base openai   # Convert wrappers to extends
+ferrocat migrate-provenance                 # one-time: seed baseline sources.pricing provenance
 ```
 
 ### Build locally

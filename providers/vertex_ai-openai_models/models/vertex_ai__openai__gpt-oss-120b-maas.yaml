@@ -37,3 +37,9 @@ lifecycle:
 source: https://console.cloud.google.com/vertex-ai/publishers/openai/model-garden/gpt-oss-120b-maas
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://console.cloud.google.com/vertex-ai/publishers/openai/model-garden/gpt-oss-120b-maas"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

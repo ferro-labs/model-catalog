@@ -37,3 +37,9 @@ lifecycle:
 source: "https://open.bigmodel.cn/pricing"
 updated_at: "2026-05-21"
 tier: standard
+sources:
+    pricing:
+        url: "https://open.bigmodel.cn/pricing"
+        verified_at: "2026-05-21"
+        verified_by: import:v1
+        confidence: low

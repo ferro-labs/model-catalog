@@ -37,3 +37,9 @@ lifecycle:
 source: https://docs.z.ai/guides/overview/pricing
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://docs.z.ai/guides/overview/pricing"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

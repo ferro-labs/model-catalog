@@ -37,3 +37,9 @@ lifecycle:
 source: "https://huggingface.co/pricing"
 updated_at: "2026-04-30"
 tier: standard
+sources:
+    pricing:
+        url: "https://huggingface.co/pricing"
+        verified_at: "2026-04-30"
+        verified_by: import:v1
+        confidence: low

@@ -37,3 +37,9 @@ lifecycle:
 source: https://docs.ollama.com/cloud
 updated_at: "2026-04-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://docs.ollama.com/cloud"
+        verified_at: "2026-04-28"
+        verified_by: import:v1
+        confidence: low

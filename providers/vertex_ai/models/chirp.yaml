@@ -37,3 +37,9 @@ lifecycle:
 source: https://cloud.google.com/text-to-speech/pricing
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://cloud.google.com/text-to-speech/pricing"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

@@ -37,3 +37,9 @@ lifecycle:
 source: "https://models.dev/anthropic/claude-opus-4-5"
 updated_at: "2026-02-28"
 tier: flagship
+sources:
+    pricing:
+        url: "https://models.dev/anthropic/claude-opus-4-5"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

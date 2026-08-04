@@ -37,3 +37,9 @@ lifecycle:
 source: https://docs.aimlapi.com/api-references/image-models/google/imagen-4-ultra-generate
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://docs.aimlapi.com/api-references/image-models/google/imagen-4-ultra-generate"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

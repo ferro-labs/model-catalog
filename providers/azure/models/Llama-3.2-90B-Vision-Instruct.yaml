@@ -37,3 +37,9 @@ lifecycle:
 source: https://azuremarketplace.microsoft.com/en/marketplace/apps/metagenai.meta-llama-3-2-90b-vision-instruct-offer?tab=Overview
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://azuremarketplace.microsoft.com/en/marketplace/apps/metagenai.meta-llama-3-2-90b-vision-instruct-offer?tab=Overview"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

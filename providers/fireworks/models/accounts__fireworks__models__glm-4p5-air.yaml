@@ -37,3 +37,9 @@ lifecycle:
 source: https://artificialanalysis.ai/models/glm-4-5-air
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://artificialanalysis.ai/models/glm-4-5-air"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

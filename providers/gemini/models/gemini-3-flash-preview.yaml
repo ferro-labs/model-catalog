@@ -37,3 +37,9 @@ lifecycle:
 source: https://ai.google.dev/pricing/gemini-3
 updated_at: "2026-02-28"
 tier: flagship
+sources:
+    pricing:
+        url: "https://ai.google.dev/pricing/gemini-3"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

@@ -37,3 +37,9 @@ lifecycle:
 source: https://www.together.ai/models/qwen3-235b-a22b-instruct-2507-fp8
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://www.together.ai/models/qwen3-235b-a22b-instruct-2507-fp8"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

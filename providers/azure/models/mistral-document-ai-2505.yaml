@@ -37,3 +37,9 @@ lifecycle:
 source: https://devblogs.microsoft.com/foundry/whats-new-in-azure-ai-foundry-august-2025/#mistral-document-ai-(ocr)-%E2%80%94-serverless-in-foundry
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://devblogs.microsoft.com/foundry/whats-new-in-azure-ai-foundry-august-2025/#mistral-document-ai-(ocr)-%E2%80%94-serverless-in-foundry"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

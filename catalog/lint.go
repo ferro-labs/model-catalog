@@ -75,14 +75,24 @@ func Lint(providersDir string) ([]LintIssue, error) {
 			})
 		}
 
-		// Check 2: ga models without a source URL (extends wrappers inherit from base).
-		if entry.Extends == "" && entry.Lifecycle.Status == "ga" && entry.Source == "" {
-			issues = append(issues, LintIssue{
-				Severity: "warning",
-				File:     path,
-				Key:      key,
-				Message:  "ga model has empty source field",
-			})
+		// Check 2: ga models without provenance (extends wrappers inherit from base).
+		if entry.Extends == "" && entry.Lifecycle.Status == "ga" {
+			if entry.Source == "" {
+				issues = append(issues, LintIssue{
+					Severity: "warning",
+					File:     path,
+					Key:      key,
+					Message:  "ga model has empty source field",
+				})
+			}
+			if entry.Sources == nil || entry.Sources.Pricing == nil {
+				issues = append(issues, LintIssue{
+					Severity: "warning",
+					File:     path,
+					Key:      key,
+					Message:  "ga model has no sources.pricing provenance",
+				})
+			}
 		}
 
 		ref := modelRef{

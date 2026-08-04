@@ -37,3 +37,9 @@ lifecycle:
 source: https://endpoints.ai.cloud.ovh.net/models/mamba-codestral-7b-v0-1
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://endpoints.ai.cloud.ovh.net/models/mamba-codestral-7b-v0-1"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

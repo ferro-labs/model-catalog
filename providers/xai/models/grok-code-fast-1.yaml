@@ -37,3 +37,9 @@ lifecycle:
 source: https://docs.x.ai/docs/models
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://docs.x.ai/docs/models"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

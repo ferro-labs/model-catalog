@@ -37,3 +37,9 @@ lifecycle:
 source: https://docs.anyscale.com/preview/endpoints/text-generation/supported-models/mistralai-Mixtral-8x7B-Instruct-v0.1
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://docs.anyscale.com/preview/endpoints/text-generation/supported-models/mistralai-Mixtral-8x7B-Instruct-v0.1"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

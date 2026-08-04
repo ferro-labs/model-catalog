@@ -37,3 +37,9 @@ lifecycle:
 source: auto:litellm+models_dev+openrouter
 updated_at: "2026-08-03"
 tier: standard
+sources:
+    pricing:
+        url: "auto:litellm+models_dev+openrouter"
+        verified_at: "2026-08-03"
+        verified_by: import:v1
+        confidence: low

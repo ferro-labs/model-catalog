@@ -37,3 +37,9 @@ lifecycle:
 source: "https://help.aliyun.com/zh/model-studio/getting-started/models"
 updated_at: "2026-04-30"
 tier: standard
+sources:
+    pricing:
+        url: "https://help.aliyun.com/zh/model-studio/getting-started/models"
+        verified_at: "2026-04-30"
+        verified_by: import:v1
+        confidence: low

@@ -37,3 +37,9 @@ lifecycle:
 source: "https://models.dev/openrouter/google/gemini-2.5-pro"
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://models.dev/openrouter/google/gemini-2.5-pro"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

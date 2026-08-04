@@ -37,3 +37,9 @@ lifecycle:
 source: "https://nano-gpt.com/v1/models"
 updated_at: "2026-05-21"
 tier: standard
+sources:
+    pricing:
+        url: "https://nano-gpt.com/v1/models"
+        verified_at: "2026-05-21"
+        verified_by: import:v1
+        confidence: low

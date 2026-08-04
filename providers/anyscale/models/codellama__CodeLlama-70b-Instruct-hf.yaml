@@ -37,3 +37,9 @@ lifecycle:
 source: https://docs.anyscale.com/preview/endpoints/text-generation/supported-models/codellama-CodeLlama-70b-Instruct-hf
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://docs.anyscale.com/preview/endpoints/text-generation/supported-models/codellama-CodeLlama-70b-Instruct-hf"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

@@ -37,3 +37,9 @@ lifecycle:
 source: "https://models.dev/wandb/Qwen/Qwen3-235B-A22B-Thinking-2507"
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://models.dev/wandb/Qwen/Qwen3-235B-A22B-Thinking-2507"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

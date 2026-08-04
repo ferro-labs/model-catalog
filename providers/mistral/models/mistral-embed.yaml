@@ -37,3 +37,9 @@ lifecycle:
 source: "https://models.dev/mistral/mistral-embed"
 updated_at: "2026-07-06"
 tier: flagship
+sources:
+    pricing:
+        url: "https://models.dev/mistral/mistral-embed"
+        verified_at: "2026-07-06"
+        verified_by: import:v1
+        confidence: low

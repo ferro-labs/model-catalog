@@ -37,3 +37,9 @@ lifecycle:
 source: 'As of Jun, 2024. There is no available doc on vertex ai pricing gemini-1.0-ultra-001. Using gemini-1.0-pro pricing. Got max_tokens info here: https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#foundation_models'
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "As of Jun, 2024. There is no available doc on vertex ai pricing gemini-1.0-ultra-001. Using gemini-1.0-pro pricing. Got max_tokens info here: https://cloud.google.com/vertex-ai/generative-ai/docs/learn/models#foundation_models"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

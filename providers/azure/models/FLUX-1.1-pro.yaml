@@ -37,3 +37,9 @@ lifecycle:
 source: https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/black-forest-labs-flux-1-kontext-pro-and-flux1-1-pro-now-available-in-azure-ai-f/4434659
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/black-forest-labs-flux-1-kontext-pro-and-flux1-1-pro-now-available-in-azure-ai-f/4434659"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

@@ -37,3 +37,9 @@ lifecycle:
 source: https://docs.mistral.ai/models/mistral-large-3-25-12
 updated_at: "2026-02-28"
 tier: flagship
+sources:
+    pricing:
+        url: "https://docs.mistral.ai/models/mistral-large-3-25-12"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

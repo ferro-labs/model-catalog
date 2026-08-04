@@ -37,3 +37,9 @@ lifecycle:
 source: https://developers.googleblog.com/en/continuing-to-bring-you-our-latest-models-with-an-improved-gemini-2-5-flash-and-flash-lite-release/
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://developers.googleblog.com/en/continuing-to-bring-you-our-latest-models-with-an-improved-gemini-2-5-flash-and-flash-lite-release/"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

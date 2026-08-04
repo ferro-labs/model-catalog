@@ -37,3 +37,9 @@ lifecycle:
 source: https://ai.google.dev/gemini-api/docs/models#gemini-3.1-pro-preview
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://ai.google.dev/gemini-api/docs/models#gemini-3.1-pro-preview"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

@@ -37,3 +37,9 @@ lifecycle:
 source: https://ai.google.dev/gemini-api/docs/pricing#gemini-2.5-flash-image
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://ai.google.dev/gemini-api/docs/pricing#gemini-2.5-flash-image"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

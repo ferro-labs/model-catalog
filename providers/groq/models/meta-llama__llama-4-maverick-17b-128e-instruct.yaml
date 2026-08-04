@@ -37,3 +37,9 @@ lifecycle:
 source: "https://models.dev/groq/meta-llama/llama-4-maverick-17b-128e-instruct"
 updated_at: "2026-02-28"
 tier: flagship
+sources:
+    pricing:
+        url: "https://models.dev/groq/meta-llama/llama-4-maverick-17b-128e-instruct"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

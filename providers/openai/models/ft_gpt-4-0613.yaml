@@ -37,3 +37,9 @@ lifecycle:
 source: OpenAI needs to add pricing for this ft model, will be updated when added by OpenAI. Defaulting to base model pricing
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "OpenAI needs to add pricing for this ft model, will be updated when added by OpenAI. Defaulting to base model pricing"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

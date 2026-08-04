@@ -37,3 +37,9 @@ lifecycle:
 source: https://techcommunity.microsoft.com/blog/machinelearningblog/announcing-deepseek-v3-on-azure-ai-foundry-and-github/4390438
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://techcommunity.microsoft.com/blog/machinelearningblog/announcing-deepseek-v3-on-azure-ai-foundry-and-github/4390438"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

@@ -37,3 +37,9 @@ lifecycle:
 source: "https://models.dev/groq/llama-3.1-8b-instant"
 updated_at: "2026-02-28"
 tier: flagship
+sources:
+    pricing:
+        url: "https://models.dev/groq/llama-3.1-8b-instant"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

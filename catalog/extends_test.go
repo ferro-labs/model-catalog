@@ -420,3 +420,36 @@ func TestResolveExtendsLifecycleInheritance(t *testing.T) {
 		t.Errorf("lifecycle.successor: expected %q, got %v", successor, got.Lifecycle.Successor)
 	}
 }
+
+func TestExtendsInheritsAndOverridesSources(t *testing.T) {
+	base := Entry{
+		Provider: "anthropic", ModelID: "claude-x", Mode: "chat",
+		Lifecycle: Lifecycle{Status: "ga"}, Tier: "flagship",
+		Sources: &Sources{
+			Pricing:      &Provenance{URL: "https://base/price", VerifiedAt: "2026-08-04", Confidence: "high"},
+			Capabilities: &Provenance{URL: "https://base/caps", VerifiedAt: "2026-08-04", Confidence: "high"},
+		},
+	}
+	// Wrapper overrides only pricing provenance, no capabilities block.
+	wrapper := Entry{
+		Extends: "anthropic/claude-x", Provider: "bedrock", ModelID: "claude-x",
+		Sources: &Sources{
+			Pricing: &Provenance{URL: "https://bedrock/price", VerifiedAt: "2026-08-04", Confidence: "medium"},
+		},
+	}
+	in := map[string]Entry{"anthropic/claude-x": base, "bedrock/claude-x": wrapper}
+	out, err := ResolveExtends(in)
+	if err != nil {
+		t.Fatalf("resolve: %v", err)
+	}
+	got := out["bedrock/claude-x"].Sources
+	if got == nil || got.Pricing == nil || got.Capabilities == nil {
+		t.Fatalf("merged sources missing groups: %+v", got)
+	}
+	if got.Pricing.URL != "https://bedrock/price" {
+		t.Errorf("pricing not overridden: %q", got.Pricing.URL)
+	}
+	if got.Capabilities.URL != "https://base/caps" {
+		t.Errorf("capabilities not inherited: %q", got.Capabilities.URL)
+	}
+}

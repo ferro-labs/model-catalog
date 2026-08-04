@@ -37,3 +37,9 @@ lifecycle:
 source: "https://docs.github.com/en/copilot/about-github-copilot/plans-and-pricing-for-github-copilot"
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://docs.github.com/en/copilot/about-github-copilot/plans-and-pricing-for-github-copilot"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

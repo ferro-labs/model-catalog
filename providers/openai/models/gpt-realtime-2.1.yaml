@@ -37,3 +37,9 @@ lifecycle:
 source: auto:litellm+models_dev
 updated_at: "2026-07-20"
 tier: standard
+sources:
+    pricing:
+        url: "auto:litellm+models_dev"
+        verified_at: "2026-07-20"
+        verified_by: import:v1
+        confidence: low
