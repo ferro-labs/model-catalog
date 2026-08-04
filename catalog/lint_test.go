@@ -1,6 +1,9 @@
 package catalog
 
 import (
+	"os"
+	"path/filepath"
+	"strings"
 	"testing"
 )
 
@@ -44,6 +47,9 @@ func TestLintProviders(t *testing.T) {
 			Lifecycle:   Lifecycle{Status: "ga"},
 			Source:      "https://openrouter.ai/models/openai/gpt-4o",
 			Tier:        "flagship",
+			Sources: &Sources{
+				Pricing: &Provenance{URL: "https://openrouter.ai/models/openai/gpt-4o", VerifiedAt: "2026-08-04", Confidence: "high"},
+			},
 		})
 
 		issues, err := Lint(tmpDir)
@@ -102,6 +108,9 @@ func TestLintProviders(t *testing.T) {
 			Lifecycle:   Lifecycle{Status: "ga"},
 			Source:      "https://openrouter.ai/models/openai/gpt-4o",
 			Tier:        "flagship",
+			Sources: &Sources{
+				Pricing: &Provenance{URL: "https://openrouter.ai/models/openai/gpt-4o", VerifiedAt: "2026-08-04", Confidence: "high"},
+			},
 		})
 
 		writeTestModel(t, tmpDir, "azure", "gpt-4o.yaml", Entry{
@@ -112,6 +121,9 @@ func TestLintProviders(t *testing.T) {
 			Lifecycle:   Lifecycle{Status: "ga"},
 			Source:      "https://openrouter.ai/models/azure/gpt-4o",
 			Tier:        "flagship",
+			Sources: &Sources{
+				Pricing: &Provenance{URL: "https://openrouter.ai/models/azure/gpt-4o", VerifiedAt: "2026-08-04", Confidence: "high"},
+			},
 		})
 
 		issues, err := Lint(tmpDir)
@@ -136,4 +148,31 @@ func TestLintProviders(t *testing.T) {
 			}
 		}
 	})
+}
+
+func TestLintGAWithoutSourcesPricing(t *testing.T) {
+	dir := t.TempDir()
+	modelDir := filepath.Join(dir, "openai", "models")
+	if err := os.MkdirAll(modelDir, 0o755); err != nil {
+		t.Fatal(err)
+	}
+	// ga model with a legacy source but NO sources block → should warn.
+	yaml := "provider: openai\nmodel_id: gpt-x\ndisplay_name: GPT-X\nmode: chat\n" +
+		"lifecycle:\n  status: ga\nsource: \"https://x\"\nupdated_at: \"2026-08-04\"\ntier: standard\n"
+	if err := os.WriteFile(filepath.Join(modelDir, "gpt-x.yaml"), []byte(yaml), 0o600); err != nil {
+		t.Fatal(err)
+	}
+	issues, err := Lint(dir)
+	if err != nil {
+		t.Fatal(err)
+	}
+	found := false
+	for _, is := range issues {
+		if strings.Contains(is.Message, "no sources.pricing provenance") {
+			found = true
+		}
+	}
+	if !found {
+		t.Errorf("expected a sources.pricing warning, got %v", issues)
+	}
 }
