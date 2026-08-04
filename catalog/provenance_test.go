@@ -56,9 +56,41 @@ func TestMigrateProvenance(t *testing.T) {
 	if e.Sources.Pricing.VerifiedBy != "import:v1" || e.Sources.Pricing.Confidence != "low" {
 		t.Errorf("wrong baseline provenance: %+v", *e.Sources.Pricing)
 	}
+	// url/verified_at must come from the right fixture field, not swapped
+	if e.Sources.Pricing.URL != "https://x" {
+		t.Errorf("Pricing.URL = %q, want %q", e.Sources.Pricing.URL, "https://x")
+	}
+	if e.Sources.Pricing.VerifiedAt != "2026-08-04" {
+		t.Errorf("Pricing.VerifiedAt = %q, want %q", e.Sources.Pricing.VerifiedAt, "2026-08-04")
+	}
 	// idempotent: second run migrates nothing
 	migrated2, _, _ := MigrateProvenance(dir, false)
 	if migrated2 != 0 {
 		t.Errorf("second run migrated %d, want 0 (not idempotent)", migrated2)
 	}
+
+	t.Run("dry-run does not write", func(t *testing.T) {
+		dryDir := t.TempDir()
+		writeProvModel(t, dryDir, "openai", "a.yaml",
+			"provider: openai\nmodel_id: a\ndisplay_name: A\nmode: chat\nlifecycle:\n  status: ga\nsource: \"https://x\"\nupdated_at: \"2026-08-04\"\ntier: standard\n")
+
+		dryMigrated, _, err := MigrateProvenance(dryDir, true)
+		if err != nil {
+			t.Fatal(err)
+		}
+		if dryMigrated == 0 {
+			t.Errorf("dry-run migrated = %d, want > 0", dryMigrated)
+		}
+		got, err := os.ReadFile(filepath.Join(dryDir, "openai", "models", "a.yaml"))
+		if err != nil {
+			t.Fatal(err)
+		}
+		e, err := ReadModelYAML(got)
+		if err != nil {
+			t.Fatal(err)
+		}
+		if e.Sources != nil {
+			t.Errorf("dry-run wrote to disk: Sources = %+v, want nil", e.Sources)
+		}
+	})
 }
