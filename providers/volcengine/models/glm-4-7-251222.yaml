@@ -37,3 +37,9 @@ lifecycle:
 source: "https://www.volcengine.com/pricing?product=ark"
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://www.volcengine.com/pricing?product=ark"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

@@ -37,3 +37,9 @@ lifecycle:
 source: https://www.together.ai/models/qwen3-235b-a22b-fp8-tput
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://www.together.ai/models/qwen3-235b-a22b-fp8-tput"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

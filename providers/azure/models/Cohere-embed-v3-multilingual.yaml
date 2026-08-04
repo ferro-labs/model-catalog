@@ -37,3 +37,9 @@ lifecycle:
 source: https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cohere.cohere-embed-v3-english-offer?tab=PlansAndPrice
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cohere.cohere-embed-v3-english-offer?tab=PlansAndPrice"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

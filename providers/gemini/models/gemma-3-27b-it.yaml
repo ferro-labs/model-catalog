@@ -37,3 +37,9 @@ lifecycle:
 source: https://aistudio.google.com
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://aistudio.google.com"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

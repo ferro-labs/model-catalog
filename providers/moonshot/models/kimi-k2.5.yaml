@@ -37,3 +37,9 @@ lifecycle:
 source: https://platform.moonshot.ai/docs/guide/kimi-k2-5-quickstart
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://platform.moonshot.ai/docs/guide/kimi-k2-5-quickstart"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

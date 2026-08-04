@@ -37,3 +37,9 @@ lifecycle:
 source: https://fireworks.ai/models/fireworks/glm-4p5
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://fireworks.ai/models/fireworks/glm-4p5"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

@@ -37,3 +37,9 @@ lifecycle:
 source: https://docs.mistral.ai/capabilities/code_generation/
 updated_at: "2026-02-28"
 tier: flagship
+sources:
+    pricing:
+        url: "https://docs.mistral.ai/capabilities/code_generation/"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

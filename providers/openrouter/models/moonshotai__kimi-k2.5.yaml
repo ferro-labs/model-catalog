@@ -37,3 +37,9 @@ lifecycle:
 source: https://openrouter.ai/moonshotai/kimi-k2.5
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://openrouter.ai/moonshotai/kimi-k2.5"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

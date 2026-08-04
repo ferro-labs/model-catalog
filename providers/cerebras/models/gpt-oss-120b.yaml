@@ -37,3 +37,9 @@ lifecycle:
 source: https://www.cerebras.ai/blog/openai-gpt-oss-120b-runs-fastest-on-cerebras
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://www.cerebras.ai/blog/openai-gpt-oss-120b-runs-fastest-on-cerebras"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

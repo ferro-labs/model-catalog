@@ -37,3 +37,9 @@ lifecycle:
 source: "https://openrouter.ai/models/openai/gpt-5-codex"
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://openrouter.ai/models/openai/gpt-5-codex"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

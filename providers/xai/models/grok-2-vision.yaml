@@ -37,3 +37,9 @@ lifecycle:
 source: "https://models.dev/xai/grok-2-vision"
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://models.dev/xai/grok-2-vision"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

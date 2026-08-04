@@ -37,3 +37,9 @@ lifecycle:
 source: https://www.together.ai/models/gpt-oss-20b
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://www.together.ai/models/gpt-oss-20b"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

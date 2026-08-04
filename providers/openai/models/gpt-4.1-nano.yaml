@@ -37,3 +37,9 @@ lifecycle:
 source: "https://openrouter.ai/models/openai/gpt-4.1-nano"
 updated_at: "2026-02-28"
 tier: flagship
+sources:
+    pricing:
+        url: "https://openrouter.ai/models/openai/gpt-4.1-nano"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

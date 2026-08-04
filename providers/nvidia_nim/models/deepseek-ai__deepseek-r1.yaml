@@ -37,3 +37,9 @@ lifecycle:
 source: "https://build.nvidia.com/nim"
 updated_at: "2026-04-30"
 tier: standard
+sources:
+    pricing:
+        url: "https://build.nvidia.com/nim"
+        verified_at: "2026-04-30"
+        verified_by: import:v1
+        confidence: low

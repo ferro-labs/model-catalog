@@ -37,3 +37,9 @@ lifecycle:
 source: https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/haiku-4-5
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/claude/haiku-4-5"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

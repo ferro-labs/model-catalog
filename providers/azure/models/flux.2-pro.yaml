@@ -37,3 +37,9 @@ lifecycle:
 source: https://ai.azure.com/explore/models/flux.2-pro/version/1/registry/azureml-blackforestlabs
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://ai.azure.com/explore/models/flux.2-pro/version/1/registry/azureml-blackforestlabs"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

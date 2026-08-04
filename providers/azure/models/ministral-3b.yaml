@@ -37,3 +37,9 @@ lifecycle:
 source: https://azuremarketplace.microsoft.com/en/marketplace/apps/000-000.ministral-3b-2410-offer?tab=Overview
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://azuremarketplace.microsoft.com/en/marketplace/apps/000-000.ministral-3b-2410-offer?tab=Overview"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

@@ -37,3 +37,9 @@ lifecycle:
 source: "https://developers.sber.ru/docs/ru/gigachat/models"
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://developers.sber.ru/docs/ru/gigachat/models"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

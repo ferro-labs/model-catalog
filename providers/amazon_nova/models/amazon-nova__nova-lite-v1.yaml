@@ -37,3 +37,9 @@ lifecycle:
 source: "https://aws.amazon.com/ai/generative-ai/nova/pricing/"
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://aws.amazon.com/ai/generative-ai/nova/pricing/"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

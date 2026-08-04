@@ -37,3 +37,9 @@ lifecycle:
 source: https://docs.nscale.com/docs/inference/serverless-models/current#chat-models
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://docs.nscale.com/docs/inference/serverless-models/current#chat-models"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

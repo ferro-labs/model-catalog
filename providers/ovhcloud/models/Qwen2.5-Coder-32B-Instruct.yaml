@@ -37,3 +37,9 @@ lifecycle:
 source: https://endpoints.ai.cloud.ovh.net/models/qwen2-5-coder-32b-instruct
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://endpoints.ai.cloud.ovh.net/models/qwen2-5-coder-32b-instruct"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

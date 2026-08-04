@@ -37,3 +37,9 @@ lifecycle:
 source: https://azure.microsoft.com/en-us/pricing/details/ai-document-intelligence/
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://azure.microsoft.com/en-us/pricing/details/ai-document-intelligence/"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

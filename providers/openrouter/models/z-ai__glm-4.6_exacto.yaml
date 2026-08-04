@@ -37,3 +37,9 @@ lifecycle:
 source: https://openrouter.ai/z-ai/glm-4.6:exacto
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://openrouter.ai/z-ai/glm-4.6:exacto"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

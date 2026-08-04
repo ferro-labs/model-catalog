@@ -37,3 +37,9 @@ lifecycle:
 source: "https://docs.perplexity.ai/guides/pricing"
 updated_at: "2026-02-28"
 tier: flagship
+sources:
+    pricing:
+        url: "https://docs.perplexity.ai/guides/pricing"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

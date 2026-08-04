@@ -37,3 +37,9 @@ lifecycle:
 source: "https://models.dev/azure/mistral-small-2503"
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://models.dev/azure/mistral-small-2503"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

@@ -37,3 +37,9 @@ lifecycle:
 source: "https://openrouter.ai/models/qwen/qwen3-32b"
 updated_at: "2026-04-30"
 tier: standard
+sources:
+    pricing:
+        url: "https://openrouter.ai/models/qwen/qwen3-32b"
+        verified_at: "2026-04-30"
+        verified_by: import:v1
+        confidence: low

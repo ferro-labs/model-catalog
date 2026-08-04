@@ -37,3 +37,9 @@ lifecycle:
 source: https://platform.moonshot.ai/docs/pricing/chat#generation-model-kimi-k2
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://platform.moonshot.ai/docs/pricing/chat#generation-model-kimi-k2"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

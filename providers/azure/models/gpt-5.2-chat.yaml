@@ -37,3 +37,9 @@ lifecycle:
 source: "https://models.dev/azure/gpt-5.2-chat"
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://models.dev/azure/gpt-5.2-chat"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

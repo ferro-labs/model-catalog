@@ -37,3 +37,9 @@ lifecycle:
 source: https://mistral.ai/news/devstral
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://mistral.ai/news/devstral"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

@@ -37,3 +37,9 @@ lifecycle:
 source: https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/kimi-k2-5-now-in-microsoft-foundry/4492321
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/kimi-k2-5-now-in-microsoft-foundry/4492321"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

@@ -37,3 +37,9 @@ lifecycle:
 source: "https://lambda.ai/pricing"
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://lambda.ai/pricing"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

@@ -37,3 +37,9 @@ lifecycle:
 source: "https://models.dev/openrouter/deepseek/deepseek-r1"
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://models.dev/openrouter/deepseek/deepseek-r1"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

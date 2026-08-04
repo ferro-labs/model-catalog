@@ -37,3 +37,9 @@ lifecycle:
 source: "https://openrouter.ai/models/openai/gpt-4o-mini-search-preview"
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://openrouter.ai/models/openai/gpt-4o-mini-search-preview"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low

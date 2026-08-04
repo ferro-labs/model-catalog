@@ -37,3 +37,9 @@ lifecycle:
 source: https://console.cloud.google.com/vertex-ai/publishers/meta/model-garden/llama-3.2-90b-vision-instruct-maas
 updated_at: "2026-02-28"
 tier: standard
+sources:
+    pricing:
+        url: "https://console.cloud.google.com/vertex-ai/publishers/meta/model-garden/llama-3.2-90b-vision-instruct-maas"
+        verified_at: "2026-02-28"
+        verified_by: import:v1
+        confidence: low
