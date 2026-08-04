@@ -80,6 +80,7 @@ type Entry struct {
 	Source          string       `json:"source" yaml:"source"`
 	UpdatedAt       string       `json:"updated_at" yaml:"updated_at"`
 	Tier            string       `json:"tier" yaml:"tier"`
+	Sources         *Sources     `json:"sources,omitempty" yaml:"sources,omitempty"`
 }
 
 type Pricing struct {
@@ -116,4 +117,25 @@ type Lifecycle struct {
 	DeprecationDate *string `json:"deprecation_date" yaml:"deprecation_date"`
 	SunsetDate      *string `json:"sunset_date" yaml:"sunset_date"`
 	Successor       *string `json:"successor" yaml:"successor"`
+}
+
+// Sources holds per-field provenance. Groups mirror the units that extends
+// resolution merges: pricing, capabilities, context, lifecycle.
+type Sources struct {
+	Pricing      *Provenance `json:"pricing,omitempty"      yaml:"pricing,omitempty"`
+	Capabilities *Provenance `json:"capabilities,omitempty" yaml:"capabilities,omitempty"`
+	Context      *Provenance `json:"context,omitempty"      yaml:"context,omitempty"`
+	Lifecycle    *Provenance `json:"lifecycle,omitempty"    yaml:"lifecycle,omitempty"`
+}
+
+// Provenance records where a group of fields came from and how trustworthy it
+// is. SnapshotSHA256/SnapshotBranch are populated only by the snapshot
+// subsystem (P2b); they stay nil for imported and manually-entered provenance.
+type Provenance struct {
+	URL            string  `json:"url"                       yaml:"url"`
+	VerifiedAt     string  `json:"verified_at"               yaml:"verified_at"`
+	Confidence     string  `json:"confidence"                yaml:"confidence"`
+	VerifiedBy     string  `json:"verified_by,omitempty"     yaml:"verified_by,omitempty"`
+	SnapshotSHA256 *string `json:"snapshot_sha256,omitempty" yaml:"snapshot_sha256,omitempty"`
+	SnapshotBranch *string `json:"snapshot_branch,omitempty" yaml:"snapshot_branch,omitempty"`
 }
