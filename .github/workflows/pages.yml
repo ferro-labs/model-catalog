@@ -26,6 +26,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
       - uses: sigstore/cosign-installer@v4.1.0
 
       - name: Prepare Pages artifact
@@ -65,10 +69,6 @@ jobs:
           jq -r '.catalog_sha256 + "  /tmp/catalog.json"' /tmp/manifest.json | sha256sum --check --status -
           test -s /tmp/manifest.json.sigstore.json
           jq --exit-status '.git_sha | strings | length == 40' /tmp/manifest.json >/dev/null
-          catalog_url=$(jq --raw-output '.catalog_url' /tmp/manifest.json)
-          curl --fail --silent --show-error --location "https://catalog.ferrolabs.ai$catalog_url" --output /tmp/content-addressed-catalog.json
-          jq -r '.catalog_sha256 + "  /tmp/content-addressed-catalog.json"' /tmp/manifest.json | sha256sum --check --status -
-          provider_url=$(jq --raw-output '.providers[] | select(.id == "openai") | .url' /tmp/manifest.json)
-          provider_hash=$(jq --raw-output '.providers[] | select(.id == "openai") | .sha256' /tmp/manifest.json)
-          curl --fail --silent --show-error --location "https://catalog.ferrolabs.ai$provider_url" --output /tmp/openai.json
-          printf "%s  %s\n" "$provider_hash" /tmp/openai.json | sha256sum --check --status -
+
+      - name: Verify signature + hashes end-to-end
+        run: go run ./cmd/ferrocat verify --url https://catalog.ferrolabs.ai  # drift-ok
