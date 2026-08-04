@@ -100,5 +100,33 @@ func mergeEntries(base, wrapper Entry) (Entry, error) {
 	// for *string fields, so wrapper must specify all lifecycle fields.
 	result.Lifecycle = wrapper.Lifecycle
 
+	// Sources: per-group provenance. A wrapper that specifies a group replaces
+	// that group; groups it omits inherit from the base. A wrapper with no
+	// sources block inherits the base's provenance wholesale.
+	result.Sources = mergeSources(base.Sources, wrapper.Sources)
+
 	return result, nil
+}
+
+func mergeSources(base, wrapper *Sources) *Sources {
+	if wrapper == nil {
+		return base
+	}
+	if base == nil {
+		return wrapper
+	}
+	merged := *base
+	if wrapper.Pricing != nil {
+		merged.Pricing = wrapper.Pricing
+	}
+	if wrapper.Capabilities != nil {
+		merged.Capabilities = wrapper.Capabilities
+	}
+	if wrapper.Context != nil {
+		merged.Context = wrapper.Context
+	}
+	if wrapper.Lifecycle != nil {
+		merged.Lifecycle = wrapper.Lifecycle
+	}
+	return &merged
 }
