@@ -87,6 +87,44 @@ func TestApplyProvenanceUpgradesIdempotent(t *testing.T) {
 	}
 }
 
+func TestApplyProvenanceUpgradesContextGroup(t *testing.T) {
+	dir := t.TempDir()
+	writeProvModel(t, dir, "openai", "gpt-x.yaml", baselineModel("low"))
+
+	// A model can receive both a pricing and a context upgrade in one call. Each
+	// upgrade re-reads the file, so the second group is merged onto the first.
+	ctxUp := ProvenanceUpgrade{
+		Provider: "openai", ModelID: "gpt-x", Group: "context",
+		Prov: Provenance{
+			URL: "https://openrouter.ai/api/v1/models", VerifiedAt: "2026-08-07",
+			Confidence: "high", VerifiedBy: "scraper-openrouter",
+			SnapshotSHA256: strptr(strings.Repeat("c", 64)), SnapshotBranch: strptr("snapshots"),
+		},
+	}
+	applied, skipped, err := ApplyProvenanceUpgrades(dir, []ProvenanceUpgrade{upgrade("medium"), ctxUp})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if applied != 2 || skipped != 0 {
+		t.Fatalf("applied=%d skipped=%d, want 2/0", applied, skipped)
+	}
+
+	got, _ := os.ReadFile(filepath.Join(dir, "openai", "models", "gpt-x.yaml"))
+	e, err := ReadModelYAML(got)
+	if err != nil {
+		t.Fatalf("re-parse failed: %v\n%s", err, got)
+	}
+	if e.Sources.Pricing == nil || e.Sources.Pricing.Confidence != "medium" {
+		t.Errorf("pricing group lost/wrong: %+v", e.Sources)
+	}
+	if e.Sources.Context == nil || e.Sources.Context.Confidence != "high" {
+		t.Errorf("context group not written: %+v", e.Sources)
+	}
+	if e.Sources.Context.SnapshotSHA256 == nil || *e.Sources.Context.SnapshotSHA256 != strings.Repeat("c", 64) {
+		t.Errorf("context snapshot sha not recorded: %+v", e.Sources.Context)
+	}
+}
+
 func TestApplyProvenanceUpgradesNeverDowngrades(t *testing.T) {
 	dir := t.TempDir()
 	writeProvModel(t, dir, "openai", "gpt-x.yaml", baselineModel("high"))

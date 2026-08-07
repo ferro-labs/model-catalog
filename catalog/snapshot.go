@@ -40,7 +40,28 @@ type PriceSnapshot struct {
 // struct fields in declaration order, so the same observation always produces
 // the same bytes — and therefore the same hash.
 func (s PriceSnapshot) CanonicalJSON() ([]byte, error) {
-	b, err := json.Marshal(s)
+	return canonicalSnapshotJSON(s)
+}
+
+// ContextSnapshot is the content-addressed record of the context-bearing data a
+// source reports for one model (context_window, max_output_tokens). Like
+// PriceSnapshot it holds only source data — no verified_by/verified_at — so
+// unchanged values hash identically across runs.
+type ContextSnapshot struct {
+	Provider        string `json:"provider"`
+	ModelID         string `json:"model_id"`
+	SourceURL       string `json:"source_url"`
+	ContextWindow   *int   `json:"context_window,omitempty"`
+	MaxOutputTokens *int   `json:"max_output_tokens,omitempty"`
+}
+
+// CanonicalJSON renders the context snapshot deterministically.
+func (s ContextSnapshot) CanonicalJSON() ([]byte, error) {
+	return canonicalSnapshotJSON(s)
+}
+
+func canonicalSnapshotJSON(v any) ([]byte, error) {
+	b, err := json.Marshal(v)
 	if err != nil {
 		return nil, fmt.Errorf("marshal snapshot: %w", err)
 	}
