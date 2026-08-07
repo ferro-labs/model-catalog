@@ -1,0 +1,1 @@
+{"provider":"openai","model_id":"o3-mini","source_url":"https://models.dev/api.json","context_window":200000,"max_output_tokens":100000}

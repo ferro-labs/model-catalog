@@ -1,0 +1,1 @@
+{"provider":"mistral","model_id":"labs-devstral-small-2512","source_url":"https://models.dev/api.json","context_window":256000,"max_output_tokens":256000}

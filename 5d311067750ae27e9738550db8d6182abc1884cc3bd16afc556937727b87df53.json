@@ -1,0 +1,1 @@
+{"provider":"wandb","model_id":"meta-llama/Llama-3.1-8B-Instruct","source_url":"https://models.dev/api.json","context_window":128000,"max_output_tokens":128000}

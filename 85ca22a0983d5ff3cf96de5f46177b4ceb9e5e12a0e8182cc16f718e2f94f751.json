@@ -1,0 +1,1 @@
+{"provider":"openai","model_id":"gpt-3.5-turbo-16k","source_url":"https://openrouter.ai/api/v1/models","context_window":16385,"max_output_tokens":4096}

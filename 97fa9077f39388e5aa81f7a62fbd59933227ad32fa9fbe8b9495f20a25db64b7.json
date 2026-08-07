@@ -1,0 +1,1 @@
+{"provider":"deepinfra","model_id":"nvidia/Llama-3.3-Nemotron-Super-49B-v1.5","source_url":"https://models.dev/api.json","context_window":131072,"max_output_tokens":131072}

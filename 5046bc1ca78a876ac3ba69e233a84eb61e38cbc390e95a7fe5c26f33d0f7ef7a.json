@@ -1,0 +1,1 @@
+{"provider":"databricks","model_id":"databricks-claude-sonnet-4","source_url":"https://models.dev/api.json","context_window":200000,"max_output_tokens":64000}

@@ -1,0 +1,1 @@
+{"provider":"groq","model_id":"openai/gpt-oss-safeguard-20b","source_url":"https://models.dev/api.json","context_window":131072,"max_output_tokens":65536}
