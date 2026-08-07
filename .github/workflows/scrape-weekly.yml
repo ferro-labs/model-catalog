@@ -74,14 +74,8 @@ jobs:
 
       # Upgrade sources.pricing to snapshot-verified provenance for every model
       # whose pricing the public oracles still confirm. Runs against the freshly
-      # rebuilt catalog; idempotent, so a quiet week touches no files. The
-      # providers/ changes flow into the weekly PR below for review.
-      #
-      # NOTE: snapshots/ (the raw archive referenced by snapshot_sha256) is NOT
-      # pushed to the `snapshots` branch here — do that once via `make
-      # snapshots-push` after seeding + smoke-testing the branch, then enable
-      # automated archival. Until then the SHAs are reproducible from the
-      # oracle data but the raw copies live only on the operator's run.
+      # rebuilt catalog; idempotent (snapshot SHAs are content-only, no dates), so
+      # a quiet week touches no files. providers/ changes flow into the weekly PR.
       - name: Verify pricing provenance
         id: provenance
         continue-on-error: true
@@ -90,6 +84,18 @@ jobs:
           if ! git diff --quiet providers/; then
             go run ./cmd/ferrocat build --output dist/
           fi
+
+      # Archive the raw price snapshots (referenced by snapshot_sha256) onto the
+      # orphan `snapshots` branch. Content-addressed + idempotent: unchanged
+      # prices re-push nothing, and a transient failure self-heals next run since
+      # the SHAs are stable. continue-on-error so archival never reds the run.
+      - name: Archive snapshots to the snapshots branch
+        if: steps.provenance.outcome == 'success'
+        continue-on-error: true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          make snapshots-push
 
       - name: Check for changes
         id: changes

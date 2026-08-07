@@ -15,18 +15,22 @@ import (
 const DefaultSnapshotBranch = "snapshots"
 
 // PriceSnapshot is the canonical, content-addressed record of the price-bearing
-// data a scraper observed for one model at one point in time. Its SHA-256 is
-// stored in Provenance.SnapshotSHA256, letting anyone re-fetch the snapshot and
-// confirm the recorded pricing was actually seen at the cited source.
+// data a source reports for one model. Its SHA-256 is stored in
+// Provenance.SnapshotSHA256, letting anyone re-fetch the snapshot and confirm
+// the recorded pricing was actually seen at the cited source.
 //
-// ponytail: for API scrapers this normalized record IS the snapshot; archiving
-// raw upstream HTML for Tier 3+ HTML scrapers is the upgrade path.
+// It deliberately holds ONLY the price-bearing data — not verified_by/verified_at.
+// Those describe *our check* (they live in the catalog Provenance), not the
+// source data, and baking them in would give the same prices a new hash on every
+// run, breaking the idempotent-skip in ApplyProvenanceUpgrades. With them out,
+// unchanged prices hash identically week after week.
+//
+// ponytail: for API/oracle sources this normalized record IS the snapshot;
+// archiving raw upstream HTML for Tier 3+ HTML scrapers is the upgrade path.
 type PriceSnapshot struct {
 	Provider      string   `json:"provider"`
 	ModelID       string   `json:"model_id"`
 	SourceURL     string   `json:"source_url"`
-	VerifiedBy    string   `json:"verified_by"`
-	VerifiedAt    string   `json:"verified_at"`
 	InputPerM     *float64 `json:"input_per_m_tokens,omitempty"`
 	OutputPerM    *float64 `json:"output_per_m_tokens,omitempty"`
 	CacheReadPerM *float64 `json:"cache_read_per_m_tokens,omitempty"`

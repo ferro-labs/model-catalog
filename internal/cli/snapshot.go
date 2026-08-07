@@ -81,8 +81,6 @@ func runSnapshotProvenance() error {
 			Provider:      p.Provider,
 			ModelID:       p.ModelID,
 			SourceURL:     src.SourceURL,
-			VerifiedBy:    verifiedBy,
-			VerifiedAt:    today,
 			InputPerM:     src.InputPerM,
 			OutputPerM:    src.OutputPerM,
 			CacheReadPerM: src.CacheReadPerM,

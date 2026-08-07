@@ -11,7 +11,6 @@ func TestSnapshotSHA256Deterministic(t *testing.T) {
 	out := 15.0
 	snap := PriceSnapshot{
 		Provider: "openai", ModelID: "gpt-5", SourceURL: "https://x",
-		VerifiedBy: "scraper-openrouter", VerifiedAt: "2026-08-07",
 		InputPerM: &in, OutputPerM: &out,
 	}
 	a, err := snap.CanonicalJSON()
