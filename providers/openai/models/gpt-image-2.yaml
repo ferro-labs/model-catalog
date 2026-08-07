@@ -43,3 +43,10 @@ sources:
         verified_at: "2026-07-13"
         verified_by: import:v1
         confidence: low
+    context:
+        url: "https://models.dev/api.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-models_dev
+        snapshot_sha256: 1a0843e6d24d24b05fcc5a5410c76d6ccd20d04d8c3139926e7abee1c62af8bd
+        snapshot_branch: snapshots
+        confidence: medium

@@ -45,3 +45,10 @@ sources:
         snapshot_sha256: 81865b4615c81ce3756b173a5a6e4f6d80b6a15800e64da1426d83b666547b21
         snapshot_branch: snapshots
         confidence: high
+    context:
+        url: "https://openrouter.ai/api/v1/models"
+        verified_at: "2026-08-07"
+        verified_by: scraper-openrouter
+        snapshot_sha256: 85ca22a0983d5ff3cf96de5f46177b4ceb9e5e12a0e8182cc16f718e2f94f751
+        snapshot_branch: snapshots
+        confidence: medium

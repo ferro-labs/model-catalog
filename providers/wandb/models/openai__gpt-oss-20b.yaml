@@ -45,3 +45,10 @@ sources:
         snapshot_sha256: 5cd6fe6f9aa08a7a29cbec2ffe501fdc145812002112b75398bc247e529cae60
         snapshot_branch: snapshots
         confidence: medium
+    context:
+        url: "https://models.dev/api.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-models_dev
+        snapshot_sha256: db9489f426261a34714d64ab67cc537c5304d8c394da500d27ed805065077752
+        snapshot_branch: snapshots
+        confidence: medium

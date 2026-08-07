@@ -43,3 +43,10 @@ sources:
         verified_at: "2026-04-30"
         verified_by: import:v1
         confidence: low
+    context:
+        url: "https://openrouter.ai/api/v1/models"
+        verified_at: "2026-08-07"
+        verified_by: scraper-openrouter
+        snapshot_sha256: 5e85fa06da51096e8aca1a960f5fe3f571a3e9ff6ee1ee5e594631503439d584
+        snapshot_branch: snapshots
+        confidence: medium
