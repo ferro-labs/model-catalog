@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/xai/grok-2"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: d173c3cf2d61a9d6604ecb81406f4ae70a87986a99b228c0687f023979eff5ad
+        snapshot_branch: snapshots
+        confidence: medium

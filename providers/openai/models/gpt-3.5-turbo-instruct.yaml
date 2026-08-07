@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://openrouter.ai/models/openai/gpt-3.5-turbo-instruct"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://openrouter.ai/api/v1/models"
+        verified_at: "2026-08-07"
+        verified_by: scraper-openrouter
+        snapshot_sha256: 474a5ed7a36241bac4636d802b8230846bdb63a297bbec03c1138b7e0ee1a366
+        snapshot_branch: snapshots
+        confidence: medium

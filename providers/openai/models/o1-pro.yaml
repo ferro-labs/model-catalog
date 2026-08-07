@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: flagship
 sources:
     pricing:
-        url: "https://openrouter.ai/models/openai/o1-pro"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 99991612705a1ddb477b1dd5bd9406c4eccaf31a59b8ca8b7391b43f692a0e12
+        snapshot_branch: snapshots
+        confidence: high

@@ -39,7 +39,9 @@ updated_at: "2026-07-06"
 tier: flagship
 sources:
     pricing:
-        url: "https://models.dev/openai/text-embedding-3-small"
-        verified_at: "2026-07-06"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: f11e14d1be6e580f5a3121a873f57c6a424dd5a0028a479d44d4bafb466ba30e
+        snapshot_branch: snapshots
+        confidence: high

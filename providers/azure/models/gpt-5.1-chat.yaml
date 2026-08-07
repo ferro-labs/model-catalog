@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/azure/gpt-5.1-chat"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: caeffcce82a991ba44a8a9c55d626bc399cd12c02ecf38c6bcd2807babc11587
+        snapshot_branch: snapshots
+        confidence: medium

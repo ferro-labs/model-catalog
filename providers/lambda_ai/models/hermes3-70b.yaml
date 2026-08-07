@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://lambda.ai/pricing"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 33e21e8df932c98579631605fbc1ba210e463f8c3f055c5f6a6fa86f926262b8
+        snapshot_branch: snapshots
+        confidence: medium

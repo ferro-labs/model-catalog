@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/openrouter/google/gemini-2.5-pro"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 7b015c26b2a530643850b9d47559eba169cc1378371a49195017a7b4f2c9ba8b
+        snapshot_branch: snapshots
+        confidence: medium

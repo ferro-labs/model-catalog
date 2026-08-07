@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://openai.com/api/pricing/"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: fa07b3734cbfee62a123a370a4d541e97d02793035fca3fa3f331bd63c5fa68d
+        snapshot_branch: snapshots
+        confidence: medium

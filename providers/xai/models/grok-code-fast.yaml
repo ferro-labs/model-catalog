@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: flagship
 sources:
     pricing:
-        url: "https://docs.x.ai/docs/models"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 747605131976746842f995ba6ebe59ceabf3581eff3dd22d8162581707f92472
+        snapshot_branch: snapshots
+        confidence: medium

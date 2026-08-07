@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/minimax/MiniMax-M2.5"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: fd1c1fd95e2729a6af60f9c37e8d00972c5dfde7105e9cf9aa33285140d41f36
+        snapshot_branch: snapshots
+        confidence: high

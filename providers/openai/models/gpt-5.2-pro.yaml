@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: flagship
 sources:
     pricing:
-        url: "https://openrouter.ai/models/openai/gpt-5.2-pro"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 423f98a062e912f6f8e013e8a0c0db2831fe63dc4ab7ee30b815d7dcdf7dbbd6
+        snapshot_branch: snapshots
+        confidence: high

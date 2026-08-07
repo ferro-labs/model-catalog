@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://vercel.com/ai-gateway/models/glm-4.6"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 56b9569d052f4dd7357aeb9907b8eda7285714867d6b455c54d89d64c46ca02b
+        snapshot_branch: snapshots
+        confidence: medium

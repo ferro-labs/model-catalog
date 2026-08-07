@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://platform.moonshot.ai/docs/pricing"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: badae4686d95e9bb05c6f5f542538d50f5ea39a54abf2ec34b0834a636546acf
+        snapshot_branch: snapshots
+        confidence: medium

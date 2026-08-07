@@ -34,3 +34,11 @@ lifecycle:
     sunset_date: null
     successor: null
 tier: standard
+sources:
+    pricing:
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: dfb12322f66bc19bc4ddb5e5c5a6f600ee9ef3a3070183af0d5811c7dc0fa693
+        snapshot_branch: snapshots
+        confidence: medium

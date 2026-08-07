@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://openrouter.ai/z-ai/glm-4.6:exacto"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 25082fd6ca0cce5dd368eea5006f2bfef1820a11e9513768e602378561ee4898
+        snapshot_branch: snapshots
+        confidence: medium

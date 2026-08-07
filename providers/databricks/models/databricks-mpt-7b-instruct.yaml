@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://www.databricks.com/product/pricing/foundation-model-serving"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: a36545c7edc34bfbd66ae59d1d2b378a03d1bd2511a560da389be380f91c4d4c
+        snapshot_branch: snapshots
+        confidence: medium

@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://deepinfra.com/pricing"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 368966f75e258f8df0e95bbcc472c3347ba41dfd60b1be535792b8d1a08f2afd
+        snapshot_branch: snapshots
+        confidence: medium

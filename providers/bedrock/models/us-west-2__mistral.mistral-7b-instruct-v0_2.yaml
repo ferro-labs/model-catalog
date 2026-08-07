@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://aws.amazon.com/bedrock/pricing/"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 4dadf4f9a4d070085a2e1671f354f2dd06093bf803efaae241a5a7b19f49c8b9
+        snapshot_branch: snapshots
+        confidence: medium

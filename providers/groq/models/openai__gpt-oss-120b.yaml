@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/groq/openai/gpt-oss-120b"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 0641bab8d2d83de81b5b3566138c37ac2418c9dd78d74770644618b623507908
+        snapshot_branch: snapshots
+        confidence: high

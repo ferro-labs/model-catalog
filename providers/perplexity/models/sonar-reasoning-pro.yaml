@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: flagship
 sources:
     pricing:
-        url: "https://openrouter.ai/models/perplexity/sonar-reasoning-pro"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: d139c61bf5a284ce29a9b78f971e97a825623ef8580f64b9ea9eef4dc862c065
+        snapshot_branch: snapshots
+        confidence: high

@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: flagship
 sources:
     pricing:
-        url: "https://openrouter.ai/models/deepseek/deepseek-r1"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: bd92848e5b11c71b2690b61ba90316c137bfcac62d3d1c0b3ed142960beda978
+        snapshot_branch: snapshots
+        confidence: medium

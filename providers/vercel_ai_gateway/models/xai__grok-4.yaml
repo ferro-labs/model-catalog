@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://vercel.com/docs/ai-gateway#supported-providers"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 6d08c7cb1d0d1fa0ae9f62443127183141148f9387c660a5180bc02e45657240
+        snapshot_branch: snapshots
+        confidence: medium

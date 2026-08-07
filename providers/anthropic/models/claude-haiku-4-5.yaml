@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: flagship
 sources:
     pricing:
-        url: "https://models.dev/anthropic/claude-haiku-4-5"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 3f9410e15a5c437284f9c4bba461cba396ac276ef23ffe7cc2168fee83bd6481
+        snapshot_branch: snapshots
+        confidence: high

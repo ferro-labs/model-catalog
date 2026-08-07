@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://mistral.ai/news/devstral"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: a90ecf29e845dc8b3b758a18d8a914d2743397bcb2b49ef93136bc16554923cf
+        snapshot_branch: snapshots
+        confidence: high

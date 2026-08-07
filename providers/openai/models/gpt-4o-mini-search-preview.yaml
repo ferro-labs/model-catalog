@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://openrouter.ai/models/openai/gpt-4o-mini-search-preview"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 25a21203274a8b31d0dec5e562b7a2f2f8f647009a87db86e4d4393dbff66b0f
+        snapshot_branch: snapshots
+        confidence: medium

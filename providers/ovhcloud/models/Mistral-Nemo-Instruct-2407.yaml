@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://endpoints.ai.cloud.ovh.net/models/mistral-nemo-instruct-2407"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 0c59ff0e54402f59f55844c59b53a13bb8e6dba6279105cf3c1ae36cd2511a04
+        snapshot_branch: snapshots
+        confidence: medium

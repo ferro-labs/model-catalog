@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://endpoints.ai.cloud.ovh.net/models/qwen2-5-coder-32b-instruct"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 146e675a4935c0d78a424bba990077ace4978cfaa201d792029f715197a19a78
+        snapshot_branch: snapshots
+        confidence: medium

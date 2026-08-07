@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://docs.x.ai/docs/models/grok-4-1-fast-reasoning"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: cbdc726ab9739b9e2499b36c0db14c52b4b94c4780cb76ee567075ec0c921423
+        snapshot_branch: snapshots
+        confidence: medium

@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/wandb/deepseek-ai/DeepSeek-V3.1"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 625ed81c99c76ce0e3db1bbe779593812e1c61da5b0065107c174d8cd5c6b6b8
+        snapshot_branch: snapshots
+        confidence: medium

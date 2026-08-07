@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://docs.anyscale.com/preview/endpoints/text-generation/supported-models/google-gemma-7b-it"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 55ce7a06dc9f1d4427bb0b45948e3f2799e38c3af8333a1f3c9d7ac9e3d2170d
+        snapshot_branch: snapshots
+        confidence: medium

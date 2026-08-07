@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/deepinfra/zai-org/GLM-4.5"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 3d9fe7de05b232a3e1fe81d597fe6723b2e040dd1a1cb6da004b644d3fade44e
+        snapshot_branch: snapshots
+        confidence: medium

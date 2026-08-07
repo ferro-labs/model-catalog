@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: fb370af04ca03e12c847627dae6cecb7f8eba4b3149a2849ecda68e00e1c5804
+        snapshot_branch: snapshots
+        confidence: medium

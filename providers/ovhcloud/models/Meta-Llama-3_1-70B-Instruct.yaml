@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://endpoints.ai.cloud.ovh.net/models/meta-llama-3-1-70b-instruct"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: a697daa95d1844e4ec9da48834bc600383ddca76de4d0baa7e6248fbbf88595f
+        snapshot_branch: snapshots
+        confidence: medium

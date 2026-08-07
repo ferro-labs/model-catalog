@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://docs.perplexity.ai/guides/pricing"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: ef3b04a2bf7fe0174da3505cd9d8b9c70cd4d35d944eddbd6639b52a6d294b14
+        snapshot_branch: snapshots
+        confidence: medium

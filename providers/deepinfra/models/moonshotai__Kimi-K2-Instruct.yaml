@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/deepinfra/moonshotai/Kimi-K2-Instruct"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 16435e3689a27ff863f161ccc00b2abd6abfd8546abaad9cd909ecdfeb916445
+        snapshot_branch: snapshots
+        confidence: medium

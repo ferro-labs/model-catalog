@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: flagship
 sources:
     pricing:
-        url: "https://cloud.google.com/vertex-ai/generative-ai/pricing"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: bc6005bb523d177fd8a4a79ffe1f477eedeb0c8f4cece7371d2f9334ad929b09
+        snapshot_branch: snapshots
+        confidence: medium

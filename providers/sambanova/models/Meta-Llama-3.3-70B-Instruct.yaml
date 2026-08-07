@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://cloud.sambanova.ai/plans/pricing"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 887ccaace7114fe1a4fdc7470c1b83c4891e2eda24c82be5342592963a7d3fbf
+        snapshot_branch: snapshots
+        confidence: medium

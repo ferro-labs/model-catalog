@@ -39,7 +39,9 @@ updated_at: "2026-07-06"
 tier: flagship
 sources:
     pricing:
-        url: "https://models.dev/mistral/mistral-embed"
-        verified_at: "2026-07-06"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 809dfc207da0ef9b2aa9a962dad34bebe0ab4eb780adc42e101112916d6b1428
+        snapshot_branch: snapshots
+        confidence: medium

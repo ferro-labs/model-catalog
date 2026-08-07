@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://docs.anthropic.com/en/docs/about-claude/models"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: a9e6b981f87d2c000ff8fd3133ab62fbd28ad6e8313ef1e1c16499d9154207b7
+        snapshot_branch: snapshots
+        confidence: medium

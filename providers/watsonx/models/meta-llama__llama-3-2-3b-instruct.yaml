@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://www.ibm.com/products/watsonx-ai/foundation-models"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 47c1049b4a0569c9726f5a5539eed8669de93dbb06f7738bfad37152e93dd39c
+        snapshot_branch: snapshots
+        confidence: medium

@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://openrouter.ai/api/v1/models/bytedance/ui-tars-1.5-7b"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 4b9ac6d5af25f19602326fc912c1f36ac8b2f0764b11686383dd51b26a426be0
+        snapshot_branch: snapshots
+        confidence: medium

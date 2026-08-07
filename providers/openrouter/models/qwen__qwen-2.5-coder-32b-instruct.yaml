@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/openrouter/qwen/qwen-2.5-coder-32b-instruct"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: f56ef09e90b8ded2449739c5dca86a7d68655afadac9a6eb78686abeb18c46c1
+        snapshot_branch: snapshots
+        confidence: medium

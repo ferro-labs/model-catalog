@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: flagship
 sources:
     pricing:
-        url: "https://models.dev/groq/meta-llama/llama-4-maverick-17b-128e-instruct"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 33b2852eb7dc4f3ad38a8af43a63642d32fe1957143101cc5ad99bcb684f14bb
+        snapshot_branch: snapshots
+        confidence: medium

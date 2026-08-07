@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://cloud.google.com/vertex-ai/generative-ai/pricing#partner-models"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 32fc3e625ddf7953e0767b0a2115682ab9c3030643e9cb296d8689a5fa25e9ac
+        snapshot_branch: snapshots
+        confidence: medium

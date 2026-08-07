@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://www.databricks.com/product/pricing/proprietary-foundation-model-serving"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 4a9766d347634e283bd72e5c5a3649e96923ca5df804c147ee72192fd17aa8c3
+        snapshot_branch: snapshots
+        confidence: medium

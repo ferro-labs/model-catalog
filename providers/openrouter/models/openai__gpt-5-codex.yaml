@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/openrouter/openai/gpt-5-codex"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: bf7ac6877e63e2a5fc75b6b96d1aad9584c3c6c6cff8601462e6fde4f17fe196
+        snapshot_branch: snapshots
+        confidence: medium

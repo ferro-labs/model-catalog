@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: flagship
 sources:
     pricing:
-        url: "https://openrouter.ai/models/openai/o4-mini"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: fff403f3a7e02317d48ca88fde6e5278643cf04fba98beed3cda9959d1fdbd39
+        snapshot_branch: snapshots
+        confidence: high

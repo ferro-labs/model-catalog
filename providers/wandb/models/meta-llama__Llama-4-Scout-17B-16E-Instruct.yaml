@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/wandb/meta-llama/Llama-4-Scout-17B-16E-Instruct"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: a9e169e050f1cb9635356d795fa6563537cc0cbe0ab4f963c72c233317745d25
+        snapshot_branch: snapshots
+        confidence: medium

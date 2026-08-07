@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://openrouter.ai/qwen/qwen3-235b-a22b-thinking-2507"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: b8e7ad3483e88428fccc602d700aed7cddba69fd5f28682823a03f227f5f1e18
+        snapshot_branch: snapshots
+        confidence: medium

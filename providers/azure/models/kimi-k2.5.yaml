@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/kimi-k2-5-now-in-microsoft-foundry/4492321"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://models.dev/api.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-models_dev
+        snapshot_sha256: 122ffbc14358ea757159146fb8843bc77e4e8c0bf6d3ccfd230d474474823ca4
+        snapshot_branch: snapshots
+        confidence: medium

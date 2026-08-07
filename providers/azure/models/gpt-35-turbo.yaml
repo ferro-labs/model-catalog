@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 88e74011f9c7985fa9cdbbf01c9370d63cda68af0b1390c0f07ebc14f576b520
+        snapshot_branch: snapshots
+        confidence: medium

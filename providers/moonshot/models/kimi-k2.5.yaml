@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://platform.moonshot.ai/docs/guide/kimi-k2-5-quickstart"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 9d84f49207e500ce5de078427cd7a1b9b43c18fc1d617c2510d73652f97a1bab
+        snapshot_branch: snapshots
+        confidence: medium

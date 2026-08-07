@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: flagship
 sources:
     pricing:
-        url: "https://models.dev/cerebras/llama3.1-8b"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: a77630af8c6c11e2e8b3f4d14cd76bb5441183f505bd9695fac99840784bb4de
+        snapshot_branch: snapshots
+        confidence: medium

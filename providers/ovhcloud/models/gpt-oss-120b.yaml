@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://endpoints.ai.cloud.ovh.net/models/gpt-oss-120b"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 24779ba372c1f05fd0113b867e5c3ef594a431de46f407f590f591aef5fdb21b
+        snapshot_branch: snapshots
+        confidence: medium

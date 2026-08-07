@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: flagship
 sources:
     pricing:
-        url: "https://mistral.ai/news/devstral-2-vibe-cli"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 5a1b7c7dee7dd3871d0cdb8e851b5a8b2f6691edc69a97ea80bc2f8f6e07ded0
+        snapshot_branch: snapshots
+        confidence: high

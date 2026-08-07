@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://developers.cloudflare.com/workers-ai/models/"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: fce076ec2d0d3479d2608397c0786c7f246c874a76130e94ffc759ca23b60eb3
+        snapshot_branch: snapshots
+        confidence: medium

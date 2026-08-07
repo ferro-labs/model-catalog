@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://www.alibabacloud.com/help/en/model-studio/models"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: aec82b4f477363a4a1150bc8928cf9f83840c4d76030282f9912a30f97d4a52c
+        snapshot_branch: snapshots
+        confidence: medium

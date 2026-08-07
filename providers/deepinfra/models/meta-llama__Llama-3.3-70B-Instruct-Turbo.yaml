@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 149899522f72146bec1339deaa74b55b6696fba2b728586652c745574f572fda
+        snapshot_branch: snapshots
+        confidence: medium

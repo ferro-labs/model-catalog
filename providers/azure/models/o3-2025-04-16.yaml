@@ -31,3 +31,11 @@ lifecycle:
     status: deprecated
     deprecation_date: 2026-04-16
 tier: standard
+sources:
+    pricing:
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 461ea7fc9d40192d002ba841d79972127a2956c056b62fa7e238e283e13c8d91
+        snapshot_branch: snapshots
+        confidence: medium

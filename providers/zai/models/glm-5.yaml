@@ -39,7 +39,9 @@ updated_at: "2026-07-06"
 tier: standard
 sources:
     pricing:
-        url: "https://open.bigmodel.cn/pricing"
-        verified_at: "2026-07-06"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: e5b2a333d260fb21c28717025342428aff220c833d9a54fecfb7615bc81ee7ba
+        snapshot_branch: snapshots
+        confidence: high

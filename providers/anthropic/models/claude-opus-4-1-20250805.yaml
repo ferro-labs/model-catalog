@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/anthropic/claude-opus-4-1-20250805"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: fcf9fb5ff9b124e5e5538514ac4aac05ae6f2b8b083e0ce0d6da682e42900d7d
+        snapshot_branch: snapshots
+        confidence: medium

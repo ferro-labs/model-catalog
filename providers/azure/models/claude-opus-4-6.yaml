@@ -34,3 +34,11 @@ lifecycle:
     sunset_date: null
     successor: null
 tier: flagship
+sources:
+    pricing:
+        url: "https://models.dev/api.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-models_dev
+        snapshot_sha256: 7c1c1cac1ac7697bc55584bf413ae4c99a44e0cc70c851265f96b15bd1471707
+        snapshot_branch: snapshots
+        confidence: medium

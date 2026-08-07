@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://openrouter.ai/models/openai/gpt-3.5-turbo-16k"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 81865b4615c81ce3756b173a5a6e4f6d80b6a15800e64da1426d83b666547b21
+        snapshot_branch: snapshots
+        confidence: high

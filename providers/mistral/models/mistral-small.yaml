@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: flagship
 sources:
     pricing:
-        url: "https://mistral.ai/technology/"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: f42a0a761e39c7e61d13a8bd4f3ba452d4ecf85b2533f95b7d337a098c09bdfe
+        snapshot_branch: snapshots
+        confidence: medium

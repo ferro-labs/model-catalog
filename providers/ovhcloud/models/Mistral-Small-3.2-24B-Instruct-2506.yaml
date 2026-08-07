@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://endpoints.ai.cloud.ovh.net/models/mistral-small-3-2-24b-instruct-2506"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: a99e58f1d40c2b9bded8d17b0ba571e0edcdb1c6ed4921fc6227c62ebe5c77ea
+        snapshot_branch: snapshots
+        confidence: medium

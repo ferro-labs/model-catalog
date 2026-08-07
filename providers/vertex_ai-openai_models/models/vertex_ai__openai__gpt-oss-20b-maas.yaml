@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://console.cloud.google.com/vertex-ai/publishers/openai/model-garden/gpt-oss-120b-maas"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 6a97af31db810c058199d1a213d71045577b71e5334d2e06c9a816bc180721a0
+        snapshot_branch: snapshots
+        confidence: medium

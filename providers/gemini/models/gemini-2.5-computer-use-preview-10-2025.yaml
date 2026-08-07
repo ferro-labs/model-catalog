@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://ai.google.dev/gemini-api/docs/computer-use"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 54be95ef51eb1bdd7a0a74e145aafb60da49ec3de430fa174ce916f2618cfe2d
+        snapshot_branch: snapshots
+        confidence: medium

@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://ai.google.dev/gemini-api/docs/pricing#gemini-2.0-flash-lite"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: ae23d533127cfe42d12071d56f5e734fc1bfe05bef676d0b6ee27822ab249998
+        snapshot_branch: snapshots
+        confidence: medium

@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: flagship
 sources:
     pricing:
-        url: "https://models.dev/cohere/command-a-03-2025"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://models.dev/api.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-models_dev
+        snapshot_sha256: 58e98df5032caf197a72afb261afe7c881e23ae62b7906f3f41fb3082f156d21
+        snapshot_branch: snapshots
+        confidence: medium

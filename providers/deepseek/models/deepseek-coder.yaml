@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://api-docs.deepseek.com/quick_start/pricing"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: b3f417ea9f7f6cc6008c78b33832a279ff28f3ebf63c69218eac56dacc17968d
+        snapshot_branch: snapshots
+        confidence: medium

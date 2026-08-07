@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/azure/deepseek-v3.2-speciale"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://models.dev/api.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-models_dev
+        snapshot_sha256: ab8174ba3b1507c9b98ed17800e49baf64ea87bb6649038c51a7c6657cf3a1c8
+        snapshot_branch: snapshots
+        confidence: medium

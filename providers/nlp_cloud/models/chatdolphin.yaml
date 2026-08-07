@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://nlpcloud.com/pricing.html"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: d6349083d22e7acc6aee2a67dcbb121d21290d5375a70886eff751779fc2ce39
+        snapshot_branch: snapshots
+        confidence: medium

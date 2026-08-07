@@ -39,7 +39,9 @@ updated_at: "2026-07-06"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/mistral/mistral-large-latest"
-        verified_at: "2026-07-06"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: a5f2e6ecbfc680f72cc812c45ec4a426558683e74c49c359bd902a528153900a
+        snapshot_branch: snapshots
+        confidence: high

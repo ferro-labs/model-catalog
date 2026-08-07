@@ -35,3 +35,11 @@ lifecycle:
     successor: null
 source: https://techcommunity.microsoft.com/blog/machinelearningblog/deepseek-r1-improved-performance-higher-limits-and-transparent-pricing/4386367
 tier: flagship
+sources:
+    pricing:
+        url: "https://models.dev/api.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-models_dev
+        snapshot_sha256: 3206283f69e96d52b469e9db25c4ffd45c0849f7b455defaa9a446e2118131e7
+        snapshot_branch: snapshots
+        confidence: medium

@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://www.hyperbolic.xyz/pricing"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 0d01c67ce38716cd0266f2184b6d1f5c5a1ad91b13ef269f2af501e1f46b1b6f
+        snapshot_branch: snapshots
+        confidence: medium

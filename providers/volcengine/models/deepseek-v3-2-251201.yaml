@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://www.volcengine.com/pricing?product=ark"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: de0a2bd885f1e0fa1e9da356cfc3d55dc33a21963fd6939c645fe2f32fb62ec8
+        snapshot_branch: snapshots
+        confidence: medium

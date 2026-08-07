@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://platform.moonshot.ai/docs/pricing/chat#generation-model-kimi-k2"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 4901cfbf9d279649c0d317913a35ef5d9feafa3b5c27cb8b3ee28d808ebb7d6e
+        snapshot_branch: snapshots
+        confidence: medium

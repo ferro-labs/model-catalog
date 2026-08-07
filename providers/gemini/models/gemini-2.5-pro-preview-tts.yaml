@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://ai.google.dev/gemini-api/docs/pricing#gemini-2.5-pro-preview"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 8edf216ca144b571f4251376135ecde2736c8b8fbb4eefc2c8b15599f4682e33
+        snapshot_branch: snapshots
+        confidence: medium

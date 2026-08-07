@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://docs.cohere.com/v2/docs/command-r7b"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://models.dev/api.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-models_dev
+        snapshot_sha256: bce49982e664c46a4c6e05d4e6c7f60b46626bdbd651278c182ced054e3fa6d7
+        snapshot_branch: snapshots
+        confidence: high

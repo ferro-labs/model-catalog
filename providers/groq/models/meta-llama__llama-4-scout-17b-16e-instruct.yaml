@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: flagship
 sources:
     pricing:
-        url: "https://models.dev/groq/meta-llama/llama-4-scout-17b-16e-instruct"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: f0333d306ece005b1a645b76ecb54d3b1329f4a31c5d34612b136483f6d248cb
+        snapshot_branch: snapshots
+        confidence: medium

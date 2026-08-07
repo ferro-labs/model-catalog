@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/openrouter/mistralai/mistral-small-3.1-24b-instruct"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 7ecc3cc68d9b3678b8c4c738bfde0b45907a6d2fbe626161049f22798fbd1dd5
+        snapshot_branch: snapshots
+        confidence: medium

@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://developers.sber.ru/docs/ru/gigachat/models"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 89abb0e786a2d5e16a20b0997b889780296d09535262bcf3aa9c4c20e29b2c4b
+        snapshot_branch: snapshots
+        confidence: medium

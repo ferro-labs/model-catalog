@@ -39,7 +39,9 @@ updated_at: "2026-07-27"
 tier: standard
 sources:
     pricing:
-        url: "auto:litellm+models_dev"
-        verified_at: "2026-07-27"
-        verified_by: import:v1
-        confidence: low
+        url: "https://models.dev/api.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-models_dev
+        snapshot_sha256: 850e9f82ac974b1e1a859f373805794a11e9eaecd1572993f5416d297740438f
+        snapshot_branch: snapshots
+        confidence: medium

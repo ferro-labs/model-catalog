@@ -34,3 +34,11 @@ lifecycle:
     successor: null
 source: https://cloud.google.com/vertex-ai/generative-ai/pricing
 tier: flagship
+sources:
+    pricing:
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: bc5d40d42277f8dfed3ab15cb837ad90724f66fc7a8771012c5a04571f264826
+        snapshot_branch: snapshots
+        confidence: medium

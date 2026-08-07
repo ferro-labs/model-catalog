@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://docs.nscale.com/docs/inference/serverless-models/current#chat-models"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 2202516d8d96fcfc0a82bd618ca500e64194afe263c48698aff84b4c101b07e1
+        snapshot_branch: snapshots
+        confidence: medium

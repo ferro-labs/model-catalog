@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/openrouter/google/gemini-3-pro-preview"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 9bd2d9a5a107d1c07b527d726b7a96b78d9f380a1fe42bb7ff5fecc51b57fb34
+        snapshot_branch: snapshots
+        confidence: medium

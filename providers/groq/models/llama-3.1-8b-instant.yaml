@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: flagship
 sources:
     pricing:
-        url: "https://models.dev/groq/llama-3.1-8b-instant"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: d69b1fc1b8defcd4ee32f9ad91bc46fb4a3f534df756b8be5366aa7a69e0af33
+        snapshot_branch: snapshots
+        confidence: high

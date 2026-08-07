@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://openrouter.ai/models/cohere/command-r-plus-08-2024"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://models.dev/api.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-models_dev
+        snapshot_sha256: b0b135557fff6e541d62c919b5bcede7083acc60db21df23de3fb2d8984523bf
+        snapshot_branch: snapshots
+        confidence: high

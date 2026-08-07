@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/wandb/Qwen/Qwen3-Coder-480B-A35B-Instruct"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 6b44b6ae2b30c2c173b0f15eabd00096d35bbb09e1ed6367e7677444f4151023
+        snapshot_branch: snapshots
+        confidence: medium

@@ -34,3 +34,11 @@ lifecycle:
     successor: null
 source: https://azure.microsoft.com/en-us/blog/gpt-5-in-azure-ai-foundry-the-future-of-ai-apps-and-agents-starts-here/
 tier: standard
+sources:
+    pricing:
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: c4f375549afcc94554a8cdbca21ddd13261820d0def3db9a3a489dc4876b05bd
+        snapshot_branch: snapshots
+        confidence: medium

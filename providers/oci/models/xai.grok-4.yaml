@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 5ceacfade2e45980bb5b6d0793e06e7d91b2c9b582a6b9b4b894b7402e33d119
+        snapshot_branch: snapshots
+        confidence: medium

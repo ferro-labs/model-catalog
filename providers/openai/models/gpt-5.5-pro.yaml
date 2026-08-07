@@ -39,7 +39,9 @@ updated_at: "2026-05-04"
 tier: standard
 sources:
     pricing:
-        url: "auto:models_dev+openrouter"
-        verified_at: "2026-05-04"
-        verified_by: import:v1
-        confidence: low
+        url: "https://models.dev/api.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-models_dev
+        snapshot_sha256: 4ee5eb9c9c96facc51e6d5314ea8a94b72c6db968b9d4da8a0191cac5cea390b
+        snapshot_branch: snapshots
+        confidence: high

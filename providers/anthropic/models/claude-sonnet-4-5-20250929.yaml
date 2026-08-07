@@ -39,7 +39,9 @@ updated_at: "2026-02-28"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/anthropic/claude-sonnet-4-5-20250929"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-07"
+        verified_by: scraper-litellm
+        snapshot_sha256: 9775dfd762da37eb2bb766f249f16eb41b55c77dd03ee1d553f40a7bf4bd9ea6
+        snapshot_branch: snapshots
+        confidence: high
