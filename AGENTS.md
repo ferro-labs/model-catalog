@@ -51,8 +51,8 @@ go run ./cmd/ferrocat freshness
 go run ./cmd/ferrocat split <input.json> --output providers/
 go run ./cmd/ferrocat migrate-extends --wrapper <provider> --base <base-provider>
 go run ./cmd/ferrocat migrate-provenance   # one-time: seed baseline sources.pricing provenance
-go run ./cmd/ferrocat snapshot-provenance  # upgrade sources.pricing to snapshot-verified provenance from public oracles
-go run ./cmd/ferrocat snapshot-provenance --dry-run   # report how many models have oracle-confirmed pricing
+go run ./cmd/ferrocat snapshot-provenance  # upgrade sources.pricing + sources.context to snapshot-verified provenance from public oracles
+go run ./cmd/ferrocat snapshot-provenance --dry-run   # report how many models have oracle-confirmed pricing/context
 make snapshots-push                        # archive the snapshots/ dir onto the orphan `snapshots` branch
 ```
 
