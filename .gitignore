@@ -40,3 +40,8 @@ Thumbs.db
 # Scrape artifacts (local only)
 .scrape-history.json
 scrape-report.md
+
+# Provenance snapshots live on the `snapshots` branch, not main.
+# `ferrocat snapshot-provenance` writes them here; `make snapshots-push` archives them.
+snapshots/
+.snapshots-wt/

@@ -72,6 +72,25 @@ jobs:
             go run ./cmd/ferrocat build --output dist/
           fi
 
+      # Upgrade sources.pricing to snapshot-verified provenance for every model
+      # whose pricing the public oracles still confirm. Runs against the freshly
+      # rebuilt catalog; idempotent, so a quiet week touches no files. The
+      # providers/ changes flow into the weekly PR below for review.
+      #
+      # NOTE: snapshots/ (the raw archive referenced by snapshot_sha256) is NOT
+      # pushed to the `snapshots` branch here — do that once via `make
+      # snapshots-push` after seeding + smoke-testing the branch, then enable
+      # automated archival. Until then the SHAs are reproducible from the
+      # oracle data but the raw copies live only on the operator's run.
+      - name: Verify pricing provenance
+        id: provenance
+        continue-on-error: true
+        run: |
+          go run ./cmd/ferrocat snapshot-provenance
+          if ! git diff --quiet providers/; then
+            go run ./cmd/ferrocat build --output dist/
+          fi
+
       - name: Check for changes
         id: changes
         run: |
