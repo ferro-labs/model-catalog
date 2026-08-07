@@ -1,0 +1,1 @@
+{"provider":"vercel_ai_gateway","model_id":"alibaba/qwen-3-32b","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.09999999999999999,"output_per_m_tokens":0.3}

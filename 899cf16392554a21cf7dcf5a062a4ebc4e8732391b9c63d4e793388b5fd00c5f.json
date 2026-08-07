@@ -1,0 +1,1 @@
+{"provider":"azure","model_id":"eu/gpt-5-nano-2025-08-07","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.055,"output_per_m_tokens":0.44,"cache_read_per_m_tokens":0.0055}

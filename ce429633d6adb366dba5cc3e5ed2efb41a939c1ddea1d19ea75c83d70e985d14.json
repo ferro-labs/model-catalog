@@ -1,0 +1,1 @@
+{"provider":"bedrock","model_id":"eu-west-3/mistral.mistral-large-2402-v1:0","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":10.4,"output_per_m_tokens":31.2}

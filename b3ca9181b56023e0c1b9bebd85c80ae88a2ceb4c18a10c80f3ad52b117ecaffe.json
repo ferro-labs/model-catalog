@@ -1,0 +1,1 @@
+{"provider":"bedrock","model_id":"eu-west-2/qwen.qwen3-coder-next","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.78,"output_per_m_tokens":1.8599999999999999}

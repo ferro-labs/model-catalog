@@ -1,0 +1,1 @@
+{"provider":"vertex_ai-deepseek_models","model_id":"vertex_ai/deepseek-ai/deepseek-r1-0528-maas","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":1.35,"output_per_m_tokens":5.4}

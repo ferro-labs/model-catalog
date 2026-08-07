@@ -1,0 +1,1 @@
+{"provider":"bedrock","model_id":"ap-south-1/deepseek.v3.2","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.74,"output_per_m_tokens":2.2199999999999998}

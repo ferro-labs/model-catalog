@@ -1,0 +1,1 @@
+{"provider":"vertex_ai-qwen_models","model_id":"vertex_ai/qwen/qwen3-coder-480b-a35b-instruct-maas","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":1,"output_per_m_tokens":4}

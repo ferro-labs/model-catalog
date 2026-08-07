@@ -1,0 +1,1 @@
+{"provider":"databricks","model_id":"databricks-gpt-5-mini","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.24997000000000005,"output_per_m_tokens":1.9999700000000002}

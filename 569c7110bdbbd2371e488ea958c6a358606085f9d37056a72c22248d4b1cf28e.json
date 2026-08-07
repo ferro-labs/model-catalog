@@ -1,0 +1,1 @@
+{"provider":"deepinfra","model_id":"meta-llama/Llama-Guard-3-8B","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.055,"output_per_m_tokens":0.055}

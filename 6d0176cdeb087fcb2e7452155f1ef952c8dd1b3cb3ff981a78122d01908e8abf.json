@@ -1,0 +1,1 @@
+{"provider":"bedrock","model_id":"twelvelabs.pegasus-1-2-v1:0","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","output_per_m_tokens":7.5}

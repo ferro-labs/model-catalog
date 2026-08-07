@@ -1,0 +1,1 @@
+{"provider":"openai","model_id":"gpt-5.4-mini","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.75,"output_per_m_tokens":4.5,"cache_read_per_m_tokens":0.075}

@@ -1,0 +1,1 @@
+{"provider":"deepinfra","model_id":"meta-llama/Meta-Llama-3-8B-Instruct","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.03,"output_per_m_tokens":0.06}

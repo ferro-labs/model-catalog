@@ -1,0 +1,1 @@
+{"provider":"gmi","model_id":"anthropic/claude-opus-4","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":15,"output_per_m_tokens":75}

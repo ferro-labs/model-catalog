@@ -1,0 +1,1 @@
+{"provider":"azure","model_id":"gpt-5.6-luna","source_url":"https://models.dev/api.json","input_per_m_tokens":1,"output_per_m_tokens":6,"cache_read_per_m_tokens":0.1}

@@ -1,0 +1,1 @@
+{"provider":"vercel_ai_gateway","model_id":"xai/grok-2","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":2,"output_per_m_tokens":10}

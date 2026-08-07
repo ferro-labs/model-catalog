@@ -1,0 +1,1 @@
+{"provider":"novita","model_id":"deepseek/deepseek-r1-0528","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.7,"output_per_m_tokens":2.5,"cache_read_per_m_tokens":0.35}

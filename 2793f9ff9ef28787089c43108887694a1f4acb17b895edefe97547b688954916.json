@@ -1,0 +1,1 @@
+{"provider":"replicate","model_id":"deepseek-ai/deepseek-v3","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":1.4500000000000002,"output_per_m_tokens":1.4500000000000002}

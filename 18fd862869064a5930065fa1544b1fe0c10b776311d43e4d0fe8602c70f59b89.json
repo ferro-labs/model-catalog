@@ -1,0 +1,1 @@
+{"provider":"deepinfra","model_id":"nvidia/Llama-3.1-Nemotron-70B-Instruct","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.6,"output_per_m_tokens":0.6}

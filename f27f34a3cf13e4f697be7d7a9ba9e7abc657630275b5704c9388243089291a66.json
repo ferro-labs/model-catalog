@@ -1,0 +1,1 @@
+{"provider":"novita","model_id":"qwen/qwen3-vl-30b-a3b-thinking","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.19999999999999998,"output_per_m_tokens":1}

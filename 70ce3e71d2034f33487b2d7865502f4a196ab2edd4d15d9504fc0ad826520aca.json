@@ -1,0 +1,1 @@
+{"provider":"bedrock","model_id":"ap-south-1/moonshotai.kimi-k2.5","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.72,"output_per_m_tokens":3.5999999999999996}

@@ -1,0 +1,1 @@
+{"provider":"xai","model_id":"grok-3-fast-latest","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":5,"output_per_m_tokens":25,"cache_read_per_m_tokens":1.25}

@@ -1,0 +1,1 @@
+{"provider":"xai","model_id":"grok-4-1-fast-reasoning-latest","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.19999999999999998,"output_per_m_tokens":0.5,"cache_read_per_m_tokens":0.049999999999999996}

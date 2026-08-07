@@ -1,0 +1,1 @@
+{"provider":"databricks","model_id":"databricks-gemma-3-12b","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.15000999999999998,"output_per_m_tokens":0.5000100000000001}

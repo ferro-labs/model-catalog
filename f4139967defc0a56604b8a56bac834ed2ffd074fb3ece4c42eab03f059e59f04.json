@@ -1,0 +1,1 @@
+{"provider":"cerebras","model_id":"qwen-3-32b","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.39999999999999997,"output_per_m_tokens":0.7999999999999999}

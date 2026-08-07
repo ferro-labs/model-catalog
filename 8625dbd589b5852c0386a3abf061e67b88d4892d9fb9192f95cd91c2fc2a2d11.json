@@ -1,0 +1,1 @@
+{"provider":"deepinfra","model_id":"mistralai/Mistral-Small-3.2-24B-Instruct-2506","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.075,"output_per_m_tokens":0.19999999999999998}

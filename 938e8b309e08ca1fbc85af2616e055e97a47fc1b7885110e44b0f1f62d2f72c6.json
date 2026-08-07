@@ -1,0 +1,1 @@
+{"provider":"bedrock","model_id":"ai21.j2-ultra-v1","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":18.8,"output_per_m_tokens":18.8}

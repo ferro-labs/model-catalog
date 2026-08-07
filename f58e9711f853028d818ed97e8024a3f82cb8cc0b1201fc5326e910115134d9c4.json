@@ -1,0 +1,1 @@
+{"provider":"azure","model_id":"claude-opus-4-1","source_url":"https://models.dev/api.json","input_per_m_tokens":15,"output_per_m_tokens":75,"cache_read_per_m_tokens":1.5}

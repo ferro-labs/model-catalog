@@ -1,0 +1,1 @@
+{"provider":"deepseek","model_id":"deepseek-v4-pro","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.435,"output_per_m_tokens":0.87,"cache_read_per_m_tokens":0.003625}

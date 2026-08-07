@@ -1,0 +1,1 @@
+{"provider":"ai21","model_id":"jamba-large-1.7","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":2,"output_per_m_tokens":8}

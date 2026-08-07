@@ -1,0 +1,1 @@
+{"provider":"bedrock","model_id":"us-east-2/moonshotai.kimi-k2-thinking","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.6,"output_per_m_tokens":2.5}

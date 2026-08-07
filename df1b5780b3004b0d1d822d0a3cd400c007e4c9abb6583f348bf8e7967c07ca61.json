@@ -1,0 +1,1 @@
+{"provider":"deepinfra","model_id":"Qwen/Qwen2.5-7B-Instruct","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.04,"output_per_m_tokens":0.09999999999999999}

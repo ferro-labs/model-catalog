@@ -1,0 +1,1 @@
+{"provider":"openai","model_id":"ft:o4-mini-2025-04-16","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":4,"output_per_m_tokens":16,"cache_read_per_m_tokens":1}

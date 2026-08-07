@@ -1,0 +1,1 @@
+{"provider":"sambanova","model_id":"DeepSeek-V3-0324","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":3,"output_per_m_tokens":4.5}

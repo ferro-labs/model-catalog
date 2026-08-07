@@ -1,0 +1,1 @@
+{"provider":"openai","model_id":"gpt-4","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":30,"output_per_m_tokens":60}

@@ -1,0 +1,1 @@
+{"provider":"azure","model_id":"claude-sonnet-4-5","source_url":"https://models.dev/api.json","input_per_m_tokens":3,"output_per_m_tokens":15,"cache_read_per_m_tokens":0.3}

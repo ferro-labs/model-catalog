@@ -1,0 +1,1 @@
+{"provider":"bedrock","model_id":"eu-west-2/meta.llama3-70b-instruct-v1:0","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":3.45,"output_per_m_tokens":4.55}
