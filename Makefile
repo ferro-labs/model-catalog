@@ -31,7 +31,7 @@ snapshots-push:
 	@git fetch origin snapshots 2>/dev/null || true
 	git worktree add -f .snapshots-wt snapshots 2>/dev/null \
 		|| git worktree add -f --detach .snapshots-wt origin/snapshots 2>/dev/null \
-		|| git worktree add -f --orphan .snapshots-wt snapshots
+		|| git worktree add -f --orphan -b snapshots .snapshots-wt
 	cp snapshots/*.json .snapshots-wt/
 	cd .snapshots-wt && git add -A && \
 		(git diff --cached --quiet || git commit -m "snapshots: archive verified price provenance") && \
