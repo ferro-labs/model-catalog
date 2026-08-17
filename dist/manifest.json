@@ -1,10 +1,10 @@
 {
-  "version": "v2026.08.10",
+  "version": "v2026.08.17",
   "schema_version": 1,
-  "generated_at": "2026-08-10T08:03:02Z",
-  "catalog_sha256": "1bc30e15f782bf5ea9ecdf91b05c7c54d0a49ff08b32b1d174ac5fa22d0ccc81",
-  "catalog_url": "/v1/1bc30e15f782bf5ea9ecdf91b05c7c54d0a49ff08b32b1d174ac5fa22d0ccc81.json",
-  "git_sha": "c2f40d32885cd1c7e43de87790db39f94534c630",
+  "generated_at": "2026-08-17T07:03:07Z",
+  "catalog_sha256": "925e3819fe16b70aee7788e3bf16a9df8177c791c3eaf6730e68860d978ff864",
+  "catalog_url": "/v1/925e3819fe16b70aee7788e3bf16a9df8177c791c3eaf6730e68860d978ff864.json",
+  "git_sha": "dec21473d51a34236bed0b86849b0f40ff1460e1",
   "providers": [
     {
       "id": "ai21",
@@ -90,8 +90,8 @@
     {
       "id": "azure",
       "model_count": 238,
-      "sha256": "6dcc85341d8a3d54c288fa326b7f5b75fef9488f8f39f1c38d4198b2c2d865d7",
-      "url": "/v1/providers/azure/6dcc85341d8a3d54c288fa326b7f5b75fef9488f8f39f1c38d4198b2c2d865d7.json",
+      "sha256": "af3e727227f16c59af7a58ee1bcf474d8b5a4948682d8d334043f3d2ec2b6139",
+      "url": "/v1/providers/azure/af3e727227f16c59af7a58ee1bcf474d8b5a4948682d8d334043f3d2ec2b6139.json",
       "display_name": "Azure OpenAI",
       "category": "cloud",
       "description": "OpenAI models via Microsoft Azure",
@@ -192,8 +192,8 @@
     {
       "id": "deepinfra",
       "model_count": 67,
-      "sha256": "4dffb179342a89f0db325563da374a6dc2c36fe6e8f74f5621756615b8ad084c",
-      "url": "/v1/providers/deepinfra/4dffb179342a89f0db325563da374a6dc2c36fe6e8f74f5621756615b8ad084c.json",
+      "sha256": "5774370c691048fc69c93f9c3b4c2ea6458d2140e6d75046ad52ee9ee640bace",
+      "url": "/v1/providers/deepinfra/5774370c691048fc69c93f9c3b4c2ea6458d2140e6d75046ad52ee9ee640bace.json",
       "display_name": "DeepInfra",
       "logo_url": "https://deepinfra.com/favicon.svg",
       "category": "open-source",
@@ -316,9 +316,9 @@
     },
     {
       "id": "groq",
-      "model_count": 14,
-      "sha256": "7872519b458aa5705802ef24d30c4a2a27f33dc74f637f6661588f350c4992e6",
-      "url": "/v1/providers/groq/7872519b458aa5705802ef24d30c4a2a27f33dc74f637f6661588f350c4992e6.json",
+      "model_count": 17,
+      "sha256": "37839615730669e78473ed4fa3c7adc1e762512f799b01cf7d36309b7dac0115",
+      "url": "/v1/providers/groq/37839615730669e78473ed4fa3c7adc1e762512f799b01cf7d36309b7dac0115.json",
       "display_name": "Groq",
       "logo_url": "https://groq.com/favicon.svg",
       "category": "specialized",
@@ -408,9 +408,9 @@
     },
     {
       "id": "mistral",
-      "model_count": 46,
-      "sha256": "400b2a71683da931d26efc9efde4a70fa48d223818402daf01f163a7c020c547",
-      "url": "/v1/providers/mistral/400b2a71683da931d26efc9efde4a70fa48d223818402daf01f163a7c020c547.json",
+      "model_count": 47,
+      "sha256": "8c48090cdea23367bbd94559db0bcfbd4e9611d49dc6bc6fd307255a212d4ad9",
+      "url": "/v1/providers/mistral/8c48090cdea23367bbd94559db0bcfbd4e9611d49dc6bc6fd307255a212d4ad9.json",
       "display_name": "Mistral AI",
       "logo_url": "https://mistral.ai/favicon.svg",
       "category": "frontier",
@@ -836,9 +836,9 @@
     },
     {
       "id": "xai",
-      "model_count": 34,
-      "sha256": "9de23c850ec2eab41c0c13f4796b3756a30bbab9fc2b8bfa317c4e16128d49ba",
-      "url": "/v1/providers/xai/9de23c850ec2eab41c0c13f4796b3756a30bbab9fc2b8bfa317c4e16128d49ba.json",
+      "model_count": 39,
+      "sha256": "df16027b96d965dafcf3fbdcbea005124923214236e619eb81eef5ac23dbf2e0",
+      "url": "/v1/providers/xai/df16027b96d965dafcf3fbdcbea005124923214236e619eb81eef5ac23dbf2e0.json",
       "display_name": "xAI (Grok)",
       "logo_url": "https://x.ai/favicon.svg",
       "category": "frontier",
@@ -857,7 +857,7 @@
     }
   ],
   "stats": {
-    "total_models": 2542,
+    "total_models": 2551,
     "total_providers": 83
   }
 }

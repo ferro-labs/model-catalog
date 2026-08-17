@@ -365,17 +365,7 @@
     },
     "source": "auto:litellm+models_dev",
     "updated_at": "2026-08-17",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-17",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "549cb8a566d7e0cefd777225b09f6d9ed2995952bcaa53539ed62a84093e9738",
-        "snapshot_branch": "snapshots"
-      }
-    }
+    "tier": "standard"
   },
   "groq/meta-llama/llama-prompt-guard-2-86m": {
     "provider": "groq",
@@ -419,17 +409,7 @@
     },
     "source": "auto:litellm+models_dev",
     "updated_at": "2026-08-17",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-17",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "d1f54f8d4890da3d0e0f5912b125a1723431bc6b6075487cd1302b10bffa151f",
-        "snapshot_branch": "snapshots"
-      }
-    }
+    "tier": "standard"
   },
   "groq/moonshotai/kimi-k2-instruct-0905": {
     "provider": "groq",
@@ -803,17 +783,7 @@
     },
     "source": "auto:litellm+models_dev",
     "updated_at": "2026-08-17",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-17",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "4ab473220915de2d309ff03fb03a5bcfeac81304b25279ebd0654dbe9ae5da11",
-        "snapshot_branch": "snapshots"
-      }
-    }
+    "tier": "standard"
   },
   "groq/whisper-large-v3": {
     "provider": "groq",
