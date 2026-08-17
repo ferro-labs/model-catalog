@@ -12848,11 +12848,11 @@
     "tier": "standard",
     "sources": {
       "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-17",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "d275496e2919b4d1a74ca18156cedf316f88cf86029732984f43d24ac5cb19e7",
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "850e9f82ac974b1e1a859f373805794a11e9eaecd1572993f5416d297740438f",
         "snapshot_branch": "snapshots"
       }
     }
@@ -12956,11 +12956,11 @@
     "tier": "standard",
     "sources": {
       "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-17",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "7929c1fe089a36310a7ceb8477dfa66e8b84bad3772d769eba726832565936a6",
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "ee46877e3d2ea2e92f8964a9f31882ce854d97d6ebe10a7e95ff79aa0dc8318c",
         "snapshot_branch": "snapshots"
       }
     }
@@ -44092,14 +44092,6 @@
         "verified_by": "scraper-litellm",
         "snapshot_sha256": "6595ae33f8e4077af928072a3f50242cd986b4923eb0251832b127821bfe6221",
         "snapshot_branch": "snapshots"
-      },
-      "context": {
-        "url": "https://models.dev/api.json",
-        "verified_at": "2026-08-17",
-        "confidence": "medium",
-        "verified_by": "scraper-models_dev",
-        "snapshot_sha256": "8c2d080f89db4401237bef1e751078ad868aaf864c22f24b0edbdff4fd116074",
-        "snapshot_branch": "snapshots"
       }
     }
   },
@@ -69807,17 +69799,7 @@
     },
     "source": "auto:litellm+models_dev",
     "updated_at": "2026-08-17",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-17",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "549cb8a566d7e0cefd777225b09f6d9ed2995952bcaa53539ed62a84093e9738",
-        "snapshot_branch": "snapshots"
-      }
-    }
+    "tier": "standard"
   },
   "groq/meta-llama/llama-prompt-guard-2-86m": {
     "provider": "groq",
@@ -69861,17 +69843,7 @@
     },
     "source": "auto:litellm+models_dev",
     "updated_at": "2026-08-17",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-17",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "d1f54f8d4890da3d0e0f5912b125a1723431bc6b6075487cd1302b10bffa151f",
-        "snapshot_branch": "snapshots"
-      }
-    }
+    "tier": "standard"
   },
   "groq/moonshotai/kimi-k2-instruct-0905": {
     "provider": "groq",
@@ -70245,17 +70217,7 @@
     },
     "source": "auto:litellm+models_dev",
     "updated_at": "2026-08-17",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-17",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "4ab473220915de2d309ff03fb03a5bcfeac81304b25279ebd0654dbe9ae5da11",
-        "snapshot_branch": "snapshots"
-      }
-    }
+    "tier": "standard"
   },
   "groq/whisper-large-v3": {
     "provider": "groq",
@@ -76507,17 +76469,7 @@
     },
     "source": "auto:litellm+models_dev",
     "updated_at": "2026-08-17",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-17",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "e0c62651fda58393f0049a6dc4a2c438d0fa6617666e4162af590040b26d7d8f",
-        "snapshot_branch": "snapshots"
-      }
-    }
+    "tier": "standard"
   },
   "mistral/mistral-small-latest": {
     "provider": "mistral",
@@ -135588,12 +135540,10 @@
     "tier": "standard",
     "sources": {
       "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-17",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "d2a11398f563e9bf19790d4db8e0f56e08601d90654d2487ed6bcaef0ce63e54",
-        "snapshot_branch": "snapshots"
+        "url": "auto:litellm+models_dev",
+        "verified_at": "2026-07-13",
+        "confidence": "low",
+        "verified_by": "import:v1"
       }
     }
   },

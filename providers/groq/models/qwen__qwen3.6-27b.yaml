@@ -1,13 +1,13 @@
-provider: xai
-model_id: grok-4.5
-display_name: grok-4.5
+provider: groq
+model_id: qwen/qwen3.6-27b
+display_name: qwen/qwen3.6-27b
 mode: chat
 context_window: 0
 max_output_tokens: 0
 pricing:
-    input_per_m_tokens: 2
-    output_per_m_tokens: 6
-    cache_read_per_m_tokens: 0.3
+    input_per_m_tokens: 0.6
+    output_per_m_tokens: 3
+    cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
@@ -42,6 +42,6 @@ sources:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
         verified_at: "2026-08-17"
         verified_by: scraper-litellm
-        snapshot_sha256: d2a11398f563e9bf19790d4db8e0f56e08601d90654d2487ed6bcaef0ce63e54
+        snapshot_sha256: 4ab473220915de2d309ff03fb03a5bcfeac81304b25279ebd0654dbe9ae5da11
         snapshot_branch: snapshots
-        confidence: high
+        confidence: medium

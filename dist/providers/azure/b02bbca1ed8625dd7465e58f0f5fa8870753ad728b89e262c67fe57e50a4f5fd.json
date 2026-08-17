@@ -8426,11 +8426,11 @@
     "tier": "standard",
     "sources": {
       "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-17",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "d275496e2919b4d1a74ca18156cedf316f88cf86029732984f43d24ac5cb19e7",
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "850e9f82ac974b1e1a859f373805794a11e9eaecd1572993f5416d297740438f",
         "snapshot_branch": "snapshots"
       }
     }
@@ -8534,11 +8534,11 @@
     "tier": "standard",
     "sources": {
       "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-17",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "7929c1fe089a36310a7ceb8477dfa66e8b84bad3772d769eba726832565936a6",
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "ee46877e3d2ea2e92f8964a9f31882ce854d97d6ebe10a7e95ff79aa0dc8318c",
         "snapshot_branch": "snapshots"
       }
     }

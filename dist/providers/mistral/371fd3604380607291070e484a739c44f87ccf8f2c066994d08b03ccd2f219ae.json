@@ -1951,17 +1951,7 @@
     },
     "source": "auto:litellm+models_dev",
     "updated_at": "2026-08-17",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-17",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "e0c62651fda58393f0049a6dc4a2c438d0fa6617666e4162af590040b26d7d8f",
-        "snapshot_branch": "snapshots"
-      }
-    }
+    "tier": "standard"
   },
   "mistral/mistral-small-latest": {
     "provider": "mistral",

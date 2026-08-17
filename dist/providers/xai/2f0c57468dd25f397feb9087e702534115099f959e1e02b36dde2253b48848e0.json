@@ -1,794 +1,14 @@
 {
-  "mistral/codestral-2405": {
-    "provider": "mistral",
-    "model_id": "codestral-2405",
-    "display_name": "codestral-2405",
+  "xai/grok-2": {
+    "provider": "xai",
+    "model_id": "grok-2",
+    "display_name": "grok-2",
     "mode": "chat",
-    "context_window": 32000,
-    "max_output_tokens": 8191,
-    "pricing": {
-      "input_per_m_tokens": 0.0,
-      "output_per_m_tokens": 0.0,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": false,
-      "parallel_tool_calls": false,
-      "json_mode": false,
-      "response_schema": false,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://docs.mistral.ai/capabilities/code_generation/",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://docs.mistral.ai/capabilities/code_generation/",
-        "verified_at": "2026-02-28",
-        "confidence": "low",
-        "verified_by": "import:v1"
-      }
-    }
-  },
-  "mistral/codestral-2508": {
-    "provider": "mistral",
-    "model_id": "codestral-2508",
-    "display_name": "codestral-2508",
-    "mode": "chat",
-    "context_window": 256000,
-    "max_output_tokens": 256000,
-    "pricing": {
-      "input_per_m_tokens": 0.3,
-      "output_per_m_tokens": 0.9,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/news/codestral-25-08",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "d7a0a2291b7bde62c4cb995fc6386a7d732e68daeca4e0a640994333f6fa0329",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/codestral-embed": {
-    "provider": "mistral",
-    "model_id": "codestral-embed",
-    "display_name": "codestral-embed",
-    "mode": "embedding",
-    "context_window": 8192,
-    "max_output_tokens": 0,
-    "pricing": {
-      "input_per_m_tokens": null,
-      "output_per_m_tokens": null,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": 0.15,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": false,
-      "parallel_tool_calls": false,
-      "json_mode": false,
-      "response_schema": false,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/technology/",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://mistral.ai/technology/",
-        "verified_at": "2026-02-28",
-        "confidence": "low",
-        "verified_by": "import:v1"
-      }
-    }
-  },
-  "mistral/codestral-embed-2505": {
-    "provider": "mistral",
-    "model_id": "codestral-embed-2505",
-    "display_name": "codestral-embed-2505",
-    "mode": "embedding",
-    "context_window": 8192,
-    "max_output_tokens": 0,
-    "pricing": {
-      "input_per_m_tokens": null,
-      "output_per_m_tokens": null,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": 0.15,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": false,
-      "parallel_tool_calls": false,
-      "json_mode": false,
-      "response_schema": false,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/technology/",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://mistral.ai/technology/",
-        "verified_at": "2026-02-28",
-        "confidence": "low",
-        "verified_by": "import:v1"
-      }
-    }
-  },
-  "mistral/codestral-latest": {
-    "provider": "mistral",
-    "model_id": "codestral-latest",
-    "display_name": "codestral-latest",
-    "mode": "chat",
-    "context_window": 32000,
-    "max_output_tokens": 8191,
-    "pricing": {
-      "input_per_m_tokens": 0.0,
-      "output_per_m_tokens": 0.0,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": false,
-      "parallel_tool_calls": false,
-      "json_mode": false,
-      "response_schema": false,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://docs.mistral.ai/capabilities/code_generation/",
-    "updated_at": "2026-02-28",
-    "tier": "flagship",
-    "sources": {
-      "pricing": {
-        "url": "https://docs.mistral.ai/capabilities/code_generation/",
-        "verified_at": "2026-02-28",
-        "confidence": "low",
-        "verified_by": "import:v1"
-      }
-    }
-  },
-  "mistral/codestral-mamba-latest": {
-    "provider": "mistral",
-    "model_id": "codestral-mamba-latest",
-    "display_name": "codestral-mamba-latest",
-    "mode": "chat",
-    "context_window": 256000,
-    "max_output_tokens": 256000,
-    "pricing": {
-      "input_per_m_tokens": 0.25,
-      "output_per_m_tokens": 0.25,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": false,
-      "parallel_tool_calls": false,
-      "json_mode": false,
-      "response_schema": false,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/technology/",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "962f6617694c15874ed8f542c04b8f6b82df842f075bf81f20dfdbd64a7e0a6d",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/devstral-2512": {
-    "provider": "mistral",
-    "model_id": "devstral-2512",
-    "display_name": "devstral-2512",
-    "mode": "chat",
-    "context_window": 256000,
-    "max_output_tokens": 256000,
-    "pricing": {
-      "input_per_m_tokens": 0.4,
-      "output_per_m_tokens": 2.0,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/news/devstral-2-vibe-cli",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "c3f5941f683910b64c8d0f2c0c87d95e9df1483ba25b1f5a173776385bfab271",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/devstral-latest": {
-    "provider": "mistral",
-    "model_id": "devstral-latest",
-    "display_name": "devstral-latest",
-    "mode": "chat",
-    "context_window": 256000,
-    "max_output_tokens": 256000,
-    "pricing": {
-      "input_per_m_tokens": 0.4,
-      "output_per_m_tokens": 2.0,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/news/devstral-2-vibe-cli",
-    "updated_at": "2026-02-28",
-    "tier": "flagship",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "6a029b97c051e1e870ede8b86650c67efb873eac6a7ebb4ee5ab873fdeed2838",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/devstral-medium-2507": {
-    "provider": "mistral",
-    "model_id": "devstral-medium-2507",
-    "display_name": "devstral-medium-2507",
-    "mode": "chat",
-    "context_window": 128000,
-    "max_output_tokens": 128000,
-    "pricing": {
-      "input_per_m_tokens": 0.4,
-      "output_per_m_tokens": 2.0,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/news/devstral",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "a90ecf29e845dc8b3b758a18d8a914d2743397bcb2b49ef93136bc16554923cf",
-        "snapshot_branch": "snapshots"
-      },
-      "context": {
-        "url": "https://models.dev/api.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-models_dev",
-        "snapshot_sha256": "41107eefd3a5b13e6912bc2540d7b03ea72cbea0c93a978da8fc47a6f816f954",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/devstral-medium-latest": {
-    "provider": "mistral",
-    "model_id": "devstral-medium-latest",
-    "display_name": "devstral-medium-latest",
-    "mode": "chat",
-    "context_window": 256000,
-    "max_output_tokens": 256000,
-    "pricing": {
-      "input_per_m_tokens": 0.4,
-      "output_per_m_tokens": 2.0,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/news/devstral-2-vibe-cli",
-    "updated_at": "2026-02-28",
-    "tier": "flagship",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "5a1b7c7dee7dd3871d0cdb8e851b5a8b2f6691edc69a97ea80bc2f8f6e07ded0",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/devstral-small-2505": {
-    "provider": "mistral",
-    "model_id": "devstral-small-2505",
-    "display_name": "devstral-small-2505",
-    "mode": "chat",
-    "context_window": 128000,
-    "max_output_tokens": 128000,
-    "pricing": {
-      "input_per_m_tokens": 0.1,
-      "output_per_m_tokens": 0.3,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/news/devstral",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "43a1c357ec683a1ba73e7cc569236ed4e389c19ff1a25acdcc527ebd33381db6",
-        "snapshot_branch": "snapshots"
-      },
-      "context": {
-        "url": "https://models.dev/api.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-models_dev",
-        "snapshot_sha256": "81aaaf142a5a00a577f39b8b96682c1b8773a9ba92a3404265223c964687315d",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/devstral-small-2507": {
-    "provider": "mistral",
-    "model_id": "devstral-small-2507",
-    "display_name": "devstral-small-2507",
-    "mode": "chat",
-    "context_window": 128000,
-    "max_output_tokens": 128000,
-    "pricing": {
-      "input_per_m_tokens": 0.1,
-      "output_per_m_tokens": 0.3,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/news/devstral",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "7ba5595a610ed00daf2b95ddfada49978ab309e047164bd9303e5ded7dc064ab",
-        "snapshot_branch": "snapshots"
-      },
-      "context": {
-        "url": "https://models.dev/api.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-models_dev",
-        "snapshot_sha256": "1a380d1f425314e442498a880bae37f49561b89205961f1d97e114e851346670",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/devstral-small-latest": {
-    "provider": "mistral",
-    "model_id": "devstral-small-latest",
-    "display_name": "devstral-small-latest",
-    "mode": "chat",
-    "context_window": 256000,
-    "max_output_tokens": 256000,
-    "pricing": {
-      "input_per_m_tokens": 0.1,
-      "output_per_m_tokens": 0.3,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://docs.mistral.ai/models/devstral-small-2-25-12",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "f05c95fd76e07636b9fea9b699cc581e07af38c1416834d337a8dac587c10dfe",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/labs-devstral-small-2512": {
-    "provider": "mistral",
-    "model_id": "labs-devstral-small-2512",
-    "display_name": "labs-devstral-small-2512",
-    "mode": "chat",
-    "context_window": 256000,
-    "max_output_tokens": 256000,
-    "pricing": {
-      "input_per_m_tokens": 0.1,
-      "output_per_m_tokens": 0.3,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://docs.mistral.ai/models/devstral-small-2-25-12",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "5bdf2f6b9b49ffdc80ab5bba81dcbc182bc42ce3f09ac3ae5d2a9ddc3c39c79b",
-        "snapshot_branch": "snapshots"
-      },
-      "context": {
-        "url": "https://models.dev/api.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-models_dev",
-        "snapshot_sha256": "269d02f11ae78bb7dce474e8c245e0ca537d44885fef786c3477ed54bf4dd7c4",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/magistral-medium-2506": {
-    "provider": "mistral",
-    "model_id": "magistral-medium-2506",
-    "display_name": "magistral-medium-2506",
-    "mode": "chat",
-    "context_window": 40000,
-    "max_output_tokens": 40000,
+    "context_window": 131072,
+    "max_output_tokens": 131072,
     "pricing": {
       "input_per_m_tokens": 2.0,
-      "output_per_m_tokens": 5.0,
+      "output_per_m_tokens": 10.0,
       "cache_read_per_m_tokens": null,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
@@ -807,276 +27,6 @@
       "function_calling": true,
       "parallel_tool_calls": false,
       "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": true,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/news/magistral",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "b7cfb49e33c782b81ca6d4745ea212b8bd082633435141a9c73f68202269e106",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/magistral-medium-2509": {
-    "provider": "mistral",
-    "model_id": "magistral-medium-2509",
-    "display_name": "magistral-medium-2509",
-    "mode": "chat",
-    "context_window": 40000,
-    "max_output_tokens": 40000,
-    "pricing": {
-      "input_per_m_tokens": 2.0,
-      "output_per_m_tokens": 5.0,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": true,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/news/magistral",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "b8512a3d9a94149b87158d58e846c999dbe921465e01c5ac9ec64b656e26ab82",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/magistral-medium-latest": {
-    "provider": "mistral",
-    "model_id": "magistral-medium-latest",
-    "display_name": "magistral-medium-latest",
-    "mode": "chat",
-    "context_window": 40000,
-    "max_output_tokens": 40000,
-    "pricing": {
-      "input_per_m_tokens": 2.0,
-      "output_per_m_tokens": 5.0,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": true,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/news/magistral",
-    "updated_at": "2026-02-28",
-    "tier": "flagship",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "59ce861d710a66377ac75a092f0d855062633363ed1f3e594f746778b10d24c6",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/magistral-small-2506": {
-    "provider": "mistral",
-    "model_id": "magistral-small-2506",
-    "display_name": "magistral-small-2506",
-    "mode": "chat",
-    "context_window": 40000,
-    "max_output_tokens": 40000,
-    "pricing": {
-      "input_per_m_tokens": 0.5,
-      "output_per_m_tokens": 1.5,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": true,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/pricing#api-pricing",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "12879cee91a7fd12f4483e7ce67c11206064cc409b8ed732f3f8a06b3299c119",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/magistral-small-latest": {
-    "provider": "mistral",
-    "model_id": "magistral-small-latest",
-    "display_name": "magistral-small-latest",
-    "mode": "chat",
-    "context_window": 40000,
-    "max_output_tokens": 40000,
-    "pricing": {
-      "input_per_m_tokens": 0.5,
-      "output_per_m_tokens": 1.5,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": true,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/pricing#api-pricing",
-    "updated_at": "2026-02-28",
-    "tier": "flagship",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "3b16d798cac608b39a66bd2c98e514cb65a9aab28db6b11f50f4b515bedb2326",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/mistral-embed": {
-    "provider": "mistral",
-    "model_id": "mistral-embed",
-    "display_name": "mistral-embed",
-    "mode": "embedding",
-    "context_window": 8192,
-    "max_output_tokens": 0,
-    "pricing": {
-      "input_per_m_tokens": 0.09999999999999999,
-      "output_per_m_tokens": null,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": 0.1,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": false,
-      "parallel_tool_calls": false,
-      "json_mode": false,
       "response_schema": false,
       "prompt_caching": false,
       "reasoning": false,
@@ -1089,30 +39,30 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "https://models.dev/mistral/mistral-embed",
-    "updated_at": "2026-07-06",
-    "tier": "flagship",
+    "source": "https://models.dev/xai/grok-2",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
         "verified_at": "2026-08-07",
         "confidence": "medium",
         "verified_by": "scraper-litellm",
-        "snapshot_sha256": "809dfc207da0ef9b2aa9a962dad34bebe0ab4eb780adc42e101112916d6b1428",
+        "snapshot_sha256": "d173c3cf2d61a9d6604ecb81406f4ae70a87986a99b228c0687f023979eff5ad",
         "snapshot_branch": "snapshots"
       }
     }
   },
-  "mistral/mistral-large-2402": {
-    "provider": "mistral",
-    "model_id": "mistral-large-2402",
-    "display_name": "mistral-large-2402",
+  "xai/grok-2-1212": {
+    "provider": "xai",
+    "model_id": "grok-2-1212",
+    "display_name": "grok-2-1212",
     "mode": "chat",
-    "context_window": 32000,
-    "max_output_tokens": 8191,
+    "context_window": 131072,
+    "max_output_tokens": 131072,
     "pricing": {
-      "input_per_m_tokens": 4.0,
-      "output_per_m_tokens": 12.0,
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 10.0,
       "cache_read_per_m_tokens": null,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
@@ -1131,7 +81,7 @@
       "function_calling": true,
       "parallel_tool_calls": false,
       "json_mode": true,
-      "response_schema": true,
+      "response_schema": false,
       "prompt_caching": false,
       "reasoning": false,
       "streaming": true,
@@ -1143,7 +93,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "https://mistral.ai/technology/",
+    "source": "https://models.dev/xai/grok-2-1212",
     "updated_at": "2026-02-28",
     "tier": "standard",
     "sources": {
@@ -1152,22 +102,238 @@
         "verified_at": "2026-08-07",
         "confidence": "medium",
         "verified_by": "scraper-litellm",
-        "snapshot_sha256": "2550fa1acea554026dbb3eb6c49aa3ec381c7c330a16afec3e633c730d246861",
+        "snapshot_sha256": "6e221a8e9e9ac3081e57cc6d8f918df190c66b9fa9198385d0ad6746f74dcf3a",
         "snapshot_branch": "snapshots"
       }
     }
   },
-  "mistral/mistral-large-2407": {
-    "provider": "mistral",
-    "model_id": "mistral-large-2407",
-    "display_name": "mistral-large-2407",
+  "xai/grok-2-latest": {
+    "provider": "xai",
+    "model_id": "grok-2-latest",
+    "display_name": "grok-2-latest",
     "mode": "chat",
-    "context_window": 128000,
-    "max_output_tokens": 128000,
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 10.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/xai/grok-2-latest",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "12fca9164a9b838b520311c66c266b95f9f754151504377b1c9d0d1ebc55a5b7",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-2-vision": {
+    "provider": "xai",
+    "model_id": "grok-2-vision",
+    "display_name": "grok-2-vision",
+    "mode": "chat",
+    "context_window": 32768,
+    "max_output_tokens": 32768,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 10.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/xai/grok-2-vision",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "cbd2e8627fba2fa6e0182260393b378d2465fe2811060f7a208a211cb624d317",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-2-vision-1212": {
+    "provider": "xai",
+    "model_id": "grok-2-vision-1212",
+    "display_name": "grok-2-vision-1212",
+    "mode": "chat",
+    "context_window": 32768,
+    "max_output_tokens": 32768,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 10.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "deprecated",
+      "deprecation_date": "2026-02-28",
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/xai/grok-2-vision-1212",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "ece597ca9c3ced4dde1ebf77c2a36beb35be8837efbc163973ace8b59bac96ae",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-2-vision-latest": {
+    "provider": "xai",
+    "model_id": "grok-2-vision-latest",
+    "display_name": "grok-2-vision-latest",
+    "mode": "chat",
+    "context_window": 32768,
+    "max_output_tokens": 32768,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 10.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/xai/grok-2-vision-latest",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "87a1e124e9b584350c6364fbde962b1372a99d39a761c56c4535707015f3de8f",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3": {
+    "provider": "xai",
+    "model_id": "grok-3",
+    "display_name": "grok-3",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
     "pricing": {
       "input_per_m_tokens": 3.0,
-      "output_per_m_tokens": 9.0,
-      "cache_read_per_m_tokens": null,
+      "output_per_m_tokens": 15.0,
+      "cache_read_per_m_tokens": 0.75,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -1185,7 +351,7 @@
       "function_calling": true,
       "parallel_tool_calls": false,
       "json_mode": true,
-      "response_schema": true,
+      "response_schema": false,
       "prompt_caching": false,
       "reasoning": false,
       "streaming": true,
@@ -1197,7 +363,61 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "https://mistral.ai/technology/",
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "f5c960be4d4100ffec774bc04e80025a4bee46bfcd329b3980e8c05436284c2a",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-beta": {
+    "provider": "xai",
+    "model_id": "grok-3-beta",
+    "display_name": "grok-3-beta",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 15.0,
+      "cache_read_per_m_tokens": 0.75,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
     "updated_at": "2026-02-28",
     "tier": "standard",
     "sources": {
@@ -1206,21 +426,507 @@
         "verified_at": "2026-08-07",
         "confidence": "medium",
         "verified_by": "scraper-litellm",
-        "snapshot_sha256": "0ce610ca7bb4d3be8a5d875fd4faf8ca8f06ecaade110a31af720a3fe1fbad15",
+        "snapshot_sha256": "872942a2e30cb451d5549ac2362105b466351e85ea7ea4edb93a9a469e25e9ac",
         "snapshot_branch": "snapshots"
       }
     }
   },
-  "mistral/mistral-large-2411": {
-    "provider": "mistral",
-    "model_id": "mistral-large-2411",
-    "display_name": "mistral-large-2411",
+  "xai/grok-3-fast-beta": {
+    "provider": "xai",
+    "model_id": "grok-3-fast-beta",
+    "display_name": "grok-3-fast-beta",
     "mode": "chat",
-    "context_window": 128000,
-    "max_output_tokens": 128000,
+    "context_window": 131072,
+    "max_output_tokens": 131072,
     "pricing": {
-      "input_per_m_tokens": 2.0,
-      "output_per_m_tokens": 6.0,
+      "input_per_m_tokens": 5.0,
+      "output_per_m_tokens": 25.0,
+      "cache_read_per_m_tokens": 1.25,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "2bd3db7acbc1fe3aeb466387a64e71f22990f00d72f50c27bef49f13ee82bedf",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-fast-latest": {
+    "provider": "xai",
+    "model_id": "grok-3-fast-latest",
+    "display_name": "grok-3-fast-latest",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 5.0,
+      "output_per_m_tokens": 25.0,
+      "cache_read_per_m_tokens": 1.25,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "5d34e650a7d5dd1279f52e8c66b385428c006deadd179ca9369a69c2474db9bf",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-latest": {
+    "provider": "xai",
+    "model_id": "grok-3-latest",
+    "display_name": "grok-3-latest",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 15.0,
+      "cache_read_per_m_tokens": 0.75,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "90ccb08c4137532c6a99c3f1e4f2ca7e9d943239fc926b13849db3b0e913cab9",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-mini": {
+    "provider": "xai",
+    "model_id": "grok-3-mini",
+    "display_name": "grok-3-mini",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.3,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.075,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "deprecated",
+      "deprecation_date": "2026-02-28",
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "ba3147333ea24e1a64062eb8cf015aa9893b1437b617d80bf4190a493bfea4f0",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-mini-beta": {
+    "provider": "xai",
+    "model_id": "grok-3-mini-beta",
+    "display_name": "grok-3-mini-beta",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.3,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.075,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "deprecated",
+      "deprecation_date": "2026-02-28",
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "25b9aa638ea3501ac294fd164348d36d151a1bfd6a73e5fccfd25e3112ef677d",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-mini-fast": {
+    "provider": "xai",
+    "model_id": "grok-3-mini-fast",
+    "display_name": "grok-3-mini-fast",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.6,
+      "output_per_m_tokens": 4.0,
+      "cache_read_per_m_tokens": 0.15,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "91aefd886b58c02431bff8ee6c043ca37ca108b5bdfe33666c47a62fb05053ef",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-mini-fast-beta": {
+    "provider": "xai",
+    "model_id": "grok-3-mini-fast-beta",
+    "display_name": "grok-3-mini-fast-beta",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.6,
+      "output_per_m_tokens": 4.0,
+      "cache_read_per_m_tokens": 0.15,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "3700c5793d0df1c65cb6089c401d816aedc30bb565a13c48d143896acc9e91f9",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-mini-fast-latest": {
+    "provider": "xai",
+    "model_id": "grok-3-mini-fast-latest",
+    "display_name": "grok-3-mini-fast-latest",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.6,
+      "output_per_m_tokens": 4.0,
+      "cache_read_per_m_tokens": 0.15,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "4ef65b07aec5f50c316d9fa648decccdd84f4f3c7bdf55536e5a3423468724ac",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-mini-latest": {
+    "provider": "xai",
+    "model_id": "grok-3-mini-latest",
+    "display_name": "grok-3-mini-latest",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.3,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.075,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "86cefcf74000bf644ac2f6e5ee7778ea081cf2a602c587b9d41eff5fb943abe1",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4": {
+    "provider": "xai",
+    "model_id": "grok-4",
+    "display_name": "grok-4",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 15.0,
       "cache_read_per_m_tokens": null,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
@@ -1239,6 +945,168 @@
       "function_calling": true,
       "parallel_tool_calls": false,
       "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "c083c929cc83304119b9a4e2a0c9929842eba6bf9a99e9d3b6fa7c3b67a76981",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4-0709": {
+    "provider": "xai",
+    "model_id": "grok-4-0709",
+    "display_name": "grok-4-0709",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 15.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "658b6955e41d501a540be504b1564097271237eda24e95c73ea014223cd86e61",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4-1-fast": {
+    "provider": "xai",
+    "model_id": "grok-4-1-fast",
+    "display_name": "grok-4-1-fast",
+    "mode": "chat",
+    "context_window": 2000000,
+    "max_output_tokens": 2000000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.05,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": true,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models/grok-4-1-fast-reasoning",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "0821410466b9a653a0eec7029880885e25c9053f0c1ed1dbf759fe89445cfc05",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4-1-fast-non-reasoning": {
+    "provider": "xai",
+    "model_id": "grok-4-1-fast-non-reasoning",
+    "display_name": "grok-4-1-fast-non-reasoning",
+    "mode": "chat",
+    "context_window": 2000000,
+    "max_output_tokens": 2000000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.05,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": true,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
       "response_schema": true,
       "prompt_caching": false,
       "reasoning": false,
@@ -1251,30 +1119,354 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "https://models.dev/mistral/mistral-large-2411",
+    "source": "https://docs.x.ai/docs/models/grok-4-1-fast-non-reasoning",
     "updated_at": "2026-02-28",
     "tier": "standard",
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
         "verified_at": "2026-08-07",
-        "confidence": "high",
+        "confidence": "medium",
         "verified_by": "scraper-litellm",
-        "snapshot_sha256": "7294beb5bc1962fad7345465f91892171f22264f4d4327919e09ae54a05b4b26",
+        "snapshot_sha256": "d85070ea03d40ab3cc7eae6cf673344f8dda0ae06336da09ec9250837df80b1b",
         "snapshot_branch": "snapshots"
       }
     }
   },
-  "mistral/mistral-large-2512": {
-    "provider": "mistral",
-    "model_id": "mistral-large-2512",
-    "display_name": "mistral-large-2512",
+  "xai/grok-4-1-fast-non-reasoning-latest": {
+    "provider": "xai",
+    "model_id": "grok-4-1-fast-non-reasoning-latest",
+    "display_name": "grok-4-1-fast-non-reasoning-latest",
+    "mode": "chat",
+    "context_window": 2000000,
+    "max_output_tokens": 2000000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.05,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": true,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models/grok-4-1-fast-non-reasoning",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "8ccaf661db51171eb04b6cfd4e06833825334225cf7d1bfef637f0df0af2a060",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4-1-fast-reasoning": {
+    "provider": "xai",
+    "model_id": "grok-4-1-fast-reasoning",
+    "display_name": "grok-4-1-fast-reasoning",
+    "mode": "chat",
+    "context_window": 2000000,
+    "max_output_tokens": 2000000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.05,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": true,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models/grok-4-1-fast-reasoning",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "9230676bb480c53dd25776ee52462bae497083b5bd36d621971cefb080e80b52",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4-1-fast-reasoning-latest": {
+    "provider": "xai",
+    "model_id": "grok-4-1-fast-reasoning-latest",
+    "display_name": "grok-4-1-fast-reasoning-latest",
+    "mode": "chat",
+    "context_window": 2000000,
+    "max_output_tokens": 2000000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.05,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": true,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models/grok-4-1-fast-reasoning",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "cbdc726ab9739b9e2499b36c0db14c52b4b94c4780cb76ee567075ec0c921423",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4-fast-non-reasoning": {
+    "provider": "xai",
+    "model_id": "grok-4-fast-non-reasoning",
+    "display_name": "grok-4-fast-non-reasoning",
+    "mode": "chat",
+    "context_window": 2000000,
+    "max_output_tokens": 2000000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.05,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "cc88443f0827616f28d0c269c765e86c9328d5f7c7e61186555d55c613bb3857",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4-fast-reasoning": {
+    "provider": "xai",
+    "model_id": "grok-4-fast-reasoning",
+    "display_name": "grok-4-fast-reasoning",
+    "mode": "chat",
+    "context_window": 2000000,
+    "max_output_tokens": 2000000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.05,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "9e8827fe982af5aabcad0886cdff59ff2e2153f31f6495f39e1408c88232d469",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4-latest": {
+    "provider": "xai",
+    "model_id": "grok-4-latest",
+    "display_name": "grok-4-latest",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 15.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "5ea004a1f8fc4dff48b048777660690a62fabda7212a19c99f9d47400372dd90",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4.20-0309-non-reasoning": {
+    "provider": "xai",
+    "model_id": "grok-4.20-0309-non-reasoning",
+    "display_name": "grok-4.20-0309-non-reasoning",
     "mode": "chat",
     "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": 0.5,
-      "output_per_m_tokens": 1.5,
+      "input_per_m_tokens": 1.25,
+      "output_per_m_tokens": 2.5,
       "cache_read_per_m_tokens": null,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
@@ -1306,300 +1498,108 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "fe68fac23894648eec91be65c4bc476f1ff27a0b6273196bfc2209c829524ed5",
-        "snapshot_branch": "snapshots"
-      }
-    }
+    "updated_at": "2026-08-17",
+    "tier": "standard"
   },
-  "mistral/mistral-large-3": {
-    "provider": "mistral",
-    "model_id": "mistral-large-3",
-    "display_name": "mistral-large-3",
-    "mode": "chat",
-    "context_window": 256000,
-    "max_output_tokens": 8191,
-    "pricing": {
-      "input_per_m_tokens": 0.5,
-      "output_per_m_tokens": 1.5,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": true,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://docs.mistral.ai/models/mistral-large-3-25-12",
-    "updated_at": "2026-02-28",
-    "tier": "flagship",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "6d2c650b9c137906cd1001d8bb70ced16f6b6b7cf137bb7dd800398feea5723e",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/mistral-large-latest": {
-    "provider": "mistral",
-    "model_id": "mistral-large-latest",
-    "display_name": "mistral-large-latest",
-    "mode": "chat",
-    "context_window": 128000,
-    "max_output_tokens": 128000,
-    "pricing": {
-      "input_per_m_tokens": 0.5,
-      "output_per_m_tokens": 1.5,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://models.dev/mistral/mistral-large-latest",
-    "updated_at": "2026-07-06",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "a5f2e6ecbfc680f72cc812c45ec4a426558683e74c49c359bd902a528153900a",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/mistral-medium": {
-    "provider": "mistral",
-    "model_id": "mistral-medium",
-    "display_name": "mistral-medium",
-    "mode": "chat",
-    "context_window": 32000,
-    "max_output_tokens": 8191,
-    "pricing": {
-      "input_per_m_tokens": 2.7,
-      "output_per_m_tokens": 8.1,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": false,
-      "parallel_tool_calls": false,
-      "json_mode": false,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/technology/",
-    "updated_at": "2026-02-28",
-    "tier": "flagship",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "c6f21626c47b8eee8d891f94c205917cf8159a7a6bea9887c701ea2d34eb9340",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/mistral-medium-2312": {
-    "provider": "mistral",
-    "model_id": "mistral-medium-2312",
-    "display_name": "mistral-medium-2312",
-    "mode": "chat",
-    "context_window": 32000,
-    "max_output_tokens": 8191,
-    "pricing": {
-      "input_per_m_tokens": 2.7,
-      "output_per_m_tokens": 8.1,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": false,
-      "parallel_tool_calls": false,
-      "json_mode": false,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/technology/",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "53c15cf6787f3d20a55e056d48ccf18d1f0bf4ac63f74ea76bb090432cecff42",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/mistral-medium-2505": {
-    "provider": "mistral",
-    "model_id": "mistral-medium-2505",
-    "display_name": "mistral-medium-2505",
-    "mode": "chat",
-    "context_window": 131072,
-    "max_output_tokens": 8191,
-    "pricing": {
-      "input_per_m_tokens": 0.4,
-      "output_per_m_tokens": 2.0,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://models.dev/mistral/mistral-medium-2505",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "4e91eb6bd53368ca39f61d0d5692adf594a1d4d7f4e03c1739a0b3fccb7cf943",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/mistral-medium-2508": {
-    "provider": "mistral",
-    "model_id": "mistral-medium-2508",
-    "display_name": "mistral-medium-2508",
+  "xai/grok-4.20-0309-reasoning": {
+    "provider": "xai",
+    "model_id": "grok-4.20-0309-reasoning",
+    "display_name": "grok-4.20-0309-reasoning",
     "mode": "chat",
     "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": 0.39999999999999997,
-      "output_per_m_tokens": 2.0,
+      "input_per_m_tokens": 1.25,
+      "output_per_m_tokens": 2.5,
       "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-17",
+    "tier": "standard"
+  },
+  "xai/grok-4.20-multi-agent-0309": {
+    "provider": "xai",
+    "model_id": "grok-4.20-multi-agent-0309",
+    "display_name": "grok-4.20-multi-agent-0309",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.25,
+      "output_per_m_tokens": 2.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-17",
+    "tier": "standard"
+  },
+  "xai/grok-4.3": {
+    "provider": "xai",
+    "model_id": "grok-4.3",
+    "display_name": "grok-4.3",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.25,
+      "output_per_m_tokens": 2.5,
+      "cache_read_per_m_tokens": 0.19999999999999998,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -1638,288 +1638,22 @@
         "verified_at": "2026-08-07",
         "confidence": "high",
         "verified_by": "scraper-litellm",
-        "snapshot_sha256": "bc73203843625be5c3f49c481e30491f7264c7ce007230c3583dd4d78cbe0878",
+        "snapshot_sha256": "ab77c04a12790ed298911d5fca68a13b63759da21d7d2e5360ee29666a15087c",
         "snapshot_branch": "snapshots"
       }
     }
   },
-  "mistral/mistral-medium-2604": {
-    "provider": "mistral",
-    "model_id": "mistral-medium-2604",
-    "display_name": "mistral-medium-2604",
+  "xai/grok-4.5": {
+    "provider": "xai",
+    "model_id": "grok-4.5",
+    "display_name": "grok-4.5",
     "mode": "chat",
     "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": 1.5,
-      "output_per_m_tokens": 7.5,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": false,
-      "parallel_tool_calls": false,
-      "json_mode": false,
-      "response_schema": false,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": false,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "preview",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "auto:litellm+models_dev",
-    "updated_at": "2026-07-06",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "696a4aac699fd9d9c23f25b7d01754ed45be2c8b347f9e423bea65b14a1c69ea",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/mistral-medium-latest": {
-    "provider": "mistral",
-    "model_id": "mistral-medium-latest",
-    "display_name": "mistral-medium-latest",
-    "mode": "chat",
-    "context_window": 131072,
-    "max_output_tokens": 8191,
-    "pricing": {
-      "input_per_m_tokens": 1.5,
-      "output_per_m_tokens": 7.5,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://models.dev/mistral/mistral-medium-latest",
-    "updated_at": "2026-07-06",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "e277f2c2cf6bb192cbe9f2684ccd516ddaec58f9d5191e02ce40508153461ab7",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/mistral-ocr-2505-completion": {
-    "provider": "mistral",
-    "model_id": "mistral-ocr-2505-completion",
-    "display_name": "mistral-ocr-2505-completion",
-    "mode": "chat",
-    "context_window": 0,
-    "max_output_tokens": 0,
-    "pricing": {
-      "input_per_m_tokens": null,
-      "output_per_m_tokens": null,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": false,
-      "parallel_tool_calls": false,
-      "json_mode": false,
-      "response_schema": false,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/pricing#api-pricing",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://mistral.ai/pricing#api-pricing",
-        "verified_at": "2026-02-28",
-        "confidence": "low",
-        "verified_by": "import:v1"
-      }
-    }
-  },
-  "mistral/mistral-ocr-latest": {
-    "provider": "mistral",
-    "model_id": "mistral-ocr-latest",
-    "display_name": "mistral-ocr-latest",
-    "mode": "chat",
-    "context_window": 0,
-    "max_output_tokens": 0,
-    "pricing": {
-      "input_per_m_tokens": null,
-      "output_per_m_tokens": null,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": false,
-      "parallel_tool_calls": false,
-      "json_mode": false,
-      "response_schema": false,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/pricing#api-pricing",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://mistral.ai/pricing#api-pricing",
-        "verified_at": "2026-02-28",
-        "confidence": "low",
-        "verified_by": "import:v1"
-      }
-    }
-  },
-  "mistral/mistral-small": {
-    "provider": "mistral",
-    "model_id": "mistral-small",
-    "display_name": "mistral-small",
-    "mode": "chat",
-    "context_window": 32000,
-    "max_output_tokens": 8191,
-    "pricing": {
-      "input_per_m_tokens": 0.1,
-      "output_per_m_tokens": 0.3,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/technology/",
-    "updated_at": "2026-02-28",
-    "tier": "flagship",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "f42a0a761e39c7e61d13a8bd4f3ba452d4ecf85b2533f95b7d337a098c09bdfe",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/mistral-small-2603": {
-    "provider": "mistral",
-    "model_id": "mistral-small-2603",
-    "display_name": "mistral-small-2603",
-    "mode": "chat",
-    "context_window": 0,
-    "max_output_tokens": 0,
-    "pricing": {
-      "input_per_m_tokens": 0.15,
-      "output_per_m_tokens": 0.6,
-      "cache_read_per_m_tokens": null,
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 6.0,
+      "cache_read_per_m_tokens": 0.3,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -1954,131 +1688,23 @@
     "tier": "standard",
     "sources": {
       "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-17",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "e0c62651fda58393f0049a6dc4a2c438d0fa6617666e4162af590040b26d7d8f",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/mistral-small-latest": {
-    "provider": "mistral",
-    "model_id": "mistral-small-latest",
-    "display_name": "mistral-small-latest",
-    "mode": "chat",
-    "context_window": 32000,
-    "max_output_tokens": 8191,
-    "pricing": {
-      "input_per_m_tokens": 0.1,
-      "output_per_m_tokens": 0.3,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://models.dev/mistral/mistral-small-latest",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://models.dev/mistral/mistral-small-latest",
-        "verified_at": "2026-02-28",
+        "url": "auto:litellm+models_dev",
+        "verified_at": "2026-07-13",
         "confidence": "low",
         "verified_by": "import:v1"
       }
     }
   },
-  "mistral/mistral-tiny": {
-    "provider": "mistral",
-    "model_id": "mistral-tiny",
-    "display_name": "mistral-tiny",
+  "xai/grok-4.6": {
+    "provider": "xai",
+    "model_id": "grok-4.6",
+    "display_name": "grok-4.6",
     "mode": "chat",
-    "context_window": 32000,
-    "max_output_tokens": 8191,
+    "context_window": 0,
+    "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": 0.25,
-      "output_per_m_tokens": 0.25,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": false,
-      "parallel_tool_calls": false,
-      "json_mode": false,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/technology/",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "9f24dc368dac572332caa02ddd0514dd57567ea6ccaed2f31754ecb7c43202ec",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/open-codestral-mamba": {
-    "provider": "mistral",
-    "model_id": "open-codestral-mamba",
-    "display_name": "open-codestral-mamba",
-    "mode": "chat",
-    "context_window": 256000,
-    "max_output_tokens": 256000,
-    "pricing": {
-      "input_per_m_tokens": 0.25,
-      "output_per_m_tokens": 0.25,
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 6.0,
       "cache_read_per_m_tokens": null,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
@@ -2100,317 +1726,29 @@
       "response_schema": false,
       "prompt_caching": false,
       "reasoning": false,
-      "streaming": true,
+      "streaming": false,
       "finetuneable": false
     },
     "lifecycle": {
-      "status": "ga",
+      "status": "preview",
       "deprecation_date": null,
       "sunset_date": null,
       "successor": null
     },
-    "source": "https://mistral.ai/technology/",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "7452580ff0536390da422bb7b8efbaeac59b4388e109c8c497ecf6270e01dc60",
-        "snapshot_branch": "snapshots"
-      }
-    }
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-17",
+    "tier": "standard"
   },
-  "mistral/open-mistral-7b": {
-    "provider": "mistral",
-    "model_id": "open-mistral-7b",
-    "display_name": "open-mistral-7b",
+  "xai/grok-beta": {
+    "provider": "xai",
+    "model_id": "grok-beta",
+    "display_name": "grok-beta",
     "mode": "chat",
-    "context_window": 32000,
-    "max_output_tokens": 8191,
+    "context_window": 131072,
+    "max_output_tokens": 131072,
     "pricing": {
-      "input_per_m_tokens": 0.25,
-      "output_per_m_tokens": 0.25,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": false,
-      "parallel_tool_calls": false,
-      "json_mode": false,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://models.dev/mistral/open-mistral-7b",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "6302be54740d2c1862b9944c9d323d0e387e18551976aa5ffc591e4a5ec7282d",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/open-mistral-nemo": {
-    "provider": "mistral",
-    "model_id": "open-mistral-nemo",
-    "display_name": "open-mistral-nemo",
-    "mode": "chat",
-    "context_window": 128000,
-    "max_output_tokens": 128000,
-    "pricing": {
-      "input_per_m_tokens": 0.3,
-      "output_per_m_tokens": 0.3,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": false,
-      "parallel_tool_calls": false,
-      "json_mode": false,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/technology/",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "27ac51c7eeb1ed448232e5d46a0db14d0253f0f9779ab80354ba02963632ff5b",
-        "snapshot_branch": "snapshots"
-      },
-      "context": {
-        "url": "https://models.dev/api.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-models_dev",
-        "snapshot_sha256": "3fcd7a968e1f0267aeb9d462f1abac3ce3c6951b4690ab37f718697daa7d1d6f",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/open-mistral-nemo-2407": {
-    "provider": "mistral",
-    "model_id": "open-mistral-nemo-2407",
-    "display_name": "open-mistral-nemo-2407",
-    "mode": "chat",
-    "context_window": 128000,
-    "max_output_tokens": 128000,
-    "pricing": {
-      "input_per_m_tokens": 0.3,
-      "output_per_m_tokens": 0.3,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": false,
-      "parallel_tool_calls": false,
-      "json_mode": false,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://mistral.ai/technology/",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "739ef464b44b3b40f39ac8e4abc69fec3c2153713f15ab7bafd93a25834e7ae1",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/open-mixtral-8x22b": {
-    "provider": "mistral",
-    "model_id": "open-mixtral-8x22b",
-    "display_name": "open-mixtral-8x22b",
-    "mode": "chat",
-    "context_window": 65336,
-    "max_output_tokens": 8191,
-    "pricing": {
-      "input_per_m_tokens": 2.0,
-      "output_per_m_tokens": 6.0,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://models.dev/mistral/open-mixtral-8x22b",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "dd6ce9bebc492679cb9b4848cc4376b1d138d883813585eed11ed19f23722004",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/open-mixtral-8x7b": {
-    "provider": "mistral",
-    "model_id": "open-mixtral-8x7b",
-    "display_name": "open-mixtral-8x7b",
-    "mode": "chat",
-    "context_window": 32000,
-    "max_output_tokens": 8191,
-    "pricing": {
-      "input_per_m_tokens": 0.7,
-      "output_per_m_tokens": 0.7,
-      "cache_read_per_m_tokens": null,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": false,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
-      "prompt_caching": false,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://models.dev/mistral/open-mixtral-8x7b",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "f02cef4ef6f9606bfdcaf4051f4eb26529d8ba6f319a96e540e3c7cda5369992",
-        "snapshot_branch": "snapshots"
-      }
-    }
-  },
-  "mistral/pixtral-12b-2409": {
-    "provider": "mistral",
-    "model_id": "pixtral-12b-2409",
-    "display_name": "pixtral-12b-2409",
-    "mode": "chat",
-    "context_window": 128000,
-    "max_output_tokens": 128000,
-    "pricing": {
-      "input_per_m_tokens": 0.15,
-      "output_per_m_tokens": 0.15,
+      "input_per_m_tokens": 5.0,
+      "output_per_m_tokens": 15.0,
       "cache_read_per_m_tokens": null,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
@@ -2429,7 +1767,7 @@
       "function_calling": true,
       "parallel_tool_calls": false,
       "json_mode": true,
-      "response_schema": true,
+      "response_schema": false,
       "prompt_caching": false,
       "reasoning": false,
       "streaming": true,
@@ -2441,7 +1779,7 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "https://mistral.ai/technology/",
+    "source": "https://models.dev/xai/grok-beta",
     "updated_at": "2026-02-28",
     "tier": "standard",
     "sources": {
@@ -2450,21 +1788,21 @@
         "verified_at": "2026-08-07",
         "confidence": "medium",
         "verified_by": "scraper-litellm",
-        "snapshot_sha256": "8172906eeb18de285ff471347f57f70b87b153f483aae18a9ab746ba3e46bbc5",
+        "snapshot_sha256": "e68fee5951de9787e52dd91c59951f5410f16ab0c026eac4696fe1f9ecd52e8a",
         "snapshot_branch": "snapshots"
       }
     }
   },
-  "mistral/pixtral-large-2411": {
-    "provider": "mistral",
-    "model_id": "pixtral-large-2411",
-    "display_name": "pixtral-large-2411",
+  "xai/grok-build-0.1": {
+    "provider": "xai",
+    "model_id": "grok-build-0.1",
+    "display_name": "grok-build-0.1",
     "mode": "chat",
-    "context_window": 128000,
-    "max_output_tokens": 128000,
+    "context_window": 0,
+    "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": 2.0,
-      "output_per_m_tokens": 6.0,
+      "input_per_m_tokens": 1.0,
+      "output_per_m_tokens": 2.0,
       "cache_read_per_m_tokens": null,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
@@ -2477,49 +1815,39 @@
       "finetune_output_per_m_tokens": null
     },
     "capabilities": {
-      "vision": true,
+      "vision": false,
       "audio_input": false,
       "audio_output": false,
-      "function_calling": true,
+      "function_calling": false,
       "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": true,
+      "json_mode": false,
+      "response_schema": false,
       "prompt_caching": false,
       "reasoning": false,
-      "streaming": true,
+      "streaming": false,
       "finetuneable": false
     },
     "lifecycle": {
-      "status": "ga",
+      "status": "preview",
       "deprecation_date": null,
       "sunset_date": null,
       "successor": null
     },
-    "source": "https://mistral.ai/technology/",
-    "updated_at": "2026-02-28",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "b27f9b8455534ea92358eda105270a8af3278a8244c229cbbbce22313474b095",
-        "snapshot_branch": "snapshots"
-      }
-    }
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-17",
+    "tier": "standard"
   },
-  "mistral/pixtral-large-latest": {
-    "provider": "mistral",
-    "model_id": "pixtral-large-latest",
-    "display_name": "pixtral-large-latest",
+  "xai/grok-code-fast": {
+    "provider": "xai",
+    "model_id": "grok-code-fast",
+    "display_name": "grok-code-fast",
     "mode": "chat",
-    "context_window": 128000,
-    "max_output_tokens": 128000,
+    "context_window": 256000,
+    "max_output_tokens": 256000,
     "pricing": {
-      "input_per_m_tokens": 2.0,
-      "output_per_m_tokens": 6.0,
-      "cache_read_per_m_tokens": null,
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 1.5,
+      "cache_read_per_m_tokens": 0.02,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -2531,15 +1859,15 @@
       "finetune_output_per_m_tokens": null
     },
     "capabilities": {
-      "vision": true,
+      "vision": false,
       "audio_input": false,
       "audio_output": false,
       "function_calling": true,
       "parallel_tool_calls": false,
       "json_mode": true,
-      "response_schema": true,
+      "response_schema": false,
       "prompt_caching": false,
-      "reasoning": false,
+      "reasoning": true,
       "streaming": true,
       "finetuneable": false
     },
@@ -2549,24 +1877,178 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "https://models.dev/mistral/pixtral-large-latest",
+    "source": "https://docs.x.ai/docs/models",
     "updated_at": "2026-02-28",
     "tier": "flagship",
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
         "verified_at": "2026-08-07",
-        "confidence": "high",
+        "confidence": "medium",
         "verified_by": "scraper-litellm",
-        "snapshot_sha256": "f50529c9fd66e884f2f7f2222c6b6532da21be26658983bce1e9d4fa257b862b",
+        "snapshot_sha256": "747605131976746842f995ba6ebe59ceabf3581eff3dd22d8162581707f92472",
         "snapshot_branch": "snapshots"
-      },
-      "context": {
-        "url": "https://models.dev/api.json",
+      }
+    }
+  },
+  "xai/grok-code-fast-1": {
+    "provider": "xai",
+    "model_id": "grok-code-fast-1",
+    "display_name": "grok-code-fast-1",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 1.5,
+      "cache_read_per_m_tokens": 0.02,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
         "verified_at": "2026-08-07",
         "confidence": "medium",
-        "verified_by": "scraper-models_dev",
-        "snapshot_sha256": "283da4b6634e5dab12009851ed02d782b19251e6e30e9bf1b69f6fbdd53f099b",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "c3138f19edd300234a4c0078227b0a833bb555fbcf0d3d89f05e3441400b3c5e",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-code-fast-1-0825": {
+    "provider": "xai",
+    "model_id": "grok-code-fast-1-0825",
+    "display_name": "grok-code-fast-1-0825",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 1.5,
+      "cache_read_per_m_tokens": 0.02,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "9609fa0c5fe063f560ae013642a94eb876e5ad59b14347c6e32833248aa8d467",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-vision-beta": {
+    "provider": "xai",
+    "model_id": "grok-vision-beta",
+    "display_name": "grok-vision-beta",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "pricing": {
+      "input_per_m_tokens": 5.0,
+      "output_per_m_tokens": 15.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/xai/grok-vision-beta",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "78030c764a0e3c43652871a66ec19ced4cbac92d07b9cb124acdd4ffd0d354ff",
         "snapshot_branch": "snapshots"
       }
     }
