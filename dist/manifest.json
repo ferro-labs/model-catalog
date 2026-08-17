@@ -1,10 +1,10 @@
 {
   "version": "v2026.08.17",
   "schema_version": 1,
-  "generated_at": "2026-08-17T07:03:07Z",
+  "generated_at": "2026-08-17T07:08:24Z",
   "catalog_sha256": "925e3819fe16b70aee7788e3bf16a9df8177c791c3eaf6730e68860d978ff864",
   "catalog_url": "/v1/925e3819fe16b70aee7788e3bf16a9df8177c791c3eaf6730e68860d978ff864.json",
-  "git_sha": "dec21473d51a34236bed0b86849b0f40ff1460e1",
+  "git_sha": "5b83ace22b3e21c2a386709b3632cb65017751d3",
   "providers": [
     {
       "id": "ai21",
