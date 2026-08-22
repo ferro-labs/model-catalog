@@ -1,7 +1,7 @@
 provider: azure
 model_id: gpt-5.1-codex-2025-11-13
 display_name: gpt-5.1-codex-2025-11-13
-mode: chat
+mode: responses
 context_window: 272000
 max_output_tokens: 128000
 pricing:

@@ -1,7 +1,7 @@
 provider: openai
 model_id: babbage-002
 display_name: babbage-002
-mode: chat
+mode: completion
 context_window: 16384
 max_output_tokens: 4096
 pricing:

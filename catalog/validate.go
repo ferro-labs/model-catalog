@@ -17,14 +17,6 @@ type ValidationError struct {
 	Message string
 }
 
-var validModes = map[string]bool{
-	"chat":      true,
-	"embedding": true,
-	"image":     true,
-	"audio_in":  true,
-	"audio_out": true,
-}
-
 var validStatuses = map[string]bool{
 	"preview":    true,
 	"ga":         true,
@@ -219,11 +211,11 @@ func validateEntry(entry Entry, filePath, providersDir string, presence yamlPres
 	}
 
 	// Mode enum
-	if entry.Mode != "" && !validModes[entry.Mode] {
+	if entry.Mode != "" && !IsValidMode(entry.Mode) {
 		errs = append(errs, ValidationError{
 			File:    filePath,
 			Field:   "mode",
-			Message: fmt.Sprintf("invalid value %q; must be one of: chat, embedding, image, audio_in, audio_out", entry.Mode),
+			Message: fmt.Sprintf("invalid value %q; must be one of: %s", entry.Mode, strings.Join(ModeValues(), ", ")),
 		})
 	}
 

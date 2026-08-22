@@ -1,147 +1,15 @@
 {
-  "neuralwatt/kimi-k2.6": {
-    "provider": "neuralwatt",
-    "model_id": "kimi-k2.6",
-    "display_name": "Kimi K2.6",
-    "mode": "chat",
-    "context_window": 262128,
+  "runwayml/eleven_multilingual_v2": {
+    "provider": "runwayml",
+    "model_id": "eleven_multilingual_v2",
+    "display_name": "eleven_multilingual_v2",
+    "mode": "audio_out",
+    "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": 0.69,
-      "output_per_m_tokens": 3.22,
-      "cache_read_per_m_tokens": 0.1725,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": true,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": false,
-      "prompt_caching": true,
-      "reasoning": true,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://api.neuralwatt.com/v1/models",
-    "updated_at": "2026-07-05",
-    "tier": "standard"
-  },
-  "neuralwatt/kimi-k2.6-fast": {
-    "provider": "neuralwatt",
-    "model_id": "kimi-k2.6-fast",
-    "display_name": "Kimi K2.6 Fast",
-    "mode": "chat",
-    "context_window": 262128,
-    "max_output_tokens": 0,
-    "pricing": {
-      "input_per_m_tokens": 0.69,
-      "output_per_m_tokens": 3.22,
-      "cache_read_per_m_tokens": 0.1725,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": true,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": false,
-      "prompt_caching": true,
-      "reasoning": false,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://api.neuralwatt.com/v1/models",
-    "updated_at": "2026-07-05",
-    "tier": "standard"
-  },
-  "neuralwatt/kimi-k2.7-code": {
-    "provider": "neuralwatt",
-    "model_id": "kimi-k2.7-code",
-    "display_name": "Kimi K2.7 Code",
-    "mode": "chat",
-    "context_window": 262128,
-    "max_output_tokens": 0,
-    "pricing": {
-      "input_per_m_tokens": 0.95,
-      "output_per_m_tokens": 4.0,
-      "cache_read_per_m_tokens": 0.2375,
-      "cache_write_per_m_tokens": null,
-      "reasoning_per_m_tokens": null,
-      "image_per_tile": null,
-      "audio_input_per_minute": null,
-      "audio_output_per_character": null,
-      "embedding_per_m_tokens": null,
-      "finetune_train_per_m_tokens": null,
-      "finetune_input_per_m_tokens": null,
-      "finetune_output_per_m_tokens": null
-    },
-    "capabilities": {
-      "vision": true,
-      "audio_input": false,
-      "audio_output": false,
-      "function_calling": true,
-      "parallel_tool_calls": false,
-      "json_mode": true,
-      "response_schema": false,
-      "prompt_caching": true,
-      "reasoning": true,
-      "streaming": true,
-      "finetuneable": false
-    },
-    "lifecycle": {
-      "status": "ga",
-      "deprecation_date": null,
-      "sunset_date": null,
-      "successor": null
-    },
-    "source": "https://api.neuralwatt.com/v1/models",
-    "updated_at": "2026-07-05",
-    "tier": "standard"
-  },
-  "neuralwatt/qwen3.5-397b": {
-    "provider": "neuralwatt",
-    "model_id": "qwen3.5-397b",
-    "display_name": "Qwen3.5 397B",
-    "mode": "chat",
-    "context_window": 262128,
-    "max_output_tokens": 0,
-    "pricing": {
-      "input_per_m_tokens": 0.69,
-      "output_per_m_tokens": 4.14,
-      "cache_read_per_m_tokens": 0.1725,
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -156,12 +24,12 @@
       "vision": false,
       "audio_input": false,
       "audio_output": false,
-      "function_calling": true,
+      "function_calling": false,
       "parallel_tool_calls": false,
-      "json_mode": true,
+      "json_mode": false,
       "response_schema": false,
-      "prompt_caching": true,
-      "reasoning": true,
+      "prompt_caching": false,
+      "reasoning": false,
       "streaming": true,
       "finetuneable": false
     },
@@ -171,21 +39,29 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "https://api.neuralwatt.com/v1/models",
-    "updated_at": "2026-07-05",
-    "tier": "standard"
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://docs.dev.runwayml.com/guides/pricing/",
+        "verified_at": "2026-02-28",
+        "confidence": "low",
+        "verified_by": "import:v1"
+      }
+    }
   },
-  "neuralwatt/qwen3.5-397b-fast": {
-    "provider": "neuralwatt",
-    "model_id": "qwen3.5-397b-fast",
-    "display_name": "Qwen3.5 397B Fast",
-    "mode": "chat",
-    "context_window": 262128,
+  "runwayml/gen3a_turbo": {
+    "provider": "runwayml",
+    "model_id": "gen3a_turbo",
+    "display_name": "gen3a_turbo",
+    "mode": "video",
+    "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": 0.69,
-      "output_per_m_tokens": 4.14,
-      "cache_read_per_m_tokens": 0.1725,
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -200,11 +76,11 @@
       "vision": false,
       "audio_input": false,
       "audio_output": false,
-      "function_calling": true,
+      "function_calling": false,
       "parallel_tool_calls": false,
-      "json_mode": true,
+      "json_mode": false,
       "response_schema": false,
-      "prompt_caching": true,
+      "prompt_caching": false,
       "reasoning": false,
       "streaming": true,
       "finetuneable": false
@@ -215,21 +91,29 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "https://api.neuralwatt.com/v1/models",
-    "updated_at": "2026-07-05",
-    "tier": "standard"
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://docs.dev.runwayml.com/guides/pricing/",
+        "verified_at": "2026-02-28",
+        "confidence": "low",
+        "verified_by": "import:v1"
+      }
+    }
   },
-  "neuralwatt/qwen3.6-35b": {
-    "provider": "neuralwatt",
-    "model_id": "qwen3.6-35b",
-    "display_name": "Qwen3.6 35B",
-    "mode": "chat",
-    "context_window": 131056,
+  "runwayml/gen4_aleph": {
+    "provider": "runwayml",
+    "model_id": "gen4_aleph",
+    "display_name": "gen4_aleph",
+    "mode": "video",
+    "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": 0.29,
-      "output_per_m_tokens": 1.15,
-      "cache_read_per_m_tokens": 0.0725,
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -241,15 +125,15 @@
       "finetune_output_per_m_tokens": null
     },
     "capabilities": {
-      "vision": true,
+      "vision": false,
       "audio_input": false,
       "audio_output": false,
-      "function_calling": true,
+      "function_calling": false,
       "parallel_tool_calls": false,
-      "json_mode": true,
+      "json_mode": false,
       "response_schema": false,
-      "prompt_caching": true,
-      "reasoning": true,
+      "prompt_caching": false,
+      "reasoning": false,
       "streaming": true,
       "finetuneable": false
     },
@@ -259,21 +143,133 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "https://api.neuralwatt.com/v1/models",
-    "updated_at": "2026-07-05",
-    "tier": "standard"
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://docs.dev.runwayml.com/guides/pricing/",
+        "verified_at": "2026-02-28",
+        "confidence": "low",
+        "verified_by": "import:v1"
+      }
+    }
   },
-  "neuralwatt/qwen3.6-35b-fast": {
-    "provider": "neuralwatt",
-    "model_id": "qwen3.6-35b-fast",
-    "display_name": "Qwen3.6 35B Fast",
-    "mode": "chat",
-    "context_window": 131056,
+  "runwayml/gen4_image": {
+    "provider": "runwayml",
+    "model_id": "gen4_image",
+    "display_name": "gen4_image",
+    "mode": "image",
+    "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": 0.29,
-      "output_per_m_tokens": 1.15,
-      "cache_read_per_m_tokens": 0.0725,
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": 0.05,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://docs.dev.runwayml.com/guides/pricing/",
+        "verified_at": "2026-02-28",
+        "confidence": "low",
+        "verified_by": "import:v1"
+      }
+    }
+  },
+  "runwayml/gen4_image_turbo": {
+    "provider": "runwayml",
+    "model_id": "gen4_image_turbo",
+    "display_name": "gen4_image_turbo",
+    "mode": "image",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": 0.02,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://docs.dev.runwayml.com/guides/pricing/",
+        "verified_at": "2026-02-28",
+        "confidence": "low",
+        "verified_by": "import:v1"
+      }
+    }
+  },
+  "runwayml/gen4_turbo": {
+    "provider": "runwayml",
+    "model_id": "gen4_turbo",
+    "display_name": "gen4_turbo",
+    "mode": "video",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -285,14 +281,14 @@
       "finetune_output_per_m_tokens": null
     },
     "capabilities": {
-      "vision": true,
+      "vision": false,
       "audio_input": false,
       "audio_output": false,
-      "function_calling": true,
+      "function_calling": false,
       "parallel_tool_calls": false,
-      "json_mode": true,
+      "json_mode": false,
       "response_schema": false,
-      "prompt_caching": true,
+      "prompt_caching": false,
       "reasoning": false,
       "streaming": true,
       "finetuneable": false
@@ -303,8 +299,16 @@
       "sunset_date": null,
       "successor": null
     },
-    "source": "https://api.neuralwatt.com/v1/models",
-    "updated_at": "2026-07-05",
-    "tier": "standard"
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://docs.dev.runwayml.com/guides/pricing/",
+        "verified_at": "2026-02-28",
+        "confidence": "low",
+        "verified_by": "import:v1"
+      }
+    }
   }
 }

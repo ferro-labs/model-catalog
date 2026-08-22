@@ -7,7 +7,7 @@
 - **Module**: `github.com/ferro-labs/model-catalog`
 - **Go version**: 1.24+
 - **License**: Apache 2.0
-- **Data**: 2,541 models across 83 providers <!-- drift-ok -->
+- **Data**: 2,551 models across 83 providers <!-- drift-ok -->
 
 ---
 
@@ -94,7 +94,7 @@ model-catalog/
 │       ├── openrouter.go       # OpenRouter /api/v1/models
 │       └── models_dev.go       # models.dev /api.json
 ├── internal/cli/               # Cobra command wiring (thin wrappers, not importable)
-├── providers/                  # Source of truth — 2,541 per-model YAML files <!-- drift-ok -->
+├── providers/                  # Source of truth — 2,551 per-model YAML files <!-- drift-ok -->
 ├── dist/                       # Generated artifacts (do not edit manually)
 │   ├── catalog.json            # Full flat catalog
 │   ├── manifest.json           # Version, SHA-256 hashes, stats
@@ -110,6 +110,7 @@ model-catalog/
 | File | Role |
 |------|------|
 | `catalog/types.go` | Core types: `Entry`, `NullFloat64`, `Pricing`, `Capabilities`, `Lifecycle` |
+| `catalog/mode.go` | Endpoint-contract mode constants and the canonical enum |
 | `catalog/build.go` | `Build()` — walks providers/, resolves extends, generates dist/ |
 | `catalog/extends.go` | `ResolveExtends()` — deep-merge wrapper models onto base entries |
 | `catalog/json.go` | `ReadCatalogJSON()`, `WriteCatalogJSON()` — sorted keys, 2-space indent |
@@ -131,7 +132,7 @@ model-catalog/
 
 ### Extends inheritance
 
-Wrapper models (e.g., `vertex_ai/gemini-2.0-flash`) use `extends: gemini/gemini-2.0-flash` to inherit from base models. The build resolves inheritance and emits fully-merged entries. Max chain depth = 1. Mode cannot be overridden. 269 wrappers currently use this pattern.
+Wrapper models (e.g., `vertex_ai/gemini-2.0-flash`) use `extends: gemini/gemini-2.0-flash` to inherit from base models. The build resolves inheritance and emits fully-merged entries. Max chain depth = 1. A wrapper may override `mode` when its provider exposes a different invocation contract. 269 wrappers currently use this pattern.
 
 ### NullFloat64
 
@@ -150,7 +151,8 @@ Model IDs with `/` become `__`, `:` becomes `_` in filenames. The `SanitizeFilen
 ## Data Conventions
 
 - **Pricing**: USD per 1,000,000 tokens. `null` = not applicable. `0` = free.
-- **Mode**: `chat`, `embedding`, `image`, `audio_in`, `audio_out`
+- **Mode**: `chat`, `completion`, `responses`, `embedding`, `image`, `audio_in`, `audio_out`, `video`, `realtime`, `agent`, `ocr`, `rerank`, `moderation`, `tool`
+- **Mode semantics**: provider invocation endpoint/request contract; never infer it from the model name, pricing fields, capabilities, media, or lifecycle
 - **Status**: `preview`, `ga`, `deprecated`, `sunset`, `legacy`
 - **Tier**: `flagship`, `standard`
 - **Provider ID**: lowercase snake_case, must match folder name
@@ -166,7 +168,7 @@ Create `providers/<provider>/models/<model-id>.yaml` with all required fields. S
 
 ### Add a wrapper model (extends)
 
-Create a YAML file with `extends: <base-provider>/<model-id>`, plus `provider`, `model_id`, all 12 pricing fields, and all 11 capability fields. The build resolves the rest from the base.
+Create a YAML file with `extends: <base-provider>/<model-id>`, plus `provider`, `model_id`, all 12 pricing fields, and all 11 capability fields. Add `mode` only when the wrapper provider uses a different endpoint contract. The build resolves the rest from the base.
 
 ### Run the full pipeline
 
@@ -203,5 +205,5 @@ Minimal by design — only two direct dependencies.
 - Add providers or models to `dist/` — edit `providers/` YAML instead
 - Use `*float64` for pricing — use `NullFloat64` (preserves `.0` in JSON)
 - Create extends chains deeper than 1 level
-- Override `mode` in an extends wrapper
+- Override `mode` in an extends wrapper without direct provider endpoint evidence
 - Add paid infrastructure dependencies — everything must run on free tiers

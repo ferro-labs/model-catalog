@@ -185,7 +185,7 @@ func TestResolveExtendsMaxDepth(t *testing.T) {
 	}
 }
 
-func TestResolveExtendsModeCantChange(t *testing.T) {
+func TestResolveExtendsModeCanReflectWrapperProviderContract(t *testing.T) {
 	entries := map[string]Entry{
 		"anthropic/claude-sonnet-4-5": {
 			Provider:    "anthropic",
@@ -193,21 +193,21 @@ func TestResolveExtendsModeCantChange(t *testing.T) {
 			Mode:        "chat",
 			DisplayName: "Claude Sonnet 4.5",
 		},
-		"vertex_ai/claude-sonnet-4-5": {
+		"gateway/claude-sonnet-4-5": {
 			Extends:     "anthropic/claude-sonnet-4-5",
-			Provider:    "vertex_ai",
+			Provider:    "gateway",
 			ModelID:     "claude-sonnet-4-5",
-			DisplayName: "Claude Sonnet 4.5 (Vertex)",
+			DisplayName: "Claude Sonnet 4.5 (Gateway)",
 			Mode:        "embedding", // different from base
 		},
 	}
 
-	_, err := ResolveExtends(entries)
-	if err == nil {
-		t.Fatal("expected error for mode change, got nil")
+	resolved, err := ResolveExtends(entries)
+	if err != nil {
+		t.Fatalf("ResolveExtends() error: %v", err)
 	}
-	if !strings.Contains(err.Error(), "mode cannot be overridden") {
-		t.Errorf("error message does not mention mode override: %v", err)
+	if got := resolved["gateway/claude-sonnet-4-5"].Mode; got != "embedding" {
+		t.Errorf("wrapper mode = %q, want embedding", got)
 	}
 }
 

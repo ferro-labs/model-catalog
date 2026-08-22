@@ -1,7 +1,7 @@
 provider: openai
 model_id: gpt-5.1-codex-max
 display_name: gpt-5.1-codex-max
-mode: chat
+mode: responses
 context_window: 272000
 max_output_tokens: 128000
 pricing:

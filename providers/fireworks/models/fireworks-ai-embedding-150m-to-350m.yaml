@@ -1,7 +1,7 @@
 provider: fireworks
 model_id: fireworks-ai-embedding-150m-to-350m
 display_name: fireworks-ai-embedding-150m-to-350m
-mode: chat
+mode: embedding
 context_window: 0
 max_output_tokens: 0
 pricing:

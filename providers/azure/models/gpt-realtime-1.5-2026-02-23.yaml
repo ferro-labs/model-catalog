@@ -1,7 +1,7 @@
 provider: azure
 model_id: gpt-realtime-1.5-2026-02-23
 display_name: gpt-realtime-1.5-2026-02-23
-mode: chat
+mode: realtime
 context_window: 32000
 max_output_tokens: 4096
 pricing:

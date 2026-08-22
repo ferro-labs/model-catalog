@@ -1,7 +1,7 @@
 provider: gemini
 model_id: deep-research-pro-preview-12-2025
 display_name: deep-research-pro-preview-12-2025
-mode: image
+mode: agent
 context_window: 65536
 max_output_tokens: 32768
 pricing:

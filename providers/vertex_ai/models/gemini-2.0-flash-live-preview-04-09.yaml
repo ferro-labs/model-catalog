@@ -1,7 +1,7 @@
 provider: vertex_ai
 model_id: gemini-2.0-flash-live-preview-04-09
 display_name: gemini-2.0-flash-live-preview-04-09
-mode: chat
+mode: realtime
 context_window: 1048576
 max_output_tokens: 65535
 pricing:

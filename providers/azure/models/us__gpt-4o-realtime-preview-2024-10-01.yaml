@@ -1,7 +1,7 @@
 provider: azure
 model_id: us/gpt-4o-realtime-preview-2024-10-01
 display_name: us/gpt-4o-realtime-preview-2024-10-01
-mode: chat
+mode: realtime
 context_window: 128000
 max_output_tokens: 4096
 pricing:

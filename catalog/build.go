@@ -198,7 +198,7 @@ func generateProviderSlicesAndManifest(entries map[string]Entry, catalogJSON []b
 
 	manifest := Manifest{
 		Version:       version,
-		SchemaVersion: 1,
+		SchemaVersion: CatalogSchemaVersion,
 		GeneratedAt:   now.Format(time.RFC3339),
 		CatalogSHA256: catalogHash,
 		CatalogURL:    "/v1/" + catalogHash + ".json",

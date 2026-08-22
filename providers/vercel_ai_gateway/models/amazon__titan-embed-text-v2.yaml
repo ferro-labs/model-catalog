@@ -1,7 +1,7 @@
 provider: vercel_ai_gateway
 model_id: amazon/titan-embed-text-v2
 display_name: amazon/titan-embed-text-v2
-mode: chat
+mode: embedding
 context_window: 0
 max_output_tokens: 0
 pricing:

@@ -1,7 +1,7 @@
 provider: mistral
 model_id: mistral-ocr-latest
 display_name: mistral-ocr-latest
-mode: chat
+mode: ocr
 context_window: 0
 max_output_tokens: 0
 pricing:

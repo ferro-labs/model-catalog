@@ -1,7 +1,7 @@
 provider: azure
 model_id: codex-mini
 display_name: codex-mini
-mode: chat
+mode: responses
 context_window: 200000
 max_output_tokens: 100000
 pricing:

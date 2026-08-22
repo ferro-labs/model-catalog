@@ -1,7 +1,7 @@
 provider: bedrock
 model_id: stability.stable-image-inpaint-v1:0
 display_name: stability.stable-image-inpaint-v1:0
-mode: chat
+mode: image
 context_window: 77
 max_output_tokens: 0
 pricing:

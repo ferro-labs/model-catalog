@@ -55,7 +55,7 @@
     "provider": "runwayml",
     "model_id": "gen3a_turbo",
     "display_name": "gen3a_turbo",
-    "mode": "chat",
+    "mode": "video",
     "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
@@ -107,7 +107,7 @@
     "provider": "runwayml",
     "model_id": "gen4_aleph",
     "display_name": "gen4_aleph",
-    "mode": "chat",
+    "mode": "video",
     "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
@@ -263,7 +263,7 @@
     "provider": "runwayml",
     "model_id": "gen4_turbo",
     "display_name": "gen4_turbo",
-    "mode": "chat",
+    "mode": "video",
     "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {

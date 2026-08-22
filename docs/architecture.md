@@ -146,7 +146,7 @@ Each model is a single YAML file at `providers/<provider>/models/<model-id>.yaml
 provider: openai                    # Must match folder name
 model_id: gpt-4o                    # Provider's canonical model ID
 display_name: GPT-4o
-mode: chat                          # chat | embedding | image | audio_in | audio_out
+mode: chat                          # Provider endpoint/request contract
 context_window: 128000
 max_output_tokens: 16384
 pricing:
@@ -183,6 +183,29 @@ source: https://openai.com/api/pricing
 updated_at: "2026-04-30"
 tier: flagship                      # flagship | standard
 ```
+
+### Endpoint-contract modes
+
+`mode` is orthogonal to capabilities, pricing, media, and lifecycle. It records the provider request contract required to invoke the entry:
+
+| Mode | Contract |
+|---|---|
+| `chat` | Message-based chat or generate-content request |
+| `completion` | Legacy prompt completion |
+| `responses` | OpenAI-compatible Responses API |
+| `embedding` | Vector embedding |
+| `image` | Image generation or edit |
+| `audio_in` | Transcription or speech-to-text |
+| `audio_out` | Speech generation or text-to-speech |
+| `video` | Video generation or transformation |
+| `realtime` | Bidirectional Realtime or Live session |
+| `agent` | Provider-managed autonomous agent/workflow |
+| `ocr` | Dedicated document OCR |
+| `rerank` | Dedicated reranking |
+| `moderation` | Dedicated moderation |
+| `tool` | Provider tool/service resource retained in the catalog |
+
+When a general model supports multiple endpoints, use the provider-native/default contract unless a specialized endpoint is required. Provider wrappers may override their base mode when the wrapper provider exposes a different contract.
 
 ### Pricing conventions
 
@@ -236,7 +259,7 @@ tier: standard
 2. **Deep merge** — wrapper scalars win if non-empty, ints win if non-zero
 3. **Pricing** — full replacement (wrapper must specify all 12 fields)
 4. **Capabilities** — full replacement (bare bools can't distinguish "not set" from "false")
-5. **Mode cannot be overridden** — a chat model can't become embedding via extends
+5. **Mode is provider-specific** — wrapper mode wins when set, so a provider chat wrapper can differ from a Responses-only base
 6. **`extends` stripped from output** — consumers see a flat catalog, no inheritance metadata
 
 ### Current coverage
@@ -265,13 +288,13 @@ tier: standard
 ```json
 {
   "version": "v2026.04.30",
-  "schema_version": 1,
+  "schema_version": 2,
   "generated_at": "2026-04-30T12:00:00Z",
   "catalog_sha256": "af3860ac...",
   "providers": [
     { "id": "openai", "model_count": 162, "sha256": "1a2b3c..." }
   ],
-  "stats": { "total_models": 2505, "total_providers": 83 }
+  "stats": { "total_models": 2551, "total_providers": 83 }
 }
 ```
 
@@ -293,7 +316,7 @@ Structural correctness checks (CI gate — blocks merge on failure):
 |-------|------|
 | Required fields | `provider`, `model_id`, `display_name`, `mode` must be non-empty |
 | Provider match | `entry.Provider` must equal the containing folder name |
-| Mode enum | `chat`, `embedding`, `image`, `audio_in`, `audio_out` |
+| Mode enum | `chat`, `completion`, `responses`, `embedding`, `image`, `audio_in`, `audio_out`, `video`, `realtime`, `agent`, `ocr`, `rerank`, `moderation`, `tool` |
 | Status enum | `preview`, `ga`, `deprecated`, `sunset`, `legacy` |
 | Tier enum | `flagship`, `standard` |
 | Extends skip | `display_name` and `mode` not required for entries with `extends` |

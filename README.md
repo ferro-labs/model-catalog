@@ -12,7 +12,7 @@
     <a href="https://github.com/ferro-labs/model-catalog/actions/workflows/build.yml"><img src="https://github.com/ferro-labs/model-catalog/actions/workflows/build.yml/badge.svg" alt="Build" /></a>
   </p>
   <p>
-    <strong>2,541 models</strong> &middot; <strong>83 providers</strong> &middot; <strong>Updated weekly</strong> &middot; <strong>Zero paid infrastructure</strong> <!-- drift-ok -->
+    <strong>2,551 models</strong> &middot; <strong>83 providers</strong> &middot; <strong>Updated weekly</strong> &middot; <strong>Zero paid infrastructure</strong> <!-- drift-ok -->
   </p>
 </div>
 
@@ -86,6 +86,8 @@ source: https://openai.com/api/pricing
 updated_at: "2026-04-30"
 tier: flagship                      # flagship | standard
 ```
+
+`mode` is the provider invocation endpoint or request contract, not a capability label. Schema version 2 accepts `chat`, `completion`, `responses`, `embedding`, `image`, `audio_in`, `audio_out`, `video`, `realtime`, `agent`, `ocr`, `rerank`, `moderation`, and `tool`.
 
 ### Providers
 
@@ -255,7 +257,7 @@ curl -sLO https://github.com/ferro-labs/model-catalog/releases/latest/download/p
 
 ### Extends inheritance
 
-When Vertex AI hosts Gemini or Azure hosts OpenAI, the wrapper model inherits from the base and overrides only what differs. A single price update to GPT-4o propagates to azure/gpt-4o, azure_openai/gpt-4o, and github_copilot/gpt-4o automatically.
+When Vertex AI hosts Gemini or Azure hosts OpenAI, the wrapper model inherits from the base and overrides only what differs. A single price update to GPT-4o propagates to azure/gpt-4o, azure_openai/gpt-4o, and github_copilot/gpt-4o automatically. A wrapper can override `mode` when its provider exposes a different endpoint contract—for example, a provider chat product wrapping a Responses-only base.
 
 269 wrapper models currently use this pattern.
 

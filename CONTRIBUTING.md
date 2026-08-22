@@ -78,7 +78,7 @@ CI will run `validate`, `lint`, and a dry-run `build` automatically.
 | `provider` | Yes | Must match folder name |
 | `model_id` | Yes | Provider's canonical model ID |
 | `display_name` | Yes | Human-readable name |
-| `mode` | Yes | `chat`, `embedding`, `image`, `audio_in`, `audio_out` |
+| `mode` | Yes | Provider invocation endpoint/request contract; see below |
 | `pricing.*` | Yes | USD per 1M tokens. `null` = not applicable. `0` = free. |
 | `capabilities.*` | Yes | Boolean flags |
 | `lifecycle.status` | Yes | `preview`, `ga`, `deprecated`, `sunset`, `legacy` |
@@ -86,9 +86,30 @@ CI will run `validate`, `lint`, and a dry-run `build` automatically.
 | `source` | Recommended | URL where you verified the data |
 | `updated_at` | Recommended | `YYYY-MM-DD` |
 
+### Endpoint-contract modes
+
+Choose `mode` from official provider endpoint documentation. Do not derive it from the model name, pricing units, input/output media, capability flags, or lifecycle:
+
+| Mode | Contract |
+|---|---|
+| `chat` | Message-based chat or generate-content request |
+| `completion` | Legacy prompt completion |
+| `responses` | OpenAI-compatible Responses API |
+| `embedding` | Vector embedding |
+| `image` | Image generation or edit |
+| `audio_in` | Transcription or speech-to-text |
+| `audio_out` | Speech generation or text-to-speech |
+| `video` | Video generation or transformation |
+| `realtime` | Bidirectional Realtime or Live session |
+| `agent` | Provider-managed autonomous agent/workflow |
+| `ocr` | Dedicated document OCR |
+| `rerank` | Dedicated reranking |
+| `moderation` | Dedicated moderation |
+| `tool` | Provider tool/service resource retained in the catalog |
+
 ## Wrapper Models (extends)
 
-If a provider hosts another provider's model (e.g., Vertex AI hosting Gemini), use `extends`:
+If a provider hosts another provider's model (e.g., Vertex AI hosting Gemini), use `extends`. Add `mode` to the wrapper only when direct provider documentation proves its invocation contract differs from the base:
 
 ```yaml
 # providers/vertex_ai/models/gemini-2.0-flash.yaml

@@ -1,7 +1,7 @@
 provider: gemini
 model_id: veo-3.0-generate-preview
 display_name: veo-3.0-generate-preview
-mode: chat
+mode: video
 context_window: 1024
 max_output_tokens: 0
 pricing:

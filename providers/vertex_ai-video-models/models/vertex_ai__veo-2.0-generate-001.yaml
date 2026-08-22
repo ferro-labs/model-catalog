@@ -1,7 +1,7 @@
 provider: vertex_ai-video-models
 model_id: vertex_ai/veo-2.0-generate-001
 display_name: vertex_ai/veo-2.0-generate-001
-mode: chat
+mode: video
 context_window: 1024
 max_output_tokens: 0
 pricing:

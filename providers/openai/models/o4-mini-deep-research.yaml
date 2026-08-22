@@ -1,7 +1,7 @@
 provider: openai
 model_id: o4-mini-deep-research
 display_name: o4-mini-deep-research
-mode: chat
+mode: responses
 context_window: 200000
 max_output_tokens: 100000
 pricing:

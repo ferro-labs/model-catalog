@@ -7,7 +7,7 @@ import "fmt"
 // Rules:
 //   - Max chain depth = 1 (wrapper cannot extend another wrapper)
 //   - Deep merge: wrapper scalars win, maps merge recursively
-//   - Mode cannot be overridden
+//   - Wrapper mode wins when set, because provider contracts can differ
 //   - Provider and ModelID are always required in the wrapper
 func ResolveExtends(entries map[string]Entry) (map[string]Entry, error) {
 	resolved := make(map[string]Entry, len(entries))
@@ -52,11 +52,6 @@ func ResolveExtends(entries map[string]Entry) (map[string]Entry, error) {
 func mergeEntries(base, wrapper Entry) (Entry, error) {
 	result := base
 
-	// Mode cannot be overridden: if wrapper sets a different mode, error.
-	if wrapper.Mode != "" && wrapper.Mode != base.Mode {
-		return Entry{}, fmt.Errorf("mode cannot be overridden: base=%q, wrapper=%q", base.Mode, wrapper.Mode)
-	}
-
 	// String fields: wrapper wins if non-empty.
 	if wrapper.Provider != "" {
 		result.Provider = wrapper.Provider
@@ -76,7 +71,9 @@ func mergeEntries(base, wrapper Entry) (Entry, error) {
 	if wrapper.Tier != "" {
 		result.Tier = wrapper.Tier
 	}
-	// Mode is kept from base (already validated it can't change).
+	if wrapper.Mode != "" {
+		result.Mode = wrapper.Mode
+	}
 
 	// Int fields: wrapper wins if non-zero.
 	if wrapper.ContextWindow != 0 {

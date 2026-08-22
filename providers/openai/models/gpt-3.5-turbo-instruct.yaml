@@ -1,7 +1,7 @@
 provider: openai
 model_id: gpt-3.5-turbo-instruct
 display_name: gpt-3.5-turbo-instruct
-mode: chat
+mode: completion
 context_window: 8192
 max_output_tokens: 4096
 pricing:

@@ -1,7 +1,7 @@
 provider: gemini
 model_id: gemini-2.0-flash-preview-image-generation
 display_name: gemini-2.0-flash-preview-image-generation
-mode: chat
+mode: image
 context_window: 1048576
 max_output_tokens: 8192
 pricing:

@@ -1,7 +1,7 @@
 provider: gemini
 model_id: gemini-live-2.5-flash-preview-native-audio-09-2025
 display_name: gemini-live-2.5-flash-preview-native-audio-09-2025
-mode: chat
+mode: realtime
 context_window: 1048576
 max_output_tokens: 65535
 pricing:

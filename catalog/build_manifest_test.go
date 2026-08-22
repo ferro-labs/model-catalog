@@ -133,8 +133,8 @@ func TestBuildGeneratesManifest(t *testing.T) {
 	}
 
 	// Check schema version
-	if manifest.SchemaVersion != 1 {
-		t.Errorf("schema_version = %d, want 1", manifest.SchemaVersion)
+	if manifest.SchemaVersion != 2 {
+		t.Errorf("schema_version = %d, want 2", manifest.SchemaVersion)
 	}
 
 	// Check version format (CalVer)

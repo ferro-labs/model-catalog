@@ -82,7 +82,7 @@ func TestValidateProviders_InvalidMode(t *testing.T) {
 		Provider:    "openai",
 		ModelID:     "bad-mode-model",
 		DisplayName: "Bad Mode Model",
-		Mode:        "video",
+		Mode:        "telepathy",
 		Lifecycle:   Lifecycle{Status: "ga"},
 		Tier:        "standard",
 	})
@@ -99,8 +99,8 @@ func TestValidateProviders_InvalidMode(t *testing.T) {
 	if errs[0].Field != "mode" {
 		t.Errorf("expected field 'mode', got %q", errs[0].Field)
 	}
-	if !strings.Contains(errs[0].Message, "video") {
-		t.Errorf("expected message to contain 'video', got %q", errs[0].Message)
+	if !strings.Contains(errs[0].Message, "telepathy") {
+		t.Errorf("expected message to contain 'telepathy', got %q", errs[0].Message)
 	}
 }
 
@@ -258,7 +258,22 @@ func TestValidateProviders_MultipleErrors(t *testing.T) {
 func TestValidateProviders_AllModes(t *testing.T) {
 	tmpDir := t.TempDir()
 
-	modes := []string{"chat", "embedding", "image", "audio_in", "audio_out"}
+	modes := []string{
+		"chat",
+		"completion",
+		"responses",
+		"embedding",
+		"image",
+		"audio_in",
+		"audio_out",
+		"video",
+		"realtime",
+		"agent",
+		"ocr",
+		"rerank",
+		"moderation",
+		"tool",
+	}
 	for _, mode := range modes {
 		writeTestModel(t, tmpDir, "testprovider", mode+".yaml", Entry{
 			Provider:    "testprovider",

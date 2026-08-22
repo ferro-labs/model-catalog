@@ -7,6 +7,10 @@ import (
 	"path/filepath"
 )
 
+// CatalogSchemaVersion identifies the generated catalog contract. Version 2
+// expands mode from five values to endpoint-contract taxonomy.
+const CatalogSchemaVersion = 2
+
 // ManifestFilename is the manifest file name within a dist directory.
 const ManifestFilename = "manifest.json"
 

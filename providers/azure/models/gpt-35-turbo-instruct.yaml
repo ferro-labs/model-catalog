@@ -1,7 +1,7 @@
 provider: azure
 model_id: gpt-35-turbo-instruct
 display_name: gpt-35-turbo-instruct
-mode: chat
+mode: completion
 context_window: 4097
 max_output_tokens: 0
 pricing:

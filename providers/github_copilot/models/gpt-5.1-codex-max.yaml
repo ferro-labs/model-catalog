@@ -2,6 +2,7 @@ extends: openai/gpt-5.1-codex-max
 provider: github_copilot
 model_id: gpt-5.1-codex-max
 display_name: gpt-5.1-codex-max
+mode: chat
 context_window: 128000
 pricing:
     input_per_m_tokens: null

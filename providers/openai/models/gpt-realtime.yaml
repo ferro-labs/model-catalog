@@ -1,7 +1,7 @@
 provider: openai
 model_id: gpt-realtime
 display_name: gpt-realtime
-mode: chat
+mode: realtime
 context_window: 32000
 max_output_tokens: 4096
 pricing:
