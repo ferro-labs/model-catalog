@@ -1,0 +1,1 @@
+{"provider":"deepseek","model_id":"deepseek-v4-flash","source_url":"https://models.dev/api.json","input_per_m_tokens":0.14,"output_per_m_tokens":0.28,"cache_read_per_m_tokens":0.0028}
