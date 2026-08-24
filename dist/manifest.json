@@ -1,10 +1,10 @@
 {
-  "version": "v2026.08.22",
+  "version": "v2026.08.24",
   "schema_version": 2,
-  "generated_at": "2026-08-22T08:12:40Z",
-  "catalog_sha256": "16ea8256cf7243b1e0450b9612fd97ba451b8805b9e50c766e5f33dda8741539",
-  "catalog_url": "/v1/16ea8256cf7243b1e0450b9612fd97ba451b8805b9e50c766e5f33dda8741539.json",
-  "git_sha": "292d1b3d13c546bf17747ff7d22b5769da598980",
+  "generated_at": "2026-08-24T07:05:46Z",
+  "catalog_sha256": "366ddca479341dc40d472873f7291b1a253cb77bb2dd5646e60ae0e7d9150cbf",
+  "catalog_url": "/v1/366ddca479341dc40d472873f7291b1a253cb77bb2dd5646e60ae0e7d9150cbf.json",
+  "git_sha": "f17137e2ef805777f6903767ae6e03ee41c80ce6",
   "providers": [
     {
       "id": "ai21",
@@ -90,8 +90,8 @@
     {
       "id": "azure",
       "model_count": 238,
-      "sha256": "2931f71aa30480c9dbb2f495cee8cac49075c8bf4c05a98e1c80a4e447172563",
-      "url": "/v1/providers/azure/2931f71aa30480c9dbb2f495cee8cac49075c8bf4c05a98e1c80a4e447172563.json",
+      "sha256": "55773777c9bc9313b66ec5003e1cdd12b9e6b94912ec31c39c3c4c7d4a0d01da",
+      "url": "/v1/providers/azure/55773777c9bc9313b66ec5003e1cdd12b9e6b94912ec31c39c3c4c7d4a0d01da.json",
       "display_name": "Azure OpenAI",
       "category": "cloud",
       "description": "OpenAI models via Microsoft Azure",
@@ -171,9 +171,9 @@
     },
     {
       "id": "databricks",
-      "model_count": 28,
-      "sha256": "eba6a1e1f3ab8aabc5122b7a5d08719dec62b31048a9e7b24a6ebe5da6165b15",
-      "url": "/v1/providers/databricks/eba6a1e1f3ab8aabc5122b7a5d08719dec62b31048a9e7b24a6ebe5da6165b15.json",
+      "model_count": 29,
+      "sha256": "faf4d398e21779c6ce9582d3db83e956036b37932917b3433e23b5d08a73c01c",
+      "url": "/v1/providers/databricks/faf4d398e21779c6ce9582d3db83e956036b37932917b3433e23b5d08a73c01c.json",
       "display_name": "Databricks",
       "category": "cloud",
       "description": "Foundation Model APIs on Databricks",
@@ -203,8 +203,8 @@
     {
       "id": "deepseek",
       "model_count": 8,
-      "sha256": "759e341a1a33b74429b33f9a67f5bf4fb4e9f43596ce87a928e1fef232786e63",
-      "url": "/v1/providers/deepseek/759e341a1a33b74429b33f9a67f5bf4fb4e9f43596ce87a928e1fef232786e63.json",
+      "sha256": "737569558260b4e97f53f06334ddc57867c2e6d91e115853f678f8103696446d",
+      "url": "/v1/providers/deepseek/737569558260b4e97f53f06334ddc57867c2e6d91e115853f678f8103696446d.json",
       "display_name": "DeepSeek",
       "logo_url": "https://www.deepseek.com/favicon.svg",
       "category": "open-source",
@@ -409,8 +409,8 @@
     {
       "id": "mistral",
       "model_count": 47,
-      "sha256": "d2686cc0493b23151057a7fed305171551dc28c3b8c1fd535eede839c05e05ee",
-      "url": "/v1/providers/mistral/d2686cc0493b23151057a7fed305171551dc28c3b8c1fd535eede839c05e05ee.json",
+      "sha256": "7038655d192947bfd551602dbe07286d4c4e7be60cfaa8ed08dc1462f51352c9",
+      "url": "/v1/providers/mistral/7038655d192947bfd551602dbe07286d4c4e7be60cfaa8ed08dc1462f51352c9.json",
       "display_name": "Mistral AI",
       "logo_url": "https://mistral.ai/favicon.svg",
       "category": "frontier",
@@ -522,8 +522,8 @@
     {
       "id": "openai",
       "model_count": 169,
-      "sha256": "3d460a964b8936eedde7666e8736175d933d0bc26d2eae4648a8ad0cf8a02fe8",
-      "url": "/v1/providers/openai/3d460a964b8936eedde7666e8736175d933d0bc26d2eae4648a8ad0cf8a02fe8.json",
+      "sha256": "fbed11986e91c1adef5f218cd501a9fe029b28e0781e95dbff71d982b33356ad",
+      "url": "/v1/providers/openai/fbed11986e91c1adef5f218cd501a9fe029b28e0781e95dbff71d982b33356ad.json",
       "display_name": "OpenAI",
       "logo_url": "https://cdn.openai.com/API/logo-assets/openai-logomark.svg",
       "category": "frontier",
@@ -532,9 +532,9 @@
     },
     {
       "id": "openrouter",
-      "model_count": 85,
-      "sha256": "801b64c2fc8a016bd02a62029012a45b13cf1dc54b1d79a602863d18f2a3124f",
-      "url": "/v1/providers/openrouter/801b64c2fc8a016bd02a62029012a45b13cf1dc54b1d79a602863d18f2a3124f.json",
+      "model_count": 87,
+      "sha256": "607459a1c90cdb220a8924697a8131a044575eaa92b7c697cefc6598d74342d6",
+      "url": "/v1/providers/openrouter/607459a1c90cdb220a8924697a8131a044575eaa92b7c697cefc6598d74342d6.json",
       "display_name": "OpenRouter",
       "category": "specialized",
       "description": "Unified API across 200+ models",
@@ -837,8 +837,8 @@
     {
       "id": "xai",
       "model_count": 39,
-      "sha256": "df16027b96d965dafcf3fbdcbea005124923214236e619eb81eef5ac23dbf2e0",
-      "url": "/v1/providers/xai/df16027b96d965dafcf3fbdcbea005124923214236e619eb81eef5ac23dbf2e0.json",
+      "sha256": "4159f69a14aca5c589116d039029efab8249b9918cdb13f26b81556cb822e14f",
+      "url": "/v1/providers/xai/4159f69a14aca5c589116d039029efab8249b9918cdb13f26b81556cb822e14f.json",
       "display_name": "xAI (Grok)",
       "logo_url": "https://x.ai/favicon.svg",
       "category": "frontier",
@@ -857,7 +857,7 @@
     }
   ],
   "stats": {
-    "total_models": 2551,
+    "total_models": 2554,
     "total_providers": 83
   }
 }

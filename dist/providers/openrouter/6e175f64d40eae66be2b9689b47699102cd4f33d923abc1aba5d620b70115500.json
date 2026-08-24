@@ -1098,14 +1098,6 @@
         "verified_by": "scraper-litellm",
         "snapshot_sha256": "10085d1a62b15b0cdd817088d724d5b7a3719616b7470215b7f9ba6de30d30ac",
         "snapshot_branch": "snapshots"
-      },
-      "context": {
-        "url": "https://models.dev/api.json",
-        "verified_at": "2026-08-24",
-        "confidence": "medium",
-        "verified_by": "scraper-models_dev",
-        "snapshot_sha256": "5eb99834332b5768b61a4a9f2e1feb892dbf6c38c1ff4f32396be6f5d0027614",
-        "snapshot_branch": "snapshots"
       }
     }
   },
