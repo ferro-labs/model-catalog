@@ -5,8 +5,8 @@ mode: chat
 context_window: 32000
 max_output_tokens: 8191
 pricing:
-    input_per_m_tokens: 0.1
-    output_per_m_tokens: 0.3
+    input_per_m_tokens: 0.15
+    output_per_m_tokens: 0.6
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -35,11 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://models.dev/mistral/mistral-small-latest"
-updated_at: "2026-02-28"
+updated_at: "2026-08-24"
 tier: standard
 sources:
     pricing:
-        url: "https://models.dev/mistral/mistral-small-latest"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-24"
+        verified_by: scraper-litellm
+        snapshot_sha256: 1939252f801687c2bf2ba9c239606d9dd22e3378acfe7fa2106f082647635562
+        snapshot_branch: snapshots
+        confidence: high

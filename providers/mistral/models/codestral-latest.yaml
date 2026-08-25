@@ -5,8 +5,8 @@ mode: chat
 context_window: 32000
 max_output_tokens: 8191
 pricing:
-    input_per_m_tokens: 0
-    output_per_m_tokens: 0
+    input_per_m_tokens: 0.3
+    output_per_m_tokens: 0.8999999999999999
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -35,11 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: https://docs.mistral.ai/capabilities/code_generation/
-updated_at: "2026-02-28"
+updated_at: "2026-08-24"
 tier: flagship
 sources:
     pricing:
-        url: "https://docs.mistral.ai/capabilities/code_generation/"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-24"
+        verified_by: scraper-litellm
+        snapshot_sha256: 5a4773320c61f235762a7cc72ae0ee01c68d527f02dc0050bf3e2afa26ecdfac
+        snapshot_branch: snapshots
+        confidence: high

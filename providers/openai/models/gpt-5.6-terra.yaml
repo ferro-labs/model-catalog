@@ -5,8 +5,8 @@ mode: chat
 context_window: 0
 max_output_tokens: 0
 pricing:
-    input_per_m_tokens: 2.5
-    output_per_m_tokens: 15
+    input_per_m_tokens: 2
+    output_per_m_tokens: 12
     cache_read_per_m_tokens: 0.19999999999999998
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -35,11 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: auto:litellm+models_dev+openrouter
-updated_at: "2026-08-03"
+updated_at: "2026-08-24"
 tier: standard
 sources:
     pricing:
-        url: "auto:litellm+models_dev+openrouter"
-        verified_at: "2026-08-03"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-08-24"
+        verified_by: scraper-litellm
+        snapshot_sha256: 8662f02eb224d5f1be4450eee82f260d4fa3383056e916c640af30201c9ae654
+        snapshot_branch: snapshots
+        confidence: high

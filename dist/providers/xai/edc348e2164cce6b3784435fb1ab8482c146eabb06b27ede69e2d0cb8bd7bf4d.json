@@ -1499,17 +1499,7 @@
     },
     "source": "auto:litellm+models_dev",
     "updated_at": "2026-08-24",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-24",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "48a688622f95abcd8dfae36590f264ab1ee3f84eaa9f2b593ff538c69b02f8e5",
-        "snapshot_branch": "snapshots"
-      }
-    }
+    "tier": "standard"
   },
   "xai/grok-4.20-0309-reasoning": {
     "provider": "xai",
@@ -1553,17 +1543,7 @@
     },
     "source": "auto:litellm+models_dev",
     "updated_at": "2026-08-24",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-24",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "38cf4fd9130ae3e6e98261774ad4f50785d11e1f796e38b22a696a31d500bf8b",
-        "snapshot_branch": "snapshots"
-      }
-    }
+    "tier": "standard"
   },
   "xai/grok-4.20-multi-agent-0309": {
     "provider": "xai",
@@ -1607,17 +1587,7 @@
     },
     "source": "auto:litellm+models_dev",
     "updated_at": "2026-08-24",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-24",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "b60d37315965b533c9181d6761e1c7bf792c041580309ccf3d3417e8c8f730ad",
-        "snapshot_branch": "snapshots"
-      }
-    }
+    "tier": "standard"
   },
   "xai/grok-4.3": {
     "provider": "xai",
@@ -1769,17 +1739,7 @@
     },
     "source": "auto:litellm+models_dev",
     "updated_at": "2026-08-24",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-24",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "3b8e4eafc01dd053fdeff11482e13b8a425160fb4f98929c18f8e4c33f24da14",
-        "snapshot_branch": "snapshots"
-      }
-    }
+    "tier": "standard"
   },
   "xai/grok-beta": {
     "provider": "xai",
@@ -1877,17 +1837,7 @@
     },
     "source": "auto:litellm+models_dev",
     "updated_at": "2026-08-24",
-    "tier": "standard",
-    "sources": {
-      "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-24",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "be00f212947b31f9300d0ab4bb09a239117ba4f02ed73abc8025b99992b775ab",
-        "snapshot_branch": "snapshots"
-      }
-    }
+    "tier": "standard"
   },
   "xai/grok-code-fast": {
     "provider": "xai",

@@ -6388,12 +6388,10 @@
     "tier": "standard",
     "sources": {
       "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-24",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "2be42844b518087537f296677f8f5d402ca1dc1be80ee2df415a3b7cad25938a",
-        "snapshot_branch": "snapshots"
+        "url": "auto:litellm+models_dev+openrouter",
+        "verified_at": "2026-08-03",
+        "confidence": "low",
+        "verified_by": "import:v1"
       }
     }
   },
@@ -6496,12 +6494,10 @@
     "tier": "standard",
     "sources": {
       "pricing": {
-        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-24",
-        "confidence": "high",
-        "verified_by": "scraper-litellm",
-        "snapshot_sha256": "8662f02eb224d5f1be4450eee82f260d4fa3383056e916c640af30201c9ae654",
-        "snapshot_branch": "snapshots"
+        "url": "auto:litellm+models_dev+openrouter",
+        "verified_at": "2026-08-03",
+        "confidence": "low",
+        "verified_by": "import:v1"
       }
     }
   },

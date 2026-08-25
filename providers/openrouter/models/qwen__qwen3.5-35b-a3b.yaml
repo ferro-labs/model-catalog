@@ -1,13 +1,13 @@
-provider: xai
-model_id: grok-4.20-0309-non-reasoning
-display_name: grok-4.20-0309-non-reasoning
+provider: openrouter
+model_id: qwen/qwen3.5-35b-a3b
+display_name: qwen/qwen3.5-35b-a3b
 mode: chat
 context_window: 0
 max_output_tokens: 0
 pricing:
-    input_per_m_tokens: 1.25
-    output_per_m_tokens: 2.5
-    cache_read_per_m_tokens: 0.19999999999999998
+    input_per_m_tokens: 0.25
+    output_per_m_tokens: null
+    cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
@@ -37,11 +37,3 @@ lifecycle:
 source: auto:litellm+models_dev
 updated_at: "2026-08-24"
 tier: standard
-sources:
-    pricing:
-        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-24"
-        verified_by: scraper-litellm
-        snapshot_sha256: 48a688622f95abcd8dfae36590f264ab1ee3f84eaa9f2b593ff538c69b02f8e5
-        snapshot_branch: snapshots
-        confidence: high
