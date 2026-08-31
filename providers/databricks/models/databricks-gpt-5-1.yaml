@@ -7,7 +7,7 @@ max_output_tokens: 128000
 pricing:
     input_per_m_tokens: 1.24999
     output_per_m_tokens: 9.99999
-    cache_read_per_m_tokens: null
+    cache_read_per_m_tokens: 0.12502
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: https://www.databricks.com/product/pricing/proprietary-foundation-model-serving
-updated_at: "2026-02-28"
+updated_at: "2026-08-31"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-08-31"
         verified_by: scraper-litellm
-        snapshot_sha256: 4a9766d347634e283bd72e5c5a3649e96923ca5df804c147ee72192fd17aa8c3
+        snapshot_sha256: 5966a2950c584a6939a0458a72baf3b2492d14ee0e6172c280d97d6687f11a58
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high

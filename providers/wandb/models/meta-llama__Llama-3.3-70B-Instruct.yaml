@@ -5,8 +5,8 @@ mode: chat
 context_window: 128000
 max_output_tokens: 128000
 pricing:
-    input_per_m_tokens: 71000
-    output_per_m_tokens: 71000
+    input_per_m_tokens: 0.71
+    output_per_m_tokens: 0.71
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -35,14 +35,14 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://models.dev/wandb/meta-llama/Llama-3.3-70B-Instruct"
-updated_at: "2026-02-28"
+updated_at: "2026-08-31"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-08-31"
         verified_by: scraper-litellm
-        snapshot_sha256: 4349e53e4efbc7b8f6e638c6cf1813566e46ff9cebcbe60e5baa463b2b350d92
+        snapshot_sha256: b685d270770aac786f6c6fd8c7f5694febfd217eb5885fe5c3599790928434d9
         snapshot_branch: snapshots
         confidence: medium
     context:

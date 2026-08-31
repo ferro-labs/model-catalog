@@ -5,9 +5,9 @@ mode: chat
 context_window: 262144
 max_output_tokens: 262144
 pricing:
-    input_per_m_tokens: 0.29
-    output_per_m_tokens: 1.2
-    cache_read_per_m_tokens: null
+    input_per_m_tokens: 0.3
+    output_per_m_tokens: 1
+    cache_read_per_m_tokens: 0.09999999999999999
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://models.dev/deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo"
-updated_at: "2026-02-28"
+updated_at: "2026-08-31"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-08-31"
         verified_by: scraper-litellm
-        snapshot_sha256: fb370af04ca03e12c847627dae6cecb7f8eba4b3149a2849ecda68e00e1c5804
+        snapshot_sha256: bc9bda4bfa41e04265d8bf5fec9908b06a23653ced6236ab0b4a23747822ea14
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high

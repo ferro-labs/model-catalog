@@ -5,7 +5,7 @@ mode: chat
 context_window: 327680
 max_output_tokens: 327680
 pricing:
-    input_per_m_tokens: 0.08
+    input_per_m_tokens: 0.09999999999999999
     output_per_m_tokens: 0.3
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://models.dev/deepinfra/meta-llama/Llama-4-Scout-17B-16E-Instruct"
-updated_at: "2026-02-28"
+updated_at: "2026-08-31"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-08-31"
         verified_by: scraper-litellm
-        snapshot_sha256: 873bac0a1f16084d39abf1b7cd7e3bcbed8278e348dd7c95e854643409d339c8
+        snapshot_sha256: 1c66837f014b863e0be1a281d04b5692c62c08a51904e7ad0a764831f0dc6445
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high
