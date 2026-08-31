@@ -1,0 +1,1656 @@
+{
+  "databricks/databricks-bge-large-en": {
+    "provider": "databricks",
+    "model_id": "databricks-bge-large-en",
+    "display_name": "databricks-bge-large-en",
+    "mode": "embedding",
+    "context_window": 512,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": 0.10003,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/foundation-model-serving",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://www.databricks.com/product/pricing/foundation-model-serving",
+        "verified_at": "2026-02-28",
+        "confidence": "low",
+        "verified_by": "import:v1"
+      }
+    }
+  },
+  "databricks/databricks-claude-3-7-sonnet": {
+    "provider": "databricks",
+    "model_id": "databricks-claude-3-7-sonnet",
+    "display_name": "databricks-claude-3-7-sonnet",
+    "mode": "chat",
+    "context_window": 200000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 2.99999,
+      "output_per_m_tokens": 15.00002,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/proprietary-foundation-model-serving",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "c04df3013cd40b417286ea6dfc0a3c019cf6083032a58b3f0b0d8a4648eade43",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-claude-haiku-4-5": {
+    "provider": "databricks",
+    "model_id": "databricks-claude-haiku-4-5",
+    "display_name": "databricks-claude-haiku-4-5",
+    "mode": "chat",
+    "context_window": 200000,
+    "max_output_tokens": 64000,
+    "pricing": {
+      "input_per_m_tokens": 1.00002,
+      "output_per_m_tokens": 5.00003,
+      "cache_read_per_m_tokens": 0.10003000000000001,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/proprietary-foundation-model-serving",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "e659591cf0f93fccb0a58bbf9fc6868c4c4fc3a54362fcaece4c04f3b72bcfcf",
+        "snapshot_branch": "snapshots"
+      },
+      "context": {
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "7ad0bd308007deadfbf4b43fe7d8ec47527bda6d224973a3dc3822a6473331a1",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-claude-opus-4": {
+    "provider": "databricks",
+    "model_id": "databricks-claude-opus-4",
+    "display_name": "databricks-claude-opus-4",
+    "mode": "chat",
+    "context_window": 200000,
+    "max_output_tokens": 32000,
+    "pricing": {
+      "input_per_m_tokens": 15.00002,
+      "output_per_m_tokens": 75.00003,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/proprietary-foundation-model-serving",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "a5abe56f938aca700bbe5af3aa74ef94b78df2bcfe146e7815cfa763216e6298",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-claude-opus-4-1": {
+    "provider": "databricks",
+    "model_id": "databricks-claude-opus-4-1",
+    "display_name": "databricks-claude-opus-4-1",
+    "mode": "chat",
+    "context_window": 200000,
+    "max_output_tokens": 32000,
+    "pricing": {
+      "input_per_m_tokens": 15.00002,
+      "output_per_m_tokens": 75.00003,
+      "cache_read_per_m_tokens": 1.50003,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/proprietary-foundation-model-serving",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "d6e233f5ba5f2270b20191e6ac20bd8e5f915f49bf3289e81b164620f63e6f92",
+        "snapshot_branch": "snapshots"
+      },
+      "context": {
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "634ef1062bbab181d121bd292bad57556203177134080a944a320c1ccf716493",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-claude-opus-4-5": {
+    "provider": "databricks",
+    "model_id": "databricks-claude-opus-4-5",
+    "display_name": "databricks-claude-opus-4-5",
+    "mode": "chat",
+    "context_window": 200000,
+    "max_output_tokens": 64000,
+    "pricing": {
+      "input_per_m_tokens": 5.00003,
+      "output_per_m_tokens": 25.00001,
+      "cache_read_per_m_tokens": 0.5000100000000001,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/proprietary-foundation-model-serving",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "0492568244717efdb6ec6e8840c149e226f8556e1a32c8c816199285a8599ddf",
+        "snapshot_branch": "snapshots"
+      },
+      "context": {
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "e7494c4fc37af1f12df02d09dfc6165d65b133f0a05576592b628e96540a7c38",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-claude-sonnet-4": {
+    "provider": "databricks",
+    "model_id": "databricks-claude-sonnet-4",
+    "display_name": "databricks-claude-sonnet-4",
+    "mode": "chat",
+    "context_window": 200000,
+    "max_output_tokens": 64000,
+    "pricing": {
+      "input_per_m_tokens": 2.99999,
+      "output_per_m_tokens": 15.00002,
+      "cache_read_per_m_tokens": 0.30002,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/proprietary-foundation-model-serving",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "3045faec215734d86a0690bb6832d77498e1c25163118f1c99232ee79bc88e3d",
+        "snapshot_branch": "snapshots"
+      },
+      "context": {
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "5046bc1ca78a876ac3ba69e233a84eb61e38cbc390e95a7fe5c26f33d0f7ef7a",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-claude-sonnet-4-1": {
+    "provider": "databricks",
+    "model_id": "databricks-claude-sonnet-4-1",
+    "display_name": "databricks-claude-sonnet-4-1",
+    "mode": "chat",
+    "context_window": 200000,
+    "max_output_tokens": 64000,
+    "pricing": {
+      "input_per_m_tokens": 2.99999,
+      "output_per_m_tokens": 15.00002,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/proprietary-foundation-model-serving",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "5fffcb103ce34f793060470ad6d2f839248186be705400ada37cbf8f2335cb26",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-claude-sonnet-4-5": {
+    "provider": "databricks",
+    "model_id": "databricks-claude-sonnet-4-5",
+    "display_name": "databricks-claude-sonnet-4-5",
+    "mode": "chat",
+    "context_window": 200000,
+    "max_output_tokens": 64000,
+    "pricing": {
+      "input_per_m_tokens": 2.99999,
+      "output_per_m_tokens": 15.00002,
+      "cache_read_per_m_tokens": 0.30002,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/proprietary-foundation-model-serving",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "8fd1ea190f17b563dc75a04b47e64d0a6dd06515dc61dd969f901a2e4d83b107",
+        "snapshot_branch": "snapshots"
+      },
+      "context": {
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "bb89ae321abaf6fe3cb2fdc89061667e12cafe761500e207479820cb16ed5233",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-gemini-2-5-flash": {
+    "provider": "databricks",
+    "model_id": "databricks-gemini-2-5-flash",
+    "display_name": "databricks-gemini-2-5-flash",
+    "mode": "chat",
+    "context_window": 1048576,
+    "max_output_tokens": 65535,
+    "pricing": {
+      "input_per_m_tokens": 0.30002,
+      "output_per_m_tokens": 2.49998,
+      "cache_read_per_m_tokens": 0.030002,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/proprietary-foundation-model-serving",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "bb545d86f17359db8b5dac1a1f45cdaa66def3ed9e44b257f4fffe698549b726",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-gemini-2-5-pro": {
+    "provider": "databricks",
+    "model_id": "databricks-gemini-2-5-pro",
+    "display_name": "databricks-gemini-2-5-pro",
+    "mode": "chat",
+    "context_window": 1048576,
+    "max_output_tokens": 65536,
+    "pricing": {
+      "input_per_m_tokens": 1.24999,
+      "output_per_m_tokens": 9.99999,
+      "cache_read_per_m_tokens": 0.124999,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/proprietary-foundation-model-serving",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "739dfa8aa35e0083975acd68c722661d23e655f358f6e3caf22272579a5225a0",
+        "snapshot_branch": "snapshots"
+      },
+      "context": {
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "10d6372149bfd44f7a1b87c9628f19029e655974039a4d641708660e31ba70c1",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-gemma-3-12b": {
+    "provider": "databricks",
+    "model_id": "databricks-gemma-3-12b",
+    "display_name": "databricks-gemma-3-12b",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 32000,
+    "pricing": {
+      "input_per_m_tokens": 0.15001,
+      "output_per_m_tokens": 0.50001,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/foundation-model-serving",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "53585f8fcf919a78d58600fd830a8a52000679a7c49d99dadff08d75ab9a39a0",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-glm-5-2": {
+    "provider": "databricks",
+    "model_id": "databricks-glm-5-2",
+    "display_name": "databricks-glm-5-2",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.4,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "databricks/databricks-gpt-5": {
+    "provider": "databricks",
+    "model_id": "databricks-gpt-5",
+    "display_name": "databricks-gpt-5",
+    "mode": "chat",
+    "context_window": 272000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 1.24999,
+      "output_per_m_tokens": 9.99999,
+      "cache_read_per_m_tokens": 0.12502,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/proprietary-foundation-model-serving",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "337f4269668310615449250a42ec50f3fa84aa98fa1d60f7722a2d3b56ddd56a",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-gpt-5-1": {
+    "provider": "databricks",
+    "model_id": "databricks-gpt-5-1",
+    "display_name": "databricks-gpt-5-1",
+    "mode": "chat",
+    "context_window": 272000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 1.24999,
+      "output_per_m_tokens": 9.99999,
+      "cache_read_per_m_tokens": 0.12502,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/proprietary-foundation-model-serving",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "4a9766d347634e283bd72e5c5a3649e96923ca5df804c147ee72192fd17aa8c3",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-gpt-5-2": {
+    "provider": "databricks",
+    "model_id": "databricks-gpt-5-2",
+    "display_name": "databricks-gpt-5-2",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.75,
+      "output_per_m_tokens": 14.0,
+      "cache_read_per_m_tokens": 0.175,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-24",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "6b31e74240bc7bebd3213343d923c1cc1ef98b27dc5c86a531c16000378d2404",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-gpt-5-mini": {
+    "provider": "databricks",
+    "model_id": "databricks-gpt-5-mini",
+    "display_name": "databricks-gpt-5-mini",
+    "mode": "chat",
+    "context_window": 272000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.24997,
+      "output_per_m_tokens": 1.99997,
+      "cache_read_per_m_tokens": 0.024990000000000002,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/proprietary-foundation-model-serving",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "40228ff994ee7fd85e3c3017172e90ea8000e9b4c38f5a14cc046c0d8d04c73f",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-gpt-5-nano": {
+    "provider": "databricks",
+    "model_id": "databricks-gpt-5-nano",
+    "display_name": "databricks-gpt-5-nano",
+    "mode": "chat",
+    "context_window": 272000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.04998,
+      "output_per_m_tokens": 0.39998,
+      "cache_read_per_m_tokens": 0.00497,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/proprietary-foundation-model-serving",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "3e5fd4de09bcd9ef967b2cfaed56d4ba927723d540ef9e3b128476db455298f7",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-gpt-oss-120b": {
+    "provider": "databricks",
+    "model_id": "databricks-gpt-oss-120b",
+    "display_name": "databricks-gpt-oss-120b",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.15001,
+      "output_per_m_tokens": 0.59997,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/foundation-model-serving",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "00aa9fed9582df323450e0dae52eadbb107b42f4881701bceafed0681a1c9d60",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-gpt-oss-20b": {
+    "provider": "databricks",
+    "model_id": "databricks-gpt-oss-20b",
+    "display_name": "databricks-gpt-oss-20b",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.07,
+      "output_per_m_tokens": 0.30002,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/foundation-model-serving",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "ac89305fa3d5b84d046440adda80adbf914921d59f747ebb36576d39742e17b0",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-gte-large-en": {
+    "provider": "databricks",
+    "model_id": "databricks-gte-large-en",
+    "display_name": "databricks-gte-large-en",
+    "mode": "embedding",
+    "context_window": 8192,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": 0.12999,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/foundation-model-serving",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://www.databricks.com/product/pricing/foundation-model-serving",
+        "verified_at": "2026-02-28",
+        "confidence": "low",
+        "verified_by": "import:v1"
+      }
+    }
+  },
+  "databricks/databricks-llama-2-70b-chat": {
+    "provider": "databricks",
+    "model_id": "databricks-llama-2-70b-chat",
+    "display_name": "databricks-llama-2-70b-chat",
+    "mode": "chat",
+    "context_window": 4096,
+    "max_output_tokens": 4096,
+    "pricing": {
+      "input_per_m_tokens": 0.50001,
+      "output_per_m_tokens": 1.50003,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/foundation-model-serving",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "7672934bc8ffd015c48e393188fe3842fc4e71098cb0c081afa9fa8510824327",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-llama-4-maverick": {
+    "provider": "databricks",
+    "model_id": "databricks-llama-4-maverick",
+    "display_name": "databricks-llama-4-maverick",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.50001,
+      "output_per_m_tokens": 1.50003,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/foundation-model-serving",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "691695680554a71765eeec85687822b53549ea193566b1870849b12beab9e099",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-meta-llama-3-1-405b-instruct": {
+    "provider": "databricks",
+    "model_id": "databricks-meta-llama-3-1-405b-instruct",
+    "display_name": "databricks-meta-llama-3-1-405b-instruct",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 5.00003,
+      "output_per_m_tokens": 15.00002,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/foundation-model-serving",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "1675e7445de489a28ad57ed783bbd5874aa28fcd44a9a7646eb5f34e164b9e48",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-meta-llama-3-1-8b-instruct": {
+    "provider": "databricks",
+    "model_id": "databricks-meta-llama-3-1-8b-instruct",
+    "display_name": "databricks-meta-llama-3-1-8b-instruct",
+    "mode": "chat",
+    "context_window": 200000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.15001,
+      "output_per_m_tokens": 0.45003,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/foundation-model-serving",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "7e5a2dae6e029b2eb7791e9d55cc2b9bd2a36c741d21728323827531b1f4760d",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-meta-llama-3-3-70b-instruct": {
+    "provider": "databricks",
+    "model_id": "databricks-meta-llama-3-3-70b-instruct",
+    "display_name": "databricks-meta-llama-3-3-70b-instruct",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.50001,
+      "output_per_m_tokens": 1.50003,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/foundation-model-serving",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "070e6f6f3b6bf82dbef81ca60d30fc7ce6bc736f123be960a6d1da313f3dc327",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-meta-llama-3-70b-instruct": {
+    "provider": "databricks",
+    "model_id": "databricks-meta-llama-3-70b-instruct",
+    "display_name": "databricks-meta-llama-3-70b-instruct",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 1.00002,
+      "output_per_m_tokens": 2.99999,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/foundation-model-serving",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "74deb09e0aba64738d92d44660870ccbd79f5a83bf6f1c12d581b3f69b60f8ef",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-mixtral-8x7b-instruct": {
+    "provider": "databricks",
+    "model_id": "databricks-mixtral-8x7b-instruct",
+    "display_name": "databricks-mixtral-8x7b-instruct",
+    "mode": "chat",
+    "context_window": 4096,
+    "max_output_tokens": 4096,
+    "pricing": {
+      "input_per_m_tokens": 0.50001,
+      "output_per_m_tokens": 1.00002,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/foundation-model-serving",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "93ae0da42d07126701d19a4ff8e38aa981ee1b99227be21e22551a70a204a0e6",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-mpt-30b-instruct": {
+    "provider": "databricks",
+    "model_id": "databricks-mpt-30b-instruct",
+    "display_name": "databricks-mpt-30b-instruct",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "pricing": {
+      "input_per_m_tokens": 1.00002,
+      "output_per_m_tokens": 1.00002,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/foundation-model-serving",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "f586911bb1215b3c654731267025289575e6ce368fdcbd082753ed4ee96eaa66",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "databricks/databricks-mpt-7b-instruct": {
+    "provider": "databricks",
+    "model_id": "databricks-mpt-7b-instruct",
+    "display_name": "databricks-mpt-7b-instruct",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "pricing": {
+      "input_per_m_tokens": 0.50001,
+      "output_per_m_tokens": 0.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.databricks.com/product/pricing/foundation-model-serving",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "a36545c7edc34bfbd66ae59d1d2b378a03d1bd2511a560da389be380f91c4d4c",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  }
+}

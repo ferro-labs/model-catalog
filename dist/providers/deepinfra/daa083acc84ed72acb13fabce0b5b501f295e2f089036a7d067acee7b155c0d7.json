@@ -1,0 +1,5440 @@
+{
+  "deepinfra/ByteDance/Seed-2.0-code": {
+    "provider": "deepinfra",
+    "model_id": "ByteDance/Seed-2.0-code",
+    "display_name": "ByteDance/Seed-2.0-code",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.5,
+      "output_per_m_tokens": 3.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/ByteDance/Seed-2.0-pro": {
+    "provider": "deepinfra",
+    "model_id": "ByteDance/Seed-2.0-pro",
+    "display_name": "ByteDance/Seed-2.0-pro",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.5,
+      "output_per_m_tokens": 3.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/Gryphe/MythoMax-L2-13b": {
+    "provider": "deepinfra",
+    "model_id": "Gryphe/MythoMax-L2-13b",
+    "display_name": "Gryphe/MythoMax-L2-13b",
+    "mode": "chat",
+    "context_window": 4096,
+    "max_output_tokens": 4096,
+    "pricing": {
+      "input_per_m_tokens": 0.08,
+      "output_per_m_tokens": 0.09,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "368966f75e258f8df0e95bbcc472c3347ba41dfd60b1be535792b8d1a08f2afd",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/MiniMaxAI/MiniMax-M2.7": {
+    "provider": "deepinfra",
+    "model_id": "MiniMaxAI/MiniMax-M2.7",
+    "display_name": "MiniMaxAI/MiniMax-M2.7",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.25,
+      "output_per_m_tokens": 1.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/MiniMaxAI/MiniMax-M3": {
+    "provider": "deepinfra",
+    "model_id": "MiniMaxAI/MiniMax-M3",
+    "display_name": "MiniMaxAI/MiniMax-M3",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.28,
+      "output_per_m_tokens": 1.1,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/NousResearch/Hermes-3-Llama-3.1-405B": {
+    "provider": "deepinfra",
+    "model_id": "NousResearch/Hermes-3-Llama-3.1-405B",
+    "display_name": "NousResearch/Hermes-3-Llama-3.1-405B",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 1.0,
+      "output_per_m_tokens": 1.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "d6a0d5ec2ebb1ccad4bdf636322f7ebf18ab84fcae65df7517e76d1fa9878e07",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/NousResearch/Hermes-3-Llama-3.1-70B": {
+    "provider": "deepinfra",
+    "model_id": "NousResearch/Hermes-3-Llama-3.1-70B",
+    "display_name": "NousResearch/Hermes-3-Llama-3.1-70B",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.3,
+      "output_per_m_tokens": 0.3,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "182b96b69c9df615e1b61d7aa65a1eae3db7437b74516a09c4d983fbc961fb26",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/Qwen/QwQ-32B": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/QwQ-32B",
+    "display_name": "Qwen/QwQ-32B",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.15,
+      "output_per_m_tokens": 0.4,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "ef34b09c71255320f74933f1ab5b7786d8d1eace538884db041ae1d520314160",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/Qwen/Qwen2.5-72B-Instruct": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen2.5-72B-Instruct",
+    "display_name": "Qwen/Qwen2.5-72B-Instruct",
+    "mode": "chat",
+    "context_window": 32768,
+    "max_output_tokens": 32768,
+    "pricing": {
+      "input_per_m_tokens": 0.12,
+      "output_per_m_tokens": 0.39,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "d003704d8de0170154644c55c00f65654d276883955313228f976388aace54b8",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/Qwen/Qwen2.5-7B-Instruct": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "display_name": "Qwen/Qwen2.5-7B-Instruct",
+    "mode": "chat",
+    "context_window": 32768,
+    "max_output_tokens": 32768,
+    "pricing": {
+      "input_per_m_tokens": 0.04,
+      "output_per_m_tokens": 0.1,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "df1b5780b3004b0d1d822d0a3cd400c007e4c9abb6583f348bf8e7967c07ca61",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/Qwen/Qwen2.5-VL-32B-Instruct": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen2.5-VL-32B-Instruct",
+    "display_name": "Qwen/Qwen2.5-VL-32B-Instruct",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.6,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "299dfa4520b3ca25d739f71eb7d9805ab50b80a7f7230c3213a4e07abb93aeb1",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/Qwen/Qwen3-14B": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3-14B",
+    "display_name": "Qwen/Qwen3-14B",
+    "mode": "chat",
+    "context_window": 40960,
+    "max_output_tokens": 40960,
+    "pricing": {
+      "input_per_m_tokens": 0.06,
+      "output_per_m_tokens": 0.24,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "23138ffed7772490b31f2222739d707ff743e0ce8877f671ea52c449b752c293",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/Qwen/Qwen3-235B-A22B": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3-235B-A22B",
+    "display_name": "Qwen/Qwen3-235B-A22B",
+    "mode": "chat",
+    "context_window": 40960,
+    "max_output_tokens": 40960,
+    "pricing": {
+      "input_per_m_tokens": 0.18,
+      "output_per_m_tokens": 0.54,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "74f7cb2aadab53d9ad609f7550562862451277e220c3d0a2b7ef9b9181031fdf",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/Qwen/Qwen3-235B-A22B-Instruct-2507": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "display_name": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "mode": "chat",
+    "context_window": 262144,
+    "max_output_tokens": 262144,
+    "pricing": {
+      "input_per_m_tokens": 0.09,
+      "output_per_m_tokens": 0.55,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "a8fc6b8b20050319936a16b95fcd571ea70edf9616490ca3d8f69fa8db858f16",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/Qwen/Qwen3-235B-A22B-Thinking-2507": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+    "display_name": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+    "mode": "chat",
+    "context_window": 262144,
+    "max_output_tokens": 262144,
+    "pricing": {
+      "input_per_m_tokens": 0.3,
+      "output_per_m_tokens": 2.9,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "7e0c81d87d16837a247487440f7a70f42380f525b7845a457454444302c60585",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/Qwen/Qwen3-30B-A3B": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3-30B-A3B",
+    "display_name": "Qwen/Qwen3-30B-A3B",
+    "mode": "chat",
+    "context_window": 40960,
+    "max_output_tokens": 40960,
+    "pricing": {
+      "input_per_m_tokens": 0.12,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "be6ef1d2611394d645932129bc3cbbd42caa53903df953a18b6a273aa77557dc",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/Qwen/Qwen3-32B": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3-32B",
+    "display_name": "Qwen/Qwen3-32B",
+    "mode": "chat",
+    "context_window": 40960,
+    "max_output_tokens": 40960,
+    "pricing": {
+      "input_per_m_tokens": 0.08,
+      "output_per_m_tokens": 0.28,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "2729609b1aeb0b3ea3fd4c462fafa06ce9484f2bb45f5a6d4569425eaee09ecf",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "display_name": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "mode": "chat",
+    "context_window": 262144,
+    "max_output_tokens": 262144,
+    "pricing": {
+      "input_per_m_tokens": 0.4,
+      "output_per_m_tokens": 1.6,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "9f3034d2fe7341d3b949d0d3366620af52846d0ab3d087b400390a253ff1aec3",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
+    "display_name": "Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
+    "mode": "chat",
+    "context_window": 262144,
+    "max_output_tokens": 262144,
+    "pricing": {
+      "input_per_m_tokens": 0.3,
+      "output_per_m_tokens": 1.0,
+      "cache_read_per_m_tokens": 0.09999999999999999,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "fb370af04ca03e12c847627dae6cecb7f8eba4b3149a2849ecda68e00e1c5804",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/Qwen/Qwen3-Max": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3-Max",
+    "display_name": "Qwen/Qwen3-Max",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.2,
+      "output_per_m_tokens": 6.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/Qwen/Qwen3-Next-80B-A3B-Instruct": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+    "display_name": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+    "mode": "chat",
+    "context_window": 262144,
+    "max_output_tokens": 262144,
+    "pricing": {
+      "input_per_m_tokens": 0.09,
+      "output_per_m_tokens": 1.1,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "4764c020c5df7718a19c5fa8126a61e4e02bd92fc268f107f67a481115c9d0ba",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/Qwen/Qwen3-Next-80B-A3B-Thinking": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
+    "display_name": "Qwen/Qwen3-Next-80B-A3B-Thinking",
+    "mode": "chat",
+    "context_window": 262144,
+    "max_output_tokens": 262144,
+    "pricing": {
+      "input_per_m_tokens": 0.14,
+      "output_per_m_tokens": 1.4,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "d3ea403ee1aa28d3aa93d14cce8c007f5cc135bf5af58d47c42ac018d728cf02",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/Qwen/Qwen3-VL-235B-A22B-Instruct": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+    "display_name": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": 0.88,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/Qwen/Qwen3.5-122B-A10B": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3.5-122B-A10B",
+    "display_name": "Qwen/Qwen3.5-122B-A10B",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.29,
+      "output_per_m_tokens": 2.4,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/Qwen/Qwen3.5-27B": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3.5-27B",
+    "display_name": "Qwen/Qwen3.5-27B",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.26,
+      "output_per_m_tokens": 2.6,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/Qwen/Qwen3.5-35B-A3B": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3.5-35B-A3B",
+    "display_name": "Qwen/Qwen3.5-35B-A3B",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.14,
+      "output_per_m_tokens": 1.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/Qwen/Qwen3.5-397B-A17B": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3.5-397B-A17B",
+    "display_name": "Qwen/Qwen3.5-397B-A17B",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": 3.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/Qwen/Qwen3.5-9B": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3.5-9B",
+    "display_name": "Qwen/Qwen3.5-9B",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": 0.15,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/Qwen/Qwen3.6-27B": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3.6-27B",
+    "display_name": "Qwen/Qwen3.6-27B",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.32,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/Qwen/Qwen3.6-35B-A3B": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3.6-35B-A3B",
+    "display_name": "Qwen/Qwen3.6-35B-A3B",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": 0.95,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/Qwen/Qwen3.7-Max": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3.7-Max",
+    "display_name": "Qwen/Qwen3.7-Max",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 2.5,
+      "output_per_m_tokens": 7.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/Qwen/Qwen3.8-2.4T-A95B": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3.8-2.4T-A95B",
+    "display_name": "Qwen/Qwen3.8-2.4T-A95B",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 6.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/Qwen/Qwen3.8-27B": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3.8-27B",
+    "display_name": "Qwen/Qwen3.8-27B",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": 3.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/Qwen/Qwen3.8-Max": {
+    "provider": "deepinfra",
+    "model_id": "Qwen/Qwen3.8-Max",
+    "display_name": "Qwen/Qwen3.8-Max",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": 4.951,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/Sao10K/L3-8B-Lunaris-v1-Turbo": {
+    "provider": "deepinfra",
+    "model_id": "Sao10K/L3-8B-Lunaris-v1-Turbo",
+    "display_name": "Sao10K/L3-8B-Lunaris-v1-Turbo",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "pricing": {
+      "input_per_m_tokens": 0.04,
+      "output_per_m_tokens": 0.05,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "db27a8b7acfa76bc4ec7108ca83b5cbba53a612a8f9c8cf4d88f0b3ed0ff34da",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/Sao10K/L3.1-70B-Euryale-v2.2": {
+    "provider": "deepinfra",
+    "model_id": "Sao10K/L3.1-70B-Euryale-v2.2",
+    "display_name": "Sao10K/L3.1-70B-Euryale-v2.2",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.65,
+      "output_per_m_tokens": 0.75,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "a9634e2a421df5436ad2ffcb68baa21f8ec5c5e4ee3df92f4d43681800feb5c8",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/Sao10K/L3.3-70B-Euryale-v2.3": {
+    "provider": "deepinfra",
+    "model_id": "Sao10K/L3.3-70B-Euryale-v2.3",
+    "display_name": "Sao10K/L3.3-70B-Euryale-v2.3",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.65,
+      "output_per_m_tokens": 0.75,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "864e4e7edc6ed85884ffb730f04d3ab205c449ba045455500570c98c4d4ff029",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/XiaomiMiMo/MiMo-V2.5": {
+    "provider": "deepinfra",
+    "model_id": "XiaomiMiMo/MiMo-V2.5",
+    "display_name": "XiaomiMiMo/MiMo-V2.5",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": 2.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/XiaomiMiMo/MiMo-V2.5-Pro": {
+    "provider": "deepinfra",
+    "model_id": "XiaomiMiMo/MiMo-V2.5-Pro",
+    "display_name": "XiaomiMiMo/MiMo-V2.5-Pro",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.0,
+      "output_per_m_tokens": 3.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/allenai/olmOCR-7B-0725-FP8": {
+    "provider": "deepinfra",
+    "model_id": "allenai/olmOCR-7B-0725-FP8",
+    "display_name": "allenai/olmOCR-7B-0725-FP8",
+    "mode": "chat",
+    "context_window": 16384,
+    "max_output_tokens": 16384,
+    "pricing": {
+      "input_per_m_tokens": 0.27,
+      "output_per_m_tokens": 1.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "148c0984d3aac0114b2a17c81b2322610c54f677e9165a727063781630eab662",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/anthropic/claude-3-7-sonnet-latest": {
+    "provider": "deepinfra",
+    "model_id": "anthropic/claude-3-7-sonnet-latest",
+    "display_name": "anthropic/claude-3-7-sonnet-latest",
+    "mode": "chat",
+    "context_window": 200000,
+    "max_output_tokens": 200000,
+    "pricing": {
+      "input_per_m_tokens": 3.3,
+      "output_per_m_tokens": 16.5,
+      "cache_read_per_m_tokens": 0.33,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/deepinfra/anthropic/claude-3-7-sonnet-latest",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "a6f3997d57f3e4ef48bb17a8fb87c495c1b8e735c39572eeec4ba847b53e2fae",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/anthropic/claude-4-opus": {
+    "provider": "deepinfra",
+    "model_id": "anthropic/claude-4-opus",
+    "display_name": "anthropic/claude-4-opus",
+    "mode": "chat",
+    "context_window": 200000,
+    "max_output_tokens": 200000,
+    "pricing": {
+      "input_per_m_tokens": 16.5,
+      "output_per_m_tokens": 82.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/deepinfra/anthropic/claude-4-opus",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "bda4861c40bff4c8513040c003e9d321bf8b56f684b43a5157dae80d7d855ffb",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/anthropic/claude-4-sonnet": {
+    "provider": "deepinfra",
+    "model_id": "anthropic/claude-4-sonnet",
+    "display_name": "anthropic/claude-4-sonnet",
+    "mode": "chat",
+    "context_window": 200000,
+    "max_output_tokens": 200000,
+    "pricing": {
+      "input_per_m_tokens": 3.3,
+      "output_per_m_tokens": 16.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "b66f4186b1bae8857eb1ba323dc29ae24e23d14d7f4038fd8a6ff651c1836f49",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/deepseek-ai/DeepSeek-R1": {
+    "provider": "deepinfra",
+    "model_id": "deepseek-ai/DeepSeek-R1",
+    "display_name": "deepseek-ai/DeepSeek-R1",
+    "mode": "chat",
+    "context_window": 163840,
+    "max_output_tokens": 163840,
+    "pricing": {
+      "input_per_m_tokens": 0.7,
+      "output_per_m_tokens": 2.4,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "1f788788a71dd953262479bb65d93d7183b72140c530f3d22219da0f1739a185",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/deepseek-ai/DeepSeek-R1-0528": {
+    "provider": "deepinfra",
+    "model_id": "deepseek-ai/DeepSeek-R1-0528",
+    "display_name": "deepseek-ai/DeepSeek-R1-0528",
+    "mode": "chat",
+    "context_window": 163840,
+    "max_output_tokens": 163840,
+    "pricing": {
+      "input_per_m_tokens": 0.5,
+      "output_per_m_tokens": 2.15,
+      "cache_read_per_m_tokens": 0.4,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/deepinfra/deepseek-ai/DeepSeek-R1-0528",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "e9f947cfd2ae7cece52de36c3b6dfee848eaf5e4029cbe4c74de77589c333428",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/deepseek-ai/DeepSeek-R1-0528-Turbo": {
+    "provider": "deepinfra",
+    "model_id": "deepseek-ai/DeepSeek-R1-0528-Turbo",
+    "display_name": "deepseek-ai/DeepSeek-R1-0528-Turbo",
+    "mode": "chat",
+    "context_window": 32768,
+    "max_output_tokens": 32768,
+    "pricing": {
+      "input_per_m_tokens": 1.0,
+      "output_per_m_tokens": 3.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "40c3e44c411667f9e3aa94a8036eda95b9ad1e4075b5daa52bd9da815baf3b17",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/deepseek-ai/DeepSeek-R1-Distill-Llama-70B": {
+    "provider": "deepinfra",
+    "model_id": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+    "display_name": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.6,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "8903293836de67085cfecaac6242ac78dea4bebb48cc6bbd1a39b29f59acee96",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B": {
+    "provider": "deepinfra",
+    "model_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "display_name": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.27,
+      "output_per_m_tokens": 0.27,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "ffc8bebb71f9e79ffad6f0707422aa00bea2ef7d6a8cc19dd31c48aa2b580d8d",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/deepseek-ai/DeepSeek-R1-Turbo": {
+    "provider": "deepinfra",
+    "model_id": "deepseek-ai/DeepSeek-R1-Turbo",
+    "display_name": "deepseek-ai/DeepSeek-R1-Turbo",
+    "mode": "chat",
+    "context_window": 40960,
+    "max_output_tokens": 40960,
+    "pricing": {
+      "input_per_m_tokens": 1.0,
+      "output_per_m_tokens": 3.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "517b203671f785a4d13904b2f931640ad479ed99410052c5227232713acb3ea3",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/deepseek-ai/DeepSeek-V3": {
+    "provider": "deepinfra",
+    "model_id": "deepseek-ai/DeepSeek-V3",
+    "display_name": "deepseek-ai/DeepSeek-V3",
+    "mode": "chat",
+    "context_window": 163840,
+    "max_output_tokens": 163840,
+    "pricing": {
+      "input_per_m_tokens": 0.32,
+      "output_per_m_tokens": 0.89,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "075d7520529e7d532a5518d07b1e94128584b16e5567ecf91ef872dab35b2fc7",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/deepseek-ai/DeepSeek-V3-0324": {
+    "provider": "deepinfra",
+    "model_id": "deepseek-ai/DeepSeek-V3-0324",
+    "display_name": "deepseek-ai/DeepSeek-V3-0324",
+    "mode": "chat",
+    "context_window": 163840,
+    "max_output_tokens": 163840,
+    "pricing": {
+      "input_per_m_tokens": 0.24,
+      "output_per_m_tokens": 0.8999999999999999,
+      "cache_read_per_m_tokens": 0.135,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "6595ae33f8e4077af928072a3f50242cd986b4923eb0251832b127821bfe6221",
+        "snapshot_branch": "snapshots"
+      },
+      "context": {
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-17",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "8c2d080f89db4401237bef1e751078ad868aaf864c22f24b0edbdff4fd116074",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/deepseek-ai/DeepSeek-V3.1": {
+    "provider": "deepinfra",
+    "model_id": "deepseek-ai/DeepSeek-V3.1",
+    "display_name": "deepseek-ai/DeepSeek-V3.1",
+    "mode": "chat",
+    "context_window": 163840,
+    "max_output_tokens": 163840,
+    "pricing": {
+      "input_per_m_tokens": 0.25,
+      "output_per_m_tokens": 0.95,
+      "cache_read_per_m_tokens": 0.216,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "09a69b0d120e084ca49d95f115d916c7ea6197dd3ef150ad1627c8039e099964",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/deepseek-ai/DeepSeek-V3.1-Terminus": {
+    "provider": "deepinfra",
+    "model_id": "deepseek-ai/DeepSeek-V3.1-Terminus",
+    "display_name": "deepseek-ai/DeepSeek-V3.1-Terminus",
+    "mode": "chat",
+    "context_window": 163840,
+    "max_output_tokens": 163840,
+    "pricing": {
+      "input_per_m_tokens": 0.27,
+      "output_per_m_tokens": 1.0,
+      "cache_read_per_m_tokens": 0.216,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "8d3fb08e64e07744ee18ae8307f1fd001d0496301d52e0bb331bbab624e8e9b6",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/deepseek-ai/DeepSeek-V3.2": {
+    "provider": "deepinfra",
+    "model_id": "deepseek-ai/DeepSeek-V3.2",
+    "display_name": "deepseek-ai/DeepSeek-V3.2",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.26,
+      "output_per_m_tokens": 0.38,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/deepseek-ai/DeepSeek-V4-Flash": {
+    "provider": "deepinfra",
+    "model_id": "deepseek-ai/DeepSeek-V4-Flash",
+    "display_name": "deepseek-ai/DeepSeek-V4-Flash",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.09,
+      "output_per_m_tokens": 0.18,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/deepseek-ai/DeepSeek-V4-Flash-0731": {
+    "provider": "deepinfra",
+    "model_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "display_name": "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.08,
+      "output_per_m_tokens": 0.18,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/deepseek-ai/DeepSeek-V4-Pro": {
+    "provider": "deepinfra",
+    "model_id": "deepseek-ai/DeepSeek-V4-Pro",
+    "display_name": "deepseek-ai/DeepSeek-V4-Pro",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.3,
+      "output_per_m_tokens": 2.6,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/deepseek-ai/DeepSeek-V4-Pro-0813": {
+    "provider": "deepinfra",
+    "model_id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "display_name": "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.3,
+      "output_per_m_tokens": 2.6,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/google/gemini-2.0-flash-001": {
+    "provider": "deepinfra",
+    "model_id": "google/gemini-2.0-flash-001",
+    "display_name": "google/gemini-2.0-flash-001",
+    "mode": "chat",
+    "context_window": 1000000,
+    "max_output_tokens": 1000000,
+    "pricing": {
+      "input_per_m_tokens": 0.1,
+      "output_per_m_tokens": 0.4,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "deprecated",
+      "deprecation_date": "2026-03-31",
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "22f32f5b77e8b515409d17fcc8b785e8f2e253e14804f6be38c8207117ce4ebd",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/google/gemini-2.5-flash": {
+    "provider": "deepinfra",
+    "model_id": "google/gemini-2.5-flash",
+    "display_name": "google/gemini-2.5-flash",
+    "mode": "chat",
+    "context_window": 1000000,
+    "max_output_tokens": 1000000,
+    "pricing": {
+      "input_per_m_tokens": 0.3,
+      "output_per_m_tokens": 2.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "487d436934722bec1f9d3d8893599ed885d8f5516c703f655037e808ffee6057",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/google/gemini-2.5-pro": {
+    "provider": "deepinfra",
+    "model_id": "google/gemini-2.5-pro",
+    "display_name": "google/gemini-2.5-pro",
+    "mode": "chat",
+    "context_window": 1000000,
+    "max_output_tokens": 1000000,
+    "pricing": {
+      "input_per_m_tokens": 1.25,
+      "output_per_m_tokens": 10.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "dd249067fcabeb3ec0093ccae8ba06b74adf7a94f4a6562e5e7c19c0332bcf2b",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/google/gemma-3-12b-it": {
+    "provider": "deepinfra",
+    "model_id": "google/gemma-3-12b-it",
+    "display_name": "google/gemma-3-12b-it",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.05,
+      "output_per_m_tokens": 0.1,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "f196f6d9f48ff3980db46911adbe7b82c0f865068fe5c5d795f7f10a801aac2b",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/google/gemma-3-27b-it": {
+    "provider": "deepinfra",
+    "model_id": "google/gemma-3-27b-it",
+    "display_name": "google/gemma-3-27b-it",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.09,
+      "output_per_m_tokens": 0.16,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "fad7398e4df969419742f8013861e0101b2e6a5dce8e17e8dc9133ed1a9fe163",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/google/gemma-3-4b-it": {
+    "provider": "deepinfra",
+    "model_id": "google/gemma-3-4b-it",
+    "display_name": "google/gemma-3-4b-it",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.04,
+      "output_per_m_tokens": 0.08,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "81df413b4750e9ed5f61808bc0552c0bb2cb19d785d2e373a3389da0b8daad8c",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/google/gemma-4-26B-A4B-it": {
+    "provider": "deepinfra",
+    "model_id": "google/gemma-4-26B-A4B-it",
+    "display_name": "google/gemma-4-26B-A4B-it",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.07,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/google/gemma-4-31B-it": {
+    "provider": "deepinfra",
+    "model_id": "google/gemma-4-31B-it",
+    "display_name": "google/gemma-4-31B-it",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.13,
+      "output_per_m_tokens": 0.38,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/google/gemma-4-E4B-it": {
+    "provider": "deepinfra",
+    "model_id": "google/gemma-4-E4B-it",
+    "display_name": "google/gemma-4-E4B-it",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.02,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/meta-llama/Llama-3.2-11B-Vision-Instruct": {
+    "provider": "deepinfra",
+    "model_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+    "display_name": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.049,
+      "output_per_m_tokens": 0.049,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "feaa4fe63e5550ae391b9d271ca5c78e0abbf9999ac13f9745ccb2f44afa7275",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/meta-llama/Llama-3.2-3B-Instruct": {
+    "provider": "deepinfra",
+    "model_id": "meta-llama/Llama-3.2-3B-Instruct",
+    "display_name": "meta-llama/Llama-3.2-3B-Instruct",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.02,
+      "output_per_m_tokens": 0.02,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "43cf4b0180ff5c87d5b7cf9b0595f15be682f77fbbab8c50ff70a0adf0222a23",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/meta-llama/Llama-3.3-70B-Instruct": {
+    "provider": "deepinfra",
+    "model_id": "meta-llama/Llama-3.3-70B-Instruct",
+    "display_name": "meta-llama/Llama-3.3-70B-Instruct",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.23,
+      "output_per_m_tokens": 0.4,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "055b59cf398d5c0235055eb1021277ed62a642d0ed13d322228b7a641bedeee1",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+    "provider": "deepinfra",
+    "model_id": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+    "display_name": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.09999999999999999,
+      "output_per_m_tokens": 0.32,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "149899522f72146bec1339deaa74b55b6696fba2b728586652c745574f572fda",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8": {
+    "provider": "deepinfra",
+    "model_id": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+    "display_name": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+    "mode": "chat",
+    "context_window": 1048576,
+    "max_output_tokens": 1048576,
+    "pricing": {
+      "input_per_m_tokens": 0.19999999999999998,
+      "output_per_m_tokens": 0.7999999999999999,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/deepinfra/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "5b52a2106622f2ec488ad4fb9ad189169318a66d56fd43f06857671e516522cb",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/meta-llama/Llama-4-Scout-17B-16E-Instruct": {
+    "provider": "deepinfra",
+    "model_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "display_name": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "mode": "chat",
+    "context_window": 327680,
+    "max_output_tokens": 327680,
+    "pricing": {
+      "input_per_m_tokens": 0.09999999999999999,
+      "output_per_m_tokens": 0.3,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/deepinfra/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "873bac0a1f16084d39abf1b7cd7e3bcbed8278e348dd7c95e854643409d339c8",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/meta-llama/Llama-Guard-3-8B": {
+    "provider": "deepinfra",
+    "model_id": "meta-llama/Llama-Guard-3-8B",
+    "display_name": "meta-llama/Llama-Guard-3-8B",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.055,
+      "output_per_m_tokens": 0.055,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "569c7110bdbbd2371e488ea958c6a358606085f9d37056a72c22248d4b1cf28e",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/meta-llama/Llama-Guard-4-12B": {
+    "provider": "deepinfra",
+    "model_id": "meta-llama/Llama-Guard-4-12B",
+    "display_name": "meta-llama/Llama-Guard-4-12B",
+    "mode": "chat",
+    "context_window": 163840,
+    "max_output_tokens": 163840,
+    "pricing": {
+      "input_per_m_tokens": 0.18,
+      "output_per_m_tokens": 0.18,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "daa04858ab21acc93ea4b5d68a047b9f742b1aae21603298c5e0f0c9681e3016",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/meta-llama/Meta-Llama-3-8B-Instruct": {
+    "provider": "deepinfra",
+    "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "display_name": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "pricing": {
+      "input_per_m_tokens": 0.03,
+      "output_per_m_tokens": 0.06,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "6766dcbd93c3b903cb4f6b44d73a1db4a1fa6d11cbd3984e2ad126faf347f539",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/meta-llama/Meta-Llama-3.1-70B-Instruct": {
+    "provider": "deepinfra",
+    "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "display_name": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.4,
+      "output_per_m_tokens": 0.4,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "14548dbbb978ce1ea89642106bbfe58128b1b567d6984044cef8e779192dc8c4",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo": {
+    "provider": "deepinfra",
+    "model_id": "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+    "display_name": "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.1,
+      "output_per_m_tokens": 0.28,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "413dbe08d0442077c894917739796c47b0f23868eec4e512d7dd29abcaa610dc",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/meta-llama/Meta-Llama-3.1-8B-Instruct": {
+    "provider": "deepinfra",
+    "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "display_name": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.03,
+      "output_per_m_tokens": 0.05,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "074a2ea073865f3e5da87cd2a527bb09132d3a0db8e8a4ea1e8ec41427b13de7",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": {
+    "provider": "deepinfra",
+    "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+    "display_name": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.02,
+      "output_per_m_tokens": 0.03,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "34bd3a5bbe7fe3e6415960f3a205e58ecbc3ffbb4a6f8190a0005519e9f1d982",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/microsoft/WizardLM-2-8x22B": {
+    "provider": "deepinfra",
+    "model_id": "microsoft/WizardLM-2-8x22B",
+    "display_name": "microsoft/WizardLM-2-8x22B",
+    "mode": "chat",
+    "context_window": 65536,
+    "max_output_tokens": 65536,
+    "pricing": {
+      "input_per_m_tokens": 0.48,
+      "output_per_m_tokens": 0.48,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "c2c0fcf9ac428f843d92a7da74c100d052d6c5eb43364039a133f051a62ba658",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/microsoft/phi-4": {
+    "provider": "deepinfra",
+    "model_id": "microsoft/phi-4",
+    "display_name": "microsoft/phi-4",
+    "mode": "chat",
+    "context_window": 16384,
+    "max_output_tokens": 16384,
+    "pricing": {
+      "input_per_m_tokens": 0.07,
+      "output_per_m_tokens": 0.14,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "ad20c19dae01d90648e58d328a908a51d87aa2c728c98cdbef3cb1806e408bdf",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/mistralai/Mistral-Nemo-Instruct-2407": {
+    "provider": "deepinfra",
+    "model_id": "mistralai/Mistral-Nemo-Instruct-2407",
+    "display_name": "mistralai/Mistral-Nemo-Instruct-2407",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.02,
+      "output_per_m_tokens": 0.04,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "8d163734a4f296a9d7c6fa03a47ccf28b20d37521f6347323ca2205d9add627e",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/mistralai/Mistral-Small-24B-Instruct-2501": {
+    "provider": "deepinfra",
+    "model_id": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "display_name": "mistralai/Mistral-Small-24B-Instruct-2501",
+    "mode": "chat",
+    "context_window": 32768,
+    "max_output_tokens": 32768,
+    "pricing": {
+      "input_per_m_tokens": 0.05,
+      "output_per_m_tokens": 0.08,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "f96b2e70b02a3a52c8964a535e2df252f7ce0e2f8f627ee74a2242be64b2ce3c",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/mistralai/Mistral-Small-3.2-24B-Instruct-2506": {
+    "provider": "deepinfra",
+    "model_id": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+    "display_name": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.075,
+      "output_per_m_tokens": 0.2,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "8625dbd589b5852c0386a3abf061e67b88d4892d9fb9192f95cd91c2fc2a2d11",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/mistralai/Mixtral-8x7B-Instruct-v0.1": {
+    "provider": "deepinfra",
+    "model_id": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "display_name": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "mode": "chat",
+    "context_window": 32768,
+    "max_output_tokens": 32768,
+    "pricing": {
+      "input_per_m_tokens": 0.4,
+      "output_per_m_tokens": 0.4,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "f4f4ee29d87ba10bf1483b9d77c91ad1cbc0b13c129bb4abb6e7a553c549d808",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/moonshotai/Kimi-K2-Instruct": {
+    "provider": "deepinfra",
+    "model_id": "moonshotai/Kimi-K2-Instruct",
+    "display_name": "moonshotai/Kimi-K2-Instruct",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.5,
+      "output_per_m_tokens": 2.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/deepinfra/moonshotai/Kimi-K2-Instruct",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "16435e3689a27ff863f161ccc00b2abd6abfd8546abaad9cd909ecdfeb916445",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/moonshotai/Kimi-K2-Instruct-0905": {
+    "provider": "deepinfra",
+    "model_id": "moonshotai/Kimi-K2-Instruct-0905",
+    "display_name": "moonshotai/Kimi-K2-Instruct-0905",
+    "mode": "chat",
+    "context_window": 262144,
+    "max_output_tokens": 262144,
+    "pricing": {
+      "input_per_m_tokens": 0.5,
+      "output_per_m_tokens": 2.0,
+      "cache_read_per_m_tokens": 0.4,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/deepinfra/moonshotai/Kimi-K2-Instruct-0905",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "93856082bcf6534ca22851a8c9263b9ccf5bc46fca93e1cd7eddaf154d157660",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/moonshotai/Kimi-K2.5": {
+    "provider": "deepinfra",
+    "model_id": "moonshotai/Kimi-K2.5",
+    "display_name": "moonshotai/Kimi-K2.5",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": 2.25,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/moonshotai/Kimi-K2.6": {
+    "provider": "deepinfra",
+    "model_id": "moonshotai/Kimi-K2.6",
+    "display_name": "moonshotai/Kimi-K2.6",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.75,
+      "output_per_m_tokens": 3.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/moonshotai/Kimi-K2.7-Code": {
+    "provider": "deepinfra",
+    "model_id": "moonshotai/Kimi-K2.7-Code",
+    "display_name": "moonshotai/Kimi-K2.7-Code",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": 3.4,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/moonshotai/Kimi-K3": {
+    "provider": "deepinfra",
+    "model_id": "moonshotai/Kimi-K3",
+    "display_name": "moonshotai/Kimi-K3",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": 14.25,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/nvidia/Llama-3.1-Nemotron-70B-Instruct": {
+    "provider": "deepinfra",
+    "model_id": "nvidia/Llama-3.1-Nemotron-70B-Instruct",
+    "display_name": "nvidia/Llama-3.1-Nemotron-70B-Instruct",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.6,
+      "output_per_m_tokens": 0.6,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "18fd862869064a5930065fa1544b1fe0c10b776311d43e4d0fe8602c70f59b89",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/nvidia/Llama-3.3-Nemotron-Super-49B-v1.5": {
+    "provider": "deepinfra",
+    "model_id": "nvidia/Llama-3.3-Nemotron-Super-49B-v1.5",
+    "display_name": "nvidia/Llama-3.3-Nemotron-Super-49B-v1.5",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.1,
+      "output_per_m_tokens": 0.4,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "4ea96f9659ef15fddd06e8c93c9aec4a2ac2dfb3998caddf7b9d3bb2c9f52b0a",
+        "snapshot_branch": "snapshots"
+      },
+      "context": {
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "97fa9077f39388e5aa81f7a62fbd59933227ad32fa9fbe8b9495f20a25db64b7",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/nvidia/NVIDIA-Nemotron-Nano-9B-v2": {
+    "provider": "deepinfra",
+    "model_id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "display_name": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.04,
+      "output_per_m_tokens": 0.16,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://deepinfra.com/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "d7813c7ee85e097b8323cf9e81e0206764d46be63538ce2795e4c68f2099e1d4",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/openai/gpt-oss-120b": {
+    "provider": "deepinfra",
+    "model_id": "openai/gpt-oss-120b",
+    "display_name": "openai/gpt-oss-120b",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.037,
+      "output_per_m_tokens": 0.16999999999999998,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/deepinfra/openai/gpt-oss-120b",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "4af048a94aa86a00a1b03697d0ed953594dea493ef5bc7e047fd57c6b4ab90f2",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/openai/gpt-oss-20b": {
+    "provider": "deepinfra",
+    "model_id": "openai/gpt-oss-20b",
+    "display_name": "openai/gpt-oss-20b",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.03,
+      "output_per_m_tokens": 0.14,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/deepinfra/openai/gpt-oss-20b",
+    "updated_at": "2026-08-31",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "124a2c5f14006e1a427f0d4a61cbfb87f4cf76a641188a53ebe154c2971ee0d5",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/stepfun-ai/Step-3.7-Flash": {
+    "provider": "deepinfra",
+    "model_id": "stepfun-ai/Step-3.7-Flash",
+    "display_name": "stepfun-ai/Step-3.7-Flash",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": 1.15,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/tencent/Hy3": {
+    "provider": "deepinfra",
+    "model_id": "tencent/Hy3",
+    "display_name": "tencent/Hy3",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.14,
+      "output_per_m_tokens": 0.58,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/thinkingmachines/Inkling": {
+    "provider": "deepinfra",
+    "model_id": "thinkingmachines/Inkling",
+    "display_name": "thinkingmachines/Inkling",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.95,
+      "output_per_m_tokens": 4.05,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/thinkingmachines/Inkling-Small": {
+    "provider": "deepinfra",
+    "model_id": "thinkingmachines/Inkling-Small",
+    "display_name": "thinkingmachines/Inkling-Small",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": 1.2,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/zai-org/GLM-4.5": {
+    "provider": "deepinfra",
+    "model_id": "zai-org/GLM-4.5",
+    "display_name": "zai-org/GLM-4.5",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.4,
+      "output_per_m_tokens": 1.6,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/deepinfra/zai-org/GLM-4.5",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "3d9fe7de05b232a3e1fe81d597fe6723b2e040dd1a1cb6da004b644d3fade44e",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "deepinfra/zai-org/GLM-4.6": {
+    "provider": "deepinfra",
+    "model_id": "zai-org/GLM-4.6",
+    "display_name": "zai-org/GLM-4.6",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.5,
+      "output_per_m_tokens": 2.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/zai-org/GLM-4.7": {
+    "provider": "deepinfra",
+    "model_id": "zai-org/GLM-4.7",
+    "display_name": "zai-org/GLM-4.7",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": 1.75,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/zai-org/GLM-4.7-Flash": {
+    "provider": "deepinfra",
+    "model_id": "zai-org/GLM-4.7-Flash",
+    "display_name": "zai-org/GLM-4.7-Flash",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.06,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/zai-org/GLM-5": {
+    "provider": "deepinfra",
+    "model_id": "zai-org/GLM-5",
+    "display_name": "zai-org/GLM-5",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.6,
+      "output_per_m_tokens": 2.08,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/zai-org/GLM-5.1": {
+    "provider": "deepinfra",
+    "model_id": "zai-org/GLM-5.1",
+    "display_name": "zai-org/GLM-5.1",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": 3.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  },
+  "deepinfra/zai-org/GLM-5.2": {
+    "provider": "deepinfra",
+    "model_id": "zai-org/GLM-5.2",
+    "display_name": "zai-org/GLM-5.2",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.75,
+      "output_per_m_tokens": 2.4,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-31",
+    "tier": "standard"
+  }
+}

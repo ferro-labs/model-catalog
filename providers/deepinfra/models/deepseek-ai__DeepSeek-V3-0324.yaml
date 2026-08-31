@@ -5,9 +5,9 @@ mode: chat
 context_window: 163840
 max_output_tokens: 163840
 pricing:
-    input_per_m_tokens: 0.25
-    output_per_m_tokens: 0.88
-    cache_read_per_m_tokens: null
+    input_per_m_tokens: 0.24
+    output_per_m_tokens: 0.8999999999999999
+    cache_read_per_m_tokens: 0.135
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
@@ -35,16 +35,16 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://deepinfra.com/pricing"
-updated_at: "2026-02-28"
+updated_at: "2026-08-31"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-08-31"
         verified_by: scraper-litellm
-        snapshot_sha256: 6595ae33f8e4077af928072a3f50242cd986b4923eb0251832b127821bfe6221
+        snapshot_sha256: af35e5ad34da64ff04660b984de4d4600d426ea12dd4a615b3ce41c8bb3a1413
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high
     context:
         url: "https://models.dev/api.json"
         verified_at: "2026-08-17"

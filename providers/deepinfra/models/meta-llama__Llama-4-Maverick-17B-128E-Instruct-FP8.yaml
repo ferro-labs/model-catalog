@@ -5,8 +5,8 @@ mode: chat
 context_window: 1048576
 max_output_tokens: 1048576
 pricing:
-    input_per_m_tokens: 0.15
-    output_per_m_tokens: 0.6
+    input_per_m_tokens: 0.19999999999999998
+    output_per_m_tokens: 0.7999999999999999
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://models.dev/deepinfra/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8"
-updated_at: "2026-02-28"
+updated_at: "2026-08-31"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-08-31"
         verified_by: scraper-litellm
-        snapshot_sha256: 5b52a2106622f2ec488ad4fb9ad189169318a66d56fd43f06857671e516522cb
+        snapshot_sha256: 47c547ae2af71f330cdf67623616569f510bea5a55afb65ab12d038e5b1eab53
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high

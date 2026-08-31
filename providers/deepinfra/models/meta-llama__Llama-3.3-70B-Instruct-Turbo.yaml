@@ -5,8 +5,8 @@ mode: chat
 context_window: 131072
 max_output_tokens: 131072
 pricing:
-    input_per_m_tokens: 0.13
-    output_per_m_tokens: 0.39
+    input_per_m_tokens: 0.09999999999999999
+    output_per_m_tokens: 0.32
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://models.dev/deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo"
-updated_at: "2026-02-28"
+updated_at: "2026-08-31"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-08-31"
         verified_by: scraper-litellm
-        snapshot_sha256: 149899522f72146bec1339deaa74b55b6696fba2b728586652c745574f572fda
+        snapshot_sha256: 85911794433bfa1cc3554aa45c400f905d1b8a30acb56e8e7365988b84a54438
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high

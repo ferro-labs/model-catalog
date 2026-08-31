@@ -5,8 +5,8 @@ mode: chat
 context_window: 131072
 max_output_tokens: 131072
 pricing:
-    input_per_m_tokens: 0.05
-    output_per_m_tokens: 0.45
+    input_per_m_tokens: 0.037
+    output_per_m_tokens: 0.16999999999999998
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://models.dev/deepinfra/openai/gpt-oss-120b"
-updated_at: "2026-02-28"
+updated_at: "2026-08-31"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-08-31"
         verified_by: scraper-litellm
-        snapshot_sha256: 4af048a94aa86a00a1b03697d0ed953594dea493ef5bc7e047fd57c6b4ab90f2
+        snapshot_sha256: 3368b609ddadab907d01d477934b926daef5d6d51e3561fdab46a85a60fbdf31
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high

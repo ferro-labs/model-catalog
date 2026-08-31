@@ -1,10 +1,10 @@
 {
-  "version": "v2026.08.25",
+  "version": "v2026.08.31",
   "schema_version": 2,
-  "generated_at": "2026-08-25T04:32:45Z",
-  "catalog_sha256": "366ddca479341dc40d472873f7291b1a253cb77bb2dd5646e60ae0e7d9150cbf",
-  "catalog_url": "/v1/366ddca479341dc40d472873f7291b1a253cb77bb2dd5646e60ae0e7d9150cbf.json",
-  "git_sha": "a00272210b72ee1237c99b2e7c3ecd9f0b651d23",
+  "generated_at": "2026-08-31T13:10:56Z",
+  "catalog_sha256": "422676fb4a02c62771e138c7d170ac82fc87f96085a13c00ca9456cba9428442",
+  "catalog_url": "/v1/422676fb4a02c62771e138c7d170ac82fc87f96085a13c00ca9456cba9428442.json",
+  "git_sha": "9650b3d384582516e4dc801bf8080ec4c20f2618",
   "providers": [
     {
       "id": "ai21",
@@ -171,9 +171,9 @@
     },
     {
       "id": "databricks",
-      "model_count": 29,
-      "sha256": "faf4d398e21779c6ce9582d3db83e956036b37932917b3433e23b5d08a73c01c",
-      "url": "/v1/providers/databricks/faf4d398e21779c6ce9582d3db83e956036b37932917b3433e23b5d08a73c01c.json",
+      "model_count": 30,
+      "sha256": "c11ca2592cf395a685ced89a55fc7cbedff731f5667ec2148c66c494bfea21ae",
+      "url": "/v1/providers/databricks/c11ca2592cf395a685ced89a55fc7cbedff731f5667ec2148c66c494bfea21ae.json",
       "display_name": "Databricks",
       "category": "cloud",
       "description": "Foundation Model APIs on Databricks",
@@ -191,9 +191,9 @@
     },
     {
       "id": "deepinfra",
-      "model_count": 67,
-      "sha256": "5774370c691048fc69c93f9c3b4c2ea6458d2140e6d75046ad52ee9ee640bace",
-      "url": "/v1/providers/deepinfra/5774370c691048fc69c93f9c3b4c2ea6458d2140e6d75046ad52ee9ee640bace.json",
+      "model_count": 108,
+      "sha256": "5eeee3cae43c2862f4480105544f64fe21134039016b61bf565af99b47e425e2",
+      "url": "/v1/providers/deepinfra/5eeee3cae43c2862f4480105544f64fe21134039016b61bf565af99b47e425e2.json",
       "display_name": "DeepInfra",
       "logo_url": "https://deepinfra.com/favicon.svg",
       "category": "open-source",
@@ -408,9 +408,9 @@
     },
     {
       "id": "mistral",
-      "model_count": 47,
-      "sha256": "7038655d192947bfd551602dbe07286d4c4e7be60cfaa8ed08dc1462f51352c9",
-      "url": "/v1/providers/mistral/7038655d192947bfd551602dbe07286d4c4e7be60cfaa8ed08dc1462f51352c9.json",
+      "model_count": 48,
+      "sha256": "5f4d1ba32b329c6629cb55d79974ba44ca3baff360803ee4705ffe7e7bfa7e15",
+      "url": "/v1/providers/mistral/5f4d1ba32b329c6629cb55d79974ba44ca3baff360803ee4705ffe7e7bfa7e15.json",
       "display_name": "Mistral AI",
       "logo_url": "https://mistral.ai/favicon.svg",
       "category": "frontier",
@@ -522,8 +522,8 @@
     {
       "id": "openai",
       "model_count": 169,
-      "sha256": "fbed11986e91c1adef5f218cd501a9fe029b28e0781e95dbff71d982b33356ad",
-      "url": "/v1/providers/openai/fbed11986e91c1adef5f218cd501a9fe029b28e0781e95dbff71d982b33356ad.json",
+      "sha256": "c34e4c07544d473091b34378b8b7a14e827fdd195f87a05f0d4323bf9f421b4a",
+      "url": "/v1/providers/openai/c34e4c07544d473091b34378b8b7a14e827fdd195f87a05f0d4323bf9f421b4a.json",
       "display_name": "OpenAI",
       "logo_url": "https://cdn.openai.com/API/logo-assets/openai-logomark.svg",
       "category": "frontier",
@@ -533,8 +533,8 @@
     {
       "id": "openrouter",
       "model_count": 87,
-      "sha256": "607459a1c90cdb220a8924697a8131a044575eaa92b7c697cefc6598d74342d6",
-      "url": "/v1/providers/openrouter/607459a1c90cdb220a8924697a8131a044575eaa92b7c697cefc6598d74342d6.json",
+      "sha256": "c7275209966b4761a7f1a154f72ae74ae8435227d641532eff5cce7ee8117376",
+      "url": "/v1/providers/openrouter/c7275209966b4761a7f1a154f72ae74ae8435227d641532eff5cce7ee8117376.json",
       "display_name": "OpenRouter",
       "category": "specialized",
       "description": "Unified API across 200+ models",
@@ -816,9 +816,9 @@
     },
     {
       "id": "wandb",
-      "model_count": 16,
-      "sha256": "5356ea61f92db5bc00d2e1d0958504af3a1af259a3a62f3271da5418f9e61fa4",
-      "url": "/v1/providers/wandb/5356ea61f92db5bc00d2e1d0958504af3a1af259a3a62f3271da5418f9e61fa4.json",
+      "model_count": 31,
+      "sha256": "2f051af3ff166ed690084f1361b4e8664f158deedcccc924b8771f9d49570628",
+      "url": "/v1/providers/wandb/2f051af3ff166ed690084f1361b4e8664f158deedcccc924b8771f9d49570628.json",
       "display_name": "Weights \u0026 Biases",
       "category": "specialized",
       "description": "ML experiment tracking and model registry",
@@ -847,9 +847,9 @@
     },
     {
       "id": "zai",
-      "model_count": 13,
-      "sha256": "208a31ee1112771646fe6c31f42aafb87757a6762c4e6efa1e693a583069469a",
-      "url": "/v1/providers/zai/208a31ee1112771646fe6c31f42aafb87757a6762c4e6efa1e693a583069469a.json",
+      "model_count": 14,
+      "sha256": "5d5d5d3b5a507441277b46de37ca4f93e4e4e857d9a1522bee3f9a62f7095d07",
+      "url": "/v1/providers/zai/5d5d5d3b5a507441277b46de37ca4f93e4e4e857d9a1522bee3f9a62f7095d07.json",
       "display_name": "Zai",
       "category": "specialized",
       "description": "Specialized AI model inference",
@@ -857,7 +857,7 @@
     }
   ],
   "stats": {
-    "total_models": 2554,
+    "total_models": 2613,
     "total_providers": 83
   }
 }
