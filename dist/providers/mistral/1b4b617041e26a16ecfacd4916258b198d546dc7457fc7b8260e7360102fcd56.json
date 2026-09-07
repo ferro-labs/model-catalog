@@ -1,0 +1,2622 @@
+{
+  "mistral/codestral-2405": {
+    "provider": "mistral",
+    "model_id": "codestral-2405",
+    "display_name": "codestral-2405",
+    "mode": "chat",
+    "context_window": 32000,
+    "max_output_tokens": 8191,
+    "pricing": {
+      "input_per_m_tokens": 0.0,
+      "output_per_m_tokens": 0.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.mistral.ai/capabilities/code_generation/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://docs.mistral.ai/capabilities/code_generation/",
+        "verified_at": "2026-02-28",
+        "confidence": "low",
+        "verified_by": "import:v1"
+      }
+    }
+  },
+  "mistral/codestral-2508": {
+    "provider": "mistral",
+    "model_id": "codestral-2508",
+    "display_name": "codestral-2508",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 0.3,
+      "output_per_m_tokens": 0.9,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/news/codestral-25-08",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "d7a0a2291b7bde62c4cb995fc6386a7d732e68daeca4e0a640994333f6fa0329",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/codestral-embed": {
+    "provider": "mistral",
+    "model_id": "codestral-embed",
+    "display_name": "codestral-embed",
+    "mode": "embedding",
+    "context_window": 8192,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": 0.15,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/technology/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://mistral.ai/technology/",
+        "verified_at": "2026-02-28",
+        "confidence": "low",
+        "verified_by": "import:v1"
+      }
+    }
+  },
+  "mistral/codestral-embed-2505": {
+    "provider": "mistral",
+    "model_id": "codestral-embed-2505",
+    "display_name": "codestral-embed-2505",
+    "mode": "embedding",
+    "context_window": 8192,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": 0.15,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/technology/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://mistral.ai/technology/",
+        "verified_at": "2026-02-28",
+        "confidence": "low",
+        "verified_by": "import:v1"
+      }
+    }
+  },
+  "mistral/codestral-latest": {
+    "provider": "mistral",
+    "model_id": "codestral-latest",
+    "display_name": "codestral-latest",
+    "mode": "chat",
+    "context_window": 32000,
+    "max_output_tokens": 8191,
+    "pricing": {
+      "input_per_m_tokens": 0.3,
+      "output_per_m_tokens": 0.8999999999999999,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.mistral.ai/capabilities/code_generation/",
+    "updated_at": "2026-08-24",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-24",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "5a4773320c61f235762a7cc72ae0ee01c68d527f02dc0050bf3e2afa26ecdfac",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/codestral-mamba-latest": {
+    "provider": "mistral",
+    "model_id": "codestral-mamba-latest",
+    "display_name": "codestral-mamba-latest",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 0.25,
+      "output_per_m_tokens": 0.25,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/technology/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "962f6617694c15874ed8f542c04b8f6b82df842f075bf81f20dfdbd64a7e0a6d",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/devstral-2512": {
+    "provider": "mistral",
+    "model_id": "devstral-2512",
+    "display_name": "devstral-2512",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 0.4,
+      "output_per_m_tokens": 2.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/news/devstral-2-vibe-cli",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "c3f5941f683910b64c8d0f2c0c87d95e9df1483ba25b1f5a173776385bfab271",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/devstral-latest": {
+    "provider": "mistral",
+    "model_id": "devstral-latest",
+    "display_name": "devstral-latest",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 0.4,
+      "output_per_m_tokens": 2.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/news/devstral-2-vibe-cli",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "6a029b97c051e1e870ede8b86650c67efb873eac6a7ebb4ee5ab873fdeed2838",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/devstral-medium-2507": {
+    "provider": "mistral",
+    "model_id": "devstral-medium-2507",
+    "display_name": "devstral-medium-2507",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.4,
+      "output_per_m_tokens": 2.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/news/devstral",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "a90ecf29e845dc8b3b758a18d8a914d2743397bcb2b49ef93136bc16554923cf",
+        "snapshot_branch": "snapshots"
+      },
+      "context": {
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "41107eefd3a5b13e6912bc2540d7b03ea72cbea0c93a978da8fc47a6f816f954",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/devstral-medium-latest": {
+    "provider": "mistral",
+    "model_id": "devstral-medium-latest",
+    "display_name": "devstral-medium-latest",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 0.4,
+      "output_per_m_tokens": 2.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/news/devstral-2-vibe-cli",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "5a1b7c7dee7dd3871d0cdb8e851b5a8b2f6691edc69a97ea80bc2f8f6e07ded0",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/devstral-small-2505": {
+    "provider": "mistral",
+    "model_id": "devstral-small-2505",
+    "display_name": "devstral-small-2505",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.1,
+      "output_per_m_tokens": 0.3,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/news/devstral",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "43a1c357ec683a1ba73e7cc569236ed4e389c19ff1a25acdcc527ebd33381db6",
+        "snapshot_branch": "snapshots"
+      },
+      "context": {
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "81aaaf142a5a00a577f39b8b96682c1b8773a9ba92a3404265223c964687315d",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/devstral-small-2507": {
+    "provider": "mistral",
+    "model_id": "devstral-small-2507",
+    "display_name": "devstral-small-2507",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.1,
+      "output_per_m_tokens": 0.3,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/news/devstral",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "7ba5595a610ed00daf2b95ddfada49978ab309e047164bd9303e5ded7dc064ab",
+        "snapshot_branch": "snapshots"
+      },
+      "context": {
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "1a380d1f425314e442498a880bae37f49561b89205961f1d97e114e851346670",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/devstral-small-latest": {
+    "provider": "mistral",
+    "model_id": "devstral-small-latest",
+    "display_name": "devstral-small-latest",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 0.1,
+      "output_per_m_tokens": 0.3,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.mistral.ai/models/devstral-small-2-25-12",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "f05c95fd76e07636b9fea9b699cc581e07af38c1416834d337a8dac587c10dfe",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/labs-devstral-small-2512": {
+    "provider": "mistral",
+    "model_id": "labs-devstral-small-2512",
+    "display_name": "labs-devstral-small-2512",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 0.1,
+      "output_per_m_tokens": 0.3,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.mistral.ai/models/devstral-small-2-25-12",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "5bdf2f6b9b49ffdc80ab5bba81dcbc182bc42ce3f09ac3ae5d2a9ddc3c39c79b",
+        "snapshot_branch": "snapshots"
+      },
+      "context": {
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "269d02f11ae78bb7dce474e8c245e0ca537d44885fef786c3477ed54bf4dd7c4",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/magistral-medium-2506": {
+    "provider": "mistral",
+    "model_id": "magistral-medium-2506",
+    "display_name": "magistral-medium-2506",
+    "mode": "chat",
+    "context_window": 40000,
+    "max_output_tokens": 40000,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 5.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/news/magistral",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "b7cfb49e33c782b81ca6d4745ea212b8bd082633435141a9c73f68202269e106",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/magistral-medium-2509": {
+    "provider": "mistral",
+    "model_id": "magistral-medium-2509",
+    "display_name": "magistral-medium-2509",
+    "mode": "chat",
+    "context_window": 40000,
+    "max_output_tokens": 40000,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 5.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/news/magistral",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "b8512a3d9a94149b87158d58e846c999dbe921465e01c5ac9ec64b656e26ab82",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/magistral-medium-latest": {
+    "provider": "mistral",
+    "model_id": "magistral-medium-latest",
+    "display_name": "magistral-medium-latest",
+    "mode": "chat",
+    "context_window": 40000,
+    "max_output_tokens": 40000,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 5.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/news/magistral",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "59ce861d710a66377ac75a092f0d855062633363ed1f3e594f746778b10d24c6",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/magistral-small-2506": {
+    "provider": "mistral",
+    "model_id": "magistral-small-2506",
+    "display_name": "magistral-small-2506",
+    "mode": "chat",
+    "context_window": 40000,
+    "max_output_tokens": 40000,
+    "pricing": {
+      "input_per_m_tokens": 0.5,
+      "output_per_m_tokens": 1.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/pricing#api-pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "12879cee91a7fd12f4483e7ce67c11206064cc409b8ed732f3f8a06b3299c119",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/magistral-small-latest": {
+    "provider": "mistral",
+    "model_id": "magistral-small-latest",
+    "display_name": "magistral-small-latest",
+    "mode": "chat",
+    "context_window": 40000,
+    "max_output_tokens": 40000,
+    "pricing": {
+      "input_per_m_tokens": 0.5,
+      "output_per_m_tokens": 1.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/pricing#api-pricing",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "3b16d798cac608b39a66bd2c98e514cb65a9aab28db6b11f50f4b515bedb2326",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/mistral-embed": {
+    "provider": "mistral",
+    "model_id": "mistral-embed",
+    "display_name": "mistral-embed",
+    "mode": "embedding",
+    "context_window": 8192,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.09999999999999999,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": 0.1,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/mistral/mistral-embed",
+    "updated_at": "2026-07-06",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "809dfc207da0ef9b2aa9a962dad34bebe0ab4eb780adc42e101112916d6b1428",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/mistral-large-2402": {
+    "provider": "mistral",
+    "model_id": "mistral-large-2402",
+    "display_name": "mistral-large-2402",
+    "mode": "chat",
+    "context_window": 32000,
+    "max_output_tokens": 8191,
+    "pricing": {
+      "input_per_m_tokens": 4.0,
+      "output_per_m_tokens": 12.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/technology/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "2550fa1acea554026dbb3eb6c49aa3ec381c7c330a16afec3e633c730d246861",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/mistral-large-2407": {
+    "provider": "mistral",
+    "model_id": "mistral-large-2407",
+    "display_name": "mistral-large-2407",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 9.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/technology/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "0ce610ca7bb4d3be8a5d875fd4faf8ca8f06ecaade110a31af720a3fe1fbad15",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/mistral-large-2411": {
+    "provider": "mistral",
+    "model_id": "mistral-large-2411",
+    "display_name": "mistral-large-2411",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 6.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/mistral/mistral-large-2411",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "7294beb5bc1962fad7345465f91892171f22264f4d4327919e09ae54a05b4b26",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/mistral-large-2512": {
+    "provider": "mistral",
+    "model_id": "mistral-large-2512",
+    "display_name": "mistral-large-2512",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.5,
+      "output_per_m_tokens": 1.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-07-06",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "fe68fac23894648eec91be65c4bc476f1ff27a0b6273196bfc2209c829524ed5",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/mistral-large-3": {
+    "provider": "mistral",
+    "model_id": "mistral-large-3",
+    "display_name": "mistral-large-3",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 8191,
+    "pricing": {
+      "input_per_m_tokens": 0.5,
+      "output_per_m_tokens": 1.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.mistral.ai/models/mistral-large-3-25-12",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "6d2c650b9c137906cd1001d8bb70ced16f6b6b7cf137bb7dd800398feea5723e",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/mistral-large-latest": {
+    "provider": "mistral",
+    "model_id": "mistral-large-latest",
+    "display_name": "mistral-large-latest",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.5,
+      "output_per_m_tokens": 1.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/mistral/mistral-large-latest",
+    "updated_at": "2026-07-06",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "a5f2e6ecbfc680f72cc812c45ec4a426558683e74c49c359bd902a528153900a",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/mistral-medium": {
+    "provider": "mistral",
+    "model_id": "mistral-medium",
+    "display_name": "mistral-medium",
+    "mode": "chat",
+    "context_window": 32000,
+    "max_output_tokens": 8191,
+    "pricing": {
+      "input_per_m_tokens": 2.7,
+      "output_per_m_tokens": 8.1,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/technology/",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "c6f21626c47b8eee8d891f94c205917cf8159a7a6bea9887c701ea2d34eb9340",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/mistral-medium-2312": {
+    "provider": "mistral",
+    "model_id": "mistral-medium-2312",
+    "display_name": "mistral-medium-2312",
+    "mode": "chat",
+    "context_window": 32000,
+    "max_output_tokens": 8191,
+    "pricing": {
+      "input_per_m_tokens": 2.7,
+      "output_per_m_tokens": 8.1,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/technology/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "53c15cf6787f3d20a55e056d48ccf18d1f0bf4ac63f74ea76bb090432cecff42",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/mistral-medium-2505": {
+    "provider": "mistral",
+    "model_id": "mistral-medium-2505",
+    "display_name": "mistral-medium-2505",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 8191,
+    "pricing": {
+      "input_per_m_tokens": 0.4,
+      "output_per_m_tokens": 2.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/mistral/mistral-medium-2505",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "4e91eb6bd53368ca39f61d0d5692adf594a1d4d7f4e03c1739a0b3fccb7cf943",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/mistral-medium-2508": {
+    "provider": "mistral",
+    "model_id": "mistral-medium-2508",
+    "display_name": "mistral-medium-2508",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.39999999999999997,
+      "output_per_m_tokens": 2.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-07-13",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "bc73203843625be5c3f49c481e30491f7264c7ce007230c3583dd4d78cbe0878",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/mistral-medium-2604": {
+    "provider": "mistral",
+    "model_id": "mistral-medium-2604",
+    "display_name": "mistral-medium-2604",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.5,
+      "output_per_m_tokens": 7.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-07-06",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "696a4aac699fd9d9c23f25b7d01754ed45be2c8b347f9e423bea65b14a1c69ea",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/mistral-medium-latest": {
+    "provider": "mistral",
+    "model_id": "mistral-medium-latest",
+    "display_name": "mistral-medium-latest",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 8191,
+    "pricing": {
+      "input_per_m_tokens": 1.5,
+      "output_per_m_tokens": 7.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/mistral/mistral-medium-latest",
+    "updated_at": "2026-07-06",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "e277f2c2cf6bb192cbe9f2684ccd516ddaec58f9d5191e02ce40508153461ab7",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/mistral-ocr-2505-completion": {
+    "provider": "mistral",
+    "model_id": "mistral-ocr-2505-completion",
+    "display_name": "mistral-ocr-2505-completion",
+    "mode": "ocr",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/pricing#api-pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://mistral.ai/pricing#api-pricing",
+        "verified_at": "2026-02-28",
+        "confidence": "low",
+        "verified_by": "import:v1"
+      }
+    }
+  },
+  "mistral/mistral-ocr-latest": {
+    "provider": "mistral",
+    "model_id": "mistral-ocr-latest",
+    "display_name": "mistral-ocr-latest",
+    "mode": "ocr",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/pricing#api-pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://mistral.ai/pricing#api-pricing",
+        "verified_at": "2026-02-28",
+        "confidence": "low",
+        "verified_by": "import:v1"
+      }
+    }
+  },
+  "mistral/mistral-small": {
+    "provider": "mistral",
+    "model_id": "mistral-small",
+    "display_name": "mistral-small",
+    "mode": "chat",
+    "context_window": 32000,
+    "max_output_tokens": 8191,
+    "pricing": {
+      "input_per_m_tokens": 0.1,
+      "output_per_m_tokens": 0.3,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/technology/",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "f42a0a761e39c7e61d13a8bd4f3ba452d4ecf85b2533f95b7d337a098c09bdfe",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/mistral-small-2603": {
+    "provider": "mistral",
+    "model_id": "mistral-small-2603",
+    "display_name": "mistral-small-2603",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.15,
+      "output_per_m_tokens": 0.6,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-17",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-17",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "e0c62651fda58393f0049a6dc4a2c438d0fa6617666e4162af590040b26d7d8f",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/mistral-small-latest": {
+    "provider": "mistral",
+    "model_id": "mistral-small-latest",
+    "display_name": "mistral-small-latest",
+    "mode": "chat",
+    "context_window": 32000,
+    "max_output_tokens": 8191,
+    "pricing": {
+      "input_per_m_tokens": 0.15,
+      "output_per_m_tokens": 0.6,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/mistral/mistral-small-latest",
+    "updated_at": "2026-08-24",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-24",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "1939252f801687c2bf2ba9c239606d9dd22e3378acfe7fa2106f082647635562",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/mistral-tiny": {
+    "provider": "mistral",
+    "model_id": "mistral-tiny",
+    "display_name": "mistral-tiny",
+    "mode": "chat",
+    "context_window": 32000,
+    "max_output_tokens": 8191,
+    "pricing": {
+      "input_per_m_tokens": 0.25,
+      "output_per_m_tokens": 0.25,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/technology/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "9f24dc368dac572332caa02ddd0514dd57567ea6ccaed2f31754ecb7c43202ec",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/open-codestral-mamba": {
+    "provider": "mistral",
+    "model_id": "open-codestral-mamba",
+    "display_name": "open-codestral-mamba",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 0.25,
+      "output_per_m_tokens": 0.25,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/technology/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "7452580ff0536390da422bb7b8efbaeac59b4388e109c8c497ecf6270e01dc60",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/open-mistral-7b": {
+    "provider": "mistral",
+    "model_id": "open-mistral-7b",
+    "display_name": "open-mistral-7b",
+    "mode": "chat",
+    "context_window": 32000,
+    "max_output_tokens": 8191,
+    "pricing": {
+      "input_per_m_tokens": 0.25,
+      "output_per_m_tokens": 0.25,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/mistral/open-mistral-7b",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "6302be54740d2c1862b9944c9d323d0e387e18551976aa5ffc591e4a5ec7282d",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/open-mistral-nemo": {
+    "provider": "mistral",
+    "model_id": "open-mistral-nemo",
+    "display_name": "open-mistral-nemo",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.3,
+      "output_per_m_tokens": 0.3,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/technology/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "27ac51c7eeb1ed448232e5d46a0db14d0253f0f9779ab80354ba02963632ff5b",
+        "snapshot_branch": "snapshots"
+      },
+      "context": {
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "3fcd7a968e1f0267aeb9d462f1abac3ce3c6951b4690ab37f718697daa7d1d6f",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/open-mistral-nemo-2407": {
+    "provider": "mistral",
+    "model_id": "open-mistral-nemo-2407",
+    "display_name": "open-mistral-nemo-2407",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.3,
+      "output_per_m_tokens": 0.3,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/technology/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "739ef464b44b3b40f39ac8e4abc69fec3c2153713f15ab7bafd93a25834e7ae1",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/open-mixtral-8x22b": {
+    "provider": "mistral",
+    "model_id": "open-mixtral-8x22b",
+    "display_name": "open-mixtral-8x22b",
+    "mode": "chat",
+    "context_window": 65336,
+    "max_output_tokens": 8191,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 6.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/mistral/open-mixtral-8x22b",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "dd6ce9bebc492679cb9b4848cc4376b1d138d883813585eed11ed19f23722004",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/open-mixtral-8x7b": {
+    "provider": "mistral",
+    "model_id": "open-mixtral-8x7b",
+    "display_name": "open-mixtral-8x7b",
+    "mode": "chat",
+    "context_window": 32000,
+    "max_output_tokens": 8191,
+    "pricing": {
+      "input_per_m_tokens": 0.7,
+      "output_per_m_tokens": 0.7,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/mistral/open-mixtral-8x7b",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "f02cef4ef6f9606bfdcaf4051f4eb26529d8ba6f319a96e540e3c7cda5369992",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/pixtral-12b-2409": {
+    "provider": "mistral",
+    "model_id": "pixtral-12b-2409",
+    "display_name": "pixtral-12b-2409",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.15,
+      "output_per_m_tokens": 0.15,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/technology/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "8172906eeb18de285ff471347f57f70b87b153f483aae18a9ab746ba3e46bbc5",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/pixtral-large-2411": {
+    "provider": "mistral",
+    "model_id": "pixtral-large-2411",
+    "display_name": "pixtral-large-2411",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 6.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://mistral.ai/technology/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "b27f9b8455534ea92358eda105270a8af3278a8244c229cbbbce22313474b095",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/pixtral-large-latest": {
+    "provider": "mistral",
+    "model_id": "pixtral-large-latest",
+    "display_name": "pixtral-large-latest",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 6.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/mistral/pixtral-large-latest",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "f50529c9fd66e884f2f7f2222c6b6532da21be26658983bce1e9d4fa257b862b",
+        "snapshot_branch": "snapshots"
+      },
+      "context": {
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "283da4b6634e5dab12009851ed02d782b19251e6e30e9bf1b69f6fbdd53f099b",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "mistral/zai-glm-5-2": {
+    "provider": "mistral",
+    "model_id": "zai-glm-5-2",
+    "display_name": "zai-glm-5-2",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.4,
+      "output_per_m_tokens": 4.4,
+      "cache_read_per_m_tokens": 0.14,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-09-07",
+    "tier": "standard"
+  }
+}

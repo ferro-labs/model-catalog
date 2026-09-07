@@ -5,8 +5,8 @@ mode: chat
 context_window: 262144
 max_output_tokens: 262144
 pricing:
-    input_per_m_tokens: 0.11
-    output_per_m_tokens: 0.6
+    input_per_m_tokens: 0.22999999999999998
+    output_per_m_tokens: 2.3
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: https://openrouter.ai/qwen/qwen3-235b-a22b-thinking-2507
-updated_at: "2026-02-28"
+updated_at: "2026-09-07"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-09-07"
         verified_by: scraper-litellm
-        snapshot_sha256: b8e7ad3483e88428fccc602d700aed7cddba69fd5f28682823a03f227f5f1e18
+        snapshot_sha256: 3d5c0ba68cf7aa32f02df8a0acf504d95cbc64690c907973e965004339ac0fc4
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high

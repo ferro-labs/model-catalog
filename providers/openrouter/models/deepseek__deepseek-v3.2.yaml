@@ -5,7 +5,7 @@ mode: chat
 context_window: 163840
 max_output_tokens: 163840
 pricing:
-    input_per_m_tokens: 0.28
+    input_per_m_tokens: 0.26899999999999996
     output_per_m_tokens: 0.4
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
@@ -35,14 +35,14 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://models.dev/openrouter/deepseek/deepseek-v3.2"
-updated_at: "2026-02-28"
+updated_at: "2026-09-07"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-09-07"
         verified_by: scraper-litellm
-        snapshot_sha256: 10085d1a62b15b0cdd817088d724d5b7a3719616b7470215b7f9ba6de30d30ac
+        snapshot_sha256: ec4b941c83cda8f73f1aa46bce117f23a6cadd9ccd6a5ed8a8b1e2395c4baa71
         snapshot_branch: snapshots
         confidence: medium
     context:
