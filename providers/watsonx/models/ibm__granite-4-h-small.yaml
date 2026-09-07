@@ -5,8 +5,8 @@ mode: chat
 context_window: 20480
 max_output_tokens: 20480
 pricing:
-    input_per_m_tokens: 0.06
-    output_per_m_tokens: 0.25
+    input_per_m_tokens: 0.0636
+    output_per_m_tokens: 0.265
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://www.ibm.com/products/watsonx-ai/foundation-models"
-updated_at: "2026-02-28"
+updated_at: "2026-09-07"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-09-07"
         verified_by: scraper-litellm
-        snapshot_sha256: bc64e7ff3da61c5a34a14735838c4d3ac5cdf1f156c3dfec7b8d811248df5d0c
+        snapshot_sha256: d8dcd37b9847e59657001b55139e5a90e0a9b7e80fdccfa3bdff7f852292a925
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high

@@ -7,7 +7,7 @@ max_output_tokens: 8192
 pricing:
     input_per_m_tokens: 0.3
     output_per_m_tokens: 2.5
-    cache_read_per_m_tokens: null
+    cache_read_per_m_tokens: 0.03
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://models.dev/openrouter/google/gemini-2.5-flash"
-updated_at: "2026-02-28"
+updated_at: "2026-09-07"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-09-07"
         verified_by: scraper-litellm
-        snapshot_sha256: 9560f849832e2a7258173052b62c057f3a05cdf97ded85dd3c3677edcce73483
+        snapshot_sha256: 72c459a24f32ec2f7d7ce708957a696d8e807aa79fad4784513d9bafb0174fc3
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high

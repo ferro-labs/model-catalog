@@ -5,9 +5,9 @@ mode: chat
 context_window: 196608
 max_output_tokens: 65536
 pricing:
-    input_per_m_tokens: 0.3
-    output_per_m_tokens: 1.1
-    cache_read_per_m_tokens: 0.15
+    input_per_m_tokens: 0.27
+    output_per_m_tokens: 1.08
+    cache_read_per_m_tokens: 0.027
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: https://openrouter.ai/minimax/minimax-m2.5
-updated_at: "2026-02-28"
+updated_at: "2026-09-07"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-09-07"
         verified_by: scraper-litellm
-        snapshot_sha256: e5d837fbf01a4b7becbbfd7751281d22ffb2f6abc7ea9c558cef7d66c12d1900
+        snapshot_sha256: e6e0395310688ffd7f795d4cadbd183b8ff84e51c41125f3e94544ee161eeb81
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high

@@ -1,0 +1,1610 @@
+{
+  "watsonx/bigscience/mt0-xxl-13b": {
+    "provider": "watsonx",
+    "model_id": "bigscience/mt0-xxl-13b",
+    "display_name": "bigscience/mt0-xxl-13b",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "pricing": {
+      "input_per_m_tokens": 500.0,
+      "output_per_m_tokens": 2000.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "0e0ea0eae851ce9d2bb92300d6cab19c0fa41c6671a900be2931d30757d2dc26",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/core42/jais-13b-chat": {
+    "provider": "watsonx",
+    "model_id": "core42/jais-13b-chat",
+    "display_name": "core42/jais-13b-chat",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "pricing": {
+      "input_per_m_tokens": 500.0,
+      "output_per_m_tokens": 2000.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "986249cddafd541a4f39a296e20457075e5efcb7063a2f95e991241e32543233",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/google/flan-t5-xl-3b": {
+    "provider": "watsonx",
+    "model_id": "google/flan-t5-xl-3b",
+    "display_name": "google/flan-t5-xl-3b",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "pricing": {
+      "input_per_m_tokens": 0.6,
+      "output_per_m_tokens": 0.6,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "2fcaeeb763ff610e9dc90511ca92602a8561546b2c955f8c0b1a06a9901a7bc7",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/ibm/granite-13b-chat-v2": {
+    "provider": "watsonx",
+    "model_id": "ibm/granite-13b-chat-v2",
+    "display_name": "ibm/granite-13b-chat-v2",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "pricing": {
+      "input_per_m_tokens": 0.6,
+      "output_per_m_tokens": 0.6,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "75dc59c115f4bf63f4b8dcf00519bb63e033adcebfc0106856c8002c7341f688",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/ibm/granite-13b-instruct-v2": {
+    "provider": "watsonx",
+    "model_id": "ibm/granite-13b-instruct-v2",
+    "display_name": "ibm/granite-13b-instruct-v2",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "pricing": {
+      "input_per_m_tokens": 0.6,
+      "output_per_m_tokens": 0.6,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "3fd5536892919877c1e2012552cc4b4267b84095f4c2b884a3d315576723b69c",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/ibm/granite-3-3-8b-instruct": {
+    "provider": "watsonx",
+    "model_id": "ibm/granite-3-3-8b-instruct",
+    "display_name": "ibm/granite-3-3-8b-instruct",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.2,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": true,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "881728e15777bb289434f78638178c8d17bae69bd6b45113fdb0d0836c6d416a",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/ibm/granite-3-8b-instruct": {
+    "provider": "watsonx",
+    "model_id": "ibm/granite-3-8b-instruct",
+    "display_name": "ibm/granite-3-8b-instruct",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 1024,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.2,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": true,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "de232fad030048c19d599d34a32c46a723b054f11d644bc4079fac4b38b01c59",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/ibm/granite-4-h-small": {
+    "provider": "watsonx",
+    "model_id": "ibm/granite-4-h-small",
+    "display_name": "ibm/granite-4-h-small",
+    "mode": "chat",
+    "context_window": 20480,
+    "max_output_tokens": 20480,
+    "pricing": {
+      "input_per_m_tokens": 0.0636,
+      "output_per_m_tokens": 0.265,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": true,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-09-07",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "bc64e7ff3da61c5a34a14735838c4d3ac5cdf1f156c3dfec7b8d811248df5d0c",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/ibm/granite-guardian-3-2-2b": {
+    "provider": "watsonx",
+    "model_id": "ibm/granite-guardian-3-2-2b",
+    "display_name": "ibm/granite-guardian-3-2-2b",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "pricing": {
+      "input_per_m_tokens": 0.1,
+      "output_per_m_tokens": 0.1,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "a5460e13790d1507f45b82b61a26dbd51c69756173c68b8277e6cec1418e1ba0",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/ibm/granite-guardian-3-3-8b": {
+    "provider": "watsonx",
+    "model_id": "ibm/granite-guardian-3-3-8b",
+    "display_name": "ibm/granite-guardian-3-3-8b",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.2,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "e037b52d9bc35f19067ea1dad48dd030f460b5871256c5afa9d5339d39b6add4",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/ibm/granite-ttm-1024-96-r2": {
+    "provider": "watsonx",
+    "model_id": "ibm/granite-ttm-1024-96-r2",
+    "display_name": "ibm/granite-ttm-1024-96-r2",
+    "mode": "chat",
+    "context_window": 512,
+    "max_output_tokens": 512,
+    "pricing": {
+      "input_per_m_tokens": 0.38,
+      "output_per_m_tokens": 0.38,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "cadf02b4c6d02c2c3524cac189f79cbc528984fcf7ca23b265833ec5fdfb5a06",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/ibm/granite-ttm-1536-96-r2": {
+    "provider": "watsonx",
+    "model_id": "ibm/granite-ttm-1536-96-r2",
+    "display_name": "ibm/granite-ttm-1536-96-r2",
+    "mode": "chat",
+    "context_window": 512,
+    "max_output_tokens": 512,
+    "pricing": {
+      "input_per_m_tokens": 0.38,
+      "output_per_m_tokens": 0.38,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "8acb196caf3fadb040472cc5e0f87051c1c69704db4ca628de55ff45406e6bd2",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/ibm/granite-ttm-512-96-r2": {
+    "provider": "watsonx",
+    "model_id": "ibm/granite-ttm-512-96-r2",
+    "display_name": "ibm/granite-ttm-512-96-r2",
+    "mode": "chat",
+    "context_window": 512,
+    "max_output_tokens": 512,
+    "pricing": {
+      "input_per_m_tokens": 0.38,
+      "output_per_m_tokens": 0.38,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "17fe458ecbaa8fee8ff40a276d808d0f3544b9e7fcd290248074465fc02baf5b",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/ibm/granite-vision-3-2-2b": {
+    "provider": "watsonx",
+    "model_id": "ibm/granite-vision-3-2-2b",
+    "display_name": "ibm/granite-vision-3-2-2b",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "pricing": {
+      "input_per_m_tokens": 0.1,
+      "output_per_m_tokens": 0.1,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "73f5ada475ade3db7752e286e46cf5fb8f190ba730b51773ff2c5b8c68dfa8fd",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/meta-llama/llama-3-2-11b-vision-instruct": {
+    "provider": "watsonx",
+    "model_id": "meta-llama/llama-3-2-11b-vision-instruct",
+    "display_name": "meta-llama/llama-3-2-11b-vision-instruct",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.35,
+      "output_per_m_tokens": 0.35,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": true,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "74f0fd82cf1d052ad0c0d7751b31978f7350e58ef0c846a56f4924d1b29bf1d9",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/meta-llama/llama-3-2-1b-instruct": {
+    "provider": "watsonx",
+    "model_id": "meta-llama/llama-3-2-1b-instruct",
+    "display_name": "meta-llama/llama-3-2-1b-instruct",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.1,
+      "output_per_m_tokens": 0.1,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": true,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "54fa44734380e582b53549ef9e68fa198110166e1eba7c617c8dc80f54891577",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/meta-llama/llama-3-2-3b-instruct": {
+    "provider": "watsonx",
+    "model_id": "meta-llama/llama-3-2-3b-instruct",
+    "display_name": "meta-llama/llama-3-2-3b-instruct",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.15,
+      "output_per_m_tokens": 0.15,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": true,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "47c1049b4a0569c9726f5a5539eed8669de93dbb06f7738bfad37152e93dd39c",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/meta-llama/llama-3-2-90b-vision-instruct": {
+    "provider": "watsonx",
+    "model_id": "meta-llama/llama-3-2-90b-vision-instruct",
+    "display_name": "meta-llama/llama-3-2-90b-vision-instruct",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 2.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": true,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "2af9a0f5fe5b8c7a633d5235b93e69d9a23abd5c89ff0435da01fd04f9f67d2a",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/meta-llama/llama-3-3-70b-instruct": {
+    "provider": "watsonx",
+    "model_id": "meta-llama/llama-3-3-70b-instruct",
+    "display_name": "meta-llama/llama-3-3-70b-instruct",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.7526,
+      "output_per_m_tokens": 0.7526,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": true,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-09-07",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "4936eddf9d3bebcca5483de9b2c8607cc6ff21919cc30555e8ae1a2527064458",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/meta-llama/llama-4-maverick-17b": {
+    "provider": "watsonx",
+    "model_id": "meta-llama/llama-4-maverick-17b",
+    "display_name": "meta-llama/llama-4-maverick-17b",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.35,
+      "output_per_m_tokens": 1.4,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": true,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "35b019005dd44ec7d83fc420ec465b09ef6ef491219c858eb5abbfd998ecbb69",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/meta-llama/llama-4-maverick-17b-128e-instruct-fp8": {
+    "provider": "watsonx",
+    "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+    "display_name": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.371,
+      "output_per_m_tokens": 1.484,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-09-07",
+    "tier": "standard"
+  },
+  "watsonx/meta-llama/llama-guard-3-11b-vision": {
+    "provider": "watsonx",
+    "model_id": "meta-llama/llama-guard-3-11b-vision",
+    "display_name": "meta-llama/llama-guard-3-11b-vision",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.35,
+      "output_per_m_tokens": 0.35,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "866216f456db17e5b2535e4bf56eccbbf8cd61a1c0098524d4b35d82e93e1f58",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/mistralai/mistral-large": {
+    "provider": "watsonx",
+    "model_id": "mistralai/mistral-large",
+    "display_name": "mistralai/mistral-large",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 16384,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 10.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": true,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "1e53d55302c2002d786cb21b48cea253b6af133397d5b78db1ef243ea6c859b7",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/mistralai/mistral-medium-2505": {
+    "provider": "watsonx",
+    "model_id": "mistralai/mistral-medium-2505",
+    "display_name": "mistralai/mistral-medium-2505",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 10.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": true,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "67d0d0b11562befab5f1a69d917041c0034d0533ea4d2cf0896e4eae4e1e858c",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/mistralai/mistral-small-2503": {
+    "provider": "watsonx",
+    "model_id": "mistralai/mistral-small-2503",
+    "display_name": "mistralai/mistral-small-2503",
+    "mode": "chat",
+    "context_window": 32000,
+    "max_output_tokens": 32000,
+    "pricing": {
+      "input_per_m_tokens": 0.1,
+      "output_per_m_tokens": 0.3,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": true,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "361bf180c734a79fa19f389e813b930079531d80aae52e3e8aa1c09c58698e25",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/mistralai/mistral-small-3-1-24b-instruct-2503": {
+    "provider": "watsonx",
+    "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+    "display_name": "mistralai/mistral-small-3-1-24b-instruct-2503",
+    "mode": "chat",
+    "context_window": 32000,
+    "max_output_tokens": 32000,
+    "pricing": {
+      "input_per_m_tokens": 0.106,
+      "output_per_m_tokens": 0.318,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": true,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-09-07",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "e19942d2dd94226c813878ca8b78c6a5b1d35403a8c434c3de3b75c7b898c399",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/mistralai/pixtral-12b-2409": {
+    "provider": "watsonx",
+    "model_id": "mistralai/pixtral-12b-2409",
+    "display_name": "mistralai/pixtral-12b-2409",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 0.35,
+      "output_per_m_tokens": 0.35,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "87346fadf0cdf1c0a4c766cd3b9ac84a1bbbf7421c555d5284d489889d6b3664",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/openai/gpt-oss-120b": {
+    "provider": "watsonx",
+    "model_id": "openai/gpt-oss-120b",
+    "display_name": "openai/gpt-oss-120b",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "pricing": {
+      "input_per_m_tokens": 0.159,
+      "output_per_m_tokens": 0.636,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-09-07",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "f00f39cfd6c77f15a981310ac10c33ad2b38f776ab1e3a25f7ec47d07771b1da",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/sdaia/allam-1-13b-instruct": {
+    "provider": "watsonx",
+    "model_id": "sdaia/allam-1-13b-instruct",
+    "display_name": "sdaia/allam-1-13b-instruct",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "pricing": {
+      "input_per_m_tokens": 1.8,
+      "output_per_m_tokens": 1.8,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "9cca4fe221244cc568001d67a9b4355c314149c78a8b11fca7ea9056692552ca",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "watsonx/whisper-large-v3-turbo": {
+    "provider": "watsonx",
+    "model_id": "whisper-large-v3-turbo",
+    "display_name": "whisper-large-v3-turbo",
+    "mode": "audio_in",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": 0.006,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://www.ibm.com/products/watsonx-ai/foundation-models",
+        "verified_at": "2026-02-28",
+        "confidence": "low",
+        "verified_by": "import:v1"
+      }
+    }
+  }
+}

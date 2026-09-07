@@ -5,8 +5,8 @@ mode: chat
 context_window: 0
 max_output_tokens: 0
 pricing:
-    input_per_m_tokens: 0.1
-    output_per_m_tokens: 0.3
+    input_per_m_tokens: 0.351
+    output_per_m_tokens: 0.5549999999999999
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://models.dev/openrouter/mistralai/mistral-small-3.1-24b-instruct"
-updated_at: "2026-02-28"
+updated_at: "2026-09-07"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-09-07"
         verified_by: scraper-litellm
-        snapshot_sha256: 7ecc3cc68d9b3678b8c4c738bfde0b45907a6d2fbe626161049f22798fbd1dd5
+        snapshot_sha256: 337f90db9e979d27eb3d92d6628b4501befbca60f18eff8058f034ca5794d25a
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high
