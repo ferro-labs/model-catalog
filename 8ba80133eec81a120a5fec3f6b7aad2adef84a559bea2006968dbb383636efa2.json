@@ -1,0 +1,1 @@
+{"provider":"wandb","model_id":"nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.09999999999999999,"output_per_m_tokens":0.25,"cache_read_per_m_tokens":0.049999999999999996}

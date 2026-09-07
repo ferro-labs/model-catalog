@@ -1,0 +1,1 @@
+{"provider":"deepinfra","model_id":"Qwen/Qwen3.8-Max","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":1.6500000000000001,"output_per_m_tokens":4.951,"cache_read_per_m_tokens":0.206}
