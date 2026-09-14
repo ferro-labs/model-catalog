@@ -5,9 +5,9 @@ mode: chat
 context_window: 202800
 max_output_tokens: 131000
 pricing:
-    input_per_m_tokens: 0.4
+    input_per_m_tokens: 0.43
     output_per_m_tokens: 1.75
-    cache_read_per_m_tokens: null
+    cache_read_per_m_tokens: 0.08
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: https://openrouter.ai/z-ai/glm-4.6
-updated_at: "2026-02-28"
+updated_at: "2026-09-14"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-09-14"
         verified_by: scraper-litellm
-        snapshot_sha256: 0b2b08dc6bba1ced25ca2ca917b565cfb4c3a27a361c56abae04805191702101
+        snapshot_sha256: 296579729857e786e723d991dfa1e272bc27e5883be859344506cf3ee442f110
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high

@@ -5,7 +5,7 @@ mode: chat
 context_window: 0
 max_output_tokens: 0
 pricing:
-    input_per_m_tokens: null
+    input_per_m_tokens: 0.09
     output_per_m_tokens: 1.1
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
@@ -35,5 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: auto:litellm+models_dev
-updated_at: "2026-09-07"
+updated_at: "2026-09-14"
 tier: standard
+sources:
+    pricing:
+        url: "https://models.dev/api.json"
+        verified_at: "2026-09-14"
+        verified_by: scraper-models_dev
+        snapshot_sha256: 9aa3700ae22c4a8013dbd8f3ac9f48e147f05170a7e8828f0c5f38bb21fe8df4
+        snapshot_branch: snapshots
+        confidence: medium
