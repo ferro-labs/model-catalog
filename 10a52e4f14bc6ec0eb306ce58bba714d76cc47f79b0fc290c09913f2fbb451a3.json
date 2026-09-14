@@ -1,0 +1,1 @@
+{"provider":"deepinfra","model_id":"google/gemma-3-12b-it","source_url":"https://models.dev/api.json","context_window":131072,"max_output_tokens":131072}
