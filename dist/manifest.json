@@ -1,10 +1,10 @@
 {
-  "version": "v2026.09.14",
+  "version": "v2026.09.21",
   "schema_version": 2,
-  "generated_at": "2026-09-14T15:09:47Z",
-  "catalog_sha256": "466aec283866f02fc126defdf5a384ffd6f305583cdaf9ed6f89e188069e54f8",
-  "catalog_url": "/v1/466aec283866f02fc126defdf5a384ffd6f305583cdaf9ed6f89e188069e54f8.json",
-  "git_sha": "54722df502b3b0abe07b3e2e47d330489ded6601",
+  "generated_at": "2026-09-21T12:25:17Z",
+  "catalog_sha256": "6524c1641ed57c1987c6c54abffa5e1db65908258c84f9acdeb96d989554fa5b",
+  "catalog_url": "/v1/6524c1641ed57c1987c6c54abffa5e1db65908258c84f9acdeb96d989554fa5b.json",
+  "git_sha": "e7a509dceaed84e0abbf394217b597bb60ee0cf0",
   "providers": [
     {
       "id": "ai21",
@@ -89,9 +89,9 @@
     },
     {
       "id": "azure",
-      "model_count": 239,
-      "sha256": "b3bb0ca93f57d343882075a7bd0bc91ec308435e53c2558c0dadf43ecb2f83c2",
-      "url": "/v1/providers/azure/b3bb0ca93f57d343882075a7bd0bc91ec308435e53c2558c0dadf43ecb2f83c2.json",
+      "model_count": 242,
+      "sha256": "abd3aec044f4a8bcbf1e8456e5a3a1713de5cb09172d0ba91d1b5c35f4010b6d",
+      "url": "/v1/providers/azure/abd3aec044f4a8bcbf1e8456e5a3a1713de5cb09172d0ba91d1b5c35f4010b6d.json",
       "display_name": "Azure OpenAI",
       "category": "cloud",
       "description": "OpenAI models via Microsoft Azure",
@@ -130,8 +130,8 @@
     {
       "id": "cerebras",
       "model_count": 8,
-      "sha256": "96d1498d1f20fe1d209b20c963911deae4834f8abe33a941e6b45f396f113361",
-      "url": "/v1/providers/cerebras/96d1498d1f20fe1d209b20c963911deae4834f8abe33a941e6b45f396f113361.json",
+      "sha256": "49875baebfc9f42a718df21e3895e85be8e415aafb5dbb68bfe8bf77031e847b",
+      "url": "/v1/providers/cerebras/49875baebfc9f42a718df21e3895e85be8e415aafb5dbb68bfe8bf77031e847b.json",
       "display_name": "Cerebras",
       "logo_url": "https://cerebras.ai/favicon.svg",
       "category": "specialized",
@@ -408,9 +408,9 @@
     },
     {
       "id": "mistral",
-      "model_count": 48,
-      "sha256": "d1170cfda283650b548a63036b3a62553f48d5742bcf02eb475c3ad4ac2b4b4f",
-      "url": "/v1/providers/mistral/d1170cfda283650b548a63036b3a62553f48d5742bcf02eb475c3ad4ac2b4b4f.json",
+      "model_count": 49,
+      "sha256": "edaba4c004de222b7507402dbf55c4c1dfce38454d07ada689e8904c54d98443",
+      "url": "/v1/providers/mistral/edaba4c004de222b7507402dbf55c4c1dfce38454d07ada689e8904c54d98443.json",
       "display_name": "Mistral AI",
       "logo_url": "https://mistral.ai/favicon.svg",
       "category": "frontier",
@@ -491,8 +491,8 @@
     {
       "id": "oci",
       "model_count": 13,
-      "sha256": "518917dbaa4873fef59c7ce9d42ee9e4adca85aedc56047e275e9f575ee6cd1c",
-      "url": "/v1/providers/oci/518917dbaa4873fef59c7ce9d42ee9e4adca85aedc56047e275e9f575ee6cd1c.json",
+      "sha256": "5469ce5b8a06d0417dbbb3ad71d8a70d8a227b1b2b819de8eb1ace44c162f6af",
+      "url": "/v1/providers/oci/5469ce5b8a06d0417dbbb3ad71d8a70d8a227b1b2b819de8eb1ace44c162f6af.json",
       "display_name": "Oracle Cloud AI",
       "category": "cloud",
       "description": "AI services on Oracle Cloud Infrastructure",
@@ -532,9 +532,9 @@
     },
     {
       "id": "openrouter",
-      "model_count": 251,
-      "sha256": "1a4db737d797c1b9ccf64629b7882d68ffdaa93427f2428b349cf4e59d641717",
-      "url": "/v1/providers/openrouter/1a4db737d797c1b9ccf64629b7882d68ffdaa93427f2428b349cf4e59d641717.json",
+      "model_count": 360,
+      "sha256": "9595d57b466009fb595c3955a2a1005784523af85c07657b5f6cfefe5b39dba7",
+      "url": "/v1/providers/openrouter/9595d57b466009fb595c3955a2a1005784523af85c07657b5f6cfefe5b39dba7.json",
       "display_name": "OpenRouter",
       "category": "specialized",
       "description": "Unified API across 200+ models",
@@ -816,9 +816,9 @@
     },
     {
       "id": "wandb",
-      "model_count": 33,
-      "sha256": "b4073e1d228e4424e842a267e8d8a0e4328e11e1cd17896503d6983674c86eed",
-      "url": "/v1/providers/wandb/b4073e1d228e4424e842a267e8d8a0e4328e11e1cd17896503d6983674c86eed.json",
+      "model_count": 34,
+      "sha256": "bd6bb65c7a4e4d1970f97ebc81422f5f84f282f035de0766a140d172c216865f",
+      "url": "/v1/providers/wandb/bd6bb65c7a4e4d1970f97ebc81422f5f84f282f035de0766a140d172c216865f.json",
       "display_name": "Weights \u0026 Biases",
       "category": "specialized",
       "description": "ML experiment tracking and model registry",
@@ -847,9 +847,9 @@
     },
     {
       "id": "zai",
-      "model_count": 15,
-      "sha256": "6e001c6b5b77049f4c3b6c89542cdf1ce6214da6f25c3033bbc3aa205e7f9320",
-      "url": "/v1/providers/zai/6e001c6b5b77049f4c3b6c89542cdf1ce6214da6f25c3033bbc3aa205e7f9320.json",
+      "model_count": 16,
+      "sha256": "1e9ecb2f3771cbb9c16f3746f0a119b6927535f3c1637cfdd5c04fa8002b3b15",
+      "url": "/v1/providers/zai/1e9ecb2f3771cbb9c16f3746f0a119b6927535f3c1637cfdd5c04fa8002b3b15.json",
       "display_name": "Zai",
       "category": "specialized",
       "description": "Specialized AI model inference",
@@ -857,7 +857,7 @@
     }
   ],
   "stats": {
-    "total_models": 2786,
+    "total_models": 2901,
     "total_providers": 83
   }
 }

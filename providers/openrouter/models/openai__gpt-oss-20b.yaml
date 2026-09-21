@@ -7,7 +7,7 @@ max_output_tokens: 32768
 pricing:
     input_per_m_tokens: 0.03
     output_per_m_tokens: 0.13
-    cache_read_per_m_tokens: null
+    cache_read_per_m_tokens: 0.03
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: https://openrouter.ai/openai/gpt-oss-20b
-updated_at: "2026-09-07"
+updated_at: "2026-09-21"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-09-07"
+        verified_at: "2026-09-21"
         verified_by: scraper-litellm
-        snapshot_sha256: f1fd77d24c6faa97f390d17e7b0929e491f28cff7422c8595f9723e6fe7c2b65
+        snapshot_sha256: f902dcce3fcc38f2e1b76e7da3a34afe718bcf2fd0a414ba537f1180bfc9a587
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high
