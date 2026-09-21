@@ -7,7 +7,7 @@ max_output_tokens: 8192
 pricing:
     input_per_m_tokens: 0.5
     output_per_m_tokens: 2.15
-    cache_read_per_m_tokens: null
+    cache_read_per_m_tokens: 0.35
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://openrouter.ai/models"
-updated_at: "2026-02-28"
+updated_at: "2026-09-21"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-09-21"
         verified_by: scraper-litellm
-        snapshot_sha256: 1c5e2056add3c45bf96c80bb2aef852b83b63f151f278fe30186cc4bf42b8fce
+        snapshot_sha256: 8121f7096d73321f75739499fc0943ea3f0917b053d9ba59420d813fff23ae54
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high

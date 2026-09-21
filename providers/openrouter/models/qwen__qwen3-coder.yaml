@@ -7,7 +7,7 @@ max_output_tokens: 262100
 pricing:
     input_per_m_tokens: 0.3
     output_per_m_tokens: 1
-    cache_read_per_m_tokens: null
+    cache_read_per_m_tokens: 0.09999999999999999
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: https://openrouter.ai/qwen/qwen3-coder
-updated_at: "2026-09-07"
+updated_at: "2026-09-21"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-09-07"
+        verified_at: "2026-09-21"
         verified_by: scraper-litellm
-        snapshot_sha256: b1b7d462b0cab1d0191f31cd597fce5889a9ff315c9f35477a81f247bdd3bb79
+        snapshot_sha256: 94d6666b9afc375921fe7c4b3a1a536f28f1fe452e08a112d128eeba41b1b1e8
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high

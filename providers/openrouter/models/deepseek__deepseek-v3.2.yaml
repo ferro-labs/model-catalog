@@ -7,7 +7,7 @@ max_output_tokens: 163840
 pricing:
     input_per_m_tokens: 0.26899999999999996
     output_per_m_tokens: 0.4
-    cache_read_per_m_tokens: null
+    cache_read_per_m_tokens: 0.13449999999999998
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
@@ -35,16 +35,16 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://models.dev/openrouter/deepseek/deepseek-v3.2"
-updated_at: "2026-09-07"
+updated_at: "2026-09-21"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-09-07"
+        verified_at: "2026-09-21"
         verified_by: scraper-litellm
-        snapshot_sha256: ec4b941c83cda8f73f1aa46bce117f23a6cadd9ccd6a5ed8a8b1e2395c4baa71
+        snapshot_sha256: 3557cf9681cb52e67cd4e531b02c04b7c4dc6bd251c57a97c9d145f3ac338fe2
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high
     context:
         url: "https://models.dev/api.json"
         verified_at: "2026-08-24"
