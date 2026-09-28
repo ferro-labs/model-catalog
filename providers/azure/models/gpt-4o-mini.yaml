@@ -3,8 +3,8 @@ provider: azure
 model_id: gpt-4o-mini
 display_name: gpt-4o-mini
 pricing:
-    input_per_m_tokens: 0.165
-    output_per_m_tokens: 0.66
+    input_per_m_tokens: 0.15
+    output_per_m_tokens: 0.6
     cache_read_per_m_tokens: 0.075
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -48,3 +48,4 @@ sources:
         snapshot_sha256: 0a3d867f2042a69e6f33c4f04ed320360a6b1432333f95548a85d430baf0e2cb
         snapshot_branch: snapshots
         confidence: medium
+updated_at: "2026-09-28"
