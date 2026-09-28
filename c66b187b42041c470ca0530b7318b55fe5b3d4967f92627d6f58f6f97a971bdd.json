@@ -1,0 +1,1 @@
+{"provider":"openrouter","model_id":"inclusionai/ling-3.0-flash-vl","source_url":"https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json","input_per_m_tokens":0.020999999999999998,"output_per_m_tokens":0.061599999999999995,"cache_read_per_m_tokens":0.004200000000000001}
