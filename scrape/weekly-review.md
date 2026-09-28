@@ -4,7 +4,7 @@ Corroborated changes (≥2 sources agree) are auto-applied in this PR's file dif
 The diffs below come from a single source or disagree between sources — review and
 apply them manually to the model YAML if correct.
 
-## Single-source price diffs (459)
+## Single-source price diffs (376)
 
 - `azure/ada` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
 - `azure/ada` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
@@ -19,10 +19,13 @@ apply them manually to the model YAML if correct.
 - `azure/gpt-4o-2024-11-20` `pricing.output_per_m_tokens`: 11.0000 → 10.0000 (litellm only)
 - `azure/gpt-4o-mini-2024-07-18` `pricing.input_per_m_tokens`: 0.1650 → 0.1500 (litellm only)
 - `azure/gpt-4o-mini-2024-07-18` `pricing.output_per_m_tokens`: 0.6600 → 0.6000 (litellm only)
+- `azure/gpt-4o-mini-tts` `pricing.input_per_m_tokens`: 2.5000 → 0.6000 (litellm only)
 - `azure/gpt-5.4-pro` `pricing.cache_read_per_m_tokens`: null → 3.0000 (litellm only)
 - `azure/gpt-image-1` `pricing.output_per_m_tokens`: null → 40.0000 (models_dev only)
 - `azure/gpt-image-1.5` `pricing.output_per_m_tokens`: null → 32.0000 (models_dev only)
 - `azure/gpt-image-2` `pricing.output_per_m_tokens`: null → 30.0000 (models_dev only)
+- `azure/gpt-image-2.5-flare` `pricing.output_per_m_tokens`: null → 30.0000 (models_dev only)
+- `azure/gpt-image-2.5-sunburst` `pricing.output_per_m_tokens`: null → 30.0000 (models_dev only)
 - `azure/gpt-realtime-1.5-2026-02-23` `pricing.cache_read_per_m_tokens`: 4.0000 → 0.4000 (litellm only)
 - `azure/gpt-realtime-2025-08-28` `pricing.cache_read_per_m_tokens`: 4.0000 → 0.4000 (litellm only)
 - `azure/o1-mini` `pricing.cache_read_per_m_tokens`: 0.6050 → 0.5500 (litellm only)
@@ -45,37 +48,35 @@ apply them manually to the model YAML if correct.
 - `bedrock/amazon.titan-embed-text-v1` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
 - `bedrock/amazon.titan-embed-text-v2:0` `pricing.input_per_m_tokens`: null → 0.0200 (litellm only)
 - `bedrock/amazon.titan-embed-text-v2:0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
-- `bedrock/anthropic.claude-3-haiku-20240307-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.0250 (litellm only)
 - `bedrock/anthropic.claude-3-opus-20240229-v1:0` `pricing.cache_read_per_m_tokens`: null → 1.5000 (litellm only)
-- `bedrock/anthropic.claude-3-sonnet-20240229-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
-- `bedrock/apac.anthropic.claude-3-5-sonnet-20240620-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
-- `bedrock/apac.anthropic.claude-3-haiku-20240307-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.0250 (litellm only)
-- `bedrock/apac.anthropic.claude-3-sonnet-20240229-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
+- `bedrock/cohere.command-text-v14` `pricing.input_per_m_tokens`: 1.5000 → 1.0000 (litellm only)
 - `bedrock/cohere.embed-english-v3` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
 - `bedrock/cohere.embed-english-v3` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
 - `bedrock/cohere.embed-multilingual-v3` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
 - `bedrock/cohere.embed-multilingual-v3` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
 - `bedrock/cohere.embed-v4:0` `pricing.input_per_m_tokens`: null → 0.1200 (litellm only)
 - `bedrock/cohere.embed-v4:0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `bedrock/eu-west-3/mistral.mistral-large-2402-v1:0` `pricing.input_per_m_tokens`: 10.4000 → 5.2000 (litellm only)
+- `bedrock/eu-west-3/mistral.mistral-large-2402-v1:0` `pricing.output_per_m_tokens`: 31.2000 → 15.6000 (litellm only)
 - `bedrock/eu.anthropic.claude-3-5-haiku-20241022-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.0800 (litellm only)
 - `bedrock/eu.anthropic.claude-3-5-haiku-20241022-v1:0` `pricing.input_per_m_tokens`: 0.2500 → 0.8000 (litellm only)
 - `bedrock/eu.anthropic.claude-3-5-haiku-20241022-v1:0` `pricing.output_per_m_tokens`: 1.2500 → 4.0000 (litellm only)
 - `bedrock/eu.anthropic.claude-3-5-sonnet-20240620-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
 - `bedrock/eu.anthropic.claude-3-5-sonnet-20241022-v2:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
 - `bedrock/eu.anthropic.claude-3-7-sonnet-20250219-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
-- `bedrock/eu.anthropic.claude-3-haiku-20240307-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.0250 (litellm only)
 - `bedrock/eu.anthropic.claude-3-opus-20240229-v1:0` `pricing.cache_read_per_m_tokens`: null → 1.5000 (litellm only)
-- `bedrock/eu.anthropic.claude-3-sonnet-20240229-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
 - `bedrock/eu.twelvelabs.marengo-embed-2-7-v1:0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
 - `bedrock/invoke/anthropic.claude-3-5-sonnet-20240620-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
+- `bedrock/mistral.mistral-large-2402-v1:0` `pricing.input_per_m_tokens`: 8.0000 → 4.0000 (litellm only)
+- `bedrock/mistral.mistral-large-2402-v1:0` `pricing.output_per_m_tokens`: 24.0000 → 12.0000 (litellm only)
 - `bedrock/twelvelabs.marengo-embed-2-7-v1:0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `bedrock/us-east-1/mistral.mistral-large-2402-v1:0` `pricing.input_per_m_tokens`: 8.0000 → 4.0000 (litellm only)
+- `bedrock/us-east-1/mistral.mistral-large-2402-v1:0` `pricing.output_per_m_tokens`: 24.0000 → 12.0000 (litellm only)
 - `bedrock/us-gov-east-1/amazon.nova-pro-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.2400 (litellm only)
 - `bedrock/us-gov-east-1/amazon.titan-embed-text-v1` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
 - `bedrock/us-gov-east-1/amazon.titan-embed-text-v1` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
 - `bedrock/us-gov-east-1/amazon.titan-embed-text-v2:0` `pricing.input_per_m_tokens`: null → 0.2000 (litellm only)
 - `bedrock/us-gov-east-1/amazon.titan-embed-text-v2:0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
-- `bedrock/us-gov-east-1/anthropic.claude-3-5-sonnet-20240620-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3600 (litellm only)
-- `bedrock/us-gov-east-1/anthropic.claude-3-haiku-20240307-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.0300 (litellm only)
 - `bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3600 (litellm only)
 - `bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0` `pricing.input_per_m_tokens`: 3.3000 → 3.6000 (litellm only)
 - `bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0` `pricing.output_per_m_tokens`: 16.5000 → 18.0000 (litellm only)
@@ -84,29 +85,21 @@ apply them manually to the model YAML if correct.
 - `bedrock/us-gov-west-1/amazon.titan-embed-text-v1` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
 - `bedrock/us-gov-west-1/amazon.titan-embed-text-v2:0` `pricing.input_per_m_tokens`: null → 0.2000 (litellm only)
 - `bedrock/us-gov-west-1/amazon.titan-embed-text-v2:0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
-- `bedrock/us-gov-west-1/anthropic.claude-3-5-sonnet-20240620-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3600 (litellm only)
-- `bedrock/us-gov-west-1/anthropic.claude-3-haiku-20240307-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.0300 (litellm only)
 - `bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3600 (litellm only)
 - `bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0` `pricing.input_per_m_tokens`: 3.3000 → 3.6000 (litellm only)
 - `bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0` `pricing.output_per_m_tokens`: 16.5000 → 18.0000 (litellm only)
 - `bedrock/us-gov-west-1/meta.llama3-8b-instruct-v1:0` `pricing.output_per_m_tokens`: 2.6500 → 0.6000 (litellm only)
+- `bedrock/us-west-2/mistral.mistral-large-2402-v1:0` `pricing.input_per_m_tokens`: 8.0000 → 4.0000 (litellm only)
+- `bedrock/us-west-2/mistral.mistral-large-2402-v1:0` `pricing.output_per_m_tokens`: 24.0000 → 12.0000 (litellm only)
 - `bedrock/us.anthropic.claude-3-5-sonnet-20240620-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
-- `bedrock/us.anthropic.claude-3-haiku-20240307-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.0250 (litellm only)
 - `bedrock/us.anthropic.claude-3-opus-20240229-v1:0` `pricing.cache_read_per_m_tokens`: null → 1.5000 (litellm only)
-- `bedrock/us.anthropic.claude-3-sonnet-20240229-v1:0` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
 - `bedrock/us.twelvelabs.marengo-embed-2-7-v1:0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
-- `cohere/embed-english-light-v2.0` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
-- `cohere/embed-english-light-v2.0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
 - `cohere/embed-english-light-v3.0` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
 - `cohere/embed-english-light-v3.0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
-- `cohere/embed-english-v2.0` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
-- `cohere/embed-english-v2.0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
 - `cohere/embed-english-v3.0` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
 - `cohere/embed-english-v3.0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
 - `cohere/embed-multilingual-light-v3.0` `pricing.input_per_m_tokens`: null → 100.0000 (litellm only)
 - `cohere/embed-multilingual-light-v3.0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
-- `cohere/embed-multilingual-v2.0` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
-- `cohere/embed-multilingual-v2.0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
 - `cohere/embed-multilingual-v3.0` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
 - `cohere/embed-multilingual-v3.0` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
 - `cohere/embed-v4.0` `pricing.input_per_m_tokens`: null → 0.1200 (litellm only)
@@ -114,7 +107,6 @@ apply them manually to the model YAML if correct.
 - `databricks/databricks-bge-large-en` `pricing.cache_read_per_m_tokens`: null → 0.1000 (litellm only)
 - `databricks/databricks-bge-large-en` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
 - `databricks/databricks-bge-large-en` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
-- `databricks/databricks-claude-3-7-sonnet` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
 - `databricks/databricks-claude-opus-4` `pricing.cache_read_per_m_tokens`: null → 1.5000 (litellm only)
 - `databricks/databricks-claude-sonnet-4-1` `pricing.cache_read_per_m_tokens`: null → 0.3000 (litellm only)
 - `databricks/databricks-gemma-3-12b` `pricing.cache_read_per_m_tokens`: null → 0.1500 (litellm only)
@@ -123,15 +115,9 @@ apply them manually to the model YAML if correct.
 - `databricks/databricks-gte-large-en` `pricing.cache_read_per_m_tokens`: null → 0.1300 (litellm only)
 - `databricks/databricks-gte-large-en` `pricing.input_per_m_tokens`: null → 0.1300 (litellm only)
 - `databricks/databricks-gte-large-en` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
-- `databricks/databricks-llama-2-70b-chat` `pricing.cache_read_per_m_tokens`: null → 0.5000 (litellm only)
 - `databricks/databricks-llama-4-maverick` `pricing.cache_read_per_m_tokens`: null → 0.5000 (litellm only)
-- `databricks/databricks-meta-llama-3-1-405b-instruct` `pricing.cache_read_per_m_tokens`: null → 5.0000 (litellm only)
 - `databricks/databricks-meta-llama-3-1-8b-instruct` `pricing.cache_read_per_m_tokens`: null → 0.1500 (litellm only)
 - `databricks/databricks-meta-llama-3-3-70b-instruct` `pricing.cache_read_per_m_tokens`: null → 0.5000 (litellm only)
-- `databricks/databricks-meta-llama-3-70b-instruct` `pricing.cache_read_per_m_tokens`: null → 1.0000 (litellm only)
-- `databricks/databricks-mixtral-8x7b-instruct` `pricing.cache_read_per_m_tokens`: null → 0.5000 (litellm only)
-- `databricks/databricks-mpt-30b-instruct` `pricing.cache_read_per_m_tokens`: null → 1.0000 (litellm only)
-- `databricks/databricks-mpt-7b-instruct` `pricing.cache_read_per_m_tokens`: null → 0.5000 (litellm only)
 - `deepinfra/Gryphe/MythoMax-L2-13b` `pricing.input_per_m_tokens`: 0.0800 → 0.4000 (litellm only)
 - `deepinfra/Gryphe/MythoMax-L2-13b` `pricing.output_per_m_tokens`: 0.0900 → 0.4000 (litellm only)
 - `deepinfra/NousResearch/Hermes-3-Llama-3.1-70B` `pricing.input_per_m_tokens`: 0.3000 → 0.7000 (litellm only)
@@ -145,15 +131,15 @@ apply them manually to the model YAML if correct.
 - `deepinfra/meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo` `pricing.output_per_m_tokens`: 0.2800 → 0.4000 (litellm only)
 - `deepinfra/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo` `pricing.output_per_m_tokens`: 0.0300 → 0.0400 (litellm only)
 - `deepinfra/mistralai/Mistral-Nemo-Instruct-2407` `pricing.output_per_m_tokens`: 0.0400 → 0.0300 (litellm only)
-- `gemini/gemini-1.5-flash` `pricing.output_per_m_tokens`: 0.3000 → 0.0000 (litellm only)
-- `gemini/gemini-2.5-flash-lite-preview-06-17` `pricing.cache_read_per_m_tokens`: 0.0250 → 0.0100 (litellm only)
+- `deepseek/deepseek-coder` `pricing.cache_read_per_m_tokens`: null → 0.0140 (litellm only)
+- `deepseek/deepseek-r1` `pricing.cache_read_per_m_tokens`: null → 0.1400 (litellm only)
+- `deepseek/deepseek-v3.2` `pricing.cache_read_per_m_tokens`: null → 0.0280 (litellm only)
 - `gemini/gemini-2.5-flash-native-audio-latest` `pricing.input_per_m_tokens`: 0.3000 → 0.5000 (litellm only)
 - `gemini/gemini-2.5-flash-native-audio-latest` `pricing.output_per_m_tokens`: 2.5000 → 2.0000 (litellm only)
 - `gemini/gemini-2.5-flash-native-audio-preview-09-2025` `pricing.input_per_m_tokens`: 0.3000 → 0.5000 (litellm only)
 - `gemini/gemini-2.5-flash-native-audio-preview-09-2025` `pricing.output_per_m_tokens`: 2.5000 → 2.0000 (litellm only)
 - `gemini/gemini-2.5-flash-native-audio-preview-12-2025` `pricing.input_per_m_tokens`: 0.3000 → 0.5000 (litellm only)
 - `gemini/gemini-2.5-flash-native-audio-preview-12-2025` `pricing.output_per_m_tokens`: 2.5000 → 2.0000 (litellm only)
-- `gemini/gemini-2.5-flash-preview-09-2025` `pricing.cache_read_per_m_tokens`: 0.0750 → 0.0300 (litellm only)
 - `gemini/gemini-2.5-flash-preview-tts` `pricing.input_per_m_tokens`: 0.3000 → 0.5000 (litellm only)
 - `gemini/gemini-2.5-flash-preview-tts` `pricing.output_per_m_tokens`: 2.5000 → 10.0000 (litellm only)
 - `gemini/gemini-2.5-pro-preview-tts` `pricing.input_per_m_tokens`: 1.2500 → 1.0000 (litellm only)
@@ -183,8 +169,6 @@ apply them manually to the model YAML if correct.
 - `llamagate/nomic-embed-text` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
 - `llamagate/qwen3-embedding-8b` `pricing.input_per_m_tokens`: null → 0.0200 (litellm only)
 - `llamagate/qwen3-embedding-8b` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
-- `mistral/codestral-2405` `pricing.input_per_m_tokens`: 0.0000 → 1.0000 (litellm only)
-- `mistral/codestral-2405` `pricing.output_per_m_tokens`: 0.0000 → 3.0000 (litellm only)
 - `mistral/codestral-2508` `pricing.cache_read_per_m_tokens`: null → 0.0300 (litellm only)
 - `mistral/codestral-embed` `pricing.cache_read_per_m_tokens`: null → 0.0150 (litellm only)
 - `mistral/codestral-embed` `pricing.input_per_m_tokens`: null → 0.1500 (litellm only)
@@ -195,6 +179,8 @@ apply them manually to the model YAML if correct.
 - `mistral/devstral-latest` `pricing.cache_read_per_m_tokens`: null → 0.0400 (litellm only)
 - `mistral/devstral-medium-latest` `pricing.cache_read_per_m_tokens`: null → 0.0400 (litellm only)
 - `mistral/devstral-small-latest` `pricing.cache_read_per_m_tokens`: null → 0.0100 (litellm only)
+- `mistral/labs-devstral-small-2512` `pricing.input_per_m_tokens`: 0.1000 → 0.0000 (models_dev only)
+- `mistral/labs-devstral-small-2512` `pricing.output_per_m_tokens`: 0.3000 → 0.0000 (models_dev only)
 - `mistral/magistral-medium-latest` `pricing.cache_read_per_m_tokens`: null → 0.1500 (litellm only)
 - `mistral/magistral-small-latest` `pricing.cache_read_per_m_tokens`: null → 0.0150 (litellm only)
 - `mistral/magistral-small-latest` `pricing.input_per_m_tokens`: 0.5000 → 0.1500 (litellm only)
@@ -231,17 +217,15 @@ apply them manually to the model YAML if correct.
 - `openai/gpt-3.5-turbo` `pricing.cache_read_per_m_tokens`: null → 0.0000 (models_dev only)
 - `openai/gpt-3.5-turbo-0613` `pricing.input_per_m_tokens`: 1.5000 → 1.0000 (openrouter only)
 - `openai/gpt-4o-mini-tts` `pricing.input_per_m_tokens`: 2.5000 → 0.6000 (litellm only)
-- `openai/gpt-4o-mini-tts-2025-03-20` `pricing.input_per_m_tokens`: 2.5000 → 0.6000 (litellm only)
 - `openai/gpt-4o-mini-tts-2025-12-15` `pricing.input_per_m_tokens`: 2.5000 → 0.6000 (litellm only)
 - `openai/gpt-image-2` `pricing.output_per_m_tokens`: null → 30.0000 (models_dev only)
 - `openai/gpt-realtime-mini` `pricing.cache_read_per_m_tokens`: null → 0.0600 (litellm only)
 - `openai/text-embedding-ada-002-v2` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
 - `openai/text-embedding-ada-002-v2` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
-- `openrouter/mistralai/mistral-large-2512` `pricing.cache_read_per_m_tokens`: null → 0.0550 (litellm only)
-- `openrouter/mistralai/mistral-large-2512` `pricing.input_per_m_tokens`: 0.5000 → 0.5500 (litellm only)
-- `openrouter/mistralai/mistral-large-2512` `pricing.output_per_m_tokens`: 1.5000 → 1.6500 (litellm only)
+- `openrouter/deepseek/deepseek-r1` `pricing.cache_read_per_m_tokens`: null → 0.1400 (litellm only)
+- `openrouter/deepseek/deepseek-v3.2-exp` `pricing.cache_read_per_m_tokens`: null → 0.0200 (litellm only)
 - `openrouter/qwen/qwen-plus-2025-07-28` `pricing.cache_read_per_m_tokens`: null → 0.0520 (litellm only)
-- `openrouter/qwen/qwen3-next-80b-a3b-instruct` `pricing.cache_read_per_m_tokens`: null → 0.0700 (litellm only)
+- `openrouter/qwen/qwen3.6-27b` `pricing.cache_read_per_m_tokens`: 0.0300 → 0.1500 (litellm only)
 - `openrouter/xiaomi/mimo-v2-flash` `pricing.cache_read_per_m_tokens`: 0.0000 → 0.0100 (litellm only)
 - `openrouter/xiaomi/mimo-v2-flash` `pricing.input_per_m_tokens`: 0.0900 → 0.1000 (litellm only)
 - `openrouter/xiaomi/mimo-v2-flash` `pricing.output_per_m_tokens`: 0.2900 → 0.3000 (litellm only)
@@ -311,8 +295,12 @@ apply them manually to the model YAML if correct.
 - `vercel_ai_gateway/openai/text-embedding-3-small` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
 - `vercel_ai_gateway/openai/text-embedding-ada-002` `pricing.input_per_m_tokens`: null → 0.1000 (litellm only)
 - `vercel_ai_gateway/openai/text-embedding-ada-002` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
+- `vertex_ai-deepseek_models/vertex_ai/deepseek-ai/deepseek-v3.1-maas` `pricing.cache_read_per_m_tokens`: null → 0.0600 (litellm only)
 - `vertex_ai-deepseek_models/vertex_ai/deepseek-ai/deepseek-v3.1-maas` `pricing.input_per_m_tokens`: 1.3500 → 0.6000 (litellm only)
 - `vertex_ai-deepseek_models/vertex_ai/deepseek-ai/deepseek-v3.1-maas` `pricing.output_per_m_tokens`: 5.4000 → 1.7000 (litellm only)
+- `vertex_ai-deepseek_models/vertex_ai/deepseek-ai/deepseek-v3.2-maas` `pricing.cache_read_per_m_tokens`: null → 0.0560 (litellm only)
+- `vertex_ai-minimax_models/vertex_ai/minimaxai/minimax-m2-maas` `pricing.cache_read_per_m_tokens`: null → 0.0300 (litellm only)
+- `vertex_ai-moonshot_models/vertex_ai/moonshotai/kimi-k2-thinking-maas` `pricing.cache_read_per_m_tokens`: null → 0.0600 (litellm only)
 - `vertex_ai-openai_models/vertex_ai/openai/gpt-oss-120b-maas` `pricing.input_per_m_tokens`: 0.1500 → 0.0900 (litellm only)
 - `vertex_ai-openai_models/vertex_ai/openai/gpt-oss-120b-maas` `pricing.output_per_m_tokens`: 0.6000 → 0.3600 (litellm only)
 - `vertex_ai-openai_models/vertex_ai/openai/gpt-oss-20b-maas` `pricing.cache_read_per_m_tokens`: null → 0.0070 (litellm only)
@@ -320,8 +308,12 @@ apply them manually to the model YAML if correct.
 - `vertex_ai-openai_models/vertex_ai/openai/gpt-oss-20b-maas` `pricing.output_per_m_tokens`: 0.3000 → 0.2500 (litellm only)
 - `vertex_ai-qwen_models/vertex_ai/qwen/qwen3-235b-a22b-instruct-2507-maas` `pricing.input_per_m_tokens`: 0.2500 → 0.2200 (litellm only)
 - `vertex_ai-qwen_models/vertex_ai/qwen/qwen3-235b-a22b-instruct-2507-maas` `pricing.output_per_m_tokens`: 1.0000 → 0.8800 (litellm only)
+- `vertex_ai-qwen_models/vertex_ai/qwen/qwen3-coder-480b-a35b-instruct-maas` `pricing.cache_read_per_m_tokens`: null → 0.0220 (litellm only)
 - `vertex_ai-qwen_models/vertex_ai/qwen/qwen3-coder-480b-a35b-instruct-maas` `pricing.input_per_m_tokens`: 1.0000 → 0.2200 (litellm only)
 - `vertex_ai-qwen_models/vertex_ai/qwen/qwen3-coder-480b-a35b-instruct-maas` `pricing.output_per_m_tokens`: 4.0000 → 1.8000 (litellm only)
+- `vertex_ai-zai_models/vertex_ai/zai-org/glm-4.7-maas` `pricing.cache_read_per_m_tokens`: null → 0.0600 (litellm only)
+- `vertex_ai/gemini-2.0-flash` `pricing.input_per_m_tokens`: 0.1000 → 0.1500 (litellm only)
+- `vertex_ai/gemini-2.0-flash` `pricing.output_per_m_tokens`: 0.4000 → 0.6000 (litellm only)
 - `volcengine/doubao-embedding` `pricing.input_per_m_tokens`: null → 0.0000 (litellm only)
 - `volcengine/doubao-embedding` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
 - `volcengine/doubao-embedding-large` `pricing.input_per_m_tokens`: null → 0.0000 (litellm only)
@@ -363,93 +355,18 @@ apply them manually to the model YAML if correct.
 - `voyage/voyage-multimodal-3` `pricing.input_per_m_tokens`: null → 0.1200 (litellm only)
 - `voyage/voyage-multimodal-3` `pricing.output_per_m_tokens`: null → 0.0000 (litellm only)
 - `wandb/OpenPipe/Qwen3-14B-Instruct` `pricing.cache_read_per_m_tokens`: null → 0.0500 (models_dev only)
-- `wandb/Qwen/Qwen3-235B-A22B-Instruct-2507` `pricing.input_per_m_tokens`: 10000.0000 → 0.1000 (litellm only)
-- `wandb/Qwen/Qwen3-235B-A22B-Instruct-2507` `pricing.output_per_m_tokens`: 10000.0000 → 0.1000 (litellm only)
-- `wandb/Qwen/Qwen3-235B-A22B-Thinking-2507` `pricing.input_per_m_tokens`: 10000.0000 → 0.1000 (litellm only)
-- `wandb/Qwen/Qwen3-235B-A22B-Thinking-2507` `pricing.output_per_m_tokens`: 10000.0000 → 0.1000 (litellm only)
 - `wandb/Qwen/Qwen3-30B-A3B-Instruct-2507` `pricing.cache_read_per_m_tokens`: null → 0.1000 (models_dev only)
-- `wandb/Qwen/Qwen3-Coder-480B-A35B-Instruct` `pricing.input_per_m_tokens`: 100000.0000 → 1.0000 (litellm only)
-- `wandb/Qwen/Qwen3-Coder-480B-A35B-Instruct` `pricing.output_per_m_tokens`: 150000.0000 → 1.5000 (litellm only)
 - `wandb/Qwen/Qwen3.5-35B-A3B` `pricing.cache_read_per_m_tokens`: null → 0.2500 (models_dev only)
 - `wandb/Qwen/Qwen3.6-35B-A3B` `pricing.cache_read_per_m_tokens`: null → 0.2500 (models_dev only)
-- `wandb/deepseek-ai/DeepSeek-R1-0528` `pricing.input_per_m_tokens`: 135000.0000 → 1.3500 (litellm only)
-- `wandb/deepseek-ai/DeepSeek-R1-0528` `pricing.output_per_m_tokens`: 540000.0000 → 5.4000 (litellm only)
-- `wandb/deepseek-ai/DeepSeek-V3-0324` `pricing.input_per_m_tokens`: 114000.0000 → 1.1400 (litellm only)
-- `wandb/deepseek-ai/DeepSeek-V3-0324` `pricing.output_per_m_tokens`: 275000.0000 → 2.7500 (litellm only)
 - `wandb/deepseek-ai/DeepSeek-V3.1` `pricing.cache_read_per_m_tokens`: null → 0.5500 (models_dev only)
 - `wandb/meta-llama/Llama-3.1-8B-Instruct` `pricing.cache_read_per_m_tokens`: null → 0.2200 (models_dev only)
 - `wandb/meta-llama/Llama-3.3-70B-Instruct` `pricing.cache_read_per_m_tokens`: null → 0.7100 (models_dev only)
-- `wandb/meta-llama/Llama-4-Scout-17B-16E-Instruct` `pricing.input_per_m_tokens`: 17000.0000 → 0.1700 (litellm only)
-- `wandb/meta-llama/Llama-4-Scout-17B-16E-Instruct` `pricing.output_per_m_tokens`: 66000.0000 → 0.6600 (litellm only)
 - `wandb/openai/gpt-oss-120b` `pricing.cache_read_per_m_tokens`: null → 0.0300 (models_dev only)
 - `wandb/openai/gpt-oss-20b` `pricing.cache_read_per_m_tokens`: null → 0.0300 (models_dev only)
 - `watsonx/bigscience/mt0-xxl-13b` `pricing.input_per_m_tokens`: 500.0000 → 1.9080 (litellm only)
 - `watsonx/bigscience/mt0-xxl-13b` `pricing.output_per_m_tokens`: 2000.0000 → 1.9080 (litellm only)
 - `watsonx/meta-llama/llama-4-maverick-17b` `pricing.input_per_m_tokens`: 0.3500 → 0.3710 (litellm only)
 - `watsonx/meta-llama/llama-4-maverick-17b` `pricing.output_per_m_tokens`: 1.4000 → 1.4840 (litellm only)
-- `xai/grok-3` `pricing.cache_read_per_m_tokens`: 0.7500 → 0.2000 (litellm only)
-- `xai/grok-3` `pricing.input_per_m_tokens`: 3.0000 → 1.2500 (litellm only)
-- `xai/grok-3` `pricing.output_per_m_tokens`: 15.0000 → 2.5000 (litellm only)
-- `xai/grok-3-beta` `pricing.cache_read_per_m_tokens`: 0.7500 → 0.2000 (litellm only)
-- `xai/grok-3-beta` `pricing.input_per_m_tokens`: 3.0000 → 1.2500 (litellm only)
-- `xai/grok-3-beta` `pricing.output_per_m_tokens`: 15.0000 → 2.5000 (litellm only)
-- `xai/grok-3-fast-beta` `pricing.cache_read_per_m_tokens`: 1.2500 → 0.2000 (litellm only)
-- `xai/grok-3-fast-beta` `pricing.input_per_m_tokens`: 5.0000 → 1.2500 (litellm only)
-- `xai/grok-3-fast-beta` `pricing.output_per_m_tokens`: 25.0000 → 2.5000 (litellm only)
-- `xai/grok-3-fast-latest` `pricing.cache_read_per_m_tokens`: 1.2500 → 0.2000 (litellm only)
-- `xai/grok-3-fast-latest` `pricing.input_per_m_tokens`: 5.0000 → 1.2500 (litellm only)
-- `xai/grok-3-fast-latest` `pricing.output_per_m_tokens`: 25.0000 → 2.5000 (litellm only)
-- `xai/grok-3-latest` `pricing.cache_read_per_m_tokens`: 0.7500 → 0.2000 (litellm only)
-- `xai/grok-3-latest` `pricing.input_per_m_tokens`: 3.0000 → 1.2500 (litellm only)
-- `xai/grok-3-latest` `pricing.output_per_m_tokens`: 15.0000 → 2.5000 (litellm only)
-- `xai/grok-3-mini` `pricing.cache_read_per_m_tokens`: 0.0750 → 0.2000 (litellm only)
-- `xai/grok-3-mini` `pricing.input_per_m_tokens`: 0.3000 → 1.2500 (litellm only)
-- `xai/grok-3-mini` `pricing.output_per_m_tokens`: 0.5000 → 2.5000 (litellm only)
-- `xai/grok-3-mini-beta` `pricing.cache_read_per_m_tokens`: 0.0750 → 0.2000 (litellm only)
-- `xai/grok-3-mini-beta` `pricing.input_per_m_tokens`: 0.3000 → 1.2500 (litellm only)
-- `xai/grok-3-mini-beta` `pricing.output_per_m_tokens`: 0.5000 → 2.5000 (litellm only)
-- `xai/grok-3-mini-fast` `pricing.cache_read_per_m_tokens`: 0.1500 → 0.2000 (litellm only)
-- `xai/grok-3-mini-fast` `pricing.input_per_m_tokens`: 0.6000 → 1.2500 (litellm only)
-- `xai/grok-3-mini-fast` `pricing.output_per_m_tokens`: 4.0000 → 2.5000 (litellm only)
-- `xai/grok-3-mini-fast-beta` `pricing.cache_read_per_m_tokens`: 0.1500 → 0.2000 (litellm only)
-- `xai/grok-3-mini-fast-beta` `pricing.input_per_m_tokens`: 0.6000 → 1.2500 (litellm only)
-- `xai/grok-3-mini-fast-beta` `pricing.output_per_m_tokens`: 4.0000 → 2.5000 (litellm only)
-- `xai/grok-3-mini-fast-latest` `pricing.cache_read_per_m_tokens`: 0.1500 → 0.2000 (litellm only)
-- `xai/grok-3-mini-fast-latest` `pricing.input_per_m_tokens`: 0.6000 → 1.2500 (litellm only)
-- `xai/grok-3-mini-fast-latest` `pricing.output_per_m_tokens`: 4.0000 → 2.5000 (litellm only)
-- `xai/grok-3-mini-latest` `pricing.cache_read_per_m_tokens`: 0.0750 → 0.2000 (litellm only)
-- `xai/grok-3-mini-latest` `pricing.input_per_m_tokens`: 0.3000 → 1.2500 (litellm only)
-- `xai/grok-3-mini-latest` `pricing.output_per_m_tokens`: 0.5000 → 2.5000 (litellm only)
-- `xai/grok-4` `pricing.cache_read_per_m_tokens`: null → 0.2000 (litellm only)
-- `xai/grok-4` `pricing.input_per_m_tokens`: 3.0000 → 1.2500 (litellm only)
-- `xai/grok-4` `pricing.output_per_m_tokens`: 15.0000 → 2.5000 (litellm only)
-- `xai/grok-4-0709` `pricing.cache_read_per_m_tokens`: null → 0.2000 (litellm only)
-- `xai/grok-4-0709` `pricing.input_per_m_tokens`: 3.0000 → 1.2500 (litellm only)
-- `xai/grok-4-0709` `pricing.output_per_m_tokens`: 15.0000 → 2.5000 (litellm only)
-- `xai/grok-4-1-fast` `pricing.cache_read_per_m_tokens`: 0.0500 → 0.2000 (litellm only)
-- `xai/grok-4-1-fast` `pricing.input_per_m_tokens`: 0.2000 → 1.2500 (litellm only)
-- `xai/grok-4-1-fast` `pricing.output_per_m_tokens`: 0.5000 → 2.5000 (litellm only)
-- `xai/grok-4-1-fast-non-reasoning` `pricing.cache_read_per_m_tokens`: 0.0500 → 0.2000 (litellm only)
-- `xai/grok-4-1-fast-non-reasoning` `pricing.input_per_m_tokens`: 0.2000 → 1.2500 (litellm only)
-- `xai/grok-4-1-fast-non-reasoning` `pricing.output_per_m_tokens`: 0.5000 → 2.5000 (litellm only)
-- `xai/grok-4-1-fast-non-reasoning-latest` `pricing.cache_read_per_m_tokens`: 0.0500 → 0.2000 (litellm only)
-- `xai/grok-4-1-fast-non-reasoning-latest` `pricing.input_per_m_tokens`: 0.2000 → 1.2500 (litellm only)
-- `xai/grok-4-1-fast-non-reasoning-latest` `pricing.output_per_m_tokens`: 0.5000 → 2.5000 (litellm only)
-- `xai/grok-4-1-fast-reasoning` `pricing.cache_read_per_m_tokens`: 0.0500 → 0.2000 (litellm only)
-- `xai/grok-4-1-fast-reasoning` `pricing.input_per_m_tokens`: 0.2000 → 1.2500 (litellm only)
-- `xai/grok-4-1-fast-reasoning` `pricing.output_per_m_tokens`: 0.5000 → 2.5000 (litellm only)
-- `xai/grok-4-1-fast-reasoning-latest` `pricing.cache_read_per_m_tokens`: 0.0500 → 0.2000 (litellm only)
-- `xai/grok-4-1-fast-reasoning-latest` `pricing.input_per_m_tokens`: 0.2000 → 1.2500 (litellm only)
-- `xai/grok-4-1-fast-reasoning-latest` `pricing.output_per_m_tokens`: 0.5000 → 2.5000 (litellm only)
-- `xai/grok-4-fast-non-reasoning` `pricing.cache_read_per_m_tokens`: 0.0500 → 0.2000 (litellm only)
-- `xai/grok-4-fast-non-reasoning` `pricing.input_per_m_tokens`: 0.2000 → 1.2500 (litellm only)
-- `xai/grok-4-fast-non-reasoning` `pricing.output_per_m_tokens`: 0.5000 → 2.5000 (litellm only)
-- `xai/grok-4-fast-reasoning` `pricing.cache_read_per_m_tokens`: 0.0500 → 0.2000 (litellm only)
-- `xai/grok-4-fast-reasoning` `pricing.input_per_m_tokens`: 0.2000 → 1.2500 (litellm only)
-- `xai/grok-4-fast-reasoning` `pricing.output_per_m_tokens`: 0.5000 → 2.5000 (litellm only)
-- `xai/grok-4-latest` `pricing.cache_read_per_m_tokens`: null → 0.2000 (litellm only)
-- `xai/grok-4-latest` `pricing.input_per_m_tokens`: 3.0000 → 1.2500 (litellm only)
-- `xai/grok-4-latest` `pricing.output_per_m_tokens`: 15.0000 → 2.5000 (litellm only)
 - `xai/grok-code-fast` `pricing.cache_read_per_m_tokens`: 0.0200 → 0.2000 (litellm only)
 - `xai/grok-code-fast` `pricing.input_per_m_tokens`: 0.2000 → 1.0000 (litellm only)
 - `xai/grok-code-fast` `pricing.output_per_m_tokens`: 1.5000 → 2.0000 (litellm only)
@@ -466,10 +383,8 @@ apply them manually to the model YAML if correct.
 - `zai/glm-5-turbo` `pricing.input_per_m_tokens`: null → 1.2000 (models_dev only)
 - `zai/glm-5-turbo` `pricing.output_per_m_tokens`: null → 4.0000 (models_dev only)
 
-## Conflicting price diffs (49)
+## Conflicting price diffs (72)
 
-- `azure/gpt-4o-mini` `pricing.input_per_m_tokens`: catalog=0.1650, sources=litellm=0.1650, models_dev=0.1500
-- `azure/gpt-4o-mini` `pricing.output_per_m_tokens`: catalog=0.6600, sources=litellm=0.6600, models_dev=0.6000
 - `azure/gpt-5` `pricing.cache_read_per_m_tokens`: catalog=0.1250, sources=litellm=0.1250, models_dev=0.1300
 - `azure/gpt-5-codex` `pricing.cache_read_per_m_tokens`: catalog=0.1250, sources=litellm=0.1250, models_dev=0.1300
 - `azure/gpt-5-mini` `pricing.cache_read_per_m_tokens`: catalog=0.0250, sources=litellm=0.0250, models_dev=0.0300
@@ -491,28 +406,53 @@ apply them manually to the model YAML if correct.
 - `deepinfra/deepseek-ai/DeepSeek-V4-Flash-0731` `pricing.cache_read_per_m_tokens`: catalog=null, sources=litellm=0.0160, models_dev=0.0150
 - `deepinfra/deepseek-ai/DeepSeek-V4-Flash-0731` `pricing.input_per_m_tokens`: catalog=0.0800, sources=litellm=0.0800, models_dev=0.0600
 - `deepinfra/nvidia/Llama-3.3-Nemotron-Super-49B-v1.5` `pricing.input_per_m_tokens`: catalog=0.1000, sources=litellm=0.1000, models_dev=0.4000
-- `deepseek/deepseek-chat` `pricing.input_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, openrouter=0.3200
-- `deepseek/deepseek-chat` `pricing.output_per_m_tokens`: catalog=0.4200, sources=litellm=0.4200, openrouter=0.8900
+- `deepinfra/tencent/Hy3` `pricing.cache_read_per_m_tokens`: catalog=0.0350, sources=litellm=0.0350, models_dev=0.0330
+- `deepinfra/tencent/Hy3` `pricing.input_per_m_tokens`: catalog=0.1400, sources=litellm=0.1400, models_dev=0.1300
+- `deepinfra/tencent/Hy3` `pricing.output_per_m_tokens`: catalog=0.5800, sources=litellm=0.5800, models_dev=0.5300
+- `deepseek/deepseek-chat` `pricing.input_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, openrouter=0.2574
+- `deepseek/deepseek-chat` `pricing.output_per_m_tokens`: catalog=0.4200, sources=litellm=0.4200, openrouter=1.0287
 - `deepseek/deepseek-r1` `pricing.input_per_m_tokens`: catalog=0.5500, sources=litellm=0.5500, openrouter=0.7000
 - `deepseek/deepseek-r1` `pricing.output_per_m_tokens`: catalog=2.1900, sources=litellm=2.1900, openrouter=2.5000
-- `deepseek/deepseek-v3.2` `pricing.input_per_m_tokens`: catalog=0.2800, sources=litellm=0.2800, openrouter=0.2690
+- `deepseek/deepseek-v3.2` `pricing.output_per_m_tokens`: catalog=0.4000, sources=litellm=0.4000, openrouter=0.4200
 - `deepseek/deepseek-v4-flash` `pricing.cache_read_per_m_tokens`: catalog=0.0028, sources=litellm=0.0060, models_dev=0.0030
-- `deepseek/deepseek-v4-flash` `pricing.input_per_m_tokens`: catalog=0.1400, sources=litellm=0.3000, models_dev=0.1500, openrouter=0.0886
-- `deepseek/deepseek-v4-flash` `pricing.output_per_m_tokens`: catalog=0.2800, sources=litellm=1.2000, models_dev=0.6000, openrouter=0.1772
+- `deepseek/deepseek-v4-flash` `pricing.input_per_m_tokens`: catalog=0.1400, sources=litellm=0.3000, models_dev=0.1500, openrouter=0.0854
+- `deepseek/deepseek-v4-flash` `pricing.output_per_m_tokens`: catalog=0.2800, sources=litellm=1.2000, models_dev=0.6000, openrouter=0.1708
 - `deepseek/deepseek-v4-pro` `pricing.cache_read_per_m_tokens`: catalog=0.0036, sources=litellm=0.0440, models_dev=0.0036
-- `deepseek/deepseek-v4-pro` `pricing.input_per_m_tokens`: catalog=0.4350, sources=litellm=1.3200, models_dev=0.4350, openrouter=0.9553
-- `deepseek/deepseek-v4-pro` `pricing.output_per_m_tokens`: catalog=0.8700, sources=litellm=3.9600, models_dev=0.8700, openrouter=1.9105
-- `mistral/labs-devstral-small-2512` `pricing.input_per_m_tokens`: catalog=0.1000, sources=litellm=0.1000, models_dev=0.0000
-- `mistral/labs-devstral-small-2512` `pricing.output_per_m_tokens`: catalog=0.3000, sources=litellm=0.3000, models_dev=0.0000
+- `deepseek/deepseek-v4-pro` `pricing.input_per_m_tokens`: catalog=0.4350, sources=litellm=1.3200, models_dev=0.4350, openrouter=0.9514
+- `deepseek/deepseek-v4-pro` `pricing.output_per_m_tokens`: catalog=0.8700, sources=litellm=3.9600, models_dev=0.8700, openrouter=1.9029
 - `mistral/magistral-medium-latest` `pricing.input_per_m_tokens`: catalog=2.0000, sources=litellm=1.5000, models_dev=2.0000
 - `mistral/magistral-medium-latest` `pricing.output_per_m_tokens`: catalog=5.0000, sources=litellm=7.5000, models_dev=5.0000
 - `mistral/open-mistral-nemo` `pricing.input_per_m_tokens`: catalog=0.3000, sources=litellm=0.3000, models_dev=0.1500
 - `mistral/open-mistral-nemo` `pricing.output_per_m_tokens`: catalog=0.3000, sources=litellm=0.3000, models_dev=0.1500
 - `openai/gpt-5.6-sol` `pricing.input_per_m_tokens`: catalog=5.0000, sources=litellm=4.0000, openrouter=2.0000
 - `openai/gpt-5.6-sol` `pricing.output_per_m_tokens`: catalog=30.0000, sources=litellm=20.0000, openrouter=10.0000
-- `openrouter/deepseek/deepseek-v4.1-flash` `pricing.cache_read_per_m_tokens`: catalog=null, sources=litellm=0.0060, models_dev=0.0030
-- `openrouter/deepseek/deepseek-v4.1-flash` `pricing.input_per_m_tokens`: catalog=0.1500, sources=litellm=0.3000, models_dev=0.1500
-- `openrouter/deepseek/deepseek-v4.1-flash` `pricing.output_per_m_tokens`: catalog=0.6000, sources=litellm=1.2000, models_dev=0.6000
+- `openrouter/deepseek/deepseek-v4-flash` `pricing.cache_read_per_m_tokens`: catalog=null, sources=litellm=0.0280, models_dev=0.0177
+- `openrouter/deepseek/deepseek-v4-flash` `pricing.input_per_m_tokens`: catalog=0.0886, sources=litellm=0.1400, models_dev=0.0885
+- `openrouter/deepseek/deepseek-v4-flash` `pricing.output_per_m_tokens`: catalog=0.1772, sources=litellm=0.2800, models_dev=0.1770
+- `openrouter/deepseek/deepseek-v4.1-flash` `pricing.cache_read_per_m_tokens`: catalog=null, sources=litellm=0.0314, models_dev=0.0010
+- `openrouter/deepseek/deepseek-v4.1-flash` `pricing.output_per_m_tokens`: catalog=0.6000, sources=litellm=0.6000, models_dev=0.2900
+- `openrouter/google/gemma-4-26b-a4b-it` `pricing.cache_read_per_m_tokens`: catalog=0.0500, sources=litellm=0.0375, models_dev=0.0500
+- `openrouter/google/gemma-4-26b-a4b-it` `pricing.input_per_m_tokens`: catalog=0.0900, sources=litellm=0.0675, models_dev=0.0900
+- `openrouter/google/gemma-4-26b-a4b-it` `pricing.output_per_m_tokens`: catalog=0.3000, sources=litellm=0.2250, models_dev=0.3000
+- `openrouter/minimax/minimax-m2` `pricing.input_per_m_tokens`: catalog=0.2550, sources=litellm=0.2550, models_dev=0.3000
+- `openrouter/minimax/minimax-m2` `pricing.output_per_m_tokens`: catalog=1.0200, sources=litellm=1.0200, models_dev=1.2000
+- `openrouter/moonshotai/kimi-k2.6` `pricing.cache_read_per_m_tokens`: catalog=0.1600, sources=litellm=0.1600, models_dev=0.1500
+- `openrouter/moonshotai/kimi-k2.6` `pricing.input_per_m_tokens`: catalog=0.9500, sources=litellm=0.9500, models_dev=0.6500
+- `openrouter/moonshotai/kimi-k2.6` `pricing.output_per_m_tokens`: catalog=4.0000, sources=litellm=4.0000, models_dev=3.4100
+- `openrouter/qwen/qwen3-14b` `pricing.input_per_m_tokens`: catalog=0.1200, sources=litellm=0.2275, models_dev=0.1200
+- `openrouter/qwen/qwen3-14b` `pricing.output_per_m_tokens`: catalog=0.2400, sources=litellm=0.9100, models_dev=0.2400
+- `openrouter/qwen/qwen3-30b-a3b` `pricing.input_per_m_tokens`: catalog=0.1200, sources=litellm=0.1300, models_dev=0.1200
+- `openrouter/qwen/qwen3-30b-a3b` `pricing.output_per_m_tokens`: catalog=0.5000, sources=litellm=0.5200, models_dev=0.5000
+- `openrouter/z-ai/glm-5.1` `pricing.cache_read_per_m_tokens`: catalog=0.1794, sources=litellm=0.2600, models_dev=0.1791
+- `openrouter/z-ai/glm-5.1` `pricing.input_per_m_tokens`: catalog=0.9660, sources=litellm=1.4000, models_dev=0.9646
+- `openrouter/z-ai/glm-5.1` `pricing.output_per_m_tokens`: catalog=3.0360, sources=litellm=4.4000, models_dev=3.0316
+- `openrouter/z-ai/glm-5.3` `pricing.cache_read_per_m_tokens`: catalog=0.1690, sources=litellm=0.0660, models_dev=0.2600
+- `openrouter/z-ai/glm-5.3` `pricing.input_per_m_tokens`: catalog=0.9100, sources=litellm=0.3556, models_dev=1.4000
+- `openrouter/z-ai/glm-5.3` `pricing.output_per_m_tokens`: catalog=2.8600, sources=litellm=2.5740, models_dev=4.4000
+- `openrouter/~deepseek/deepseek-v4-flash-latest` `pricing.input_per_m_tokens`: catalog=0.0400, sources=litellm=0.0400, models_dev=0.0210
+- `openrouter/~deepseek/deepseek-v4-flash-latest` `pricing.output_per_m_tokens`: catalog=0.1600, sources=litellm=0.6400, models_dev=0.3200
+- `openrouter/~moonshotai/kimi-latest` `pricing.input_per_m_tokens`: catalog=1.7000, sources=litellm=3.0000, models_dev=1.0000
+- `openrouter/~moonshotai/kimi-latest` `pricing.output_per_m_tokens`: catalog=8.5000, sources=litellm=15.0000, models_dev=9.0000
 - `ovhcloud/gpt-oss-120b` `pricing.input_per_m_tokens`: catalog=0.0800, sources=litellm=0.0800, models_dev=0.0900
 - `ovhcloud/gpt-oss-120b` `pricing.output_per_m_tokens`: catalog=0.4000, sources=litellm=0.4000, models_dev=0.4700
 - `ovhcloud/gpt-oss-20b` `pricing.input_per_m_tokens`: catalog=0.0400, sources=litellm=0.0400, models_dev=0.0500
