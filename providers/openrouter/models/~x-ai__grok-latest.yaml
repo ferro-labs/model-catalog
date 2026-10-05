@@ -5,9 +5,9 @@ mode: chat
 context_window: 0
 max_output_tokens: 0
 pricing:
-    input_per_m_tokens: 1.5999999999999999
-    output_per_m_tokens: 4.8
-    cache_read_per_m_tokens: 0.39999999999999997
+    input_per_m_tokens: 2
+    output_per_m_tokens: 6
+    cache_read_per_m_tokens: 0.5
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: auto:litellm+models_dev
-updated_at: "2026-09-28"
+updated_at: "2026-10-05"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-09-28"
+        verified_at: "2026-10-05"
         verified_by: scraper-litellm
-        snapshot_sha256: b8c1ed2045bfd99895177f65f658e5c9365284a8f3491a43e17d05483564f050
+        snapshot_sha256: 9a8a8137c07c4b676108f247a099afc760320c5d6b1dd4f3eeada9af1b8fe0a4
         snapshot_branch: snapshots
         confidence: high

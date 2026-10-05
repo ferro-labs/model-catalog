@@ -1,0 +1,2152 @@
+{
+  "xai/grok-2": {
+    "provider": "xai",
+    "model_id": "grok-2",
+    "display_name": "grok-2",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 10.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/xai/grok-2",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "d173c3cf2d61a9d6604ecb81406f4ae70a87986a99b228c0687f023979eff5ad",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-2-1212": {
+    "provider": "xai",
+    "model_id": "grok-2-1212",
+    "display_name": "grok-2-1212",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 10.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/xai/grok-2-1212",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "6e221a8e9e9ac3081e57cc6d8f918df190c66b9fa9198385d0ad6746f74dcf3a",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-2-latest": {
+    "provider": "xai",
+    "model_id": "grok-2-latest",
+    "display_name": "grok-2-latest",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 10.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/xai/grok-2-latest",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "12fca9164a9b838b520311c66c266b95f9f754151504377b1c9d0d1ebc55a5b7",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-2-vision": {
+    "provider": "xai",
+    "model_id": "grok-2-vision",
+    "display_name": "grok-2-vision",
+    "mode": "chat",
+    "context_window": 32768,
+    "max_output_tokens": 32768,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 10.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/xai/grok-2-vision",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "cbd2e8627fba2fa6e0182260393b378d2465fe2811060f7a208a211cb624d317",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-2-vision-1212": {
+    "provider": "xai",
+    "model_id": "grok-2-vision-1212",
+    "display_name": "grok-2-vision-1212",
+    "mode": "chat",
+    "context_window": 32768,
+    "max_output_tokens": 32768,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 10.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "deprecated",
+      "deprecation_date": "2026-02-28",
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/xai/grok-2-vision-1212",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "ece597ca9c3ced4dde1ebf77c2a36beb35be8837efbc163973ace8b59bac96ae",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-2-vision-latest": {
+    "provider": "xai",
+    "model_id": "grok-2-vision-latest",
+    "display_name": "grok-2-vision-latest",
+    "mode": "chat",
+    "context_window": 32768,
+    "max_output_tokens": 32768,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 10.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/xai/grok-2-vision-latest",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "87a1e124e9b584350c6364fbde962b1372a99d39a761c56c4535707015f3de8f",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3": {
+    "provider": "xai",
+    "model_id": "grok-3",
+    "display_name": "grok-3",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 15.0,
+      "cache_read_per_m_tokens": 0.75,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "f5c960be4d4100ffec774bc04e80025a4bee46bfcd329b3980e8c05436284c2a",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-beta": {
+    "provider": "xai",
+    "model_id": "grok-3-beta",
+    "display_name": "grok-3-beta",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 15.0,
+      "cache_read_per_m_tokens": 0.75,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "872942a2e30cb451d5549ac2362105b466351e85ea7ea4edb93a9a469e25e9ac",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-fast-beta": {
+    "provider": "xai",
+    "model_id": "grok-3-fast-beta",
+    "display_name": "grok-3-fast-beta",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 5.0,
+      "output_per_m_tokens": 25.0,
+      "cache_read_per_m_tokens": 1.25,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "2bd3db7acbc1fe3aeb466387a64e71f22990f00d72f50c27bef49f13ee82bedf",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-fast-latest": {
+    "provider": "xai",
+    "model_id": "grok-3-fast-latest",
+    "display_name": "grok-3-fast-latest",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 5.0,
+      "output_per_m_tokens": 25.0,
+      "cache_read_per_m_tokens": 1.25,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "5d34e650a7d5dd1279f52e8c66b385428c006deadd179ca9369a69c2474db9bf",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-latest": {
+    "provider": "xai",
+    "model_id": "grok-3-latest",
+    "display_name": "grok-3-latest",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 15.0,
+      "cache_read_per_m_tokens": 0.75,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "90ccb08c4137532c6a99c3f1e4f2ca7e9d943239fc926b13849db3b0e913cab9",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-mini": {
+    "provider": "xai",
+    "model_id": "grok-3-mini",
+    "display_name": "grok-3-mini",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.3,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.075,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "deprecated",
+      "deprecation_date": "2026-02-28",
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "ba3147333ea24e1a64062eb8cf015aa9893b1437b617d80bf4190a493bfea4f0",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-mini-beta": {
+    "provider": "xai",
+    "model_id": "grok-3-mini-beta",
+    "display_name": "grok-3-mini-beta",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.3,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.075,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "deprecated",
+      "deprecation_date": "2026-02-28",
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "25b9aa638ea3501ac294fd164348d36d151a1bfd6a73e5fccfd25e3112ef677d",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-mini-fast": {
+    "provider": "xai",
+    "model_id": "grok-3-mini-fast",
+    "display_name": "grok-3-mini-fast",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.6,
+      "output_per_m_tokens": 4.0,
+      "cache_read_per_m_tokens": 0.15,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "91aefd886b58c02431bff8ee6c043ca37ca108b5bdfe33666c47a62fb05053ef",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-mini-fast-beta": {
+    "provider": "xai",
+    "model_id": "grok-3-mini-fast-beta",
+    "display_name": "grok-3-mini-fast-beta",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.6,
+      "output_per_m_tokens": 4.0,
+      "cache_read_per_m_tokens": 0.15,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "3700c5793d0df1c65cb6089c401d816aedc30bb565a13c48d143896acc9e91f9",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-mini-fast-latest": {
+    "provider": "xai",
+    "model_id": "grok-3-mini-fast-latest",
+    "display_name": "grok-3-mini-fast-latest",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.6,
+      "output_per_m_tokens": 4.0,
+      "cache_read_per_m_tokens": 0.15,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "4ef65b07aec5f50c316d9fa648decccdd84f4f3c7bdf55536e5a3423468724ac",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-3-mini-latest": {
+    "provider": "xai",
+    "model_id": "grok-3-mini-latest",
+    "display_name": "grok-3-mini-latest",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.3,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.075,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://x.ai/api#pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "86cefcf74000bf644ac2f6e5ee7778ea081cf2a602c587b9d41eff5fb943abe1",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4": {
+    "provider": "xai",
+    "model_id": "grok-4",
+    "display_name": "grok-4",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 15.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "c083c929cc83304119b9a4e2a0c9929842eba6bf9a99e9d3b6fa7c3b67a76981",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4-0709": {
+    "provider": "xai",
+    "model_id": "grok-4-0709",
+    "display_name": "grok-4-0709",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 15.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "658b6955e41d501a540be504b1564097271237eda24e95c73ea014223cd86e61",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4-1-fast": {
+    "provider": "xai",
+    "model_id": "grok-4-1-fast",
+    "display_name": "grok-4-1-fast",
+    "mode": "chat",
+    "context_window": 2000000,
+    "max_output_tokens": 2000000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.05,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": true,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models/grok-4-1-fast-reasoning",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "0821410466b9a653a0eec7029880885e25c9053f0c1ed1dbf759fe89445cfc05",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4-1-fast-non-reasoning": {
+    "provider": "xai",
+    "model_id": "grok-4-1-fast-non-reasoning",
+    "display_name": "grok-4-1-fast-non-reasoning",
+    "mode": "chat",
+    "context_window": 2000000,
+    "max_output_tokens": 2000000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.05,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": true,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models/grok-4-1-fast-non-reasoning",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "d85070ea03d40ab3cc7eae6cf673344f8dda0ae06336da09ec9250837df80b1b",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4-1-fast-non-reasoning-latest": {
+    "provider": "xai",
+    "model_id": "grok-4-1-fast-non-reasoning-latest",
+    "display_name": "grok-4-1-fast-non-reasoning-latest",
+    "mode": "chat",
+    "context_window": 2000000,
+    "max_output_tokens": 2000000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.05,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": true,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models/grok-4-1-fast-non-reasoning",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "8ccaf661db51171eb04b6cfd4e06833825334225cf7d1bfef637f0df0af2a060",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4-1-fast-reasoning": {
+    "provider": "xai",
+    "model_id": "grok-4-1-fast-reasoning",
+    "display_name": "grok-4-1-fast-reasoning",
+    "mode": "chat",
+    "context_window": 2000000,
+    "max_output_tokens": 2000000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.05,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": true,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models/grok-4-1-fast-reasoning",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "9230676bb480c53dd25776ee52462bae497083b5bd36d621971cefb080e80b52",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4-1-fast-reasoning-latest": {
+    "provider": "xai",
+    "model_id": "grok-4-1-fast-reasoning-latest",
+    "display_name": "grok-4-1-fast-reasoning-latest",
+    "mode": "chat",
+    "context_window": 2000000,
+    "max_output_tokens": 2000000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.05,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": true,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": true,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models/grok-4-1-fast-reasoning",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "cbdc726ab9739b9e2499b36c0db14c52b4b94c4780cb76ee567075ec0c921423",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4-fast-non-reasoning": {
+    "provider": "xai",
+    "model_id": "grok-4-fast-non-reasoning",
+    "display_name": "grok-4-fast-non-reasoning",
+    "mode": "chat",
+    "context_window": 2000000,
+    "max_output_tokens": 2000000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.05,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "cc88443f0827616f28d0c269c765e86c9328d5f7c7e61186555d55c613bb3857",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4-fast-reasoning": {
+    "provider": "xai",
+    "model_id": "grok-4-fast-reasoning",
+    "display_name": "grok-4-fast-reasoning",
+    "mode": "chat",
+    "context_window": 2000000,
+    "max_output_tokens": 2000000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.05,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "9e8827fe982af5aabcad0886cdff59ff2e2153f31f6495f39e1408c88232d469",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4-latest": {
+    "provider": "xai",
+    "model_id": "grok-4-latest",
+    "display_name": "grok-4-latest",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 15.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "5ea004a1f8fc4dff48b048777660690a62fabda7212a19c99f9d47400372dd90",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4.20-0309-non-reasoning": {
+    "provider": "xai",
+    "model_id": "grok-4.20-0309-non-reasoning",
+    "display_name": "grok-4.20-0309-non-reasoning",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.25,
+      "output_per_m_tokens": 2.5,
+      "cache_read_per_m_tokens": 0.19999999999999998,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-24",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-24",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "48a688622f95abcd8dfae36590f264ab1ee3f84eaa9f2b593ff538c69b02f8e5",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4.20-0309-reasoning": {
+    "provider": "xai",
+    "model_id": "grok-4.20-0309-reasoning",
+    "display_name": "grok-4.20-0309-reasoning",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.25,
+      "output_per_m_tokens": 2.5,
+      "cache_read_per_m_tokens": 0.19999999999999998,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-24",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-24",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "38cf4fd9130ae3e6e98261774ad4f50785d11e1f796e38b22a696a31d500bf8b",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4.20-multi-agent-0309": {
+    "provider": "xai",
+    "model_id": "grok-4.20-multi-agent-0309",
+    "display_name": "grok-4.20-multi-agent-0309",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.25,
+      "output_per_m_tokens": 2.5,
+      "cache_read_per_m_tokens": 0.19999999999999998,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-24",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-24",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "b60d37315965b533c9181d6761e1c7bf792c041580309ccf3d3417e8c8f730ad",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4.3": {
+    "provider": "xai",
+    "model_id": "grok-4.3",
+    "display_name": "grok-4.3",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.25,
+      "output_per_m_tokens": 2.5,
+      "cache_read_per_m_tokens": 0.19999999999999998,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-07-13",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "ab77c04a12790ed298911d5fca68a13b63759da21d7d2e5360ee29666a15087c",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4.5": {
+    "provider": "xai",
+    "model_id": "grok-4.5",
+    "display_name": "grok-4.5",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 6.0,
+      "cache_read_per_m_tokens": 0.3,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-17",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-17",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "d2a11398f563e9bf19790d4db8e0f56e08601d90654d2487ed6bcaef0ce63e54",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4.6": {
+    "provider": "xai",
+    "model_id": "grok-4.6",
+    "display_name": "grok-4.6",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 6.0,
+      "cache_read_per_m_tokens": 0.5,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-24",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-24",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "3b8e4eafc01dd053fdeff11482e13b8a425160fb4f98929c18f8e4c33f24da14",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-4.7": {
+    "provider": "xai",
+    "model_id": "grok-4.7",
+    "display_name": "grok-4.7",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 6.0,
+      "cache_read_per_m_tokens": 0.5,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-10-05",
+    "tier": "standard"
+  },
+  "xai/grok-beta": {
+    "provider": "xai",
+    "model_id": "grok-beta",
+    "display_name": "grok-beta",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 5.0,
+      "output_per_m_tokens": 15.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/xai/grok-beta",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "e68fee5951de9787e52dd91c59951f5410f16ab0c026eac4696fe1f9ecd52e8a",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-build-0.1": {
+    "provider": "xai",
+    "model_id": "grok-build-0.1",
+    "display_name": "grok-build-0.1",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.0,
+      "output_per_m_tokens": 2.0,
+      "cache_read_per_m_tokens": 0.19999999999999998,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-08-24",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-24",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "be00f212947b31f9300d0ab4bb09a239117ba4f02ed73abc8025b99992b775ab",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-code-fast": {
+    "provider": "xai",
+    "model_id": "grok-code-fast",
+    "display_name": "grok-code-fast",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 1.5,
+      "cache_read_per_m_tokens": 0.02,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models",
+    "updated_at": "2026-02-28",
+    "tier": "flagship",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "747605131976746842f995ba6ebe59ceabf3581eff3dd22d8162581707f92472",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-code-fast-1": {
+    "provider": "xai",
+    "model_id": "grok-code-fast-1",
+    "display_name": "grok-code-fast-1",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 1.5,
+      "cache_read_per_m_tokens": 0.02,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "c3138f19edd300234a4c0078227b0a833bb555fbcf0d3d89f05e3441400b3c5e",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-code-fast-1-0825": {
+    "provider": "xai",
+    "model_id": "grok-code-fast-1-0825",
+    "display_name": "grok-code-fast-1-0825",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 256000,
+    "pricing": {
+      "input_per_m_tokens": 0.2,
+      "output_per_m_tokens": 1.5,
+      "cache_read_per_m_tokens": 0.02,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": true,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://docs.x.ai/docs/models",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "9609fa0c5fe063f560ae013642a94eb876e5ad59b14347c6e32833248aa8d467",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "xai/grok-vision-beta": {
+    "provider": "xai",
+    "model_id": "grok-vision-beta",
+    "display_name": "grok-vision-beta",
+    "mode": "chat",
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "pricing": {
+      "input_per_m_tokens": 5.0,
+      "output_per_m_tokens": 15.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": true,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://models.dev/xai/grok-vision-beta",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "78030c764a0e3c43652871a66ec19ced4cbac92d07b9cb124acdd4ffd0d354ff",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  }
+}

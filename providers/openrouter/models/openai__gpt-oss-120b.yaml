@@ -5,8 +5,8 @@ mode: chat
 context_window: 131072
 max_output_tokens: 32768
 pricing:
-    input_per_m_tokens: 0.15
-    output_per_m_tokens: 0.6
+    input_per_m_tokens: 0.037
+    output_per_m_tokens: 0.16999999999999998
     cache_read_per_m_tokens: 0.075
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: https://openrouter.ai/openai/gpt-oss-120b
-updated_at: "2026-09-21"
+updated_at: "2026-10-05"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-09-21"
+        verified_at: "2026-10-05"
         verified_by: scraper-litellm
-        snapshot_sha256: ade21b1fb6f737562ee8ae4e221afc312caf14247a0a693a9a4f12fa4f4ad85a
+        snapshot_sha256: 6ab0f956a4a9f4cf2afc4653252d9ba6c8ab304bdb68a554af834b308b53c35a
         snapshot_branch: snapshots
         confidence: high
