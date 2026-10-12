@@ -1,0 +1,1 @@
+{"provider":"openrouter","model_id":"openai/gpt-4.1-mini","source_url":"https://models.dev/api.json","input_per_m_tokens":0.4,"output_per_m_tokens":1.6,"cache_read_per_m_tokens":0.1}

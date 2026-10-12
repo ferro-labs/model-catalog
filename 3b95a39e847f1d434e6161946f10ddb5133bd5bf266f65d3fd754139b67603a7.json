@@ -1,0 +1,1 @@
+{"provider":"openrouter","model_id":"openai/o1","source_url":"https://models.dev/api.json","input_per_m_tokens":15,"output_per_m_tokens":60,"cache_read_per_m_tokens":7.5}

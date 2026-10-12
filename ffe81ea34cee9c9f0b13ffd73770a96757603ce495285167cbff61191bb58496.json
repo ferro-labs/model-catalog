@@ -1,0 +1,1 @@
+{"provider":"openrouter","model_id":"thinkingmachines/inkling-small","source_url":"https://models.dev/api.json","input_per_m_tokens":0.45,"output_per_m_tokens":1.2,"cache_read_per_m_tokens":0.1}

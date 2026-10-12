@@ -1,0 +1,1 @@
+{"provider":"openrouter","model_id":"deepseek/deepseek-v4-flash-vision-exp","source_url":"https://models.dev/api.json","input_per_m_tokens":0.2156,"output_per_m_tokens":0.6468,"cache_read_per_m_tokens":0.00686}
