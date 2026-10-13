@@ -8731,7 +8731,7 @@
     "pricing": {
       "input_per_m_tokens": 2.0,
       "output_per_m_tokens": 10.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.09999999999999999,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -8762,8 +8762,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-10-05",
-    "tier": "standard"
+    "updated_at": "2026-10-12",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-12",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "a09bad87ce45d469bbe95f787df102cb2f48234d204b7619a8b8ea009face7ad",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "azure/gpt-audio-1.5-2026-02-23": {
     "provider": "azure",
@@ -10697,6 +10707,60 @@
         "confidence": "medium",
         "verified_by": "scraper-models_dev",
         "snapshot_sha256": "50f8adff567db0e54c741ae70cb7c5f0955770a80ba8ebe44f1ea80909b4023a",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "azure/model-router": {
+    "provider": "azure",
+    "model_id": "model-router",
+    "display_name": "model-router",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.14,
+      "output_per_m_tokens": 0.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-10-12",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-12",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "6b47d64754a6ec6a62f0a337fa7e292153ffb94977ad1b55b6551c7faa2bb0b3",
         "snapshot_branch": "snapshots"
       }
     }

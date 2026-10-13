@@ -1,10 +1,10 @@
 {
-  "version": "v2026.10.05",
+  "version": "v2026.10.12",
   "schema_version": 2,
-  "generated_at": "2026-10-05T14:14:32Z",
-  "catalog_sha256": "c415336f4f36c7e10a199c7d149365deff9f40cf65389a8be699bf57a8677fa0",
-  "catalog_url": "/v1/c415336f4f36c7e10a199c7d149365deff9f40cf65389a8be699bf57a8677fa0.json",
-  "git_sha": "672907435c12c85329789e65c54e376e82ec643f",
+  "generated_at": "2026-10-12T14:54:33Z",
+  "catalog_sha256": "81f348f068a09ac085afe951991f9858f70ea57d6a51eef93572d06a16346d3b",
+  "catalog_url": "/v1/81f348f068a09ac085afe951991f9858f70ea57d6a51eef93572d06a16346d3b.json",
+  "git_sha": "c70d0848c822dfd0a695722b537a4e497f5a7f30",
   "providers": [
     {
       "id": "ai21",
@@ -48,9 +48,9 @@
     },
     {
       "id": "anthropic",
-      "model_count": 33,
-      "sha256": "5fb8d81c311344a297a8aefb7a95024d4ad29131c072edd4a609ff1242dc9b9a",
-      "url": "/v1/providers/anthropic/5fb8d81c311344a297a8aefb7a95024d4ad29131c072edd4a609ff1242dc9b9a.json",
+      "model_count": 34,
+      "sha256": "ed2c0d04e2a5ee9b7d850140b55f62de69ea12082ebea21957135529cb55fe4c",
+      "url": "/v1/providers/anthropic/ed2c0d04e2a5ee9b7d850140b55f62de69ea12082ebea21957135529cb55fe4c.json",
       "display_name": "Anthropic",
       "logo_url": "https://anthropic.com/favicon.svg",
       "category": "frontier",
@@ -89,9 +89,9 @@
     },
     {
       "id": "azure",
-      "model_count": 245,
-      "sha256": "d6e98b5a7973470b79a003e2135d3c01e73194e85f0f1522df2d6564cd7572aa",
-      "url": "/v1/providers/azure/d6e98b5a7973470b79a003e2135d3c01e73194e85f0f1522df2d6564cd7572aa.json",
+      "model_count": 246,
+      "sha256": "241fdc20bf54894cc148a3024c775c01ff9d76429b548299c6ed0541c27d8549",
+      "url": "/v1/providers/azure/241fdc20bf54894cc148a3024c775c01ff9d76429b548299c6ed0541c27d8549.json",
       "display_name": "Azure OpenAI",
       "category": "cloud",
       "description": "OpenAI models via Microsoft Azure",
@@ -120,8 +120,8 @@
     {
       "id": "bedrock",
       "model_count": 344,
-      "sha256": "7abe0939314fa28a76b5acb64ee52e691677a4c5b1096d21a7f51c5238d52c37",
-      "url": "/v1/providers/bedrock/7abe0939314fa28a76b5acb64ee52e691677a4c5b1096d21a7f51c5238d52c37.json",
+      "sha256": "5f8abb011e33e157cef90bb266306e9000ff11848aa43bd7910b65544d8851e8",
+      "url": "/v1/providers/bedrock/5f8abb011e33e157cef90bb266306e9000ff11848aa43bd7910b65544d8851e8.json",
       "display_name": "AWS Bedrock",
       "category": "cloud",
       "description": "Foundation models via AWS Bedrock",
@@ -191,9 +191,9 @@
     },
     {
       "id": "deepinfra",
-      "model_count": 108,
-      "sha256": "cbfe24d1b16c405a8628fcbc075515935ba9139c116ce5dfa6c77ea8c037ceeb",
-      "url": "/v1/providers/deepinfra/cbfe24d1b16c405a8628fcbc075515935ba9139c116ce5dfa6c77ea8c037ceeb.json",
+      "model_count": 109,
+      "sha256": "a86e777b5d233a3eb48322808faad75f0358be7c37fe79c626cceeee3e96f8cd",
+      "url": "/v1/providers/deepinfra/a86e777b5d233a3eb48322808faad75f0358be7c37fe79c626cceeee3e96f8cd.json",
       "display_name": "DeepInfra",
       "logo_url": "https://deepinfra.com/favicon.svg",
       "category": "open-source",
@@ -408,9 +408,9 @@
     },
     {
       "id": "mistral",
-      "model_count": 49,
-      "sha256": "d92c8c42e26fb15c939f17d100a5427e0c91279c92e406aac05845ff1cde5aa1",
-      "url": "/v1/providers/mistral/d92c8c42e26fb15c939f17d100a5427e0c91279c92e406aac05845ff1cde5aa1.json",
+      "model_count": 53,
+      "sha256": "f16c589a2a36c34e36daf109d739e51d7329fd2417368fa433a17ed4cfc6cdaa",
+      "url": "/v1/providers/mistral/f16c589a2a36c34e36daf109d739e51d7329fd2417368fa433a17ed4cfc6cdaa.json",
       "display_name": "Mistral AI",
       "logo_url": "https://mistral.ai/favicon.svg",
       "category": "frontier",
@@ -522,8 +522,8 @@
     {
       "id": "openai",
       "model_count": 175,
-      "sha256": "8f1af63e502d1ba0d01752790d9670cd1b976b54935f76b25b2acc14497351ad",
-      "url": "/v1/providers/openai/8f1af63e502d1ba0d01752790d9670cd1b976b54935f76b25b2acc14497351ad.json",
+      "sha256": "098d2f3467960ea5e0a84d681f534551748969e8a37fbdb66d5d03ec7e5c687a",
+      "url": "/v1/providers/openai/098d2f3467960ea5e0a84d681f534551748969e8a37fbdb66d5d03ec7e5c687a.json",
       "display_name": "OpenAI",
       "logo_url": "https://cdn.openai.com/API/logo-assets/openai-logomark.svg",
       "category": "frontier",
@@ -707,8 +707,8 @@
     {
       "id": "vertex_ai",
       "model_count": 172,
-      "sha256": "4f64b8ae4ae47d92218b38a4d89ccf36323f1557388e81e8d3b92eaa32e4eaab",
-      "url": "/v1/providers/vertex_ai/4f64b8ae4ae47d92218b38a4d89ccf36323f1557388e81e8d3b92eaa32e4eaab.json",
+      "sha256": "d7134148119f7b1a217435094b01446b540546de393ffe5bce6b7f326da1615e",
+      "url": "/v1/providers/vertex_ai/d7134148119f7b1a217435094b01446b540546de393ffe5bce6b7f326da1615e.json",
       "display_name": "Google Vertex AI",
       "category": "cloud",
       "description": "Enterprise AI via Google Cloud Vertex AI",
@@ -857,7 +857,7 @@
     }
   ],
   "stats": {
-    "total_models": 2940,
+    "total_models": 2947,
     "total_providers": 83
   }
 }
