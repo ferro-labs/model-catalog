@@ -1,10 +1,10 @@
 {
-  "version": "v2026.10.13",
+  "version": "v2026.10.19",
   "schema_version": 2,
-  "generated_at": "2026-10-13T13:00:33Z",
-  "catalog_sha256": "81f348f068a09ac085afe951991f9858f70ea57d6a51eef93572d06a16346d3b",
-  "catalog_url": "/v1/81f348f068a09ac085afe951991f9858f70ea57d6a51eef93572d06a16346d3b.json",
-  "git_sha": "44ad2c574c658e227d1b7465e42946e09da0c3f2",
+  "generated_at": "2026-10-19T12:38:56Z",
+  "catalog_sha256": "1a50913afe87762df8ae9e7ef569476fc104f6e4bd8ce7c008714cc1ba03d66d",
+  "catalog_url": "/v1/1a50913afe87762df8ae9e7ef569476fc104f6e4bd8ce7c008714cc1ba03d66d.json",
+  "git_sha": "dbb41313598664b99a07b18ece1db555d9e52a36",
   "providers": [
     {
       "id": "ai21",
@@ -49,8 +49,8 @@
     {
       "id": "anthropic",
       "model_count": 34,
-      "sha256": "ed2c0d04e2a5ee9b7d850140b55f62de69ea12082ebea21957135529cb55fe4c",
-      "url": "/v1/providers/anthropic/ed2c0d04e2a5ee9b7d850140b55f62de69ea12082ebea21957135529cb55fe4c.json",
+      "sha256": "70b7171d39258d74302884eb317e867c11bb901f312cdc2f74af495ca3da392e",
+      "url": "/v1/providers/anthropic/70b7171d39258d74302884eb317e867c11bb901f312cdc2f74af495ca3da392e.json",
       "display_name": "Anthropic",
       "logo_url": "https://anthropic.com/favicon.svg",
       "category": "frontier",
@@ -191,9 +191,9 @@
     },
     {
       "id": "deepinfra",
-      "model_count": 109,
-      "sha256": "a86e777b5d233a3eb48322808faad75f0358be7c37fe79c626cceeee3e96f8cd",
-      "url": "/v1/providers/deepinfra/a86e777b5d233a3eb48322808faad75f0358be7c37fe79c626cceeee3e96f8cd.json",
+      "model_count": 110,
+      "sha256": "6345cc935fc44be86f252f05408516f6ecf5e636e075d28355b383fd57974bae",
+      "url": "/v1/providers/deepinfra/6345cc935fc44be86f252f05408516f6ecf5e636e075d28355b383fd57974bae.json",
       "display_name": "DeepInfra",
       "logo_url": "https://deepinfra.com/favicon.svg",
       "category": "open-source",
@@ -409,8 +409,8 @@
     {
       "id": "mistral",
       "model_count": 53,
-      "sha256": "f16c589a2a36c34e36daf109d739e51d7329fd2417368fa433a17ed4cfc6cdaa",
-      "url": "/v1/providers/mistral/f16c589a2a36c34e36daf109d739e51d7329fd2417368fa433a17ed4cfc6cdaa.json",
+      "sha256": "b1749abd3e1f2954a256dab5a7289373c1db94579c5f60524c9a89e8b72a89e2",
+      "url": "/v1/providers/mistral/b1749abd3e1f2954a256dab5a7289373c1db94579c5f60524c9a89e8b72a89e2.json",
       "display_name": "Mistral AI",
       "logo_url": "https://mistral.ai/favicon.svg",
       "category": "frontier",
@@ -490,9 +490,9 @@
     },
     {
       "id": "oci",
-      "model_count": 13,
-      "sha256": "5469ce5b8a06d0417dbbb3ad71d8a70d8a227b1b2b819de8eb1ace44c162f6af",
-      "url": "/v1/providers/oci/5469ce5b8a06d0417dbbb3ad71d8a70d8a227b1b2b819de8eb1ace44c162f6af.json",
+      "model_count": 17,
+      "sha256": "39e148f76d26dcbcced9d42fb080257516f74e1254906a34d2dd04ad956b72ec",
+      "url": "/v1/providers/oci/39e148f76d26dcbcced9d42fb080257516f74e1254906a34d2dd04ad956b72ec.json",
       "display_name": "Oracle Cloud AI",
       "category": "cloud",
       "description": "AI services on Oracle Cloud Infrastructure",
@@ -522,8 +522,8 @@
     {
       "id": "openai",
       "model_count": 175,
-      "sha256": "098d2f3467960ea5e0a84d681f534551748969e8a37fbdb66d5d03ec7e5c687a",
-      "url": "/v1/providers/openai/098d2f3467960ea5e0a84d681f534551748969e8a37fbdb66d5d03ec7e5c687a.json",
+      "sha256": "e7a2211d1c1ee035f28e763468c0a053a76538cc1c0f7b5f0a84a92eab5405a7",
+      "url": "/v1/providers/openai/e7a2211d1c1ee035f28e763468c0a053a76538cc1c0f7b5f0a84a92eab5405a7.json",
       "display_name": "OpenAI",
       "logo_url": "https://cdn.openai.com/API/logo-assets/openai-logomark.svg",
       "category": "frontier",
@@ -634,9 +634,9 @@
     },
     {
       "id": "sambanova",
-      "model_count": 16,
-      "sha256": "310d344b1697cbd8696e401e9bcd8fb55afadad6342c716a71d95a45e0672929",
-      "url": "/v1/providers/sambanova/310d344b1697cbd8696e401e9bcd8fb55afadad6342c716a71d95a45e0672929.json",
+      "model_count": 18,
+      "sha256": "8d9ed9f026f28e6a0433f3f489f6017559764b66eb344ab3e71f67cebc12aada",
+      "url": "/v1/providers/sambanova/8d9ed9f026f28e6a0433f3f489f6017559764b66eb344ab3e71f67cebc12aada.json",
       "display_name": "SambaNova",
       "category": "specialized",
       "description": "High-throughput inference on SambaNova hardware",
@@ -816,9 +816,9 @@
     },
     {
       "id": "wandb",
-      "model_count": 36,
-      "sha256": "17b7cb71329073a375dd3ce1b98f89b7a80974e1c11394bd5c888b3da251ddb9",
-      "url": "/v1/providers/wandb/17b7cb71329073a375dd3ce1b98f89b7a80974e1c11394bd5c888b3da251ddb9.json",
+      "model_count": 37,
+      "sha256": "c28152f99e99df9e0fd2a2e162b537b1561266076696449ee7b7d486ababdd57",
+      "url": "/v1/providers/wandb/c28152f99e99df9e0fd2a2e162b537b1561266076696449ee7b7d486ababdd57.json",
       "display_name": "Weights \u0026 Biases",
       "category": "specialized",
       "description": "ML experiment tracking and model registry",
@@ -857,7 +857,7 @@
     }
   ],
   "stats": {
-    "total_models": 2947,
+    "total_models": 2955,
     "total_providers": 83
   }
 }

@@ -1,0 +1,900 @@
+{
+  "oci/cohere.command-a-03-2025": {
+    "provider": "oci",
+    "model_id": "cohere.command-a-03-2025",
+    "display_name": "cohere.command-a-03-2025",
+    "mode": "chat",
+    "context_window": 256000,
+    "max_output_tokens": 4000,
+    "pricing": {
+      "input_per_m_tokens": 1.56,
+      "output_per_m_tokens": 1.56,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.oracle.com/cloud/ai/generative-ai/pricing/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "893ad5ea332b6b081c1cd69c7f7021455f784694ad01823cd447ecf8f7b9c797",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "oci/cohere.command-latest": {
+    "provider": "oci",
+    "model_id": "cohere.command-latest",
+    "display_name": "cohere.command-latest",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 4000,
+    "pricing": {
+      "input_per_m_tokens": 1.56,
+      "output_per_m_tokens": 1.56,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.oracle.com/cloud/ai/generative-ai/pricing/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "82f921cca62060e0056c712d586d160c260bfa82eee17c6135ea2987f95ff2ee",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "oci/cohere.command-plus-latest": {
+    "provider": "oci",
+    "model_id": "cohere.command-plus-latest",
+    "display_name": "cohere.command-plus-latest",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 4000,
+    "pricing": {
+      "input_per_m_tokens": 1.56,
+      "output_per_m_tokens": 1.56,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.oracle.com/cloud/ai/generative-ai/pricing/",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "cce7788e4ca7b28d8b35747de07d0207928f7ff9b5658d490d8ce01f263aaacf",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "oci/meta.llama-3.1-405b-instruct": {
+    "provider": "oci",
+    "model_id": "meta.llama-3.1-405b-instruct",
+    "display_name": "meta.llama-3.1-405b-instruct",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 4000,
+    "pricing": {
+      "input_per_m_tokens": 10.68,
+      "output_per_m_tokens": 10.68,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "377c54cfd17526343f5e3156e56b05aff8a99e6bc690c87ec5fd161ef6508cfe",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "oci/meta.llama-3.2-90b-vision-instruct": {
+    "provider": "oci",
+    "model_id": "meta.llama-3.2-90b-vision-instruct",
+    "display_name": "meta.llama-3.2-90b-vision-instruct",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 4000,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 2.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "1b720a365f688714fa05ac5fbf9e270e1ae2696bdacb0add3e10439becc6cc62",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "oci/meta.llama-3.3-70b-instruct": {
+    "provider": "oci",
+    "model_id": "meta.llama-3.3-70b-instruct",
+    "display_name": "meta.llama-3.3-70b-instruct",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 4000,
+    "pricing": {
+      "input_per_m_tokens": 0.72,
+      "output_per_m_tokens": 0.72,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-09-21",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "3f523ccc9be7d00b8c05750b6de431cb22486449887c15a9bc07f5aa8e286aec",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "oci/meta.llama-4-maverick-17b-128e-instruct-fp8": {
+    "provider": "oci",
+    "model_id": "meta.llama-4-maverick-17b-128e-instruct-fp8",
+    "display_name": "meta.llama-4-maverick-17b-128e-instruct-fp8",
+    "mode": "chat",
+    "context_window": 512000,
+    "max_output_tokens": 4000,
+    "pricing": {
+      "input_per_m_tokens": 0.72,
+      "output_per_m_tokens": 0.72,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-09-21",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "84f0e4eaa991d688290513f24544da43a1ade7bf093872e25f056c260055271d",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "oci/meta.llama-4-scout-17b-16e-instruct": {
+    "provider": "oci",
+    "model_id": "meta.llama-4-scout-17b-16e-instruct",
+    "display_name": "meta.llama-4-scout-17b-16e-instruct",
+    "mode": "chat",
+    "context_window": 192000,
+    "max_output_tokens": 4000,
+    "pricing": {
+      "input_per_m_tokens": 0.72,
+      "output_per_m_tokens": 0.72,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-09-21",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "d3661eb63f9a8f277127e1432372279b4218c3a35c23bbe34fb71c5d102fd700",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "oci/openai.gpt-oss-120b": {
+    "provider": "oci",
+    "model_id": "openai.gpt-oss-120b",
+    "display_name": "openai.gpt-oss-120b",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.15,
+      "output_per_m_tokens": 0.6,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-10-19",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "0155d1aa6aacf3ba2d87e153e67fc6dae36ade15c43cf3cfbd862b44a5b5bbfd",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "oci/openai.gpt-oss-20b": {
+    "provider": "oci",
+    "model_id": "openai.gpt-oss-20b",
+    "display_name": "openai.gpt-oss-20b",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.07,
+      "output_per_m_tokens": 0.3,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-10-19",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "0a4408dad71513241ef778fdc8142a6e201285782c6d83667bfe04bc574a2df6",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "oci/xai.grok-3": {
+    "provider": "oci",
+    "model_id": "xai.grok-3",
+    "display_name": "xai.grok-3",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 15.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "b29477717bf7ee6e277f9657780aa970229481cea933bf192b716423586a65b3",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "oci/xai.grok-3-fast": {
+    "provider": "oci",
+    "model_id": "xai.grok-3-fast",
+    "display_name": "xai.grok-3-fast",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 5.0,
+      "output_per_m_tokens": 25.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "0173ecdca20fcedbb0100d9308c7ec3ff3b801b8851839a0248933ab789f9523",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "oci/xai.grok-3-mini": {
+    "provider": "oci",
+    "model_id": "xai.grok-3-mini",
+    "display_name": "xai.grok-3-mini",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.3,
+      "output_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "1b65fc39e2c5446eb2ac1781ffa6824e26b7d9db8f60d890a6281c801daa9689",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "oci/xai.grok-3-mini-fast": {
+    "provider": "oci",
+    "model_id": "xai.grok-3-mini-fast",
+    "display_name": "xai.grok-3-mini-fast",
+    "mode": "chat",
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "pricing": {
+      "input_per_m_tokens": 0.6,
+      "output_per_m_tokens": 4.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "5dc2e9eaf001852a3e603b25c094ff90614683664fb279627a7b0c110d0a9782",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "oci/xai.grok-4": {
+    "provider": "oci",
+    "model_id": "xai.grok-4",
+    "display_name": "xai.grok-4",
+    "mode": "chat",
+    "context_window": 128000,
+    "max_output_tokens": 128000,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 15.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": true,
+      "parallel_tool_calls": false,
+      "json_mode": true,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": true,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "ga",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
+    "updated_at": "2026-02-28",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-08-07",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "5ceacfade2e45980bb5b6d0793e06e7d91b2c9b582a6b9b4b894b7402e33d119",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "oci/xai.grok-4.20-non-reasoning": {
+    "provider": "oci",
+    "model_id": "xai.grok-4.20-non-reasoning",
+    "display_name": "xai.grok-4.20-non-reasoning",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.25,
+      "output_per_m_tokens": 2.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-10-19",
+    "tier": "standard"
+  },
+  "oci/xai.grok-4.20-reasoning": {
+    "provider": "oci",
+    "model_id": "xai.grok-4.20-reasoning",
+    "display_name": "xai.grok-4.20-reasoning",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.25,
+      "output_per_m_tokens": 2.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-10-19",
+    "tier": "standard"
+  }
+}

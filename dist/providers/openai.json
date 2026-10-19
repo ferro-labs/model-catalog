@@ -6405,8 +6405,8 @@
     "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": 5.0,
-      "output_per_m_tokens": 30.0,
+      "input_per_m_tokens": 4.0,
+      "output_per_m_tokens": 20.0,
       "cache_read_per_m_tokens": 0.39999999999999997,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
@@ -6438,15 +6438,15 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev+openrouter",
-    "updated_at": "2026-08-31",
+    "updated_at": "2026-10-19",
     "tier": "standard",
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
+        "verified_at": "2026-10-19",
         "confidence": "high",
         "verified_by": "scraper-litellm",
-        "snapshot_sha256": "950ee559ff701b0b5c7afe0ac7a9711630ac7521470450ab2ab0476ef5f84703",
+        "snapshot_sha256": "4be783cacca1706ae84601f27c984a7fd740cea66c1dd565917b89ada59d44a4",
         "snapshot_branch": "snapshots"
       }
     }

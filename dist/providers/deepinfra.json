@@ -2375,6 +2375,60 @@
       }
     }
   },
+  "deepinfra/anthropic/claude-fable-5": {
+    "provider": "deepinfra",
+    "model_id": "anthropic/claude-fable-5",
+    "display_name": "anthropic/claude-fable-5",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 10.0,
+      "output_per_m_tokens": 50.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-10-19",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "d249e3005e47df835a8cb09bc9176a5d4f1c35d1987c8eb5d17b4bc4f6936b5e",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
   "deepinfra/deepseek-ai/DeepSeek-R1": {
     "provider": "deepinfra",
     "model_id": "deepseek-ai/DeepSeek-R1",
@@ -4603,8 +4657,8 @@
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
         "verified_by": "scraper-litellm",
         "snapshot_sha256": "f96b2e70b02a3a52c8964a535e2df252f7ce0e2f8f627ee74a2242be64b2ce3c",
         "snapshot_branch": "snapshots"
