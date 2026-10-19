@@ -207,10 +207,64 @@
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
         "verified_by": "scraper-litellm",
         "snapshot_sha256": "c96cfdd980d6954cc5699b1690fea733cea75827709d35ba8dfadad3cc7a24a2",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "sambanova/DeepSeek-V3.2": {
+    "provider": "sambanova",
+    "model_id": "DeepSeek-V3.2",
+    "display_name": "DeepSeek-V3.2",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 4.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-10-19",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "67c50010013d4c2948ae820d3410499bf3f149951a0c5374f468b830cbfe62fb",
         "snapshot_branch": "snapshots"
       }
     }
@@ -585,8 +639,8 @@
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
         "verified_by": "scraper-litellm",
         "snapshot_sha256": "887ccaace7114fe1a4fdc7470c1b83c4891e2eda24c82be5342592963a7d3fbf",
         "snapshot_branch": "snapshots"
@@ -809,6 +863,60 @@
       }
     }
   },
+  "sambanova/gemma-4-31B-it": {
+    "provider": "sambanova",
+    "model_id": "gemma-4-31B-it",
+    "display_name": "gemma-4-31B-it",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.38,
+      "output_per_m_tokens": 1.15,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-10-19",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "40812f1394ff4688351ba8d9dd91570552362254f713123a4a3ce535015ded8d",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
   "sambanova/gpt-oss-120b": {
     "provider": "sambanova",
     "model_id": "gpt-oss-120b",
@@ -817,8 +925,8 @@
     "context_window": 131072,
     "max_output_tokens": 131072,
     "pricing": {
-      "input_per_m_tokens": 3.0,
-      "output_per_m_tokens": 4.5,
+      "input_per_m_tokens": 0.22,
+      "output_per_m_tokens": 0.59,
       "cache_read_per_m_tokens": null,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
@@ -850,14 +958,24 @@
       "successor": null
     },
     "source": "https://cloud.sambanova.ai/plans/pricing",
-    "updated_at": "2026-02-28",
+    "updated_at": "2026-10-19",
     "tier": "standard",
     "sources": {
       "pricing": {
-        "url": "https://cloud.sambanova.ai/plans/pricing",
-        "verified_at": "2026-02-28",
-        "confidence": "low",
-        "verified_by": "import:v1"
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "84746a6baea809e862c7603e1beaaccee88cd9c0117bab0fd152a3388e72d945",
+        "snapshot_branch": "snapshots"
+      },
+      "context": {
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-10-19",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "18e0320923163e854e46fe990286f77dad9d96d95a3b7fc2eee4590aa668a418",
+        "snapshot_branch": "snapshots"
       }
     }
   }

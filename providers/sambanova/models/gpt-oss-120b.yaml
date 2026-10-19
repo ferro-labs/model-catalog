@@ -5,8 +5,8 @@ mode: chat
 context_window: 131072
 max_output_tokens: 131072
 pricing:
-    input_per_m_tokens: 3
-    output_per_m_tokens: 4.5
+    input_per_m_tokens: 0.22
+    output_per_m_tokens: 0.59
     cache_read_per_m_tokens: null
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -35,11 +35,20 @@ lifecycle:
     sunset_date: null
     successor: null
 source: https://cloud.sambanova.ai/plans/pricing
-updated_at: "2026-02-28"
+updated_at: "2026-10-19"
 tier: standard
 sources:
     pricing:
-        url: "https://cloud.sambanova.ai/plans/pricing"
-        verified_at: "2026-02-28"
-        verified_by: import:v1
-        confidence: low
+        url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
+        verified_at: "2026-10-19"
+        verified_by: scraper-litellm
+        snapshot_sha256: 84746a6baea809e862c7603e1beaaccee88cd9c0117bab0fd152a3388e72d945
+        snapshot_branch: snapshots
+        confidence: high
+    context:
+        url: "https://models.dev/api.json"
+        verified_at: "2026-10-19"
+        verified_by: scraper-models_dev
+        snapshot_sha256: 18e0320923163e854e46fe990286f77dad9d96d95a3b7fc2eee4590aa668a418
+        snapshot_branch: snapshots
+        confidence: medium

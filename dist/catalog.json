@@ -2673,9 +2673,9 @@
     "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": null,
+      "input_per_m_tokens": 0.09999999999999999,
       "output_per_m_tokens": 0.5,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.01,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -2706,8 +2706,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev+openrouter",
-    "updated_at": "2026-10-12",
-    "tier": "standard"
+    "updated_at": "2026-10-19",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "b83762b7de1bdf7f56dc1126492bcef2b7f232bea70847edd27f23665a61d6e6",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "anthropic/claude-opus-4-1": {
     "provider": "anthropic",
@@ -45641,6 +45651,60 @@
       }
     }
   },
+  "deepinfra/anthropic/claude-fable-5": {
+    "provider": "deepinfra",
+    "model_id": "anthropic/claude-fable-5",
+    "display_name": "anthropic/claude-fable-5",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 10.0,
+      "output_per_m_tokens": 50.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-10-19",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "d249e3005e47df835a8cb09bc9176a5d4f1c35d1987c8eb5d17b4bc4f6936b5e",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
   "deepinfra/deepseek-ai/DeepSeek-R1": {
     "provider": "deepinfra",
     "model_id": "deepseek-ai/DeepSeek-R1",
@@ -47869,8 +47933,8 @@
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
         "verified_by": "scraper-litellm",
         "snapshot_sha256": "f96b2e70b02a3a52c8964a535e2df252f7ce0e2f8f627ee74a2242be64b2ce3c",
         "snapshot_branch": "snapshots"
@@ -78527,7 +78591,7 @@
     "pricing": {
       "input_per_m_tokens": 1.4,
       "output_per_m_tokens": 4.4,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.14,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -78558,8 +78622,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-10-12",
-    "tier": "standard"
+    "updated_at": "2026-10-19",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "b6f6f839a24ccee08b28d05a6a83e1fe5b397568efa8a205c76a0a992965ea6b",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "mistral/labs-devstral-small-2512": {
     "provider": "mistral",
@@ -78957,7 +79031,7 @@
     "pricing": {
       "input_per_m_tokens": 0.15,
       "output_per_m_tokens": 0.15,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.015,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -78988,8 +79062,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-10-12",
-    "tier": "standard"
+    "updated_at": "2026-10-19",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "5bfaf9048025f47bfd0629ab6908777e79c1e2b4835b07c96a74a745de8f3c96",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "mistral/mistral-embed": {
     "provider": "mistral",
@@ -79323,7 +79407,7 @@
     "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": null,
+      "input_per_m_tokens": 0.6799999999999999,
       "output_per_m_tokens": 2.09,
       "cache_read_per_m_tokens": null,
       "cache_write_per_m_tokens": null,
@@ -79356,7 +79440,7 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-10-12",
+    "updated_at": "2026-10-19",
     "tier": "standard"
   },
   "mistral/mistral-large-latest": {
@@ -89093,6 +89177,114 @@
       }
     }
   },
+  "oci/openai.gpt-oss-120b": {
+    "provider": "oci",
+    "model_id": "openai.gpt-oss-120b",
+    "display_name": "openai.gpt-oss-120b",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.15,
+      "output_per_m_tokens": 0.6,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-10-19",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "0155d1aa6aacf3ba2d87e153e67fc6dae36ade15c43cf3cfbd862b44a5b5bbfd",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "oci/openai.gpt-oss-20b": {
+    "provider": "oci",
+    "model_id": "openai.gpt-oss-20b",
+    "display_name": "openai.gpt-oss-20b",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.07,
+      "output_per_m_tokens": 0.3,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-10-19",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "0a4408dad71513241ef778fdc8142a6e201285782c6d83667bfe04bc574a2df6",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
   "oci/xai.grok-3": {
     "provider": "oci",
     "model_id": "xai.grok-3",
@@ -89362,6 +89554,94 @@
         "snapshot_branch": "snapshots"
       }
     }
+  },
+  "oci/xai.grok-4.20-non-reasoning": {
+    "provider": "oci",
+    "model_id": "xai.grok-4.20-non-reasoning",
+    "display_name": "xai.grok-4.20-non-reasoning",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.25,
+      "output_per_m_tokens": 2.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-10-19",
+    "tier": "standard"
+  },
+  "oci/xai.grok-4.20-reasoning": {
+    "provider": "oci",
+    "model_id": "xai.grok-4.20-reasoning",
+    "display_name": "xai.grok-4.20-reasoning",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.25,
+      "output_per_m_tokens": 2.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-10-19",
+    "tier": "standard"
   },
   "ollama/codegeex4": {
     "provider": "ollama",
@@ -97543,8 +97823,8 @@
     "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": 5.0,
-      "output_per_m_tokens": 30.0,
+      "input_per_m_tokens": 4.0,
+      "output_per_m_tokens": 20.0,
       "cache_read_per_m_tokens": 0.39999999999999997,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
@@ -97576,15 +97856,15 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev+openrouter",
-    "updated_at": "2026-08-31",
+    "updated_at": "2026-10-19",
     "tier": "standard",
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
+        "verified_at": "2026-10-19",
         "confidence": "high",
         "verified_by": "scraper-litellm",
-        "snapshot_sha256": "950ee559ff701b0b5c7afe0ac7a9711630ac7521470450ab2ab0476ef5f84703",
+        "snapshot_sha256": "4be783cacca1706ae84601f27c984a7fd740cea66c1dd565917b89ada59d44a4",
         "snapshot_branch": "snapshots"
       }
     }
@@ -128847,10 +129127,64 @@
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
         "verified_by": "scraper-litellm",
         "snapshot_sha256": "c96cfdd980d6954cc5699b1690fea733cea75827709d35ba8dfadad3cc7a24a2",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "sambanova/DeepSeek-V3.2": {
+    "provider": "sambanova",
+    "model_id": "DeepSeek-V3.2",
+    "display_name": "DeepSeek-V3.2",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 3.0,
+      "output_per_m_tokens": 4.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-10-19",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "67c50010013d4c2948ae820d3410499bf3f149951a0c5374f468b830cbfe62fb",
         "snapshot_branch": "snapshots"
       }
     }
@@ -129225,8 +129559,8 @@
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
         "verified_by": "scraper-litellm",
         "snapshot_sha256": "887ccaace7114fe1a4fdc7470c1b83c4891e2eda24c82be5342592963a7d3fbf",
         "snapshot_branch": "snapshots"
@@ -129449,6 +129783,60 @@
       }
     }
   },
+  "sambanova/gemma-4-31B-it": {
+    "provider": "sambanova",
+    "model_id": "gemma-4-31B-it",
+    "display_name": "gemma-4-31B-it",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.38,
+      "output_per_m_tokens": 1.15,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-10-19",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "40812f1394ff4688351ba8d9dd91570552362254f713123a4a3ce535015ded8d",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
   "sambanova/gpt-oss-120b": {
     "provider": "sambanova",
     "model_id": "gpt-oss-120b",
@@ -129457,8 +129845,8 @@
     "context_window": 131072,
     "max_output_tokens": 131072,
     "pricing": {
-      "input_per_m_tokens": 3.0,
-      "output_per_m_tokens": 4.5,
+      "input_per_m_tokens": 0.22,
+      "output_per_m_tokens": 0.59,
       "cache_read_per_m_tokens": null,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
@@ -129490,14 +129878,24 @@
       "successor": null
     },
     "source": "https://cloud.sambanova.ai/plans/pricing",
-    "updated_at": "2026-02-28",
+    "updated_at": "2026-10-19",
     "tier": "standard",
     "sources": {
       "pricing": {
-        "url": "https://cloud.sambanova.ai/plans/pricing",
-        "verified_at": "2026-02-28",
-        "confidence": "low",
-        "verified_by": "import:v1"
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-19",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "84746a6baea809e862c7603e1beaaccee88cd9c0117bab0fd152a3388e72d945",
+        "snapshot_branch": "snapshots"
+      },
+      "context": {
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-10-19",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "18e0320923163e854e46fe990286f77dad9d96d95a3b7fc2eee4590aa668a418",
+        "snapshot_branch": "snapshots"
       }
     }
   },
@@ -153166,6 +153564,50 @@
         "snapshot_branch": "snapshots"
       }
     }
+  },
+  "wandb/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B": {
+    "provider": "wandb",
+    "model_id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B",
+    "display_name": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 0.15,
+      "output_per_m_tokens": null,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-10-19",
+    "tier": "standard"
   },
   "wandb/openai/gpt-oss-120b": {
     "provider": "wandb",
