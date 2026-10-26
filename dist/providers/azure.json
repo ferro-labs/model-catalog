@@ -6661,8 +6661,8 @@
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
+        "verified_at": "2026-10-26",
+        "confidence": "high",
         "verified_by": "scraper-litellm",
         "snapshot_sha256": "080ec237bd959a62289a5803f215adcbfd23095ea9dc13dcc3f8b83b54baf73d",
         "snapshot_branch": "snapshots"
@@ -6877,8 +6877,8 @@
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
+        "verified_at": "2026-10-26",
+        "confidence": "high",
         "verified_by": "scraper-litellm",
         "snapshot_sha256": "a658cc31afa74dd208674ad395a04e1f346085161433f1bc9329f6377cae1fc8",
         "snapshot_branch": "snapshots"
@@ -6931,8 +6931,8 @@
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
+        "verified_at": "2026-10-26",
+        "confidence": "high",
         "verified_by": "scraper-litellm",
         "snapshot_sha256": "95fd919374bda80dc0391a0dfc757aa3b6f048006fc5badbd44fa336f458b9df",
         "snapshot_branch": "snapshots"
@@ -7039,8 +7039,8 @@
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
+        "verified_at": "2026-10-26",
+        "confidence": "high",
         "verified_by": "scraper-litellm",
         "snapshot_sha256": "f4406006ae6df2284577a16b811e0b99ed43f026159be957af3936b140016d9c",
         "snapshot_branch": "snapshots"
@@ -7687,8 +7687,8 @@
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
+        "verified_at": "2026-10-26",
+        "confidence": "high",
         "verified_by": "scraper-litellm",
         "snapshot_sha256": "6a644d4aa315a27e94dfbb681dd59a87a3da79dc9e367cca98912d084a806166",
         "snapshot_branch": "snapshots"
@@ -8461,7 +8461,7 @@
     "pricing": {
       "input_per_m_tokens": 4.0,
       "output_per_m_tokens": 20.0,
-      "cache_read_per_m_tokens": 0.5,
+      "cache_read_per_m_tokens": 0.39999999999999997,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -8492,15 +8492,15 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-09-21",
+    "updated_at": "2026-10-26",
     "tier": "standard",
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
+        "verified_at": "2026-10-26",
         "confidence": "high",
         "verified_by": "scraper-litellm",
-        "snapshot_sha256": "e5991d506ad00a7a4cfbe10724dffa734e1424b18cf80d7367679a0979b8f27c",
+        "snapshot_sha256": "6d1923fcbf0f0a2a8504478613f488890555b3bf485953ab6411c54e47268615",
         "snapshot_branch": "snapshots"
       }
     }

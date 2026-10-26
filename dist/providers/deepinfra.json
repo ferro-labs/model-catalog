@@ -4171,10 +4171,18 @@
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
-        "confidence": "medium",
+        "verified_at": "2026-10-26",
+        "confidence": "high",
         "verified_by": "scraper-litellm",
         "snapshot_sha256": "daa04858ab21acc93ea4b5d68a047b9f742b1aae21603298c5e0f0c9681e3016",
+        "snapshot_branch": "snapshots"
+      },
+      "context": {
+        "url": "https://models.dev/api.json",
+        "verified_at": "2026-10-26",
+        "confidence": "medium",
+        "verified_by": "scraper-models_dev",
+        "snapshot_sha256": "c82c040e92875d72c249aa8dbd334a9ff9de907ce13337dfbe2a2c6431cb0a15",
         "snapshot_branch": "snapshots"
       }
     }

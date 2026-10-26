@@ -819,7 +819,7 @@
     "pricing": {
       "input_per_m_tokens": 1.25,
       "output_per_m_tokens": 2.5,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.19999999999999998,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -850,8 +850,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-10-19",
-    "tier": "standard"
+    "updated_at": "2026-10-26",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-26",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "a1dfe914530248930ff165d03d9e84e73007a35c9e55afd1ac4bbeb1b3b3b4eb",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "oci/xai.grok-4.20-reasoning": {
     "provider": "oci",
@@ -863,7 +873,7 @@
     "pricing": {
       "input_per_m_tokens": 1.25,
       "output_per_m_tokens": 2.5,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.19999999999999998,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -894,7 +904,17 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-10-19",
-    "tier": "standard"
+    "updated_at": "2026-10-26",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-10-26",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "afae47b60f23a5a0614715ceda3d13ecfb6dc9535bb4ce85ca7608d2dcfa6b57",
+        "snapshot_branch": "snapshots"
+      }
+    }
   }
 }
