@@ -40,8 +40,8 @@ tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-31"
+        verified_at: "2026-11-02"
         verified_by: scraper-litellm
-        snapshot_sha256: 5966a2950c584a6939a0458a72baf3b2492d14ee0e6172c280d97d6687f11a58
+        snapshot_sha256: a57f83dafe9adf9c889b81759fae61b302c3b9a61531655c9a6d1d83b368e80f
         snapshot_branch: snapshots
         confidence: high
