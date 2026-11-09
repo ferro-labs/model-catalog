@@ -8,8 +8,8 @@
     "max_output_tokens": 0,
     "pricing": {
       "input_per_m_tokens": 0.12,
-      "output_per_m_tokens": null,
-      "cache_read_per_m_tokens": null,
+      "output_per_m_tokens": 0.7999999999999999,
+      "cache_read_per_m_tokens": 0.008,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -40,8 +40,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-02",
-    "tier": "standard"
+    "updated_at": "2026-11-09",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-09",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "9064eaac3a6c7ecee6ddb210e66b57d8fbb5a2f80921650c1d903479d587fda6",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "morph/morph-dsv41flash-1017": {
     "provider": "morph",
@@ -52,8 +62,8 @@
     "max_output_tokens": 0,
     "pricing": {
       "input_per_m_tokens": 0.12,
-      "output_per_m_tokens": null,
-      "cache_read_per_m_tokens": null,
+      "output_per_m_tokens": 0.7999999999999999,
+      "cache_read_per_m_tokens": 0.008,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -84,8 +94,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-02",
-    "tier": "standard"
+    "updated_at": "2026-11-09",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-09",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "e52b94b277f3f8433b5728a3cf43c785cd2f59ad8a56edfd414f563c5d4d5b70",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "morph/morph-dsv4flash": {
     "provider": "morph",
@@ -97,7 +117,7 @@
     "pricing": {
       "input_per_m_tokens": 0.141953125,
       "output_per_m_tokens": 0.399625,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.0359375,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -128,8 +148,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-02",
-    "tier": "standard"
+    "updated_at": "2026-11-09",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-09",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "6eee0774ef534cf1c704533a396eac506fb65a8464541225fcec1930fbe29694",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "morph/morph-glm53-744b": {
     "provider": "morph",
@@ -141,7 +171,7 @@
     "pricing": {
       "input_per_m_tokens": 1.19,
       "output_per_m_tokens": 6.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.1955,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -172,8 +202,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-02",
-    "tier": "standard"
+    "updated_at": "2026-11-09",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-09",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "626089e6d8c70c58d7b9cd7e89f761a6813c7c66791c8d8445bac57a4f16a533",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "morph/morph-glm53flash": {
     "provider": "morph",
@@ -183,9 +223,9 @@
     "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": null,
+      "input_per_m_tokens": 0.19999999999999998,
       "output_per_m_tokens": 0.7,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.04,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -216,8 +256,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-02",
-    "tier": "standard"
+    "updated_at": "2026-11-09",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-09",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "61a8a6cd90f68f818785abf9e37192828fc2719ea01bcd1ed9b470c635bb9f06",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "morph/morph-kimik3": {
     "provider": "morph",
@@ -229,7 +279,7 @@
     "pricing": {
       "input_per_m_tokens": 2.5,
       "output_per_m_tokens": 14.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.29,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -260,8 +310,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-02",
-    "tier": "standard"
+    "updated_at": "2026-11-09",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-09",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "cf5dff4cc904b9e955235203fc25a5355b22ffb69a3fb4e9e7d1a45f5b97f241",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "morph/morph-kimik3-fast": {
     "provider": "morph",
@@ -273,7 +333,7 @@
     "pricing": {
       "input_per_m_tokens": 6.0,
       "output_per_m_tokens": 22.5,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.6,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -304,8 +364,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-02",
-    "tier": "standard"
+    "updated_at": "2026-11-09",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-09",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "82741525e18ff25acfc0cd927d56dfbbea4de7fbe320ba3070cc140221d61e95",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "morph/morph-v3-fast": {
     "provider": "morph",

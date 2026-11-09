@@ -6731,7 +6731,7 @@
     "pricing": {
       "input_per_m_tokens": 1.0,
       "output_per_m_tokens": 5.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.049999999999999996,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -6762,15 +6762,15 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev+openrouter",
-    "updated_at": "2026-11-02",
+    "updated_at": "2026-11-09",
     "tier": "standard",
     "sources": {
       "pricing": {
-        "url": "https://openrouter.ai/api/v1/models",
-        "verified_at": "2026-11-02",
-        "confidence": "medium",
-        "verified_by": "scraper-openrouter",
-        "snapshot_sha256": "7cef925b2576c982e8e6788a00b9a6aeb7ec9ebdc6d76b70a465950e7c54546c",
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-09",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "a083b2b6ef582d5a3f6e527c5954470f5ed1159b093be176cf9c4f334382181c",
         "snapshot_branch": "snapshots"
       }
     }

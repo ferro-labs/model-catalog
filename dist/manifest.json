@@ -1,10 +1,10 @@
 {
-  "version": "v2026.11.03",
+  "version": "v2026.11.09",
   "schema_version": 2,
-  "generated_at": "2026-11-03T04:11:50Z",
-  "catalog_sha256": "0892f327a327ee8e15f6fe1e91ed077454fe4f2668b865873508ee481a42292a",
-  "catalog_url": "/v1/0892f327a327ee8e15f6fe1e91ed077454fe4f2668b865873508ee481a42292a.json",
-  "git_sha": "96be65743e2246033bf80b33305b69534ef19a2e",
+  "generated_at": "2026-11-09T15:41:54Z",
+  "catalog_sha256": "ff2afd709c4e5cf31d637722bc1b7d90f2e0fe9c5d74e38c9d66f461176165a0",
+  "catalog_url": "/v1/ff2afd709c4e5cf31d637722bc1b7d90f2e0fe9c5d74e38c9d66f461176165a0.json",
+  "git_sha": "79df88ca0f498c06436fb31c076300e60e8a9d6e",
   "providers": [
     {
       "id": "ai21",
@@ -90,8 +90,8 @@
     {
       "id": "azure",
       "model_count": 247,
-      "sha256": "18e010262353696fa1ef397278c4c9fdc801addbd18a1fce50a072aa10f3ede8",
-      "url": "/v1/providers/azure/18e010262353696fa1ef397278c4c9fdc801addbd18a1fce50a072aa10f3ede8.json",
+      "sha256": "972b902a81c7aad270d8095805ff5e414c9299b54f418ad72f1929ef07194dc1",
+      "url": "/v1/providers/azure/972b902a81c7aad270d8095805ff5e414c9299b54f418ad72f1929ef07194dc1.json",
       "display_name": "Azure OpenAI",
       "category": "cloud",
       "description": "OpenAI models via Microsoft Azure",
@@ -120,8 +120,8 @@
     {
       "id": "bedrock",
       "model_count": 344,
-      "sha256": "5f8abb011e33e157cef90bb266306e9000ff11848aa43bd7910b65544d8851e8",
-      "url": "/v1/providers/bedrock/5f8abb011e33e157cef90bb266306e9000ff11848aa43bd7910b65544d8851e8.json",
+      "sha256": "7963606de6497fb7f98546f98e96609e46354745e7ab4c77b876f6770b39484f",
+      "url": "/v1/providers/bedrock/7963606de6497fb7f98546f98e96609e46354745e7ab4c77b876f6770b39484f.json",
       "display_name": "AWS Bedrock",
       "category": "cloud",
       "description": "Foundation models via AWS Bedrock",
@@ -192,8 +192,8 @@
     {
       "id": "deepinfra",
       "model_count": 110,
-      "sha256": "a2f836d45013303ca8bcc3db0ad3476c215d8d8a94eba879c88c7c328c4f315b",
-      "url": "/v1/providers/deepinfra/a2f836d45013303ca8bcc3db0ad3476c215d8d8a94eba879c88c7c328c4f315b.json",
+      "sha256": "0c69fdbd8b1b22b7945be1a72d9e043428fd8243efac55c87ac1aebd3352fc13",
+      "url": "/v1/providers/deepinfra/0c69fdbd8b1b22b7945be1a72d9e043428fd8243efac55c87ac1aebd3352fc13.json",
       "display_name": "DeepInfra",
       "logo_url": "https://deepinfra.com/favicon.svg",
       "category": "open-source",
@@ -409,8 +409,8 @@
     {
       "id": "mistral",
       "model_count": 56,
-      "sha256": "abcbeba7deacd55dd684b810778ca602600ee527f8a79d11bbf780de090f6ecf",
-      "url": "/v1/providers/mistral/abcbeba7deacd55dd684b810778ca602600ee527f8a79d11bbf780de090f6ecf.json",
+      "sha256": "388d7dd196fea9f6172af28b70a983c608e2960eb8f8af8a736de669428232fc",
+      "url": "/v1/providers/mistral/388d7dd196fea9f6172af28b70a983c608e2960eb8f8af8a736de669428232fc.json",
       "display_name": "Mistral AI",
       "logo_url": "https://mistral.ai/favicon.svg",
       "category": "frontier",
@@ -430,8 +430,8 @@
     {
       "id": "morph",
       "model_count": 9,
-      "sha256": "64ea011f6725c3b6b988bf25a884741dcaf5f4b9f957d4ea40c26686d4a1dd9e",
-      "url": "/v1/providers/morph/64ea011f6725c3b6b988bf25a884741dcaf5f4b9f957d4ea40c26686d4a1dd9e.json",
+      "sha256": "04e95e322d3f337f91276c9e5f62f0a7f9df91ae6bcd05c19f6aeeedbde1139f",
+      "url": "/v1/providers/morph/04e95e322d3f337f91276c9e5f62f0a7f9df91ae6bcd05c19f6aeeedbde1139f.json",
       "display_name": "Morph",
       "category": "specialized",
       "description": "AI-powered data analysis and visualization",
@@ -522,8 +522,8 @@
     {
       "id": "openai",
       "model_count": 176,
-      "sha256": "26221f06d14baaebdcb5f068811a572f646ace4b6ef7c4f1dd6dfa5ab8b0d977",
-      "url": "/v1/providers/openai/26221f06d14baaebdcb5f068811a572f646ace4b6ef7c4f1dd6dfa5ab8b0d977.json",
+      "sha256": "b782411af633082b1df9d25f24b5b78ec2e332854d1855b9e84ffd4b4db6455c",
+      "url": "/v1/providers/openai/b782411af633082b1df9d25f24b5b78ec2e332854d1855b9e84ffd4b4db6455c.json",
       "display_name": "OpenAI",
       "logo_url": "https://cdn.openai.com/API/logo-assets/openai-logomark.svg",
       "category": "frontier",
@@ -816,9 +816,9 @@
     },
     {
       "id": "wandb",
-      "model_count": 38,
-      "sha256": "5064d41ae69e2a4142976a13e1ec17758e9be92fcfc11d801abb2dc30104c8da",
-      "url": "/v1/providers/wandb/5064d41ae69e2a4142976a13e1ec17758e9be92fcfc11d801abb2dc30104c8da.json",
+      "model_count": 39,
+      "sha256": "a57f5d25f17c80e1d61a429b7a92d3ba72126cf0cc10e29e60a34a437d2c5e1d",
+      "url": "/v1/providers/wandb/a57f5d25f17c80e1d61a429b7a92d3ba72126cf0cc10e29e60a34a437d2c5e1d.json",
       "display_name": "Weights \u0026 Biases",
       "category": "specialized",
       "description": "ML experiment tracking and model registry",
@@ -848,8 +848,8 @@
     {
       "id": "zai",
       "model_count": 17,
-      "sha256": "65d55f14354d0075e03f963d48cae687bd0503bf45b51ae29fe53f0f19666bd3",
-      "url": "/v1/providers/zai/65d55f14354d0075e03f963d48cae687bd0503bf45b51ae29fe53f0f19666bd3.json",
+      "sha256": "26d207b541c6dcd654c95f70b3a133554730f18178f378b2bba9d6ba43f37338",
+      "url": "/v1/providers/zai/26d207b541c6dcd654c95f70b3a133554730f18178f378b2bba9d6ba43f37338.json",
       "display_name": "Zai",
       "category": "specialized",
       "description": "Specialized AI model inference",
@@ -857,7 +857,7 @@
     }
   ],
   "stats": {
-    "total_models": 2969,
+    "total_models": 2970,
     "total_providers": 83
   }
 }

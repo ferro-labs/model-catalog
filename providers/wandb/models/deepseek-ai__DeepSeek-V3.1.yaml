@@ -5,9 +5,9 @@ mode: chat
 context_window: 128000
 max_output_tokens: 128000
 pricing:
-    input_per_m_tokens: 0.55
-    output_per_m_tokens: 1.6500000000000001
-    cache_read_per_m_tokens: null
+    input_per_m_tokens: 0.5
+    output_per_m_tokens: 1.5
+    cache_read_per_m_tokens: 0.19999999999999998
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://models.dev/wandb/deepseek-ai/DeepSeek-V3.1"
-updated_at: "2026-08-31"
+updated_at: "2026-11-09"
 tier: standard
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-31"
+        verified_at: "2026-11-09"
         verified_by: scraper-litellm
-        snapshot_sha256: ac54facd388a0547195a51dbe63f60a535ed26c837f397067eaac5ec8026c1bd
+        snapshot_sha256: 4473423f9fd03693a7e445650c9ab1b474dd8131ab42f22b92277f79f21ca01f
         snapshot_branch: snapshots
-        confidence: medium
+        confidence: high
