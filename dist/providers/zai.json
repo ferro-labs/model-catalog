@@ -871,7 +871,7 @@
     "pricing": {
       "input_per_m_tokens": 1.2,
       "output_per_m_tokens": 4.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.24,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -902,7 +902,17 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-02",
-    "tier": "standard"
+    "updated_at": "2026-11-09",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-09",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "66ba19bd1ad7c88e18906b1b2a4eb45164e734e62f2b45b819d7c4cb2815a3ad",
+        "snapshot_branch": "snapshots"
+      }
+    }
   }
 }

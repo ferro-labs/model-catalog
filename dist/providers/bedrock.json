@@ -14344,10 +14344,12 @@
     "tier": "standard",
     "sources": {
       "pricing": {
-        "url": "https://models.dev/anthropic/claude-3-5-sonnet-20240620",
-        "verified_at": "2026-02-28",
-        "confidence": "low",
-        "verified_by": "import:v1"
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-09",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "4240697548183aa503456e0febe6888bf1c46d633db11f0b0a648474465cacb2",
+        "snapshot_branch": "snapshots"
       }
     }
   },
@@ -14397,10 +14399,10 @@
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
+        "verified_at": "2026-11-09",
         "confidence": "medium",
         "verified_by": "scraper-litellm",
-        "snapshot_sha256": "7ef7ab0b364f59f1e3b48f25ebed1a9120e8d3e7783557de71e3555e7722d398",
+        "snapshot_sha256": "428cdb60421ea2743f53e654791163d29d79f1fc8cebaad8e6c3227b234a65fd",
         "snapshot_branch": "snapshots"
       }
     }
@@ -14930,10 +14932,12 @@
     "tier": "standard",
     "sources": {
       "pricing": {
-        "url": "https://models.dev/anthropic/claude-3-5-sonnet-20240620",
-        "verified_at": "2026-02-28",
-        "confidence": "low",
-        "verified_by": "import:v1"
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-09",
+        "confidence": "medium",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "0a02096576d811d7b482249d2c7777ebaa2588ee1cf5d2282c7dc894a40e2408",
+        "snapshot_branch": "snapshots"
       }
     }
   },
@@ -15037,10 +15041,10 @@
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
+        "verified_at": "2026-11-09",
         "confidence": "medium",
         "verified_by": "scraper-litellm",
-        "snapshot_sha256": "7ef7ab0b364f59f1e3b48f25ebed1a9120e8d3e7783557de71e3555e7722d398",
+        "snapshot_sha256": "bd393ddeecf19176977b5b1a45957accd5c51797dbb549a4ecbca9908598099e",
         "snapshot_branch": "snapshots"
       }
     }

@@ -327,7 +327,7 @@
     "pricing": {
       "input_per_m_tokens": 0.3,
       "output_per_m_tokens": 1.2,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.007,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -358,8 +358,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-02",
-    "tier": "standard"
+    "updated_at": "2026-11-09",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-09",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "8faccabe62a4ec6028b5b8cffb25528f4a3dee09c60162e35a60feb07194d79a",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "mistral/devstral-2512": {
     "provider": "mistral",
@@ -1643,9 +1653,9 @@
     "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": 0.6799999999999999,
-      "output_per_m_tokens": 2.09,
-      "cache_read_per_m_tokens": null,
+      "input_per_m_tokens": 0.7,
+      "output_per_m_tokens": 2.0999999999999996,
+      "cache_read_per_m_tokens": 0.07,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -1676,8 +1686,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-10-19",
-    "tier": "standard"
+    "updated_at": "2026-11-09",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-09",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "ac66babc870ca1301a6029bc64facab75917e936924e3a329b160e137b6eec10",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "mistral/mistral-large-latest": {
     "provider": "mistral",
