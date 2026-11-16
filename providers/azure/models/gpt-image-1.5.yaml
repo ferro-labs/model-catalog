@@ -4,7 +4,7 @@ model_id: gpt-image-1.5
 display_name: gpt-image-1.5
 pricing:
     input_per_m_tokens: 5
-    output_per_m_tokens: null
+    output_per_m_tokens: 10
     cache_read_per_m_tokens: 1.25
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
@@ -48,3 +48,4 @@ sources:
         snapshot_sha256: f5388fa778cf45f1ed23dc88f32760e2e9995443892b5fc02f2cc5bfcb1f8db4
         snapshot_branch: snapshots
         confidence: medium
+updated_at: "2026-11-16"
