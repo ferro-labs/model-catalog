@@ -2169,7 +2169,7 @@
     "pricing": {
       "input_per_m_tokens": 0.14,
       "output_per_m_tokens": 0.28,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.0028,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -2200,8 +2200,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-16",
-    "tier": "standard"
+    "updated_at": "2026-11-23",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-23",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "714212be17c501038cda239ed45b732bdb69db5357d15f30242f8b0d4bfca647",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "deepinfra/allenai/olmOCR-7B-0725-FP8": {
     "provider": "deepinfra",
@@ -5555,7 +5565,7 @@
     "pricing": {
       "input_per_m_tokens": 0.834,
       "output_per_m_tokens": 2.501,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.041999999999999996,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -5586,8 +5596,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-16",
-    "tier": "standard"
+    "updated_at": "2026-11-23",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-23",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "87c369cb09a24d1ed5432ad1b0fe09f46a95bd95ffcd574bd0d9ff34cd991ffb",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "deepinfra/thinkingmachines/Inkling": {
     "provider": "deepinfra",
@@ -6085,7 +6105,7 @@
     "pricing": {
       "input_per_m_tokens": 0.15,
       "output_per_m_tokens": 0.5,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.03,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -6116,7 +6136,17 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-16",
-    "tier": "standard"
+    "updated_at": "2026-11-23",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-23",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "72d59b0cafc2c7798db9253f154012bd1622347d39e1bf5725446b4499239f3d",
+        "snapshot_branch": "snapshots"
+      }
+    }
   }
 }

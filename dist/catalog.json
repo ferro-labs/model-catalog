@@ -2551,7 +2551,7 @@
     "pricing": {
       "input_per_m_tokens": 8.0,
       "output_per_m_tokens": 40.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.19999999999999998,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -2582,8 +2582,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-16",
-    "tier": "standard"
+    "updated_at": "2026-11-23",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-23",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "5ee5baacec00e0f8444f99bcfed56af4a766d3f0c8ba327fa884b751fcb8dd37",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "anthropic/claude-haiku-4-5": {
     "provider": "anthropic",
@@ -13527,6 +13537,94 @@
       }
     }
   },
+  "azure/gpt-6.2-astra": {
+    "provider": "azure",
+    "model_id": "gpt-6.2-astra",
+    "display_name": "gpt-6.2-astra",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 8.0,
+      "output_per_m_tokens": 40.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-11-23",
+    "tier": "standard"
+  },
+  "azure/gpt-6.2-sol": {
+    "provider": "azure",
+    "model_id": "gpt-6.2-sol",
+    "display_name": "gpt-6.2-sol",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 10.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-11-23",
+    "tier": "standard"
+  },
   "azure/gpt-audio-1.5-2026-02-23": {
     "provider": "azure",
     "model_id": "gpt-audio-1.5-2026-02-23",
@@ -15236,7 +15334,7 @@
       "successor": null
     },
     "source": "https://models.dev/mistral/mistral-large-latest",
-    "updated_at": "2026-10-05",
+    "updated_at": "2026-11-23",
     "tier": "standard",
     "sources": {
       "pricing": {
@@ -45547,7 +45645,7 @@
     "pricing": {
       "input_per_m_tokens": 0.14,
       "output_per_m_tokens": 0.28,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.0028,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -45578,8 +45676,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-16",
-    "tier": "standard"
+    "updated_at": "2026-11-23",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-23",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "714212be17c501038cda239ed45b732bdb69db5357d15f30242f8b0d4bfca647",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "deepinfra/allenai/olmOCR-7B-0725-FP8": {
     "provider": "deepinfra",
@@ -48933,7 +49041,7 @@
     "pricing": {
       "input_per_m_tokens": 0.834,
       "output_per_m_tokens": 2.501,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.041999999999999996,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -48964,8 +49072,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-16",
-    "tier": "standard"
+    "updated_at": "2026-11-23",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-23",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "87c369cb09a24d1ed5432ad1b0fe09f46a95bd95ffcd574bd0d9ff34cd991ffb",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "deepinfra/thinkingmachines/Inkling": {
     "provider": "deepinfra",
@@ -49463,7 +49581,7 @@
     "pricing": {
       "input_per_m_tokens": 0.15,
       "output_per_m_tokens": 0.5,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.03,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -49494,8 +49612,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-16",
-    "tier": "standard"
+    "updated_at": "2026-11-23",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-23",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "72d59b0cafc2c7798db9253f154012bd1622347d39e1bf5725446b4499239f3d",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "deepseek/deepseek-chat": {
     "provider": "deepseek",
@@ -77915,7 +78043,7 @@
     "pricing": {
       "input_per_m_tokens": 0.15,
       "output_per_m_tokens": 0.6,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.015,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -77946,8 +78074,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-16",
-    "tier": "standard"
+    "updated_at": "2026-11-23",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-23",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "1a66ca015858d2bfcc5ca355a2d80ce8b8575f2f025e14188f8d620c7ff83c5e",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "minimax/speech-02-hd": {
     "provider": "minimax",
@@ -79217,9 +79355,9 @@
     "context_window": 40000,
     "max_output_tokens": 40000,
     "pricing": {
-      "input_per_m_tokens": 2.0,
-      "output_per_m_tokens": 5.0,
-      "cache_read_per_m_tokens": null,
+      "input_per_m_tokens": 1.5,
+      "output_per_m_tokens": 7.5,
+      "cache_read_per_m_tokens": 0.15,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -79250,15 +79388,15 @@
       "successor": null
     },
     "source": "https://mistral.ai/news/magistral",
-    "updated_at": "2026-02-28",
+    "updated_at": "2026-11-23",
     "tier": "flagship",
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
+        "verified_at": "2026-11-23",
         "confidence": "high",
         "verified_by": "scraper-litellm",
-        "snapshot_sha256": "59ce861d710a66377ac75a092f0d855062633363ed1f3e594f746778b10d24c6",
+        "snapshot_sha256": "44a3e504788d7bd05579cea6acd96aefc3e29edb6378da42059e033d230504fa",
         "snapshot_branch": "snapshots"
       }
     }
@@ -79489,7 +79627,7 @@
     "pricing": {
       "input_per_m_tokens": 0.09999999999999999,
       "output_per_m_tokens": null,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.01,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -79520,15 +79658,15 @@
       "successor": null
     },
     "source": "https://models.dev/mistral/mistral-embed",
-    "updated_at": "2026-07-06",
+    "updated_at": "2026-11-23",
     "tier": "flagship",
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-08-07",
+        "verified_at": "2026-11-23",
         "confidence": "medium",
         "verified_by": "scraper-litellm",
-        "snapshot_sha256": "809dfc207da0ef9b2aa9a962dad34bebe0ab4eb780adc42e101112916d6b1428",
+        "snapshot_sha256": "2248542189b7812f4df2d3155f9193e58eaa43b2268cb1d515da7149976fff82",
         "snapshot_branch": "snapshots"
       }
     }
@@ -79865,9 +80003,9 @@
     "context_window": 128000,
     "max_output_tokens": 128000,
     "pricing": {
-      "input_per_m_tokens": 0.5,
-      "output_per_m_tokens": 1.5,
-      "cache_read_per_m_tokens": 0.049999999999999996,
+      "input_per_m_tokens": 0.7,
+      "output_per_m_tokens": 2.0999999999999996,
+      "cache_read_per_m_tokens": 0.07,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -79898,15 +80036,15 @@
       "successor": null
     },
     "source": "https://models.dev/mistral/mistral-large-latest",
-    "updated_at": "2026-10-05",
+    "updated_at": "2026-11-23",
     "tier": "standard",
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-10-05",
+        "verified_at": "2026-11-23",
         "confidence": "high",
         "verified_by": "scraper-litellm",
-        "snapshot_sha256": "6c6a99cffab7953058a059c68036f17e32274178cd0c9214aef569ab77560c58",
+        "snapshot_sha256": "4ff2b86ce35a7df72eed13fa4064d97c8982bba96541d97332cbc698cf8218f7",
         "snapshot_branch": "snapshots"
       }
     }
@@ -99059,6 +99197,114 @@
       }
     }
   },
+  "openai/gpt-6.2-astra": {
+    "provider": "openai",
+    "model_id": "gpt-6.2-astra",
+    "display_name": "gpt-6.2-astra",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 8.0,
+      "output_per_m_tokens": 40.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev+openrouter",
+    "updated_at": "2026-11-23",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://openrouter.ai/api/v1/models",
+        "verified_at": "2026-11-23",
+        "confidence": "medium",
+        "verified_by": "scraper-openrouter",
+        "snapshot_sha256": "312a03d2e4ef417a57d989901995bb769ab28179237debe722586a6954df8ef2",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
+  "openai/gpt-6.2-sol": {
+    "provider": "openai",
+    "model_id": "gpt-6.2-sol",
+    "display_name": "gpt-6.2-sol",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 10.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev+openrouter",
+    "updated_at": "2026-11-23",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://openrouter.ai/api/v1/models",
+        "verified_at": "2026-11-23",
+        "confidence": "medium",
+        "verified_by": "scraper-openrouter",
+        "snapshot_sha256": "91fdf11456351b2cf02e1acf26fa879ab9827a34e820903c36aa9e2be7bec177",
+        "snapshot_branch": "snapshots"
+      }
+    }
+  },
   "openai/gpt-audio": {
     "provider": "openai",
     "model_id": "gpt-audio",
@@ -102693,6 +102939,50 @@
       }
     }
   },
+  "openrouter/anthropic/claude-fable-5.2": {
+    "provider": "openrouter",
+    "model_id": "anthropic/claude-fable-5.2",
+    "display_name": "anthropic/claude-fable-5.2",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 8.0,
+      "output_per_m_tokens": 40.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-11-23",
+    "tier": "standard"
+  },
   "openrouter/anthropic/claude-haiku-4.5": {
     "provider": "openrouter",
     "model_id": "anthropic/claude-haiku-4.5",
@@ -104729,9 +105019,9 @@
     "context_window": 0,
     "max_output_tokens": 0,
     "pricing": {
-      "input_per_m_tokens": 0.088606,
-      "output_per_m_tokens": 1.28,
-      "cache_read_per_m_tokens": null,
+      "input_per_m_tokens": 0.09,
+      "output_per_m_tokens": 0.18,
+      "cache_read_per_m_tokens": 0.018,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -104762,8 +105052,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-10-05",
-    "tier": "standard"
+    "updated_at": "2026-11-23",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-23",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "224933341b463e24cc084f78cb21f97203e629ea492b4d9f8648660c72afe1dc",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "openrouter/deepseek/deepseek-v4-flash-0731": {
     "provider": "openrouter",
@@ -104872,6 +105172,50 @@
         "snapshot_branch": "snapshots"
       }
     }
+  },
+  "openrouter/deepseek/deepseek-v4-pro": {
+    "provider": "openrouter",
+    "model_id": "deepseek/deepseek-v4-pro",
+    "display_name": "deepseek/deepseek-v4-pro",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": 1.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-11-23",
+    "tier": "standard"
   },
   "openrouter/deepseek/deepseek-v4-pro-0813": {
     "provider": "openrouter",
@@ -106256,6 +106600,50 @@
         "snapshot_branch": "snapshots"
       }
     }
+  },
+  "openrouter/google/gemini-4-hydrogen": {
+    "provider": "openrouter",
+    "model_id": "google/gemini-4-hydrogen",
+    "display_name": "google/gemini-4-hydrogen",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 1.5,
+      "output_per_m_tokens": 7.5,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-11-23",
+    "tier": "standard"
   },
   "openrouter/google/gemma-2-27b-it": {
     "provider": "openrouter",
@@ -114287,6 +114675,94 @@
     },
     "source": "auto:litellm+models_dev",
     "updated_at": "2026-10-05",
+    "tier": "standard"
+  },
+  "openrouter/openai/gpt-6.2-astra": {
+    "provider": "openrouter",
+    "model_id": "openai/gpt-6.2-astra",
+    "display_name": "openai/gpt-6.2-astra",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 8.0,
+      "output_per_m_tokens": 40.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-11-23",
+    "tier": "standard"
+  },
+  "openrouter/openai/gpt-6.2-sol": {
+    "provider": "openrouter",
+    "model_id": "openai/gpt-6.2-sol",
+    "display_name": "openai/gpt-6.2-sol",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": 2.0,
+      "output_per_m_tokens": 10.0,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-11-23",
     "tier": "standard"
   },
   "openrouter/openai/gpt-audio": {
@@ -130818,6 +131294,50 @@
         "snapshot_branch": "snapshots"
       }
     }
+  },
+  "sarvam/glm5.3": {
+    "provider": "sarvam",
+    "model_id": "glm5.3",
+    "display_name": "glm5.3",
+    "mode": "chat",
+    "context_window": 0,
+    "max_output_tokens": 0,
+    "pricing": {
+      "input_per_m_tokens": null,
+      "output_per_m_tokens": 4.14893617,
+      "cache_read_per_m_tokens": null,
+      "cache_write_per_m_tokens": null,
+      "reasoning_per_m_tokens": null,
+      "image_per_tile": null,
+      "audio_input_per_minute": null,
+      "audio_output_per_character": null,
+      "embedding_per_m_tokens": null,
+      "finetune_train_per_m_tokens": null,
+      "finetune_input_per_m_tokens": null,
+      "finetune_output_per_m_tokens": null
+    },
+    "capabilities": {
+      "vision": false,
+      "audio_input": false,
+      "audio_output": false,
+      "function_calling": false,
+      "parallel_tool_calls": false,
+      "json_mode": false,
+      "response_schema": false,
+      "prompt_caching": false,
+      "reasoning": false,
+      "streaming": false,
+      "finetuneable": false
+    },
+    "lifecycle": {
+      "status": "preview",
+      "deprecation_date": null,
+      "sunset_date": null,
+      "successor": null
+    },
+    "source": "auto:litellm+models_dev",
+    "updated_at": "2026-11-23",
+    "tier": "standard"
   },
   "sarvam/sarvam-m": {
     "provider": "sarvam",
@@ -153831,7 +154351,7 @@
     "pricing": {
       "input_per_m_tokens": 0.3,
       "output_per_m_tokens": 1.2,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.006,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -153862,8 +154382,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-16",
-    "tier": "standard"
+    "updated_at": "2026-11-23",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-23",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "5f1c471e388ebbbedf129b9a1fafc335efeac8a005e278f8ab0cea39a6cb5587",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "wandb/google/gemma-4-26B-A4B-it": {
     "provider": "wandb",
@@ -154538,7 +155068,7 @@
     "max_output_tokens": 0,
     "pricing": {
       "input_per_m_tokens": 0.15,
-      "output_per_m_tokens": 0.5,
+      "output_per_m_tokens": 0.47,
       "cache_read_per_m_tokens": 0.02,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
@@ -154570,15 +155100,15 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-09",
+    "updated_at": "2026-11-23",
     "tier": "standard",
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-11-09",
+        "verified_at": "2026-11-23",
         "confidence": "high",
         "verified_by": "scraper-litellm",
-        "snapshot_sha256": "c79a74cdbb9364ec74c4d2adc92034c7873134a973b79911afed2774c1377b35",
+        "snapshot_sha256": "646d6f6dd11c192343966972526e810e82a7d7455d7653dc177d8c16b7cfe86a",
         "snapshot_branch": "snapshots"
       }
     }

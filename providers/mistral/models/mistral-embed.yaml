@@ -7,7 +7,7 @@ max_output_tokens: 0
 pricing:
     input_per_m_tokens: 0.09999999999999999
     output_per_m_tokens: null
-    cache_read_per_m_tokens: null
+    cache_read_per_m_tokens: 0.01
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: "https://models.dev/mistral/mistral-embed"
-updated_at: "2026-07-06"
+updated_at: "2026-11-23"
 tier: flagship
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-11-23"
         verified_by: scraper-litellm
-        snapshot_sha256: 809dfc207da0ef9b2aa9a962dad34bebe0ab4eb780adc42e101112916d6b1428
+        snapshot_sha256: 2248542189b7812f4df2d3155f9193e58eaa43b2268cb1d515da7149976fff82
         snapshot_branch: snapshots
         confidence: medium

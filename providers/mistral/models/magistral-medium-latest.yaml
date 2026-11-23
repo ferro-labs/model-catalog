@@ -5,9 +5,9 @@ mode: chat
 context_window: 40000
 max_output_tokens: 40000
 pricing:
-    input_per_m_tokens: 2
-    output_per_m_tokens: 5
-    cache_read_per_m_tokens: null
+    input_per_m_tokens: 1.5
+    output_per_m_tokens: 7.5
+    cache_read_per_m_tokens: 0.15
     cache_write_per_m_tokens: null
     reasoning_per_m_tokens: null
     image_per_tile: null
@@ -35,13 +35,13 @@ lifecycle:
     sunset_date: null
     successor: null
 source: https://mistral.ai/news/magistral
-updated_at: "2026-02-28"
+updated_at: "2026-11-23"
 tier: flagship
 sources:
     pricing:
         url: "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json"
-        verified_at: "2026-08-07"
+        verified_at: "2026-11-23"
         verified_by: scraper-litellm
-        snapshot_sha256: 59ce861d710a66377ac75a092f0d855062633363ed1f3e594f746778b10d24c6
+        snapshot_sha256: 44a3e504788d7bd05579cea6acd96aefc3e29edb6378da42059e033d230504fa
         snapshot_branch: snapshots
         confidence: high

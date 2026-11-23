@@ -1043,7 +1043,7 @@
     "pricing": {
       "input_per_m_tokens": 0.3,
       "output_per_m_tokens": 1.2,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.006,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -1074,8 +1074,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-16",
-    "tier": "standard"
+    "updated_at": "2026-11-23",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-23",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "5f1c471e388ebbbedf129b9a1fafc335efeac8a005e278f8ab0cea39a6cb5587",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "wandb/google/gemma-4-26B-A4B-it": {
     "provider": "wandb",
@@ -1750,7 +1760,7 @@
     "max_output_tokens": 0,
     "pricing": {
       "input_per_m_tokens": 0.15,
-      "output_per_m_tokens": 0.5,
+      "output_per_m_tokens": 0.47,
       "cache_read_per_m_tokens": 0.02,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
@@ -1782,15 +1792,15 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-09",
+    "updated_at": "2026-11-23",
     "tier": "standard",
     "sources": {
       "pricing": {
         "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
-        "verified_at": "2026-11-09",
+        "verified_at": "2026-11-23",
         "confidence": "high",
         "verified_by": "scraper-litellm",
-        "snapshot_sha256": "c79a74cdbb9364ec74c4d2adc92034c7873134a973b79911afed2774c1377b35",
+        "snapshot_sha256": "646d6f6dd11c192343966972526e810e82a7d7455d7653dc177d8c16b7cfe86a",
         "snapshot_branch": "snapshots"
       }
     }
