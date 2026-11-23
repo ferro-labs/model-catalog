@@ -1,10 +1,10 @@
 {
-  "version": "v2026.11.17",
+  "version": "v2026.11.23",
   "schema_version": 2,
-  "generated_at": "2026-11-17T04:54:36Z",
-  "catalog_sha256": "bec0badf3fe545aca6f16cf779e8984596e8bd10f134841524f571a204324260",
-  "catalog_url": "/v1/bec0badf3fe545aca6f16cf779e8984596e8bd10f134841524f571a204324260.json",
-  "git_sha": "ad0404319909fda08037d949eeed021f8f603c07",
+  "generated_at": "2026-11-23T17:44:16Z",
+  "catalog_sha256": "08977cec3bf55131ef318d5f8da9f19c24a465ea9c83dff61bcc49797dd6a307",
+  "catalog_url": "/v1/08977cec3bf55131ef318d5f8da9f19c24a465ea9c83dff61bcc49797dd6a307.json",
+  "git_sha": "df59fd44d902ce7fe03f3c82fbd3bc955af850b7",
   "providers": [
     {
       "id": "ai21",
@@ -49,8 +49,8 @@
     {
       "id": "anthropic",
       "model_count": 35,
-      "sha256": "318fecb6bea19beae322c83e3e40c1aeccda30359b9487d70eac35dc9c3278e9",
-      "url": "/v1/providers/anthropic/318fecb6bea19beae322c83e3e40c1aeccda30359b9487d70eac35dc9c3278e9.json",
+      "sha256": "f144346c148c1726297411f8cd867d94efb04d15e27e0e34fb3471b42e603a6d",
+      "url": "/v1/providers/anthropic/f144346c148c1726297411f8cd867d94efb04d15e27e0e34fb3471b42e603a6d.json",
       "display_name": "Anthropic",
       "logo_url": "https://anthropic.com/favicon.svg",
       "category": "frontier",
@@ -89,9 +89,9 @@
     },
     {
       "id": "azure",
-      "model_count": 247,
-      "sha256": "f25b13d2e2243fc8082e5783fe574f8081ae35aaba7af32811aff8ed93937fe8",
-      "url": "/v1/providers/azure/f25b13d2e2243fc8082e5783fe574f8081ae35aaba7af32811aff8ed93937fe8.json",
+      "model_count": 249,
+      "sha256": "23702843b1811052325666eebdf66d521f632b15b6578f7ac48ef914c9837894",
+      "url": "/v1/providers/azure/23702843b1811052325666eebdf66d521f632b15b6578f7ac48ef914c9837894.json",
       "display_name": "Azure OpenAI",
       "category": "cloud",
       "description": "OpenAI models via Microsoft Azure",
@@ -192,8 +192,8 @@
     {
       "id": "deepinfra",
       "model_count": 113,
-      "sha256": "a3a789e7ce9cb654f3b9124c65ef024485964ec452d4bf056100c99e2d60ec29",
-      "url": "/v1/providers/deepinfra/a3a789e7ce9cb654f3b9124c65ef024485964ec452d4bf056100c99e2d60ec29.json",
+      "sha256": "c51813be63ab0cb8241d8c605433ff151039870275cfb09378a0d52e15cbe1f3",
+      "url": "/v1/providers/deepinfra/c51813be63ab0cb8241d8c605433ff151039870275cfb09378a0d52e15cbe1f3.json",
       "display_name": "DeepInfra",
       "logo_url": "https://deepinfra.com/favicon.svg",
       "category": "open-source",
@@ -399,8 +399,8 @@
     {
       "id": "minimax",
       "model_count": 11,
-      "sha256": "23847cc73bae198d79950497267567bd7a1811e3a362b9e189000ab41a3d6cec",
-      "url": "/v1/providers/minimax/23847cc73bae198d79950497267567bd7a1811e3a362b9e189000ab41a3d6cec.json",
+      "sha256": "d676f6745e9648c9a0b802bc1066a917848e3d588e1bb9d4b9672568e0918062",
+      "url": "/v1/providers/minimax/d676f6745e9648c9a0b802bc1066a917848e3d588e1bb9d4b9672568e0918062.json",
       "display_name": "MiniMax",
       "category": "specialized",
       "description": "Large-scale multimodal models from MiniMax",
@@ -409,8 +409,8 @@
     {
       "id": "mistral",
       "model_count": 56,
-      "sha256": "388d7dd196fea9f6172af28b70a983c608e2960eb8f8af8a736de669428232fc",
-      "url": "/v1/providers/mistral/388d7dd196fea9f6172af28b70a983c608e2960eb8f8af8a736de669428232fc.json",
+      "sha256": "5e76d89f7905c8dfdeb32586124e9fba4a859e9a40ec430978a3542e3b362fe8",
+      "url": "/v1/providers/mistral/5e76d89f7905c8dfdeb32586124e9fba4a859e9a40ec430978a3542e3b362fe8.json",
       "display_name": "Mistral AI",
       "logo_url": "https://mistral.ai/favicon.svg",
       "category": "frontier",
@@ -521,9 +521,9 @@
     },
     {
       "id": "openai",
-      "model_count": 176,
-      "sha256": "64ff5e4ff22bb9c038215313426c5098b0e26deb6f3c3b135985bf1bd6e3b089",
-      "url": "/v1/providers/openai/64ff5e4ff22bb9c038215313426c5098b0e26deb6f3c3b135985bf1bd6e3b089.json",
+      "model_count": 178,
+      "sha256": "f852db659be242b022b497dc402029a60df3e3005f1405a3fa056ff689d647f9",
+      "url": "/v1/providers/openai/f852db659be242b022b497dc402029a60df3e3005f1405a3fa056ff689d647f9.json",
       "display_name": "OpenAI",
       "logo_url": "https://cdn.openai.com/API/logo-assets/openai-logomark.svg",
       "category": "frontier",
@@ -532,9 +532,9 @@
     },
     {
       "id": "openrouter",
-      "model_count": 386,
-      "sha256": "6bfe4ad6b759eaec13a11716aebc8fcfd0fc77de8bdf9b916f42c2038763f66d",
-      "url": "/v1/providers/openrouter/6bfe4ad6b759eaec13a11716aebc8fcfd0fc77de8bdf9b916f42c2038763f66d.json",
+      "model_count": 391,
+      "sha256": "a0425422d68716a36d83a0a475af5e53b98cae8fe071ec0412fd7a73235e0a3d",
+      "url": "/v1/providers/openrouter/a0425422d68716a36d83a0a475af5e53b98cae8fe071ec0412fd7a73235e0a3d.json",
       "display_name": "OpenRouter",
       "category": "specialized",
       "description": "Unified API across 200+ models",
@@ -644,9 +644,9 @@
     },
     {
       "id": "sarvam",
-      "model_count": 1,
-      "sha256": "512d9f1fdaffebb1a15477289d39b27fe347cbed17ae4cc655b775d6bdbd5cfd",
-      "url": "/v1/providers/sarvam/512d9f1fdaffebb1a15477289d39b27fe347cbed17ae4cc655b775d6bdbd5cfd.json",
+      "model_count": 2,
+      "sha256": "3c64213dbb51df84e9de8d181f5badaa8eba51afe16b062998415230bea75297",
+      "url": "/v1/providers/sarvam/3c64213dbb51df84e9de8d181f5badaa8eba51afe16b062998415230bea75297.json",
       "display_name": "Sarvam AI",
       "category": "specialized",
       "description": "Indian language AI models and translation",
@@ -817,8 +817,8 @@
     {
       "id": "wandb",
       "model_count": 40,
-      "sha256": "f3cc2f04b6e0d152fe24ffa490adaf0ff3c5e24f5276d601e4971dbc032c5740",
-      "url": "/v1/providers/wandb/f3cc2f04b6e0d152fe24ffa490adaf0ff3c5e24f5276d601e4971dbc032c5740.json",
+      "sha256": "f51be0d71a0b1523aa21e07d19922f6e7e88349d79e627306c9d3ad27bad1930",
+      "url": "/v1/providers/wandb/f51be0d71a0b1523aa21e07d19922f6e7e88349d79e627306c9d3ad27bad1930.json",
       "display_name": "Weights \u0026 Biases",
       "category": "specialized",
       "description": "ML experiment tracking and model registry",
@@ -857,7 +857,7 @@
     }
   ],
   "stats": {
-    "total_models": 2976,
+    "total_models": 2986,
     "total_providers": 83
   }
 }

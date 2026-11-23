@@ -751,7 +751,7 @@
     "pricing": {
       "input_per_m_tokens": 8.0,
       "output_per_m_tokens": 40.0,
-      "cache_read_per_m_tokens": null,
+      "cache_read_per_m_tokens": 0.19999999999999998,
       "cache_write_per_m_tokens": null,
       "reasoning_per_m_tokens": null,
       "image_per_tile": null,
@@ -782,8 +782,18 @@
       "successor": null
     },
     "source": "auto:litellm+models_dev",
-    "updated_at": "2026-11-16",
-    "tier": "standard"
+    "updated_at": "2026-11-23",
+    "tier": "standard",
+    "sources": {
+      "pricing": {
+        "url": "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+        "verified_at": "2026-11-23",
+        "confidence": "high",
+        "verified_by": "scraper-litellm",
+        "snapshot_sha256": "5ee5baacec00e0f8444f99bcfed56af4a766d3f0c8ba327fa884b751fcb8dd37",
+        "snapshot_branch": "snapshots"
+      }
+    }
   },
   "anthropic/claude-haiku-4-5": {
     "provider": "anthropic",
